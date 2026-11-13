@@ -47,8 +47,6 @@
   --icon-secondary: var(--mute);
 
   /* ── Fonts — families come from next/font (layout.tsx) ───────────── */
-  --font-display: var(--ff-display), "PP Neue Machina Inktrap", sans-serif;
-                            /* the rare voice — the one statement or number */
   --font-body: var(--ff-body), "General Sans", ui-sans-serif, sans-serif;
                             /* the workhorse — everything non-technical */
   --font-mono: var(--ff-mono), "JetBrains Mono", ui-monospace, monospace;

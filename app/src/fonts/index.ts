@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 
-// Families are exposed as --ff-* variables; tokens.css builds --font-body/mono/display on top.
+// Families are exposed as --ff-* variables; tokens.css builds --font-body/mono on top.
 
 export const bodyFont = localFont({
   src: [
@@ -23,11 +23,4 @@ export const monoFont = localFont({
   fallback: ["ui-monospace", "monospace"],
 });
 
-export const displayFont = localFont({
-  src: [{ path: "./PPNeueMachina-InktrapBlack.woff2", weight: "900", style: "normal" }],
-  variable: "--ff-display",
-  display: "swap",
-  fallback: ["ui-sans-serif", "sans-serif"],
-});
-
-export const fontVariables = `${bodyFont.variable} ${monoFont.variable} ${displayFont.variable}`;
+export const fontVariables = `${bodyFont.variable} ${monoFont.variable}`;

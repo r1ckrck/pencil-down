@@ -65,12 +65,12 @@ pencil-down/
 
 ## 4 · Design system adaptation
 
-Base: `assistant/docs/design.md` + `tokens.css`, copied into `app/src/styles/tokens.css`. Fonts: General Sans, JetBrains Mono, PP Neue Machina Inktrap (from `assistant/assets/fonts/`). Paper texture: `cream-paper.png` at low opacity. Light and dark modes.
+Base: `assistant/docs/design.md` + `tokens.css`, copied into `app/src/styles/tokens.css`. Fonts: General Sans and JetBrains Mono (from `assistant/assets/fonts/`); the design system's display face and sign-off monogram are not used. Paper texture: `cream-paper.png` at low opacity. Light and dark modes.
 
 | Rule from the system | Applied here |
 |---|---|
 | Accent once per surface | The single live thing: the running per-question timer in Part A, the active phase in Part B, the one number on results |
-| Display font for the one statement | Days-to-exam on Today, the score on a results screen, nothing else |
+| One large statement number | Days-to-exam on Today, the score on a results screen: General Sans semibold at display size, nothing else |
 | Mono for technical content | Question numbers, timers, scores, marks, seeds |
 | Rounded-square markers | Question palette cells (answered / skipped / marked / unseen) |
 | Dimension lines | Time-budget bar under each question: span = budget, fill = elapsed |
@@ -79,7 +79,6 @@ Base: `assistant/docs/design.md` + `tokens.css`, copied into `app/src/styles/tok
 | Modification | Reason |
 |---|---|
 | Exam screens drop density | The question is the hero; chrome reduced to timer, palette, controls. Focus beats edge-to-edge here. |
-| No sign-off on exam screens | Monogram only on Today and results |
 | Touch targets ≥ 44 px | Part B runs on a phone next to paper |
 
 Layout targets: Part A optimised for laptop (≥1280 px), usable on phone. Part B optimised for phone (≥360 px).
@@ -108,7 +107,7 @@ Chosen on the start screen of every session (pre-selected: the last mode used; f
 - The question reappears in the Debrief so she can self-rate against its criteria.
 
 ### 5.1 Today
-- Days to 17 Jan 2027 (display font).
+- Days to 17 Jan 2027 (the screen's one large number).
 - Suggested next session (from weakest Part A topic and least-practised Part B slot).
 - Last 7 days in one strip: sessions done, Part A last score vs cutoff band, Part B median seconds-to-commit.
 - Cards due today.
@@ -143,7 +142,7 @@ Every question has a time budget: MCQ 60 s, MSQ 90 s, NAT 120 s (editable). What
 - No pause and no save (§5.7).
 
 **Results**
-- Total (display font) vs cutoff band 48–54 and target 60.
+- Total (the screen's one large number) vs cutoff band 48–54 and target 60.
 - Breakdown by format and by topic: correct / wrong / skipped / marks.
 - Marks lost to wrong answers vs marks left on the table by skipping.
 - Confidence calibration: accuracy of "sure" vs "unsure".

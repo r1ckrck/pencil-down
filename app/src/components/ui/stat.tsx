@@ -30,7 +30,7 @@ export function Stat({
       <p className="flex items-baseline gap-3">
         <span
           className={cn(
-            "font-display tabular",
+            "font-body font-semibold tabular",
             size === "xl" ? "text-display" : "text-display-sm",
             accent ? "text-accent" : "text-fg",
           )}

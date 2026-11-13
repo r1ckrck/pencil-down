@@ -5,7 +5,6 @@ import { Suspense } from "react";
 import { KIND_LABEL, TOPIC_LABEL, marks, sessionHref } from "@/components/part-a/labels";
 import type { Kind } from "@/components/part-a/types";
 import { PageHeader } from "@/components/shell/page-header";
-import { SignOff } from "@/components/shell/sign-off";
 import { buttonClasses } from "@/components/ui/button";
 import { Eyebrow, RoleLabel } from "@/components/ui/label";
 import { Metric, Stat } from "@/components/ui/stat";
@@ -145,7 +144,6 @@ export default function TodayPage() {
       <Suspense fallback={<p className="font-mono text-label uppercase text-mute">Loading</p>}>
         <TodayBody />
       </Suspense>
-      <SignOff reference="today" />
     </>
   );
 }

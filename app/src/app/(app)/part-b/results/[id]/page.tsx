@@ -8,7 +8,6 @@ import { loadSession } from "@/components/part-b/load";
 import { DebriefLink, SlotSummary } from "@/components/part-b/results-view";
 import { KIND_NAME, SLOT_NAME, mmss } from "@/components/part-b/types";
 import { PageHeader } from "@/components/shell/page-header";
-import { SignOff } from "@/components/shell/sign-off";
 import { buttonClasses } from "@/components/ui/button";
 import { Eyebrow } from "@/components/ui/label";
 import { Stat } from "@/components/ui/stat";
@@ -120,7 +119,6 @@ async function Results({ params }: { params: Promise<{ id: string }> }) {
           </Link>
         </div>
       </div>
-      <SignOff reference={`part-b · session ${id}`} />
     </>
   );
 }

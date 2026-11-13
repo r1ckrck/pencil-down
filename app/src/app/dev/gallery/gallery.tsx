@@ -2,7 +2,6 @@
 
 import { ArrowRight, Flag, SignOut, Timer } from "@phosphor-icons/react";
 import { useState, type ReactNode } from "react";
-import { Monogram } from "@/components/shell/monogram";
 import { ThemeControl } from "@/components/shell/theme-control";
 import { Button } from "@/components/ui/button";
 import { CheckRow } from "@/components/ui/check-row";
@@ -130,7 +129,7 @@ export function Gallery() {
 
       <Section index="01" title="Type" note="font, weight, colour, then size">
         <div className="flex flex-col gap-4">
-          <p className="font-display text-display-sm">65 days</p>
+          <p className="font-body font-semibold text-display-sm">65 days</p>
           <p className="text-title font-semibold">Title · General Sans 600</p>
           <p className="text-heading font-medium">Heading · General Sans 500</p>
           <p className="text-lead">Lead · the question stem reads at this size.</p>
@@ -407,7 +406,7 @@ export function Gallery() {
         </div>
       </Section>
 
-      <Section index="16" title="Icons · sign-off" note="Phosphor duotone · R/1 monogram">
+      <Section index="16" title="Icons" note="Phosphor duotone">
         <div className="flex flex-wrap items-center gap-6 text-fg">
           <Timer size={28} weight="duotone" />
           <Flag size={28} weight="duotone" />
@@ -416,11 +415,6 @@ export function Gallery() {
           <span className="text-mute">
             <Timer size={28} weight="duotone" />
           </span>
-        </div>
-        <div className="flex items-end gap-8">
-          <Monogram size={96} />
-          <Monogram size={40} />
-          <Monogram size={24} construction={false} />
         </div>
       </Section>
     </div>

@@ -13,7 +13,7 @@ FIXED = failed on first check, corrected, re-verified. Commands run in `app/`; t
 | `pnpm build` | standalone output, all routes |
 | E2E against the production server | 30 / 30 (15 flows × laptop 1440 + phone 360) |
 | Pipeline verify scripts (`pipeline/verify/*.py`) | all 8 OK |
-| Screen walk (40 screens × 360/1440 × light/dark = 160 captures, computed-style checks) | 0 console errors · 0 horizontal overflow · accent ≤ 1 · display font ≤ 1 on every capture |
+| Screen walk (40 screens × 360/1440 × light/dark = 160 captures, computed-style checks) | 0 console errors · 0 horizontal overflow · accent ≤ 1 · large statement number ≤ 1 on every capture |
 
 ## Content
 

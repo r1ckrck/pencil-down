@@ -66,7 +66,7 @@ pencil-down/
 - **Answer honesty:** `answer_status` is `official`, `solved` or `constructed` — never upgrade a solved answer to official. Generated answers are computed by construction, never guessed.
 - **Pool:** one shared pool across all years; past papers are a separate opt-in mode; a real question correct twice retires.
 - **Part B content:** Indian everyday settings; trends shown as user + setting + moment, never named; banned list in `content/meta/banned.txt`.
-- **Design:** tokens only (no hex outside `tokens.css`); accent once per screen; display font only for the one statement.
+- **Design:** tokens only (no hex outside `tokens.css`); accent once per screen; one large number per screen (`Stat`); two faces only, General Sans and JetBrains Mono.
 - **Pipeline** runs on the laptop only, Python with `-I`, downloads in their own folders. Nothing in `pipeline/` runs on the server.
 
 ## Ownership

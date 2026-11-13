@@ -8,7 +8,6 @@ import { ScoreScale } from "@/components/part-a/score-scale";
 import { sessionId, sessionResults } from "@/components/part-a/server";
 import type { Format, Topic } from "@/components/part-a/types";
 import { PageHeader } from "@/components/shell/page-header";
-import { SignOff } from "@/components/shell/sign-off";
 import { buttonClasses } from "@/components/ui/button";
 import { Eyebrow, RoleLabel } from "@/components/ui/label";
 import { Metric, Stat } from "@/components/ui/stat";
@@ -194,8 +193,6 @@ async function Results({ params }: { params: Promise<{ id: string }> }) {
           Today
         </Link>
       </div>
-
-      <SignOff reference={`part-a · session ${String(id).padStart(3, "0")}`} />
     </>
   );
 }
