@@ -8,6 +8,8 @@ import { defineConfig, devices } from "@playwright/test";
 const port = Number(process.env.PD_PORT ?? 3417);
 const baseURL = process.env.PD_BASE_URL ?? `http://localhost:${port}`;
 const dataDir = process.env.PENCIL_DATA_DIR ?? mkdtempSync(join(tmpdir(), "pencil-down-e2e-"));
+// Exported to the test workers too: some specs adjust stored timestamps directly to fast-forward the clock.
+process.env.PENCIL_DATA_DIR = dataDir;
 
 export default defineConfig({
   testDir: "./tests/e2e",

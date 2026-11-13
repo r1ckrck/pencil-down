@@ -101,8 +101,10 @@ const num = (v: number) => (Number.isInteger(v) ? String(v) : v.toFixed(1));
 const pct = (v: number) => `${Math.round(v * 100)}%`;
 export const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, "0")}`;
 
-export function resultsHref(kind: string, id: number) {
-  return B_KINDS.has(kind) && kind !== "full" ? `/part-b/results/${id}` : `/part-a/results/${id}`;
+// A full exam has both parts: it opens Part B results when the list is filtered to Part B, Part A results otherwise.
+export function resultsHref(kind: string, id: number, part: PartFilter = "all") {
+  const toB = kind === "full" ? part === "b" : B_KINDS.has(kind);
+  return toB ? `/part-b/results/${id}` : `/part-a/results/${id}`;
 }
 
 async function getJson<T>(url: string): Promise<T> {
@@ -262,7 +264,7 @@ function History({ rows, part, mode }: { rows: HistoryRow[]; part: PartFilter; m
           <ul className="-mx-2 flex flex-col" data-testid="history">
             {shown.slice(0, limit).map((h) => (
               <li key={h.id} className="border-t border-hairline first:border-t-0">
-                <HistoryItem h={h} />
+                <HistoryItem h={h} part={part} />
               </li>
             ))}
           </ul>
@@ -277,13 +279,13 @@ function History({ rows, part, mode }: { rows: HistoryRow[]; part: PartFilter; m
   );
 }
 
-function HistoryItem({ h }: { h: HistoryRow }) {
+function HistoryItem({ h, part }: { h: HistoryRow; part: PartFilter }) {
   const kind = KIND_LABEL[h.kind] ?? h.kind;
   const detail = [h.slot ? SLOT_LABEL[h.slot] ?? h.slot : null, h.paperId, h.retake ? "retake" : null].filter(Boolean).join(" · ");
   const hasA = A_KINDS.has(h.kind);
   const hasB = B_KINDS.has(h.kind);
   const status = h.status === "completed" ? null : h.status;
-  const href = h.status === "live" ? "/" : resultsHref(h.kind, h.id);
+  const href = h.status === "live" ? "/" : resultsHref(h.kind, h.id, part);
 
   return (
     <Link
