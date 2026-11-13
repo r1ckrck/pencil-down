@@ -1,0 +1,28 @@
+# One term per line, case-insensitive, whole-word match. No Part B prompt or card may contain these.
+election
+political party
+politician
+prime minister
+chief minister
+BJP
+Congress party
+hindu-muslim
+communal
+riot
+temple dispute
+mosque dispute
+caste violence
+terror
+bomb
+earthquake
+tsunami
+cyclone
+landslide
+stampede
+crowd crush
+plane crash
+air india 171
+funeral
+cremation
+burial
+suicide
