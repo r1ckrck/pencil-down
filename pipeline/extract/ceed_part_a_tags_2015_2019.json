@@ -1,1 +1,1839 @@
-{}
+{
+ "ceed-2015-q01": {
+  "answer": "40",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "high",
+  "explanation": "School S, market M (35 km due east of S) and home H (due north of M) form a right triangle with hypotenuse SH = 37, so MH = √(37² − 35²) = √144 = 12. The post office P is due east of M with HP = 13, so MP = √(13² − 12²) = 5. S, M and P lie on one east–west line: SP = 35 + 5 = **40 km**."
+ },
+ "ceed-2015-q02": {
+  "answer": "72",
+  "topic": "3d-visualisation",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Small cubes with exactly two painted faces sit on the cube's edges, excluding the corners. Each of the 12 edges has 8 − 2 = 6 such cubes: 12 × 6 = **72**."
+ },
+ "ceed-2015-q03": {
+  "answer": "26",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium",
+  "explanation": "The solid is an octahedron with every edge bevelled: each visible vertex joins one triangle and three rectangles (3.4.4.4), the arrangement of a rhombicuboctahedron. That gives 8 triangles (the octahedron's faces) + 12 rectangles (one per bevelled edge) + 6 quadrilaterals (one per octahedron vertex) = **26** faces."
+ },
+ "ceed-2015-q04": {
+  "answer": "75",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "The rule alternates ×2 and −3: 12 ×2 = 24, −3 = 21, ×2 = 42, −3 = 39, ×2 = 78, so next is 78 − 3 = **75**."
+ },
+ "ceed-2015-q05": {
+  "exclude": "cube count depends on hidden interior cubes that the single rendered view does not determine with confidence",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2015-q06": {
+  "answer": "A,C,D",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "high",
+  "explanation": "All mammals ⊂ fish ⊂ dolphins. So all mammals are dolphins (**D**); some fish are mammals (**A**, the mammals themselves); some mammals are dolphins (**C**). B contradicts the chain: every mammal is a dolphin."
+ },
+ "ceed-2015-q07": {
+  "answer": "A,C",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Crimson and carmine are reds. Azure is a sky blue; viridian is a blue-green. Answer **A, C**."
+ },
+ "ceed-2015-q08": {
+  "answer": "A",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "The Tata Nano has its engine at the rear. The Maruti Ertiga, Skoda Octavia and Tata Indica are all front-engined. Answer **A**."
+ },
+ "ceed-2015-q09": {
+  "exclude": "the font difference between letters is too subtle in the available raster to identify with confidence",
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "ceed-2015-q10": {
+  "answer": "A,B,C,D",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Spielberg directed all four: *Indiana Jones and the Temple of Doom* (1984), *Schindler's List* (1993), *Saving Private Ryan* (1998) and *Munich* (2005)."
+ },
+ "ceed-2015-q11": {
+  "answer": "A,B,D",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "medium",
+  "explanation": "A is Picasso's *Boy with a Pipe* (Rose period), B is his analytic-cubist *The Accordionist*, and D is *La Vie* (Blue period). C is Mondrian's *Composition Trees 2*, a cubism-influenced work on his way to abstraction. Answer **A, B, D**."
+ },
+ "ceed-2015-q12": {
+  "answer": "D",
+  "topic": "folding-and-patterns",
+  "difficulty": 3,
+  "confidence": "high",
+  "explanation": "Trace the outline of the gap clockwise: stepped top edge → short right edge → V-notch → spike → bottom edge → circle → left edge. The square hole sits beside the circle, with its long side parallel to the top edge. D has this edge sequence in the same clockwise order (a rotation), with the hole in the same place. B has it in reverse order, so it is a mirror image. In C the hole is turned 90°, and A's edges don't match. Answer **D**."
+ },
+ "ceed-2015-q13": {
+  "answer": "A,B",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Weights in a type family run from Hairline/Thin through Light, Regular and Medium to Bold and Black. Hairline and Bold are weights; Feather and Grey are not. Answer **A, B**."
+ },
+ "ceed-2015-q14": {
+  "answer": "A,B,D",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Depth of field and ISO are camera terms. Dodging is a darkroom printing technique that lightens chosen areas. Jiggering is a pottery process for shaping clay on a rotating mould. Answer **A, B, D**."
+ },
+ "ceed-2015-q15": {
+  "answer": "A,B,C",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "A Tetra Pak carton is layered paperboard (about 75%), polyethylene plastic and a thin aluminium foil barrier. It contains no Teflon. Answer **A, B, C**."
+ },
+ "ceed-2015-q16": {
+  "answer": "B",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "high",
+  "explanation": "Green touches black, red (view 1), blue (view 3) and yellow (view 4), so green is opposite magenta. Black touches red and green (view 1) and blue (view 3). Magenta is already taken by green, so the only colour left for black's opposite face is **yellow**."
+ },
+ "ceed-2015-q17": {
+  "answer": "A",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "high",
+  "explanation": "'slorm' appears in both 'flatpen' and 'penink', so slorm = pen and the code keeps the English word order. That gives wigges = flat, wiggel = ink, widdle = round and brap = nib. 'nibstore' must start with brap followed by a new word: **brapdansa**."
+ },
+ "ceed-2015-q18": {
+  "answer": "C",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "high",
+  "explanation": "The straight stroke's slanted ends show the flat nib is held along the '\\' diagonal. A flat nib draws thinnest when moving along its own edge and thickest when moving across it. So a circle is thin at upper-right and lower-left, and thick at upper-left and lower-right. Only **C** is symmetric about that diagonal this way; A and D thicken at the sides, and B is the mirror nib angle."
+ },
+ "ceed-2015-q19": {
+  "answer": "D",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Renaissance (15th–16th c.) → Baroque (17th c.) → Realism (mid-19th c.) → Cubism (early 20th c.). Answer **D**."
+ },
+ "ceed-2015-q20": {
+  "answer": "C",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "In CMYK printing, full magenta plus full yellow, with no cyan and no black, prints **red**."
+ },
+ "ceed-2015-q21": {
+  "answer": "C",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high",
+  "explanation": "This is the Hathigumpha inscription of Kharavela, king of Kalinga, carved in the Udayagiri caves near Bhubaneswar, Odisha. Answer **East and North East India (C)**."
+ },
+ "ceed-2015-q22": {
+  "answer": "B",
+  "topic": "mechanisms",
+  "difficulty": 2,
+  "confidence": "high",
+  "explanation": "A working diamond frame needs a top tube, a down tube from head tube to bottom bracket, a seat tube from seat to bottom bracket, and seat stays and chain stays to the rear axle. A has no seat tube to the bottom bracket, C has no down tube, and D adds a bar to the front hub that would stop the fork from steering. **B** is the complete frame."
+ },
+ "ceed-2015-q23": {
+  "answer": "B",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Polythene bags are made from film produced by blown-film extrusion: molten polyethylene is extruded as a tube and inflated into a thin bubble. Answer **B**."
+ },
+ "ceed-2015-q24": {
+  "answer": "A",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "The stiff, barrel-shaped embroidered skirt (potloi) and sheer veil are the costume of **Manipuri** dance (Ras Lila)."
+ },
+ "ceed-2015-q25": {
+  "answer": "C",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "*The Accidental Prime Minister* (2014) was written by **Sanjaya Baru**, media adviser to Manmohan Singh."
+ },
+ "ceed-2015-q26": {
+  "answer": "B",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "medium",
+  "explanation": "A red-orange circle above an open book of vertical yellow-to-red strips is the logo of **IIT Hyderabad**."
+ },
+ "ceed-2015-q27": {
+  "answer": "A",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "The santoor player with the curly white hair is **Pandit Shivkumar Sharma**. Hariprasad Chaurasia plays the flute and Vishwa Mohan Bhatt the mohan veena; Bhajan Sopori also played the santoor but looks different."
+ },
+ "ceed-2015-q28": {
+  "exclude": "template matching and manual angle checks found no option containing the element exactly; could not determine the key with confidence",
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "ceed-2015-q29": {
+  "answer": "D",
+  "topic": "folding-and-patterns",
+  "difficulty": 3,
+  "confidence": "high",
+  "explanation": "Reflect the 'A' across each of the five shared edges in turn. An odd number of reflections leaves a mirror image, and 'A' looks the same mirrored, so only position and direction matter. Tracing the reflections puts the letter near the top edge of the last heptagon, slightly left of centre, with its apex pointing left. That is **D**."
+ },
+ "ceed-2015-q30": {
+  "answer": "A",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium",
+  "explanation": "In one-point perspective every receding edge meets at a single vanishing point. Extending each object's receding edges: B, C and D converge close together, near the centre of the frame. The edges of the frame A on the left wall meet well to the left of and above that point. So **A** does not fit the perspective."
+ },
+ "ceed-2015-q31": {
+  "exclude": "judging the foreshortened arm sketch is subjective; no option can be keyed with confidence",
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "ceed-2015-q32": {
+  "answer": "D",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "high",
+  "explanation": "Apparent height is inversely proportional to distance. The point halfway in real distance therefore shows a height equal to the harmonic mean of the two figures' heights, 2h₁h₂/(h₁+h₂). With h₁ ≈ 388 and h₂ ≈ 98 (image units) that is ≈ 156, which matches line **D** (≈ 155). A (≈ 237) is only halfway across the picture, not halfway in depth."
+ },
+ "ceed-2015-q33": {
+  "exclude": "animation judgement about cape follow-through is subjective; no option can be keyed with confidence",
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "ceed-2015-q34": {
+  "exclude": "complex hidden geometry; could not verify a unique complementary piece with confidence",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2015-q35": {
+  "answer": "D",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "high",
+  "explanation": "The base is a rectangle; the top face is a centred rectangle half as wide; the sloped right end shows in top view as lines from the inner corners to the outer corners. The apex edge is drawn parallel to the right-end hip edge, which places the apex directly above the midpoint of the base's left end (the left end face is vertical). In top view the apex therefore falls on the midpoint of the outer rectangle's left side, with lines from it to the inner rectangle's left corners. That is **D**."
+ },
+ "ceed-2015-q36": {
+  "answer": "A",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "high",
+  "explanation": "The top view shows a square prism standing on a cone. The prism's front face is a plane parallel to the cone axis, so it cuts the cone in a hyperbola. That curve is highest at the face centre, which is nearest the axis, and lowest at the corners. The centre is the same distance from the axis as the prism edges where the cone outline meets them, so the arch peaks at that height and dips below it at the corners. **A** shows this; C raises the arch above the outline."
+ },
+ "ceed-2015-q37": {
+  "answer": "C",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "high",
+  "explanation": "From the bottom block up, each block turns another 22.5° (0°, 22.5°, 45°, 67.5°, 90°) and shrinks by about 46 units (sides ≈ 320, 276, 228, 184, 136). The sixth block is therefore turned 22.5° with side ≈ 90. A is turned 45°. B (≈ 104) and D (≈ 114) are too large. **C** (≈ 92 at 22.5°) fits."
+ },
+ "ceed-2015-q38": {
+  "answer": "D",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "high",
+  "explanation": "Rotated about its centroid, **D** overlays Image 1 almost exactly (overlap ≈ 99%). A, B and C match only partly, and each fits better when mirrored, so they are reflections or altered shapes."
+ },
+ "ceed-2015-q39": {
+  "answer": "B",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Water in the wet sand evaporates through the porous outer pot, and evaporation absorbs latent heat from the inner pot. This is **evaporative cooling**."
+ },
+ "ceed-2015-q40": {
+  "answer": "B",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "The Hemis festival, with masked cham dances, is held at Hemis Monastery in **Ladakh**."
+ },
+ "ceed-2015-q41": {
+  "answer": "C",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "*The Design of Everyday Things* is by **Donald Norman**. Philippe Starck and Karim Rashid are product designers."
+ },
+ "ceed-2015-q42": {
+  "answer": "D",
+  "topic": "folding-and-patterns",
+  "difficulty": 3,
+  "confidence": "high",
+  "explanation": "The X corner is the sheet's centre, so the folded square's left and bottom edges are the two fold lines; unfolding mirrors the cut across both. The long grey bar ends a little above the bottom fold, so it unfolds into **two** separate bars with a gap between them. The bar is longer than the outlined frame, so both bars reach past the frames. Blocks touching the folds merge into one solid central column, and the black notch on the left edge becomes two holes. Only **D** shows this."
+ },
+ "ceed-2015-q43": {
+  "answer": "C",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Magha, Bharavi and Kalidasa were Sanskrit poets. **Brahmagupta** was a mathematician and astronomer."
+ },
+ "ceed-2015-q44": {
+  "answer": "A",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Expanded polystyrene is sold in India as **Thermocol**. Teflon is PTFE, and nylon and Lycra are textile fibres."
+ },
+ "ceed-2015-q45": {
+  "answer": "A",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "The 'i' figure holding a document is India's **Right to Information** (RTI) logo."
+ },
+ "ceed-2015-q46": {
+  "answer": "C",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "The pica (12 points, about 1/6 inch) is a unit of measure in **typography**."
+ },
+ "ceed-2015-q47": {
+  "answer": "C",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high",
+  "explanation": "Verdana, Tahoma and Calibri are sans-serif typefaces; **Cambria** is a serif."
+ },
+ "ceed-2015-q48": {
+  "exclude": "A and C are mirror arrangements; deciding between them needs the wrap direction, which the drawing does not show clearly enough",
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "ceed-2015-q49": {
+  "exclude": "source raster too low-resolution to count font changes with confidence",
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "ceed-2015-q50": {
+  "exclude": "time-dependent: India had 29 states in Jan 2015 (key 32, B) but has 28 today (31, C); a fixed key would mislead",
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "ceed-2016-s1-q01": {
+  "exclude": "22 flower heads in a low-resolution raster; several heads differ only in fill/weight (outline vs solid star, light vs dark daisy), so the count of 'types' depends on interpretation",
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "ceed-2016-s1-q02": {
+  "answer": "79",
+  "explanation": "Take one quadrant as a 4×4 unit square. It holds midlines x=2, y=2, a diamond on the side midpoints, an axis square from 1 to 3, a smaller diamond, and an innermost axis square from 1.5 to 2.5.\n\n- **Axis-aligned squares.** The quadrant midlines and borders run the full figure, making a 4×4 grid of 2-unit cells: 16 + 9 + 4 + 1 = **30**. In each quadrant, the 1–3 square cut by the midlines gives 4 + 1 = 5, and the 1.5–2.5 square gives 4 + 1 = 5. That is 10 × 4 = **40**.\n- **Tilted squares.** The 4 large diamonds, plus the central diamond formed by their inner edges (vertices at the midpoints of the inner grid lines), plus the 4 small diamonds: **9**.\n\nTotal: 30 + 40 + 9 = **79**.",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2016-s1-q03": {
+  "answer": "13",
+  "explanation": "Track the heading: N 5, right → E 3, right → S 2, left → E 2, right → S 3, left → E 8.\n\n- North–south: 5 − 2 − 3 = 0\n- East: 3 + 2 + 8 = 13\n\nThe destination is due east, so the straight path is **13 km**.",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q04": {
+  "answer": "8",
+  "explanation": "The misspellings are symbls (symbols), religous (religious), comitted (committed), medeate (mediate), geniune (genuine), esential (essential), wich (which) and necesity (necessity). The second 'religious' is spelt correctly. Total: **8**.",
+  "topic": "language",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q05": {
+  "exclude": "surface count of a complex object with curved grooves, a pocket and a boss seen in three views; hidden geometry leaves the count open to several defensible totals",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2016-s1-q06": {
+  "answer": "14",
+  "explanation": "Put A = (0,0,4), B = (4,0,4), C = (4,4,4), D = (0,4,4), with the base 4 below.\n\n- P, the midpoint of A'B' = (2,0,0). The tunnel PC = √(2² + 4² + 4²) = **6**.\n- Q, the centre of BC = (4,2,4). CQ = **2**.\n- T, the centre of AD = (0,2,4). TQ is parallel to AB and QR = 1, so R = (3,2,4) and QR = **1**.\n- S is 4 above T = (0,2,8). RS = √(3² + 4²) = **5**.\n\nTotal: 6 + 2 + 1 + 5 = **14 cm**.",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q07": {
+  "answer": "30",
+  "explanation": "The three orthogonal 2×2 tunnels meet in an empty central 2×2×2 cell.\n\n- The 6 outer faces (each now has a square hole) stay: **6**.\n- Each of the 6 tunnel arms, from a face to the central cell, has 4 walls: 6 × 4 = **24**.\n- The central cell has no walls of its own, because all six of its sides open into arms.\n\nTotal: **30**.",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q08": {
+  "answer": "15.5 to 15.7",
+  "explanation": "The circle has radius 6. The centre and the 6 points on the circle (a regular hexagon) are joined by S-shaped curves.\n\nThe shaded piece corresponds to the equilateral triangle formed by the centre and two adjacent hexagon vertices. Its straight sides are replaced by S-curves that are point-symmetric about their midpoints, so each curve adds as much area on one side as it removes on the other.\n\nShaded area = area of an equilateral triangle of side 6 = (√3/4)·36 = 9√3 ≈ **15.59 cm²**.",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2016-s1-q09": {
+  "answer": "42",
+  "explanation": "A4 is 21 × 29.7 cm. Removing a 1 cm margin on every side leaves 19 × 27.7 cm.\n\nThe width splits exactly as 19 = 4·4 + 3:\n- On a 16 cm strip, place photos 4 wide and 3 tall: 4 per row × ⌊27.7/3⌋ = 9 rows = 36.\n- On the remaining 3 cm strip, place photos 3 wide and 4 tall: ⌊27.7/4⌋ = 6.\n\nTotal: **42**. Other layouts give fewer, for example 6 × 6 + 4 = 40.",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q10": {
+  "exclude": "the fish is irregular (round head, narrow waist, forked tail), so interlocking packings can beat the simple 4×6 = 24 bounding-box layout; the intended count is not determinable with confidence",
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "ceed-2016-s1-q11": {
+  "answer": "A,C,D",
+  "explanation": "- Sucheta shares no area with Prashant (T, P), so Sucheta is E only.\n- If Prashant also had E, Sucheta could not, so Prashant is exactly {T, P}. Sumeet has fewer areas, so Sumeet has exactly one.\n- E is Pritam, Sunita and two others. Pritam = Sanket, so Sanket is in E, and E = {Pritam, Sunita, Sucheta, Sanket}. Sumeet is not in E.\n- Sumeet and Sanket share exactly one non-Photography area, which must be T. So Sumeet = {T}, and Sanket and Pritam both have T and E.\n- Photography needs 3 people: Prashant plus two. Pritam and Sanket go together, and without them P would be short, so both have P.\n\nTherefore Pritam has Typography (**A**), Sanket has Ergonomics (**C**), Sumeet has no Ergonomics (**D**), and Sucheta has no Typography (B is false).",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q12": {
+  "answer": "A,B,D",
+  "explanation": "Model sheets, storyboards, line tests, animatics (story reels) and ink and paint all belong to the traditional hand-drawn cel pipeline. **Rigging** builds control skeletons for digital or 3D characters and has no place in non-digital cel work. So the options listing I, II and IV (**A**), III (**B**) and V (**D**) are correct, and VI (C) is not.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2016-s1-q13": {
+  "answer": "C,D",
+  "explanation": "- A is false. The passage gives the planning and motive force to Bhoja himself; only the compilation of raw material and the writing were done by 'one or more' experts.\n- B is false. He 'did not sit down and write them all by himself'.\n- C is true. Some of the writers who quote him are 'not far removed from Bhoja in point in time'.\n- D is true. As the guiding spirit and motive force, he was the de facto creator, which makes him the author.",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2016-s1-q14": {
+  "exclude": "statement C ('management education includes the study of honeycombs') has no clear true/false reading, so the full correct set is uncertain",
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "ceed-2016-s1-q15": {
+  "answer": "A,B,D",
+  "explanation": "- **B** is Rembrandt's *Prodigal Son in the Tavern* (self-portrait with Saskia).\n- **D** is a late Rembrandt self-portrait (1660) in a beret.\n- **A** is a Rembrandt half-length woman in a fur-trimmed robe, with his warm chiaroscuro and loose brushwork.\n- **C** is Rubens' portrait of Helena Fourment (feathered hat, slashed sleeves, roses), so it is not Rembrandt.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2016-s1-q16": {
+  "exclude": "dissection puzzle whose pieces must tile an irregular stepped region; cannot be verified to exact dimensions from the raster figure",
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "ceed-2016-s1-q17": {
+  "exclude": "net-folding item where the four nets differ only in the placement of thin strip lines and tab orientation; cannot be resolved with confidence from the drawing",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2016-s1-q18": {
+  "answer": "B,C,D",
+  "explanation": "- **Bokeh** is the quality of out-of-focus blur.\n- **Dodge** lightens part of a print in the darkroom.\n- **Contre-jour** means shooting into the light.\n\nAll three are photography terms. **Ligatures** are joined letters in typography.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q19": {
+  "exclude": "whether 'structural rigidity' (and 'tensile structure') count as origami benefits for spacecraft is a judgement call; the intended set is ambiguous",
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "ceed-2016-s1-q20": {
+  "exclude": "statement A (lotus leaf behaves like a plastic plate in water) and the wording of D are open to interpretation; the intended set is ambiguous",
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "ceed-2016-s1-q21": {
+  "answer": "D",
+  "explanation": "Reading each circle as TL, TR, BL, BR:\n\n1. red, yellow, orange, blue\n2. orange, red, blue, yellow\n3. orange, blue, red, yellow\n4. red, orange, yellow, blue\n5. red, yellow, orange, blue\n\nCircle 5 repeats circle 1, so the colours run in a cycle of 4 and circle 6 repeats circle 2: orange, red, blue, yellow. The dot's colour runs blue, red, red, blue, red, so the next dot is **red**. Only **D** has the circle-2 colours with the dot on red.",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2016-s1-q22": {
+  "answer": "C",
+  "explanation": "The passage shows a **penalty that reduces an unwanted behaviour**. Fining people who cut trees, which then reduces tree cutting, follows the same principle (**C**).\n\n- A: the penalty fails.\n- B: a reward, not a penalty.\n- D: the tax is used to raise funds, not to deter.",
+  "topic": "language",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q23": {
+  "answer": "D",
+  "explanation": "The example is the whole tile flipped top-to-bottom: the bottom-left group moves to the top with the triangle inverted, and the top-right group moves down with the @ mirrored vertically.\n\nApplied to the second tile:\n- The white hexagon goes on top and the black heptagon below, now with a flat top and a vertex at the bottom.\n- The ¶ moves to the top right with its bowl at the bottom left.\n- The spiral moves to the bottom right with its tail now curling downward.\n\nOnly **D** has both the inverted heptagon and the flipped spiral.",
+  "topic": "folding-and-patterns",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q24": {
+  "answer": "C",
+  "explanation": "The sculpture is a black basalt stele: a seated Buddha in the earth-touching gesture against a carved, ornamented back-slab with a flame-edged halo. These are hallmarks of the **Pala** school of Bihar and Bengal (8th–12th c.). Gandhara used grey schist in a Hellenistic style, and Kushana (Mathura) used red sandstone.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q25": {
+  "answer": "B",
+  "explanation": "These lines are from Walter Benjamin's *The Work of Art in the Age of Mechanical Reproduction*.\n\n- **IV** introduces the 19th-century painting-versus-photography dispute as a symptom of a historical transformation.\n- **III** names that transformation (mechanical reproduction separating art from cult).\n- **I** says the earlier debate missed this.\n- **II** carries the same mistake on to film ('Soon the film theoreticians…').\n\nOrder: IV, III, I, II.",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q26": {
+  "answer": "A",
+  "explanation": "A slotted disc on a handle, with a ring of sequential figures, is spun in front of a mirror and viewed through the slits. That is a **phenakistoscope**. A zoetrope is a slotted drum, a thaumatrope a two-sided card on strings, and a praxinoscope a drum with a mirror core.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q27": {
+  "answer": "D",
+  "explanation": "**Jiminy Cricket** is from Disney's *Pinocchio* (1940). Daffy Duck and Road Runner are Warner Bros. characters, and Screwball Squirrel is MGM's.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q28": {
+  "exclude": "the stem calls the drawing an 'orthographic view' while it is drawn with converging verticals (three-point perspective); the intended key (C or D) is ambiguous",
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "ceed-2016-s1-q29": {
+  "answer": "A",
+  "explanation": "Oil is lighter than water and does not mix with it, so the added water settles **below** the oil. The oil's volume does not change, but it is pushed higher into the narrower, tapering part of the conical flask, so the oil layer becomes **taller**. That is **A**: water at the bottom with a thicker oil layer reaching the neck.",
+  "topic": "everyday-science",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q30": {
+  "answer": "C",
+  "explanation": "Cyan, magenta and yellow inks each absorb (subtract) one of red, green and blue from white light. They are the **subtractive primaries** used in printing. RGB are the additive primaries.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q31": {
+  "answer": "D",
+  "explanation": "The poem has five lines in the 5-7-5-7-7 tanka shape and draws on the Japanese 'floating world' (ukiyo) theme. That makes it a **waka** (tanka). A haiku has three lines, a limerick five rhyming comic lines, and a sonnet fourteen lines.",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q32": {
+  "answer": "D",
+  "explanation": "- PET: carbonated drinks bottles (iv)\n- PVC: plumbing pipes and guttering (iii)\n- Polycarbonate: compact discs (ii)\n- HDPE: detergent bottles (i)\n\nThat is **D**.",
+  "topic": "everyday-science",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q33": {
+  "answer": "A",
+  "explanation": "A standing eye (about 5–5.5 ft) is above a 3 ft table 6 ft away. So the top is visible as a trapezoid narrowing away from you, and the back legs appear higher and shorter, partly hidden behind the front edge.\n\nProjecting with eye height 5.5 and depth 3 ft, the visible length of a back leg comes out at about 1.4–2× the apparent depth of the top. **A** fits: its back legs show about 60% of the front-leg length. In B they are only stubs. C is a flat elevation, and D is seen from below.",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2016-s1-q34": {
+  "answer": "C",
+  "explanation": "This passage is from **B. R. Ambedkar**'s autobiographical *Waiting for a Visa*. It describes his 1934 trip with co-workers from the depressed-classes movement to the Verul (Ellora) caves via Aurangabad.",
+  "topic": "language",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q35": {
+  "answer": "C",
+  "explanation": "The central raised part is a truncated pyramid (a frustum). In view 1 its near base is short and both sloping end faces with windows are visible. In view 2 the opposite base is clearly longer and the end faces are hidden.\n\nSo the frustum's footprint is a **symmetric trapezoid**: both end edges slant inward toward the shorter side, with a short ridge (about 1/5 of the long base) on top.\n\nFrom above this gives **C**. A has only one slanted end, B a rectangular footprint, and D an almost pointed ridge.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2016-s1-q36": {
+  "answer": "A",
+  "explanation": "Warka towers collect dew and fog. Water vapour in the air **condenses** on the mesh when it cools, and the drops run down to be collected.",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q37": {
+  "exclude": "the sample words contain no 'a' and the four serif 'a' options differ only in subtle stroke detail at raster resolution; the match cannot be made with confidence",
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "ceed-2016-s1-q38": {
+  "answer": "B",
+  "explanation": "Durkheim used statistics to develop **theory**. This broke with **social** research based purely on understanding.\n\nUnder anomie, social bonds weaken, so individuals become **less** resistant to pressure and suicide **increases**. That is option B.",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q39": {
+  "answer": "B",
+  "explanation": "The ▼ stays in the centre and the ★ stays bottom-right. The other three symbols rotate one step each frame, TL → TR → BL → TL:\n\n1. heart, square, circle\n2. circle, heart, square\n3. square, circle, heart\n\nThe fourth frame returns to heart (TL), square (TR), circle (BL), star (BR). That is **B**.",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q40": {
+  "answer": "A",
+  "explanation": "Use a 4×4 sheet. The folds are:\n1. Along the TL–BR diagonal: reflect over x + y = 4.\n2. At x = 2: reflect x → 4 − x.\n3. At y = 2: reflect y → 4 − y.\n\nThis leaves a 2×2 square of four layers. Unfolding each hole through every layer:\n\n- The ▷ near the top left gives two ▷ on the left edge (y ≈ 1.7, 2.3) and two ▽ on the top edge (x ≈ 1.7, 2.3).\n- The pair of holes near the diagonal gives four pairs clustered around the centre.\n- The ▷ near the bottom gives holes near the bottom-left corner, the bottom-right corner (two) and the right edge near the top.\n\nOnly **A** has this layout with these orientations. C and D put holes on the wrong edges or point them the wrong way.",
+  "topic": "folding-and-patterns",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q41": {
+  "answer": "D",
+  "explanation": "A car engine's water pump is a belt- or electrically driven **centrifugal pump**. Its impeller flings coolant outward through the block and radiator.",
+  "topic": "mechanisms",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q42": {
+  "answer": "A",
+  "explanation": "Satyajit Ray designed the typefaces **Ray Roman**, Ray Bizarre, Daphnis and Holiday Script. The other three options are not his.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q43": {
+  "answer": "B",
+  "explanation": "The screens are step-by-step forms with Next, then Back/Next, then Done. That is the **wizard** pattern.\n\n- Breadcrumbs show a path through a hierarchy.\n- Sequence diagrams and flow models are design documents, not interface styles.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s1-q44": {
+  "exclude": "brick dimensions and the hidden interior of the stepped L-shaped stack are not determinable from the shaded render, so the count cannot be fixed",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2016-s1-q45": {
+  "exclude": "choosing the tail pose for overlapping action is a judgement call between near-identical trailing shapes (A, D); no unambiguous key",
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "ceed-2016-s1-q46": {
+  "answer": "D",
+  "explanation": "The logos, in order:\n1. An open book with people under a sun: **Unnat Bharat Abhiyan**.\n2. The cog-wheel lion: **Make in India**.\n3. The 'i' with a Wi-Fi arc in saffron and green: **Digital India**.\n4. Colourful figures with raised arms: **National Skill Development Corporation**.\n\nOnly **D** has the first three correct.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "medium"
+ },
+ "ceed-2016-s1-q47": {
+  "exclude": "the low-angle drawing's converging lines are inconsistent (block 2 edges and block 3 edges imply different vanishing points), giving different answers (A or C) by projective calculation",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2016-s1-q48": {
+  "exclude": "the four shell pieces differ only in small zigzag details at raster resolution; the match against the gap could not be made with confidence",
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "ceed-2016-s1-q49": {
+  "exclude": "Options B and D render identically (checked at 800 dpi) and both show the correct result, so no single MCQ key can be stated.",
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "ceed-2016-s1-q50": {
+  "exclude": "spotted-box net comparison where options differ by small dots across edges; could not be verified with confidence",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2016-s2-q01": {
+  "exclude": "Counting distinct ampersand fonts among 24 low-resolution glyphs is a judgement call; size and weight variants make the count unverifiable.",
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "ceed-2016-s2-q02": {
+  "answer": "72",
+  "explanation": "The figure is two overlapping regular hexagons (one with a vertex at the top, one with a vertex at the side) plus 6 diameters through the centre, one to every star point.\n\n- Thin sectors at the centre: each of the 12 sectors between neighbouring rays holds 2 triangles with apex at the centre → **24**\n- Centre + one full hexagon edge (spanning two sectors): 6 + 6 → **12**\n- Small tip triangles beside each ray where two hexagon edges cross: 2 per point × 12 → **24**\n- Whole star points (two tip triangles together): **12**\n\nTotal 24 + 12 + 24 + 12 = **72** (confirmed by enumerating every intersection point).",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q03": {
+  "exclude": "Answer depends on where E sits on the dial: true geometry puts E at about 4:46 (total ~13.53 cm), but the drawing places E on the 5 o'clock tick (total ~13.83 cm); the setter's intent cannot be confirmed.",
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "ceed-2016-s2-q04": {
+  "answer": "11",
+  "explanation": "Misspelt words: habittat, rejions, Adepted, vareity, interdipendence, palnt, identifed, featiure, bariers, hols, arsesting.\n\nCount = **11**.",
+  "topic": "language",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q05": {
+  "exclude": "Complex part with a lug, hole, boss and notches; surface count depends on how curved and hidden surfaces are counted and could not be verified with confidence.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2016-s2-q06": {
+  "answer": "2776.5 to 2777.5",
+  "explanation": "The solid is a regular icosahedron: 20 equilateral faces, edge 16 cm.\n\n- One face: (√3/4)·16² = 64√3 ≈ 110.85 cm²\n- Each 4×3×2 hole removes the 12 cm² opening but adds a 12 cm² floor and walls 2·(4+3)·2 = 28 cm², so each face gains **+28 cm²**\n- Total = 20 × (64√3 + 28) = 1280√3 + 560 ≈ **2777 cm²**",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q07": {
+  "exclude": "Seven-piece digit puzzle: the assembly and resulting number could not be reconstructed with confidence from the crop.",
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "ceed-2016-s2-q08": {
+  "answer": "22",
+  "explanation": "Put the 12×7 block on a grid (origin bottom-left, 1 cm rows). AA is y = x; BB is y = x − 5. The black area is the dotted (E-shaped) piece inside the strip between them.\n\nFrom the top, the 1 cm rows of the dotted piece start at x = 7, 3, 7, 3, 6, 3, and the bottom row is the other piece. Inside the strip a row at height y spans x from y to y + 5, so per row:\n\n| Row (y) | Dotted from | Black area |\n|---|---|---|\n| 6–7 | 7 | 4.5 |\n| 5–6 | 3 | 5 |\n| 4–5 | 7 | 2.5 |\n| 3–4 | 3 | 5 |\n| 2–3 | 6 | 1.5 |\n| 1–2 | 3 | 3.5 |\n| 0–1 | — | 0 |\n\nTotal = **22 cm²** (a pixel count of the black fill agrees).",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q09": {
+  "exclude": "Oblique brick stack with several hidden regions; the number of bricks present (and so the number missing) cannot be determined with confidence.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2016-s2-q10": {
+  "answer": "104",
+  "explanation": "Six vertices and twelve edges with congruent triangular faces → a regular **octahedron** (8 faces).\n\nEach face is split into a 3-row triangular grid: 9 small + 3 medium (2-row) + 1 whole = 13 triangles.\n\nAll faces: 8 × 13 = **104**.",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2016-s2-q11": {
+  "answer": "A,B,C,D",
+  "explanation": "Let bs = bold serif (≤2), bss = bold sans (≤3), rs = regular serif (≤1), rss = regular sans (≤3).\nRules: bs + rs = 2; 3 ≤ bs + bss ≤ 4; rs = 1 ⇒ rss ≥ 2; rs = 1 or bss ≥ 2; 5 ≤ total ≤ 7.\n\n- **A** rss = 3: bs 2, bss 2, rss 3 (total 7) works.\n- **B** one regular: rs = 1 would need rss ≥ 2, so rs = 0, rss = 1, bs 2, bss 2 (total 5) works.\n- **C** bss = 3: bold ≤ 4 forces bs = 1, rs = 1, rss = 2 (total 7) works.\n- **D** five sans: bs 2, bss 2, rss 3 (total 7) works.\n\nAll four are possible.",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q12": {
+  "exclude": "Option C (II, V, VI) and option D (I, II, IV, V, VI) both list only genuine animation terms; whether the key is C,D or D alone is ambiguous.",
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "ceed-2016-s2-q13": {
+  "answer": "A,B,C",
+  "explanation": "- **A false:** the author says modernisation is *wiping out* Adivasi tradition, not driving their growth.\n- **B false:** ignorance about Adivasi life is called \"quite pervasive\".\n- **C false:** the \"frozen in time\" view is the hasty conclusion the author criticises.\n- D true: he asks us to understand them patiently, on their own terms.",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q14": {
+  "answer": "A,C",
+  "explanation": "- **A true:** the penny-farthing is the high-wheel bicycle.\n- B false: papier-mâché is a material (paper pulp and paste), not a machine.\n- **C true:** laminated (bent) plywood is a staple of furniture (e.g. Eames, Aalto).\n- D false: surgical gloves are made from latex (rubber tree) or synthetic nitrile.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q15": {
+  "answer": "A,B,C,D",
+  "explanation": "All four are Gustav Klimt: **A** *Lady with a Fan* (1918), **B** *Judith I* (1901), **C** *Danaë* (1907), **D** *Hope I* (1903). Gold leaf, flat ornamental patterning and the Vienna Secession style give them away.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q16": {
+  "answer": "A,B",
+  "explanation": "The thin lines at the corners outside the image show where to cut the printed sheet. They are called **crop marks**, also known as **trim marks**. Fold marks show where to fold, and \"cutting marks\" is not the standard term.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "medium"
+ },
+ "ceed-2016-s2-q17": {
+  "answer": "A",
+  "explanation": "Fold with the centre square (X-lines) at the front: plain black square on top, black-frame face below, half-lined square on the right, hollow outline at the back, concentric square on the left.\nOpposite pairs: plain-square/black-frame, X-lines/hollow-outline, half-lined/concentric.\n\n- **A:** top hollow outline, left concentric, right plain square. These three meet at one corner in that clockwise order. Valid.\n- B: shows the black-frame face next to the plain-square face, but they are opposite. Invalid.\n- C: half-lined, plain-square and hollow faces in mirror order. Invalid.\n- D: concentric on top with the black frame on the left and the hollow outline on the right is the mirror of the true arrangement. Invalid.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q18": {
+  "answer": "A,C",
+  "explanation": "**Hasselblad** (Sweden) and **Leica** (Germany) make cameras. Hoefler is a type foundry (Hoefler & Co.) and Lamy makes pens.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q19": {
+  "answer": "B,C,D",
+  "explanation": "Casting: **molten metal is poured into a mould** (B), with **runners and risers** feeding it (C), and **patterns and cores** forming the mould cavity (D). A describes hot forging or cutting, not casting.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q20": {
+  "exclude": "Statement A hinges on whether \"Rose\" (rosewood) counts as a wood name; the key could be A,C,D or C,D.",
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "ceed-2016-s2-q21": {
+  "answer": "A",
+  "explanation": "Each row repeats the row above, shifted half a cell sideways each step (e.g. row 2 \"Cr Br Cr G R Cr\" sits half a cell left of the same run in row 1).\n\nCarrying the colours down the shift gives the missing cells, top to bottom: **grey, red, cream, brown**. That is option A.",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q22": {
+  "answer": "B",
+  "explanation": "Tesla's logo is a stylised T whose crossbar has a small V-notch at the centre, with a separate thin arc floating above it. Only **B** has both.",
+  "topic": "observation",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q23": {
+  "answer": "C",
+  "explanation": "Each step turns the whole figure 90° anticlockwise: corner elements move TR→TL→BL→BR and each glyph rotates with them. The third step is the first figure turned 180°.\n\nTurned 180°, the big five-segment shape moves to the top-left, the Z-shape (point-symmetric) to the bottom-right, ¬ becomes └ at the bottom-left, and the three-segment piece goes to the top-right. That is **C**.",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q24": {
+  "answer": "A",
+  "explanation": "This is the Lingaraja temple, Bhubaneswar. Its tall curvilinear *rekha deula* tower, ribbed with horizontal courses and topped by an *amalaka*, is the **Kalinga** (Odisha) style.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q25": {
+  "answer": "B",
+  "explanation": "(iii) introduces the body-versus-consciousness dichotomy. (i) says art and spirituality spring from \"the two\". (iv) continues \"Sometimes **it** turns to the symbols…\" and ends with yearning located in the body. (ii) concludes \"**Therefore** … control over the body\".\n\nOrder: iii, i, iv, ii.",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q26": {
+  "answer": "A",
+  "explanation": "Osamu Tezuka created **Astro Boy** (Tetsuwan Atom). Totoro is Miyazaki's, Doraemon is Fujiko F. Fujio's and Naruto is Masashi Kishimoto's.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q27": {
+  "answer": "A",
+  "explanation": "Chanakya (c. 4th century BCE) → Nagarjuna (c. 2nd century CE) → Bhartrhari (c. 5th century CE) → Adi Shankara (c. 8th century CE).",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q28": {
+  "exclude": "Stem calls the drawing an orthographic view (which would mean no perspective) while the receding edges converge to one point; the intended key (A or D) is ambiguous.",
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "ceed-2016-s2-q29": {
+  "answer": "D",
+  "explanation": "Ice melts into water that takes up less volume than the ice did, so the total level drops below the rim. Oil is less dense than water, so it floats on top. Result: oil over water, level lower than before. That is **D**.",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q30": {
+  "answer": "C",
+  "explanation": "Google: **G** blue, **o** red, **o** yellow, **g** blue, **l** green, **e** red.",
+  "topic": "observation",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q31": {
+  "answer": "A",
+  "explanation": "The passage, on revolutionaries' pride being mistaken for vanity, is from Bhagat Singh's 1930 essay **\"Why I am an Atheist\"**, in which he answers the charge that his atheism comes from vanity.",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q32": {
+  "answer": "B",
+  "explanation": "- Blow moulding → hollow narrow-neck containers: **jerry can** (P-iii)\n- Injection moulding → **tiffin box** (Q-i)\n- Rotomoulding → large seamless hollow **water tank** (R-iv)\n- FRP (fibre-reinforced plastic) → **boat** hulls (S-ii)",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q33": {
+  "answer": "A",
+  "explanation": "The I ♥ NY logo (1977) was designed by **Milton Glaser**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q34": {
+  "answer": "B",
+  "explanation": "The folds leave a top-left quarter-width strip. Its right edge is the last crease, its bottom edge the horizontal crease, and its left edge holds both the first crease and the sheet's outer edges.\n\n- Cuts on the right crease open into the rhombus columns and the top/bottom V-notches.\n- Cuts on the left edge open, on the centre crease, into a **square above a ▽** in the top half (the triangle has a flat top). They mirror to **△ above a square** in the bottom half.\n- On the outer edges they become a square notch above a flat-topped triangular notch, mirrored in the lower half.\n\nOnly **B** has both the centre shapes and the edge notches in this order (D has the edge notches reversed).",
+  "topic": "folding-and-patterns",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q35": {
+  "exclude": "Top view of a complex stepped extrusion; options differ by small line positions that could not be verified with confidence.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2016-s2-q36": {
+  "answer": "C",
+  "explanation": "Conventional halftone screen angles are C 15° (105°), M 75°, Y 0° (90°), **K 45°**. Black takes 45°, the least visible angle.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q37": {
+  "exclude": "The four lowercase 'e' options differ only in subtle letterform details that cannot be told apart reliably at the source resolution.",
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "ceed-2016-s2-q38": {
+  "answer": "B",
+  "explanation": "Film was **mechanical** reproduction, close to photography, capturing scenes on **celluloid**. As it became more **self-conscious** it found it could tell stories, and grappling with the **problems** of narration produced its own signifying procedures. That is **B**.",
+  "topic": "language",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q39": {
+  "answer": "D",
+  "explanation": "Every symbol moves one step along the cycle TL → TR → BR → centre → BL → TL each frame (e.g. the boxed X goes TR → BR → centre).\n\nFrame 4: φ at TL, ⊛ (dots) at TR, θ at the centre, boxed X at BL, ⊂< at BR. That is **D**.",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q40": {
+  "answer": "A",
+  "explanation": "The afterimage shows the complementary colour. Opposite yellow is blue-violet, so the answer is **violet**.",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q41": {
+  "answer": "C",
+  "explanation": "Diesel engines are compression-ignition: the fuel ignites from the heat of compressed air, so they use glow plugs, not **spark plugs**. Monocoque bodies, steel-belted tyres and CO emissions are all true.",
+  "topic": "mechanisms",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q42": {
+  "answer": "A",
+  "explanation": "North → right turn: east → right turn: south → left turn: east. A further 45° turn to the right from east points **south-east**.",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q43": {
+  "answer": "C",
+  "explanation": "The trail Admissions › PhD › IDC › Eligibility shows the user's path through the site hierarchy. That is a **breadcrumb** trail.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q44": {
+  "answer": "D",
+  "explanation": "Every course alternates headers (short ends) and stretchers (long faces), each header centred on the stretcher below. That is **Flemish bond**. English bond would alternate whole courses of headers and of stretchers.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q45": {
+  "exclude": "In-between bird pose: options differ in subtle wing and tail positions, and choosing the correct breakdown is too subjective to verify.",
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "ceed-2016-s2-q46": {
+  "exclude": "No consistent rule linking the eight octagon sectors could be established with confidence.",
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "ceed-2016-s2-q47": {
+  "answer": "B",
+  "explanation": "Distant ridges get paler, lower in contrast and bluer-grey the farther away they are, because of the air in between. This depth cue is **atmospheric (aerial) perspective**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2016-s2-q48": {
+  "exclude": "The wiggly cauliflower outlines are near-identical blobs; shape matching (including rotation) did not separate the options reliably.",
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "ceed-2016-s2-q49": {
+  "answer": "C",
+  "explanation": "Flipping about the horizontal axis and then the vertical axis equals a 180° turn. In total that is 60° + 180° = 240° clockwise, i.e. 120° anticlockwise, so the tile stays point-up.\n\nPositions move top → bottom-left → bottom-right → top, and every hatch rotates 120° anticlockwise:\n- vertical lines (top) → lines at 30° (bottom-left)\n- steep '\\\\' (bottom-left) → steep '/' (bottom-right)\n- horizontal lines (bottom-right) → steep '\\\\' (top)\n- the centre ⊗ (45°/135°) → a plus tilted 15° (165°/75°), not an upright ⊕\n\n**C** matches, including the tilted centre cross. A has an upright plus.",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2016-s2-q50": {
+  "exclude": "Pyramid package net with interlocking flaps; slot and hole positions across four flaps could not be matched to the two views with confidence.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2017-q01": {
+  "answer": "18",
+  "explanation": "Name each silhouette and count distinct ones. 32 icons: turtle, civet, rat, rabbit, dog, crocodile, rooster, boar, monkey, ram, elephant, horse, snake, buffalo, whale, cat, snail, camel = **18** unique. Repeats: boar ×4, rooster ×4, civet ×3, and dog, crocodile, horse, snake, cat, turtle ×2 each (14 repeats; 18 + 14 = 32).",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q02": {
+  "answer": "56",
+  "explanation": "An extrusion has 2 end faces plus one side face per edge of the outline (A's 4 edges give B's 6 faces). Edges of C:\n- Top and bottom arms (stem + Y fork): 8 edges each = 16\n- Four diagonal arms ending in an L corner: 8 edges each = 32\n- Arcs of the central circle between the 6 arms: 6\n\nSide faces 16 + 32 + 6 = 54, plus 2 ends = **56**.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2017-q03": {
+  "exclude": "No single rule fits all three complete boxes (sums, products, row/column and diagonal relations tried); cannot key with confidence.",
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "ceed-2017-q04": {
+  "answer": "4",
+  "explanation": "The four cuts are identical, rotated 90° about the shared centre, so the 5 cm square splits into the 3 cm square plus 4 congruent pieces. Shaded = (25 − 9) / 4 = **4 cm²**.",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q05": {
+  "answer": "12",
+  "explanation": "Treat every crossing as a junction. Roads: W1 → X1 → X4 → East; W2 → X1 → X2 → X3 → A; W3 → X4 → X2 → (loop over the top) → X3 → East. A is reached only from X3, and X3 only from X2, by two separate segments (the straight road and the loop): 2 ways.\nNon-repeating routes from the west to X2 (X1, X4 and X2 form a triangle):\n- W1: X1→X2, or X1→X4→X2\n- W2: X1→X2, or X1→X4→X2\n- W3: X4→X2, or X4→X1→X2\n\nThat is 6 routes, each × 2 = **12**.",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2017-q06": {
+  "answer": "12",
+  "explanation": "The structure is a fullerene cage: every node joins 3 edges and every face is a pentagon or a hexagon. Euler's formula (V − E + F = 2) forces any such cage to have exactly **12** pentagons, however many hexagons it has.",
+  "topic": "3d-visualisation",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q07": {
+  "exclude": "Low-resolution render; the depth and colour of each removed cube in the staircase cut-out cannot be read reliably.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2017-q08": {
+  "exclude": "Surface count depends on hidden flange/pipe face merges that the two views do not settle unambiguously.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2017-q09": {
+  "answer": "3",
+  "explanation": "Put the axes through the common centre: cuboid |x|, |y| ≤ 10 (vertical); cylinder radius 10 along x; prism along y with a triangle of base 20 at z = −10 and apex at z = +10.\n- The cylinder already gives |y| ≤ 10, and the triangle gives |x| ≤ 10, so the cuboid cuts nothing.\n- The prism's base plane only touches the cylinder along a line.\n\nThe intersection is bounded by the cylinder's curved surface plus the prism's two sloping faces: **3** surfaces.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2017-q10": {
+  "answer": "251",
+  "explanation": "r = 21.\n- L→R and R→M are radii: 21 + 21.\n- M→N is the top half of circle 1: πr = 66.\n- Circles 2, 3 and 4 touch each other, so their centres form an equilateral triangle. O lies 30° below the horizontal from circle 2's centre, so the arc from N under circle 2 to O is 150°: (150/360)·2π·21 = 55.\n- On circle 4, the arc from O over the top to P at the bottom is 240°: 88.\n\nTotal 21 + 21 + 66 + 55 + 88 = **251 cm**.",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q11": {
+  "answer": "A,D",
+  "explanation": "The statements give the order Bulls > Cats > Snails > Dogs. So A (cats faster than bulls) and D (bulls slower than cats) are false. B and C are true. Answer **A, D**.",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q12": {
+  "exclude": "Frame is Indian bank logos; options A and D could not be identified with confidence.",
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "ceed-2017-q13": {
+  "answer": "B,C",
+  "explanation": "Colour blindness is a defect of the colour-sensing cones. A coloured after-image appears in the complementary hue (opponent-process colour vision). Both are colour phenomena. The blind spot (no receptors where the optic nerve leaves the eye) and inter-ocular distance (depth perception) are not about colour. Answer **B, C**.",
+  "topic": "everyday-science",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2017-q14": {
+  "answer": "A,B,C,D",
+  "explanation": "A plane parallel to a face gives a square. Cutting off a corner gives a triangle. A plane crossing five faces gives a pentagon. A plane through the midpoints of six edges gives a regular hexagon. All four are possible.",
+  "topic": "3d-visualisation",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q15": {
+  "answer": "A,C",
+  "explanation": "Front and top views are identical squares with a centred inner square, so the object fits a cube that shows no hidden lines from the front or the top.\n- **A**: a wedge (right-triangle prism) with a small cube sitting on its sloping face. It looks like a full square from the front and the top, with the cube as the inner square. Valid.\n- **C**: the same with a curved slope. Valid.\n- **B**: the bosses stick out past the bounding square, so the front and top outlines would not be the same square. Invalid.\n- **D**: pockets on the top and front faces would show as dashed lines in the front and top views. Invalid.\n\nAnswer **A, C**.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2017-q16": {
+  "answer": "A,B",
+  "explanation": "Read each form as bars along three axes and look for an orientation where no horizontal bar is held at only one end.\n- **A**: lay the plane of the base, the post and the top bar with its drop on the floor; the only bar out of that plane (the short stub) then stands vertical. Valid.\n- **B**: likewise, the end stub stands up. Valid.\n- **C**: bars point both ways along two axes, so in every orientation one either goes into the floor or sticks out horizontally in mid-air. Invalid.\n- **D**: whichever plane is on the floor, either the top bar or the bar on the raised end overhangs. Invalid.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2017-q17": {
+  "exclude": "Knot diagrams: over/under crossings are too fine at this resolution to decide which schematics are true knots.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2017-q18": {
+  "answer": "B,C",
+  "explanation": "Tangram areas run 4 : 4 : 2 : 2 : 2 : 1 : 1 (two large triangles; the medium triangle, square and parallelogram; two small triangles). Pixel areas of the pieces:\n- A and D: 2 large, 3 medium, 2 small. Correct.\n- B: the parallelogram measures about 1.6× its true size.\n- C: the square is the size of a large triangle (2×).\n\nAnswer **B, C**.",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q19": {
+  "answer": "B,D",
+  "explanation": "B is *Les Demoiselles d'Avignon* (1907) and D is *Three Musicians* (1921), both by Picasso. C is Matisse's *The Dessert: Harmony in Red*. A is not a Picasso.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q20": {
+  "answer": "A,B,D",
+  "explanation": "*Manthan* (1976), *Bhumika* (1977) and *Nishant* (1975) are Shyam Benegal films. *Droh Kaal* (1994) is by Govind Nihalani.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q21": {
+  "exclude": "Font match among four similar old-style 'a' glyphs at different weights is not decidable with confidence from the scan.",
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "ceed-2017-q22": {
+  "answer": "B",
+  "explanation": "Calling *absolute* non-violence a moral perversity and opposing it to the 'Gandhist doctrine of ahimsa' is Savarkar's line. This is his 1940 Hindu Mahasabha presidential address at Madurai. Tilak died in 1920. Answer **B**.",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q23": {
+  "answer": "B",
+  "explanation": "Odd rows repeat △ ▼ ▲ ◆ with a shift (row 3 starts △, row 5 starts ▼). Row 1 reads ?, ?, ▼, ▲, ◆, △, so its first two cells are ◆, △. Even rows alternate ■ ▽, so row 2 starts ■, ▽. Top ◆ △ over bottom ■ ▽ is option **B**.",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q24": {
+  "answer": "A",
+  "explanation": "Unroll the curved surface into a rectangle: the width is the circumference 5π and the height is 5. One full turn from X down to Y is the diagonal: √(5² + (5π)²) = **√(25 + 25π²)** cm.",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q25": {
+  "answer": "D",
+  "explanation": "Each consonant moves back one letter (C→B, T→S, D→C, G→F) and each vowel moves to the next vowel (A→E, O→U). So KIN → J, O, M = **JOM**.",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q26": {
+  "answer": "B",
+  "explanation": "Ranthambore is in Rajasthan, Periyar in Kerala, Jim Corbett in Uttarakhand, Manas in Assam and Bandipur in Karnataka: 1-s, 2-t, 3-p, 4-r, 5-q, option **B**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q27": {
+  "answer": "C",
+  "explanation": "The long-stroke air-cooled single with a chrome timing cover and the 'EFI-535' casting is the Royal Enfield unit-construction engine. Answer **C**.",
+  "topic": "observation",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q28": {
+  "answer": "A",
+  "explanation": "The tulip icon is the standard camera symbol for macro (close-up) mode. Answer **A**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q29": {
+  "answer": "C",
+  "explanation": "The object is a Z-profile prism with a hexagon on one profile face and a semicircle on the other. From View X, going round the faces: top (triangle) → upper vertical (square) → lower slope (bar) → bottom → lower vertical → under-slope.\n- View Y supplies the last two: under-slope (rhombus), lower vertical (quarter circle).\n- View Z is flipped and shows the bottom (pac-man) on top, with the semicircle face toward us.\n- Going clockwise from the bottom face on that side: lower slope, then upper vertical. The narrow vertical face with the missing sign is therefore the **square**.",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q30": {
+  "answer": "B",
+  "explanation": "The folds bring the bottom-left quarter of the sheet onto itself, then fold it along its diagonal. Unfold each cut through the diagonal, then the two centre lines.\n- The small triangle on the outer bottom edge maps across the diagonal to the vertical centre line. It opens into ▼ in the lower half and ▲ in the upper half. This rules out D.\n- It also leaves a right-angled notch on the top and bottom edges near each corner.\n- The stepped yellow cut, reflected across the diagonal, makes in each quarter a rectangle with a step sticking out toward the vertical centre line and down at the inner side. That matches **B**; A and C have the step in the wrong place.",
+  "topic": "folding-and-patterns",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2017-q31": {
+  "answer": "A",
+  "explanation": "Electric lamp: Edison. Bicycle: Kirkpatrick Macmillan (pedal bicycle). Elevator: Elisha Otis (safety elevator). Movie projector: Edison (Kinetoscope/Vitascope). Camera: George Eastman (Kodak). Option **A**.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q32": {
+  "answer": "C",
+  "explanation": "Each lizard reaches the top during the climb that first gets to 10 ft.\n- Green (+3, −1): heights after each attempt are 2, 4, 6, 8; the 5th climb reaches 11. **5 attempts.**\n- Red (+4, −2): heights 2, 4, 6; the 4th climb reaches 10. **4 attempts.**\n\nRed needs fewer: **C**.",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q33": {
+  "exclude": "Requires exact matching of curve end points across folded edges on four nets; endpoint positions too imprecise in the scan to verify confidently.",
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "ceed-2017-q34": {
+  "answer": "A",
+  "explanation": "On the map, school = (100 E, 0) and playground = (0, 100 S) from the temple. So the playground is map-south-west of the school. Map north is really south-east: every map direction is turned 135° clockwise. Map SW (225°) + 135° = 360°, which is **North**.",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q35": {
+  "answer": "A",
+  "explanation": "A and C each sit on a rigid bar through O, opposite B and D. Moving A down swings B up; moving C up swings D down, so the angle BOD opens. O, B, G, D form a rhombus, so G = B + D lies on the horizontal through O at 2L·cos(half-angle). G slides **left** toward O.\n\nGD = DH (both about 136 px in the figure), so H = D − B = (0, −2L·sin(half-angle)). H stays directly below O and moves **straight down**. Option **A**.",
+  "topic": "mechanisms",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2017-q36": {
+  "answer": "A",
+  "explanation": "Full red, a bit over half green and no blue gives orange (255, 140, 0 is the named colour 'dark orange'). Yellow would need G ≈ 255; brown needs lower R. Answer **A**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q37": {
+  "exclude": "Hand overlap order and thumb orientation in the options are too subtle to tie to the illustration's viewpoint with confidence.",
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "ceed-2017-q38": {
+  "answer": "C",
+  "explanation": "The figure turns 45° clockwise each step: the touching black–white pair points to the lower-left in figure 1, left in figure 2 and upper-left in figure 3. So '?' is figure 2 turned 90° clockwise:\n- pair in the top arm, black outermost\n- centre: white upper-right, black lower-right\n- right arm: white above black\n- bottom arm: black upper-left, white lower-right\n- left arm: black outer, white inner\n\nOnly **C** matches; B and D have the centre or right-arm dots swapped, and A is unrotated.",
+  "topic": "folding-and-patterns",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q39": {
+  "answer": "C",
+  "explanation": "P is Gauguin (*Les Misérables* self-portrait, 1888). Q is Rembrandt (1660). R is Picasso's 1972 self-portrait. S is Van Gogh (1889). P-2, Q-4, R-1, S-3, option **C**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q40": {
+  "answer": "A",
+  "explanation": "Stacking cut-out sheets leaves an opening only where all three are open, so S = P ∩ Q ∩ R. Overlaying P and R on each option at the same scale: only **A** reproduces S (pixel mismatch about 1% at the edges). B leaves extra openings; C and D close openings that S has.",
+  "topic": "folding-and-patterns",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q41": {
+  "answer": "C",
+  "explanation": "Standard projection is 24 frames/s, and 90 ft/min = 1.5 ft/s. 24 / 1.5 = **16 frames per foot**, the standard for 35 mm film.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q42": {
+  "answer": "A",
+  "explanation": "In X the vowel signs pop up as a ring of wide wedges right around the touched consonant: near, large targets. In Y they sit in a row of small keys that the finger must slide along: far, narrow targets. By Fitts's law, X is faster: **A**.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2017-q43": {
+  "answer": "D",
+  "explanation": "The ball starts 1 m up, and the hump is only 0.2 + 0.045 = 0.245 m. It has enough energy to clear the hump, drop past Q and roll onto the floor. The floor has very little friction, so it keeps rolling past R and is still moving at S. Answer **D**.",
+  "topic": "everyday-science",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2017-q44": {
+  "answer": "B",
+  "explanation": "The word 'palindrome' is lettered so that it still reads the same when turned 180°. A word designed to read the same under rotation or reflection is an **ambigram**. A palindrome is a sequence of letters, not a lettering design.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2017-q45": {
+  "answer": "A",
+  "explanation": "Both cameras must stay on one side of the line between the two people, with A frame-right and B frame-left.\n- Camera 2 (behind A's left shoulder, looking at B): A's shoulder is on the right of frame, B on the left.\n- Camera 3 (behind B, looking at A): B on the left, A on the right.\n- Cameras 1 and 4 put the people on the opposite sides.\n\nAnswer **2 and 3** (A).",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2018-q01": {
+  "exclude": "Face count needs a full 3D reconstruction of a voxel lattice from two partial views; hidden faces cannot be confirmed.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2018-q02": {
+  "answer": "12",
+  "explanation": "Shapes of five edge-joined squares are **pentominoes**. Counting rotations and reflections as the same shape, there are exactly **12** free pentominoes (F, I, L, N, P, T, U, V, W, X, Y, Z), including the four shown.",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2018-q03": {
+  "answer": "23",
+  "explanation": "Rotations count as distinct (A and B differ only by rotation). Distinct tiles in the grid:\n\n- 1 each: framed black square, horizontal lines, vertical lines, grid, `\\\\` hatch, `//` hatch, two vertical panels, solid black, empty square, half-black diamond, cross-hatch → **11**\n- half black: left, right, top, bottom → **4**\n- black triangle: top-left, top-right, bottom-left, bottom-right → **4**\n- small corner square: top-left, top-right, bottom-left, bottom-right → **4**\n\nTotal 11 + 4 + 4 + 4 = **23**.",
+  "topic": "observation",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2018-q04": {
+  "answer": "25",
+  "explanation": "Trace each closed four-cornered outline: there are **25** separately drawn squares, tilted at various angles (one small upright square sits near the top centre). The large upright frame is a rectangle (wider than tall), so it is not counted. Answer **25**.",
+  "topic": "observation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2018-q05": {
+  "answer": "60",
+  "explanation": "On the hue wheel, red = 0°, green = 120°, blue = 240°. Yellow lies midway between red and green (red + green light), so its hue is **60°**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q06": {
+  "answer": "6",
+  "explanation": "Slide a three-letter window along each line:\n\n- Line 1: **SET**, **HUB**, **BAN**\n- Line 2: **HID**\n- Line 3: **FOX**\n- Line 4: none\n- Line 5: **DIP**\n\nTotal **6**.",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2018-q07": {
+  "answer": "3736",
+  "explanation": "Each code is (4n + 1) followed by 4n: 3 → 13|12, 4 → 17|16, 8 → 33|32. So 9 → 37|36 = **3736**.",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q08": {
+  "answer": "15",
+  "explanation": "Each move captures at most one pawn, so at least 15 moves are needed. Squares: knight b1; pawns form a ring around c3 (b2, c2, d2, b3, d3, b4, c4, d4) and a group e5, f5, g5, e6, g6, e7, g7.\n\nA 15-move tour exists: b1→d2→b3→d4→c2→b4→d3→b2→c4 (ring, 8 moves), c4→e5, then e5→g6→e7→f5→g7→e6→g5. Every move lands on a pawn, so the minimum is **15**.",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2018-q09": {
+  "answer": "C,D",
+  "explanation": "The passage presents knowledge as built from several standpoints (nayas), not one fixed view, so **C** holds. It says epistemic principles (pramana) *and* practical stances (nayas) are both essential constituents, which is **D**. It never asks for a rigorous validation process (A false) and it explicitly *distinguishes* principles from stances rather than conflating them (B false).",
+  "topic": "language",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2018-q10": {
+  "exclude": "Statement D is ambiguous: 'verb-like' is Hayles's gloss, not Tzannes's wording, so its truth depends on the setter's intent.",
+  "topic": "language",
+  "difficulty": 2
+ },
+ "ceed-2018-q11": {
+  "exclude": "Whether B ('knowing is the cause of doubtfulness') follows from 'doubt grows with knowledge' is a judgement call; key cannot be fixed with confidence.",
+  "topic": "language",
+  "difficulty": 2
+ },
+ "ceed-2018-q12": {
+  "answer": "B,C",
+  "explanation": "Long hours of mouse and keyboard work on poor furniture cause **carpal tunnel syndrome** (B) and **repetitive stress injury** (C). Osteoporosis is bone-density loss and athlete's foot is a fungal infection; neither comes from this work.",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q13": {
+  "answer": "A,B",
+  "explanation": "This is Escher's *Day and Night*: interlocking birds tile the plane (**tessellation**, A), and black and white birds alternate as figure and background (**figure and ground**, B). It is not staging (mise en scène) or a collage of pasted materials.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q14": {
+  "answer": "A,B",
+  "explanation": "Visuals are either abstract or non-abstract, never both. Logos are abstract and photographs non-abstract, so no visual is both a logo and a photograph: **A** and **B** are true. An abstract photograph (C) or a non-abstract logo (D) cannot exist under the statements.",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2018-q15": {
+  "exclude": "Whether D (weight penalty negligible) counts as a 'reason for the recommendation' is ambiguous; key cannot be fixed with confidence.",
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "ceed-2018-q16": {
+  "answer": "B,D",
+  "explanation": "Side mirrors are convex: they form diminished images, so objects look smaller and therefore farther away than they are (**B**), and their curvature gives a wider field of view (**D**). They do not magnify (A) or show true size (C).",
+  "topic": "everyday-science",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2018-q17": {
+  "answer": "D",
+  "explanation": "From the views, circle is adjacent to triangle, window, star and cmd, so circle is opposite sun; triangle is opposite star; window is opposite cmd.\n\nPlace triangle on top, window and circle round the corner as in A. Then B (star–cmd–circle) and C (sun–star–window) show the same clockwise order around their corners as this cube. In D the corner triangle–cmd–sun appears in the **reverse** order (a mirror image), so **D** is not the same box.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2018-q18": {
+  "answer": "D",
+  "explanation": "The curved cut runs from the bottom-left edge up to the top-right edge, so the remaining solid is full height only at the far side. Seen from the left, the outline narrows to a point at the top (as in B and D). The cut surface faces the viewer and reaches the ground only at the centre line; towards the sides it is higher, so the uncut cylinder wall shows as dark wedges at the bottom corners. That shaded view is **D**.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2018-q19": {
+  "answer": "D",
+  "explanation": "Read colours clockwise from any corner. A: red→green→blue→orange. B (blue, orange, red, green) and C (orange, red, green, blue) give the same cycle. D reads blue→orange→green→red, i.e. red→blue→orange→green, a different (mirrored) cycle, so **D** is not a rotation.",
+  "topic": "3d-visualisation",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q20": {
+  "answer": "D",
+  "explanation": "The four folds stack all four sheet corners at the right-angle corner of the final triangle, and the last diagonal fold maps that same corner onto the sheet's centre. So the small **square** cut there appears at all four sheet corners *and* as a group around the centre. The two **diamond** cuts lie elsewhere and unfold into diamonds along the diagonals. Only **D** has squares at the corners and centre with diamonds elsewhere.",
+  "topic": "folding-and-patterns",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2018-q21": {
+  "answer": "A",
+  "explanation": "Approximate straight-line distances: Lucknow–Bhopal ≈ 480 km (M), Kolkata–Bengaluru ≈ 1,550 km (L), Ahmedabad–Guwahati ≈ 1,950 km (K), Delhi–Thiruvananthapuram ≈ 2,230 km (N). Ascending: **M-L-K-N**.",
+  "topic": "everyday-science",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2018-q22": {
+  "answer": "D",
+  "explanation": "The painting is Raja Ravi Varma's *Hamsa Damayanti*: **Damayanti** talks with the swan that carries messages between her and Nala.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q23": {
+  "answer": "C",
+  "explanation": "Renaissance (15th–16th c.) → Baroque (17th c.) → Arts and Crafts (late 19th c.) → Art Deco (1920s–30s). Option **C**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q24": {
+  "answer": "B",
+  "explanation": "Overlay the two 7×7 grids cell by cell: each black cell stays black, each pink cell stays pink, empty cells stay empty. Checking every row, only **B** matches; A has a pink cell one column off in row 5, C misses a pink cell in row 3 and adds one in row 4, D shifts the black cell in row 1.",
+  "topic": "folding-and-patterns",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2018-q25": {
+  "answer": "A",
+  "explanation": "The word is set in a heavy, near-monoline Gujarati sans whose terminals end in a filled blob (on ન) and blunt angled cuts. Option **A** matches that stroke weight and blob terminal; B and D are lighter with flat terminals, and C has a lighter stroke.",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2018-q26": {
+  "answer": "B",
+  "explanation": "Starlight passes through air layers of varying density and temperature; the changing **atmospheric refraction** shifts its path and brightness, so stars twinkle.",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q27": {
+  "answer": "A",
+  "explanation": "S: lips slightly apart (3); T: teeth showing (2); A: mouth wide open (1); N-D: teeth again (2); U: rounded small mouth (4); P: lips closed (5). Sequence **3, 2, 1, 2, 4, 5**.",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2018-q28": {
+  "answer": "A",
+  "explanation": "Sri Lanka's flag has a gold lion facing the hoist (towards the green and saffron stripes) holding a sword in its raised forepaw, with a bo leaf in each corner of the maroon panel. **A** shows this; B mirrors the lion, C and D lack the bo leaves.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2018-q29": {
+  "answer": "D",
+  "explanation": "The frames go stance (bat grounded) → **?** → bat swinging down across → follow-through over the shoulder. Between stance and downswing comes the **backlift**, bat raised high behind the head: option **D**.",
+  "topic": "mechanisms",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2018-q30": {
+  "answer": "B",
+  "explanation": "Elon Musk → Tesla (P2); Alexandre Dumas → *The Three Musketeers* (Q3); Dean Kamen → Segway (R4); James Dyson → cyclone vacuum cleaner (S1). Option **B**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q31": {
+  "answer": "A",
+  "explanation": "Fixed pulleys only change the rope's direction; they give no mechanical advantage. Every metre the truck pulls shortens the load side by one metre, so lifting 8 m needs **8 m** of travel.",
+  "topic": "mechanisms",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q32": {
+  "answer": "C",
+  "explanation": "In Indian homes the kitchen platform is used mainly by women, and a fixed work height that suits most of them is based on the middle of the female height distribution (50th percentile), not the tallest 5% or a male–female average. Option **C**.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2018-q33": {
+  "answer": "B",
+  "explanation": "Daytime-on headlights make small two-wheelers more **conspicuous**, so pedestrians and oncoming drivers notice them earlier. In daylight the beam does little for the rider's own vision (C). Option **B**.",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q34": {
+  "answer": "D",
+  "explanation": "This is the **Barcelona chair** (1929), with tufted leather cushions on a crossed steel X-frame, designed by **Ludwig Mies van der Rohe** (with Lilly Reich).",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q35": {
+  "exclude": "Ranking clusters by 'interactivity' depends on a subjective reading of door orientations; key cannot be fixed with confidence.",
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "ceed-2018-q36": {
+  "answer": "A",
+  "explanation": "From the sacrum the hind limb runs: pelvis down and back to the hip joint, femur down to the stifle, tibia down and back to the hock, then cannon bone to the fetlock. That needs four segments with a change of angle at the stifle, which matches **A**. B and D have too few joints, and C's short near-vertical then horizontal start does not match the pelvis–femur shape.",
+  "topic": "observation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2018-q37": {
+  "exclude": "Source image is low resolution; careful comparison finds 7 differences, which matches no option, so the key cannot be confirmed.",
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "ceed-2018-q38": {
+  "answer": "C",
+  "explanation": "The Apple logo has the bite on the **right** side and the leaf tilting to the **right**. A and B have the bite on the left; D's leaf leans left. Option **C**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q39": {
+  "answer": "C",
+  "explanation": "Kanji, hiragana and katakana are the Japanese scripts; jiaguwen is ancient Chinese oracle-bone script. All are **writing systems**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q40": {
+  "answer": "D",
+  "explanation": "Slow motion means shooting at a frame rate **higher** than the playback rate (usually 24–30 fps), so the footage stretches out when played back. Only **64 fps** is above it.",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2018-q41": {
+  "answer": "B",
+  "explanation": "Track the black and green legs (character walks right). 1: black leg forward (contact). Next the green leg swings through while the black supports: 4. Then green forward, black back: 3. Then black swings through: 2. Then back to 1. The cycle 1→4→3→2 read from 4 is **4, 3, 2, 1**.",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2019-q01": {
+  "exclude": "Font odd-one-out among 20 old-style-figure numbers; the raster image does not let the differing glyphs be identified with confidence (1s of 5116/9116/1914/1947 vs 1379/1785/3261 differ in height, so more than one candidate).",
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "ceed-2019-q02": {
+  "answer": "7",
+  "explanation": "In every row, third number = first + second - 1: 2+4-1=5, 1+3-1=3, 5+4-1=8, 1+1-1=1, 3+4-1=6, 2+3-1=4, 5+3-1=7. Last row: 4+4-1 = **7**.",
+  "topic": "logic-and-counting",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2019-q03": {
+  "answer": "17",
+  "explanation": "Lines: square, both midlines, both diagonals, and four quarter-circle arcs (radius = side) each centred on a corner and joining the two corners next to it.\n\n- 4 corners (sides, diagonal and two arcs meet)\n- 4 side midpoints (midlines meet the sides)\n- 1 centre (both midlines and both diagonals)\n- 4 points where two arcs cross a midline (at 0.73 of the half-side from the centre)\n- 4 points where an arc crosses the diagonal through its own centre\n\nArcs meet each other only at those corners and midline points, and are tangent to the sides at the corners. Total **17**.",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2019-q04": {
+  "answer": "330",
+  "explanation": "The chain links the 10 cm chainring to the 5 cm rear sprocket, so the rear wheel turns 10/5 = 2 times per pedal turn. 1.5 pedal turns give 3 wheel turns. The rear wheel is 35 cm across: distance = 3 x (22/7) x 35 = 3 x 110 = **330 cm**.",
+  "topic": "mechanisms",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2019-q05": {
+  "answer": "3",
+  "explanation": "There are 24 glasses. 7 are full (shaded with a light rim at the top); shading seen inside other glasses is a full glass behind them, so those are empty. That leaves 17 empty. Each full glass half-fills 2 empty glasses, so 7 x 2 = 14 get filled. **17 - 14 = 3** stay empty.",
+  "topic": "observation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2019-q06": {
+  "exclude": "Surface count of two interlocking plates with a curved handle and holes; the hidden geometry cannot be pinned down with confidence from the two views.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2019-q07": {
+  "answer": "13.5",
+  "explanation": "The tube is a siphon. It runs while A's water surface is above B's surface and the inlet (at 2 ft) is under water. Both tanks have a 3 x 3 = 9 sq ft base, so as A drops, B rises by the same amount. B starts at 1 ft and its rim is at 2.5 ft. B reaches the rim after rising 1.5 ft, when A is at 4.5 ft. After that B overflows and stays at 2.5 ft, so flow stops when A also falls to 2.5 ft (still above the 2 ft inlet). A's floor is at 1 ft, so A holds 9 x (2.5 - 1) = **13.5 cu ft**.",
+  "topic": "everyday-science",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2019-q08": {
+  "answer": "4.82 to 4.84",
+  "explanation": "Set D = (0,0,2), A = (0,2,2), C = (4,0,2), B = (4,2,2), with the base EFGH at z = 0. I lies in the plane of face BCGF, x = 4. AI = DI puts I halfway between y = 0 and y = 2, so y = 1. Then AI^2 = 4^2 + 1^2 + (z - 2)^2 = 25, which gives (z - 2)^2 = 8 and z = 2 + 2√2 ≈ **4.83 cm**.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2019-q09": {
+  "answer": "57",
+  "explanation": "The lens starts with 1 edge, its rim. Each prismatic hole goes through both curved faces. It adds n edges on the front face, n on the back face and n edges along its length: 3n in all. Triangle 9, square 12, pentagon 15, hexagon 18. A circular hole adds only its 2 rim circles. Total = 1 + 9 + 12 + 15 + 18 + 2 = **57**.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2019-q10": {
+  "answer": "17",
+  "explanation": "20J + 3B = M + P, so 80J = 4M + 4P - 12B. Substitute into 2M + 5B = 4P + 80J: 2M + 5B = 4P + 4M + 4P - 12B, which gives 17B = 2M + 8P. So 8 papayas + 2 mangoes = **17 bananas**.",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2019-q11": {
+  "exclude": "Option C (four-colour screen printing of a gradient logo) can be read either way, depending on whether halftone process printing is assumed.",
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "ceed-2019-q12": {
+  "answer": "A,C",
+  "explanation": "Each option is a rotation combined with one flip, so each is a single mirror reflection. Taking clockwise as negative angle and H-flip as a mirror about the vertical axis:\n\n- A = R(90)·H·R(45), a mirror about the line at 67.5°\n- B = H·R(135), mirror at 157.5°\n- C = V·R(135), mirror at 67.5°\n- D = R(45)·H·R(90), mirror at 112.5°\n\nA and C are the same operation. In P, the dark fibrous stone sits left of the reddish stone (direction about 168°). In Q it sits right and below (about -29°). The mirror axis is half their sum, about 69°, which matches 67.5°. The reddish stone's long axis checks the same way. Answer **A and C**.",
+  "topic": "folding-and-patterns",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2019-q13": {
+  "answer": "C,D",
+  "explanation": "A figure can be drawn in one stroke only if it has 0 or 2 odd-degree points (Euler path).\n\n- A: each corner has 2 sides + 1 diagonal + 2 arcs = 5, so four odd points. Not drawable.\n- B: each corner has 2 sides + 4 arcs + 1 diagonal = 7, so four odd points. Not drawable.\n- C: each corner has 2 sides + 4 arcs = 6. All even, drawable.\n- D: like C plus one diagonal through the centre dot (degree 2). Its two end corners become 7, so exactly two odd points. Drawable.",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2019-q14": {
+  "exclude": "Statements A-C turn on vague thresholds ('about half', 'about three-fourth') read off a tilted 3D pie. Measured shares (about 22, 19, 16.5, 14, 11, 8.5, 5.5, 3%) leave A, B and C open to interpretation.",
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "ceed-2019-q15": {
+  "exclude": "Whether the red mark lies inside the support base of tables C and D cannot be measured reliably from the oblique drawing; it is borderline.",
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "ceed-2019-q16": {
+  "answer": "B",
+  "explanation": "Views are third-angle: the top view sits above the front view and the left view to its left. In the top view the bottom row is the front. In the left view the right column is the front.\n\n- Front view gives (column, height): (1, top), (1, middle), (3, middle), (2, bottom).\n- Left view gives depth: top ball at the back, middle balls at the front, bottom ball at the back.\n\nSo the top view should show (col 1, back), (col 1, front), (col 3, front), (col 2, back). A, C and D match. B is drawn in the middle row but should be in the back row. Answer **B**.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2019-q17": {
+  "answer": "A,B,C",
+  "explanation": "Read the 7 x 7 tile grid off the diamond (turn it 45° anticlockwise so its edges are horizontal) and compare cell by cell. C matches it exactly, A is that grid turned 180° and B is it turned 90°. D matches no rotation (nor a mirror). Answer **A, B, C**.",
+  "topic": "folding-and-patterns",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2019-q18": {
+  "exclude": "A, B and C clearly show squash or stretch. D (frog with a ballooned body/throat) could be read either way.",
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "ceed-2019-q19": {
+  "answer": "A,D",
+  "explanation": "At 1:1, each video pixel uses one screen pixel. For a given video, a higher-resolution monitor (smaller pixels at the same screen size) shows it **smaller**, so A is true and B false. On a given monitor, a higher-resolution video covers more screen pixels and looks **bigger**, so D is true and C false.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2019-q20": {
+  "answer": "A,D",
+  "explanation": "The lines are really the same length, so a longer drawn line is closer. Line 3 is drawn longest, so it is closest (**D**). True thickness ∝ drawn thickness / drawn length (both scale with distance). Line 1 is drawn shortest yet thickest, so it is by far the thickest (**A**). Line 2 is drawn thicker than line 3 although it is farther, so they differ (C false). The stem says the thicknesses differ, and the ratios bear that out (B false).",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2019-q21": {
+  "exclude": "The four options differ only in tiny details of the Parle-G wordmark (hyphen, G). They cannot be checked against the real logo without a reference.",
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "ceed-2019-q22": {
+  "answer": "A",
+  "explanation": "The grid uses four 4-dot braille-like glyphs and repeats every three rows: rows 1, 4 and 7 read the same, and so do rows 2, 5 and 8. Row 4, columns 6-7 = J R, and row 5, columns 6-7 = L F (J, R, L, F name the four glyph shapes). So the missing 2 x 2 block is (J R / L F), which is option **A**.",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2019-q23": {
+  "answer": "B",
+  "explanation": "Lay the pink set and the green set over each option. Only B contains every pink line and every green line unchanged. A and C each have a green line moved or tilted, and D has a pink line moved.",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2019-q24": {
+  "exclude": "The four drawings differ only in tiny fist and thumb details; the 'correct' one cannot be told apart with confidence.",
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "ceed-2019-q25": {
+  "answer": "A",
+  "explanation": "Lizards climb with a diagonal (trotting) gait: front-left and hind-right reach forward together while the other diagonal pair pushes back, and the body bends toward the side whose feet are close together. In A, front-left and hind-right reach forward, front-right and hind-left are back, and the right-side feet sit close. B, C and D break the diagonal pairing (D is symmetric, C has both hind legs back).",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2019-q26": {
+  "answer": "C",
+  "explanation": "The poles rest on the bearers' shoulders. In C the seat hangs below the poles, so the traveller's weight sits low between the supports: stable, and the palki does not tip or roll. The seat also sits at a comfortable height between the bearers. A and B perch the seat on or above the poles (top-heavy). D's bent poles put the load above the shoulders and are awkward to hold.",
+  "topic": "everyday-science",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2019-q27": {
+  "answer": "A",
+  "explanation": "The lower pipe is straight, but the four short pieces above it tilt alternately left and right. Seen from below, each tilted ring lets light through only where its bottom and top openings overlap: two offset ellipses whose overlap is a pointed lens. The light reaching the sheet is the intersection of these, a pointed lens shape (**A**), not a full ellipse or circle.",
+  "topic": "everyday-science",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2019-q28": {
+  "exclude": "The translucent rendering of the stacked cubes makes it unclear which rows were removed. Options A, C and D differ by single cells.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2019-q29": {
+  "exclude": "Two successive 3D rotations of an asymmetric multi-arm object; the arm positions could not be traced reliably in the small perspective options.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2019-q30": {
+  "exclude": "Unfolding the cut triangle gives kite-shaped holes along the diagonal fold, yet every option shows only triangles, so the cut geometry could not be matched to an option with confidence.",
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "ceed-2019-q31": {
+  "answer": "B",
+  "explanation": "A smaller aperture (higher f-number) narrows the cone of light from each point. Blur away from the focal plane shrinks, so more of the scene looks sharp: **smaller aperture, larger depth of field**. Aperture changes exposure, not the size of the image.",
+  "topic": "everyday-science",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2019-q32": {
+  "exclude": "Two independent solves split between A and B; choosing depends on reading face shading and rotation progress, not settled by the drawing.",
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "ceed-2019-q33": {
+  "answer": "C",
+  "explanation": "From the wall on the left (west) the cat sees two side walls. The main block's end wall is on its left (north, nearer) and the front wing's side wall on its right (south, farther). Each has one window. The main block is nearer, so it looks larger in wall height, roof and window, and the wing looks smaller and lower. Only **C** shows this perspective scaling. A keeps equal wall heights, B is symmetric, and D adds a third face the cat cannot see.",
+  "topic": "3d-visualisation",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2019-q34": {
+  "answer": "A",
+  "explanation": "The squares run as one chain. Row 1 goes left to right with dots growing, then row 2 runs right to left as the dots merge into black with white star-shaped gaps that shrink to specks, then back to large sparse circles, and row 3 shrinks them again. The gap sits between a black square with a few tiny sparse specks and the sparse large circles with big white gaps. It needs a black square with sparse, medium white star gaps: **A**.",
+  "topic": "folding-and-patterns",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2019-q35": {
+  "answer": "B",
+  "explanation": "Black clay mug with cane handle: north-east black pottery (Naga). Willow wicker: Jammu & Kashmir. Lacquered turned-wood rattle: Andhra Pradesh (Etikoppaka). Brass crocodile: dhokra metal casting of Chhattisgarh (Bastar). Only option **B** names that set.",
+  "topic": "design-knowledge",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2019-q36": {
+  "answer": "C",
+  "explanation": "The carved wooden elephant, with its pierced lattice and baby elephant inside, is made by cutting the block, drilling the openings, chiselling the carving and finishing the surface. Casting, milling, punching and forming are metal or sheet processes. Answer **C**.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2019-q37": {
+  "answer": "B",
+  "explanation": "P has human hands and feet. Q is a bird. R's legs and back are deer-leg/antler-like. S has raised human arms and hands. So only Q is bird-like, R has deer elements, and only P and S have human elements: **B**. A and D wrongly give only P human elements, and C says only S does.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2019-q38": {
+  "answer": "B",
+  "explanation": "Right angles occur only between horizontal and vertical lines, so each right triangle has its hypotenuse along a diagonal. On one half-diagonal (centre O, inner corner I, outer corner C) the drawn legs allow O-I (2 ways) and O-C (2 ways), but not I-C. That gives 4 per half-diagonal, 16 in all. Across the centre, each diagonal also gives 2 halves of the inner rectangle and 2 halves of the outer rectangle: 8 more. Total **24**.",
+  "topic": "logic-and-counting",
+  "difficulty": 3,
+  "confidence": "high"
+ },
+ "ceed-2019-q39": {
+  "answer": "B",
+  "explanation": "In top view, a solid of revolution shows a circle at each radius where the profile has a visible edge or vertical tangent. Visible from above:\n\n- the outer flare (1.0)\n- the outer bulge (0.87)\n- the top knob (0.65)\n- the crease where the knob's side meets the shoulder (0.37)\n- the small step near the axis (0.1)\n\nThe hook under the knob and the waist under the bulge are hidden by overhangs, and the shoulder's inflection is smooth, so they draw no line. Measured circle ratios in B are 1, 0.875, 0.65, 0.375, 0.1, a match. A also draws the hidden edges, C has the wrong inner circle, and D has no centre circle.",
+  "topic": "3d-visualisation",
+  "difficulty": 3,
+  "confidence": "medium"
+ },
+ "ceed-2019-q40": {
+  "answer": "A",
+  "explanation": "The ball moves clockwise round the corners: TL, TR, BR, BL, TL, TR, BR, BL, so the 9th is at **top-left**. The hook's opening turns about 45° anticlockwise each frame: right, up-right, up, up-left, left, down-left, down. The next step opens down-right, which is the hook in A and C. A has the ball top-left: **A**.",
+  "topic": "logic-and-counting",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2019-q41": {
+  "answer": "B",
+  "explanation": "A street-art illusion is drawn anamorphically: seen from a low angle, the road surface is strongly foreshortened. So the sketch on paper, which is the road's plan view, must be stretched along the viewing direction to look correct from the viewpoint. Only **B** shows the rocket and hole elongated that way.",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2019-q42": {
+  "answer": "D",
+  "explanation": "The first blank takes a noun ('the facts'), so it needs a preposition: 'Notwithstanding the facts' means 'despite the facts'. 'Nevertheless' and 'However' are adverbs and cannot take an object, and 'Apparently, initially' makes no sense. Going ahead despite the facts plausibly ends in a 'sad situation'. **D**.",
+  "topic": "language",
+  "difficulty": 1,
+  "confidence": "high"
+ },
+ "ceed-2019-q43": {
+  "answer": "B",
+  "explanation": "Row 1 shows full rainbow gradients: Spectrum (Q). Row 2 shows greys to blue: Cool (R). Row 3 shows smooth blends between neighbouring hues: Harmony (S). Row 4 shows red, green, yellow and violet, two complementary pairs: Complementary (P). 1Q, 2R, 3S, 4P = **B**.",
+  "topic": "design-knowledge",
+  "difficulty": 2,
+  "confidence": "medium"
+ },
+ "ceed-2019-q44": {
+  "answer": "C",
+  "explanation": "Menu to back: the three lines tilt clockwise (7, then 11), stand vertical and start converging (2), close into an arrow pointing down-left (8), then further left (12), and finish as the left arrow (6). The frame meanwhile rounds from square to circle. Back to menu: the arrow turns up through up-left (5, then 3) to up (10, fixed), the lines separate and lie down (9, then 4), and the menu returns (13). Order 1, 7, 11, 2, 8, 12, 6, 5, 3, 10, 9, 4, 13 = **C**.",
+  "topic": "observation",
+  "difficulty": 2,
+  "confidence": "high"
+ },
+ "ceed-2019-q45": {
+  "answer": "B",
+  "explanation": "The latch must be out of every child's reach yet reachable by every adult in an emergency. Since the tallest child is shorter than the shortest adult, the limiting user is the **shortest adult**. Set it by their height, as high as they can still operate. Using the tallest adult would lock out shorter adults, and a child-based height lets children open it.",
+  "topic": "design-knowledge",
+  "difficulty": 1,
+  "confidence": "high"
+ }
+}
