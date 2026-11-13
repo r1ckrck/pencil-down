@@ -167,11 +167,11 @@ Every question has a time budget: MCQ 60 s, MSQ 90 s, NAT 120 s (editable). What
 | Creativity | 0–2 | 2–10 | min 11 | 11–22 | 22–24 |
 | Visual sensitivity | 0–2 | 2–10 | min 11 | 11–22 | 22–24 |
 | Form sensitivity | 0–2 | 2–10 | min 11 | 11–22 | 22–24 |
-| Problem identification | 0–2 | 2–10 (framing), 11–13 pick | min 13 | 13–22 | 22–24 |
+| Problem identification | 0–2 | 2–10 framing, 10–12 pick | min 13 (window 12–13) | 13–22 | 22–24 |
 
-**Full Part B mock (120 min):** 6 min read-all with idea-seed notes · 5 × 22 min with hard stamps (one per slot, real paper order) · 6 min buffer incl. "tick answered" reminder. Commit screens fire at each slot's commit point.
+**Full Part B mock (120 min):** 6 min read-all with idea-seed notes · 5 × 22 min with hard stamps (one per slot, real paper order) · 4 min buffer incl. "tick answered" reminder. Commit screens fire at each slot's commit point.
 
-**Past paper (separate option, 120 min):** one real year's five Part B questions as printed, in printed order, with that year's own criteria and marks. Same structure as the full mock (read-all, 5 timed blocks, buffer), commit screens included. Opt-in only; the questions also stay in the shared pool. Older papers with a different format (2013–2019 electives) are offered only where they map cleanly to five questions.
+**Past paper (separate option, 120 min):** one real year's five Part B questions as printed, in printed order, with that year's own criteria and marks. Same structure as the full mock (6 read-all, 5 × 22, 4 buffer), commit screens included. Opt-in only; the questions also stay in the shared pool. Older papers with a different format (2013–2019 electives) are offered only where they map cleanly to five questions.
 
 **Full exam (180 min):** Part A mock (60) → lock → Part B mock (120). Mirrors 17 Jan.
 
@@ -408,7 +408,7 @@ One continuous build, worked in this order because each step feeds the next:
 - [ ] Phase boundaries match §5.3 to the second (test with fake clock).
 - [ ] Commit timeout auto-locks the last starred idea; `auto_committed` recorded.
 - [ ] Seconds-to-commit stored for every attempt.
-- [ ] Full Part B mock and Part B past paper follow 6 / 5 × 22 / 6 stamps.
+- [ ] Full Part B mock and Part B past paper follow 6 / 5 × 22 / 4 stamps (120 min).
 - [ ] With question hiding on, the prompt is visible only in the windows defined in §5.0, has no peek control, and reappears in the Debrief (fake-clock test).
 
 ### App

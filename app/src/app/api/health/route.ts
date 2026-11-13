@@ -1,8 +1,8 @@
-import { DatabaseSync } from "node:sqlite";
+import { connection } from "next/server";
+import { getDb } from "@/db/db";
 
 export async function GET() {
-  const db = new DatabaseSync(":memory:");
-  const row = db.prepare("select sqlite_version() as v").get() as { v: string };
-  db.close();
-  return Response.json({ ok: true, sqlite: row.v });
+  await connection();
+  const row = getDb().prepare("SELECT sqlite_version() AS v").get() as { v: string };
+  return Response.json({ ok: true, sqlite: row.v, serverNow: Date.now() });
 }

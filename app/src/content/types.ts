@@ -28,10 +28,19 @@ export const TOPICS: Topic[] = [
   "language",
 ];
 
-export type Answer =
+export type SimpleAnswer =
   | { kind: "MCQ"; option: Option }
   | { kind: "MSQ"; options: Option[] } // sorted, 1–4 entries
   | { kind: "NAT"; min: number; max: number }; // inclusive range; min === max for exact keys
+
+// Official keys sometimes accept alternatives or drop a question.
+// ANY: the response is scored against each alternative and the best result counts (e.g. NAT "7 OR 9", MSQ "B OR B,C").
+// DROPPED: every candidate, including blank, receives `marks`. Excluded from mocks, drills and revisit; kept whole in past papers.
+// Generators only ever produce SimpleAnswer.
+export type Answer =
+  | SimpleAnswer
+  | { kind: "ANY"; of: SimpleAnswer[] }
+  | { kind: "DROPPED"; marks: number };
 
 export type AnswerStatus = "official" | "solved" | "constructed";
 
@@ -54,7 +63,7 @@ export interface PartAQuestion {
   answerStatus: Exclude<AnswerStatus, "constructed">;
   topic: Topic;
   difficulty: Difficulty;
-  animated: boolean; // original used an animated GIF; excluded from every session
+  animated: boolean; // original used an animated GIF: excluded from mocks, drills and revisit; shown as a still with a note in past papers
   explanation: string | null; // markdown; must reach the stored answer
 }
 
@@ -91,7 +100,7 @@ export interface GeneratedQuestion {
   stem: string; // one or two sentences, plain text
   figure: string; // SVG markup; uses currentColor and CSS classes only (no hex), viewBox set, no width/height
   options: { label: Option; svg: string }[] | null; // null for NAT
-  answer: Answer;
+  answer: SimpleAnswer;
   explanation: string; // markdown
 }
 
@@ -101,7 +110,7 @@ export interface Generator {
   formats: Format[];
   generate(seed: number, difficulty: Difficulty, format: Format): GeneratedQuestion;
   // Independent solver: derives the answer by a different method than generate() used.
-  solve(q: GeneratedQuestion): Answer;
+  solve(q: GeneratedQuestion): SimpleAnswer;
 }
 
 // ---------- Part B (content/part-b/prompts.json, papers.json) ----------
@@ -165,7 +174,7 @@ export interface Card {
   priority: "P1" | "P2" | "P3"; // P1 asked in a paper, P2 same family as P1, P3 canon only
   front: { text: string; image: string | null }; // image relative to content/cards/
   back: string; // markdown, 1–4 short lines
-  credit: { author: string; licence: string; sourceUrl: string } | null; // required when front.image is set
+  credit: { author: string; licence: string; sourceUrl: string } | null; // required for sourced raster images; null for in-house SVG diagrams
   revealsPromptIds?: string[]; // Part B prompts whose unnamed stimulus this card names
 }
 
