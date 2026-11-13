@@ -325,6 +325,9 @@ def main():
                 "animated": animated or bool(tag and tag.get("animated")),
                 "explanation": explanations.pop(qid, None),
             })
+            if tag and tag.get("excluded"):
+                # kept for its paper, never served in mocks, drills or revisit
+                questions[-1]["excluded"] = tag["excluded"]
             ids.append(qid)
         papers.append({
             "id": f"ceed-{year}", "exam": "CEED", "year": year, "label": f"CEED {year}",

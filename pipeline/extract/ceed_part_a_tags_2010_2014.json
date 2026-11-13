@@ -166,7 +166,8 @@
    "answer": "D",
    "topic": "observation",
    "difficulty": 1,
-   "explanation": "A sporty look comes from a chunky, rugged resin case, protective bezel and thick strap, built for impact and water. **D** has all of these; A is a plain digital, B a dress watch, C a minimal analogue."
+   "explanation": "A sporty look comes from a chunky, rugged resin case, protective bezel and thick strap, built for impact and water. **D** has all of these; A is a plain digital, B a dress watch, C a minimal analogue.",
+   "review": "Blind re-solve agreed (D). Kept: D is the only chunky case with bezel and thick strap; A plain digital, B dress, C minimal analogue."
   },
   "ceed-2012-q37": {
    "format": "MCQ",
@@ -411,14 +412,17 @@
    "answer": "B",
    "topic": "observation",
    "difficulty": 1,
-   "explanation": "Options are printed 1–4; they map to A–D in order. A guard needs a long throw, durable metal body and a long heavy barrel that is easy to grip and can double as a baton. **B** (a large multi-cell metal torch) fits; A is a small plastic household torch, C and D are pocket or novelty lights. Option 2, **B**."
+   "explanation": "Options are printed 1–4; they map to A–D in order. A guard needs a long throw, durable metal body and a long heavy barrel that is easy to grip and can double as a baton. **B** (a large multi-cell metal torch) fits; A is a small plastic household torch, C and D are pocket or novelty lights. Option 2, **B**.",
+   "review": "Blind re-solve agreed (B). Kept: B is the only full-size metal torch; A is a small plastic torch, C and D pen and novelty lights."
   },
   "ceed-2013-q46": {
    "format": "MCQ",
    "answer": "C",
    "topic": "everyday-science",
    "difficulty": 2,
-   "explanation": "Options are printed 1–4; they map to A–D in order. Stability depends on whether the seat's load stays over the base. A (four legs), B (A-frame) and D (full-width base) have bases as wide as the seat. **C** sits a wide seat on a narrow central column, so leaning toward either edge tips it: the most unstable. Option 3, **C**."
+   "explanation": "Options are printed 1–4; they map to A–D in order. Stability depends on whether the seat's load stays over the base. A (four legs), B (A-frame) and D (full-width base) have bases as wide as the seat. **C** sits a wide seat on a narrow central column, so leaning toward either edge tips it: the most unstable. Option 3, **C**.",
+   "excluded": "No single defensible key: C (wide seat on a narrow central column) and D (Z-frame seat cantilevered off one joint) can each be argued as the most unstable stool.",
+   "review": "Blind re-solve gave D against stored C; re-rendered at 290 dpi: C's base is half the seat width, D's base spans the seat but hangs on one joint. Excluded."
   },
   "ceed-2013-q47": {
    "format": "MCQ",

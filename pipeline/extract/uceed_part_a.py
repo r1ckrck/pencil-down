@@ -292,6 +292,9 @@ def main():
                 "animated": gif or bool(tag and tag.get("animated")),
                 "explanation": None,
             })
+            if tag and tag.get("excluded"):
+                # kept for its paper, never served in mocks, drills or revisit
+                questions[-1]["excluded"] = tag["excluded"]
             ids.append(qid)
         papers.append({
             "id": f"uceed-{year}", "exam": "UCEED", "year": year, "label": f"UCEED {year}",

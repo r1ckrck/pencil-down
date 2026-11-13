@@ -1,11 +1,12 @@
 """Verify the extracted CEED 2015-2019 Part A content and render contact sheets.
 
 Per paper: printed question count and section formats, questionIds match the questions file,
-every printed question is either included or carries a recorded exclusion reason, eligible
-papers sum to the printed total. Per question: contract shape, unique id, valid answer for its
-format, answerStatus "solved" with a non-empty explanation, valid tags, image present at the
-recorded size. Contact sheets of every crop (included or not) go to pipeline/raw/contact/
-as sheet-1519-*.png.
+every printed question is either included or carries a recorded exclusion reason (and has no
+crop), eligible papers sum to the printed total. Per question: contract shape, unique id, valid
+answer for its format, answerStatus "solved" with a non-empty explanation, valid tags, image
+present at the recorded size, optionLabels exactly as printed for its paper, and an
+"excluded" reason only when its tag records one. Contact sheets of every printed question go
+to pipeline/raw/contact/ as sheet-1519-*.png.
 
 Run: pipeline/.venv/bin/python -I pipeline/verify/verify_part_a_2015_2019.py   (exit 1 on any failure)
 """
@@ -20,13 +21,14 @@ ROOT = Path(__file__).resolve().parents[2]
 PART_A = ROOT / "content" / "part-a"
 CONTACT = ROOT / "pipeline" / "raw" / "contact"
 sys.path.insert(0, str(ROOT / "pipeline" / "extract"))
-from ceed_part_a_2015_2019 import PAPERS, TAGS, TOTAL  # noqa: E402
+from ceed_part_a_2015_2019 import OPTION_LABELS, PAPERS, TAGS, TOTAL  # noqa: E402
 
 TOPICS = {"3d-visualisation", "folding-and-patterns", "mechanisms", "everyday-science",
           "observation", "logic-and-counting", "design-knowledge", "language"}
 LETTERS = ["A", "B", "C", "D"]
 KEYS = {"id", "exam", "year", "paperId", "qno", "format", "image", "imageWidth", "imageHeight",
         "optionCount", "answer", "answerStatus", "topic", "difficulty", "animated", "explanation"}
+OPTIONAL = {"optionLabels", "excluded"}
 PAPER_KEYS = {"id", "exam", "year", "label", "durationMin", "scheme", "totalMarks", "questionIds",
               "pastPaperEligible", "cutoff"}
 
@@ -59,7 +61,11 @@ def main():
 
     for q in questions:
         qid = q["id"]
-        check(set(q) == KEYS, f"{qid}: keys {sorted(set(q) ^ KEYS)}")
+        check(KEYS <= set(q) <= KEYS | OPTIONAL, f"{qid}: keys {sorted(set(q) ^ KEYS)}")
+        labels = OPTION_LABELS.get(q["paperId"]) if q["format"] != "NAT" else None
+        check(q.get("optionLabels") == labels, f"{qid}: optionLabels {q.get('optionLabels')} != {labels}")
+        reason = tags.get(qid, {}).get("excluded")
+        check(q.get("excluded") == reason and (reason is None or len(reason) > 10), f"{qid}: excluded")
         check(re.fullmatch(rf"{q['paperId']}-q{q['qno']:02d}", qid) is not None, f"{qid}: id format")
         check(q["exam"] == "CEED" and q["optionCount"] == 4, f"{qid}: exam/optionCount")
         check(valid_answer(q["answer"], q["format"]), f"{qid}: invalid answer {q['answer']}")
@@ -100,8 +106,8 @@ def main():
         included = {q["qno"] for q in qs}
         for n in range(1, count + 1):
             qid = f"{pid}-q{n:02d}"
-            check((PART_A / "images" / f"{qid}.webp").exists(), f"{qid}: crop missing")
             if n not in included:
+                check(not (PART_A / "images" / f"{qid}.webp").exists(), f"{qid}: excluded but crop present")
                 check(bool(tags.get(qid, {}).get("exclude")), f"{qid}: excluded without a reason")
         complete = len(included) == count
         check(p["pastPaperEligible"] == (complete and not cfg.get("mixed_marks")),

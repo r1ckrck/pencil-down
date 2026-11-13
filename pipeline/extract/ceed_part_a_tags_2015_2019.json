@@ -374,7 +374,8 @@
   "explanation": "The three orthogonal 2×2 tunnels meet in an empty central 2×2×2 cell.\n\n- The 6 outer faces (each now has a square hole) stay: **6**.\n- Each of the 6 tunnel arms, from a face to the central cell, has 4 walls: 6 × 4 = **24**.\n- The central cell has no walls of its own, because all six of its sides open into arms.\n\nTotal: **30**.",
   "topic": "3d-visualisation",
   "difficulty": 2,
-  "confidence": "high"
+  "confidence": "high",
+  "review": "Blind re-solve agreed (30). Kept: 'tunnels ... through the centres of opposite faces' (plural) means all three axes."
  },
  "ceed-2016-s1-q08": {
   "answer": "15.5 to 15.7",
@@ -556,7 +557,9 @@
   "explanation": "The central raised part is a truncated pyramid (a frustum). In view 1 its near base is short and both sloping end faces with windows are visible. In view 2 the opposite base is clearly longer and the end faces are hidden.\n\nSo the frustum's footprint is a **symmetric trapezoid**: both end edges slant inward toward the shorter side, with a short ridge (about 1/5 of the long base) on top.\n\nFrom above this gives **C**. A has only one slanted end, B a rectangular footprint, and D an almost pointed ridge.",
   "topic": "3d-visualisation",
   "difficulty": 3,
-  "confidence": "medium"
+  "confidence": "medium",
+  "excluded": "No single defensible key: the two views are drawn in inconsistent projections, so the frustum footprint reads as A (one slanted end) or C (both ends slanted); independent solves disagree.",
+  "review": "Blind re-solve gave A against stored C; re-rendered at 430 dpi. Excluded."
  },
  "ceed-2016-s1-q36": {
   "answer": "A",
@@ -747,7 +750,8 @@
   "explanation": "The thin lines at the corners outside the image show where to cut the printed sheet. They are called **crop marks**, also known as **trim marks**. Fold marks show where to fold, and \"cutting marks\" is not the standard term.",
   "topic": "design-knowledge",
   "difficulty": 1,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve agreed (A,B). Kept: crop and trim marks are the standard terms; 'cutting marks' is a distractor."
  },
  "ceed-2016-s2-q17": {
   "answer": "A",
@@ -1002,7 +1006,8 @@
   "explanation": "Treat every crossing as a junction. Roads: W1 → X1 → X4 → East; W2 → X1 → X2 → X3 → A; W3 → X4 → X2 → (loop over the top) → X3 → East. A is reached only from X3, and X3 only from X2, by two separate segments (the straight road and the loop): 2 ways.\nNon-repeating routes from the west to X2 (X1, X4 and X2 form a triangle):\n- W1: X1→X2, or X1→X4→X2\n- W2: X1→X2, or X1→X4→X2\n- W3: X4→X2, or X4→X1→X2\n\nThat is 6 routes, each × 2 = **12**.",
   "topic": "logic-and-counting",
   "difficulty": 3,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve agreed (12). Kept: re-rendered at 360 dpi; 3 roads, 4 crossings; 12 under both simple-path and no-repeated-segment readings."
  },
  "ceed-2017-q06": {
   "answer": "12",
@@ -1329,7 +1334,8 @@
   "explanation": "The passage presents knowledge as built from several standpoints (nayas), not one fixed view, so **C** holds. It says epistemic principles (pramana) *and* practical stances (nayas) are both essential constituents, which is **D**. It never asks for a rigorous validation process (A false) and it explicitly *distinguishes* principles from stances rather than conflating them (B false).",
   "topic": "language",
   "difficulty": 2,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve agreed (C,D). Kept: D paraphrases the passage's pramana (principles) plus nayas (practical stances) as both essential constituents."
  },
  "ceed-2018-q10": {
   "exclude": "Statement D is ambiguous: 'verb-like' is Hayles's gloss, not Tzannes's wording, so its truth depends on the setter's intent.",
@@ -1461,7 +1467,7 @@
  "ceed-2018-q29": {
   "answer": "D",
   "explanation": "The frames go stance (bat grounded) → **?** → bat swinging down across → follow-through over the shoulder. Between stance and downswing comes the **backlift**, bat raised high behind the head: option **D**.",
-  "topic": "mechanisms",
+  "topic": "observation",
   "difficulty": 2,
   "confidence": "medium"
  },
@@ -1562,7 +1568,8 @@
   "explanation": "Lines: square, both midlines, both diagonals, and four quarter-circle arcs (radius = side) each centred on a corner and joining the two corners next to it.\n\n- 4 corners (sides, diagonal and two arcs meet)\n- 4 side midpoints (midlines meet the sides)\n- 1 centre (both midlines and both diagonals)\n- 4 points where two arcs cross a midline (at 0.73 of the half-side from the centre)\n- 4 points where an arc crosses the diagonal through its own centre\n\nArcs meet each other only at those corners and midline points, and are tangent to the sides at the corners. Total **17**.",
   "topic": "logic-and-counting",
   "difficulty": 3,
-  "confidence": "high"
+  "confidence": "high",
+  "review": "Blind re-solve agreed (17). Kept: recounted 4 corners + 4 side midpoints + centre + 4 arc-midline + 4 arc-diagonal points; arcs meet each other only at those points."
  },
  "ceed-2019-q04": {
   "answer": "330",
@@ -1709,7 +1716,8 @@
   "explanation": "The poles rest on the bearers' shoulders. In C the seat hangs below the poles, so the traveller's weight sits low between the supports: stable, and the palki does not tip or roll. The seat also sits at a comfortable height between the bearers. A and B perch the seat on or above the poles (top-heavy). D's bent poles put the load above the shoulders and are awkward to hold.",
   "topic": "everyday-science",
   "difficulty": 2,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve agreed (C). Kept: re-rendered at 290 dpi; only C hangs the seat below the poles (low centre of gravity)."
  },
  "ceed-2019-q27": {
   "answer": "A",

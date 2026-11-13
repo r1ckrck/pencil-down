@@ -586,7 +586,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Full HD = **1920 \u00d7 1080 pixels** (option 3, **C**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Full HD = **1920 \u00d7 1080 pixels** (option 3, **C**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q02",
@@ -607,7 +613,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. PAL video runs at **25 frames per second** (option 2, **B**); NTSC is ~30, film 24."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. PAL video runs at **25 frames per second** (option 2, **B**); NTSC is ~30, film 24.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q03",
@@ -628,7 +640,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. HDMI = **High Definition Multimedia Interface** (option 3, **C**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. HDMI = **High Definition Multimedia Interface** (option 3, **C**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q04",
@@ -649,7 +667,13 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. *Arjun: The Warrior Prince* (2012) was directed by **Arnab Chaudhuri** (option 1, **A**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. *Arjun: The Warrior Prince* (2012) was directed by **Arnab Chaudhuri** (option 1, **A**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q05",
@@ -670,7 +694,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Widescreen is **16:9** (option 3, **C**); 4:3 is the older standard format."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Widescreen is **16:9** (option 3, **C**); 4:3 is the older standard format.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q06",
@@ -691,7 +721,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The character is Jon Arbuckle, Garfield's owner, from the comic strip **Garfield** (option 1, **A**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The character is Jon Arbuckle, Garfield's owner, from the comic strip **Garfield** (option 1, **A**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q08",
@@ -712,7 +748,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A joyous invitation calls for an elegant, flowing script. **B** is a calligraphic script face; A is a heavy display face, C a dripping horror face, D a blackletter. Option 2, **B**."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A joyous invitation calls for an elegant, flowing script. **B** is a calligraphic script face; A is a heavy display face, C a dripping horror face, D a blackletter. Option 2, **B**.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q10",
@@ -733,7 +775,13 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The text is mirror-reversed (a reflection) and bulged: the middle letters (D, 2) are large in width and height, the end letters small and squeezed. That barrel distortion comes from a **convex surface** (option 2, **B**). A cylinder would only change widths; a concave mirror enlarges the edges instead."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The text is mirror-reversed (a reflection) and bulged: the middle letters (D, 2) are large in width and height, the end letters small and squeezed. That barrel distortion comes from a **convex surface** (option 2, **B**). A cylinder would only change widths; a concave mirror enlarges the edges instead.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q12",
@@ -754,7 +802,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Mary Kom is an Olympic-medal-winning **boxer** (option 4, **D**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Mary Kom is an Olympic-medal-winning **boxer** (option 4, **D**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q14",
@@ -775,7 +829,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. CMYK is the print process colour set: **Cyan, Magenta, Yellow, Black (Key)** (option 2, **B**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. CMYK is the print process colour set: **Cyan, Magenta, Yellow, Black (Key)** (option 2, **B**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q15",
@@ -796,7 +856,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Equal R, G and B values give a neutral; on the 0\u2013255 scale, 100 is below the midpoint, so the result is a darkish **gray** (option 3, **C**). 0,0,0 would be black, 255,255,255 white."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Equal R, G and B values give a neutral; on the 0\u2013255 scale, 100 is below the midpoint, so the result is a darkish **gray** (option 3, **C**). 0,0,0 would be black, 255,255,255 white.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q16",
@@ -817,7 +883,13 @@
     "topic": "observation",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Solid round black spots scattered evenly on a tawny coat belong to the **cheetah** (option 4, **D**). Tigers and zebras are striped; giraffes have large polygonal patches."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Solid round black spots scattered evenly on a tawny coat belong to the **cheetah** (option 4, **D**). Tigers and zebras are striped; giraffes have large polygonal patches.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q17",
@@ -838,7 +910,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A cylindrical drum on a handle with a weight on a chain, spun by hand, is a **Tibetan prayer wheel** (option 1, **A**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A cylindrical drum on a handle with a weight on a chain, spun by hand, is a **Tibetan prayer wheel** (option 1, **A**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q19",
@@ -859,7 +937,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The large, bright, multi-coloured turban (pagdi) with a bold moustache is typical of **Rajasthan** (option 3, **C**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The large, bright, multi-coloured turban (pagdi) with a bold moustache is typical of **Rajasthan** (option 3, **C**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q20",
@@ -880,7 +964,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Bluetooth is a short-range **wireless communication** technology (option 4, **D**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Bluetooth is a short-range **wireless communication** technology (option 4, **D**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q21",
@@ -901,7 +991,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A circular image with strong barrel distortion (straight buildings bent outward) is the mark of a **fish-eye lens** (option 1, **A**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A circular image with strong barrel distortion (straight buildings bent outward) is the mark of a **fish-eye lens** (option 1, **A**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q22",
@@ -922,7 +1018,13 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A D-shaped grip with a flat sole and a small blade clamped by a wing nut at the base is pushed along the floor to slice sheet material: a **carpet cutter** (option 2, **B**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A D-shaped grip with a flat sole and a small blade clamped by a wing nut at the base is pushed along the floor to slice sheet material: a **carpet cutter** (option 2, **B**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q23",
@@ -943,7 +1045,13 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A long stick-like body (dandi) resting on two equal gourd resonators is the **Rudra Veena** (option 4, **D**). The sitar has one main gourd at the base of a long fretted neck; the sarod and tanpura have no paired gourds."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A long stick-like body (dandi) resting on two equal gourd resonators is the **Rudra Veena** (option 4, **D**). The sitar has one main gourd at the base of a long fretted neck; the sarod and tanpura have no paired gourds.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q25",
@@ -964,7 +1072,13 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Belt speed is the same on both pulleys.\n\n- Belt travel = 600 rev \u00d7 1.2 m = 720 m.\n- Driver revolutions = 720 m \u00f7 0.4 m = 1800.\n- Time = 1800 \u00f7 60 rpm = **30 minutes** (option 2, **B**).\n\nThe belt length (7.2 m) is not needed."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Belt speed is the same on both pulleys.\n\n- Belt travel = 600 rev \u00d7 1.2 m = 720 m.\n- Driver revolutions = 720 m \u00f7 0.4 m = 1800.\n- Time = 1800 \u00f7 60 rpm = **30 minutes** (option 2, **B**).\n\nThe belt length (7.2 m) is not needed.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q27",
@@ -985,7 +1099,13 @@
     "topic": "everyday-science",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Local (solar) time changes by 4 minutes per degree east or west, so it depends on **longitude** (option 2, **B**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Local (solar) time changes by 4 minutes per degree east or west, so it depends on **longitude** (option 2, **B**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q29",
@@ -1006,7 +1126,13 @@
     "topic": "mechanisms",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Both wheels are fixed to the same tractor and roll without slipping, so their rims move over the road at the tractor's speed: **40 km/h** (option 2, **B**). The smaller wheel simply turns twice as many times per minute."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Both wheels are fixed to the same tractor and roll without slipping, so their rims move over the road at the tractor's speed: **40 km/h** (option 2, **B**). The smaller wheel simply turns twice as many times per minute.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q30",
@@ -1027,7 +1153,13 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. - Slope length = 2 km/h \u00d7 0.5 h = 1 km = 1000 m.\n- Height = 800 m, so base radius = \u221a(1000\u00b2 \u2212 800\u00b2) = 600 m.\n- Diameter = 2 \u00d7 600 = **1200 m** (option 4, **D**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. - Slope length = 2 km/h \u00d7 0.5 h = 1 km = 1000 m.\n- Height = 800 m, so base radius = \u221a(1000\u00b2 \u2212 800\u00b2) = 600 m.\n- Diameter = 2 \u00d7 600 = **1200 m** (option 4, **D**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q31",
@@ -1048,7 +1180,13 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The blue patches are printed in the same colour (sampled pixels match). They look different only because of the surrounding black-and-white pattern (simultaneous contrast). **Both patches have the same tone** (option 3, **C**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The blue patches are printed in the same colour (sampled pixels match). They look different only because of the surrounding black-and-white pattern (simultaneous contrast). **Both patches have the same tone** (option 3, **C**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q32",
@@ -1069,7 +1207,13 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Option A repeats frame 1, B repeats frame 3 and D repeats frame 6. A walk cycle alternates contact (legs wide apart) and passing (legs together) poses; frames 3 and 5 are passing poses, so frame 4 must be the wide-stride contact pose, the only new drawing: **C** (option 3)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Option A repeats frame 1, B repeats frame 3 and D repeats frame 6. A walk cycle alternates contact (legs wide apart) and passing (legs together) poses; frames 3 and 5 are passing poses, so frame 4 must be the wide-stride contact pose, the only new drawing: **C** (option 3).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q34",
@@ -1090,7 +1234,13 @@
     "topic": "everyday-science",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The runner is smeared along the direction of motion while the background is sharp. The subject moved while the shutter was open, which happens when the **shutter speed is low** (option 1, **A**). Camera shake would blur the background too."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The runner is smeared along the direction of motion while the background is sharp. The subject moved while the shutter was open, which happens when the **shutter speed is low** (option 1, **A**). Camera shake would blur the background too.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q35",
@@ -1111,7 +1261,13 @@
     "topic": "logic-and-counting",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. At the same moment, shadow length is proportional to height: 15/25 = x/40, so x = **24 m** (option 2, **B**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. At the same moment, shadow length is proportional to height: 15/25 = x/40, so x = **24 m** (option 2, **B**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q36",
@@ -1132,7 +1288,13 @@
     "topic": "logic-and-counting",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Opposite positions on a circle of n evenly spaced children are n/2 apart. 28 \u2212 3 = 25 = n/2, so n = **50** (option 2, **B**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Opposite positions on a circle of n evenly spaced children are n/2 apart. 28 \u2212 3 = 25 = n/2, so n = **50** (option 2, **B**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q37",
@@ -1153,7 +1315,13 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Unroll the cylinder into a rectangle. Each turn advances 15/5 = 3 cm along the length while going 4 cm around, so one turn of string = \u221a(3\u00b2 + 4\u00b2) = 5 cm. Five turns = **25 cm** (option 3, **C**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Unroll the cylinder into a rectangle. Each turn advances 15/5 = 3 cm along the length while going 4 cm around, so one turn of string = \u221a(3\u00b2 + 4\u00b2) = 5 cm. Five turns = **25 cm** (option 3, **C**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q38",
@@ -1174,7 +1342,13 @@
     "topic": "logic-and-counting",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Let the pole be L. Soil L/2 + water L/3 = 5L/6, leaving L/6 above water = 2 m, so L = **12 m** (option 2, **B**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Let the pole be L. Soil L/2 + water L/3 = 5L/6, leaving L/6 above water = 2 m, so L = **12 m** (option 2, **B**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q39",
@@ -1195,7 +1369,13 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Plan A shows an outer square, lines from its corners to an inner square (sloping sides of a frustum), and an X inside the inner square (a pyramid roof seen from above).\n\n- 1: a pyramid on a slab gives an X but no inner square.\n- 2: the box with a rod on top gives an inner square with a dot, no X.\n- 3: an inverted pyramid shows only its flat top square from above, no X.\n- **4**: frustum topped by a box with a pyramid roof gives exactly the inner square with the X. Option 4, **D**."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Plan A shows an outer square, lines from its corners to an inner square (sloping sides of a frustum), and an X inside the inner square (a pyramid roof seen from above).\n\n- 1: a pyramid on a slab gives an X but no inner square.\n- 2: the box with a rod on top gives an inner square with a dot, no X.\n- 3: an inverted pyramid shows only its flat top square from above, no X.\n- **4**: frustum topped by a box with a pyramid roof gives exactly the inner square with the X. Option 4, **D**.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q41",
@@ -1216,7 +1396,13 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. In 2013 Nissan and Renault built cars at their Chennai plant and Skoda at Aurangabad. **Citro\u00ebn** had no Indian manufacturing (option 2, **B**)."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. In 2013 Nissan and Renault built cars at their Chennai plant and Skoda at Aurangabad. **Citro\u00ebn** had no Indian manufacturing (option 2, **B**).",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q44",
@@ -1237,7 +1423,13 @@
     "topic": "observation",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A guard needs a long throw, durable metal body and a long heavy barrel that is easy to grip and can double as a baton. **B** (a large multi-cell metal torch) fits; A is a small plastic household torch, C and D are pocket or novelty lights. Option 2, **B**."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. A guard needs a long throw, durable metal body and a long heavy barrel that is easy to grip and can double as a baton. **B** (a large multi-cell metal torch) fits; A is a small plastic household torch, C and D are pocket or novelty lights. Option 2, **B**.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2013-q46",
@@ -1258,7 +1450,14 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Stability depends on whether the seat's load stays over the base. A (four legs), B (A-frame) and D (full-width base) have bases as wide as the seat. **C** sits a wide seat on a narrow central column, so leaning toward either edge tips it: the most unstable. Option 3, **C**."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. Stability depends on whether the seat's load stays over the base. A (four legs), B (A-frame) and D (full-width base) have bases as wide as the seat. **C** sits a wide seat on a narrow central column, so leaning toward either edge tips it: the most unstable. Option 3, **C**.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "excluded": "No single defensible key: C (wide seat on a narrow central column) and D (Z-frame seat cantilevered off one joint) can each be argued as the most unstable stool."
   },
   {
     "id": "ceed-2013-q47",
@@ -1279,7 +1478,13 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The room is in one-point perspective with the vanishing point near the centre of the back wall; every receding edge should run toward it.\n\n- Walls and the side-wall window: their receding edges converge on the vanishing point.\n- Back-wall window: faces the viewer, so it stays a true rectangle.\n- **Table:** its top is drawn symmetric about its own centre, so the left receding edge leans away from the vanishing point instead of toward it. It is not in the room's perspective. Option 2, **B**."
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The room is in one-point perspective with the vanishing point near the centre of the back wall; every receding edge should run toward it.\n\n- Walls and the side-wall window: their receding edges converge on the vanishing point.\n- Back-wall window: faces the viewer, so it stays a true rectangle.\n- **Table:** its top is drawn symmetric about its own centre, so the left receding edge leans away from the vanishing point instead of toward it. It is not in the room's perspective. Option 2, **B**.",
+    "optionLabels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "id": "ceed-2014-q01",

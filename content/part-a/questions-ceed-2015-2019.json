@@ -110,7 +110,13 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": "All mammals \u2282 fish \u2282 dolphins. So all mammals are dolphins (**D**); some fish are mammals (**A**, the mammals themselves); some mammals are dolphins (**C**). B contradicts the chain: every mammal is a dolphin."
+    "explanation": "All mammals \u2282 fish \u2282 dolphins. So all mammals are dolphins (**D**); some fish are mammals (**A**, the mammals themselves); some mammals are dolphins (**C**). B contradicts the chain: every mammal is a dolphin.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q07",
@@ -134,7 +140,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Crimson and carmine are reds. Azure is a sky blue; viridian is a blue-green. Answer **A, C**."
+    "explanation": "Crimson and carmine are reds. Azure is a sky blue; viridian is a blue-green. Answer **A, C**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q08",
@@ -157,7 +169,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "The Tata Nano has its engine at the rear. The Maruti Ertiga, Skoda Octavia and Tata Indica are all front-engined. Answer **A**."
+    "explanation": "The Tata Nano has its engine at the rear. The Maruti Ertiga, Skoda Octavia and Tata Indica are all front-engined. Answer **A**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q10",
@@ -183,7 +201,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Spielberg directed all four: *Indiana Jones and the Temple of Doom* (1984), *Schindler's List* (1993), *Saving Private Ryan* (1998) and *Munich* (2005)."
+    "explanation": "Spielberg directed all four: *Indiana Jones and the Temple of Doom* (1984), *Schindler's List* (1993), *Saving Private Ryan* (1998) and *Munich* (2005).",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q11",
@@ -208,7 +232,13 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": "A is Picasso's *Boy with a Pipe* (Rose period), B is his analytic-cubist *The Accordionist*, and D is *La Vie* (Blue period). C is Mondrian's *Composition Trees 2*, a cubism-influenced work on his way to abstraction. Answer **A, B, D**."
+    "explanation": "A is Picasso's *Boy with a Pipe* (Rose period), B is his analytic-cubist *The Accordionist*, and D is *La Vie* (Blue period). C is Mondrian's *Composition Trees 2*, a cubism-influenced work on his way to abstraction. Answer **A, B, D**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q12",
@@ -231,7 +261,13 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": "Trace the outline of the gap clockwise: stepped top edge \u2192 short right edge \u2192 V-notch \u2192 spike \u2192 bottom edge \u2192 circle \u2192 left edge. The square hole sits beside the circle, with its long side parallel to the top edge. D has this edge sequence in the same clockwise order (a rotation), with the hole in the same place. B has it in reverse order, so it is a mirror image. In C the hole is turned 90\u00b0, and A's edges don't match. Answer **D**."
+    "explanation": "Trace the outline of the gap clockwise: stepped top edge \u2192 short right edge \u2192 V-notch \u2192 spike \u2192 bottom edge \u2192 circle \u2192 left edge. The square hole sits beside the circle, with its long side parallel to the top edge. D has this edge sequence in the same clockwise order (a rotation), with the hole in the same place. B has it in reverse order, so it is a mirror image. In C the hole is turned 90\u00b0, and A's edges don't match. Answer **D**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q13",
@@ -255,7 +291,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Weights in a type family run from Hairline/Thin through Light, Regular and Medium to Bold and Black. Hairline and Bold are weights; Feather and Grey are not. Answer **A, B**."
+    "explanation": "Weights in a type family run from Hairline/Thin through Light, Regular and Medium to Bold and Black. Hairline and Bold are weights; Feather and Grey are not. Answer **A, B**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q14",
@@ -280,7 +322,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Depth of field and ISO are camera terms. Dodging is a darkroom printing technique that lightens chosen areas. Jiggering is a pottery process for shaping clay on a rotating mould. Answer **A, B, D**."
+    "explanation": "Depth of field and ISO are camera terms. Dodging is a darkroom printing technique that lightens chosen areas. Jiggering is a pottery process for shaping clay on a rotating mould. Answer **A, B, D**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q15",
@@ -305,7 +353,13 @@
     "topic": "everyday-science",
     "difficulty": 1,
     "animated": false,
-    "explanation": "A Tetra Pak carton is layered paperboard (about 75%), polyethylene plastic and a thin aluminium foil barrier. It contains no Teflon. Answer **A, B, C**."
+    "explanation": "A Tetra Pak carton is layered paperboard (about 75%), polyethylene plastic and a thin aluminium foil barrier. It contains no Teflon. Answer **A, B, C**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q16",
@@ -326,7 +380,13 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Green touches black, red (view 1), blue (view 3) and yellow (view 4), so green is opposite magenta. Black touches red and green (view 1) and blue (view 3). Magenta is already taken by green, so the only colour left for black's opposite face is **yellow**."
+    "explanation": "Green touches black, red (view 1), blue (view 3) and yellow (view 4), so green is opposite magenta. Black touches red and green (view 1) and blue (view 3). Magenta is already taken by green, so the only colour left for black's opposite face is **yellow**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q17",
@@ -347,7 +407,13 @@
     "topic": "language",
     "difficulty": 2,
     "animated": false,
-    "explanation": "'slorm' appears in both 'flatpen' and 'penink', so slorm = pen and the code keeps the English word order. That gives wigges = flat, wiggel = ink, widdle = round and brap = nib. 'nibstore' must start with brap followed by a new word: **brapdansa**."
+    "explanation": "'slorm' appears in both 'flatpen' and 'penink', so slorm = pen and the code keeps the English word order. That gives wigges = flat, wiggel = ink, widdle = round and brap = nib. 'nibstore' must start with brap followed by a new word: **brapdansa**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q18",
@@ -368,7 +434,13 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "The straight stroke's slanted ends show the flat nib is held along the '\\' diagonal. A flat nib draws thinnest when moving along its own edge and thickest when moving across it. So a circle is thin at upper-right and lower-left, and thick at upper-left and lower-right. Only **C** is symmetric about that diagonal this way; A and D thicken at the sides, and B is the mirror nib angle."
+    "explanation": "The straight stroke's slanted ends show the flat nib is held along the '\\' diagonal. A flat nib draws thinnest when moving along its own edge and thickest when moving across it. So a circle is thin at upper-right and lower-left, and thick at upper-left and lower-right. Only **C** is symmetric about that diagonal this way; A and D thicken at the sides, and B is the mirror nib angle.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q19",
@@ -389,7 +461,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Renaissance (15th\u201316th c.) \u2192 Baroque (17th c.) \u2192 Realism (mid-19th c.) \u2192 Cubism (early 20th c.). Answer **D**."
+    "explanation": "Renaissance (15th\u201316th c.) \u2192 Baroque (17th c.) \u2192 Realism (mid-19th c.) \u2192 Cubism (early 20th c.). Answer **D**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q20",
@@ -410,7 +488,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "In CMYK printing, full magenta plus full yellow, with no cyan and no black, prints **red**."
+    "explanation": "In CMYK printing, full magenta plus full yellow, with no cyan and no black, prints **red**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q21",
@@ -431,7 +515,13 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": "This is the Hathigumpha inscription of Kharavela, king of Kalinga, carved in the Udayagiri caves near Bhubaneswar, Odisha. Answer **East and North East India (C)**."
+    "explanation": "This is the Hathigumpha inscription of Kharavela, king of Kalinga, carved in the Udayagiri caves near Bhubaneswar, Odisha. Answer **East and North East India (C)**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q22",
@@ -452,7 +542,13 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": "A working diamond frame needs a top tube, a down tube from head tube to bottom bracket, a seat tube from seat to bottom bracket, and seat stays and chain stays to the rear axle. A has no seat tube to the bottom bracket, C has no down tube, and D adds a bar to the front hub that would stop the fork from steering. **B** is the complete frame."
+    "explanation": "A working diamond frame needs a top tube, a down tube from head tube to bottom bracket, a seat tube from seat to bottom bracket, and seat stays and chain stays to the rear axle. A has no seat tube to the bottom bracket, C has no down tube, and D adds a bar to the front hub that would stop the fork from steering. **B** is the complete frame.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q23",
@@ -473,7 +569,13 @@
     "topic": "everyday-science",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Polythene bags are made from film produced by blown-film extrusion: molten polyethylene is extruded as a tube and inflated into a thin bubble. Answer **B**."
+    "explanation": "Polythene bags are made from film produced by blown-film extrusion: molten polyethylene is extruded as a tube and inflated into a thin bubble. Answer **B**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q24",
@@ -494,7 +596,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "The stiff, barrel-shaped embroidered skirt (potloi) and sheer veil are the costume of **Manipuri** dance (Ras Lila)."
+    "explanation": "The stiff, barrel-shaped embroidered skirt (potloi) and sheer veil are the costume of **Manipuri** dance (Ras Lila).",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q25",
@@ -515,7 +623,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "*The Accidental Prime Minister* (2014) was written by **Sanjaya Baru**, media adviser to Manmohan Singh."
+    "explanation": "*The Accidental Prime Minister* (2014) was written by **Sanjaya Baru**, media adviser to Manmohan Singh.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q26",
@@ -536,7 +650,13 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": "A red-orange circle above an open book of vertical yellow-to-red strips is the logo of **IIT Hyderabad**."
+    "explanation": "A red-orange circle above an open book of vertical yellow-to-red strips is the logo of **IIT Hyderabad**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q27",
@@ -557,7 +677,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "The santoor player with the curly white hair is **Pandit Shivkumar Sharma**. Hariprasad Chaurasia plays the flute and Vishwa Mohan Bhatt the mohan veena; Bhajan Sopori also played the santoor but looks different."
+    "explanation": "The santoor player with the curly white hair is **Pandit Shivkumar Sharma**. Hariprasad Chaurasia plays the flute and Vishwa Mohan Bhatt the mohan veena; Bhajan Sopori also played the santoor but looks different.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q29",
@@ -578,7 +704,13 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": "Reflect the 'A' across each of the five shared edges in turn. An odd number of reflections leaves a mirror image, and 'A' looks the same mirrored, so only position and direction matter. Tracing the reflections puts the letter near the top edge of the last heptagon, slightly left of centre, with its apex pointing left. That is **D**."
+    "explanation": "Reflect the 'A' across each of the five shared edges in turn. An odd number of reflections leaves a mirror image, and 'A' looks the same mirrored, so only position and direction matter. Tracing the reflections puts the letter near the top edge of the last heptagon, slightly left of centre, with its apex pointing left. That is **D**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q30",
@@ -599,7 +731,13 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": "In one-point perspective every receding edge meets at a single vanishing point. Extending each object's receding edges: B, C and D converge close together, near the centre of the frame. The edges of the frame A on the left wall meet well to the left of and above that point. So **A** does not fit the perspective."
+    "explanation": "In one-point perspective every receding edge meets at a single vanishing point. Extending each object's receding edges: B, C and D converge close together, near the centre of the frame. The edges of the frame A on the left wall meet well to the left of and above that point. So **A** does not fit the perspective.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q32",
@@ -620,7 +758,13 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Apparent height is inversely proportional to distance. The point halfway in real distance therefore shows a height equal to the harmonic mean of the two figures' heights, 2h\u2081h\u2082/(h\u2081+h\u2082). With h\u2081 \u2248 388 and h\u2082 \u2248 98 (image units) that is \u2248 156, which matches line **D** (\u2248 155). A (\u2248 237) is only halfway across the picture, not halfway in depth."
+    "explanation": "Apparent height is inversely proportional to distance. The point halfway in real distance therefore shows a height equal to the harmonic mean of the two figures' heights, 2h\u2081h\u2082/(h\u2081+h\u2082). With h\u2081 \u2248 388 and h\u2082 \u2248 98 (image units) that is \u2248 156, which matches line **D** (\u2248 155). A (\u2248 237) is only halfway across the picture, not halfway in depth.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q35",
@@ -641,7 +785,13 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": "The base is a rectangle; the top face is a centred rectangle half as wide; the sloped right end shows in top view as lines from the inner corners to the outer corners. The apex edge is drawn parallel to the right-end hip edge, which places the apex directly above the midpoint of the base's left end (the left end face is vertical). In top view the apex therefore falls on the midpoint of the outer rectangle's left side, with lines from it to the inner rectangle's left corners. That is **D**."
+    "explanation": "The base is a rectangle; the top face is a centred rectangle half as wide; the sloped right end shows in top view as lines from the inner corners to the outer corners. The apex edge is drawn parallel to the right-end hip edge, which places the apex directly above the midpoint of the base's left end (the left end face is vertical). In top view the apex therefore falls on the midpoint of the outer rectangle's left side, with lines from it to the inner rectangle's left corners. That is **D**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q36",
@@ -662,7 +812,13 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": "The top view shows a square prism standing on a cone. The prism's front face is a plane parallel to the cone axis, so it cuts the cone in a hyperbola. That curve is highest at the face centre, which is nearest the axis, and lowest at the corners. The centre is the same distance from the axis as the prism edges where the cone outline meets them, so the arch peaks at that height and dips below it at the corners. **A** shows this; C raises the arch above the outline."
+    "explanation": "The top view shows a square prism standing on a cone. The prism's front face is a plane parallel to the cone axis, so it cuts the cone in a hyperbola. That curve is highest at the face centre, which is nearest the axis, and lowest at the corners. The centre is the same distance from the axis as the prism edges where the cone outline meets them, so the arch peaks at that height and dips below it at the corners. **A** shows this; C raises the arch above the outline.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q37",
@@ -683,7 +839,13 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": "From the bottom block up, each block turns another 22.5\u00b0 (0\u00b0, 22.5\u00b0, 45\u00b0, 67.5\u00b0, 90\u00b0) and shrinks by about 46 units (sides \u2248 320, 276, 228, 184, 136). The sixth block is therefore turned 22.5\u00b0 with side \u2248 90. A is turned 45\u00b0. B (\u2248 104) and D (\u2248 114) are too large. **C** (\u2248 92 at 22.5\u00b0) fits."
+    "explanation": "From the bottom block up, each block turns another 22.5\u00b0 (0\u00b0, 22.5\u00b0, 45\u00b0, 67.5\u00b0, 90\u00b0) and shrinks by about 46 units (sides \u2248 320, 276, 228, 184, 136). The sixth block is therefore turned 22.5\u00b0 with side \u2248 90. A is turned 45\u00b0. B (\u2248 104) and D (\u2248 114) are too large. **C** (\u2248 92 at 22.5\u00b0) fits.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q38",
@@ -704,7 +866,13 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "Rotated about its centroid, **D** overlays Image 1 almost exactly (overlap \u2248 99%). A, B and C match only partly, and each fits better when mirrored, so they are reflections or altered shapes."
+    "explanation": "Rotated about its centroid, **D** overlays Image 1 almost exactly (overlap \u2248 99%). A, B and C match only partly, and each fits better when mirrored, so they are reflections or altered shapes.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q39",
@@ -725,7 +893,13 @@
     "topic": "everyday-science",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Water in the wet sand evaporates through the porous outer pot, and evaporation absorbs latent heat from the inner pot. This is **evaporative cooling**."
+    "explanation": "Water in the wet sand evaporates through the porous outer pot, and evaporation absorbs latent heat from the inner pot. This is **evaporative cooling**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q40",
@@ -746,7 +920,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "The Hemis festival, with masked cham dances, is held at Hemis Monastery in **Ladakh**."
+    "explanation": "The Hemis festival, with masked cham dances, is held at Hemis Monastery in **Ladakh**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q41",
@@ -767,7 +947,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "*The Design of Everyday Things* is by **Donald Norman**. Philippe Starck and Karim Rashid are product designers."
+    "explanation": "*The Design of Everyday Things* is by **Donald Norman**. Philippe Starck and Karim Rashid are product designers.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q42",
@@ -788,7 +974,13 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": "The X corner is the sheet's centre, so the folded square's left and bottom edges are the two fold lines; unfolding mirrors the cut across both. The long grey bar ends a little above the bottom fold, so it unfolds into **two** separate bars with a gap between them. The bar is longer than the outlined frame, so both bars reach past the frames. Blocks touching the folds merge into one solid central column, and the black notch on the left edge becomes two holes. Only **D** shows this."
+    "explanation": "The X corner is the sheet's centre, so the folded square's left and bottom edges are the two fold lines; unfolding mirrors the cut across both. The long grey bar ends a little above the bottom fold, so it unfolds into **two** separate bars with a gap between them. The bar is longer than the outlined frame, so both bars reach past the frames. Blocks touching the folds merge into one solid central column, and the black notch on the left edge becomes two holes. Only **D** shows this.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q43",
@@ -809,7 +1001,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Magha, Bharavi and Kalidasa were Sanskrit poets. **Brahmagupta** was a mathematician and astronomer."
+    "explanation": "Magha, Bharavi and Kalidasa were Sanskrit poets. **Brahmagupta** was a mathematician and astronomer.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q44",
@@ -830,7 +1028,13 @@
     "topic": "everyday-science",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Expanded polystyrene is sold in India as **Thermocol**. Teflon is PTFE, and nylon and Lycra are textile fibres."
+    "explanation": "Expanded polystyrene is sold in India as **Thermocol**. Teflon is PTFE, and nylon and Lycra are textile fibres.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q45",
@@ -851,7 +1055,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "The 'i' figure holding a document is India's **Right to Information** (RTI) logo."
+    "explanation": "The 'i' figure holding a document is India's **Right to Information** (RTI) logo.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q46",
@@ -872,7 +1082,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "The pica (12 points, about 1/6 inch) is a unit of measure in **typography**."
+    "explanation": "The pica (12 points, about 1/6 inch) is a unit of measure in **typography**.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2015-q47",
@@ -893,7 +1109,13 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "Verdana, Tahoma and Calibri are sans-serif typefaces; **Cambria** is a serif."
+    "explanation": "Verdana, Tahoma and Calibri are sans-serif typefaces; **Cambria** is a serif.",
+    "optionLabels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
   },
   {
     "id": "ceed-2016-s1-q02",
@@ -1465,7 +1687,8 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": "The central raised part is a truncated pyramid (a frustum). In view 1 its near base is short and both sloping end faces with windows are visible. In view 2 the opposite base is clearly longer and the end faces are hidden.\n\nSo the frustum's footprint is a **symmetric trapezoid**: both end edges slant inward toward the shorter side, with a short ridge (about 1/5 of the long base) on top.\n\nFrom above this gives **C**. A has only one slanted end, B a rectangular footprint, and D an almost pointed ridge."
+    "explanation": "The central raised part is a truncated pyramid (a frustum). In view 1 its near base is short and both sloping end faces with windows are visible. In view 2 the opposite base is clearly longer and the end faces are hidden.\n\nSo the frustum's footprint is a **symmetric trapezoid**: both end edges slant inward toward the shorter side, with a short ridge (about 1/5 of the long base) on top.\n\nFrom above this gives **C**. A has only one slanted end, B a rectangular footprint, and D an almost pointed ridge.",
+    "excluded": "No single defensible key: the two views are drawn in inconsistent projections, so the frustum footprint reads as A (one slanted end) or C (both ends slanted); independent solves disagree."
   },
   {
     "id": "ceed-2016-s1-q36",
@@ -3778,7 +4001,7 @@
       "option": "D"
     },
     "answerStatus": "solved",
-    "topic": "mechanisms",
+    "topic": "observation",
     "difficulty": 2,
     "animated": false,
     "explanation": "The frames go stance (bat grounded) \u2192 **?** \u2192 bat swinging down across \u2192 follow-through over the shoulder. Between stance and downswing comes the **backlift**, bat raised high behind the head: option **D**."

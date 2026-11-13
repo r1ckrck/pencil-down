@@ -3,7 +3,9 @@
 These papers have no official keys, so every answer is solved by hand and stored with its
 explanation in ceed_part_a_tags_2010_2014.json (answerStatus "solved"). A question the
 solver was not confident about is listed there under "excluded" with its reason and is
-not written.
+not written. A solved question kept for its paper but never served in mocks, drills or
+revisit (no single defensible key) carries an "excluded" reason on its own entry, copied
+to the record.
 
 Paper shapes:
   2010, 2011  one pen-and-paper booklet; only Q1 (Visual Perception) holds short items, most
@@ -65,6 +67,9 @@ MANUAL = {
     (2010, 6): [(4, pymupdf.Rect(80, 752, 520, 774)), (5, pymupdf.Rect(80, 76, 520, 388))],
     (2011, 6): [(5, pymupdf.Rect(90, 712, 1160, 1590))],
 }
+# Option labels as printed, when not A-D; they map to A-D in order.
+OPTION_LABELS = {2013: ["1", "2", "3", "4"]}
+
 STAMP = {  # crops whose option boxes carry no printed label: stamp A-D centred under each box
     (2011, 6): True,
 }
@@ -249,14 +254,19 @@ def main():
                 continue
             img = crop(doc, year, qno, parts)
             save_webp(img, IMAGES / f"{qid}.webp")
-            questions.append({
+            record = {
                 "id": qid, "exam": "CEED", "year": year, "paperId": f"ceed-{year}", "qno": qno,
                 "format": tag["format"], "image": f"images/{qid}.webp",
                 "imageWidth": img.width, "imageHeight": img.height, "optionCount": 4,
                 "answer": answer_of(tag["format"], tag["answer"]), "answerStatus": "solved",
                 "topic": tag["topic"], "difficulty": tag["difficulty"], "animated": False,
                 "explanation": tag["explanation"],
-            })
+            }
+            if year in OPTION_LABELS and tag["format"] != "NAT":
+                record["optionLabels"] = OPTION_LABELS[year]
+            if tag.get("excluded"):
+                record["excluded"] = tag["excluded"]
+            questions.append(record)
             ids.append(qid)
         papers.append({
             "id": f"ceed-{year}", "exam": "CEED", "year": year, "label": f"CEED {year}",

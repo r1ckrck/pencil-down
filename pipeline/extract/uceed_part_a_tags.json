@@ -177,7 +177,8 @@
  },
  "uceed-2015-q45": {
   "topic": "design-knowledge",
-  "difficulty": 2
+  "difficulty": 2,
+  "excluded": "Symbols are labelled A-E inside the figure while the options are A-D, and the official key (B, D) holds only if the flat sign counts as a note; under standard notation no option is true."
  },
  "uceed-2015-q46": {
   "topic": "3d-visualisation",
@@ -1161,7 +1162,8 @@
  },
  "uceed-2018-q26": {
   "topic": "design-knowledge",
-  "difficulty": 2
+  "difficulty": 2,
+  "excluded": "duplicate of ceed-2018-q13"
  },
  "uceed-2018-q27": {
   "topic": "language",
@@ -1241,7 +1243,8 @@
  },
  "uceed-2018-q46": {
   "topic": "design-knowledge",
-  "difficulty": 2
+  "difficulty": 2,
+  "excluded": "duplicate of ceed-2018-q22"
  },
  "uceed-2018-q47": {
   "topic": "design-knowledge",
@@ -1265,7 +1268,8 @@
  },
  "uceed-2018-q52": {
   "topic": "observation",
-  "difficulty": 2
+  "difficulty": 2,
+  "excluded": "duplicate of ceed-2018-q29"
  },
  "uceed-2018-q53": {
   "topic": "logic-and-counting",
@@ -1337,7 +1341,8 @@
  },
  "uceed-2018-q70": {
   "topic": "design-knowledge",
-  "difficulty": 1
+  "difficulty": 1,
+  "excluded": "duplicate of ceed-2018-q38"
  },
  "uceed-2018-q71": {
   "topic": "everyday-science",

@@ -3,7 +3,10 @@
 No official answer key exists for these years (the CEED site publishes keys from 2020 only),
 so every answer was solved by hand from the crop and is stored with its explanation in
 ceed_part_a_tags_2015_2019.json alongside topic and difficulty. A question is excluded when
-its answer could not be solved with confidence; its paper then loses past-paper eligibility.
+its answer could not be solved with confidence; its paper then loses past-paper eligibility
+and its crop is not kept. A solved question kept for its paper but never served in mocks,
+drills or revisit (no single defensible key, or a duplicate) carries an "excluded" reason in
+its tag, copied to the record.
 
 For each paper:
   1. Find question anchors ("Q.01", "Q.1", "Question no. 1") in the left margin of the text
@@ -64,6 +67,9 @@ PAPERS = {
                       scheme=scheme(3, 2)),
 }
 DURATION, TOTAL = 60, 100
+
+# Option labels as printed, when not A-D; they map to A-D in order (NAT items have none).
+OPTION_LABELS = {"ceed-2015": ["a", "b", "c", "d"]}
 
 # Anchors drawn inside images (no text layer): {paperId: {qno: (page index, y in pt)}}.
 MANUAL_ANCHORS = {
@@ -157,16 +163,17 @@ def main():
         ids, excluded = [], []
         for qno, parts, animated in regions:
             qid = f"{pid}-q{qno:02d}"
-            img = render(doc, parts)
-            save_webp(img, IMAGES / f"{qid}.webp")
             tag = tags.get(qid)
             if not tag or "answer" not in tag:
+                (IMAGES / f"{qid}.webp").unlink(missing_ok=True)
                 excluded.append(qid)
                 if not (tag and tag.get("exclude")):
                     missing.append(qid)
                 continue
+            img = render(doc, parts)
+            save_webp(img, IMAGES / f"{qid}.webp")
             fmt = fmts[qno - 1]
-            questions.append({
+            record = {
                 "id": qid, "exam": "CEED", "year": cfg["year"], "paperId": pid, "qno": qno,
                 "format": fmt, "image": f"images/{qid}.webp",
                 "imageWidth": img.width, "imageHeight": img.height, "optionCount": 4,
@@ -174,7 +181,12 @@ def main():
                 "topic": tag["topic"], "difficulty": tag["difficulty"],
                 "animated": animated or bool(tag.get("animated")),
                 "explanation": tag["explanation"],
-            })
+            }
+            if pid in OPTION_LABELS and fmt != "NAT":
+                record["optionLabels"] = OPTION_LABELS[pid]
+            if tag.get("excluded"):
+                record["excluded"] = tag["excluded"]
+            questions.append(record)
             ids.append(qid)
         papers.append({
             "id": pid, "exam": "CEED", "year": cfg["year"], "label": cfg["label"],

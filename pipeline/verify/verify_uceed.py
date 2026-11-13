@@ -3,7 +3,8 @@
 Per paper: question count, format split and mark total equal the printed instructions (less
 any listed skips), every question has a valid official answer and tags, every key entry
 maps to a question (no orphans), ids are unique, every image exists with the recorded size,
-and the paper is never past-paper eligible. Contact sheets (12 crops each, labelled) go to
+and the paper is never past-paper eligible. A record's "excluded" reason (kept for its paper,
+never served) matches its tag; a "duplicate of <id>" reason names an existing, served record. Contact sheets (12 crops each, labelled) go to
 pipeline/raw/contact/uceed-*.png for visual review.
 
 Run: pipeline/.venv/bin/python -I pipeline/verify/verify_uceed.py   (exit 1 on any failure)
@@ -61,6 +62,8 @@ def main():
     check(len(by_id) == len(questions), "duplicate question ids")
     ceed = json.loads((PART_A / "questions-ceed-2020-2026.json").read_text())
     check(not (set(by_id) & {q["id"] for q in ceed}), "id collides with CEED pool")
+    tags = json.loads((ROOT / "pipeline" / "extract" / "uceed_part_a_tags.json").read_text())
+    all_ids = {q["id"]: q for f in sorted(PART_A.glob("questions*.json")) for q in json.loads(f.read_text())}
     check(sorted(p["year"] for p in papers) == sorted(PRINTED), "papers do not cover every year")
     listed = [i for p in papers for i in p["questionIds"]]
     check(sorted(listed) == sorted(by_id), "questions and paper questionIds differ")
@@ -90,7 +93,12 @@ def main():
         check(not orphans, f"{p['id']}: orphan keys {sorted(orphans)}")
         for q in qs:
             qid, a = q["id"], q["answer"]
-            check(set(q) == FIELDS, f"{qid}: fields {sorted(set(q) ^ FIELDS)}")
+            check(FIELDS <= set(q) <= FIELDS | {"excluded"}, f"{qid}: fields {sorted(set(q) ^ FIELDS)}")
+            reason = tags.get(qid, {}).get("excluded")
+            check(q.get("excluded") == reason and (reason is None or len(reason) > 10), f"{qid}: excluded")
+            if reason and reason.startswith("duplicate of "):
+                dup = all_ids.get(reason.removeprefix("duplicate of "))
+                check(dup is not None and "excluded" not in dup, f"{qid}: {reason} is not a served record")
             check(qid == f"uceed-{y}-q{q['qno']:02d}", f"{qid}: id pattern")
             check(q["exam"] == "UCEED" and q["year"] == y and q["paperId"] == p["id"], f"{qid}: exam/year/paperId")
             check(q["format"] == printed_fmts[q["qno"] - 1], f"{qid}: format differs from printed section")

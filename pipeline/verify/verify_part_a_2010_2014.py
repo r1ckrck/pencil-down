@@ -3,8 +3,9 @@
 Checks: every record has the PartAQuestion shape; ids are unique and match year/qno; every
 question is answerStatus "solved" with a valid answer and a non-empty explanation; topics
 and difficulties are valid; images exist with the recorded size; each paper's questionIds
-are its questions in printed order; per paper, included + excluded = the objective item
-count; pastPaperEligible holds only for a complete Part A paper. Contact sheets (12 crops
+are its questions in printed order; optionLabels are exactly as printed for the paper; a
+record's "excluded" reason (kept, never served) matches its tag; per paper, included +
+excluded = the objective item count; pastPaperEligible holds only for a complete Part A paper. Contact sheets (12 crops
 each, labelled with id and key) go to pipeline/raw/contact/ as a1014-*.png.
 
 Run: pipeline/.venv/bin/python -I pipeline/verify/verify_part_a_2010_2014.py   (exit 1 on any failure)
@@ -27,6 +28,8 @@ KEYS = {"id", "exam", "year", "paperId", "qno", "format", "image", "imageWidth",
 TOPICS = {"3d-visualisation", "folding-and-patterns", "mechanisms", "everyday-science",
           "observation", "logic-and-counting", "design-knowledge", "language"}
 LETTERS = ["A", "B", "C", "D"]
+OPTIONAL = {"optionLabels", "excluded"}
+OPTION_LABELS = {2013: ["1", "2", "3", "4"]}  # printed 1-4; every other paper prints A-D
 
 errors = []
 
@@ -50,7 +53,8 @@ def valid_answer(a, fmt):
 def main():
     questions = json.loads((PART_A / "questions-ceed-2010-2014.json").read_text())
     papers = json.loads((PART_A / "papers-ceed-2010-2014.json").read_text())
-    excluded = json.loads(TAGS.read_text())["excluded"]
+    tags = json.loads(TAGS.read_text())
+    excluded, solved = tags["excluded"], tags["questions"]
     by_id = {q["id"]: q for q in questions}
     check(len(by_id) == len(questions), "duplicate question ids")
     old = json.loads((PART_A / "questions-ceed-2020-2026.json").read_text())
@@ -58,7 +62,11 @@ def main():
 
     for q in questions:
         qid = q["id"]
-        check(set(q) == KEYS, f"{qid}: keys {sorted(set(q) ^ KEYS)}")
+        check(KEYS <= set(q) <= KEYS | OPTIONAL, f"{qid}: keys {sorted(set(q) ^ KEYS)}")
+        labels = OPTION_LABELS.get(q["year"]) if q["format"] != "NAT" else None
+        check(q.get("optionLabels") == labels, f"{qid}: optionLabels {q.get('optionLabels')} != {labels}")
+        reason = solved.get(qid, {}).get("excluded")
+        check(q.get("excluded") == reason and (reason is None or len(reason) > 10), f"{qid}: excluded")
         check(qid == f"ceed-{q['year']}-q{q['qno']:02d}", f"{qid}: id does not match year/qno")
         check(q["exam"] == "CEED" and q["paperId"] == f"ceed-{q['year']}", f"{qid}: exam/paperId")
         check(q["optionCount"] == 4 and q["animated"] is False, f"{qid}: optionCount/animated")
