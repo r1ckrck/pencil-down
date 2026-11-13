@@ -2478,11 +2478,11 @@
     "images": [
       {
         "path": "images/authored/pb-creativity-0001-1.svg",
-        "alt": "Twelve black symbols: umbrella, fish, key, alarm clock, footprints, bicycle, light bulb, cat face, scissors, cow, megaphone, cactus"
+        "alt": "Twelve black symbols: umbrella, fish, key, radio, footprints, bicycle, light bulb, cat face, sneaker, cow, piggy bank, life buoy"
       }
     ],
     "tags": {
-      "object": "symbol set: umbrella, fish, key, alarm clock, footprints, bicycle, bulb, cat, scissors, cow, megaphone, cactus"
+      "object": "symbol set: umbrella, fish, key, radio, footprints, bicycle, bulb, cat, sneaker, cow, piggy bank, life buoy"
     }
   },
   {
@@ -2616,7 +2616,7 @@
     "origin": null,
     "slot": "creativity",
     "title": "Symbols in the order given",
-    "text": "Eight black symbols are shown, numbered left to right. Create a 4-frame story using these symbols. Use any 2 symbols in each frame and each symbol only once. You may rotate, flip or scale a symbol, but you may not modify it. Add characters, props and backgrounds as you need. The symbols must enter the story in the order they are shown: 1 and 2 in frame 1, 3 and 4 in frame 2, and so on. Number the frames and give your story a title.",
+    "text": "Eight black symbols are shown, numbered 1 to 8. Create a 4-frame story using these symbols. Use any 2 symbols in each frame and each symbol only once. You may rotate, flip or scale a symbol, but you may not modify it. Add characters, props and backgrounds as you need. The symbols must enter the story in the order they are shown: 1 and 2 in frame 1, 3 and 4 in frame 2, and so on. Number the frames and give your story a title.",
     "rules": [
       "2 symbols per frame, in the order shown",
       "Each symbol only once",
@@ -2644,7 +2644,7 @@
     "images": [
       {
         "path": "images/authored/pb-creativity-0005-1.svg",
-        "alt": "Eight black symbols in a row: coffee cup, cookie, cooking pot, cricket bat and ball, egg, envelope, feather, first-aid kit"
+        "alt": "Eight black symbols in two rows of four, numbered 1 to 8 from left to right, top row first: 1 coffee cup, 2 cookie, 3 cooking pot, 4 cricket bat and ball, 5 egg, 6 envelope, 7 feather, 8 first-aid kit"
       }
     ],
     "tags": {
@@ -2995,7 +2995,7 @@
     "source": "authored",
     "origin": null,
     "slot": "creativity",
-    "title": "Story from ten symbols: cow to umbrella",
+    "title": "Story from ten symbols: motorcycle to sunglasses",
     "text": "Ten black symbols are shown. Create a 4-frame story using these symbols. Use any 2 symbols in each frame and each symbol only once. You may rotate, flip or scale a symbol, but you may not modify it. Add characters, props and backgrounds as you need. Number the frames and give your story a title.",
     "rules": [
       "Use exactly 2 symbols per frame",
@@ -3024,11 +3024,11 @@
     "images": [
       {
         "path": "images/authored/pb-creativity-0014-1.svg",
-        "alt": "Ten black symbols: cow, fan, hourglass, key, ladder, moon, pill, scissors, tent, umbrella"
+        "alt": "Ten black symbols: motorcycle, television, compass, prawn, bed, headphones, flag, stack of coins, ghost, sunglasses"
       }
     ],
     "tags": {
-      "object": "symbol set: cow, fan, hourglass, key, ladder, moon, pill, scissors, tent, umbrella"
+      "object": "symbol set: motorcycle, television, compass, prawn, bed, headphones, flag, coins, ghost, sunglasses"
     }
   },
   {
@@ -3079,7 +3079,7 @@
     "source": "authored",
     "origin": null,
     "slot": "creativity",
-    "title": "Story from twelve symbols: rocket to fish",
+    "title": "Story from twelve symbols: rocket to flower",
     "text": "Twelve black symbols are shown. Create a 4-frame story using these symbols. Use any 2 symbols in each frame and each symbol only once. You may rotate, flip or scale a symbol, but you may not modify it. Add characters, props and backgrounds as you need. Number the frames and give your story a title.",
     "rules": [
       "Use exactly 2 symbols per frame",
@@ -3108,11 +3108,11 @@
     "images": [
       {
         "path": "images/authored/pb-creativity-0016-1.svg",
-        "alt": "Twelve black symbols: rocket, dog, bus, telephone, bell, light bulb, water drop, fish, trophy, gift box, footprints, cactus"
+        "alt": "Twelve black symbols: rocket, tooth, taxi, popcorn tub, lightning bolt, globe, pen, bridge, trophy, parcel box, sock, flower"
       }
     ],
     "tags": {
-      "object": "symbol set: rocket, dog, bus, phone, bell, bulb, drop, fish, trophy, gift, footprints, cactus"
+      "object": "symbol set: rocket, tooth, taxi, popcorn, lightning, globe, pen, bridge, trophy, parcel, sock, flower"
     }
   },
   {
@@ -3875,10 +3875,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Rain that falls on liars",
-    "text": "Imagine a town in Kerala where the rain falls only on people who have just told a lie. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine a town in Kerala where the rain falls only on people who have just told a lie. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],
@@ -3911,10 +3911,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "The cooker that whistles for one",
-    "text": "Imagine a pressure cooker whose whistle can be heard only by the person the food is being cooked for. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine a pressure cooker whose whistle can be heard only by the person the food is being cooked for. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],
@@ -3947,10 +3947,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Ten centimetres tall for a day",
-    "text": "Imagine that everyone in Ahmedabad wakes up one morning only 10 cm tall, while everything else stays the same size. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine that everyone in Ahmedabad wakes up one morning only 10 cm tall, while everything else stays the same size. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],
@@ -3983,10 +3983,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Gravity takes a break at six",
-    "text": "Imagine that every evening at 6 p.m., gravity in your colony switches off for ten minutes. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine that every evening at 6 p.m., gravity in your colony switches off for ten minutes. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],
@@ -4019,10 +4019,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Spectacles that see five minutes back",
-    "text": "Imagine a pair of spectacles that shows you what a person was thinking five minutes ago. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine a pair of spectacles that shows you what a person was thinking five minutes ago. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],
@@ -4055,10 +4055,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Chalk that comes alive",
-    "text": "Imagine a box of chalk in a village school in Bihar: whatever you draw with it on the blackboard becomes real for exactly one minute. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Draw inside the boxes.",
+    "text": "Imagine a box of chalk in a village school in Bihar: whatever you draw with it on the blackboard becomes real for exactly one minute. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],
@@ -4092,10 +4092,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "A dupatta that never ends",
-    "text": "Imagine a dupatta that stretches to any length its owner needs. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine a dupatta that stretches to any length its owner needs. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],
@@ -4128,10 +4128,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Your voice comes out of things",
-    "text": "Imagine that when you speak, your voice comes out of the object nearest to you instead of your mouth. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine that when you speak, your voice comes out of the object nearest to you instead of your mouth. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],
@@ -4162,10 +4162,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Horns that turn into notes",
-    "text": "Imagine that in Kolkata every vehicle horn now produces visible musical notes that float in the air for an hour. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine that in Kolkata every vehicle horn now produces visible musical notes that float in the air for an hour. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],
@@ -4198,10 +4198,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Hands shaped like ladles",
-    "text": "Imagine that human hands are shaped like ladles. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine that human hands are shaped like ladles. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],
@@ -4232,10 +4232,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Ears as big as banana leaves",
-    "text": "Imagine that human ears are as large as banana leaves. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. No two situations may take place in the same location. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine that human ears are as large as banana leaves. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. No two situations may take place in the same location. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title",
       "Each situation in a different location"
@@ -4269,10 +4269,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Height that follows mood",
-    "text": "Imagine that a person's height changes with their mood: taller when happy, shorter when sad. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. All four situations must take place in the same room. Use black only. Draw inside the boxes.",
+    "text": "Imagine that a person's height changes with their mood: taller when happy, shorter when sad. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. All four situations must take place in the same room. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title",
       "All four situations in the same room"
@@ -4306,10 +4306,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "Shoes that walk home",
-    "text": "Imagine that every pair of shoes in Shillong walks back home by itself at sunset, with or without its owner. Illustrate four situations, then let the fourth one undo the problem shown in the first. Give each situation a title. Do not draw any human faces. Use black only. Draw inside the boxes.",
+    "text": "Imagine that every pair of shoes in Shillong walks back home by itself at sunset, with or without its owner. Illustrate four situations, then let the fourth one undo the problem shown in the first. Give each situation a title. Do not draw any human faces. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situation 4 must undo situation 1",
       "No human faces",
       "Give each situation a title"
@@ -4345,10 +4345,10 @@
     "origin": null,
     "slot": "creativity",
     "title": "A fridge that answers back",
-    "text": "Imagine that every refrigerator in a housing society in Chennai can talk, and has opinions about what you eat. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw inside the boxes.",
+    "text": "Imagine that every refrigerator in a housing society in Chennai can talk, and has opinions about what you eat. Illustrate four situations in this order: human–human, human–animal, human–environment and human–object interaction. Give each situation a title. Use black only. Draw four boxes and work inside them.",
     "rules": [
       "Black only",
-      "Draw inside the boxes",
+      "Draw four boxes and work inside them",
       "Situations in the given order",
       "Give each situation a title"
     ],

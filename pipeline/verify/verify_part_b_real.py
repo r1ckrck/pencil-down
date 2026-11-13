@@ -14,6 +14,8 @@ PROMPT_KEYS = {"id", "source", "origin", "slot", "title", "text", "rules", "crit
 ORIGIN_KEYS = {"exam", "year", "qno", "originalSection", "adapted"}
 TAG_KEYS = {"user", "setting", "object", "pov", "twist", "hook"}
 PAPER_KEYS = {"id", "year", "label", "durationMin", "promptIds"}
+# 2020+ prompts whose printed text had to change (stimulus printed only in the answer booklet).
+ADAPTED_2020_PLUS = {"ceed-2020-b-q2", "ceed-2021-b-q2"}
 ID_RE = re.compile(r"^ceed-(\d{4})(-s[12])?-b-q(\d+)[a-d]?$")
 
 errors: list[str] = []
@@ -56,8 +58,8 @@ def check_prompt(p: dict, base: pathlib.Path) -> None:
             err(pid, "origin field types")
         if m and (int(m.group(1)) != o["year"] or int(m.group(3)) != o["qno"]):
             err(pid, "id year/qno disagree with origin")
-        if o["adapted"] != (o["year"] < 2020):
-            err(pid, "adapted must be false for 2020+ and true before 2020")
+        if o["adapted"] != (o["year"] < 2020 or pid in ADAPTED_2020_PLUS):
+            err(pid, "adapted must be true before 2020 or for a listed 2020+ change, false otherwise")
     if p["slot"] not in SLOTS:
         err(pid, f"bad slot {p['slot']!r}")
     for k in ("title", "text"):

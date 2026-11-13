@@ -2,8 +2,9 @@
 
 Usage: part_b_build_real.py <content_part_b_dir>
 
-2020–2026: the five mandatory questions as printed (adapted: false).
-2010–2019: each question adapted to the closest current slot in the 24-minute, 20-mark shape (adapted: true).
+2020–2026: the five mandatory questions as printed (adapted: false), except the 2020 and 2021 Q2 box
+  questions, whose booklet-only boxes and themes are replaced by a note (adapted: true).
+2010–2019: each question adapted to the closest current slot as one 24-minute, 20-mark task (adapted: true).
 Criteria rules:
 - Printed criteria with printed marks keep their split, scaled to 20.
 - Printed criteria without marks share 20 evenly (2020–2026 keep the printed count;
@@ -37,6 +38,27 @@ def img(pid: str, alt: str, n: int = 1) -> dict:
 
 
 PENCIL = ["Use only pencils", "Do not use any kind of colour", "Do not use drawing instruments (ruler, compass, set-square)"]
+
+# Current slot shapes (2026 paper), used where a 2010–2019 long-form question is cut to one 24-minute task.
+SKETCH = ["Use only black/HB-series pencils", "Do not use other colours", "Draw only in the given space"]
+SKETCH_CRIT = even("Character and expressions", "Proportion and composition", "Quality of sketching", "Environment and props")
+STORY_RULES = ["Four frames, numbered 1–4", "Give a title"]
+STORY_CRIT = even("Originality", "Graphical narrative (story communication)", "Humour and surprise", "Clarity and neatness of sketches")
+ICON_CRIT = even("Consistency of visual language", "Thematic appropriateness", "Effective communication", "Composition, clarity and neatness")
+HMW_RULES = ["Problem statements start with \"How can we…\"", "Two solutions for one statement"]
+HMW_CRIT = [{"name": "Variety and uniqueness of the problems", "marks": 4}, {"name": "Relevance of the problems", "marks": 4},
+            {"name": "Practical feasibility of the design solutions", "marks": 6}, {"name": "Clarity in communication", "marks": 6}]
+
+
+def hmw(context: str, imagine: str) -> str:
+    """2026 problem-id shape: four How-can-we statements (8), then two solutions to one of them (12)."""
+    return f"""
+{context}
+
+{imagine} Write the FOUR problem statements starting with the words "How can we…". (2 × 4 = 8 marks)
+
+Select any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 × 2 = 12 marks)
+"""
 
 P: list[dict] = []
 
@@ -81,7 +103,7 @@ Using the visual elements given in the ten boxes create recognizable objects and
 """, ["Use only BLACK pencil/pen", "Draw only within the boundaries of the boxes"],
     even("Originality of ideas", "Diversity of ideas", "Clarity of sketches", "Neatness of sketches"),
     {"object": "titled images", "twist": "complete given abstract marks"},
-    ["A square box containing three marks: a short diagonal line, a small circle, and a curved arc, with a title line below."], adapted=False)
+    ["A square box containing three marks: a short diagonal line, a small circle, and a curved arc, with a title line below."])
 
 add(2020, 3, "Visual Sensitivity", "visual", "Plant photos to icons", """
 Create 2D graphic icons for each of the images given below. All icons should belong to the same design language/style.
@@ -118,13 +140,13 @@ Create separate illustrations of the character in the following two situations:
     ["Line drawing of Rohan: a neat schoolboy with combed hair, tie, short-sleeved shirt, shorts, socks and laced shoes."], adapted=False)
 
 add(2021, 2, "Creativity", "creativity", "Ten boxes, three themed", """
-Building upon the visual elements given in the ten boxes, create recognizable images and give a title to each. A theme for each of the first three boxes has been given as printed in the answer booklet.
+Building upon the visual elements given in the ten boxes, create recognizable images and give a title to each. Before you start, choose your own theme for each of the first three boxes and write it above that box; those three images must follow their themes.
 
-*The published paper shows only the first of the ten boxes (below); the other boxes and the three themes were printed in the answer booklet. Use this box's elements as the starting point for each of your ten images.*
-""", ["Use only BLACK pencil/pen", "Draw only within the boundaries of the boxes"],
+*The published paper shows only the first of the ten boxes (below); the other boxes and the printed themes were in the answer booklet. Use this box's elements as the starting point for each of your ten images.*
+""", ["Use only BLACK pencil/pen", "Draw only within the boundaries of the boxes", "Write your own theme above each of the first three boxes"],
     even("Originality of ideas", "Diversity of ideas", "Clarity of sketches", "Neatness of sketches"),
-    {"object": "titled images", "twist": "complete given abstract marks"},
-    ["A square box containing a V of two straight lines meeting at a vertical line near the top, a small arc in the middle, and a quarter circle in the bottom-right corner, with a title line below."], adapted=False)
+    {"object": "titled images", "twist": "complete given abstract marks; choose three themes"},
+    ["A square box containing a V of two straight lines meeting at a vertical line near the top, a small arc in the middle, and a quarter circle in the bottom-right corner, with a title line below."])
 
 add(2021, 3, "Visual Sensitivity", "visual", "Rural hospital ward icons", """
 A rural hospital uses the following icon system to depict Male, Female, Cardiology, Casualty, Ophthalmology and Neurology.
@@ -419,23 +441,17 @@ Represent your ideas with five neat sketches, with a brief note for each if nece
     even("Originality of ideas", "Diversity of ideas", "Humour and surprise", "Clarity and neatness of sketches"),
     {"object": "discarded CDs", "twist": "cut, bend, paste or multiply", "hook": "reuse"})
 
-add(2010, 4, "Problem Identification and Analysis (A)", "problem-id", "Pressure cooker problems", """
-Below is an image of a pressure cooker commonly used in Indian households. Identify five unique problems from the point of view of the users.
-
-- Write each problem briefly and justify it in one line.
-- Choose the three most important problems and illustrate a solution for each with a sketch.
-""", ["Problems from the users' point of view"],
-    marks(("Identification of unique problems and proper justification", 10), ("Appropriateness of your solutions", 10)),
-    {"user": "household cook", "setting": "home kitchen", "object": "pressure cooker", "pov": "users", "hook": "Indian kitchen"},
+add(2010, 4, "Problem Identification and Analysis (A)", "problem-id", "Pressure cooker problems", hmw(
+    "Below is an image of a pressure cooker commonly used in Indian households.",
+    "Imagine someone cooking a meal with it, from filling it to opening it and washing it. Identify FOUR distinct problems from the users' point of view that may need design solutions."),
+    HMW_RULES, HMW_CRIT,
+    {"user": "household cook", "setting": "home kitchen", "object": "pressure cooker", "pov": "users", "twist": "How-can-we statements, then two solutions", "hook": "Indian kitchen"},
     ["Photo of an aluminium pressure cooker with a long black handle, a lid and a weighted whistle on top."], suffix="a")
 
-add(2010, 4, "Problem Identification and Analysis (B)", "problem-id", "Railway platform communication", """
-Below is an image of a typical railway platform in India. Identify five unique **communication design** problems from the point of view of the users.
-
-- Write each problem briefly and justify it in one line.
-- Choose the three most important problems and illustrate a solution for each with a sketch.
-""", ["Communication design problems only", "Problems from the users' point of view"],
-    marks(("Identification of unique problems and proper justification", 10), ("Appropriateness of your solutions", 10)),
+add(2010, 4, "Problem Identification and Analysis (B)", "problem-id", "Railway platform communication", hmw(
+    "Below is an image of a typical railway platform in India.",
+    "Imagine a passenger arriving to catch a train: finding the platform, the coach position, the train's status and the exit. Identify FOUR distinct **communication design** problems they might face."),
+    ["Communication design problems only", *HMW_RULES], HMW_CRIT,
     {"user": "rail commuters", "setting": "railway platform", "object": "signage and wayfinding", "pov": "users", "twist": "communication problems only", "hook": "Indian Railways"},
     ["Black-and-white photo of a long Indian railway platform under a steel roof, with hanging bilingual signboards, a book stall sign, waiting passengers and a train alongside."], suffix="b")
 
@@ -448,27 +464,19 @@ Imagine five interesting products made out of a combination of all five objects.
     {"object": "products from primitives", "twist": "use all five objects every time"},
     ["Outline drawing of a cone, three discs of different orientations and a long curved flexible wire."])
 
-add(2010, 6, "Design Problem Solving: Product Design / Interaction Design (A)", "problem-id", "Scissors for the blind", """
-People who are fully blind need products that help them carry out day-to-day activities with ease. One such product is a pair of scissors, used for cutting liquid pouches, cloth, paper, etc. Design a new pair of scissors for the visually impaired. You can make use of new technologies if needed.
-
-1. Identify five distinct factors essential for designing scissors for the blind.
-2. Generate three quick concepts as pencil sketches based on these factors.
-3. Develop one into a final concept showing the overall form, construction details and materials.
-""", ["Pencil sketches"],
-    marks(("Identification of distinct factors", 5), ("Novelty of your alternate concepts", 5), ("Appropriateness of your final solution", 10), ("Quality of your presentation", 5)),
+add(2010, 6, "Design Problem Solving: Product Design / Interaction Design (A)", "problem-id", "Scissors for the blind", hmw(
+    "People who are fully blind use a pair of scissors every day: to cut milk and oil pouches, cloth, thread and paper.",
+    "Imagine a blind person at home using an ordinary pair of scissors, from finding it to putting it away. Identify FOUR distinct problems they might face that may need design solutions."),
+    HMW_RULES, HMW_CRIT,
     {"user": "blind people", "setting": "home", "object": "scissors", "twist": "user cannot see the tool", "hook": "accessibility"}, suffix="a")
 
-add(2010, 6, "Design Problem Solving: Communication Design (B)", "visual", "Flu symbol and school poster", """
-Influenza A (H1N1), also known as swine flu, is an influenza virus that is contagious and spreads rapidly.
+add(2010, 6, "Design Problem Solving: Communication Design (B)", "visual", "Flu awareness poster for schools", """
+Influenza A (H1N1), also known as swine flu, is contagious and spreads rapidly.
 
-Design a new symbol to capture the essence of this disease, using text, graphics or both.
-
-1. List five distinct factors essential for representing the disease.
-2. Sketch three quick symbol concepts and finalise one.
-3. Design a poster that uses your final symbol to create awareness about the disease among school children.
-""", ["Colours allowed if necessary", "The poster must use your final symbol"],
-    marks(("Identification of distinct factors", 5), ("Novelty of your alternate concepts", 5), ("Appropriateness of your final symbol", 5), ("Clarity of your final poster design", 10)),
-    {"user": "school children", "setting": "school", "object": "symbol and poster", "hook": "public health"}, suffix="b")
+Design one poster for school children that makes them aware of the flu and of how to stop it spreading: covering a cough or sneeze, washing hands, staying home when ill. Build the poster around a symbol you design for the disease. Use as little text as possible.
+""", ["Colours allowed if necessary", "Minimal text"],
+    even("Effectiveness of the symbol", "Clarity of the message for children", "Thematic appropriateness", "Composition, clarity and neatness"),
+    {"user": "school children", "setting": "school", "object": "awareness poster", "twist": "built around your own symbol", "hook": "public health"}, suffix="b")
 
 # ---------- 2011 ----------
 add(2011, 1, "Visual Perception and Design Sensitivity (1.4)", "creativity", "Four forms from one line", """
@@ -504,47 +512,34 @@ Imagine five interesting products made out of a combination of all 8 objects. Yo
     {"object": "products from primitives", "twist": "use all eight objects every time"},
     ["Outline drawing in a box: two hemispheres, two cubes, two cylinders and two long wavy wires."])
 
-add(2011, 4, "Problem Identification and Analysis", "problem-id", "Bus stop problems", """
-Below is an image of a typical bus stop in India. Identify five unique problems from the point of view of the users.
-
-- Write each problem briefly.
-- Choose the three most important problems and illustrate a solution for each with a sketch.
-""", ["Problems from the users' point of view"],
-    marks(("Identification of each unique problem", 10), ("Appropriateness of your solutions", 10)),
-    {"user": "commuters", "setting": "city bus stop", "object": "bus shelter", "pov": "users", "hook": "urban India"},
+add(2011, 4, "Problem Identification and Analysis", "problem-id", "Bus stop problems", hmw(
+    "Below is an image of a typical bus stop in India.",
+    "Imagine the people who wait here through a day: office-goers, a mother with a child, an elderly man, someone in the rain. Identify FOUR distinct problems from the users' point of view that may need design solutions."),
+    HMW_RULES, HMW_CRIT,
+    {"user": "commuters", "setting": "city bus stop", "object": "bus shelter", "pov": "users", "twist": "How-can-we statements, then two solutions", "hook": "urban India"},
     ["Black-and-white photo of a roadside bus shelter covered in large advertising hoardings, with people sitting and standing under it and one holding an umbrella."])
 
-add(2011, 5, "Design Problem Solving: Product Design (A)", "problem-id", "Mobile phone for the elderly", """
-Mobile phones have great potential to address the special needs of the elderly. Design a new mobile phone for elderly users.
+add(2011, 5, "Design Problem Solving: Product Design (A)", "problem-id", "Mobile phone for the elderly", hmw(
+    "Mobile phones have great potential to address the special needs of the elderly, yet many older people struggle with them.",
+    "Imagine a day in the life of a 75-year-old using an ordinary smartphone: calls, medicine reminders, payments, photos from family. Identify FOUR distinct problems they might face that may need design solutions."),
+    HMW_RULES, HMW_CRIT,
+    {"user": "elderly", "object": "mobile phone", "twist": "How-can-we statements, then two solutions", "hook": "accessibility; technology"}, suffix="a")
 
-1. Identify five distinct factors essential for designing a mobile phone for the elderly.
-2. Generate three quick concepts as pencil sketches based on these factors.
-3. Develop one into a final concept showing the overall form and the design of its interface.
-""", ["Pencil sketches"],
-    marks(("Identification of distinct factors", 5), ("Originality of your alternate concepts", 10), ("Appropriateness of your final solution", 10), ("Quality of your presentation", 5)),
-    {"user": "elderly", "object": "mobile phone", "hook": "accessibility; technology"}, suffix="a")
+add(2011, 5, "Design Problem Solving: Communication Design (B)", "visual", "Organic vegetable drink label", """
+A new business is launching a health drink made from organically grown vegetables. Name the brand yourself.
 
-add(2011, 5, "Design Problem Solving: Communication Design (B)", "visual", "Organic vegetable drink brand", """
-A new business wants to introduce an original health drink made from organically grown vegetables. Name the brand yourself.
-
-1. List five distinct factors essential for representing the brand.
-2. Sketch three quick logo/symbol concepts using text, graphics or both, and finalise one.
-3. Design the graphics for the label of a one-litre pack, using your final logo/symbol.
-""", ["Colours allowed if necessary", "The label must use your final logo/symbol"],
-    marks(("Identification of distinct factors", 5), ("Originality of your alternate concepts", 10), ("Appropriateness of your final logo/symbol", 5), ("Clarity of your final label design for packaging", 10)),
-    {"user": "consumers", "setting": "market shelf", "object": "logo and pack label", "hook": "organic food"}, suffix="b")
+Design the front label of its one-litre pack. Letter the brand name as a logo, and make the drink's vegetable origin clear at a glance from a shop shelf.
+""", ["Colours allowed if necessary", "Name the brand yourself"],
+    even("Originality of the brand mark", "Appropriateness to the product and its buyers", "Effective communication on the shelf", "Composition, clarity and neatness"),
+    {"user": "consumers", "setting": "market shelf", "object": "pack label with logo", "hook": "organic food"}, suffix="b")
 
 add(2011, 5, "Design Problem Solving: Animation Design (C)", "creativity", "Tiger, sparrow and the poacher", """
 The tiger and the sparrow are endangered species in our country, and their protection needs attention.
 
-Create an interesting comic strip involving a **tiger**, a **sparrow** and a **poacher** (a person who captures animals by laying a trap), using text and images.
-
-1. Write the abstract of the story in five lines.
-2. Make two quick alternate sketches of each character.
-3. Draw the story in four key frames, with a title.
-""", ["Text and images", "Colours allowed if necessary"],
-    marks(("Abstract of the story", 5), ("Appropriate portrayal of the characters", 10), ("Originality of your storyboard (text and images)", 10), ("Quality of your presentation", 5)),
-    {"user": "animals; poacher", "setting": "forest", "object": "comic strip", "hook": "wildlife conservation"}, suffix="c")
+Create a comic strip in four frames involving a **tiger**, a **sparrow** and a **poacher** (a person who captures animals by laying a trap). Let the last frame turn the story. Give the strip a title and number the frames 1–4.
+""", ["Tiger, sparrow and poacher all appear", *STORY_RULES],
+    STORY_CRIT,
+    {"user": "animals; poacher", "setting": "forest", "object": "four-frame comic", "twist": "three fixed characters", "hook": "wildlife conservation"}, suffix="c")
 
 # ---------- 2012 ----------
 add(2012, 1, "Drawing Ability (option 1)", "sketching", "Favourite car, three-quarter view", """
@@ -559,37 +554,27 @@ Draw a **5-year-old boy sitting on a chair**. You may use shading to give a real
     even("Composition", "Perspective", "Light, shade and shadow", "Quality of lines"),
     {"user": "child (boy)", "object": "figure on a chair"}, suffix="b")
 
-add(2012, 2, "Design Problem Solving (A)", "problem-id", "Jar-cap opener for the elderly", """
-Screw caps on glass bottles of pickle and jam are often difficult for senior citizens to open. Design an opener for screw-on bottle caps, to be used by the elderly.
-
-1. Identify five distinct factors essential for designing a cap opener for the elderly.
-2. Generate three quick concepts as pencil sketches based on these factors.
-3. Develop one into a final concept showing the overall form and its features. Mention the materials and why you chose them.
-""", ["Pencil sketches"],
-    even("Identification of distinct factors", "Originality of your alternate concepts", "Appropriateness of your final solution and choice of materials", "Quality of your presentation"),
-    {"user": "elderly", "setting": "home kitchen", "object": "jar-cap opener", "hook": "accessibility; Indian pickle jars"}, suffix="a")
+add(2012, 2, "Design Problem Solving (A)", "problem-id", "Jar caps and the elderly", hmw(
+    "Screw caps on glass jars of pickle and jam are often difficult for senior citizens to open.",
+    "Imagine an elderly person at home taking out such a jar, opening it, serving from it and closing it again. Identify FOUR distinct problems they might face that may need design solutions."),
+    HMW_RULES, HMW_CRIT,
+    {"user": "elderly", "setting": "home kitchen", "object": "screw-cap jar", "twist": "How-can-we statements, then two solutions", "hook": "accessibility; Indian pickle jars"}, suffix="a")
 
 add(2012, 2, "Design Problem Solving (B)", "visual", "Anti-corruption awareness poster", """
-Corruption is a big concern and people are agitating over the issue. It is a social responsibility of a designer to create awareness of this issue amongst common people through visual media.
+Bribes asked for everyday public services hurt common people. It is a social responsibility of a designer to create awareness of this issue through visual media.
 
-Design an anti-corruption awareness poster that captures the essence of the issue, using text, graphics or both.
-
-1. List five distinct factors essential for representing the issue.
-2. Sketch three quick poster concepts.
-3. Develop one into the final poster.
+Design one anti-corruption awareness poster, to hang in a public office waiting area, that captures the essence of the issue. Use graphics, text or both.
 """, ["Colours allowed if necessary"],
-    even("Identification of distinct factors", "Originality of your alternate concepts", "Appropriateness of your final poster", "Clarity of your poster in representing the issue"),
-    {"user": "general public", "object": "awareness poster", "hook": "civic awareness"}, suffix="b")
+    even("Originality of the visual idea", "Clarity of the message", "Appropriateness to the place and audience", "Composition, clarity and neatness"),
+    {"user": "general public", "setting": "public office", "object": "awareness poster", "hook": "civic awareness"}, suffix="b")
 
 add(2012, 2, "Design Problem Solving (C)", "creativity", "Dengue mosquito comic", """
-Dengue fever claiming human lives is becoming a concern. Create an imaginary **female mosquito character** spreading dengue fever, and draw an interesting comic strip involving her. You may add characters to complement the story.
+Dengue fever claiming human lives is becoming a concern. Create an imaginary **female mosquito character** who spreads dengue fever, and tell her story as a comic strip in four frames. You may add characters to complement the story.
 
-1. Write an abstract of the story in five lines.
-2. Make two quick alternative sketches of each character.
-3. Draw the story in four frames, with a title.
-""", ["Colours allowed if necessary"],
-    even("Abstract of the story", "Appropriateness of the characters", "Originality of the storyboard", "Quality of presentation"),
-    {"user": "mosquito character; people", "object": "comic strip", "twist": "the villain is the hero of the strip", "hook": "public health"}, suffix="c")
+Let the last frame turn the story. Give the strip a title and number the frames 1–4.
+""", ["Colours allowed if necessary", *STORY_RULES],
+    STORY_CRIT,
+    {"user": "mosquito character; people", "object": "four-frame comic", "twist": "the villain is the hero of the strip", "hook": "public health"}, suffix="c")
 
 # ---------- 2013 ----------
 add(2013, 1, "Part B Mandatory", "sketching", "Apple and bananas on a plate", """
@@ -618,15 +603,11 @@ Do not suggest solutions.
     {"user": "students", "setting": "college canteen", "object": "canteen interior", "twist": "no solutions allowed", "hook": "Indian everyday"},
     ["Photo of a college canteen interior: a service counter, a red soft-drink cooler, food posters on the wall, plastic chairs and a few people at the counter."])
 
-add(2013, 4, "Part B Optional (Product Design)", "problem-id", "Floor mop that reaches everywhere", """
-Mopping floors is one of the tedious daily household chores. A normal mop cannot reach all the crevices and under the furniture. Design a manually operated floor mop for domestic use.
-
-1. Identify five distinct factors essential for designing such a mop.
-2. Generate three quick concepts as pencil sketches, each with a note of no more than 15 words.
-3. Develop one into a final concept showing the overall form and its features. Indicate the materials for the various parts.
-""", ["Concept notes no more than 15 words", "Manually operated"],
-    even("Identification of distinct factors", "Originality of your alternate concepts", "Appropriateness of your final solution and choice of materials", "Quality of presentation"),
-    {"user": "homemaker", "setting": "home", "object": "floor mop", "hook": "domestic chores"}, suffix="a")
+add(2013, 4, "Part B Optional (Product Design)", "problem-id", "Mopping into the corners", hmw(
+    "Mopping floors is one of the tedious daily household chores. A normal mop cannot reach the crevices or the space under furniture.",
+    "Imagine someone mopping a two-room home with an ordinary mop and bucket, from filling the bucket to drying the mop. Identify FOUR distinct problems they might face that may need design solutions."),
+    ["Solutions must be manually operated", *HMW_RULES], HMW_CRIT,
+    {"user": "homemaker", "setting": "home", "object": "floor mop", "twist": "How-can-we statements, then two solutions", "hook": "domestic chores"}, suffix="a")
 
 add(2013, 4, "Part B Optional (Visual Communication)", "visual", "Text-free medicine instructions", """
 The following instructions are to be printed on a medicine packet. Represent them visually **without using any text**:
@@ -636,22 +617,18 @@ The following instructions are to be printed on a medicine packet. Represent the
 3. One and a half tablets after dinner at 9:00 PM.
 4. Not to be taken by pregnant women.
 
-The packet is 50 mm high, 200 mm wide and 50 mm deep. Your final artwork (all four visuals together) should fit within 40 mm × 160 mm. Explain your design solution in not more than 20 words.
-""", ["No text in the visuals", "All four visuals fit within 40 mm × 160 mm", "Explanation in not more than 20 words"],
-    even("Ability to communicate clearly using visuals without text", "Clarity of visuals", "Quality of renderings", "Overall effectiveness of the final design solution"),
+The packet is 50 mm high, 200 mm wide and 50 mm deep. Your final artwork (all four visuals together) should fit within 40 mm × 160 mm. Draw it at twice that size, 80 mm × 320 mm.
+""", ["No text in the visuals", "All four visuals in one 40 mm × 160 mm band, drawn at twice the size"],
+    even("Ability to communicate clearly using visuals without text", "Consistency of visual language", "Quality of renderings", "Overall effectiveness of the final design solution"),
     {"user": "patients, pregnant women", "setting": "pharmacy pack", "object": "pictogram set", "twist": "no text, fixed size", "hook": "health literacy"}, suffix="b")
 
 add(2013, 4, "Part B Optional (Animation Design)", "creativity", "Autobiography of a crow", """
 The crow is the most common bird we get to see in India, and it carries many deep-rooted associations in Indian society.
 
-Imagine that you are a crow and narrate your autobiography.
-
-1. Write your story in 5 sentences.
-2. Make 3 quick sketches of the crow in your story in various poses, moods or expressions.
-3. Tell your story in 4 frames, with a title.
-""", ["Story in 5 sentences"],
-    even("Ability to design an interesting character and story", "Originality of the story", "Graphical narrative (story communication)", "Quality and finish of drawings"),
-    {"user": "crow", "object": "character and story", "pov": "first person, as the crow", "twist": "you are the crow", "hook": "Indian culture"}, suffix="c")
+Imagine that you are a crow. Tell your autobiography as a comic strip in four frames, keeping the crow's look the same in every frame. Let the last frame turn the story. Give the strip a title and number the frames 1–4.
+""", ["Keep the crow consistent", *STORY_RULES],
+    STORY_CRIT,
+    {"user": "crow", "object": "four-frame story", "pov": "first person, as the crow", "twist": "you are the crow", "hook": "Indian culture"}, suffix="c")
 
 # ---------- 2014 ----------
 add(2014, 1, "Sketching (option 1)", "sketching", "Opening the fridge", """
@@ -685,35 +662,36 @@ Creatively generate **four** alternative uses of the umbrella other than protect
     {"object": "umbrella", "twist": "idle object, new use", "hook": "monsoon season"})
 
 add(2014, 4, "Part B Optional (Visual Communication and Interaction)", "visual", "Navrang Chitrapat ticket booking", """
-Design a graphical user interface for the website of a movie theatre complex named **'Navrang Chitrapat'** for booking movie tickets online. The complex has 3 theatres, each screening a different film, three shows per day.
+Design a mobile-phone interface for booking tickets at **'Navrang Chitrapat'**, a movie theatre complex with 3 theatres, each screening a different film, three shows per day.
 
-Draw **four** key screens in sequence that take the user through the booking. Between them, the screens should present: basic information about the complex, name of film, date, time, availability of tickets, price, payment options and confirmation of booking. Add a brief note on your design decisions.
-""", ["Four screens in sequence"],
-    even("Usability of the interface", "Structure and clarity of information", "Visual quality of icons and overall screens", "Logic of design decisions"),
-    {"user": "moviegoers", "setting": "cinema", "object": "booking website", "hook": "technology; Indian naming"})
+Draw THREE key screens in sequence:
+
+1. Choose the film, date and show.
+2. Choose seats, showing availability and price.
+3. Confirmation of booking.
+
+All three screens should share one consistent visual language.
+""", ["Three screens in sequence", "One consistent visual language"],
+    even("Usability and flow of the screens", "Structure and clarity of information", "Consistency of visual language", "Composition, clarity and neatness"),
+    {"user": "moviegoers", "setting": "cinema", "object": "booking screens", "hook": "technology; Indian naming"})
 
 add(2014, 5, "Part B Optional (Animation Design)", "sketching", "Bag-snatch on the platform", """
-A woman is walking on a crowded railway platform. A train pulls in and people alight. A man suddenly comes up behind the woman, snatches her bag and runs away. The woman shouts for help. A policeman standing near a vendor's cart looks up and immediately gives chase. Two women standing by try to console the shocked woman. The thief runs towards the stairs to the overhead bridge. The policeman throws his baton at the thief's legs. The thief stumbles and comes crashing down on the platform. A group of men catch him and retrieve the bag as the policeman reaches. A loud cheer goes up amongst the watching public.
+A woman is walking on a crowded railway platform as a train pulls in. A man comes up behind her, snatches her bag and runs towards the stairs to the overhead bridge. She shouts for help. A policeman standing near a vendor's cart gives chase and throws his baton at the thief's legs. The thief stumbles and comes crashing down on the platform. Two women standing by try to console the shocked woman.
 
-Assume you are one of the characters: **the woman, the thief, the policeman or a bystander**. Illustrate the story as you see it unfolding in front of you, in **six frames**.
-""", ["Choose one character's point of view and keep it", "Six frames"],
-    even("Visual narrative structure", "Point of view", "Quality of illustrations", "Character and environment development"),
-    {"user": "commuters; policeman", "setting": "railway platform", "object": "storyboard", "pov": "one character of your choice", "twist": "first-person character view", "hook": "Indian Railways"})
+Sketch the moment the thief comes crashing down, as seen by the woman from where she stands with the two women beside her.
+""", SKETCH,
+    SKETCH_CRIT,
+    {"user": "commuters; policeman", "setting": "railway platform", "object": "scene", "pov": "the woman whose bag was snatched", "twist": "the victim's point of view", "hook": "Indian Railways"})
 
-add(2014, 6, "Part B Optional (Product Design)", "form", "Roadside segregation bins", """
-Roadside waste containers are often dirty, stinking and spilling over. Design roadside waste bin(s) for public places that segregate:
+add(2014, 6, "Part B Optional (Product Design)", "form", "Roadside segregation bins from a cylinder", """
+Roadside waste containers are often dirty, stinking and spilling over. Conceptualise and render a set of roadside bins for a public place that keeps four kinds of waste apart: packaging, dry organic waste, food waste and everything else.
 
-- different types of packaging
-- wet and dry organic waste
-- organic food waste
-- all other kinds of leftover
+Base the set on a **cylinder**. The cylinder may be cut, added to, subtracted from, deformed and repeated, but its essence should be retained. The bins must be rugged and easy to move for emptying.
 
-The containers should be rugged and movable so that the waste can be transported for periodic disposal.
-
-Present a neat freehand sketch showing the form, an exploded view, the materials and processes, and a brief note on your design decisions.
-""", ["Include an exploded view"],
-    even("User-centric design for hygiene, portability and Indian conditions", "Sustainability (recycle, reduce, regenerate, refuse)", "Originality of ideas and design insight", "Appropriateness of materials and manufacturing"),
-    {"user": "public", "setting": "street", "object": "waste bins", "twist": "four-way segregation", "hook": "sustainability; Indian conditions"})
+Render the set in one large three-quarter view with a person for scale, and label the materials.
+""", ["Keep the essence of the cylinder", "Four kinds of waste kept apart"],
+    even("Uniqueness of the form", "Form–function relevance (segregation, hygiene, moving for emptying)", "Detailing and materials", "Rendering quality"),
+    {"user": "public", "setting": "street", "object": "waste bins", "twist": "four-way segregation from one primitive", "hook": "sustainability; Indian conditions"})
 
 # ---------- 2015 ----------
 add(2015, 1, "Part B (mandatory)", "sketching", "Cookery-show pressure cooker", """
@@ -749,51 +727,35 @@ Then pick one of your stories and draw it as a three-frame strip, one frame per 
     even("Variety of plots", "Creativity of plots", "Graphical narrative (story communication)", "Clarity and neatness of sketches"),
     {"user": "cobbler; child", "setting": "footpath", "object": "three-sentence stories", "twist": "three fixed words", "hook": "Indian street trade"})
 
-add(2015, 5, "Optional (Product Design) 5a", "problem-id", "Carrying four water pots", """
-Women in rural India often walk a long distance carrying three to four pots of drinking water home, which causes a lot of physical strain. Design a device to help women carry **four earthen pots** of drinking water over uneven terrain.
+add(2015, 5, "Optional (Product Design) 5a", "problem-id", "Carrying four water pots", hmw(
+    "Women in rural India often walk a long distance over uneven terrain carrying three to four earthen pots of drinking water home, which causes a lot of physical strain.",
+    "Imagine one such trip, from filling the pots at the well to setting them down at home. Identify FOUR distinct problems she might face that may need design solutions."),
+    HMW_RULES, HMW_CRIT,
+    {"user": "rural women", "setting": "rural village paths", "object": "carrying water pots", "twist": "How-can-we statements, then two solutions", "hook": "rural India; water"}, suffix="a")
 
-1. Identify five distinct factors that make this device relevant for rural India.
-2. Draw a neat freehand sketch of the overall form and its features.
-3. Sketch the usage scenario, and indicate the materials and processes.
-""", ["Four earthen pots", "Uneven terrain"],
-    even("User-centric design considerations", "Feasibility and overall effectiveness of the design solution", "Appropriateness of materials and processes", "Originality of concepts and quality of presentation"),
-    {"user": "rural women", "setting": "rural village paths", "object": "carrying aid", "hook": "rural India; water"}, suffix="a")
+add(2015, 5, "Optional (Interaction Design) 5b", "visual", "Interactive pencil box screens", """
+An organisation wants an interactive pencil box for students of standards 7–10 (about 12–15 years old): the box that carries pens, pencils and an eraser has a small screen on its lid and acts as a learning aid inside and outside the classroom.
 
-add(2015, 5, "Optional (Interaction Design) 5b", "problem-id", "Interactive pencil box", """
-An organisation wants to develop an interactive pencil box (the box students carry pens, pencils, eraser, ruler etc. in) for students of standards 7–10 (about 12–15 years old), to act as a learning aid both inside and outside the classroom.
-
-1. Sketch the 3D form of the device with its graphical interface, designed to appeal to this age group.
-2. State three original features that would help students study. **Do not** describe features already in present-day smart devices (calculator, dictionary, e-book reader etc.).
-3. Show, in a short screen sequence, how the device helps a student learn a topic from the history of India.
-""", ["No features from present-day smart devices"],
-    even("Logic and flow in the interface", "Usability and appropriateness of information", "Originality of concepts", "Overall effectiveness and quality of presentation"),
-    {"user": "students aged 12–15", "setting": "school", "object": "interactive pencil box", "twist": "no existing smart-device features", "hook": "education; Indian history"}, suffix="b")
+Design THREE screens in sequence, shown on the lid, that help a student learn one topic from the history of India. Do not use features of present-day smart devices (calculator, dictionary, e-book reader etc.). The screens should share one visual language that appeals to this age group.
+""", ["Three screens in sequence", "No features from present-day smart devices"],
+    even("Logic and flow of the screens", "Appeal to the age group", "Originality of the learning idea", "Composition, clarity and neatness"),
+    {"user": "students aged 12–15", "setting": "school", "object": "pencil-box screens", "twist": "no existing smart-device features", "hook": "education; Indian history"}, suffix="b")
 
 add(2015, 5, "Optional (Animation Design) 5c", "sketching", "Kid, puppy and the eagle", """
-An animation film for 5 to 12 year old children is in pre-production. It is based on the relationship between a kid (girl or boy) and their puppy. Here is a shot breakdown of one sequence:
+An animation film for 5 to 12 year old children is about a 10-year-old kid (girl or boy) and their puppy. In one sequence, the two are playing with a ball in a field when a huge eagle swoops down, grabs the puppy in its talons and flies off. The kid throws the ball at the eagle; it hits, and the eagle drops the puppy.
 
-1. A 10-year-old kid and the puppy are playing with a ball in a field.
-2. Suddenly the kid notices a huge eagle swooping down on the puppy.
-3. The eagle reaches out with its talons, grabs the puppy and flies off.
-4. The kid sees the puppy carried away.
-5. The kid picks up the ball and throws it at the eagle.
-6. The ball hits the eagle, and it drops the puppy.
-7. The kid is reunited with the puppy and hugs it.
+Sketch the moment the ball hits the eagle, from the point of view of the puppy hanging from its talons.
+""", SKETCH,
+    SKETCH_CRIT,
+    {"user": "child; puppy; eagle", "setting": "open field", "object": "scene", "pov": "the puppy, held in the air", "twist": "animal point of view from mid-air"}, suffix="c")
 
-Create a storyboard of these seven shots as a series of picture frames.
-""", ["One frame per shot", "Line drawing is sufficient"],
-    even("Communication of the narrative through sequential pictures", "Shot composition", "Character and expressions", "Quality of sketching"),
-    {"user": "child; puppy; eagle", "setting": "open field", "object": "storyboard", "twist": "peril and rescue in seven shots"}, suffix="c")
+add(2015, 5, "Optional (Visual Communication) 5d", "visual", "Suraksha gas-cylinder page", """
+The government is starting a home-safety campaign called **'Suraksha'** (safety) to make citizens aware of safety with household appliances. It needs a page for its information booklet on gas cylinders.
 
-add(2015, 5, "Optional (Visual Communication) 5d", "visual", "Suraksha gas-cylinder booklet", """
-The government is starting a home-safety campaign called **'Suraksha'** (safety) to make citizens aware of safety with household appliances. Support it with a section of an information booklet on gas cylinders.
-
-1. Design a logo for the campaign title 'Suraksha'.
-2. Identify four problems users face while changing a domestic gas cylinder.
-3. Lay out one 6 × 6 inch booklet page that illustrates those four problems as a clear, safe sequence, using text minimally or not at all.
-""", ["Booklet page 6 × 6 inches", "Minimal or no text"],
-    even("Quality of visual renderings", "Appropriate selection of views of objects and actions", "Effectiveness of presentation in minimal space", "Clarity in the structure and sequencing of information"),
-    {"user": "households", "setting": "home kitchen", "object": "logo and booklet page", "twist": "minimal or no text", "hook": "LPG safety campaign"}, suffix="d")
+Lay out one 6 × 6 inch page that shows how to change a domestic gas cylinder safely, in FOUR steps. Use visuals only; step numbers are the only text allowed.
+""", ["Page 6 × 6 inches", "Four steps", "No text except step numbers"],
+    even("Appropriate selection of views of objects and actions", "Clarity in the structure and sequencing of information", "Effectiveness of presentation in minimal space", "Quality of visual renderings"),
+    {"user": "households", "setting": "home kitchen", "object": "booklet page", "twist": "no text", "hook": "LPG safety campaign"}, suffix="d")
 
 # ---------- 2016 session 1 ----------
 add(2016, 1, "Part B (mandatory)", "sketching", "Patient and doctor at the clinic", """
@@ -820,49 +782,43 @@ Then pick one of your stories and draw it as a three-frame strip, one frame per 
     even("Variety of plots", "Creativity of plots", "Graphical narrative (story communication)", "Clarity and neatness of sketches"),
     {"setting": "school", "object": "three-sentence stories", "twist": "three fixed words"}, session="-s1")
 
-add(2016, 4, "Optional (Product Design)", "form", "Packable solar cooker for site workers", """
-Construction workers migrate frequently and are economically challenged; they could benefit from cooking with solar energy. Design a solar cooking unit for construction workers.
+add(2016, 4, "Optional (Product Design)", "form", "Solar cooker that packs into a box", """
+Construction workers migrate frequently and are economically challenged; they could benefit from cooking with solar energy. Conceptualise and render a solar cooker that cooks for 20 people at a site and packs into a box no larger than 2 ft × 3 ft × 2 ft.
 
-- It should be easy to assemble, store and transport.
-- It should cook food for at least 20 people at a time.
-- Packed, it should not exceed 2 ft × 3 ft × 2 ft.
+Let the **box** be the form: it may be unfolded, hinged, cut and repeated, but packed, it must close back into the box.
 
-Present quick sketches of two alternatives, then a neat freehand sketch of the final form, an exploded view, and the materials and processes.
-""", ["Packed size within 2 ft × 3 ft × 2 ft", "Include an exploded view"],
-    even("Originality of ideas", "Ability to understand the strengths and weaknesses of the user", "Appropriateness of materials and processes, and sustainability", "Ability to articulate design decisions and effectiveness of presentation"),
-    {"user": "migrant construction workers", "setting": "construction site", "object": "solar cooker", "twist": "packed-size limit", "hook": "solar energy; migrant labour"}, session="-s1")
+Render the cooker open and in use in one large three-quarter view, with a small sketch of it packed.
+""", ["Packed size within 2 ft × 3 ft × 2 ft", "Packs back into the box"],
+    even("Uniqueness of the form", "Form–function relevance (cooking, packing, carrying)", "Detailing and materials", "Rendering quality"),
+    {"user": "migrant construction workers", "setting": "construction site", "object": "solar cooker", "twist": "unfolds from a box of fixed size", "hook": "solar energy; migrant labour"}, session="-s1")
 
-add(2016, 5, "Optional (Interaction Design)", "problem-id", "Soil tester for farmers", """
-A smartphone manufacturer wants to develop a portable soil tester for farmers in India. It measures water content (very low to very high), pH level (alkaline to acidic) and fertiliser content (very low to very high). It has three probes that are inserted into the soil to take readings, and it can use components from smartphones.
+add(2016, 5, "Optional (Interaction Design)", "visual", "Soil tester results screen", """
+A smartphone manufacturer is developing a portable soil tester for farmers in India. Its three probes go into the soil and it reports three readings: water content (very low to very high), pH level (acidic to alkaline) and fertiliser content (very low to very high). Many of its users read little.
 
-1. Sketch the 3D form of the device.
-2. Detail its graphical interface.
-3. Illustrate one typical scenario of use, showing the interface and information flow with brief notes.
-""", ["Three probes", "Smartphone components allowed"],
-    even("Originality of ideas", "Ability to understand the strengths and weaknesses of the user", "Logic and flow in the interface, usability and appropriateness of information", "Ability to articulate design decisions and effectiveness of presentation"),
-    {"user": "farmers", "setting": "farm field", "object": "soil tester", "hook": "agriculture; technology"}, session="-s1")
+Design the results screen that shows all three readings at once. Give each reading an icon and a scale a farmer can read at a glance in the field. Draw the screen large, showing one sample result.
+""", ["Three readings on one screen", "Minimal text"],
+    even("Consistency of visual language", "Appropriateness to farmers in the field", "Effective communication of the readings", "Composition, clarity and neatness"),
+    {"user": "farmers", "setting": "farm field", "object": "results screen", "twist": "readable without reading", "hook": "agriculture; technology"}, session="-s1")
 
 add(2016, 6, "Optional (Animation)", "sketching", "The Potter and the Wagher", """
 A Gujarati folktale (from *Folktales of India*, 1987) is to be made into an animation film:
 
-> A strong, tall potter and a very thin Wagher (a warrior) were neighbours, and their wives were friends. The potter's wife kept mocking the Wagher's wife: how could such a thin man ever face a foe? One day the drums thundered as outlaws entered the village. The potter hid on his verandah. The Wagher took his sword, walked into the potter's house, picked up a crowbar and, telling the potter's wife to watch whether he was brave, bent it into a collar around her neck. Then he went out and drove the outlaws from the village. Ashamed, the potter's wife finally asked the Wagher's wife to have the collar removed. "My husband gets such strength only when the drums thunder and danger is near," she replied. "When that time returns, you will be set free."
+> A strong, tall potter and a very thin Wagher (a warrior) were neighbours, and their wives were friends. The potter's wife kept mocking the Wagher's wife: how could such a thin man ever face a foe? One day the drums thundered as outlaws entered the village. The potter hid on his verandah, while the Wagher took his sword and went out to drive the outlaws away.
 
-Create a storyboard of this story in **six frames** that include all the major events.
-""", ["Six frames", "Include all the major events"],
-    even("Clarity, continuity and plot structure", "Visual continuity", "Point of view", "Character design"),
-    {"user": "villagers", "setting": "village", "object": "storyboard", "twist": "compress a folktale into six frames", "hook": "Indian folktale"}, session="-s1")
+Sketch the moment the drums thunder: the Wagher striding out with his sword while the potter hides, as seen by the potter's wife from her doorway.
+""", SKETCH,
+    SKETCH_CRIT,
+    {"user": "villagers", "setting": "village", "object": "scene", "pov": "the potter's wife at her doorway", "twist": "one moment from a folktale", "hook": "Indian folktale"}, session="-s1")
 
 add(2016, 7, "Optional (Visual Communication)", "visual", "IIT Goa symbol and logo", """
-A new Indian Institute of Technology is starting in Goa. Design a **symbol** (a visual representation of the ideas associated with the institute) and a **logo** (the way the institute's name is depicted).
+A new Indian Institute of Technology is starting in Goa. Design its **symbol** (a visual representation of the ideas associated with the institute) combined with its **logo** (the institute's name in letterforms).
 
-They must work in black & white and in colour, at all sizes, on stationery, vehicles, websites and buildings. They should reflect: technology, world-class education, research and development, India and Goa.
+They should reflect: technology, world-class education, research and development, India and Goa, and work in black and white at every size.
 
-1. Sketch three quick alternatives.
-2. Present the final symbol and logo neatly.
-3. Show them applied on a letterhead.
-""", ["Must work in black & white and colour", "Must work at all sizes"],
-    even("Originality of ideas", "Ability to understand and reflect the keywords of the brief", "Clarity of thought and effectiveness of presentation", "Ability to create an identity that works across media"),
-    {"user": "institution", "setting": "education", "object": "symbol and logo", "hook": "new Indian institution; Goa"}, session="-s1")
+Draw the final symbol and logo large, then once more at 2 cm height to show it still reads.
+""", ["Black and white only", "Show it large and at 2 cm height"],
+    even("Originality of the symbol", "Reflection of the brief's keywords", "Legibility at small size", "Composition, clarity and neatness"),
+    {"user": "institution", "setting": "education", "object": "symbol and logo", "twist": "must read at 2 cm", "hook": "new Indian institution; Goa"}, session="-s1")
 
 # ---------- 2016 session 2 ----------
 add(2016, 1, "Part B (mandatory)", "sketching", "Kirana counter", """
@@ -889,116 +845,88 @@ Then pick one of your stories and draw it as a three-frame strip, one frame per 
     even("Variety of plots", "Creativity of plots", "Graphical narrative (story communication)", "Clarity and neatness of sketches"),
     {"user": "farmer", "setting": "rural", "object": "three-sentence stories", "twist": "three fixed words"}, session="-s2")
 
-add(2016, 4, "Optional (Product Design)", "problem-id", "Bicycle toy-vendor kit", """
-Cities have many vendors who move around selling goods, using hand carts and other accessories because they lack dedicated space. Design a system or set of accessories to be used with an **existing bicycle**, so that a vendor can move around and sell **toys for kids**.
+add(2016, 4, "Optional (Product Design)", "form", "Toy stall on a bicycle", """
+Cities have many vendors who move around selling goods because they lack dedicated space. A toy vendor sells **toys for kids** from an **existing bicycle**.
 
-The vendor should be able to display and sell when parked, and pack up and move. Consider ease of assembly, materials and manufacturing, ease of use, a child-friendly display, and ease of opening and packing up.
+Visualise a set of attachments that turns the bicycle into a toy stall when parked and packs up so the vendor can ride away. The attachments should match the bicycle's design language: its tubes, wheels and joints. Sketch and render the bicycle parked with the stall open, as a child would see it, and label the materials.
+""", ["Works with an existing bicycle", "Packs up for riding"],
+    even("Consistency with the bicycle's design language", "Form–function relevance (display, packing, riding)", "Detailing and materials", "Rendering quality"),
+    {"user": "itinerant vendor; child buyers", "setting": "city street", "object": "bicycle stall attachments", "twist": "companion product to a given product", "hook": "informal economy"}, session="-s2")
 
-Present quick sketches of two alternatives, then the final concept with all details, its materials and processes, and a brief note on your decisions.
-""", ["Works with an existing bicycle"],
-    even("Originality and innovative use of material in constrained situations", "Ability to understand the needs of the seller and buyers", "Appropriateness of materials, processes, assembly, deployment and transport", "Ability to articulate design decisions and effectiveness of presentation"),
-    {"user": "itinerant vendor; child buyers", "setting": "city street", "object": "bicycle accessory kit", "twist": "sell when parked, pack up to move", "hook": "informal economy"}, session="-s2")
+add(2016, 5, "Optional (Interaction Design)", "visual", "Science museum guide icons", """
+A science museum that admits only children aged 10–14 hands each child a digital guide at entry, to help them understand the exhibits and their underlying concepts, alone or in groups.
 
-add(2016, 5, "Optional (Interaction Design)", "problem-id", "Science museum guide for children", """
-A science museum that admits only children aged 10–14 wants a digital handheld guide, handed out at entry, that helps children understand the exhibits and their underlying concepts. It should work for a single child and for children in groups.
+Create four icons for the guide's main functions:
 
-1. Sketch the 3D form of the device and give it a name.
-2. Detail its graphical interface.
-3. Illustrate one typical scenario of use, showing the interface and information flow with brief notes.
-""", ["Must work for one child and for groups"],
-    even("Originality of ideas", "Ability to understand the strengths and weaknesses of the user", "Logic and flow in the interface, usability and appropriateness of information", "Ability to articulate design decisions and effectiveness of presentation"),
-    {"user": "children aged 10–14", "setting": "science museum", "object": "handheld guide", "hook": "education; technology"}, session="-s2")
+- Explore an exhibit
+- Try an experiment
+- Play as a group
+- Find your way
+
+All icons should be clear and have a consistent visual language. Draw them in four squares.
+""", ["Icons should only have visuals. Do not use text", "Draw the icons in four squares"],
+    ICON_CRIT,
+    {"user": "children aged 10–14", "setting": "science museum", "object": "icon set", "hook": "education; technology"}, session="-s2")
 
 add(2016, 6, "Optional (Animation)", "sketching", "Dhanna Bhagat's gourds", """
 A Rajasthani folktale is to be made into an animation film:
 
-> Dhanna Singh, a young farmer, was so generous that his father thought him good for nothing. One day his father sent him to the weekly market to sell the farm's produce and buy seeds for the new crop. On the way Dhanna gave a ride to four priests and gifted them half the produce; then he gave the rest to an old woman crying by the road, thrown out of her house by her son. She gave him a few seeds in return. Dhanna planted them and told his father the seeds were sown. Weeks later his father found only wild gourds that goats eat. In anger he dashed one to the ground; it burst open, full of diamonds and emeralds. From then on he called his son Dhanna Bhagat and never scolded him for his generosity.
+> Dhanna Singh, a young farmer, was so generous that his father thought him good for nothing. Sent to market to sell the farm's produce and buy seeds, Dhanna gave everything away on the road, and an old woman gave him a few seeds in return. He planted them. Weeks later his father found only wild gourds that goats eat. In anger he dashed one to the ground; it burst open, full of diamonds and emeralds.
 
-Create a storyboard of this story in **six frames** that include all the major events.
-""", ["Six frames", "Include all the major events"],
-    even("Clarity, continuity and plot structure", "Visual continuity", "Point of view", "Character design"),
-    {"user": "farmer and father", "setting": "rural Rajasthan", "object": "storyboard", "twist": "compress a folktale into six frames", "hook": "Indian folktale"}, session="-s2")
+Sketch the moment the gourd bursts open at the father's feet, from the point of view of a goat grazing among the gourds.
+""", SKETCH,
+    SKETCH_CRIT,
+    {"user": "farmer and father; goat", "setting": "rural Rajasthan field", "object": "scene", "pov": "a grazing goat", "twist": "one moment from a folktale, animal point of view", "hook": "Indian folktale"}, session="-s2")
 
 add(2016, 7, "Optional (Visual Communication)", "visual", "AMRC Karnataka symbol and logo", """
-A new Ayurvedic Medical Research Centre (AMRC) is being set up in Karnataka to research fields related to Ayurveda. Design a **symbol** (a visual representation of the ideas associated with the centre) and a **logo** (the centre's name in letterforms). The logo must show "AMRC Karnataka" in English.
+A new Ayurvedic Medical Research Centre (AMRC) is being set up in Karnataka. Design its **symbol** (a visual representation of the ideas associated with the centre) combined with its **logo** (the centre's name in letterforms). The logo must show "AMRC Karnataka" in English.
 
-They must work in black & white and in colour, at all sizes, on stationery, vehicles, websites and buildings. They should reflect: Ayurveda, India, research and development.
+They should reflect: Ayurveda, India, research and development, and work in black and white at every size.
 
-1. Sketch three quick alternatives.
-2. Present the final symbol and logo neatly.
-3. Show them applied on a letterhead.
-""", ["Logo shows \"AMRC Karnataka\" in English", "Must work in black & white and colour, at all sizes"],
-    even("Originality of ideas", "Ability to understand and reflect the keywords of the brief", "Clarity of thought and effectiveness of presentation", "Ability to create an identity that works across media"),
-    {"user": "institution", "setting": "health research", "object": "symbol and logo", "hook": "Ayurveda; Indian tradition"}, session="-s2")
+Draw the final symbol and logo large, then once more at 2 cm height to show it still reads.
+""", ["Logo shows \"AMRC Karnataka\" in English", "Black and white only", "Show it large and at 2 cm height"],
+    even("Originality of the symbol", "Reflection of the brief's keywords", "Legibility at small size", "Composition, clarity and neatness"),
+    {"user": "institution", "setting": "health research", "object": "symbol and logo", "twist": "must read at 2 cm", "hook": "Ayurveda; Indian tradition"}, session="-s2")
 
 # ---------- 2017 ----------
-add(2017, 1, "Industrial Design", "problem-id", "Motorised chassis in a hospital", """
-You are given a base (chassis) of 100 cm × 75 cm, as shown below. It has:
+add(2017, 1, "Industrial Design", "form", "Hospital product on a motorised chassis", """
+You are given a base (chassis) of 100 cm × 75 cm, as shown below. It has an inbuilt motor and battery-charger system, carries a maximum load of 200 kg (apart from its own weight) and moves at up to 5 km/h.
 
-- an inbuilt motor and battery-charger system
-- capacity to carry a maximum load of 200 kg (apart from its own weight)
-- a maximum speed of 5 km/h
-
-You are free to add other parts and accessories to make it a complete, stable product.
-
-1. Using this platform, sketch 3 quick ideas for its use in a **hospital**.
-2. Pick one and list 5 critical factors you will consider.
-3. Sketch the concept with its functional details, features, usage and materials.
+Conceptualise and render ONE product for a **hospital** built on this chassis. You may add parts and accessories, but the chassis should stay recognisable. Render it in use in a hospital corridor with a person for scale, and label its key features and materials.
 """, ["Use the given chassis"],
-    even("Critical thinking, identification of user needs and understanding of the context", "Problem solving and appropriateness of the solution", "Ability to explain details and features through sketching", "Knowledge of materials and processes"),
-    {"user": "patients and hospital staff", "setting": "hospital", "object": "motorised platform", "twist": "given platform, find the use", "hook": "technology"},
+    even("Relevance of the use to patients and hospital staff", "Form–function relevance and relationship", "Detailing and materials", "Rendering quality"),
+    {"user": "patients and hospital staff", "setting": "hospital", "object": "motorised platform product", "twist": "given platform, find the use", "hook": "technology"},
     ["Outline drawing of a flat rectangular motorised chassis on four wheels with a battery box mounted at one end."])
 
 add(2017, 2, "Communication Design", "visual", "Malaria poster for Shaaradapur", """
-Shaaradapur is an Indian village with a multilingual, low-literate population. A lack of awareness about health and hygiene has led to an outbreak of malaria. Malaria is a mosquito-borne disease; its symptoms include fever, headache, vomiting and fatigue, and if left untreated it can be life-threatening. Timely diagnosis and treatment by a trained practitioner at the village government hospital is important. It can be prevented by draining stagnant water and spraying insecticides; bites can be avoided with mosquito nets and repellents.
+Shaaradapur is an Indian village with a multilingual, low-literate population, and it has an outbreak of malaria. Malaria is spread by mosquitoes; its symptoms are fever, headache, vomiting and fatigue, and untreated it can be life-threatening. Treatment by a trained practitioner at the village government hospital is important. It is prevented by draining stagnant water and spraying insecticide; mosquito nets and repellents stop bites.
 
-Design a poster for the villagers, to be displayed prominently in a public place, that communicates (a) the seriousness, (b) the symptoms, (c) the actions to be taken and (d) the prevention of malaria.
-
-Then sketch the poster in the location you choose, and write 3 sentences justifying the location, size and way it is displayed.
-""", ["Readers are multilingual and low-literate"],
-    even("Ability to understand the design brief", "Clarity of thought and articulation", "Creativity", "Presentation"),
-    {"user": "low-literate villagers", "setting": "village public place", "object": "health poster", "twist": "choose where it hangs", "hook": "public health; multilingual India"})
+Design one poster for a public place in the village that communicates (a) the seriousness, (b) the symptoms, (c) the action to take and (d) the prevention of malaria. Carry the message in pictures, since many villagers cannot read.
+""", ["Readers are multilingual and low-literate", "Minimal text"],
+    even("Clarity for low-literate readers", "Coverage of the four messages", "Originality of the visual idea", "Composition, clarity and neatness"),
+    {"user": "low-literate villagers", "setting": "village public place", "object": "health poster", "twist": "pictures carry the message", "hook": "public health; multilingual India"})
 
 add(2017, 3, "Animation Design", "sketching", "Priya, the cat and the bird", """
-An animation film for 5 to 12 year old children is in pre-production. It is about 10-year-old Priya and her cat. Here is the shot breakdown of one sequence:
+An animation film for 5 to 12 year old children is about 10-year-old Priya and her cat. In one sequence, the cat creeps along a branch towards a singing bird; the branch breaks, the bird flies away, and Priya runs to catch the falling cat but trips and falls. Terrified, she looks up to see the cat land safely on its feet.
 
-1. On a bright day, Priya plays with her cat in the garden.
-2. The cat's attention is diverted by a little bird singing on a tree.
-3. The cat climbs the tree and creeps along the branch where the bird is perched.
-4. Priya watches anxiously from below.
-5. As the cat approaches, the branch breaks and the bird flies away.
-6. Shocked, Priya runs to catch the falling cat.
-7. Priya trips and falls.
-8. Terrified, she looks up to see the cat land safely on its feet.
-9. Priya picks up the cat and scolds her.
-10. Then she gives the cat a warm hug; the cat meows back with a big smile.
+Sketch that moment, from the point of view of the bird on a higher branch.
+""", SKETCH,
+    SKETCH_CRIT,
+    {"user": "child (girl); cat; bird", "setting": "garden", "object": "scene", "pov": "the bird, from a higher branch", "twist": "high-angle animal point of view"})
 
-Storyboard this sequence in **eight frames** (combine shots where needed).
-""", ["Eight frames"],
-    even("Communication of the narrative through sequential pictures", "Shot composition and perspective", "Character attitudes and expressions", "Quality of sketching"),
-    {"user": "child (girl); cat; bird", "setting": "garden", "object": "storyboard", "twist": "ten shots into eight frames"})
+add(2017, 4, "Interaction Design", "problem-id", "Licence day at the RTO", hmw(
+    "About 500 people, mostly 18–20 years old and some who cannot read, visit a city Regional Transport Office (RTO) every day for a driving licence. The office is short-staffed. For a learner's licence, an applicant fills a form, takes an objective test, and submits copies of age and address proof, a phone number, fingerprints and a photograph.",
+    "Imagine an applicant who cannot read going through this visit, from the entrance to leaving with the learner's licence. Identify FOUR distinct problems they might face that may need design solutions."),
+    HMW_RULES, HMW_CRIT,
+    {"user": "licence applicants, some who cannot read", "setting": "RTO office", "object": "licence process", "twist": "user cannot read", "hook": "public services"})
 
-add(2017, 4, "Interaction Design", "problem-id", "RTO licence kiosk", """
-About 500 people visit the city Regional Transport Office (RTO) every day for a driving licence; some cannot read. The RTO is short-staffed. To get a learner's licence, a user fills a form, takes an objective test, and submits copies of age proof, address proof, a phone number, fingerprints and a photograph. After a month with a learner's licence, the user may apply for a permanent licence, choose a date for a driving test, and is then issued the licence.
+add(2017, 5, "Mobility and Vehicle Design", "form", "Banaras e-taxi from a ghat boat", """
+A company plans to introduce an **electric two-wheeler taxi** in Banaras (Varanasi) for local commuters and pilgrims.
 
-The RTO will put an interactive public information system in its lobby for learner's and permanent licence applicants (typically 18–20 years old).
-
-1. Write, in about 20 words, the needs of the different users and the information the system should provide. State your assumptions about technology.
-2. Sketch the lobby showing where the system sits and how people use it.
-3. Show one scenario (submitting an application) as a short screen sequence that solves a specific problem the user faces.
-""", ["User needs in about 20 words"],
-    even("Ability to understand the needs of users", "Originality", "Logic and flow in the interface, usability and appropriateness of information", "Presentation"),
-    {"user": "licence applicants, some who cannot read", "setting": "RTO lobby", "object": "public kiosk", "twist": "design for users who cannot read", "hook": "public services"})
-
-add(2017, 5, "Mobility and Vehicle Design", "form", "Electric two-wheeler taxi for Banaras", """
-A company plans to introduce an **electric two-wheeler taxi** in Banaras (Varanasi) for local commuters and pilgrims. Design it so that it is relevant to the city in function and aesthetics.
-
-1. Identify five distinct factors essential for this vehicle.
-2. Draw a neat side elevation of the vehicle.
-3. Draw a neat freehand perspective sketch showing the overall form and its features, and indicate materials for the body.
-""", ["Side elevation and perspective view"],
-    even("User-centric design considerations", "Form and originality", "Feasibility and effectiveness of the design solution", "Quality of sketch and appropriateness of materials"),
-    {"user": "commuters and pilgrims", "setting": "Varanasi streets", "object": "electric two-wheeler taxi", "pov": "side elevation and perspective", "hook": "electric mobility; Indian city"})
+Visualise its form based on the wooden rowing boats on the city's ghats. It should borrow the boat's design language (its hull curves, ribs and painted bands) with relevant details for a rider, a passenger and a small bag. Sketch and render the taxi in three-quarter view.
+""", ["Three-quarter view"],
+    even("Consistency with the visual language of the boat", "Form–function relevance for rider, passenger and luggage", "Relevant details of the vehicle", "Rendering quality"),
+    {"user": "commuters and pilgrims", "setting": "Varanasi streets", "object": "electric two-wheeler taxi", "twist": "borrow design language from a river boat", "hook": "electric mobility; Indian city"})
 
 add(2017, 6, "Sketching (option A)", "sketching", "Mixed-material still life", """
 Illustrate in perspective a still-life composition with a **plastic water bottle**, a **transparent half-empty glass of water with a metal spoon inside it**, and a **kitchen knife** placed next to a **half-eaten apple** on a **grey ceramic plate**.
@@ -1031,77 +959,50 @@ Then pick one of your stories and draw it as a three-frame strip, one frame per 
     {"user": "child; shopkeeper", "setting": "cycle shop", "object": "three-sentence stories", "twist": "three fixed words"})
 
 # ---------- 2018 ----------
-add(2018, 1, "Industrial Design", "problem-id", "One-handed milk-pouch aid", """
-Mr. Chatterjee, a right-handed person, recently lost his right hand in an accident. He lives alone and finds everyday activities difficult. Every morning a standard 500 ml milk pouch is delivered to his home, and he struggles to cut it open and pour the milk into a utensil to heat it.
-
-Design a product that helps him, with one hand, to:
-
-- lift and support the pouch
-- cut the pouch
-- pour the milk without spilling
-- discard the empty pouch
-
-Present neat freehand sketches of the form and its features, sketches of the usage scenario, the materials and processes, and a note on your decisions (max 50 words).
-""", ["One-handed use (left hand)", "Note max 50 words"],
-    even("User-centric design considerations", "Feasibility and overall effectiveness of the solution", "Appropriateness of materials and processes", "Originality, attention to detail and quality of presentation"),
-    {"user": "amputee living alone", "setting": "home kitchen", "object": "milk-pouch aid", "twist": "only the non-dominant hand", "hook": "accessibility; Indian milk pouch"})
+add(2018, 1, "Industrial Design", "problem-id", "One hand, one milk pouch", hmw(
+    "Mr. Chatterjee, a right-handed person, recently lost his right hand in an accident. He lives alone. Every morning a standard 500 ml milk pouch is delivered to his home, and with only his left hand he must lift it, cut it open, pour the milk into a utensil to heat it, and discard the empty pouch.",
+    "Imagine his morning with the pouch, from the doorstep to the stove. Identify FOUR distinct problems he faces that may need design solutions."),
+    ["Solutions must work with the left hand only", *HMW_RULES], HMW_CRIT,
+    {"user": "amputee living alone", "setting": "home kitchen", "object": "milk pouch", "twist": "only the non-dominant hand", "hook": "accessibility; Indian milk pouch"})
 
 add(2018, 2, "Communication Design", "visual", "The Art of Optical Illusion cover", """
-An optical illusion uses colour, light and patterns to create images that deceive our brains. Akihito Yujumari, an established artist and author, is releasing his 25th book, documenting the greatest optical illusions of the world. He has commissioned you to design its cover.
+An optical illusion uses colour, light and patterns to create images that deceive our brains. Akihito Yujumari, an established artist and author, is releasing his 25th book, documenting the greatest optical illusions of the world.
 
-- Title: *The Art of Optical Illusion*
-- Author: Akihito Yujumari
-- Publisher: Square Book Publishers
-- ISBN-13: 93-34567898765 (with barcode)
-- Book dimensions: 22.9 × 2.2 × 25.4 cm
-
-Design:
-
-1. The **front cover**, with the author's name and the title.
-2. The **spine**, with the title, the author's name and the publisher's logo and name.
-3. The **back cover**, with the ISBN and barcode and this paragraph: "This intriguing collection contains more than 275 optical illusions that appear to change before your eyes. Akihito Yujumari has carefully selected every type of optical illusion, which intrigues the mind and delights the eye, along with notes about the science behind each illusion."
-""", ["Keep the given dimensions in proportion"],
-    even("Ability to understand the design brief", "Originality and creativity of ideas", "Design sensitivity and attention to details", "Neatness and effectiveness of presentation"),
-    {"user": "general readers", "object": "book cover, spine and back", "twist": "the cover itself should play with perception", "hook": "perception science"})
+Design its **front cover**, with the title *The Art of Optical Illusion* and the author's name. The cover itself should play with perception. The book is 22.9 cm wide and 25.4 cm tall; keep that proportion.
+""", ["Keep the cover's proportion (22.9 × 25.4 cm)", "Title and author's name on the cover"],
+    even("Originality of the visual idea", "Thematic appropriateness (perception)", "Hierarchy of title and author", "Composition, clarity and neatness"),
+    {"user": "general readers", "object": "book front cover", "twist": "the cover itself should play with perception", "hook": "perception science"})
 
 add(2018, 3, "Animation Design", "sketching", "The crow and the biscuits", """
-An animation film for children is based on the relationship between a crow and a man. One scene:
+An animation film for children is based on the relationship between a crow and a man. In one scene, the man sits down to breakfast in the garden: a cup of tea and a plate of biscuits on the table. A crow on a nearby tree caws insistently; the man feels sorry for it and throws a biscuit in the air, and the crow catches it midair.
 
-> The man is about to have breakfast in the garden: a cup of tea and a plate of biscuits on the table. A crow on a nearby tree eyes the biscuits. The man gets a phone call and walks back and forth talking. The crow swoops down onto the table. The man notices and shoos it away. He finishes his call and sits down. The crow caws insistently; the man feels sorry for it and throws a biscuit in the air. The crow catches it midair. The crow and the man are happy!
-
-Storyboard this scene in **six frames**, using a variety of shots (long shot, close-up, top angle, low angle etc.).
-""", ["Six frames", "Vary the shots"],
-    even("Communication of the narrative through sequential pictures", "Shot composition (long shot, close-up, top and low angles)", "Perspective", "Attitude and expressions of the characters"),
-    {"user": "man; crow", "setting": "garden", "object": "storyboard", "twist": "shot variety is scored"})
+Sketch the moment of the catch, from the point of view of the plate of biscuits on the table.
+""", SKETCH,
+    SKETCH_CRIT,
+    {"user": "man; crow", "setting": "garden", "object": "scene", "pov": "the plate on the table", "twist": "inanimate-object point of view"})
 
 add(2018, 4, "Interaction Design", "visual", "ASHA app icons", """
 ASHA workers are local women trained as village health educators and monitors. One key task is keeping the health records of pregnant women, until now in paper booklets. The health ministry is moving these records to a smartphone app that every ASHA worker will use on home visits: she retrieves a woman's record, measures her weight, blood sugar and blood pressure, enters them, and the app flags any risk.
 
-Design a consistent set of icons for this app:
+Create four icons for this app:
 
-1. the app itself
-2. age of the foetus
-3. weight
-4. blood sugar
-5. blood pressure
+- Age of the foetus
+- Weight
+- Blood sugar
+- Blood pressure
 
-Draw each icon in a 5 cm × 5 cm square.
-""", ["Each icon in a 5 cm × 5 cm square", "One consistent visual language"],
+All icons should be clear and have a consistent visual language. Draw each icon in a 5 cm × 5 cm square.
+""", ["Each icon in a 5 cm × 5 cm square", "Do not use text"],
     even("Consistency of visual language", "Appropriateness to the users and context", "Effective communication", "Composition, clarity and neatness"),
     {"user": "village health workers; pregnant women", "setting": "rural home visits", "object": "app icon set", "hook": "rural public health; digitisation"})
 
 add(2018, 5, "Mobility and Vehicle Design", "form", "Bookseller's kiosk two-wheeler", """
-A roadside bookseller wants a new two-wheeler that also serves as a book display kiosk. He uses it as a kiosk during the day, and in the evenings or at weekends he wants to take his family out on trips. It must let him:
+A roadside bookseller wants a new two-wheeler that is a book kiosk in a crowded market during the day, and takes his family out on trips at weekends.
 
-- travel from home to a crowded market
-- set up the kiosk to sell 100 books
-- store the books and fold the kiosk away safely and securely
-- go out with his family at weekends
-
-Present: a few quick sketches of the key factors, a neat side elevation, and a perspective sketch of the final concept with its detailing and materials.
-""", ["Side elevation and perspective view"],
-    even("Design insights leading to novel ideas", "Concept exploration through good quality sketches", "Presentation of the final concept through rendering", "Detailing and appropriate materials"),
-    {"user": "bookseller and his family", "setting": "street market", "object": "two-wheeler kiosk", "pov": "side elevation and perspective", "twist": "shop by day, family vehicle at weekends", "hook": "informal economy"})
+Base the kiosk on an **open hardbound book**: its covers, spine and pages may hinge, fold, cut and repeat, but the essence of the book should be retained. Render the two-wheeler parked with the kiosk open and 100 books on display, with a small sketch of it folded and locked for riding.
+""", ["Keep the essence of the book", "Displays 100 books; folds away securely"],
+    even("Uniqueness of the form", "Form–function relevance (display, security, family use)", "Detailing and materials", "Rendering quality"),
+    {"user": "bookseller and his family", "setting": "street market", "object": "two-wheeler kiosk", "twist": "the vehicle opens like a book", "hook": "informal economy"})
 
 add(2018, 6, "Sketching", "sketching", "After the axe", """
 A room 10 ft × 10 ft has a 5 ft × 4 ft table in the centre. On the table are a matchbox, a watermelon cut into two halves and a glass of water. A person with an axe enters the room and switches on the light. With a harsh blow of the axe he breaks the table into two and leaves the room with his axe, leaving the light on.
@@ -1127,68 +1028,45 @@ The image below shows a word written in a particular font. Visualise and draw th
     ["The word Flows set in a heavy, high-contrast serif typeface with thick vertical strokes and thin hairline serifs."])
 
 # ---------- 2019 ----------
-add(2019, 1, "Industrial Design", "form", "Monsoon clothes-drying fan", """
-During the monsoon, washed clothes take a long time to dry and the house is damp. People often spread wet clothes on a chair or other furniture under a ceiling fan. A leading fan manufacturer wants a clothes-drying product, sold with a fan, that:
+add(2019, 1, "Industrial Design", "form", "Monsoon drying attachment for a fan", """
+During the monsoon, washed clothes take a long time to dry, and people spread them over chairs under a fan. A fan manufacturer wants a clothes-drying attachment for its ordinary pedestal fan (a round guard on a single stem and a round base) that fits on during the rains and comes off so the fan works normally in other seasons.
 
-- uses the fan to dry clothes
-- has the fan integrated during the rainy season, and usable as a normal fan in other seasons
-- folds compact for storage
-
-1. Present three ideas as rough sketches. (5 marks)
-2. List five critical factors (key words only). (5 marks)
-3. Develop one idea into a final product: a neat sketch showing all its parts, materials and features. (10 marks)
-""", ["Must work as a normal fan off-season", "Folds compact"],
-    marks(("Quality of creative ideas and neatness of sketches", 10), ("Understanding of the situation and product use", 10), ("Sketching quality, details, product features and usability", 20)),
-    {"user": "household", "setting": "home in monsoon", "object": "fan-integrated clothes dryer", "twist": "two products in one, by season", "hook": "monsoon"})
+Visualise the attachment matching the fan's design language: its rings, round base and single stem. Sketch and render the fan with the attachment and clothes in use, with a small sketch of the attachment folded for storage.
+""", ["The fan works normally without it", "Folds compact"],
+    even("Consistency with the fan's design language", "Form–function relevance (drying, fitting, folding)", "Relevant details", "Rendering quality"),
+    {"user": "household", "setting": "home in monsoon", "object": "fan attachment for drying clothes", "twist": "companion product to a given product", "hook": "monsoon"})
 
 add(2019, 2, "Communication Design", "visual", "World Cup hoarding for team India", """
-Cricket is a popular sport in India. The 12th Cricket World Cup is to be held in England and Wales in 2019. India has already been champion twice; to win a third time, the team needs the support and wishes of a billion Indians.
+Cricket is a popular sport in India, and the next Cricket World Cup is coming. India has been champion twice; to win again, the team needs the support and wishes of a billion Indians.
 
-Design a visual campaign to gather support for the Indian team, centred on a **30 ft × 20 ft hoarding** placed at prominent locations in cities and towns.
-
-1. Sketch three completely different concepts. (5 marks)
-2. Write three slogans in English or any Indian language (name the language). (5 marks)
-3. Make a detailed design of one hoarding with a slogan. (10 marks)
-""", ["Hoarding 30 ft × 20 ft (keep the proportion)", "Slogans in English or any Indian language"],
-    marks(("Originality and diversity of ideas, creativity, understanding of scale and proportion", 10), ("Clarity of message and literary creativity", 10), ("Visualisation, quality of lines, composition, colour and detailing", 20)),
-    {"user": "general public", "setting": "cities and towns", "object": "campaign hoarding and slogans", "twist": "slogans in any Indian language", "hook": "cricket"})
+Design one **30 ft × 20 ft hoarding**, for prominent locations in cities and towns, that gathers support for the Indian team. Include a slogan in English or any Indian language (name the language).
+""", ["Hoarding 30 ft × 20 ft (keep the proportion)", "Slogan in English or any Indian language"],
+    even("Originality of the idea", "Clarity and creativity of the slogan", "Readability at a distance", "Composition and detailing"),
+    {"user": "general public", "setting": "cities and towns", "object": "campaign hoarding", "twist": "slogan in any Indian language", "hook": "cricket"})
 
 add(2019, 3, "Animation Design", "sketching", "Tommy saves the baby", """
-An animation film for children is about the bond between a baby and a dog, as the baby grows up and the dog grows old. One scene:
+An animation film for children is about the bond between a baby and a dog. In one scene, a hungry baby crawls to a table, grabs a corner of the tablecloth and pulls; the milk bottle and everything else slide towards the edge. The dog leaps forward, grabs the end of the baby's diaper and pulls the baby away just as everything topples onto him.
 
-> A dog watches a hungry, crying baby. The baby suddenly sees something and stops: its milk bottle (and other things) on a table. The baby crawls to the table, followed by the curious dog, grabs a corner of the tablecloth and starts pulling. The dog's expression turns to alarm as the things slide towards the edge. He leaps forward, grabs the end of the baby's diaper and pulls the baby away just as everything topples. The baby is safe, but everything falls on the poor dog. The mother's scream is heard: "Tommy!! BAD DOG!!" The dog peeps out sheepishly from under the tablecloth, surrounded by the mess.
-
-Storyboard this scene in **six frames**, using a variety of shots (long shot, close-up, top angle, low angle etc.).
-""", ["Six frames", "Vary the shots"],
-    even("Communication of the narrative through sequential pictures", "Shot composition (long shot, close-up, top and low angles)", "Perspective", "Attitude and expressions of the characters"),
-    {"user": "baby; dog; mother", "setting": "home", "object": "storyboard", "twist": "the hero gets blamed", "hook": "humour and irony"})
+Sketch that moment, from the point of view of the mother at the doorway.
+""", SKETCH,
+    SKETCH_CRIT,
+    {"user": "baby; dog; mother", "setting": "home", "object": "scene", "pov": "the mother at the doorway", "twist": "the hero looks guilty", "hook": "humour and irony"})
 
 add(2019, 4, "Interaction Design", "visual", "Bicycle navigator for 12-year-olds", """
-A bicycle company has developed a navigation device: a colour display (not a touch screen), 7 physical buttons, a speaker, a microphone, GPS and wireless internet. It is waterproof, readable in bright sunlight, and charged by pedalling.
+A bicycle company has developed a navigation device: a colour display (not a touch screen), 7 physical buttons, a speaker, a microphone, GPS and wireless internet. It is waterproof, readable in bright sunlight, and charged by pedalling. A version mounted on the handlebar is for **12-year-old children**.
 
-Design a version of this device, mounted on the bicycle, for **12-year-old children**.
+Design the screen a child sees while riding to a place they have never been. Draw the device face large with that screen and its 7 buttons, and label what each button does.
+""", ["Not a touch screen: 7 physical buttons", "One screen, shown on the device"],
+    even("Clarity of the screen at a glance while riding", "Integration of buttons and screen", "Appropriateness for a 12-year-old", "Composition, clarity and neatness"),
+    {"user": "children aged 12", "setting": "cycling on city streets", "object": "navigation screen", "twist": "buttons only, no touch", "hook": "GPS technology"})
 
-1. Create a 5-step storyboard of the interface that lets the child set a new destination they have never been to. (10 marks)
-2. Present one detailed screen showing the information that helps the child navigate while riding. (10 marks)
-""", ["Not a touch screen: 7 physical buttons", "Five steps for the storyboard"],
-    marks(("Appropriateness of the user interface and integration of hardware and software", 10), ("Originality and appropriateness of the information design", 10)),
-    {"user": "children aged 12", "setting": "cycling on city streets", "object": "navigation interface", "twist": "buttons only, no touch", "hook": "GPS technology"})
+add(2019, 5, "Mobility and Vehicle Design", "form", "Hill four-wheeler from terraced fields", """
+Local improvised vehicles in rural India carry people, small machines, farm equipment and even cattle and goats. They are neither safe nor comfortable, but often the only transport available.
 
-add(2019, 5, "Mobility and Vehicle Design", "form", "Hill-region utility four-wheeler", """
-Local improvised vehicles in rural India carry many people, small machines, farm equipment and even cattle and goats. They are neither safe nor comfortable, but they are indispensable and often the only transport available.
-
-Design a context-sensitive, safe, workable and pleasing **four-wheeler for hilly regions** that:
-
-- carries at least 6 passengers including the driver
-- has a convertible space for at least 1 cattle, a small machine, milk cans or fuel drums, plus a tool kit (used by passengers when no goods are carried)
-- protects against the weather (sunshades etc.)
-- is easy to maintain
-
-1. Explore the concept in two quick sketches that each show a distinct design insight. (10 marks)
-2. Draw a neat freehand perspective sketch of the final vehicle showing its overall form and features. (10 marks)
-""", ["Perspective view of the final vehicle"],
-    marks(("Context-sensitivity, design insight and exploratory concepts", 10), ("Ability to sketch the vehicle in perspective and detail the final concept", 10)),
-    {"user": "rural hill communities", "setting": "hilly rural roads", "object": "utility four-wheeler", "twist": "people one day, cattle the next", "hook": "rural India; improvised vehicles"})
+Visualise a four-wheeler for hilly regions based on the stepped form of terraced hillside fields: borrow their stepped levels and contour lines as its design language. It carries 6 people including the driver, its rear converts to carry a goat, milk cans or fuel drums, and it shades its passengers from sun and rain. Sketch and render it in three-quarter view on a hill road.
+""", ["Three-quarter view", "Six people including the driver"],
+    even("Consistency with the language of terraced fields", "Form–function relevance (people, goods, weather)", "Relevant details of the vehicle", "Rendering quality"),
+    {"user": "rural hill communities", "setting": "hilly rural roads", "object": "utility four-wheeler", "twist": "borrow design language from a landscape", "hook": "rural India; improvised vehicles"})
 
 add(2019, 6, "Sketching", "sketching", "Kitchen at 5½ feet", """
 Draw a perspective view of a kitchen interior with a stove, kitchen utensils (such as a pressure cooker, cooking pans, sauce pans), dining utensils (such as ceramic plates, cups, glasses), a wash basin, storage racks with stored cooking ingredients (such as spices in small plastic bottles), fresh cut vegetables kept beside the stove and at least two kitchen gadgets.

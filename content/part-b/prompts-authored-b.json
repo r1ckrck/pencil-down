@@ -174,8 +174,8 @@
     "source": "authored",
     "origin": null,
     "slot": "form",
-    "title": "Torus to OPD waiting seat",
-    "text": "Families wait for hours outside the out-patient department of a district hospital in Bhubaneswar. Conceptualise and render a seating unit for four people, inspired by the torus shown below, for this waiting area. The torus may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the torus should be retained. Consider elderly patients who find it difficult to sit down and get up.",
+    "title": "Torus to OPD pharmacy counter",
+    "text": "Families wait for hours outside the out-patient department of a district hospital in Bhubaneswar, then queue again at the pharmacy window to collect medicines. Conceptualise and render a medicine pick-up counter for this window, inspired by the torus shown below. The torus may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the torus should be retained. Consider elderly patients who cannot stand for long and find it hard to read the dosage written on small strips.",
     "rules": [
       "Allowed operations: cutting, adding, subtracting, deforming and repeating",
       "Retain the essence of the torus"
@@ -207,7 +207,7 @@
     "tags": {
       "user": "elderly patients and attendants",
       "setting": "district hospital OPD, Bhubaneswar",
-      "object": "four-seat waiting bench",
+      "object": "pharmacy pick-up counter",
       "hook": "ageing"
     }
   },
@@ -2465,7 +2465,7 @@
     "origin": null,
     "slot": "form",
     "title": "Gourd to fair hand-wash station",
-    "text": "A large fair in a riverside town draws thousands of visitors a day for a week. Conceptualise and render a portable hand-wash station for its food lanes, inspired by the gourd-like form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. There is no piped water and no tap: show how water is filled, used and drained.",
+    "text": "A week-long trade and craft fair in a district town draws thousands of visitors a day. Conceptualise and render a portable hand-wash station for its food lanes, inspired by the gourd-like form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. There is no piped water and no tap: show how water is filled, used and drained.",
     "rules": [
       "Allowed operations: cutting, adding, subtracting, deforming and repeating",
       "Retain the essence of the gourd form",
@@ -2497,7 +2497,7 @@
     ],
     "tags": {
       "user": "fair visitors and food vendors",
-      "setting": "food lane at a large fair",
+      "setting": "food lane at a town trade fair",
       "object": "hand-wash station",
       "twist": "no tap",
       "hook": "mass gatherings"
@@ -3215,8 +3215,8 @@
     "source": "authored",
     "origin": null,
     "slot": "problem-id",
-    "title": "Grandmother in a wheelchair at a large fair",
-    "text": "A family from a village in Uttar Pradesh takes the grandmother, who uses a wheelchair, to a week-long fair at a riverside town. They travel by tractor-trolley and then on foot, stay in a tent camp, and walk to the river ghats each morning with lakhs of other visitors.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "title": "Grandmother in a wheelchair at a cattle fair",
+    "text": "A family from a village in Uttar Pradesh takes the grandmother, who uses a wheelchair, to a week-long cattle and craft fair in a district town. They travel by tractor-trolley and then on foot, stay in a tent camp, and spend each day on the crowded, dusty fairground among thousands of other visitors.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
     "rules": [
       "Exactly FOUR \"How can we…\" statements",
       "TWO titled solutions for ONE chosen statement"
@@ -3242,7 +3242,7 @@
     "images": [],
     "tags": {
       "user": "family with a grandmother in a wheelchair",
-      "setting": "tent camp at a large riverside fair",
+      "setting": "tent camp at a week-long cattle and craft fair",
       "hook": "mass gatherings, accessibility"
     }
   },

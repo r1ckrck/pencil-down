@@ -1,8 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 340" fill="none" stroke="none">
-<polyline points="50,290 130,50 210,290" stroke="currentColor" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
-<polyline points="90,194 170,194" stroke="currentColor" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
-<polyline points="62,302 142,62 222,302" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
-<polyline points="102,206 182,206" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
-<polyline points="280,290 280,50 440,290 440,50" stroke="currentColor" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
-<polyline points="292,302 292,62 452,302 452,62" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+<path fill="currentColor" d="M205.6 298.9 L218.9 294.4 L130.0 27.9 L43.4 287.8 L41.1 294.4 L54.4 298.9 L87.0 201.0 L170.0 201.0 L173.0 201.0 L203.4 292.2ZM91.7 187.0 L130.0 72.1 L168.3 187.0ZM447.0 313.1 L447.0 50.0 L447.0 43.0 L433.0 43.0 L433.0 266.9 L273.0 26.9 L273.0 290.0 L273.0 297.0 L287.0 297.0 L287.0 73.1Z"/>
+<path stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M216.6 305.9 L229.9 301.4 L141.0 34.9 L138.2 43.1M52.2 301.3 L52.1 301.4 L65.4 305.9 L98.0 208.0 L172.1 208.0M214.3 299.1 L214.4 299.2 L216.6 305.9M106.0 184.0 L135.1 96.9M458.0 320.1 L458.0 57.0 L458.0 50.0 L450.0 50.0M430.0 252.9 L284.0 33.9 L284.0 38.0M284.0 300.0 L284.0 304.0 L298.0 304.0 L298.0 95.0M450.0 308.1 L458.0 320.1"/>
 </svg>

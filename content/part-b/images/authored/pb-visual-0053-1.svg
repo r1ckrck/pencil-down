@@ -1,11 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" fill="none" stroke="none">
-<line x1="55.06" y1="274.82" x2="124.94" y2="65.18" stroke="currentColor" stroke-width="34" stroke-linecap="butt"/>
-<line x1="135.06" y1="65.18" x2="204.94" y2="274.82" stroke="currentColor" stroke-width="34" stroke-linecap="butt"/>
-<line x1="106" y1="194" x2="154" y2="194" stroke="currentColor" stroke-width="34" stroke-linecap="butt"/>
-<line x1="280" y1="66" x2="280" y2="274" stroke="currentColor" stroke-width="34" stroke-linecap="butt"/>
-<line x1="428.11" y1="60.7" x2="291.89" y2="183.3" stroke="currentColor" stroke-width="34" stroke-linecap="butt"/>
-<line x1="345.72" y1="166.71" x2="430.28" y2="277.29" stroke="currentColor" stroke-width="34" stroke-linecap="butt"/>
-<line x1="526" y1="50" x2="654" y2="50" stroke="currentColor" stroke-width="34" stroke-linecap="butt"/>
-<line x1="661.12" y1="63.31" x2="518.88" y2="276.69" stroke="currentColor" stroke-width="34" stroke-linecap="butt"/>
-<line x1="526" y1="290" x2="654" y2="290" stroke="currentColor" stroke-width="34" stroke-linecap="butt"/>
+<path fill="currentColor" d="M112.1 50.0 L112.1 50.0 L112.1 50.0 L32.1 290.0 L67.9 290.0 L124.0 121.8 L124.0 85.8 L124.0 50.0ZM136.0 121.8 L192.1 290.0 L227.9 290.0 L147.9 50.0 L136.0 50.0 L136.0 85.8ZM297.0 50.0 L263.0 50.0 L263.0 290.0 L297.0 290.0ZM110.2 201.0 L149.8 201.0 L141.1 175.0 L118.9 175.0ZM665.0 50.0 L515.0 50.0 L515.0 84.0 L665.0 84.0ZM406.7 50.0 L309.0 154.2 L309.0 203.9 L453.3 50.0ZM618.5 96.0 L515.2 244.0 L561.5 244.0 L664.8 96.0ZM419.0 290.0 L461.0 290.0 L366.5 160.2 L342.8 185.4ZM665.0 256.0 L515.0 256.0 L515.0 290.0 L665.0 290.0Z"/>
 </svg>
