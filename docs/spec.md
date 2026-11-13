@@ -108,6 +108,7 @@ Chosen on the start screen of every session (pre-selected: the last mode used; f
 
 ### 5.1 Today
 - Days to 17 Jan 2027 (the screen's one large number).
+- Habit tracker, top right: rows Part A practice · Part B practice · Flashcards; columns the last 7 days (IST). A day counts when she answered a Part A question, committed a Part B idea or reviewed a card; done cells show the habit's filled icon (today's in the accent), open cells an empty hairline square. Streak = consecutive days with any habit, ending today or yesterday. Positive reinforcement only: no red, no misses called out.
 - Suggested next session (from weakest Part A topic and least-practised Part B slot).
 - Last 7 days in one strip: sessions done, Part A last score vs cutoff band, Part B median seconds-to-commit.
 - Cards due today.

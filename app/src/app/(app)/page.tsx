@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { KIND_LABEL, TOPIC_LABEL, marks, sessionHref } from "@/components/part-a/labels";
 import type { Kind } from "@/components/part-a/types";
 import { PageHeader } from "@/components/shell/page-header";
+import { HabitTracker } from "@/components/today/habit-tracker";
 import { buttonClasses } from "@/components/ui/button";
 import { Eyebrow, RoleLabel } from "@/components/ui/label";
 import { Metric, Stat } from "@/components/ui/stat";
@@ -54,26 +55,28 @@ async function TodayBody() {
 
   return (
     <>
-      <section className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+      <section className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
         <Stat
           label="Days to CEED"
           value={t.daysToExam}
           unit={t.daysToExam === 1 ? "day" : "days"}
           note="Sunday 17 January 2027 · IIT Bombay M.Des"
         />
-        {live && (
-          <div className="flex flex-col gap-3 rounded-lg border border-fg p-4 md:max-w-sm md:p-6">
-            <p className="text-body font-medium text-fg">
-              {KIND_LABEL[live.kind as Kind] ?? "Session"} running
-            </p>
-            <p className="text-small text-mute">The clock did not stop while you were away.</p>
-            <Link href={sessionHref(live.kind, live.id)} className={buttonClasses({ variant: "primary", size: "lg" })}>
-              Return to session
-              <ArrowRight weight="bold" aria-hidden />
-            </Link>
-          </div>
-        )}
+        <HabitTracker data={t.habits} />
       </section>
+
+      {live && (
+        <section className="mt-10 flex flex-col gap-3 rounded-lg border border-fg p-4 md:flex-row md:items-center md:justify-between md:p-6">
+          <div className="flex flex-col gap-1">
+            <p className="text-body font-medium text-fg">{KIND_LABEL[live.kind as Kind] ?? "Session"} running</p>
+            <p className="text-small text-mute">The clock did not stop while you were away.</p>
+          </div>
+          <Link href={sessionHref(live.kind, live.id)} className={buttonClasses({ variant: "primary", size: "lg" })}>
+            Return to session
+            <ArrowRight weight="bold" aria-hidden />
+          </Link>
+        </section>
+      )}
 
       <section className="mt-12 grid gap-6 border-t border-hairline pt-8 md:grid-cols-[200px_1fr] md:gap-8">
         <div className="flex flex-col gap-2">

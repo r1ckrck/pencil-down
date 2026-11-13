@@ -165,6 +165,59 @@ export function daysToExam(now: number): number {
   return Math.max(0, Math.round((exam - today.getTime()) / DAY_MS));
 }
 
+// ---------- Habits (Today tracker) ----------
+
+// Days are counted in IST (UTC+5:30, no DST) so the tracker matches her calendar wherever the server runs.
+const IST_OFFSET_MS = 330 * 60_000;
+export const istDay = (t: number) => Math.floor((t + IST_OFFSET_MS) / DAY_MS);
+const istDate = (day: number) => new Date(day * DAY_MS).toISOString().slice(0, 10);
+
+export type HabitKey = "partA" | "partB" | "cards";
+export const HABITS: { key: HabitKey; label: string }[] = [
+  { key: "partA", label: "Part A practice" },
+  { key: "partB", label: "Part B practice" },
+  { key: "cards", label: "Flashcards" },
+];
+
+/**
+ * Positive-reinforcement tracker: one row per habit, one column per day (last 7, oldest first).
+ * A day counts when she did the thing at all: answered a Part A question, committed a Part B idea, reviewed a card.
+ * Streak = consecutive days with at least one habit, ending today (or yesterday while today is still open).
+ */
+export function habits(ctx: Ctx, days = 7) {
+  const now = ctx.now();
+  const todayIdx = istDay(now);
+  const since = (todayIdx - 120) * DAY_MS - IST_OFFSET_MS;
+  const db = ctx.db;
+  const done: Record<HabitKey, Set<number>> = { partA: new Set(), partB: new Set(), cards: new Set() };
+
+  for (const r of db
+    .prepare(
+      `SELECT s.started_at AS at FROM sessions s
+       WHERE s.started_at >= ? AND EXISTS (SELECT 1 FROM a_responses r WHERE r.session_id = s.id AND r.answer IS NOT NULL)`,
+    )
+    .all(since) as { at: number }[])
+    done.partA.add(istDay(r.at));
+  for (const r of db
+    .prepare("SELECT committed_at AS at FROM b_attempts WHERE status = 'committed' AND committed_at >= ?")
+    .all(since) as { at: number }[])
+    done.partB.add(istDay(r.at));
+  for (const r of db.prepare("SELECT at FROM card_review_log WHERE at >= ?").all(since) as { at: number }[])
+    done.cards.add(istDay(r.at));
+
+  const any = (d: number) => HABITS.some((h) => done[h.key].has(d));
+  let streak = 0;
+  for (let d = any(todayIdx) ? todayIdx : todayIdx - 1; any(d); d--) streak++;
+
+  const cols = Array.from({ length: days }, (_, i) => todayIdx - days + 1 + i);
+  return {
+    days: cols.map((d) => ({ date: istDate(d), isToday: d === todayIdx })),
+    rows: HABITS.map((h) => ({ key: h.key, label: h.label, done: cols.map((d) => done[h.key].has(d)) })),
+    doneToday: HABITS.filter((h) => done[h.key].has(todayIdx)).length,
+    streak,
+  };
+}
+
 export function today(ctx: Ctx) {
   settleLive(ctx);
   const now = ctx.now();
@@ -210,5 +263,6 @@ export function today(ctx: Ctx) {
     cardsDue: dueQueue(ctx).dueCount,
     revisitDue: dueQuestionIds(ctx.db, now).length,
     reattemptPromptIds: reattempt.map((r) => r.prompt_id),
+    habits: habits(ctx),
   };
 }

@@ -81,7 +81,7 @@ Hidden prompt → `prompt: null`, show only `slot` and `now.phase`. Once the ses
 | Method · path | Body / query | Response |
 |---|---|---|
 | `GET /api/health` | | `{ ok, sqlite, serverNow }` |
-| `GET /api/today` | | `{ serverNow, examDate, daysToExam, liveSession: {id, kind, endsAt}\|null, defaultMode, suggested: {partATopic, partBSlot}, last7Days: {sessions, lastPartAScore: {score, maxScore, sessionId}\|null, band, medianSecondsToCommit}, cardsDue, revisitDue, reattemptPromptIds }` |
+| `GET /api/today` | | `{ serverNow, examDate, daysToExam, liveSession: {id, kind, endsAt}\|null, defaultMode, suggested: {partATopic, partBSlot}, last7Days: {sessions, lastPartAScore: {score, maxScore, sessionId}\|null, band, medianSecondsToCommit}, cardsDue, revisitDue, reattemptPromptIds, habits: {days: {date, isToday}[7], rows: {key: partA\|partB\|cards, label, done: boolean[7]}[], doneToday, streak} }` — habit days in IST |
 | `GET /api/settings` | | `Settings` = `{ budgets: {MCQ, MSQ, NAT} /* s */, custom: Switches, lastMode, theme: "system"\|"light"\|"dark" }` |
 | `PUT /api/settings` | partial `Settings` (budgets 10–600 s) | `Settings` |
 
