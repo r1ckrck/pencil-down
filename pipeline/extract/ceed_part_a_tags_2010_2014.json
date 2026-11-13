@@ -12,7 +12,8 @@
    "answer": "C",
    "topic": "folding-and-patterns",
    "difficulty": 3,
-   "explanation": "The solid drawn has 8 equilateral faces, 4 meeting at every vertex (an octahedron, though the stem says tetrahedron). Every net must therefore have at most 4 triangles around any point.\n\n- **C:** the point where the middle and lower rows meet on the right is surrounded by **5 triangles**. No vertex of the solid has 5 faces, so this net cannot fold up. Wrong.\n- A, B and D: labelling the faces vertex by vertex gives all 8 faces exactly once, so they fold correctly.\n\nThe wrong tessellation is **C** (A–D labels added left to right)."
+   "explanation": "The solid drawn has 8 equilateral faces, 4 meeting at every vertex (an octahedron, though the stem says tetrahedron). Every net must therefore have at most 4 triangles around any point.\n\n- **C:** the point where the middle and lower rows meet on the right is surrounded by **5 triangles**. No vertex of the solid has 5 faces, so this net cannot fold up. Wrong.\n- A, B and D: labelling the faces vertex by vertex gives all 8 faces exactly once, so they fold correctly.\n\nThe wrong tessellation is **C** (A–D labels added left to right).",
+   "review": "Blind re-solve agreed (C) and noted the stem's wording error (tetrahedron for an octahedron). Fold simulation: C gives 7 distinct faces, A, B, D give 8. Kept; the drawing settles it."
   },
   "ceed-2012-q02": {
    "format": "MCQ",
@@ -33,7 +34,9 @@
    "answer": "C",
    "topic": "design-knowledge",
    "difficulty": 1,
-   "explanation": "A, B and D are serif typefaces (small strokes finish the ends of the letters). **C** is the only sans-serif (no serifs, even stroke), so it is the odd one out."
+   "explanation": "A, B and D are serif typefaces (small strokes finish the ends of the letters). **C** is the only sans-serif (no serifs, even stroke), so it is the odd one out.",
+   "excluded": "Odd-one-out with more than one valid criterion: C is the only sans-serif, but D is the only bold weight and A the only slab/typewriter face; the scan also blurs C's terminals.",
+   "review": "Blind re-solve agreed (C) and flagged it subjective. Excluded."
   },
   "ceed-2012-q07": {
    "format": "MCQ",
@@ -188,7 +191,8 @@
    "answer": "D",
    "topic": "everyday-science",
    "difficulty": 1,
-   "explanation": "Hot drinks need a cup that insulates (so the hand is not burnt), does not soften or leach when hot and can be reused. **Ceramic (D)** does all three. Paper and polystyrene are disposable and weaken or leach with heat; stainless steel conducts heat to the hand."
+   "explanation": "Hot drinks need a cup that insulates (so the hand is not burnt), does not soften or leach when hot and can be reused. **Ceramic (D)** does all three. Paper and polystyrene are disposable and weaken or leach with heat; stainless steel conducts heat to the hand.",
+   "review": "Blind re-solve agreed (D), flagged subjective. Ceramic is the only reusable, heat-stable, insulating option. Kept."
   },
   "ceed-2013-q01": {
    "format": "MCQ",
@@ -244,7 +248,9 @@
    "answer": "B",
    "topic": "everyday-science",
    "difficulty": 2,
-   "explanation": "Options are printed 1–4; they map to A–D in order. The text is mirror-reversed (a reflection) and bulged: the middle letters (D, 2) are large in width and height, the end letters small and squeezed. That barrel distortion comes from a **convex surface** (option 2, **B**). A cylinder would only change widths; a concave mirror enlarges the edges instead."
+   "explanation": "Options are printed 1–4; they map to A–D in order. The text is mirror-reversed (a reflection) and bulged: the middle letters (D, 2) are large in width and height, the end letters small and squeezed. That barrel distortion comes from a **convex surface** (option 2, **B**). A cylinder would only change widths; a concave mirror enlarges the edges instead.",
+   "excluded": "No single defensible key: the strong horizontal squeeze with milder vertical shrink fits a convex cylinder as well as a convex sphere, and a cylinder is itself a convex surface (options 2 and 3).",
+   "review": "Blind re-solve agreed (B) and flagged it ambiguous between convex and cylindrical. Excluded."
   },
   "ceed-2013-q12": {
    "format": "MCQ",
@@ -405,7 +411,9 @@
    "answer": "B",
    "topic": "design-knowledge",
    "difficulty": 2,
-   "explanation": "Options are printed 1–4; they map to A–D in order. In 2013 Nissan and Renault built cars at their Chennai plant and Skoda at Aurangabad. **Citroën** had no Indian manufacturing (option 2, **B**)."
+   "explanation": "Options are printed 1–4; they map to A–D in order. In 2013 Nissan and Renault built cars at their Chennai plant and Skoda at Aurangabad. **Citroën** had no Indian manufacturing (option 2, **B**).",
+   "excluded": "Date-dependent: Citroën has built cars in Tamil Nadu since 2021 and Nissan sold its Chennai plant stake to Renault in 2025, so the 2013 answer no longer holds.",
+   "review": "Blind re-solve agreed (B) and flagged it date-dependent. Facts have changed since 2013. Excluded."
   },
   "ceed-2013-q44": {
    "format": "MCQ",
@@ -426,10 +434,11 @@
   },
   "ceed-2013-q47": {
    "format": "MCQ",
-   "answer": "B",
+   "answer": "D",
    "topic": "3d-visualisation",
    "difficulty": 3,
-   "explanation": "Options are printed 1–4; they map to A–D in order. The room is in one-point perspective with the vanishing point near the centre of the back wall; every receding edge should run toward it.\n\n- Walls and the side-wall window: their receding edges converge on the vanishing point.\n- Back-wall window: faces the viewer, so it stays a true rectangle.\n- **Table:** its top is drawn symmetric about its own centre, so the left receding edge leans away from the vanishing point instead of toward it. It is not in the room's perspective. Option 2, **B**."
+   "explanation": "Options are printed 1–4; they map to A–D in order. In one-point perspective every receding edge runs to the vanishing point; here the wall–floor and wall–ceiling edges meet near the middle of the back wall, on the horizon.\n\n- Walls: their edges meet at that point. In perspective.\n- Back-wall window: faces the viewer, so it stays a true rectangle. In perspective.\n- Table: both receding edges of its top, extended, meet on the horizon close to the same point, and its back edge is scaled down by the matching amount. In perspective.\n- **Side-wall window:** any horizontal line on the right wall must slope between the wall's ceiling edge and floor edge. The window's top and bottom edges slope more steeply than both, converging on a point near the right wall instead of the room's vanishing point. Not in perspective.\n\nOption 4, **D**.",
+   "review": "Blind re-solve agreed with stored B, but flagged it. Measured on the crop: room vanishing point (572, 497); table-top edges extend to (603, 497) with a matching 0.89 back-edge scale, so the table is in perspective. The side window's top edge slopes -0.9 against the wall's -0.52 ceiling edge, converging near (1087, 470). Key D."
   },
   "ceed-2014-q01": {
    "format": "MCQ",
@@ -576,7 +585,8 @@
    "answer": "B",
    "topic": "3d-visualisation",
    "difficulty": 3,
-   "explanation": "The plan is a fluted cylinder: about 30 equal scallops around a circle. In front view each cusp becomes a vertical line at horizontal offset r·sin θ, so lines are widest apart at the centre and crowd together toward both silhouettes, symmetrically.\n\n- **B** follows that pattern (spacing shrinks steadily from centre to edges).\n- A has an extra cluster of tightly spaced lines at the centre.\n- C crowds lines unevenly at the edges.\n- D crowds lines at the centre.\n\nAnswer **B**."
+   "explanation": "The plan is a fluted cylinder: about 30 equal scallops around a circle. In front view each cusp becomes a vertical line at horizontal offset r·sin θ, so lines are widest apart at the centre and crowd together toward both silhouettes, symmetrically.\n\n- **B** follows that pattern (spacing shrinks steadily from centre to edges).\n- A has an extra cluster of tightly spaced lines at the centre.\n- C crowds lines unevenly at the edges.\n- D crowds lines at the centre.\n\nAnswer **B**.",
+   "review": "Blind re-solve gave C against stored B. Measured line offsets on the raw image: B's lines sit 3, 7, 13, 19, 26, 34 px in from each side, matching R(1 + sin θ) for cusps every 12° at ±6° (3.2, 7.2, 12.4, 18.8, 25.9, 33.6). C adds an extra line near each edge. Kept B."
   },
   "ceed-2014-q25": {
    "format": "MCQ",

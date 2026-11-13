@@ -103,7 +103,8 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": "A, B and D are serif typefaces (small strokes finish the ends of the letters). **C** is the only sans-serif (no serifs, even stroke), so it is the odd one out."
+    "explanation": "A, B and D are serif typefaces (small strokes finish the ends of the letters). **C** is the only sans-serif (no serifs, even stroke), so it is the odd one out.",
+    "excluded": "Odd-one-out with more than one valid criterion: C is the only sans-serif, but D is the only bold weight and A the only slab/typewriter face; the scan also blurs C's terminals."
   },
   {
     "id": "ceed-2012-q07",
@@ -781,7 +782,8 @@
       "2",
       "3",
       "4"
-    ]
+    ],
+    "excluded": "No single defensible key: the strong horizontal squeeze with milder vertical shrink fits a convex cylinder as well as a convex sphere, and a cylinder is itself a convex surface (options 2 and 3)."
   },
   {
     "id": "ceed-2013-q12",
@@ -1402,7 +1404,8 @@
       "2",
       "3",
       "4"
-    ]
+    ],
+    "excluded": "Date-dependent: Citro\u00ebn has built cars in Tamil Nadu since 2021 and Nissan sold its Chennai plant stake to Renault in 2025, so the 2013 answer no longer holds."
   },
   {
     "id": "ceed-2013-q44",
@@ -1472,13 +1475,13 @@
     "optionCount": 4,
     "answer": {
       "kind": "MCQ",
-      "option": "B"
+      "option": "D"
     },
     "answerStatus": "solved",
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. The room is in one-point perspective with the vanishing point near the centre of the back wall; every receding edge should run toward it.\n\n- Walls and the side-wall window: their receding edges converge on the vanishing point.\n- Back-wall window: faces the viewer, so it stays a true rectangle.\n- **Table:** its top is drawn symmetric about its own centre, so the left receding edge leans away from the vanishing point instead of toward it. It is not in the room's perspective. Option 2, **B**.",
+    "explanation": "Options are printed 1\u20134; they map to A\u2013D in order. In one-point perspective every receding edge runs to the vanishing point; here the wall\u2013floor and wall\u2013ceiling edges meet near the middle of the back wall, on the horizon.\n\n- Walls: their edges meet at that point. In perspective.\n- Back-wall window: faces the viewer, so it stays a true rectangle. In perspective.\n- Table: both receding edges of its top, extended, meet on the horizon close to the same point, and its back edge is scaled down by the matching amount. In perspective.\n- **Side-wall window:** any horizontal line on the right wall must slope between the wall's ceiling edge and floor edge. The window's top and bottom edges slope more steeply than both, converging on a point near the right wall instead of the room's vanishing point. Not in perspective.\n\nOption 4, **D**.",
     "optionLabels": [
       "1",
       "2",

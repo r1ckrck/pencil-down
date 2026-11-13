@@ -14,11 +14,12 @@
   "explanation": "Small cubes with exactly two painted faces sit on the cube's edges, excluding the corners. Each of the 12 edges has 8 − 2 = 6 such cubes: 12 × 6 = **72**."
  },
  "ceed-2015-q03": {
-  "answer": "26",
+  "answer": "42",
   "topic": "3d-visualisation",
   "difficulty": 3,
   "confidence": "medium",
-  "explanation": "The solid is an octahedron with every edge bevelled: each visible vertex joins one triangle and three rectangles (3.4.4.4), the arrangement of a rhombicuboctahedron. That gives 8 triangles (the octahedron's faces) + 12 rectangles (one per bevelled edge) + 6 quadrilaterals (one per octahedron vertex) = **26** faces."
+  "explanation": "The solid is an octahedron whose edges and corners have been bevelled, with each original triangular face raised into a low three-sided pyramid (the triangle facing you shows a centre point with three edges to its corners; the hidden triangles show the same edges at the silhouette).\n\n- 6 quadrilaterals, one at each octahedron corner\n- 12 long rectangles, one along each octahedron edge\n- 8 triangles × 3 faces each = 24\n\nTotal **42** faces. Check with Euler: V = 24 + 8 apexes = 32, E = 48 + 8 × 3 = 72, and 32 − 72 + 42 = 2.",
+  "review": "Blind re-solve gave 42 against stored 26. Re-rendered: the front triangle is split by three edges from a centre point, and the left and bottom triangles show the same edges, so each octahedron face is three faces. 6 + 12 + 24 = 42, Euler-checked. Key 42."
  },
  "ceed-2015-q04": {
   "answer": "75",
@@ -70,7 +71,8 @@
   "topic": "design-knowledge",
   "difficulty": 2,
   "confidence": "medium",
-  "explanation": "A is Picasso's *Boy with a Pipe* (Rose period), B is his analytic-cubist *The Accordionist*, and D is *La Vie* (Blue period). C is Mondrian's *Composition Trees 2*, a cubism-influenced work on his way to abstraction. Answer **A, B, D**."
+  "explanation": "A is Picasso's *Boy with a Pipe* (Rose period), B is his analytic-cubist *The Accordionist*, and D is *La Vie* (Blue period). C is Mondrian's *Composition Trees 2*, a cubism-influenced work on his way to abstraction. Answer **A, B, D**.",
+  "review": "Blind re-solve agreed (A, B, D), unsure of B. B's pyramidal stepped composition with the chair scrolls at the base is Picasso's The Accordionist. Kept."
  },
  "ceed-2015-q12": {
   "answer": "D",
@@ -175,7 +177,8 @@
   "topic": "design-knowledge",
   "difficulty": 2,
   "confidence": "medium",
-  "explanation": "A red-orange circle above an open book of vertical yellow-to-red strips is the logo of **IIT Hyderabad**."
+  "explanation": "A red-orange circle above an open book of vertical yellow-to-red strips is the logo of **IIT Hyderabad**.",
+  "review": "Blind re-solve gave A (low confidence) against stored B. The symbol is IIT Hyderabad's logo. Kept B."
  },
  "ceed-2015-q27": {
   "answer": "A",
@@ -226,25 +229,28 @@
   "difficulty": 3
  },
  "ceed-2015-q35": {
-  "answer": "D",
+  "answer": "B",
   "topic": "3d-visualisation",
   "difficulty": 3,
   "confidence": "high",
-  "explanation": "The base is a rectangle; the top face is a centred rectangle half as wide; the sloped right end shows in top view as lines from the inner corners to the outer corners. The apex edge is drawn parallel to the right-end hip edge, which places the apex directly above the midpoint of the base's left end (the left end face is vertical). In top view the apex therefore falls on the midpoint of the outer rectangle's left side, with lines from it to the inner rectangle's left corners. That is **D**."
+  "explanation": "Read the solid as a sloped-sided block: a rectangular base, a smaller rectangular top centred front-to-back, a sloping right end, and a tall apex at the left joined to the top's two left corners and the base's two left corners.\n\nFixing the drawing's directions (base edges for length and depth, the vertical edges for height) and fitting each option's top view to the drawn vertices:\n- The apex edge is drawn as a translate of the right-hand vertical edge, so the apex sits **inside** the base, about a quarter of the length from the left end, and on the centre line.\n- The top face starts about 0.38 of the length from the left and stops about 0.13 short of the right end.\n\nIn plan the four apex edges then run from one point to the base's left corners and to the top face's left corners. Each base corner, the apex and the opposite top corner fall almost on one line, so the edges read as a crossed X between the outer and inner rectangles: **B**. A puts the apex on the top face's edge and D on the base's end; neither fits the drawn apex position.",
+  "review": "Blind re-solve gave A against stored D. Least-squares fit of the drawn vertices to each option's plan (affine projection, free apex height): B fits within 2.3 px rms with the apex off by 1 px; A 4.4 px (apex off 9 px), D 7.1 px (apex off 17 px). Key B."
  },
  "ceed-2015-q36": {
   "answer": "A",
   "topic": "3d-visualisation",
   "difficulty": 3,
   "confidence": "high",
-  "explanation": "The top view shows a square prism standing on a cone. The prism's front face is a plane parallel to the cone axis, so it cuts the cone in a hyperbola. That curve is highest at the face centre, which is nearest the axis, and lowest at the corners. The centre is the same distance from the axis as the prism edges where the cone outline meets them, so the arch peaks at that height and dips below it at the corners. **A** shows this; C raises the arch above the outline."
+  "explanation": "The top view shows a square prism standing on a cone. The prism's front face is a plane parallel to the cone axis, so it cuts the cone in a hyperbola. That curve is highest at the face centre, which is nearest the axis, and lowest at the corners. The centre is the same distance from the axis as the prism edges where the cone outline meets them, so the arch peaks at that height and dips below it at the corners. **A** shows this; C raises the arch above the outline.",
+  "review": "Blind re-solve gave C against stored A. Checked numerically: cone slope 1.55, prism half-width 96.5 px predicts a 62 px dip from arch peak to corners; A draws 60 px, with the peak level with the outline. C's peak above the outline is impossible. Kept A."
  },
  "ceed-2015-q37": {
   "answer": "C",
   "topic": "3d-visualisation",
   "difficulty": 3,
   "confidence": "high",
-  "explanation": "From the bottom block up, each block turns another 22.5° (0°, 22.5°, 45°, 67.5°, 90°) and shrinks by about 46 units (sides ≈ 320, 276, 228, 184, 136). The sixth block is therefore turned 22.5° with side ≈ 90. A is turned 45°. B (≈ 104) and D (≈ 114) are too large. **C** (≈ 92 at 22.5°) fits."
+  "explanation": "From the bottom block up, each block turns another 22.5° (0°, 22.5°, 45°, 67.5°, 90°) and shrinks by about 46 units (sides ≈ 320, 276, 228, 184, 136). The sixth block is therefore turned 22.5° with side ≈ 90. A is turned 45°. B (≈ 104) and D (≈ 114) are too large. **C** (≈ 92 at 22.5°) fits.",
+  "review": "Blind re-solve gave B against stored C. Measured the raw image: sides 220, ~189, 156, ~126, 95 px fall by ~31 px each step; C's sixth square is ~62 px (81 px bounding box at 22.5°), B's is ~73 px (inscribed). Kept C."
  },
  "ceed-2015-q38": {
   "answer": "D",
@@ -382,7 +388,8 @@
   "explanation": "The circle has radius 6. The centre and the 6 points on the circle (a regular hexagon) are joined by S-shaped curves.\n\nThe shaded piece corresponds to the equilateral triangle formed by the centre and two adjacent hexagon vertices. Its straight sides are replaced by S-curves that are point-symmetric about their midpoints, so each curve adds as much area on one side as it removes on the other.\n\nShaded area = area of an equilateral triangle of side 6 = (√3/4)·36 = 9√3 ≈ **15.59 cm²**.",
   "topic": "logic-and-counting",
   "difficulty": 3,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve gave 12.33 (one concave side) against stored 15.5-15.7. Re-rendered: all three sides are S-curves. Pixel area of the shaded piece is ~15.4 cm² against 9√3 = 15.59. Kept."
  },
  "ceed-2016-s1-q09": {
   "answer": "42",
@@ -408,14 +415,17 @@
   "explanation": "Model sheets, storyboards, line tests, animatics (story reels) and ink and paint all belong to the traditional hand-drawn cel pipeline. **Rigging** builds control skeletons for digital or 3D characters and has no place in non-digital cel work. So the options listing I, II and IV (**A**), III (**B**) and V (**D**) are correct, and VI (C) is not.",
   "topic": "design-knowledge",
   "difficulty": 2,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve agreed (A, B, D), flagged ambiguous. Story reels/animatics, model sheets, line tests and ink-and-paint are all cel-era; rigging is digital. Kept."
  },
  "ceed-2016-s1-q13": {
   "answer": "C,D",
   "explanation": "- A is false. The passage gives the planning and motive force to Bhoja himself; only the compilation of raw material and the writing were done by 'one or more' experts.\n- B is false. He 'did not sit down and write them all by himself'.\n- C is true. Some of the writers who quote him are 'not far removed from Bhoja in point in time'.\n- D is true. As the guiding spirit and motive force, he was the de facto creator, which makes him the author.",
   "topic": "language",
   "difficulty": 2,
-  "confidence": "medium"
+  "confidence": "medium",
+  "excluded": "Inference wording is loose: 'not far removed in point of time' writers who 'came in the wake of' Bhoja need not be of 'the same era' (C), and the passage's paradox stops short of calling him the author (D); an all-or-nothing MSQ key is arguable.",
+  "review": "Blind re-solve agreed (C, D) and flagged C and D as interpretive. Excluded."
  },
  "ceed-2016-s1-q14": {
   "exclude": "statement C ('management education includes the study of honeycombs') has no clear true/false reading, so the full correct set is uncertain",
@@ -539,11 +549,12 @@
   "confidence": "high"
  },
  "ceed-2016-s1-q33": {
-  "answer": "A",
-  "explanation": "A standing eye (about 5–5.5 ft) is above a 3 ft table 6 ft away. So the top is visible as a trapezoid narrowing away from you, and the back legs appear higher and shorter, partly hidden behind the front edge.\n\nProjecting with eye height 5.5 and depth 3 ft, the visible length of a back leg comes out at about 1.4–2× the apparent depth of the top. **A** fits: its back legs show about 60% of the front-leg length. In B they are only stubs. C is a flat elevation, and D is seen from below.",
+  "answer": "B",
+  "explanation": "Use the table top's own receding edges to find the horizon: in every option they meet about 70 px above the front edge, so the eye is about 2.4 ft above the 3 ft top, roughly 5.4 ft: a standing adult.\n\nThe back edge of the top is drawn about half as wide as the front edge, so everything at the back is drawn at about half scale. A back leg's foot therefore sits only a little below the front edge of the top, and only a short stub of each back leg shows under the top.\n\n- **B** shows short back-leg stubs: consistent with the top.\n- A draws the back legs about 60% as long as the front legs, which would put the back feet almost level with the front ones, contradicting the half-scale back edge.\n- C shows no top surface (eye at table height), D is seen from below.\n\nAnswer **B**.",
   "topic": "3d-visualisation",
   "difficulty": 2,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve gave B against stored A. Measured the 2016 scan: horizon from the top's side edges sits ~70 px above the front edge (eye ~5.4 ft); back edge at 0.5 scale puts back-leg feet ~9-20 px below the front edge. B's stubs (25 px) fit; A's back legs (53 px) cannot. Key B."
  },
  "ceed-2016-s1-q34": {
   "answer": "C",
@@ -1165,7 +1176,8 @@
   "explanation": "The object is a Z-profile prism with a hexagon on one profile face and a semicircle on the other. From View X, going round the faces: top (triangle) → upper vertical (square) → lower slope (bar) → bottom → lower vertical → under-slope.\n- View Y supplies the last two: under-slope (rhombus), lower vertical (quarter circle).\n- View Z is flipped and shows the bottom (pac-man) on top, with the semicircle face toward us.\n- Going clockwise from the bottom face on that side: lower slope, then upper vertical. The narrow vertical face with the missing sign is therefore the **square**.",
   "topic": "3d-visualisation",
   "difficulty": 2,
-  "confidence": "high"
+  "confidence": "high",
+  "review": "Blind re-solve gave A against stored C. Re-traced: View Z shows the semicircle face, same cyclic order as View Y, rotated 180° (pac-man is the bottom face, now on top; the semicircle flips). The marked face maps to Y's upper-left vertical face, the square. Kept C."
  },
  "ceed-2017-q30": {
   "answer": "B",
@@ -1259,7 +1271,8 @@
   "explanation": "The ball starts 1 m up, and the hump is only 0.2 + 0.045 = 0.245 m. It has enough energy to clear the hump, drop past Q and roll onto the floor. The floor has very little friction, so it keeps rolling past R and is still moving at S. Answer **D**.",
   "topic": "everyday-science",
   "difficulty": 2,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve agreed (D), flagged wording ('after a long time' with little friction). D is the only option the energy allows. Kept."
  },
  "ceed-2017-q44": {
   "answer": "B",
@@ -1490,7 +1503,9 @@
   "explanation": "In Indian homes the kitchen platform is used mainly by women, and a fixed work height that suits most of them is based on the middle of the female height distribution (50th percentile), not the tallest 5% or a male–female average. Option **C**.",
   "topic": "design-knowledge",
   "difficulty": 2,
-  "confidence": "medium"
+  "confidence": "medium",
+  "excluded": "Rests on assuming the platform's user is female; for a shared household kitchen the male–female average (D) is also defensible.",
+  "review": "Blind re-solve agreed (C) and flagged the gendered assumption. Excluded."
  },
  "ceed-2018-q33": {
   "answer": "B",
@@ -1516,7 +1531,8 @@
   "explanation": "From the sacrum the hind limb runs: pelvis down and back to the hip joint, femur down to the stifle, tibia down and back to the hock, then cannon bone to the fetlock. That needs four segments with a change of angle at the stifle, which matches **A**. B and D have too few joints, and C's short near-vertical then horizontal start does not match the pelvis–femur shape.",
   "topic": "observation",
   "difficulty": 3,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve agreed (A), flagged ambiguous. A is the only option with a joint-angle reversal (pelvis-femur-tibia-cannon). Kept."
  },
  "ceed-2018-q37": {
   "exclude": "Source image is low resolution; careful comparison finds 7 differences, which matches no option, so the key cannot be confirmed.",
@@ -1595,7 +1611,8 @@
   "explanation": "The tube is a siphon. It runs while A's water surface is above B's surface and the inlet (at 2 ft) is under water. Both tanks have a 3 x 3 = 9 sq ft base, so as A drops, B rises by the same amount. B starts at 1 ft and its rim is at 2.5 ft. B reaches the rim after rising 1.5 ft, when A is at 4.5 ft. After that B overflows and stays at 2.5 ft, so flow stops when A also falls to 2.5 ft (still above the 2 ft inlet). A's floor is at 1 ft, so A holds 9 x (2.5 - 1) = **13.5 cu ft**.",
   "topic": "everyday-science",
   "difficulty": 3,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve agreed (13.5), flagged ambiguous. Tank B overflows at 2.5 ft before levels equalise; the inlet stays submerged. Kept."
  },
  "ceed-2019-q08": {
   "answer": "4.82 to 4.84",
@@ -1609,7 +1626,8 @@
   "explanation": "The lens starts with 1 edge, its rim. Each prismatic hole goes through both curved faces. It adds n edges on the front face, n on the back face and n edges along its length: 3n in all. Triangle 9, square 12, pentagon 15, hexagon 18. A circular hole adds only its 2 rim circles. Total = 1 + 9 + 12 + 15 + 18 + 2 = **57**.",
   "topic": "3d-visualisation",
   "difficulty": 3,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve agreed (57), flagged ambiguous. Prismatic holes add 3n edges, the circle 2; no reading gives another total. Kept."
  },
  "ceed-2019-q10": {
   "answer": "17",
@@ -1709,7 +1727,8 @@
   "explanation": "Lizards climb with a diagonal (trotting) gait: front-left and hind-right reach forward together while the other diagonal pair pushes back, and the body bends toward the side whose feet are close together. In A, front-left and hind-right reach forward, front-right and hind-left are back, and the right-side feet sit close. B, C and D break the diagonal pairing (D is symmetric, C has both hind legs back).",
   "topic": "observation",
   "difficulty": 2,
-  "confidence": "medium"
+  "confidence": "medium",
+  "review": "Blind re-solve agreed (A), flagged subjective. A is the only clean diagonal gait (LF+RH forward, right-side feet together). Kept."
  },
  "ceed-2019-q26": {
   "answer": "C",
@@ -1758,7 +1777,9 @@
   "explanation": "From the wall on the left (west) the cat sees two side walls. The main block's end wall is on its left (north, nearer) and the front wing's side wall on its right (south, farther). Each has one window. The main block is nearer, so it looks larger in wall height, roof and window, and the wing looks smaller and lower. Only **C** shows this perspective scaling. A keeps equal wall heights, B is symmetric, and D adds a third face the cat cannot see.",
   "topic": "3d-visualisation",
   "difficulty": 2,
-  "confidence": "medium"
+  "confidence": "medium",
+  "excluded": "No single defensible key: the wall runs forward of the main block, so the cat can also see the main block's front wall obliquely, which is D's three-face view; C is the two-face side view. Both are defensible.",
+  "review": "Blind re-solve gave D against stored C. Re-checked the scene: the cat sits south of the main block's front line, so D's oblique middle face (narrow window, receding roof) is consistent; C needs the cat level with that line. Excluded."
  },
  "ceed-2019-q34": {
   "answer": "A",

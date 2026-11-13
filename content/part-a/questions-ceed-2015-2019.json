@@ -56,14 +56,14 @@
     "optionCount": 4,
     "answer": {
       "kind": "NAT",
-      "min": 26,
-      "max": 26
+      "min": 42,
+      "max": 42
     },
     "answerStatus": "solved",
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": "The solid is an octahedron with every edge bevelled: each visible vertex joins one triangle and three rectangles (3.4.4.4), the arrangement of a rhombicuboctahedron. That gives 8 triangles (the octahedron's faces) + 12 rectangles (one per bevelled edge) + 6 quadrilaterals (one per octahedron vertex) = **26** faces."
+    "explanation": "The solid is an octahedron whose edges and corners have been bevelled, with each original triangular face raised into a low three-sided pyramid (the triangle facing you shows a centre point with three edges to its corners; the hidden triangles show the same edges at the silhouette).\n\n- 6 quadrilaterals, one at each octahedron corner\n- 12 long rectangles, one along each octahedron edge\n- 8 triangles \u00d7 3 faces each = 24\n\nTotal **42** faces. Check with Euler: V = 24 + 8 apexes = 32, E = 48 + 8 \u00d7 3 = 72, and 32 \u2212 72 + 42 = 2."
   },
   {
     "id": "ceed-2015-q04",
@@ -779,13 +779,13 @@
     "optionCount": 4,
     "answer": {
       "kind": "MCQ",
-      "option": "D"
+      "option": "B"
     },
     "answerStatus": "solved",
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": "The base is a rectangle; the top face is a centred rectangle half as wide; the sloped right end shows in top view as lines from the inner corners to the outer corners. The apex edge is drawn parallel to the right-end hip edge, which places the apex directly above the midpoint of the base's left end (the left end face is vertical). In top view the apex therefore falls on the midpoint of the outer rectangle's left side, with lines from it to the inner rectangle's left corners. That is **D**.",
+    "explanation": "Read the solid as a sloped-sided block: a rectangular base, a smaller rectangular top centred front-to-back, a sloping right end, and a tall apex at the left joined to the top's two left corners and the base's two left corners.\n\nFixing the drawing's directions (base edges for length and depth, the vertical edges for height) and fitting each option's top view to the drawn vertices:\n- The apex edge is drawn as a translate of the right-hand vertical edge, so the apex sits **inside** the base, about a quarter of the length from the left end, and on the centre line.\n- The top face starts about 0.38 of the length from the left and stops about 0.13 short of the right end.\n\nIn plan the four apex edges then run from one point to the base's left corners and to the top face's left corners. Each base corner, the apex and the opposite top corner fall almost on one line, so the edges read as a crossed X between the outer and inner rectangles: **B**. A puts the apex on the top face's edge and D on the base's end; neither fits the drawn apex position.",
     "optionLabels": [
       "a",
       "b",
@@ -1343,7 +1343,8 @@
     "topic": "language",
     "difficulty": 2,
     "animated": false,
-    "explanation": "- A is false. The passage gives the planning and motive force to Bhoja himself; only the compilation of raw material and the writing were done by 'one or more' experts.\n- B is false. He 'did not sit down and write them all by himself'.\n- C is true. Some of the writers who quote him are 'not far removed from Bhoja in point in time'.\n- D is true. As the guiding spirit and motive force, he was the de facto creator, which makes him the author."
+    "explanation": "- A is false. The passage gives the planning and motive force to Bhoja himself; only the compilation of raw material and the writing were done by 'one or more' experts.\n- B is false. He 'did not sit down and write them all by himself'.\n- C is true. Some of the writers who quote him are 'not far removed from Bhoja in point in time'.\n- D is true. As the guiding spirit and motive force, he was the de facto creator, which makes him the author.",
+    "excluded": "Inference wording is loose: 'not far removed in point of time' writers who 'came in the wake of' Bhoja need not be of 'the same era' (C), and the passage's paradox stops short of calling him the author (D); an all-or-nothing MSQ key is arguable."
   },
   {
     "id": "ceed-2016-s1-q15",
@@ -1639,13 +1640,13 @@
     "optionCount": 4,
     "answer": {
       "kind": "MCQ",
-      "option": "A"
+      "option": "B"
     },
     "answerStatus": "solved",
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "A standing eye (about 5\u20135.5 ft) is above a 3 ft table 6 ft away. So the top is visible as a trapezoid narrowing away from you, and the back legs appear higher and shorter, partly hidden behind the front edge.\n\nProjecting with eye height 5.5 and depth 3 ft, the visible length of a back leg comes out at about 1.4\u20132\u00d7 the apparent depth of the top. **A** fits: its back legs show about 60% of the front-leg length. In B they are only stubs. C is a flat elevation, and D is seen from below."
+    "explanation": "Use the table top's own receding edges to find the horizon: in every option they meet about 70 px above the front edge, so the eye is about 2.4 ft above the 3 ft top, roughly 5.4 ft: a standing adult.\n\nThe back edge of the top is drawn about half as wide as the front edge, so everything at the back is drawn at about half scale. A back leg's foot therefore sits only a little below the front edge of the top, and only a short stub of each back leg shows under the top.\n\n- **B** shows short back-leg stubs: consistent with the top.\n- A draws the back legs about 60% as long as the front legs, which would put the back feet almost level with the front ones, contradicting the half-scale back edge.\n- C shows no top surface (eye at table height), D is seen from below.\n\nAnswer **B**."
   },
   {
     "id": "ceed-2016-s1-q34",
@@ -4067,7 +4068,8 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": "In Indian homes the kitchen platform is used mainly by women, and a fixed work height that suits most of them is based on the middle of the female height distribution (50th percentile), not the tallest 5% or a male\u2013female average. Option **C**."
+    "explanation": "In Indian homes the kitchen platform is used mainly by women, and a fixed work height that suits most of them is based on the middle of the female height distribution (50th percentile), not the tallest 5% or a male\u2013female average. Option **C**.",
+    "excluded": "Rests on assuming the platform's user is female; for a shared household kitchen the male\u2013female average (D) is also defensible."
   },
   {
     "id": "ceed-2018-q33",
@@ -4681,7 +4683,8 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": "From the wall on the left (west) the cat sees two side walls. The main block's end wall is on its left (north, nearer) and the front wing's side wall on its right (south, farther). Each has one window. The main block is nearer, so it looks larger in wall height, roof and window, and the wing looks smaller and lower. Only **C** shows this perspective scaling. A keeps equal wall heights, B is symmetric, and D adds a third face the cat cannot see."
+    "explanation": "From the wall on the left (west) the cat sees two side walls. The main block's end wall is on its left (north, nearer) and the front wing's side wall on its right (south, farther). Each has one window. The main block is nearer, so it looks larger in wall height, roof and window, and the wing looks smaller and lower. Only **C** shows this perspective scaling. A keeps equal wall heights, B is symmetric, and D adds a third face the cat cannot see.",
+    "excluded": "No single defensible key: the wall runs forward of the main block, so the cat can also see the main block's front wall obliquely, which is D's three-face view; C is the two-face side view. Both are defensible."
   },
   {
     "id": "ceed-2019-q34",
