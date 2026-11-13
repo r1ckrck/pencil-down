@@ -1,0 +1,3516 @@
+{
+ "uceed-2015-q01": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2015-q02": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2015-q03": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2015-q04": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q05": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q06": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q07": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2015-q08": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q09": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2015-q10": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2015-q11": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q12": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2015-q13": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2015-q14": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q15": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q16": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2015-q17": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2015-q18": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2015-q19": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2015-q20": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q21": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q22": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q23": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q24": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q25": {
+  "topic": "folding-and-patterns",
+  "difficulty": 1
+ },
+ "uceed-2015-q26": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q27": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2015-q28": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q29": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q30": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q31": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q32": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2015-q33": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2015-q34": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2015-q35": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q36": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q37": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2015-q38": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q39": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2015-q40": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2015-q41": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2015-q42": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2015-q43": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2015-q44": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2015-q45": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q46": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2015-q47": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2015-q48": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2015-q49": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2015-q50": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2015-q51": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2015-q52": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2015-q53": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2015-q54": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q55": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q56": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q57": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2015-q58": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q59": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q60": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2015-q61": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2015-q62": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q63": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q64": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q65": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q66": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q67": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q68": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q69": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2015-q70": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q71": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q72": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2015-q73": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2015-q74": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q75": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q76": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2015-q77": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2015-q78": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2015-q79": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2015-q80": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q81": {
+  "topic": "language",
+  "difficulty": 1
+ },
+ "uceed-2015-q82": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q83": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2015-q84": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q85": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q86": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q87": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2015-q88": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q89": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2015-q90": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2015-q91": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2015-q92": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2015-q93": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2015-q94": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2015-q95": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2015-q96": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2015-q97": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2015-q98": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2015-q99": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2015-q100": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2016-q01": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2016-q02": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2016-q03": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q04": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q05": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2016-q06": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2016-q07": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2016-q08": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q09": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q10": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2016-q11": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q12": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2016-q13": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2016-q14": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2016-q15": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2016-q16": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2016-q17": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q18": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2016-q19": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2016-q20": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2016-q21": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2016-q22": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2016-q23": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2016-q24": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q25": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2016-q26": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2016-q27": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2016-q28": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2016-q29": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2016-q30": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2016-q31": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2016-q32": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2016-q33": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2016-q34": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2016-q35": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2016-q36": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2016-q37": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2016-q38": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q39": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2016-q40": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2016-q41": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2016-q42": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2016-q43": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2016-q44": {
+  "topic": "folding-and-patterns",
+  "difficulty": 1
+ },
+ "uceed-2016-q45": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2016-q46": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2016-q47": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2016-q48": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2016-q49": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q50": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2016-q51": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2016-q52": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q53": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2016-q54": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2016-q55": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2016-q56": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2016-q57": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2016-q58": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2016-q59": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2016-q60": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2016-q61": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2016-q62": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2016-q63": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2016-q64": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2016-q65": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2016-q66": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2016-q67": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2016-q68": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2016-q69": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2016-q70": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2016-q71": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2016-q72": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2016-q73": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2016-q74": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2016-q75": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2016-q76": {
+  "topic": "observation",
+  "difficulty": 1
+ },
+ "uceed-2016-q77": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2016-q78": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2016-q79": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2016-q80": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2017-q01": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2017-q02": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q03": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q04": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2017-q05": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2017-q06": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q07": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q08": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q09": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q10": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2017-q11": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q12": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2017-q13": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2017-q14": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q15": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q16": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q17": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2017-q18": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2017-q19": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q20": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2017-q21": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2017-q22": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2017-q23": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2017-q24": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2017-q25": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2017-q26": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q27": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q28": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q29": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q30": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q31": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2017-q32": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2017-q33": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2017-q34": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2017-q35": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2017-q36": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2017-q37": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2017-q38": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2017-q39": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2017-q40": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2017-q41": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2017-q42": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2017-q43": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2017-q44": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2017-q45": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2017-q46": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2017-q47": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2017-q48": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q49": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2017-q50": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2017-q51": {
+  "topic": "folding-and-patterns",
+  "difficulty": 1
+ },
+ "uceed-2017-q52": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q53": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q54": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2017-q55": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q56": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2017-q57": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2017-q58": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2017-q59": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2017-q60": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2017-q61": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2017-q62": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2017-q63": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2017-q64": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2017-q65": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q66": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2017-q67": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2017-q68": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2017-q69": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2017-q70": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2017-q71": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2017-q72": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2017-q73": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q74": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2017-q75": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2017-q76": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q77": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2017-q78": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2017-q79": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2017-q80": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2017-q81": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2017-q82": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2017-q83": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2017-q84": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2017-q85": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2018-q01": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2018-q02": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2018-q03": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2018-q04": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2018-q05": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2018-q06": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2018-q07": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2018-q08": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2018-q09": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2018-q10": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2018-q11": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2018-q12": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2018-q13": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2018-q14": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2018-q15": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2018-q16": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2018-q17": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2018-q18": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2018-q19": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2018-q20": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2018-q21": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2018-q22": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2018-q23": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2018-q24": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2018-q25": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2018-q26": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q27": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2018-q28": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2018-q29": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2018-q30": {
+  "topic": "language",
+  "difficulty": 1
+ },
+ "uceed-2018-q31": {
+  "topic": "language",
+  "difficulty": 1
+ },
+ "uceed-2018-q32": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2018-q33": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2018-q34": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2018-q35": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2018-q36": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2018-q37": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q38": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2018-q39": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q40": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q41": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2018-q42": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2018-q43": {
+  "topic": "language",
+  "difficulty": 3
+ },
+ "uceed-2018-q44": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2018-q45": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2018-q46": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q47": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q48": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2018-q49": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q50": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2018-q51": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q52": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2018-q53": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2018-q54": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2018-q55": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2018-q56": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2018-q57": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2018-q58": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q59": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2018-q60": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q61": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2018-q62": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2018-q63": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2018-q64": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2018-q65": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2018-q66": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2018-q67": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2018-q68": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2018-q69": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2018-q70": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2018-q71": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2018-q72": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q73": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q74": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2018-q75": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2018-q76": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2018-q77": {
+  "topic": "logic-and-counting",
+  "difficulty": 1
+ },
+ "uceed-2018-q78": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2018-q79": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2018-q80": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2018-q81": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2018-q82": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2018-q83": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2018-q84": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2018-q85": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2019-q01": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2019-q02": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q03": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2019-q04": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q05": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q06": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2019-q07": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q08": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q09": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q10": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q11": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2019-q12": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2019-q13": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q14": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2019-q15": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q16": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2019-q17": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q18": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2019-q19": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q20": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2019-q21": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q22": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2019-q23": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q24": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2019-q25": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q26": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2019-q27": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q28": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2019-q29": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q30": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q31": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2019-q32": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q33": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2019-q34": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2019-q35": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q36": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2019-q37": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q38": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q39": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2019-q40": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q41": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2019-q42": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2019-q43": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2019-q44": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q45": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q46": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q47": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q48": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2019-q49": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2019-q50": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2019-q51": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2019-q52": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2019-q53": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q54": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2019-q55": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2019-q56": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q57": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q58": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q59": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q60": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q61": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q62": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q63": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2019-q64": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q65": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2019-q66": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2019-q67": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q68": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2019-q69": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q70": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2019-q71": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2019-q72": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q73": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2019-q74": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2019-q75": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2019-q76": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2019-q77": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2019-q78": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2019-q79": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2019-q80": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2019-q81": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2019-q82": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2019-q83": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2019-q84": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2019-q85": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q01": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2020-q02": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2020-q03": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2020-q04": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2020-q05": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2020-q06": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q07": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2020-q08": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2020-q09": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2020-q10": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2020-q11": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2020-q12": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2020-q13": {
+  "topic": "logic-and-counting",
+  "difficulty": 1
+ },
+ "uceed-2020-q14": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q15": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2020-q16": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2020-q17": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2020-q18": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2020-q19": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q20": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2020-q21": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q22": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2020-q23": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2020-q24": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2020-q25": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2020-q26": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2020-q27": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2020-q28": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2020-q29": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2020-q30": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q31": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2020-q32": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2020-q33": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2020-q34": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2020-q35": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2020-q36": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2020-q37": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2020-q38": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2020-q39": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2020-q40": {
+  "topic": "folding-and-patterns",
+  "difficulty": 1
+ },
+ "uceed-2020-q41": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2020-q42": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2020-q43": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2020-q44": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2020-q45": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2020-q46": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q47": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2020-q48": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q49": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2020-q50": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2020-q51": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2020-q52": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2020-q53": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2020-q54": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q55": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2020-q56": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2020-q57": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2020-q58": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q59": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2020-q60": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2020-q61": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2020-q62": {
+  "topic": "folding-and-patterns",
+  "difficulty": 1
+ },
+ "uceed-2020-q63": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2020-q64": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2020-q65": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2020-q66": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2020-q67": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2020-q68": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2021-q01": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2021-q02": {
+  "topic": "logic-and-counting",
+  "difficulty": 1
+ },
+ "uceed-2021-q03": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2021-q04": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2021-q05": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q06": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2021-q07": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2021-q08": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q09": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2021-q10": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2021-q11": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q12": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2021-q13": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q14": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q15": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q16": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2021-q17": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q18": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2021-q19": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2021-q20": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2021-q21": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2021-q22": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2021-q23": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2021-q24": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2021-q25": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2021-q26": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2021-q27": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2021-q28": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2021-q29": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2021-q30": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2021-q31": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q32": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2021-q33": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q34": {
+  "topic": "logic-and-counting",
+  "difficulty": 1
+ },
+ "uceed-2021-q35": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2021-q36": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2021-q37": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2021-q38": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2021-q39": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2021-q40": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2021-q41": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2021-q42": {
+  "topic": "logic-and-counting",
+  "difficulty": 1
+ },
+ "uceed-2021-q43": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2021-q44": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2021-q45": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2021-q46": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2021-q47": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2021-q48": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2021-q49": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2021-q50": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q51": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2021-q52": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2021-q53": {
+  "topic": "observation",
+  "difficulty": 1
+ },
+ "uceed-2021-q54": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2021-q55": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2021-q56": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2021-q57": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q58": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2021-q59": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2021-q60": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2021-q61": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2021-q62": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2021-q63": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q64": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2021-q65": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q66": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2021-q67": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2021-q68": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2022-q01": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2022-q02": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2022-q03": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2022-q04": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2022-q05": {
+  "topic": "logic-and-counting",
+  "difficulty": 1
+ },
+ "uceed-2022-q06": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2022-q07": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2022-q08": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2022-q09": {
+  "topic": "logic-and-counting",
+  "difficulty": 1
+ },
+ "uceed-2022-q10": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2022-q11": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2022-q12": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2022-q13": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2022-q14": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2022-q15": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2022-q16": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2022-q17": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2022-q18": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2022-q19": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q20": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2022-q21": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2022-q22": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2022-q23": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2022-q24": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2022-q25": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q26": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2022-q27": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2022-q28": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q29": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2022-q30": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2022-q31": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q32": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q33": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2022-q34": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2022-q35": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q36": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2022-q37": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q38": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q39": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q40": {
+  "topic": "logic-and-counting",
+  "difficulty": 1
+ },
+ "uceed-2022-q41": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2022-q42": {
+  "topic": "folding-and-patterns",
+  "difficulty": 1
+ },
+ "uceed-2022-q43": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2022-q44": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2022-q45": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2022-q46": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2022-q47": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2022-q48": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2022-q49": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2022-q50": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2022-q51": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2022-q52": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2022-q53": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2022-q54": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q55": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2022-q56": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2022-q57": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2022-q58": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2022-q59": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2022-q60": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2022-q61": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2022-q62": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2022-q63": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2022-q64": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2022-q65": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2022-q66": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2022-q67": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2022-q68": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2023-q01": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2023-q02": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2023-q03": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2023-q04": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2023-q05": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2023-q06": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2023-q07": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q08": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2023-q09": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2023-q10": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2023-q11": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2023-q12": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q13": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q14": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2023-q15": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2023-q16": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2023-q17": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2023-q18": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q19": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2023-q20": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2023-q21": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2023-q22": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2023-q23": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2023-q24": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2023-q25": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q26": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2023-q27": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2023-q28": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2023-q29": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2023-q30": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2023-q31": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2023-q32": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2023-q33": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2023-q34": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2023-q35": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q36": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2023-q37": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q38": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2023-q39": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2023-q40": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q41": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2023-q42": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2023-q43": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2023-q44": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2023-q45": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q46": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2023-q47": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2023-q48": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q49": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q50": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2023-q51": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2023-q52": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2023-q53": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q54": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2023-q55": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2023-q56": {
+  "topic": "observation",
+  "difficulty": 2,
+  "animated": true
+ },
+ "uceed-2023-q57": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2023-q58": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2023-q59": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2023-q60": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2023-q61": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2023-q62": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2023-q63": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2023-q64": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2023-q65": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2023-q66": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2023-q67": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2023-q68": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2024-q01": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2024-q02": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2024-q03": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2024-q04": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2024-q05": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2024-q06": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2024-q07": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2024-q08": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2024-q09": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2024-q10": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2024-q11": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2024-q12": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2024-q13": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2024-q14": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2024-q15": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2024-q16": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2024-q17": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2024-q18": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2024-q19": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2024-q20": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2024-q21": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2024-q22": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2024-q23": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2024-q24": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2024-q25": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2024-q26": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2024-q27": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2024-q28": {
+  "topic": "logic-and-counting",
+  "difficulty": 1
+ },
+ "uceed-2024-q29": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2024-q30": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2024-q31": {
+  "topic": "observation",
+  "difficulty": 3,
+  "animated": true
+ },
+ "uceed-2024-q32": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2024-q33": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2024-q34": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2024-q35": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2024-q36": {
+  "topic": "observation",
+  "difficulty": 1
+ },
+ "uceed-2024-q37": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2024-q38": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2024-q39": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2024-q40": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2024-q41": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2024-q42": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2024-q43": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2024-q44": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2024-q45": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2024-q46": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2024-q47": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2024-q48": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2024-q49": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2024-q50": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2024-q51": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2024-q52": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2024-q53": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2024-q54": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2024-q55": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2024-q56": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2024-q57": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2025-q01": {
+  "topic": "logic-and-counting",
+  "difficulty": 1
+ },
+ "uceed-2025-q02": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2025-q03": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2025-q04": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2025-q05": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2025-q06": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2025-q07": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2025-q08": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2025-q09": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2025-q10": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2025-q11": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2025-q12": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2025-q13": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2025-q14": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2025-q15": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2025-q16": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2025-q17": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2025-q18": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2025-q19": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2025-q20": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2025-q21": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2025-q22": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2025-q23": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2025-q24": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2025-q25": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2025-q26": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2025-q27": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2025-q28": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2025-q29": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2025-q30": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2025-q31": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2025-q32": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2025-q33": {
+  "topic": "observation",
+  "difficulty": 1
+ },
+ "uceed-2025-q34": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2025-q35": {
+  "topic": "language",
+  "difficulty": 2
+ },
+ "uceed-2025-q36": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2025-q37": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2025-q38": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2025-q39": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2025-q40": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2025-q41": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2025-q42": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2025-q43": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2025-q44": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2025-q45": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2025-q46": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2025-q47": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2025-q48": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2025-q49": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2025-q50": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2025-q51": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2025-q52": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2025-q53": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2025-q54": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2025-q55": {
+  "topic": "folding-and-patterns",
+  "difficulty": 1
+ },
+ "uceed-2025-q56": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2025-q57": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2026-q01": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q02": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2026-q03": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2026-q04": {
+  "topic": "3d-visualisation",
+  "difficulty": 3
+ },
+ "uceed-2026-q05": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2026-q06": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q07": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q08": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q09": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q10": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2026-q11": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2026-q12": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2026-q13": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2026-q14": {
+  "topic": "logic-and-counting",
+  "difficulty": 3
+ },
+ "uceed-2026-q15": {
+  "topic": "3d-visualisation",
+  "difficulty": 2
+ },
+ "uceed-2026-q16": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2026-q17": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2026-q18": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2026-q19": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2026-q20": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2026-q21": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2026-q22": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2026-q23": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2026-q24": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2026-q25": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2026-q26": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2026-q27": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2026-q28": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q29": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2026-q30": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2026-q31": {
+  "topic": "observation",
+  "difficulty": 3
+ },
+ "uceed-2026-q32": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2026-q33": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2026-q34": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q35": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2026-q36": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2026-q37": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ },
+ "uceed-2026-q38": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2026-q39": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q40": {
+  "topic": "folding-and-patterns",
+  "difficulty": 3
+ },
+ "uceed-2026-q41": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2026-q42": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q43": {
+  "topic": "everyday-science",
+  "difficulty": 2
+ },
+ "uceed-2026-q44": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q45": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q46": {
+  "topic": "logic-and-counting",
+  "difficulty": 2
+ },
+ "uceed-2026-q47": {
+  "topic": "folding-and-patterns",
+  "difficulty": 2
+ },
+ "uceed-2026-q48": {
+  "topic": "design-knowledge",
+  "difficulty": 3
+ },
+ "uceed-2026-q49": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q50": {
+  "topic": "everyday-science",
+  "difficulty": 3
+ },
+ "uceed-2026-q51": {
+  "topic": "mechanisms",
+  "difficulty": 3
+ },
+ "uceed-2026-q52": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q53": {
+  "topic": "design-knowledge",
+  "difficulty": 2
+ },
+ "uceed-2026-q54": {
+  "topic": "observation",
+  "difficulty": 2
+ },
+ "uceed-2026-q55": {
+  "topic": "design-knowledge",
+  "difficulty": 1
+ },
+ "uceed-2026-q56": {
+  "topic": "mechanisms",
+  "difficulty": 2
+ },
+ "uceed-2026-q57": {
+  "topic": "everyday-science",
+  "difficulty": 1
+ }
+}

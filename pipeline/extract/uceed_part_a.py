@@ -73,11 +73,13 @@ START = {2015: 2, 2016: 2, 2017: 2, 2018: 2, 2019: 2, 2020: 2, 2021: 2, 2022: 1,
          2023: 3, 2024: 3, 2025: 3, 2026: 3}
 # (page index, y in pt) for anchors that have no text layer.
 ANCHOR_FIX = {2018: {15: (7, 50)}}
+# Footer top (pt) on scanned pages, where the footer has no text layer.
+FOOTER_FIX = {2018: {7: 775}}
 # Questions left out because they depend on material the PDF does not carry: {year: {qno: why}}.
 SKIP: dict[int, dict[int, str]] = {}
 
 ANCHOR_RE = re.compile(r"^(?:Q\s*\.?\s*(\d{1,3})\b|(\d{1,3})\s*\.(?!\d)|(\d{1,3})$)")
-STOP_RE = re.compile(r"^(Section\s*[A-C1-3]\s*:|SECTION\s*[–-]|PART\s*[-–]?\s*[AB]\b|Part\s*[-–]?\s*B\b)")
+STOP_RE = re.compile(r"^(Section\s*[A-C1-3]\s*:|SECTION\s*[–-]|PART\s*[-–]?\s*[AB]\b|Part\s*[-–]?\s*B\b|END OF THE QUESTION PAPER|\*{5,})")
 GIF_RE = re.compile(r"\bGIF\b")
 NEXT_GIF_RE = re.compile(r"following question contains an animated GIF", re.I)
 
@@ -117,6 +119,8 @@ def page_marks(page):
 def question_regions(doc, year, count):
     """[(qno, [(page_index, Rect)], gif)] in printed order."""
     marks = [page_marks(p) for p in doc]
+    for p, y in FOOTER_FIX.get(year, {}).items():
+        marks[p]["footer"] = y
     for q, (p, y) in ANCHOR_FIX.get(year, {}).items():
         marks[p]["anchors"].append((y, q))
     events = []
