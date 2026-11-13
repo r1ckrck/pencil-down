@@ -9,7 +9,12 @@ For each paper:
   4. Merge hand-made topic/difficulty tags from ceed_part_a_tags.json (written after looking
      at every crop) and write the content JSON files.
 
-Run: pipeline/.venv/bin/python -I pipeline/extract/ceed_part_a.py
+  5. Merge explanations from explanations/<year>.json ({question id: markdown}); ids with no
+     entry keep explanation null.
+
+Run: pipeline/.venv/bin/python -I pipeline/extract/ceed_part_a.py [--keep-images]
+  --keep-images: reuse existing WebP crops instead of re-rendering them (fast re-run for tags
+  or explanations); missing crops are still rendered.
 Needs: pipeline/raw/ceed/<year>-qp.pdf and <year>-key.pdf (see pipeline/fetch/fetch_ceed.py), tesseract on PATH.
 """
 import io
@@ -27,6 +32,7 @@ RAW = ROOT / "pipeline" / "raw" / "ceed"
 PART_A = ROOT / "content" / "part-a"
 IMAGES = PART_A / "images"
 TAGS = Path(__file__).with_name("ceed_part_a_tags.json")
+EXPLANATIONS = Path(__file__).with_name("explanations")
 
 YEARS = range(2020, 2027)
 ZOOM = 3.0  # 216 dpi; a 455 pt text column renders ~1365 px wide
@@ -267,9 +273,23 @@ def parse_answer(fmt, text, scheme):
 
 # ---------- main ----------
 
+def load_explanations():
+    """{question id: markdown} merged from every explanations/*.json."""
+    out = {}
+    for path in sorted(EXPLANATIONS.glob("*.json")):
+        for qid, text in json.loads(path.read_text()).items():
+            if qid in out:
+                raise SystemExit(f"{path.name}: {qid} already explained in another file")
+            if text and text.strip():
+                out[qid] = text.strip()
+    return out
+
+
 def main():
+    keep_images = "--keep-images" in sys.argv[1:]
     IMAGES.mkdir(parents=True, exist_ok=True)
     tags = json.loads(TAGS.read_text()) if TAGS.exists() else {}
+    explanations = load_explanations()
     questions, papers, untagged, lossless = [], [], [], []
     for year in YEARS:
         cfg = PAPERS[year]
@@ -282,9 +302,14 @@ def main():
         ids = []
         for qno, parts, animated in regions:
             qid = f"ceed-{year}-q{qno:02d}"
-            img = render(doc, parts)
-            if save_webp(img, IMAGES / f"{qid}.webp"):
-                lossless.append(qid)
+            path = IMAGES / f"{qid}.webp"
+            if keep_images and path.exists():
+                with Image.open(path) as img:
+                    img.load()
+            else:
+                img = render(doc, parts)
+                if save_webp(img, path):
+                    lossless.append(qid)
             fmt, text = key[qno]
             tag = tags.get(qid)
             if not tag:
@@ -298,7 +323,7 @@ def main():
                 "difficulty": tag["difficulty"] if tag else None,
                 # an animated question whose PDF marker lives inside an image is flagged in the tags
                 "animated": animated or bool(tag and tag.get("animated")),
-                "explanation": None,
+                "explanation": explanations.pop(qid, None),
             })
             ids.append(qid)
         papers.append({
@@ -308,7 +333,11 @@ def main():
             "cutoff": cfg["cutoff"],
         })
         print(f"{year}: {len(ids)} questions")
-    print(f"lossless WebP: {len(lossless)} of {len(questions)}")
+    if not keep_images:
+        print(f"lossless WebP: {len(lossless)} of {len(questions)}")
+    print(f"explanations: {sum(q['explanation'] is not None for q in questions)} of {len(questions)}")
+    if explanations:
+        print(f"explanations for unknown ids: {sorted(explanations)}", file=sys.stderr)
     (PART_A / "questions-ceed-2020-2026.json").write_text(json.dumps(questions, indent=2) + "\n")
     (PART_A / "papers-ceed-2020-2026.json").write_text(json.dumps(papers, indent=2) + "\n")
     write_topic_weights(questions)

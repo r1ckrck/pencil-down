@@ -19,7 +19,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Read the solid top to bottom, matching front and top views. The top view's square is a square block and the outer circle is a wide cylinder.\n- Dome: 1. Square block: top face (around the dome) + 4 sides = 5.\n- Wide cylinder: top annulus, curved side, bottom annulus = 3.\n- Bowl under it: 1. Bottom cylinder: side + bottom ring = 2. Hidden hole (dashed): wall + floor = 2.\n\n1 + 5 + 3 + 1 + 2 + 2 = **14**."
   },
   {
     "id": "ceed-2020-q02",
@@ -41,7 +41,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Let the front wheel's circumference be C. The back wheel's is then 1.5C. Each wheel marks the floor once per turn after it picks up ink.\n- Front-wheel marks: C, 2C, 3C, 4C, 5C, 6C\u2026\n- Back-wheel marks: 1.5C, 3C, 4.5C, 6C\u2026 (3C and 6C coincide with front marks)\n\nDistinct marks in order: C, 1.5C, 2C, 3C, 4C, 4.5C, 5C, 6C. That's the 8 dots shown, so the last mark is at 6C: **6** front-wheel revolutions."
   },
   {
     "id": "ceed-2020-q03",
@@ -107,7 +107,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Treat the maze as 1 cm cells (the walls sit on every second grid line). Count cell-to-cell moves on the only route that gets through.\nFrom the dot: right 1, down 1, right 1, down 1, right 1, down 1 (bottom row), right 1, up 1, right 2, down 1, right 2 (bottom-right cell), up 2, left 1, up 1 into x's cell. A wall closes x's cell from below, which forces that last detour.\n\nTotal: **18** moves = 18 cm."
   },
   {
     "id": "ceed-2020-q06",
@@ -198,7 +198,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each marker line starts at its shape's centre and points at a vertex: P's circle-tipped line points to a triangle corner, Q's square-tipped line to a pentagon corner. Check every overlay against that rule.\n- **A**, **B**, **D**: both lines point at a corner of their own shape. In D the square line points straight down at the pentagon's bottom vertex.\n- C: the circle line works, but the square-tipped line points between two pentagon corners, which P/Q can't produce."
   },
   {
     "id": "ceed-2020-q10",
@@ -222,7 +222,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "A rotation keeps the clockwise order of the coloured cells; a flip reverses it. Use the single dark-green cell in the inner ring as an anchor and read clockwise from it.\n- **A** and **D**: the original sequence, just turned.\n- B: has two dark-green cells, so it isn't the same figure.\n- C: reads anticlockwise from the anchor, so it's a mirror image (a flip), not a rotation."
   },
   {
     "id": "ceed-2020-q11",
@@ -245,7 +245,7 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A joint slides apart along Y only if nothing interlocks across Y: the cut and the pin's channel must both run clear along Y.\n- **C**: the tongue tapers open toward the long edge and the pin sits in a channel running along Y. The orange block slides straight out.\n- A and B: hooked steps overlap in Y and lock.\n- D looks like C, but its slot walls are slanted and parallel, so it can only slide diagonally, not along Y."
   },
   {
     "id": "ceed-2020-q12",
@@ -268,7 +268,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A perfect circle keeps every element the same distance from the centre.\n- **B**: the teal dots (each with its crescent) all sit on one constant radius.\n- C and D: the pentagon and square rings bulge in and out, so their radius varies around the ring.\n- A: the white circles zig-zag in two staggered rows, so they aren't a single circle."
   },
   {
     "id": "ceed-2020-q13",
@@ -292,7 +292,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The air jet lowers pressure at the straw tip and pulls liquid up. For this to keep working, air must replace the liquid that leaves, so the bottle needs its own vent. The straw must also reach the dotted line.\n- **C**: separate vent above the liquid, straw to the bottom. Works.\n- **D**: the vent's outer end stays above the liquid surface while its inner end opens near the bottom. Air bubbles in and nothing leaks, so it works to the end.\n- A and B: the vent joins the straw itself. The suction then pulls air through the side tube instead of liquid up the straw."
   },
   {
     "id": "ceed-2020-q14",
@@ -315,7 +315,7 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "A sheet-metal spoon is blanked (cut) from the sheet, then pressed into its bowl and curved-handle shape. That pressing step is **forming (B)**.\n- A (casting) pours molten metal; there's no sheet involved.\n- C (brazing) joins parts, but a spoon is one piece.\n- D (blow moulding) makes hollow plastic items like bottles."
   },
   {
     "id": "ceed-2020-q15",
@@ -365,7 +365,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "With a compass you can copy and add lengths, and the postcard gives 12 cm, 7 cm and right-angled corners.\n- **A**: 12 \u2212 7 = 5. A right triangle with legs 12 and 5 has hypotenuse \u221a(144 + 25) = 13, which sets the compass for radius 13.\n- **B**: mark 5 (= 12 \u2212 7), then swing two arcs of 5 for the equilateral triangle.\n- **C**: bisect 12 with the compass to get 6, and use the card's corner for the right angles.\n- **D**: 10 = 5 + 5. A regular hexagon's side equals its circumradius, so step 10 around a circle of radius 10.\n\nAll four can be drawn."
   },
   {
     "id": "ceed-2020-q17",
@@ -412,7 +412,7 @@
     "topic": "language",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The quote says probabilities describe a fixed world, and causality tells us how those probabilities shift when the world changes. Causality therefore predicts what probabilities alone cannot: **D**.\n- A contradicts the quote; the world does change.\n- B is backwards: predicting change is causality's job, not probability's.\n- C (big data accurately predicts) is the probabilistic view the quote says falls short."
   },
   {
     "id": "ceed-2020-q19",
@@ -433,7 +433,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "At sunrise the sun is low, so light comes in almost horizontally. It lands at the same height as the opening it passes through.\n- The blind's thin slits throw thin bright bands. The slit at eye height puts a single stripe across her eyes.\n- The open lower window lights everything at that height that faces the window: chin, hands and knees.\n\n**C** shows exactly this.\n- A lights her whole face, but the face is behind the blind.\n- B puts thin bands on her chest, where the open pane should give broad light.\n- D lights her hair and back, which face away from the window."
   },
   {
     "id": "ceed-2020-q20",
@@ -475,7 +475,7 @@
     "topic": "everyday-science",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "P (100%) is the key light: high and front-left. Lit surfaces face front-left, and shadows fall back-right. S at only 25% plus the reflector R fill from the right, so those shadows stay visible but soft.\n- **C**: bright left faces, soft shadow trailing back-right.\n- B: hard shadows thrown toward the camera, meaning a light from behind.\n- A and D: shading suggests the light comes from the wrong side or is too weak for a 100% key."
   },
   {
     "id": "ceed-2020-q22",
@@ -496,7 +496,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Along the red line, each layer's hole covers a fixed stretch measured from the spine:\n- front cover \u2248 25\u201342% of the width\n- pages 1\u20134 \u2248 13\u201384%\n- pages 5\u20138 \u2248 17\u201365%\n- pages 9\u201312 \u2248 22\u201375%\n- back cover \u2248 47\u201377%\n\nOnly **C** has every layer's gap in its place.\n- A: pages 1\u20134 hole almost full width.\n- B: front-cover hole shifted right.\n- D: pages 5\u20138 hole too narrow."
   },
   {
     "id": "ceed-2020-q23",
@@ -517,7 +517,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "List P's pieces: two large triangles (a quarter of the square each), a small square, the top-left corner triangle, the small top-right triangle, a small triangle left of centre, and a slim parallelogram on the left edge. That's 7 pieces.\n\n**C** uses exactly these:\n- the two large triangles as the lower wings\n- the square at the centre\n- the two small triangles at top left\n- the remaining triangle and the parallelogram at top right\n\nThe other figures need pieces P doesn't have, e.g. A's rectangular neck and separate leg triangles."
   },
   {
     "id": "ceed-2020-q24",
@@ -538,7 +538,7 @@
     "topic": "observation",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Chrome's logo is a blue centre in a white ring, surrounded by red (top), yellow (right) and green (left). The segment edges swirl in one fixed direction: **C**.\n- A swaps the yellow and green.\n- B puts yellow in the centre and adds blue.\n- D keeps the colour order but its segment edges swirl the opposite way (mirrored geometry)."
   },
   {
     "id": "ceed-2020-q25",
@@ -559,7 +559,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Read the nine cells as one sequence, left to right and row by row. A cycle of four repeats: (yellow top-left + blue bottom-left), (blue top-right + yellow bottom-left), (blue bottom-left + yellow bottom-right), (single green top-right).\nCells 1\u20134 are one cycle and cells 5\u20138 repeat it, so cell 9 starts the cycle again: yellow top-left, blue bottom-left = **A**.\n- B and C are the third and second steps.\n- D is the green step, which just came at cell 8."
   },
   {
     "id": "ceed-2020-q26",
@@ -580,7 +580,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Peeling a sticker leaves a hole of the same shape. Most stickers are U-shaped (rounded at the bottom); a few are \u2229-shaped (rounded at the top). The \u2229 ones are row 1, first and last; row 2, fifth; row 3, third.\nOnly **A** has \u2229 holes exactly there.\n- B moves them (row 2 col 4, row 3 col 5).\n- C adds an extra \u2229 at row 3 col 5.\n- D inverts most of the bottom half."
   },
   {
     "id": "ceed-2020-q27",
@@ -601,7 +601,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "At A the die shows: top 3, bottom 4, 6 facing the B side (front-right), 2 facing front-left. So 1 is opposite 6 and 5 is opposite 2.\nThe path rolls once toward B, twice to the right, then once more toward the B-direction:\n- Roll toward 6: top 1, 6 down, 3 now faces forward.\n- Roll right: top 2.\n- Roll right: top 6.\n- Roll forward: the face pointing back (4) comes up.\n\nTop at E = **4 (C)**."
   },
   {
     "id": "ceed-2020-q28",
@@ -643,7 +643,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each row is a saying written with symbols:\n- two wrongs \u2260 a right\n- the pen > the sword\n- two heads > one\n- medicine < laughter (laughter is the best medicine)\n\nThe clock and rupee coins row reads \"time is money\", so the sign is **= (D)**.\n- A, B and C would make the saying false."
   },
   {
     "id": "ceed-2020-q30",
@@ -685,7 +685,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Identify each style:\n1. Mysore painting: gold-leaf deity (Saraswati with veena) on a rich background.\n2. Warli: white stick figures on mud-brown, in a spiralling tarpa dance.\n3. Madhubani: bright flat colours, double outlines, sun faces.\n4. Kalamkari: pen-drawn tree of life with birds in earthy tones.\n\nOrder = **B**.\n- A and D swap Warli with Kalamkari or Madhubani.\n- C starts with Kalamkari."
   },
   {
     "id": "ceed-2020-q32",
@@ -727,7 +727,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Match each logo:\n1. Indelible-ink finger mark in tricolour: Election Commission (S).\n2. Red dot over a black swash: India Design Mark (R).\n3. Fingerprint in a sun: Aadhaar (P).\n4. Green and orange arcs: FICCI (Q).\n5. Black diamond with a house form: SAIL (T).\n\n1-S, 2-R, 3-P, 4-Q, 5-T = **B**. D swaps FICCI and SAIL."
   },
   {
     "id": "ceed-2020-q34",
@@ -811,7 +811,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Read the filled squares in each grid as a letter. Some are flipped or upside down.\n- Grid 1: a mirrored E. Grid 2: a mirrored G. Grid 3: N.\n- Grid 4: an upside-down A. Grid 5: an upside-down R. Grid 6: O.\n\nThe letters E, G, N, A, R, O rearrange to ORANGE, so the matching colour is **C**."
   },
   {
     "id": "ceed-2020-q38",
@@ -853,7 +853,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each cell mixes its row colour with its column colour:\n- blue + yellow give green; pink/magenta + yellow give orange/red\n- two shades of the same hue give the stronger shade (light blue + blue = blue, light yellow + yellow = yellow)\n\nThe missing 2\u00d72 block crosses light pink and magenta rows with light pink and magenta columns. Every mix there is pink with pink, so all four cells are magenta: **A**.\n- B and D bring in blue and yellow, which belong to other rows and columns.\n- C (green) would need blue + yellow."
   },
   {
     "id": "ceed-2020-q40",
@@ -939,7 +939,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Split the hexagon into 6 equal equilateral triangles (area 1 each, total 6).\nThe long diagonal from the top-left to the bottom-right vertex cuts it into two halves of 3.\nThe grey triangle is the right half minus the small corner triangle at the top-right (two sides of the hexagon with a 120\u00b0 angle, area 1): 3 \u2212 1 = 2.\nRatio = 6 / 2 = **3**."
   },
   {
     "id": "ceed-2021-q03",
@@ -961,7 +961,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Count the original figure first: the X-rectangle gives 8 triangles (4 small + 4 half-rectangles); the right part gives 6 (2 small at each X's sides on the verticals, plus 2 large ones whose apex is the middle of a vertical). Total 14.\nTwo flips stack four copies: 4 \u00d7 14 = 56.\nEach of the 3 seams adds 4 new triangles: 2 in the doubled X-rectangle (diagonals meeting at the seam with the outer edge) and 2 in the right part (the lines meeting at the seam close against the far vertical).\n56 + 3 \u00d7 4 = **68**."
   },
   {
     "id": "ceed-2021-q04",
@@ -1005,7 +1005,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Every leg of the red route moves either along the city's length or its width, always towards Q \u2014 never backwards.\nSo the length legs add up to the full length and the width legs to the full width, wherever the turns are.\nDistance = length + width = half the perimeter = 68 / 2 = **34 km**."
   },
   {
     "id": "ceed-2021-q06",
@@ -1027,7 +1027,7 @@
     "topic": "observation",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Compare the features a typeface keeps the same from glyph to glyph: thick\u2013thin stroke contrast, serifs and terminals, curve shapes.\nEight of the digits share one serif design. The **5**'s flag, stem and bowl are drawn differently, so it comes from another font.\nDon't judge by size or tilt: those vary across all the digits."
   },
   {
     "id": "ceed-2021-q07",
@@ -1049,7 +1049,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Adjacent biscuits touch, so their centres are 10 cm apart and sit on a regular hexagon around the plate centre.\nIn a regular hexagon the side equals the circumradius, so each biscuit centre is 10 cm from the plate centre.\nPlate radius = 10 + 5 = 15 cm, circumference = 2\u03c0 \u00d7 15 = 30\u03c0 \u2248 **94.2 cm** (accepted 92.9\u201394.6)."
   },
   {
     "id": "ceed-2021-q08",
@@ -1071,7 +1071,7 @@
     "topic": "mechanisms",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "One belt drives every pulley at the same rim speed, so rotations scale inversely with diameter.\nP (40) and R (40) are both on the belt: R turns 4.5 \u00d7 40/40 = 4.5 times.\nQ is fixed to R, so Q also turns 4.5 times. Q (20) meshes with S (40): S turns 4.5 \u00d7 20/40 = **2.25**.\nThe 10 and 20 idler pulleys don't change the belt speed, so ignore them."
   },
   {
     "id": "ceed-2021-q09",
@@ -1095,7 +1095,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Check each option against P under rotation only (no flipping): the red hexagon's position inside the black outline must line up for some turn.\n**A** is P turned about 36\u00b0 counter-clockwise and **D** about 146\u00b0 clockwise; both match exactly.\nB and C don't line up with P at any angle, even mirrored \u2014 the outline and inner hexagon have been altered, so they are not rotations."
   },
   {
     "id": "ceed-2021-q10",
@@ -1143,7 +1143,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "It is Dhokra, the tribal lost-wax casting craft of Bastar and Odisha.\n**A** true: a stylised bull with twisted-wire decoration on the body.\n**C** true: the wax model is built from wax threads and needs channels and supports for the molten metal to flow, so the tail is joined to the hind leg as part of that process.\nB is false \u2014 it is cast in one piece, not welded. D is false \u2014 thin legs and sharp horns make it a decorative piece, not a toy."
   },
   {
     "id": "ceed-2021-q12",
@@ -1193,7 +1193,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "**A** true: a flexible rubber mask can be cast in an open one-piece mould and peeled off, even with undercuts.\n**C** true: the metal mask is relief on the front with an open back, so a single open mould (or die) is enough.\n**D** true: P is hand-carved wood, so each piece is unique.\nB is false: a plastic mask can be made in a one-piece mould but doesn't *require* one \u2014 two-part injection moulds work too. 'Requires' is too strong."
   },
   {
     "id": "ceed-2021-q14",
@@ -1218,7 +1218,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each option is a 5 \u00d7 4 grid of half-unit cells with one cell missing: 19 cells. Six L-pieces need 18, so exactly one cell may be wasted.\nIn **A**, **B** and **D** six Ls can be placed, leaving one spare cell.\nIn C the hole sits at the second column, second row. Every arrangement then strands at least two cells, so only five Ls fit."
   },
   {
     "id": "ceed-2021-q15",
@@ -1242,7 +1242,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "**A** true: English is centred on 50, so half its students fail; Hindi's curve (42\u201372, centred 57) has only a thin tail below 50.\n**D** true: Maths has the narrowest spread (60\u201372), so its scores are the most uniform.\nB is false: Science (centred 65, ends at 80) has more of its curve above 75 than English (centred 50).\nC is false: Maths is centred near 66, Science near 65, so Science is not the highest."
   },
   {
     "id": "ceed-2021-q16",
@@ -1265,7 +1265,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "**A** true: the weekly bars peak at week 5 (357) and again at week 7 (411).\nB is false: the cases up to week 10 total 6+22+73+174+357+284+411+256+222+119 = 1924, and 1924 \u2212 700 = 1224, not 1194.\nC is false: the red line is cumulative, so it can only rise or level off. It never returns to zero.\nD is false: if patients stay positive for 4 weeks, active cases at the end of week 15 are weeks 12\u201315 = 116+78+72+30 = 296. The 202 comes from adding weeks 13\u201316."
   },
   {
     "id": "ceed-2021-q17",
@@ -1289,7 +1289,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Each object stands upright with its letter-shaped profile facing the 45\u00b0 light. The shadow lies flat and reproduces that profile, with length equal to height: the part next to the black footprint is the base and the far end is the tops.\nThe two E-shadows differ: one has a thin spine (low base) and the other a thick one (tall base). The frame's shadow shows a solid base, a window and a raised tab on top.\n**B** and **C** have one low-base and one tall-base comb, and a frame with a solid base and a stepped top.\nA has two identical low-base combs. D's frame has a thin base and no tab."
   },
   {
     "id": "ceed-2021-q18",
@@ -1313,7 +1313,7 @@
     "topic": "language",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Lessing says the poor girl and the starving women who still talked about books may define us, so **B** is implied.\nShe calls the well-off 'stuffed full of food\u2026 stifling in our superfluities', so **D** is implied.\nA and C say the opposite: they treat books as a luxury that needs a full stomach first, which is the assumption the quote rejects."
   },
   {
     "id": "ceed-2021-q19",
@@ -1334,7 +1334,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A scaled copy keeps every detail and every proportion; only the size changes.\nA drops the two tall pavilions on either side of the central dome.\nOverlaid on P at the same width, B differs across its middle band and D in its lower-left wing: they are edits, not scalings.\nOnly **C** matches P everywhere."
   },
   {
     "id": "ceed-2021-q20",
@@ -1376,7 +1376,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Pick out the objects from P's shading: flat discs are cylinders, discs with dark edges are spheres, and discs with a centre point are cones.\nIn Q a cylinder is front-left and a sphere front-right, at about the same depth. That is the top pair seen from the north side, direction 1. From 24 the sphere would sit clearly in front, and from 19, 8 or 5 the near objects are different.\nIn R the near sphere is in front with a cylinder to its right, matching the lower-left pair from 16.\nSo the answer is **C** (Q:1, R:16)."
   },
   {
     "id": "ceed-2021-q22",
@@ -1397,7 +1397,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "In every net the star face is opposite the plain pentagon face, so decide by how the cut-outs are oriented.\nView 1: the triangle\u2013circle face has both holes near its edge with the star face, the triangle nearer the triangle\u2013pentagon face. D puts them on the far edge.\nOn the triangle\u2013pentagon face, the triangle sits on the side away from the triangle\u2013circle face. C swaps the triangle and pentagon.\nThe star sits near the corner it shares with the triangle\u2013pentagon and pentagon\u2013circle faces. A puts it at the opposite corner.\nOnly **B** satisfies all three."
   },
   {
     "id": "ceed-2021-q23",
@@ -1418,7 +1418,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Without rotation, each wedge keeps the directions of its two straight edges, so it fills a fixed slice of angle around the centre.\nIn **D**: red \u2248 55\u00b0\u2013125\u00b0 (top), green \u2248 125\u00b0\u2013230\u00b0 (left), blue \u2248 230\u00b0\u2013325\u00b0 (bottom), yellow \u2248 325\u00b0\u201355\u00b0 (right). The slices meet edge to edge, and the radii match.\nA leaves a gap at the lower left and overlaps at the lower right. B's red and yellow overlap. C's green has a smaller radius."
   },
   {
     "id": "ceed-2021-q24",
@@ -1439,7 +1439,7 @@
     "topic": "observation",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "In the Mahindra logo, the strokes inside the oval fan out from one point at the top right, like a road vanishing into the distance.\n**A** has that fan. D's strokes are parallel and don't converge, B splits the strokes, and C mirrors them into a symmetric V."
   },
   {
     "id": "ceed-2021-q25",
@@ -1460,7 +1460,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Each grid becomes the next by the same shuffle of positions. The new top row takes the old cells (bottom-left, top-right, bottom-middle). The new middle row takes (bottom-right, middle-left, centre). The new bottom row takes (top-middle, top-left, middle-right).\nThis holds for grids 1\u21922\u21923\u21924\u21925.\nRun the shuffle backwards from grid 1 to get the missing grid: **A**.\nD is a copy of grid 5, a distractor."
   },
   {
     "id": "ceed-2021-q26",
@@ -1481,7 +1481,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "P rotated 90\u00b0 counter-clockwise gives rows BWBW / WBWW / WWWB / RWBW. Q rotated 90\u00b0 clockwise gives WBWB / BWBW / WBWW / RWWB.\nOverlap them: a cell is black if either grid is black, and both reds land on the bottom-left.\nResult: BBBB / BBBW / WBWB / RWBB, which is **A**."
   },
   {
     "id": "ceed-2021-q27",
@@ -1523,7 +1523,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each panel shifts the dotted wave by a quarter of a wavelength, so the shape repeats every four panels. Panel 5 must look like panel 1: rising, cresting about a third of the way in, then falling.\nThe colours step through the hue wheel: green, teal, blue, purple, then pink.\nSo the answer is **B**: right wave, pink. C has the right wave in the wrong colour, A the wrong wave in pink, and D is a teal copy of panel 3's shape."
   },
   {
     "id": "ceed-2021-q29",
@@ -1544,7 +1544,7 @@
     "topic": "everyday-science",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Heating expands the iron rim so it slips over the wooden wheel. As it cools it shrinks and grips the wheel tightly, a shrink fit.\nSo the answer is **C**: heated, cooled, shrinks as it cools.\nA and D wrongly say metal expands as it cools. B's order (cool, then heat) would loosen the rim."
   },
   {
     "id": "ceed-2021-q30",
@@ -1565,7 +1565,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A shadow grows bigger and softer as the cut-out moves away from the screen towards the light.\nIn arrangement 2 the monster (3) moves up near the light, so its shadow becomes much larger. The ship (1) moves closer to the screen than before, so its shadow shrinks.\nSo the answer is **C**: big monster, smaller ship. A keeps the ship at its old size; B and D keep the monster small."
   },
   {
     "id": "ceed-2021-q31",
@@ -1586,7 +1586,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "P is Arjuna's Penance relief at Mahabalipuram (Tamil Nadu). Q is the Bibi Ka Maqbara at Aurangabad (Maharashtra). R is the Konark Sun Temple wheel (Odisha). S is Rani ki Vav stepwell at Patan (Gujarat).\nSo the answer is **D**.\nThe trap is Q: it resembles the Taj Mahal (Uttar Pradesh), which is what B guesses. C's 'Kerala' for P is wrong."
   },
   {
     "id": "ceed-2021-q32",
@@ -1649,7 +1649,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "List every way to split the 4\u00d74 grid along grid lines into two connected, congruent halves, counting rotations and reflections of a cut as the same.\nThere are 6 distinct cuts: the straight cut and five stepped or zig-zag ones, one of which is Q.\nExcluding Q leaves **5**, option C."
   },
   {
     "id": "ceed-2021-q35",
@@ -1670,7 +1670,7 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Near the ends of its swing the pendulum slows to a stop and then speeds up again. That is why the drawn positions bunch together at the extremes.\nAnimators call this **slow in and slow out** (ease in, ease out): more frames near the start and end of a move.\nThe answer is B. 'Pendulum principle' is not the standard term, and squash and stretch is about deforming a shape."
   },
   {
     "id": "ceed-2021-q36",
@@ -1712,7 +1712,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Each horizontal band holds one letter from each word, stretched sideways.\nCrossbars and junctions (A, E, B, H, R) leave short ticks; O and C leave none.\nThe first word reads from the top down; the second, turned the other way, reads from the bottom up.\nRows 1 and 6 have two ticks each (B + H). Rows 2 and 5 have one (R + C).\nRow 3 has one tick (O + A) and row 4 has two (A + E), so the first word is BROACH and the second BREACH: **D**.\nA would put O + E in row 4 (one tick), B would put E + A in row 3 (two ticks), and C would leave row 3 with no ticks."
   },
   {
     "id": "ceed-2021-q38",
@@ -1840,7 +1840,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Match cut faces: each piece's right face must equal the next piece's left face in size and outline, with no rotation.\n- Start with **3**, the small domed cap; the form grows through **2** and **1**.\n- **4** is the pinched waist joining 1's small face to the flaring neck of **7**.\n- 7's large face meets **6**, and the thin sliver **5** closes the right end.\n\nSequence: **3214765**."
   },
   {
     "id": "ceed-2022-q03",
@@ -1884,7 +1884,7 @@
     "topic": "logic-and-counting",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Both triangles have base = side *s* (AB and DC), and their apexes lie on XY.\n- Height of ABQ = distance from AB to XY = *h*; height of CDP = *s \u2212 h*.\n- Total green = \u00bd\u00b7s\u00b7h + \u00bd\u00b7s\u00b7(s \u2212 h) = \u00bd\u00b7s\u00b2.\n\nThe positions of P and Q don't matter: green = **0.5** of the square."
   },
   {
     "id": "ceed-2022-q05",
@@ -1906,7 +1906,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Each layer sits in the hollows of the one below, so a grid of *m \u00d7 n* supports *(m\u22121) \u00d7 (n\u22121)* on top (2\u00d72 \u2192 1\u00d71 in the figure).\n\n6\u00d77 + 5\u00d76 + 4\u00d75 + 3\u00d74 + 2\u00d73 + 1\u00d72 = 42 + 30 + 20 + 12 + 6 + 2 = **112**."
   },
   {
     "id": "ceed-2022-q06",
@@ -1928,7 +1928,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The ramp must climb the total rise of the four steps; tread breadth is irrelevant.\n- Rise = 4 \u00d7 150 mm = 600 mm.\n- Slope 1:12 \u2192 horizontal run = 12 \u00d7 600 mm = 7200 mm = **7.2 m**."
   },
   {
     "id": "ceed-2022-q07",
@@ -1950,7 +1950,7 @@
     "topic": "mechanisms",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "It is one continuous rope, so its tension *T* equals the pull *F* everywhere.\n- The leftmost pulley is fixed (rod to the ceiling); only the three pulleys attached to the load bar are movable.\n- Each movable pulley is held by 2 rope segments \u2192 6 segments support the load.\n\n6T = 2520 N \u2192 F = **420 N**."
   },
   {
     "id": "ceed-2022-q08",
@@ -1996,7 +1996,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Compare success rates per variant, not raw totals.\n- Variant P: L = 44/50 = 88%, M = 94/100 = 94% \u2192 M is better, so **A** is false.\n- Variant Q: L = 81/100 = 81%, M = 31/50 = 62% \u2192 L is better, so **B** is true.\n- Unknown variant, equal prevalence: L = (88+81)/2 = 84.5%, M = (94+62)/2 = 78% \u2192 L wins, so **D** is true.\n\n**C** is the trap: the totals tie at 125/150 only because the trials were unequally sized (Simpson's paradox)."
   },
   {
     "id": "ceed-2022-q10",
@@ -2019,7 +2019,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "India drives on the left, so a bus stops at the left kerb of its direction of travel, and children shouldn't cross in front of a junction.\n- Traffic on the one-way road runs right to left, so its left kerb is the playground side: C or D.\n- **D** lets children step off before the zebra crossing and cross to the school there.\n- **C** sits right at the junction corner, where a stopped bus blocks turning traffic.\n- A and B are on the bus's right side, so doors would open onto traffic."
   },
   {
     "id": "ceed-2022-q11",
@@ -2043,7 +2043,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A bar balances when weight \u00d7 arm is equal on both sides of its string (all fish weigh the same).\n- **B**: top bar: 1 fish on a long arm vs 4 fish on an arm \u00bc as long; each lower bar repeats this (1 vs 3 at 3:1, 1 vs 2 at 2:1, then 1 vs 1 centred). Balanced.\n- **D**: the same logic holds at every level (1:4, 3:1, 2:1, 1:1). Balanced.\n- **A**: the top string is near the bar's middle, with 1 fish on one side and 4 on the other, so it tips.\n- **C**: the third bar has 2 fish vs 1 fish at roughly equal arms, so it tips."
   },
   {
     "id": "ceed-2022-q12",
@@ -2068,7 +2068,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "xy = 25 is a rectangular hyperbola: both branches lie in quadrants I and III and pass through (5, 5), (25, 1) and (\u22125, \u22125).\n- **A**: quadrant-I branch through (5, 5) and (25, 1).\n- **C**: both branches, through (5, 5) and (\u22125, \u22125).\n- **D**: the same branch as A on a stretched y-scale (still about 5 at x = 5).\n- **B** is wrong: its left branch has y > 0 for x < 0, which makes xy negative (that curve is y = 25/|x|)."
   },
   {
     "id": "ceed-2022-q13",
@@ -2092,7 +2092,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A rocker stays upright only while the ground contact point stays under the curved runner. The runner must therefore extend well past the seat on both sides, so a 15\u00b0 tilt still lands on runner.\n- **B** and **C**: the runners overhang the legs front and back, leaving rolling margin both ways.\n- **A**: the runner ends right at the back leg, under the heavy, reclined back, so tilting back runs off the end and it tips over.\n- **D**: the runner ends at the splayed legs at both ends, so there is no margin past them."
   },
   {
     "id": "ceed-2022-q14",
@@ -2140,7 +2140,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "P has 3 + 5 + 4 + 5 + 3 = 20 cells, so each piece has 5 cells (a pentomino).\n- **B** (the P-pentomino) tiles it, for example: top row + 2 cells below; the next 3 + 2 below; a 2\u00d72 + 1; and the bottom 2 + 3.\n- **C** (the N-pentomino) also tiles it: a vertical N down the right side, then three horizontal Ns stepping down to the bottom-left.\n- A (L) and D (W) always leave cells that can't be filled."
   },
   {
     "id": "ceed-2022-q16",
@@ -2189,7 +2189,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "X tiles by translation because every bulge on one edge matches an identical dent on the opposite edge.\n- **A**, **C** and **D** have this pairing: each convex curve or tab has a matching concave curve or notch on the opposite side.\n- **B** has two concave curves (a pinched waist) and nothing convex to fill them, so copies leave gaps."
   },
   {
     "id": "ceed-2022-q18",
@@ -2214,7 +2214,7 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Squeezing the rings must close the blades. On a rigid arm through one pivot, the handle and blade move in opposite directions, so each ring must drive the opposite side's blade.\n- **C** and **D**: the ring links cross over before the pivot, so each ring drives the opposite blade. They work.\n- **A**: two scissor stages in series (lower hinge, rhombus, top hinge). Each stage reverses the motion, so squeezing the rings closes the blades. It works.\n- **B**: each ring connects to the blade on its own side, so squeezing opens the blades."
   },
   {
     "id": "ceed-2022-q19",
@@ -2256,7 +2256,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A washbasin must be reachable by nearly all users. Taller people can bend, but short people can't reach higher, so design for the small end of the range.\n- **C**, the shortest 5% of women (5th-percentile female), covers almost everyone.\n- A and B use averages or tall groups, which excludes shorter users.\n- **D** (5th-percentile male) is taller than the 5th-percentile female, so short women can't reach."
   },
   {
     "id": "ceed-2022-q21",
@@ -2277,7 +2277,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "From net X, the opposite face pairs are 5\u20131, 3\u20132 and 1\u20132. The rear view mirrors the layout left-to-right and shows each cube's opposite face.\n- Top row (mirrored): back of 3 \u2192 **2**, then back of 2 \u2192 1 or 3.\n- Middle: back of 1 \u2192 5 or 2.\n- Bottom row: back of 5 \u2192 **1**, then back of 2 \u2192 1 or 3.\n- **D** (2, 1 / 2 / 1, 3) fits every position. A and C show 1 at top-left (should be 2); B shows 5 at bottom-right (should be 1 or 3)."
   },
   {
     "id": "ceed-2022-q22",
@@ -2319,7 +2319,7 @@
     "topic": "everyday-science",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Figure 1 shows the falling leaf back in its starting posture at every 25 cm of drop (the large leaves at 0, 25 and 50 cm); between those marks it is turning.\n- 200 = 8 \u00d7 25, 425 = 17 \u00d7 25, 375 = 15 \u00d7 25: each drop is a whole number of cycles.\n- So all three leaves land in their Figure 2 orientation: **C**.\n\nThe other options turn one or more leaves flat or sideways, which would need a drop that isn't a multiple of 25 cm."
   },
   {
     "id": "ceed-2022-q24",
@@ -2361,7 +2361,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Each line segment joins two circle centres, so the green parts are the sectors inside the 11-sided polygon at its vertices. Their angles sum to the polygon's interior angles.\n- Interior angle sum = (11 \u2212 2) \u00d7 180\u00b0 = 1620\u00b0 = 4.5 full circles \u2192 green = 4.5 circles.\n- Purple = 11 \u2212 4.5 = 6.5 circles.\n- Difference = 6.5 \u2212 4.5 = **2 circles** (C)."
   },
   {
     "id": "ceed-2022-q26",
@@ -2382,7 +2382,7 @@
     "topic": "observation",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "B (tiger stripes), C (leopard rosettes) and D (cheetah spots) are coats of big cats, all predators.\n\n**A** is zebra stripes, a herbivore's coat, so it is the odd one out. Don't group A with B just because both are stripes; the link is the animal."
   },
   {
     "id": "ceed-2022-q27",
@@ -2403,7 +2403,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Two things happen on the back of a woven mat:\n- The colours swap, because a thread showing on the front is hidden on the back. The back is orange where the front is blue.\n- Flipping about the vertical edge Q mirrors left and right, so every triangle reverses its horizontal direction.\n\n**D** mirrors all five triangles. A and B leave the centre triangle unmirrored; C mirrors the centre but leaves the right-hand triangle pointing as before."
   },
   {
     "id": "ceed-2022-q28",
@@ -2466,7 +2466,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Banking raises the **outer** edge of a curve, whichever way traffic flows, and tan \u03b8 = v\u00b2/(rg): for the same speed, a smaller radius needs a steeper bank.\n- At SS both roads curve around a centre to their right, so both must be higher on the left (outer) side.\n- Q is the inner road (smaller r), so it is steeper than P \u2192 **C**.\n- A has Q shallower than P; B and D raise the inner edge on one or both roads."
   },
   {
     "id": "ceed-2022-q31",
@@ -2508,7 +2508,7 @@
     "topic": "mechanisms",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The loop is a rigid body driven at one fixed nip.\n- While a straight side passes through the nip, the loop just translates, so P traces vertical straight segments.\n- When P's own end passes the nip, the loop turns 180\u00b0 about that end's centre with P on the arc. This gives a small semicircle bulging toward the pulleys (left).\n- When the far end passes, P swings 180\u00b0 about the far centre at a long radius. This gives the large semicircle on the right \u2192 **D**.\n\nB puts the small bump on the wrong side, A has no straight segments, and C is just the loop's own outline."
   },
   {
     "id": "ceed-2022-q33",
@@ -2529,7 +2529,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Classic biomimicry pairs:\n- **P** kingfisher \u2192 **3** Shinkansen bullet train (beak-shaped nose cuts the tunnel boom).\n- **Q** humpback whale \u2192 **4** wind turbine (flipper tubercles on the blades).\n- **R** gecko \u2192 **1** wall-climbing pads (adhesive toe pads).\n- **S** burr \u2192 **2** Velcro (hooks).\n\nOnly **C** has all four."
   },
   {
     "id": "ceed-2022-q34",
@@ -2550,7 +2550,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "To filter, the incoming air must bubble **through** the water and leave from the dry space above it.\n- **A**: the inlet tube dips below the water and the outlet opens above it. It works.\n- B: the inlet opens above the water and the outlet tube is submerged, so air pressure pushes water out of the outlet.\n- C: air only skims over the surface.\n- D: both tubes are submerged, so water is forced out rather than air passing through clean."
   },
   {
     "id": "ceed-2022-q35",
@@ -2592,7 +2592,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Read the model's features from top to bottom and check each profile.\n- The top cylinder has a central hole, so the profile must start below the top near the axis. This rules out **A**, which is solid to the axis.\n- The large flange has a raised outer rim (a shallow cup). **C** has a flat flange with no rim.\n- Below it are a thin disc and groove, then the conical band. **D** replaces the disc and groove with a tapered wall.\n\nOnly **B** has all three features."
   },
   {
     "id": "ceed-2022-q37",
@@ -2676,7 +2676,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Let the cube side = *a*. With 45\u00b0 light, a point at height *h* casts a shadow *h* away.\n- The cube's ground shadow is a square of side *a* beside it, ending 2*a* from the cube's far face.\n- The cylinder sits at the cube's centre (*a*/2) and its top is at 2*a*, so its shadow streaks across the top face and lands at *a*/2 + 2*a* = 2.5*a*. That is *a*/2 beyond the cube's shadow.\n\n**C** matches both lengths. A and B have the wrong cube-shadow size; D's streak barely passes the square."
   },
   {
     "id": "ceed-2022-q41",
@@ -2719,7 +2719,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each guard covers 2 walls; 5 walls \u00d7 3 guards each = 15 wall-watches needed.\n\nMinimum guards = \u230815 / 2\u2309 = **8**. It is achievable: put 2, 1, 2, 1, 2 guards on the five towers in order \u2014 adjacent pairs give 3, 3, 3, 3 and 4 guards per wall."
   },
   {
     "id": "ceed-2023-q02",
@@ -2741,7 +2741,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "To move a tile, first bring the empty space next to it on the side it should go to. Then slide the tile.\n\n10 has to go 2 right and 2 down. Walk the space from x to the cell right of 10 (3 moves), then slide 10 right (1). Each later step zig-zags (right, down, right, down): 2 moves to reposition the space + 1 slide = 3 moves each.\n\nTotal = 3 + 1 + 3 \u00d7 3 = **13**."
   },
   {
     "id": "ceed-2023-q03",
@@ -2785,7 +2785,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Planes at 1/6 and 1/2 split each edge into lengths 1/6, 1/3 and 1/2. A piece is a cube only when its length is the same in all three directions.\n\nThat gives exactly three cubes: 1/6 \u00d7 1/6 \u00d7 1/6, 1/3 \u00d7 1/3 \u00d7 1/3 and 1/2 \u00d7 1/2 \u00d7 1/2. **3** cubes. The other 24 pieces are cuboids."
   },
   {
     "id": "ceed-2023-q05",
@@ -2807,7 +2807,7 @@
     "topic": "logic-and-counting",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Allowance = 50 apples = 40 bananas, so 1 banana costs 50/40 = 1.25 apples.\n\nSpendable money = 90% of 50 = 45 apples. 20 bananas cost 20 \u00d7 1.25 = 25 apples.\n\nLeft for apples: 45 \u2212 25 = **20**."
   },
   {
     "id": "ceed-2023-q06",
@@ -2873,7 +2873,7 @@
     "topic": "mechanisms",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The disc rolls without slipping. Its rim touches the ground 10 cm from the pin's tip, so the rim travels around a circle of radius 10 cm: path = 2\u03c0 \u00d7 10 = 20\u03c0.\n\nThe pin makes 30\u00b0 with the ground, so the disc's radius = 10 \u00d7 sin 30\u00b0 = 5 cm, and its rim measures 2\u03c0 \u00d7 5 = 10\u03c0.\n\nTurns = 20\u03c0 / 10\u03c0 = **2**."
   },
   {
     "id": "ceed-2023-q09",
@@ -2898,7 +2898,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Pull each cut out into a full cutting surface. Purple becomes a flat cut halfway up the pyramid plus two slanted cuts, each parallel to a pyramid face. Red becomes two vertical cuts through the middle band.\n\n- The tip above the flat cut is a smaller square pyramid (A).\n- In the middle band, the inverted triangle runs through the solid as a triangular prism (C).\n- Beyond the band, the pyramid's sloping faces trim that prism into tetrahedra (B).\n\nNo piece has six square faces at right angles, so a cube (D) cannot appear. **A, B, C**."
   },
   {
     "id": "ceed-2023-q10",
@@ -2923,7 +2923,7 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Pressing the pedal must push the pump head **down**, and a spring must bring the pedal back up.\n\n- **A, B:** one rigid L-shaped bar slides down. Its top arm presses the pump. A's spring is squashed at the bottom; B's spring is stretched at the top. Either one returns the bar. Both work.\n- **D:** the pedal pivots on the post, so pressing it lifts the rod. The top arm also pivots on the post, so that lift tips its far end down onto the pump. Works.\n- **C:** the top arm has no pivot. It just rises with the rod, away from the pump. Fails.\n\n**A, B, D**."
   },
   {
     "id": "ceed-2023-q11",
@@ -2947,7 +2947,7 @@
     "topic": "language",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each phrase is a unit that repeats: milestone after milestone, beat after beat, degree after degree, beam-and-node after beam-and-node. That makes C true and A (non-repetitive) false.\n\nThe scales are distance (milestones, structure) or time (beats per minute, degrees per minute), so B is true. Nothing measures volume, so D is false. **B, C**."
   },
   {
     "id": "ceed-2023-q12",
@@ -2971,7 +2971,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Sucking lowers the pressure inside the straw. Any branch open to air **above** the liquid lets air rush in instead.\n\n- **A, B:** the side branch joins the straw above the liquid surface. Suction just pulls air through the branch, and no liquid rises.\n- **C, D:** the junction is under the liquid, so both arms are sealed by liquid and suction lifts it up the straw.\n\n**C, D**."
   },
   {
     "id": "ceed-2023-q13",
@@ -2996,7 +2996,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The motif has 4-fold symmetry: it looks the same after every 90\u00b0 turn. So only the angle left over after removing whole 90\u00b0 turns matters.\n\n- 45\u00b0 clockwise and 135\u00b0 anticlockwise (= \u2212135\u00b0 \u2261 45\u00b0 clockwise) both put the copy halfway between the original arms. The result is the 8-armed star in A and B.\n- 90\u00b0 clockwise lands the copy exactly on the original, so the figure looks unchanged (C).\n- D is wrong: 90\u00b0 anticlockwise would also lie exactly on the original, not make a new 8-armed pattern.\n\n**A, B, C**."
   },
   {
     "id": "ceed-2023-q14",
@@ -3022,7 +3022,7 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "The app ecosystem serves several stakeholders, and research should cover all of them:\n\n- delivery partners (A)\n- restaurant staff (B)\n- support staff, who hear every complaint (C)\n- end users (D)\n\nLeaving any group out misses a part of the system. **A, B, C, D**."
   },
   {
     "id": "ceed-2023-q15",
@@ -3047,7 +3047,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The image is an ambigram: it reads the same after a 180\u00b0 turn. So it can be built from pieces that are copied, rotated and reflected.\n\n- A is the top band of the letters and B the bottom band (B turned 180\u00b0 matches the top).\n- D is the right half ('day'), which turned 180\u00b0 gives the left half.\n\nC's run of arches and serifs does not match any part of the image. **A, B, D**."
   },
   {
     "id": "ceed-2023-q16",
@@ -3082,7 +3082,7 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The plunger runs in a straight guide, so whatever drives it must give a purely straight push.\n\n- **B** is a Scotch yoke: the wheel's pin slides in a slot across the plunger, which turns rotation into pure back-and-forth motion. Correct in every reading.\n- **D** is also accepted (key: **B** or **B, D**). Its plunger is driven off-centre by a pin on the rotating disc. Read as an off-centre (eccentric) drive pushing the rod, it gives back-and-forth motion.\n- **A, C:** a lever pivoted at one end swings, so its tip follows an arc. A straight guide cannot follow that arc, so the mechanism binds."
   },
   {
     "id": "ceed-2023-q17",
@@ -3106,7 +3106,7 @@
     "topic": "mechanisms",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "One roller is round. The other is a round roller with a single lobe. While the round part touches the floor, the pencil stays at one height and draws a flat line (D). Each time the lobe rolls under, it lifts the pencil into one hump and then drops it back to the same level (A).\n\n- **B:** after the hump the line curves back up with no flat stretch.\n- **C:** holds a long raised plateau. A single lobe cannot keep the pencil raised that long.\n\nSo B and C can never be drawn. **B, C**."
   },
   {
     "id": "ceed-2023-q18",
@@ -3151,7 +3151,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Difficulty grows with distance from O and shrinks with key width (Fitts's law: small, far targets are slowest to hit).\n\n1. Orange is wide and directly above O: easiest.\n2. Red is just as wide but further left.\n3. Green is a narrow key at a similar distance.\n4. Blue is narrow and furthest away, in the top row at the far left: hardest.\n\nOrange, Red, Green, Blue = **D**. C wrongly starts with Red, though Orange is closer. A puts narrow Green ahead of wide Red."
   },
   {
     "id": "ceed-2023-q20",
@@ -3172,7 +3172,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Compare the options where they differ, checking each against the frame as seen from the marked front face:\n\n- **A** misses the short vertical step beside the top-left square. That step is the Z-bend in the top-left member.\n- **B** cuts the right-hand post short. In the model it runs the full height.\n- **C** flips the bottom-right bracket to open the wrong way.\n\nOnly **D** has all three right."
   },
   {
     "id": "ceed-2023-q21",
@@ -3214,7 +3214,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "He can be sure a baboon escaped only if 7 monkeys could not all have escaped, so y must be under 7. Each pair also needs x \u2265 1.\n\n(7,2), (25,6) and (12,4) all have y < 7. **A** (10,8) has 8 monkeys, so all seven escapees could be monkeys: no baboon is guaranteed."
   },
   {
     "id": "ceed-2023-q23",
@@ -3235,7 +3235,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Analogous colours sit next to each other on the colour wheel. Yellowish green, bluish green, blue and bluish purple are one connected arc around blue, so the painting reads as overall blue.\n\nSplit-complementary (A), double-complementary (B) and triadic (D) all use colours from opposite parts of the wheel. **C**."
   },
   {
     "id": "ceed-2023-q24",
@@ -3277,7 +3277,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each task needs its own working height:\n\n- Washing happens below the counter top: hands reach down into the sink.\n- Rolling chapati needs downward pressure, so it is best a little low, letting body weight help.\n- Chopping is precise and needs the work close to the eyes, so it sits higher.\n\nOne height (A) or shared heights (B, C) would compromise at least one task. **D**."
   },
   {
     "id": "ceed-2023-q26",
@@ -3298,7 +3298,7 @@
     "topic": "mechanisms",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "An enlarging copier (pantograph) needs a parallelogram of links, with the fixed pivot, the tracing point and the pen on one straight line. Then every traced move is scaled by a fixed ratio.\n\n**C** is such a parallelogram: pivot, blue and red points line up, and the pen is further out, so the drawing is enlarged.\n\n- **A:** the blue point sits on a rigid triangle, not a parallelogram.\n- **B:** too few links to form a parallelogram.\n- **D:** the pivot lies between blue and red, so the copy comes out upside down."
   },
   {
     "id": "ceed-2023-q27",
@@ -3319,7 +3319,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "From 12:00 to 13:30 is 90 minutes.\n\n- Q turns 6 \u00d7 90\u00b0 = 540\u00b0 \u2261 **180\u00b0**. Its windows move from centre top-left / middle-ring top-right / outer-ring bottom-right to centre bottom-right / middle-ring bottom-left / outer-ring top-left. Only B and C have windows there.\n- P turns 3 \u00d7 45\u00b0 = **135\u00b0 anticlockwise**.\n\nNow check what P shows through each window:\n- outer window: yellow in its upper half, white in its lower half\n- middle window: green toward the left, white toward the bottom\n- centre window: red on its right half\n\nThat matches **C**. B's colours are in the wrong halves."
   },
   {
     "id": "ceed-2023-q28",
@@ -3361,7 +3361,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each relationship has its own diagram:\n\n- Egg and sugar are separate ingredients inside a cake: two separate shapes inside a big one (A).\n- A seed is inside a fruit, which is on a tree: nested shapes (D).\n- Rock, paper and scissors are three separate equals: three separate shapes (C).\n\n**B** shows two overlapping shapes inside a third. None of the relationships has an overlap."
   },
   {
     "id": "ceed-2023-q30",
@@ -3382,7 +3382,7 @@
     "topic": "language",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Check the story against each diagram:\n\n- Usha is the eldest, so the largest circle, sitting under the tree with Fluffy beside her.\n- Reena (medium) and Tommy walk along the fence.\n- Madhu is the youngest, so the smallest circle, joined by a long wavy chase path to Gullu.\n\n**A** shows all three. B and C have nobody under the tree. D puts the smallest girl at the tree and the largest one running around."
   },
   {
     "id": "ceed-2023-q31",
@@ -3424,7 +3424,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A lever's force gain = handle length \u00f7 distance from pivot to nut. Least effort means the nut sits closest to the pivot and the handles are longest.\n\n**C** has the pivot at the tip, the nut right next to it and long handles beyond: the biggest gain.\n\n- **A:** your hands push between the pivot and the nut, which costs force.\n- **B, D:** the nut sits well out along the jaws, far from the pivot, compared with the handle length."
   },
   {
     "id": "ceed-2023-q33",
@@ -3445,7 +3445,7 @@
     "topic": "observation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "A camel stands up hind legs first. Its body pitches forward and dips, so P (on the chest) first moves forward and slightly down. Then the front legs unfold and lift P steeply upward.\n\nThe camel faces \u2212x. **B** is the only path that heads forward and dips (1\u21924) before rising (4\u21928).\n\n- A and C start by moving backward (+x).\n- D rises almost straight up with no forward lurch."
   },
   {
     "id": "ceed-2023-q34",
@@ -3466,7 +3466,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Count sides (circle = 0). Every complete row sums to 14:\n\n- Row 1: 6 + 4 + 4 + 0 = 14\n- Row 3: 3 + 3 + 5 + 3 = 14\n- Row 4: 0 + 3 + 5 + 6 = 14\n\nRow 2: 5 + 4 + 0 + ? = 14, so ? has 5 sides: the pentagon, **C**."
   },
   {
     "id": "ceed-2023-q35",
@@ -3487,7 +3487,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Q passes through P's open top and leaves through its wall once, so the unrolled sheet has **one** hole.\n\nP's top end is cut square to its axis, so it unrolls into a **straight** edge, which rules out A and C. The bottom end is cut flat to the ground while P leans, so it unrolls into a **wave**.\n\nThe hole lies on the side where P is shortest, so the wave must rise toward the hole. That is **B**. In D the wave dips under the hole instead."
   },
   {
     "id": "ceed-2023-q36",
@@ -3508,7 +3508,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Fold the cover in half, then in half again: a quarter-width strip with folded edges on one side. Rolling it top to bottom makes a roll whose ends are the strip's two long edges. Dipping one end dyes one long edge along its full height.\n\nThe folded edge of the quarter strip is the two quarter lines of the cover (\u00bc and \u00be of the width). Unfolded, that gives **two vertical stripes** at the quarter lines: **C**.\n\n- **A:** a single centre stripe.\n- **B:** three stripes. Dipping the open edge would give two stripes on the cover's sides plus one in the centre.\n- **D:** a spiral mistakes the shape of the roll for the dye pattern."
   },
   {
     "id": "ceed-2023-q37",
@@ -3529,7 +3529,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "- **P:** Tokyo 2020 medals were made from recycled electronics (2).\n- **Q:** Stadium 974 in Qatar was built from shipping containers (4).\n- **R:** India's cricket jersey is made from PET bottles (1).\n- **S:** the boot is made from mixed plastic waste (3).\n\n**C**. A and D take P-4, but the medals are metal from electronics."
   },
   {
     "id": "ceed-2023-q38",
@@ -3550,7 +3550,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The cone's apex angle is 90\u00b0. Lying on its side, one edge is on the ground and the opposite edge stands vertical above P. Revolving around P, its footprint sweeps a full disc of radius L (L = the cone's side length).\n\nLight at 45\u00b0 throws each point's shadow as far sideways as the point is high, all in one direction. The top point, height L, lands L beyond P. Raised points of the base ring reach about 1.4 L.\n\nSo the shadow is the disc plus a bulge on the side away from the sun only: **B**.\n- A has no bulge.\n- C and D bulge on two sides, but parallel light shifts shadows one way only."
   },
   {
     "id": "ceed-2023-q39",
@@ -3592,7 +3592,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "The matching shoe of a pair is the **mirror image** of the sole: every stripe, dot row and step pattern flips left to right.\n\nFlip the left sole and lay it over each option. **C** matches exactly.\n- A and B change the zig-zag steps and stripe ends.\n- D changes the dot sizes."
   },
   {
     "id": "ceed-2023-q41",
@@ -3613,7 +3613,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Recolouring changes no ribbon's position, so the over/under pattern at every crossing stays the same. Afterward every vertical ribbon is white and every horizontal ribbon is black.\n\nSo at each crossing, a vertical on top in the original now shows white, and a horizontal on top shows black. **A** keeps that crossing-by-crossing pattern. B, C and D swap which ribbon is on top at some crossings."
   },
   {
     "id": "ceed-2024-q01",
@@ -3635,7 +3635,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Count faces part by part after stacking blue then purple onto the yellow post (blue on the disc, purple on blue).\n- Yellow disc: bottom + curved side + exposed top ring = **3**\n- Post above purple: 4 sides + top = **5**\n- Blue slab: 4 sides = **4**, plus its tapered (pyramid-shaped) hole: 4 sloped inner faces = **4**\n- Purple slab: 4 sides + top = **5**, plus its tapered hole = **4**\n\n3 + 5 + 4 + 4 + 5 + 4 = **25**. The trap is forgetting the sloped hole faces, which don't touch the square post."
   },
   {
     "id": "ceed-2024-q02",
@@ -3711,7 +3711,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Unroll the cup: the wall is a frustum strip, nearly a 20.4 \u00d7 6.5 cm curved band (outer arc = \u03c0 \u00d7 6.5 \u2248 20.4 cm), and the base is a 5.5 cm circle.\n- On A4 (21 \u00d7 29.7 cm), bands run along the 21 cm width and nest at roughly 6.5 cm pitch, with about 1.2 cm of curve bulge.\n- 3 bands take about 6.5 + 6.5 + 7.7 \u2248 21 cm of the 29.7 cm length, leaving about 9 cm \u00d7 21 cm, room for three 5.5 cm bases side by side.\n- A 4th band would leave only about 2.5 cm, too little for any base.\n\nSo **3** complete cups."
   },
   {
     "id": "ceed-2024-q05",
@@ -3755,7 +3755,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Bottom = product of the top two \u00d7 1.5:\n- 2 \u00d7 4 = 8 \u2192 12; 10 \u00d7 5 = 50 \u2192 75; 6 \u00d7 7 = 42 \u2192 63; 8 \u00d7 3 = 24 \u2192 36.\n- 12 \u00d7 9 = 108 \u2192 108 \u00d7 1.5 = **162**."
   },
   {
     "id": "ceed-2024-q07",
@@ -3777,7 +3777,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The block is 3 \u00d7 4 \u00d7 3 = 36 cubes. With yellow : red = 1 : 3, yellow = 36 / 4 = **9**.\nVisible yellow cubes: 2 on top (one at the front edge, one in the interior), 1 on the left of the front face, 1 at the bottom of the front face, 1 on the right face = 5.\nHidden yellow = 9 \u2212 5 = **4**."
   },
   {
     "id": "ceed-2024-q08",
@@ -3809,7 +3809,7 @@
     "topic": "mechanisms",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Lever Q pivots on pin S. To make the buckle work, the lever must snap back to the locked position after it is lifted, so it needs a return spring on the pin.\n- **1** (accepted): a single torsion spring wound around S returns the lever.\n- **2** (accepted): a symmetric pair, one at each end of S, balances the force across the lever's width."
   },
   {
     "id": "ceed-2024-q09",
@@ -3833,7 +3833,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "In the top view, the circles can be hemispheres or vertical cylinders, and the diamond with one front-to-back line is a middle solid with a ridge or edge running front to back.\n- **C**: hemispheres on both sides, plus a middle block whose two halves meet along that front-back line. Consistent.\n- **D**: cylinders (rectangles in front view), plus a roofed middle solid with a central vertical edge. Consistent.\n- A: a front-view diamond plus a top-view diamond makes an octahedron-like solid, whose top view would show both diagonals, not one line.\n- B: the thin connecting rod and the off-centre square would show up in the top view."
   },
   {
     "id": "ceed-2024-q10",
@@ -3857,7 +3857,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A horizontal shift moves pixels only sideways within their own row, so each row keeps its pixel count and no pixel changes row.\n- **A**: rows scrambled sideways only. Valid.\n- **C**: letters skewed row by row. Valid.\n- B: has a pixel below the letters' bottom row, which means vertical movement.\n- D: its rows don't keep SAW's per-row counts (the top row is longer)."
   },
   {
     "id": "ceed-2024-q11",
@@ -3881,7 +3881,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A sal seed's wings make it **autorotate**: it spins like a rotor as it falls, which slows its descent.\n- **C** (bamboo-copter) and **D** (twisted-rod propeller) fly by spinning rotor blades. Same motion.\n- A (fidget spinner) and B (button whirligig on a string) spin in place in your hands, with no lift or rotor-borne flight."
   },
   {
     "id": "ceed-2024-q12",
@@ -3940,7 +3940,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Cut-out animation joints must pivot freely, stay flat and hidden, and survive repeated posing.\n- **C, eyelet rivets**: clean, durable pivot points through paper.\n- **A, nylon wire**: thin, strong, nearly invisible ties that let parts rotate.\n- B, mouldable clay: bulky, smears the paper, and doesn't hold a pivot.\n- D, chalk: brittle, and it marks the paper."
   },
   {
     "id": "ceed-2024-q14",
@@ -3986,7 +3986,7 @@
     "topic": "mechanisms",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "For a vehicle to turn cleanly about a point (Ackermann steering), the axis of **every** wheel (the grey lines) must pass through that centre point.\n- **A, B, D**: all wheel axes converge on the marked centre. D steers all four wheels, but it is still valid.\n- C: the axes don't meet at the centre, so the wheels would scrub and skid."
   },
   {
     "id": "ceed-2024-q16",
@@ -4010,7 +4010,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Brown-Pink-Yellow must sit in the middle row or column: an edge line would use two corners, leaving too few for Red, Blue and Purple.\n- Red touches Brown and Blue touches Pink, so Brown and Pink are at the ends of the line and **Yellow is in the centre** (with Pink in the centre, Orange can't avoid it).\n- One arrangement that satisfies everything:\n\n| | | |\n|---|---|---|\n| Green | Black | Blue |\n| Brown | Yellow | Pink |\n| Red | Orange | Purple |\n\n- **B** true (Red and Green share a column). **C** true (Purple and Green are opposite corners).\n- A false: Red, Green and Blue don't lie on a diagonal. D false: Pink is not in the centre."
   },
   {
     "id": "ceed-2024-q17",
@@ -4034,7 +4034,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A seamless tile needs every protrusion to match an indentation of the same shape on the opposite edge, as X's diamonds fill its notches.\n- **A**: the pointed top fits the V-notch at the bottom.\n- **B**: the right-hand chevron fits the left-hand notch.\n- C: the square tab on the left has no square notch to fit into.\n- D: the blue triangle fills its own left notch, so the right point has nowhere to go."
   },
   {
     "id": "ceed-2024-q18",
@@ -4058,7 +4058,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "A stamp prints the **mirror image** of its face. The impression reads \"ORIGINAL\" normally, with \u2606100%\u2605 on top and \u2605100%\u2606 below. Any rotation of that impression is valid.\n- **C**: the correct impression rotated.\n- **D**: the correct impression turned 180\u00b0.\n- A: the text reads correctly but the stars are swapped (\u2605100%\u2606 on top).\n- B: the text is still mirrored, so it shows the stamp face, not the print."
   },
   {
     "id": "ceed-2024-q19",
@@ -4121,7 +4121,7 @@
     "topic": "language",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Complete each option's fragments into letters.\n- **D** resolves to R-O-T-A-T-E: the stubs between letters are the tops of T's crossbars and the A's peak. **ROTATE** is a correctly spelled word.\n- A, B and C can't be completed into a correctly spelled word with the letter count shown (C, for instance, has one slot too many for FORCE)."
   },
   {
     "id": "ceed-2024-q22",
@@ -4205,7 +4205,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A fuselage needs a light, low-density stick.\n- **B, jute stick** (the dried stem) is pithy and very light, the closest substitute for balsa.\n- A (rattan cane), C (pine) and D (mango wood) are several times denser and would make the glider nose-heavy."
   },
   {
     "id": "ceed-2024-q26",
@@ -4289,7 +4289,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Measure each shape in unit hexagons.\n- **B** covers about **7** hexagons.\n- A and D cover about 6 each. C, though tall, covers about 6.5.\n\nSpread-out shapes like C look larger than they are; count units, not height."
   },
   {
     "id": "ceed-2024-q30",
@@ -4310,7 +4310,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The full star has **100** cells. The first figure supplies 23 and the second 47, with no overlap, leaving **30** cells empty.\n- **A** has exactly those 30 cells, filling every gap with no overlap.\n- B and C repeat cells that are already filled and still leave a gap.\n- D has only 26 cells, so gaps remain."
   },
   {
     "id": "ceed-2024-q31",
@@ -4331,7 +4331,7 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The joint must come apart again.\n- **B** is the inappropriate one: a split arrow-head snap whose barbs lock behind the internal step. It goes in one way and can't come out without breaking.\n- A (detent snap), C (clip over a lip) and D (screw thread) can all be released."
   },
   {
     "id": "ceed-2024-q32",
@@ -4373,7 +4373,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Approach so that both current and wind act as brakes; nothing should push the boat onto the dock or past it.\n- **A**: the flow comes against the bow (the boat heads upstream), and the wind blows off the bank, against the boat's final move toward the station. Slow and controlled.\n- B: the wind drives the boat onto the station.\n- C and D: the current pushes from behind, carrying the boat past the station."
   },
   {
     "id": "ceed-2024-q34",
@@ -4394,7 +4394,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A frame parallel to the picture plane keeps its **inner-to-outer size ratio** under perspective; only its overall size changes.\n- The farthest frame is the innermost ring in the view, the one with the thickest band relative to its size (inner/outer about 0.45).\n- **A** has that ratio. B, C and D have progressively thinner bands (about 0.65 to 0.85), so they are the nearer frames."
   },
   {
     "id": "ceed-2024-q35",
@@ -4415,7 +4415,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each row overlays the two figures exactly, with no rotation (row 3: blob + asterisk = asterisk over the blob).\n- Two identical 8-spoke asterisks overlaid coincide, giving the same **8-spoke asterisk: C**.\n- A, B and D show 16 or offset spokes, which would need one figure rotated."
   },
   {
     "id": "ceed-2024-q36",
@@ -4436,7 +4436,7 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Read the signs left to right:\n1. Inverted triangle: **Give way**\n2. Red disc with a white bar: **No entry**\n3. Arrowheads top and bottom with \"5 M\": **Height limit**\n4. Struck-through paired arrows: **No overtaking**\n5. Blue with a red cross: **No stopping**\n\nThat is **B**. A's \"Stop\" is an octagon. C's \"Keep distance\" ignores the vertical arrowheads. D gets the first two in the wrong order."
   },
   {
     "id": "ceed-2024-q37",
@@ -4478,7 +4478,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The folds give halves, then quarters, then eighths (the diagonal fold). The stepped, axis-aligned cuts along the diagonal fold open into **square** holes, repeated symmetrically on the diagonals. The cuts at the folded edges open into rectangular notches at the edge midpoints.\n- **C** has four square holes and edge notches.\n- A, B and D have rhombus, star or diamond holes, which would need slanted cuts."
   },
   {
     "id": "ceed-2024-q39",
@@ -4499,7 +4499,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Butt the two black pieces together: the white gap left between them forms a digit.\n- Row 1: the gap is a straight vertical stroke with a flag, so **1**.\n- Row 2: the gap zig-zags, so **2**.\n- Row 3: the gap is a top bar then a diagonal down, so **7**: **B**."
   },
   {
     "id": "ceed-2024-q40",
@@ -4520,7 +4520,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each convex quarter-circle bulge is matched by a concave bite of the same radius X elsewhere on the shape. Cut and slide the bulges into the bites, and the black region rearranges into whole X \u00d7 X squares: **8** of them.\nArea = **8X\u00b2: D**. A (16X) and C (2X\u2074) don't even have units of area."
   },
   {
     "id": "ceed-2024-q41",
@@ -4541,7 +4541,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Squash-and-stretch rule: stretch along the path when moving fast, squash on impact, and keep the original shape at the slow apex.\n- P (falling fast): stretch vertically. True.\n- Q (impact): squash, i.e. stretch horizontally. True.\n- R (apex, slowest): stays the same. True.\n- **S** is falling fast again, so the ball should stretch. \"Remains the same\" is **false: D**."
   },
   {
     "id": "ceed-2024-q42",
@@ -4583,7 +4583,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Check each statement against the chart.\n- **A**: 1965 \u2192 1970 is 40 \u2192 75, a 35/40 = **87.5%** rise, which is more than 75%. True.\n- B: 1985 \u2192 1990 is 45 \u2192 80, an increase, not a decrease.\n- C: 2005 \u2192 2010 is 55 \u2192 95, a 72.7% rise, not over 100%.\n- D: 2015 \u2192 2020 is 95 \u2192 75, a 21% drop, not under 10%."
   },
   {
     "id": "ceed-2024-q44",
@@ -4604,7 +4604,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Track the four features. Original: spike at top-left, rounded tab off the top-right, semicircle on the lower left side, wedge down to the bottom-right.\n- **Rotate 90\u00b0 clockwise**: spike at top-right, tab hanging down at bottom-right, semicircle on the top near the left, wedge out to the bottom-left. That is option C.\n- **Flip left-right**: spike at top-left pointing left, tab down at bottom-left, semicircle on the top near the right, wedge out to the bottom-right. That is **D**.\n\nC is the trap: it is the rotation without the flip."
   },
   {
     "id": "ceed-2025-q01",
@@ -4626,7 +4626,7 @@
     "topic": "observation",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Compare stroke weight and contrast, not just shape. The words and most digits share one calligraphic old-style serif: thin\u2013thick contrast and light, tapered strokes.\n\nThe **2** stands out. Its diagonal and base are heavier and more even in weight than every other digit, so it comes from a different cut or font. **Answer: 2.**"
   },
   {
     "id": "ceed-2025-q02",
@@ -4670,7 +4670,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Each time the strip folds, the face you see flips. So pawns on segments separated by an **even** number of folds are on the blue pawn's side, and an **odd** number puts them on the back.\n\nStart at the blue segment and trace the loop, flipping at every corner fold. The same-side (even) segments are: the short vertical at top right, the right vertical, the small diagonal piece at bottom right, the small piece at bottom centre, the long left vertical (2 pawns), the inner vertical at x\u2248500, the inner-left vertical, and the right vertical of the inner loop. That is 1+1+1+1+2+1+1+1 = **9**.\n\nThe other 7 red pawns sit on odd segments."
   },
   {
     "id": "ceed-2025-q04",
@@ -4692,7 +4692,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Match the items by pattern and strap. Pairs found:\n\n- navy/red striped\n- red buckle\n- brown buckle\n- green with pink dots\n- teal with lemons\n- coral\n- pink/teal striped\n- yellow/blue striped\n- grey sneakers\n- purple\n- grey sole with red strap\n\nThat makes **11**. The two dark-brown slides look like a pair but are not: one has a green strap, the other a tan strap."
   },
   {
     "id": "ceed-2025-q05",
@@ -4714,7 +4714,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Grey area = rectangle (12 \u00d7 8) minus everything to the left of the slices' right edges.\n\n- Unshifted, the triangle's right edge runs from x = 8 down to x = 4. Its average is 6, so the area to its left is 6 \u00d7 8 = 48.\n- Read each slice's shift from where its left edge sits. Rows 2\u20137 move \u22120.5, \u22121, +0.5, \u22120.5, +1, +0.5. These sum to **0**, so the area to the left is unchanged.\n- Grey = 96 \u2212 48 = **48 cm\u00b2**."
   },
   {
     "id": "ceed-2025-q06",
@@ -4736,7 +4736,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "It is a square pyramid of 4\u00d74 + 3\u00d73 + 2\u00d72 + 1 = 30 spheres.\n\n- Contacts within each layer (grid neighbours, 2n(n\u22121)): 24 + 12 + 4 + 0 = 40.\n- Contacts between layers: each sphere above the bottom rests on 4 below, so (9 + 4 + 1) \u00d7 4 = 56.\n- Total: 40 + 56 = **96**."
   },
   {
     "id": "ceed-2025-q07",
@@ -4780,7 +4780,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A line of 10 words has 9 spaces between them, and a space is also a character in a monospaced font.\n\nCharacters = 10 \u00d7 6 + 9 = 69. Length = 69 \u00d7 0.6 = **41.4 cm**.\n\nThe trap is 36 cm, which forgets the spaces."
   },
   {
     "id": "ceed-2025-q09",
@@ -4805,7 +4805,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "- **A** is true. A slanted cut through the cylinder gives an ellipse. A vertical cut through the axis of P (10 cm across) and of R (10 cm diameter) gives a 10 \u00d7 10 square.\n- **B** is true. Vertical cuts give rectangles in all three. Slicing off a corner of the cube or of the prism gives an isosceles triangle.\n- **C** is true. A horizontal cut of P gives a regular hexagon, and so does the cube's mid-plane perpendicular to a body diagonal. R gives a square, as in A.\n- **D** is false. A plane section of a cylinder is a rectangle, circle, ellipse or part-ellipse. It can never be a triangle."
   },
   {
     "id": "ceed-2025-q10",
@@ -4853,7 +4853,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Read the curve's height as how good or bad the hero's situation is.\n\n- **A** is true. The curve ends rising steeply into positive territory, so a triumphant ending fits.\n- **B** is false. At 30 min the curve sits on a positive plateau, which is not a tragedy.\n- **C** is false. The dip near 40 min is shallow, while the trough near 18 min is the film's lowest point.\n- **D** is true. From 12 to 18 min the curve falls steeply into negative events, so an accident fits."
   },
   {
     "id": "ceed-2025-q12",
@@ -4902,7 +4902,7 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A closed loop of hinged links can move only if it has **at least four** hinges, the way a four-bar linkage does. A loop with three hinges behaves like a pinned triangle and is rigid.\n\n- **B**: each hexagon is built from rigid Y-pieces joined at only **3** hinges, so every cell is a triangle in disguise and the frame is locked.\n- **A**, **C**, **D**: each loop has four or more hinged segments (the ring sections in A and C, the parallelogram cells in D), so the links can move relative to each other."
   },
   {
     "id": "ceed-2025-q14",
@@ -4974,7 +4974,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The three tiles are a full square, a quarter-disc, and a square with a quarter-disc removed (a concave corner). Any cell in the design must be one of these, rotated.\n\n- **A** and **C** each contain a cell holding a pointed lens or leaf shape bounded by two arcs. No tile has two curved edges, so they cannot be made.\n- **B** and **D** break down cell by cell into squares, quarter-discs and concave corners. In B, four concave corners together form the white circle."
   },
   {
     "id": "ceed-2025-q17",
@@ -4998,7 +4998,7 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "- **A** is true. The trigger sprayer and the pump each work through one-way valves, so at least 2 use valves. The two flip-top caps (Dove, Nivea) are hinged.\n- **D** is true. The squeeze bottles and the pump push liquid out by pressure. The trigger sprayer is a lever.\n- **B** and **C** are false because of the shared claim \"all 4 can be used without lifting\". The squeeze bottles must be picked up, inverted and squeezed, and the sprayer must be lifted and aimed. Only the pump works in place."
   },
   {
     "id": "ceed-2025-q18",
@@ -5085,7 +5085,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A simple rotation keeps the white/black centre diagonal and every cell's neighbours intact.\n\n- **B** is the original turned **180\u00b0**. B's row 1 is the original row 6 reversed (green, magenta, maroon, green, orange, maroon), and the rest follow the same way.\n- **A** matches a 90\u00b0 turn at the edges, but its centre whites lie on the wrong diagonal. A 90\u00b0 turn would move them to the other diagonal, so A is reflected.\n- **C**'s top row does not match any rotated edge.\n- **D** matches B except near the right edge of rows 4\u20135, where orange and maroon are swapped."
   },
   {
     "id": "ceed-2025-q22",
@@ -5106,7 +5106,7 @@
     "topic": "language",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Each next word starts with letters **4\u20135 of the previous word, reversed**.\n\n- NOT**EB**OOK \u2192 **BE**COMING\n- BEC**OM**ING \u2192 **MO**\u2026\n- LEV**ER**AGE \u2192 **RE**SEARCH\n- RES**EA**RCH \u2192 **AE**RATING\n\nSo the missing word starts with MO: **MODELING** (A). It also links forward: MOD**EL**ING \u2192 **LE**VERAGE."
   },
   {
     "id": "ceed-2025-q23",
@@ -5127,7 +5127,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "This is a lacquered wooden rattle-drum toy in the Channapatna style.\n\n- Making it: cut the blank to size (**sizing**), shape the handle, drum and beads on a lathe (**turning**), bore holes for the handle joint and string (**drilling**), and colour with lac bands (**lacquering**). That is **B**.\n- **A** and **D** include chiselling, but there is no carved detail. A also leaves out the lacquer finish.\n- **C** lists \"balling\" and \"circling\", which are not standard woodworking processes."
   },
   {
     "id": "ceed-2025-q24",
@@ -5169,7 +5169,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Track the three dipped corners back to the open sheet. Take the sheet as the square from \u22121 to 1.\n\n1. Folding the four corners to the centre gives a diamond.\n2. Halving it twice along its diagonals gives a small square.\n3. Folding that along its diagonal gives the triangle.\n\nThe triangle's corners are:\n\n- **Sheet centre.** Every corner flap folded onto it, so dipping here colours the centre and all four corners (quarter dots).\n- **Edge midpoint.** Unfolds to all four edge midpoints (half dots).\n- **Corner-flap crease point (\u00bd, \u00bd).** Unfolds to the four points halfway between the centre and each corner.\n\nOnly **B** shows the centre, the diagonal halfway dots, the edge half-dots and the corner quarter-dots. **A** puts its dots on the axes, **C** fills a 3\u00d73 grid, and **D** adds extra dots."
   },
   {
     "id": "ceed-2025-q26",
@@ -5211,7 +5211,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The **10 border cells rotate one step anticlockwise** each frame, like a conveyor around the edge. The two inner cells (blue spade, centre green circle) stay fixed.\n\nCheck frame 1 \u2192 2: the top-right green moves to top-middle, the top-middle red spade to top-left, and so on.\n\nApplying one more step to frame 4 gives Hb G Sr / Vr Sb Hb / G G Sr / Sr Hb G (blue heart, green circle, red spade, red heart, blue spade), which is **B**.\n\n- **D** puts a green circle at top-right where the red spade should be.\n- **A** moves the fixed centre.\n- **C** has the right counts but the wrong positions."
   },
   {
     "id": "ceed-2025-q28",
@@ -5274,7 +5274,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A silhouette shows only the combined outline of everything.\n\n- **The dog-ear.** The folded corner of the blue sheet does not leave a V-notch, because the yellow sheet behind fills that gap. The top edge only steps down slightly to the yellow sheet's top. That rules out **A** and **C**.\n- **Bottom-left.** The outline steps where the blue sheet ends and the yellow one continues.\n- **Paper clip.** Only one loop sticks out past the yellow edge. That matches **B**; **D** changes the clip's outline."
   },
   {
     "id": "ceed-2025-q31",
@@ -5295,7 +5295,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "A mirror flips each letter left-to-right: b\u2194d, p\u2194q, and e turns to face the other way. It does not turn letters upside down.\n\n- **B** mirrors every glyph correctly, ending \".q\u0259\u0259b\" for \"deep.\".\n- **A** leaves the d of \"deep\" unflipped (\".q\u0259\u0259d\").\n- **C** draws the e in \"the\" as a c.\n- **D** garbles \"high\" and \"night\" (n/h and g errors)."
   },
   {
     "id": "ceed-2025-q32",
@@ -5316,7 +5316,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Identify each figure by its costume:\n\n1. Stiff cylindrical, decorated skirt (potloi): **Manipuri**\n2. Large semicircular mask/headdress with a prop: **Chhau**\n3. Pleated fan falling between the knees: **Bharatanatyam**\n4. Big crown, painted face and a ballooning skirt: **Kathakali**\n\nThat is **D**. Option **B** names Kathak for the third figure, but Kathak has a flared anarkali, not the fan pleat."
   },
   {
     "id": "ceed-2025-q33",
@@ -5358,7 +5358,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The sack moves from chest height (frame 3) to overhead (frame 5). The in-between pose should push it up the body while the squat stays planted.\n\n- **A** fits: the sack is raised to the chest and shoulder, the torso leans back to counterbalance, and both feet stay on the ground.\n- **B** holds the sack out at arm's length, which is no lift and poor balance.\n- **C** lifts one foot off the ground mid-lift.\n- **D** just repeats frame 3."
   },
   {
     "id": "ceed-2025-q35",
@@ -5421,7 +5421,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The 180-degree rule keeps the camera on one side of the line between the man (left) and the woman (right). Screen direction must stay the same: he faces right, she faces left, and the objects keep their sides.\n\n- **A** (woman facing right) and **B** (man facing left) both cross the line.\n- **C** shows the cup with its shadow on the wrong side, which is a mirrored view.\n- **D** keeps the establishing shot's layout: mug in front with its shadow to the right, cup behind with its shadow to the left, table edge receding the same way."
   },
   {
     "id": "ceed-2025-q38",
@@ -5442,7 +5442,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A segment that looks horizontal in **both** the front and side views changes its x and its y at the same time. In top view it must therefore appear **slanted**.\n\n- The long top bar and the two short lower bars are like that, so they show as diagonals.\n- The mid-level bar runs along x only, so it shows straight.\n- Tracing in plan: long diagonal, straight run, diagonal, short diagonal. That gives the triangular spiral in **A**.\n- **B**, **C** and **D** are drawn only at right angles, so none can be the top view."
   },
   {
     "id": "ceed-2025-q39",
@@ -5463,7 +5463,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Let \u25b3 = t. Then:\n\n- \u25a1 = t\u00b2\n- \u22a0 = t\u00b2 + t\n- \u2297 = \u22a0 \u00f7 t = t + 1\n\nThe last equation becomes \u22a0 + \u2297 = t\u00b2 + 2t + 1 = (t + 1)\u00b2 = 25, so t = 4. That gives \u25a1 = 16, \u22a0 = 20 and \u2297 = 5.\n\nCheck the options:\n\n- **A**: 4 \u00d7 5 = 20, not 12\n- **B**: 20 + 4 = 24, not 20\n- **C**: 5 \u00d7 5 = **25** \u2713\n- **D**: 16 + 5 = 21, not 28"
   },
   {
     "id": "ceed-2025-q40",
@@ -5484,7 +5484,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The zigzag fold makes 8 panels with 7 folds, and the folds alternate between the two sides of the folded stack.\n\n- A V-notch on one side opens into a diamond at each fold on that side. A notch at a free edge becomes a half-notch.\n- With 8 panels (even), both free edges P and Q end up on the same side as P. P's side has the **upper** notch, so P, Q and the 3 folds on that side get upper notches. The other 4 folds get **lower** diamonds.\n- **C** alone shows 3 upper diamonds, 4 lower diamonds and upper half-notches at both ends. The others swap the counts or leave out the edge notches."
   },
   {
     "id": "ceed-2025-q41",
@@ -5526,7 +5526,7 @@
     "topic": "mechanisms",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "As the rod wraps onto the circle, the free length from the point of contact to Q shrinks steadily to zero. Q therefore traces an **involute**: a spiral that tightens over exactly one turn (rod length = circumference) and ends on the circle at P.\n\n- Its curvature grows sharply near the end, giving a tight inward hook. That is **C**.\n- **A** and **B** are near-constant-radius arcs, which would mean a rod pivoting at a fixed point.\n- **D** ends in a wide loop instead of a hook that shrinks to nothing."
   },
   {
     "id": "ceed-2025-q43",
@@ -5547,7 +5547,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Map each sound to a mouth shape:\n\n1. **\"See\"**: teeth together, lips spread\n2. **\"you\"**: rounded O\n3. **\"B\"**: lips pressed shut\n4. **\"ye\"** (the 'ai' glide): mouth opens with the tongue showing, then opens wider\n\nThis order is **C**.\n\n- **A** starts with an open mouth, which cannot make an s.\n- **B** never closes the lips for the B.\n- **D** closes the lips after the vowel instead of before it."
   },
   {
     "id": "ceed-2025-q44",
@@ -5568,7 +5568,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Each sector carries a symbol at the rim and one nearer the centre. Pieces may rotate but not flip, so the pair and its handedness must both match.\n\n- **D** has a piece with * and ?, a pair no sector has.\n- **C** uses the O-and-* sector twice.\n- **B**'s second piece shows the C opening away from the asterisk. On the disc, the C always opens toward its partner symbol, so that piece is flipped.\n- **A**'s four pieces are the O/*, two different C/* sectors and the */bar sector, each in its true orientation."
   },
   {
     "id": "ceed-2026-q01",
@@ -5590,7 +5590,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The path is four straight legs, each read off the block dimensions:\n- **A \u2192 top corner of the 2 cm block:** A is at the base, the leg runs along the shared front face 3 cm (1 + 2) and climbs 1 cm: \u221a(3\u00b2 + 1\u00b2) = \u221a10 \u2248 3.16\n- **Across the half-cylinder top:** \u00bd cm along and \u00bd cm across: \u221a0.5 \u2248 0.71\n- **Across the cylinder top:** its diameter, 1\n- **Across the cube top:** face diagonal \u221a2 \u2248 1.41\n\nTotal \u2248 6.3 cm. The key accepts **6\u20136.5** because the half-cylinder leg is estimated from the drawing."
   },
   {
     "id": "ceed-2026-q02",
@@ -5612,7 +5612,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Mass = (cone + hemisphere) \u00d7 density, with r = 3 cm (6 cm diameter).\n- Cone: \u2153\u03c0r\u00b2h = \u2153 \u00d7 3.14 \u00d7 9 \u00d7 9 = 84.78 cm\u00b3\n- Hemisphere: \u2154\u03c0r\u00b3 = \u2154 \u00d7 3.14 \u00d7 27 = 56.52 cm\u00b3\n- Total 141.3 cm\u00b3 \u00d7 0.9 = **127.17 g** (key range 126\u2013128).\n\nShortcut: 27\u03c0 + 18\u03c0 = 45\u03c0."
   },
   {
     "id": "ceed-2026-q03",
@@ -5634,7 +5634,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Three folds (half, half, half) make an **8-layer** packet. Each corner cut is a quarter circle of radius 1 through all 8 layers.\n- Area per quarter = \u03c0/4\n- 4 corners \u00d7 8 layers \u00d7 \u03c0/4 = 8\u03c0 = 8 \u00d7 3.14 = **25.12 cm\u00b2**\n\nPieces merge into semicircles or full circles along fold lines when unfolded, but the total area removed is unchanged. Key range 24\u201325.5."
   },
   {
     "id": "ceed-2026-q04",
@@ -5656,7 +5656,7 @@
     "topic": "observation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Count every figure, then remove repeats. There are **22** figures. Matching by point count, centre detail and tip shapes:\n- One star (12 points, open circle in the centre) appears **3** times\n- Two other designs appear **twice** each\n\n22 \u2212 2 \u2212 1 \u2212 1 = **18** unique patterns. The trap is counting near-matches as new: compare tip shape and centre, not overall size."
   },
   {
     "id": "ceed-2026-q05",
@@ -5769,7 +5769,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Each diamond is the view straight down one octahedron vertex, so it shows the 4 faces around that vertex in cyclic order. Fold the strip and list each vertex (going around):\n- green, yellow, blue, yellow \u2192 **B**\n- green, orange, blue, orange \u2192 **C**\n- blue, orange, blue, yellow \u2192 **A**\n- the two vertices that show all four colours have **green opposite blue**\n\nD shows all four colours with green opposite yellow, which no vertex has. Correct: **A, B, C**."
   },
   {
     "id": "ceed-2026-q10",
@@ -5841,7 +5841,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The bottom half folds behind, so the horizontal strips flip up. Reading upward from PQ they are **purple, blue, green, orange**, and they sit behind the vertical strips. The vertical strips, left to right: red, orange, green, blue, purple, red, purple, blue, orange, green, red.\n- **B:** blue and purple verticals side by side, orange above green behind them \u2713\n- **D:** purple and blue verticals, green above blue behind them \u2713\n- **A:** green sits directly above purple, but blue lies between them \u2717\n- **C:** a green vertical next to a purple vertical: those never touch \u2717"
   },
   {
     "id": "ceed-2026-q13",
@@ -5865,7 +5865,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The table is a top plus four \u03a0-shaped leg panels, one per side. A valid net puts exactly one panel on each side of the top once folded.\n- **A:** four panels in a hinged strip that wraps all four sides, with the top hinged to one of them \u2713\n- **C:** panels 1\u20132 hinge to one edge of the top, panels 3\u20134 to the opposite edge. They fold to front + left and back + right \u2713\n- **D:** three panels in a strip already cover front, side and back. The fourth hangs off the top's back edge too, so two panels collide and one side stays empty \u2717\n- **B:** the left flap is only half a panel, so one side is incomplete \u2717"
   },
   {
     "id": "ceed-2026-q14",
@@ -5890,7 +5890,7 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Studs P and Q sit between the handles, so the spring must **push the handles apart** after you squeeze.\n- **A** (volute/conical compression spring), **B** (double torsion spring whose arms brace on the studs), **C** (open-coil compression spring): all store energy when squeezed and push back \u2713\n- **D** is a close-wound **extension (tension) spring**. Its coils already touch, so it can't compress. It only pulls, which would hold the handles together \u2717"
   },
   {
     "id": "ceed-2026-q15",
@@ -5915,7 +5915,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The groove's floor and back wall meet at 90\u00b0, and the sloping face cuts any cube placed there along a diagonal plane. In the combination, only the **upper half** (the triangular prism above the slope) is visible. The lower half hides inside the groove and can be any shape.\n- **A** (one corner sliced off), **B** (a notch along one edge), **C** (one edge rounded): each change can be turned to face the groove's bottom-back edge, leaving the visible half a perfect cube \u2713\n- **D** has changes on two different edges (a step at the top and a chamfer lower down). Only one edge goes into the groove, so the other shows \u2717"
   },
   {
     "id": "ceed-2026-q16",
@@ -6008,7 +6008,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Top view: all 16 cells are filled. Front and side views: column and row heights are 4, 4, 3, 2.\nCount the minimum per level: each level needs at least max(columns reaching it, rows reaching it).\n- Level 1: 16 (the top view is full)\n- Level 2: max(4, 4) = 4\n- Level 3: max(3, 3) = 3\n- Level 4: max(2, 2) = 2\n\nTotal **16 + 4 + 3 + 2 = 25 (A)**. Put the tall stacks on matching row\u2013column pairs, like a diagonal. 28, 31 and 35 are achievable but not minimal."
   },
   {
     "id": "ceed-2026-q20",
@@ -6029,7 +6029,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The V-grooves are cut by flat planes into a **curved** surface. A plane meets a cylinder in a curve, so each un-inked patch has curved edges. The patch comes to sharp points where the two cut planes of the V meet.\n- **B:** lens shapes with curved sides and pointed tips \u2713\n- **A:** straight-edged diamonds, which only happen on a flat surface \u2717\n- **C:** lopsided shapes \u2717\n- **D:** fully rounded ovals with no tips \u2717"
   },
   {
     "id": "ceed-2026-q21",
@@ -6050,7 +6050,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Q sits on top. Wherever Q is printed (tan or black), you see Q's colour. Only where Q is transparent does P's black show through.\n- Q has a tan square in the bottom-left cell. **A** shows black there \u2717. **B** shows black there and moves the tan one cell right \u2717\n- In row 4, Q is transparent in the fifth cell and P is black there. **D** shows a tan dome in that cell \u2717\n- **C** matches cell for cell \u2713"
   },
   {
     "id": "ceed-2026-q22",
@@ -6071,7 +6071,7 @@
     "topic": "observation",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Compare stroke behaviour, not letter identity. The sample is **monoline**: even stroke width throughout, medium weight, round open bowls and plain cut terminals.\n- **D** has the same even stroke, weight and bowl shape \u2713\n- The others differ in stroke treatment: visible thick\u2013thin contrast, or heavier, more geometric construction \u2717"
   },
   {
     "id": "ceed-2026-q23",
@@ -6134,7 +6134,7 @@
     "topic": "mechanisms",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Exactly one string is taut at a time. With P taut, the dot moves on a circle around point 1 (radius = string length). With Q taut, it moves on a circle around 2. The dot switches strings where both are taut, at the two points where the circles cross.\nThe path is the **inner boundary** of the two overlapping circles: two arcs meeting at sharp points, a lens \u2192 **D**.\n- **B** (ellipse) would need the *sum* of the distances fixed, like one string through a ring\n- **A** traces the outer arcs, where the slack string would have to stretch\n- **C** has no such geometry"
   },
   {
     "id": "ceed-2026-q26",
@@ -6155,7 +6155,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Track each quadrant separately; each one follows the **Fibonacci sequence** across the four figures:\n- Top-left: 2, **3**, 5, 8\n- Top-right: 1, **2**, 3, 5\n- Bottom-left: 0, **1**, 1, 2\n- Bottom-right: 1, **1**, 2, 3\n\nThe missing figure has 3, 2, 1, 1 dots \u2192 **C**. B (4, 3, 1, 2) would fit a +1 guess for some quadrants, but the 5 \u2192 8 jump rules out constant steps."
   },
   {
     "id": "ceed-2026-q27",
@@ -6176,7 +6176,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Uniform stretching or compression keeps the divisions **equally spaced along each edge** (each edge just changes length). Every grid line is the straight segment joining matching divisions on opposite edges.\n- **A:** equal spacing along all four edges \u2713\n- **B, C, D:** the divisions bunch toward one side, a perspective-style foreshortening that uniform edge scaling cannot produce \u2717"
   },
   {
     "id": "ceed-2026-q28",
@@ -6197,7 +6197,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Match the **product feature**, not the look:\n- **P\u2013III:** inflatable horse \u2194 inflatable chairs\n- **Q\u2013I:** nesting dolls \u2194 chairs that nest into one another\n- **R\u2013IV:** modular building bricks \u2194 table with a brick-building top\n- **S\u2013II:** spinning top \u2194 the Spun chair, which rocks and spins\n\n\u2192 **D**. C pairs the top with the corrugated chairs (S\u2013I), but they don't spin."
   },
   {
     "id": "ceed-2026-q29",
@@ -6218,7 +6218,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Left to right:\n1. Coloured rectangles on white: **De Stijl**\n2. Manet's caf\u00e9 portrait *The Plum*: **Impressionism**\n3. Lichtenstein's comic-panel *Drowning Girl*: **Pop Art**\n4. Vermeer's *Girl with a Pearl Earring*: Dutch Golden Age, **Baroque**\n5. *Jugend* magazine cover: Jugendstil, i.e. **Art Nouveau**\n\n\u2192 **B**. A swaps the last two."
   },
   {
     "id": "ceed-2026-q30",
@@ -6239,7 +6239,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The left image shows only the top halves of **Clairvoyance**. The right option must supply matching bottom halves.\n- **A:** ends in a descender (g), and \"ce\" doesn't have one \u2717\n- **B:** the bottom of the \"o\" in \"voy\" is drawn as an \"e\" \u2717\n- **C:** the \"v\" has a descender, making \"y\" \u2717\n- **D:** bottoms of c-l-a-i-r-v-o-y-a-n-c-e line up \u2713"
   },
   {
     "id": "ceed-2026-q31",
@@ -6302,7 +6302,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Four pieces (green U, orange T, pink, blue L) each **rotate 90\u00b0 anticlockwise** per step while drifting toward the centre, so overlaps grow.\n- Green U opens down \u2192 right \u2192 up \u2192 next must **open left**\n- Orange T points left \u2192 down \u2192 right \u2192 next must **point up**\n- **D:** green opening left, orange T pointing up \u2713\n- **A and C:** green still opens up (no rotation) \u2717\n- **B:** green is right, but orange is back to pointing left \u2717"
   },
   {
     "id": "ceed-2026-q34",
@@ -6323,7 +6323,7 @@
     "topic": "mechanisms",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The wheel axle is horizontal and the fan shaft is vertical, so the single gear pair must transmit motion between **shafts at 90\u00b0**. That needs **bevel gears**: conical teeth on intersecting perpendicular shafts.\n- **B:** a matched bevel pair on perpendicular shafts \u2713\n- **C:** spur gears, which only work on parallel shafts \u2717\n- **D:** a bevel gear paired with a spur gear, which can't mesh properly \u2717\n- **A:** not a matched meshing pair, so the teeth can't engage at a right angle \u2717"
   },
   {
     "id": "ceed-2026-q35",
@@ -6365,7 +6365,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Identify each monument, then sort by latitude:\n- **R:** mosque beside the Taj Mahal, Agra (~27.2\u00b0N)\n- **S:** Hawa Mahal, Jaipur (~26.9\u00b0N)\n- **U:** Ajanta caves (~20.5\u00b0N)\n- **Q:** stone chariot, Hampi (~15.3\u00b0N)\n- **P:** Mysore Palace (~12.3\u00b0N)\n- **T:** Brihadeeswara, Thanjavur (~10.8\u00b0N)\n\n\u2192 **B**. The common slip is putting Jaipur above Agra; Agra is slightly further north."
   },
   {
     "id": "ceed-2026-q37",
@@ -6386,7 +6386,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "**Radio buttons** allow exactly one choice in a group. In **D**, Packaging shows both Cardboard and Foam selected, which a radio group can't do.\nThe others use components correctly:\n- A: radio buttons for single choices, checkboxes for multi-select\n- B: a dropdown and a text field\n- C: selectable chips for instructions"
   },
   {
     "id": "ceed-2026-q38",
@@ -6407,7 +6407,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The peacock is hand-carved wood: rows of **drilled** holes, **chiselled** feather and body detail, then **sanding** and **finishing** (polish or lacquer) \u2192 **D**.\n- **A:** \"forming\" means shaping by pressure, used for sheet metal and plastic, not carved wood \u2717\n- **B:** milling and punching are machine, metal-shop operations \u2717\n- **C:** powder coating is a metal finish \u2717"
   },
   {
     "id": "ceed-2026-q39",
@@ -6428,7 +6428,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Seat breadth is a **clearance** dimension: it must fit the largest users, so use the **95th percentile** of hip breadth. A 5th-percentile seat would be too narrow for most adults.\nThat eliminates A, C and D (all 5th percentile breadth). **B** is the only option with a 95th-percentile breadth. Its 50th-percentile height is the usual compromise for a seat shared by a mixed public population."
   },
   {
     "id": "ceed-2026-q40",
@@ -6491,7 +6491,7 @@
     "topic": "everyday-science",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The light entering the circular rim forms a slanted beam with the **same radius** as the tube. Two equal-radius cylinders with intersecting axes meet along **planar** ellipses. So the edge between lit and shadowed wall is a flat-plane cut, which looks like a clean straight edge with the curved rim above it.\n- **B** shows this \u2713\n- **A and D:** wavy S-shaped shadow edges \u2717\n- **C:** lights the top rim area instead of the inner wall \u2717"
   },
   {
     "id": "ceed-2026-q43",
@@ -6512,7 +6512,7 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "The set is a Meccano-style metal kit: perforated strips, plates, brackets, and **small nuts and bolts tightened with tools**.\n- Choking hazards, sharp metal edges and the need for tools make it **inappropriate for pre-school kids**, so **B** has a feature that can't be attributed\n- A, C and D are true: standard slotted parts, many combinations, spatial creativity, prototyping and study models"
   },
   {
     "id": "ceed-2026-q44",
@@ -6533,6 +6533,6 @@
     "topic": "design-knowledge",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Left to right:\n1. Dots group into blocks by **colour**: **Similarity**\n2. Two dot paths are read as smooth lines crossing, not bending away: **Continuity**\n3. Identical triangles group into columns by **spacing**: **Proximity**\n4. The broken outline is seen as a whole star: **Closure**\n\n\u2192 **B**."
   }
 ]
