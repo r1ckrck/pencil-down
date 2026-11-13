@@ -42,3 +42,7 @@ next-env.d.ts
 
 # synced from /content at build
 /public/content/
+
+# playwright
+/test-results/
+/playwright-report/
