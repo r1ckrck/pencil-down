@@ -1,0 +1,24 @@
+services:
+  pencil-down:
+    build: .
+    image: pencil-down:latest
+    container_name: pencil-down
+    restart: unless-stopped
+    env_file: [/opt/homelab/.env]
+    user: "${PUID}:${PGID}"
+    mem_limit: 512m
+    volumes:
+      - /data/appdata/pencil-down:/data
+    networks: [homelab-net]
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+
+networks:
+  homelab-net:
+    external: true

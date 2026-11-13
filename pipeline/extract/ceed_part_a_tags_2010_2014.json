@@ -1,0 +1,773 @@
+{
+ "questions": {
+  "ceed-2010-q06": {
+   "format": "NAT",
+   "answer": 5,
+   "topic": "3d-visualisation",
+   "difficulty": 2,
+   "explanation": "A (ant, floor corner) and B (lizard, ceiling corner) are diagonally opposite corners of the 2 × 2 × 3 m room. The lizard must walk on the surfaces.\n\n- Unfold two adjacent walls into one flat 4 m × 3 m rectangle: path = √(4² + 3²) = **5 m**.\n- Unfold a wall plus the ceiling instead: √(2² + 5²) = √29 ≈ 5.39 m, longer.\n\nShortest path: **5 m**."
+  },
+  "ceed-2011-q06": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "folding-and-patterns",
+   "difficulty": 3,
+   "explanation": "The solid drawn has 8 equilateral faces, 4 meeting at every vertex (an octahedron, though the stem says tetrahedron). Every net must therefore have at most 4 triangles around any point.\n\n- **C:** the point where the middle and lower rows meet on the right is surrounded by **5 triangles**. No vertex of the solid has 5 faces, so this net cannot fold up. Wrong.\n- A, B and D: labelling the faces vertex by vertex gives all 8 faces exactly once, so they fold correctly.\n\nThe wrong tessellation is **C** (A–D labels added left to right)."
+  },
+  "ceed-2012-q02": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "observation",
+   "difficulty": 1,
+   "explanation": "The shadows are long and fall well to the side of the walkers, so the sun is low. Around noon (11 AM, 2 PM) shadows in central India are short; at 8 PM it is already dark. A low sun with long shadows means late afternoon: **5 PM (C)**."
+  },
+  "ceed-2012-q03": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "everyday-science",
+   "difficulty": 1,
+   "explanation": "A cube has flat faces and straight edges, so its shadow on a flat floor is a polygon whose edges come from the cube's edges and run away from the light. **B** shows that straight-sided shadow. A has a notch no cube edge can cast; C and D have curved outlines, which only a round object casts."
+  },
+  "ceed-2012-q06": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "A, B and D are serif typefaces (small strokes finish the ends of the letters). **C** is the only sans-serif (no serifs, even stroke), so it is the odd one out."
+  },
+  "ceed-2012-q07": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The Bengali letters show strokes that swell and thin with direction: thick verticals, thin joins. That contrast comes from a broad, flat nib held at a fixed angle, i.e. a **calligraphic pen (B)**. Chalk, ball point and gel pens all draw a near-constant line width."
+  },
+  "ceed-2012-q09": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "observation",
+   "difficulty": 1,
+   "explanation": "An identity-card photo needs a frontal face, neutral expression, even light and a plain light background so the face reads clearly when printed small. **A** meets all of these. B and C have dark backgrounds that merge with hair; D is a side profile."
+  },
+  "ceed-2012-q10": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Mahindra & Mahindra's emblem (used from 2000) is an oval with two angular strokes forming a stylised M: **D**. A is Maybach, B is Tata Motors."
+  },
+  "ceed-2012-q13": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "Flat colour, bold outlines, almond-shaped eyes and a mother-and-child subject drawn from Bengal folk (Kalighat) painting are the signature of **Jamini Roy (B)**."
+  },
+  "ceed-2012-q17": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The wild-haired boy in a loincloth is **Mowgli (C)**, the jungle boy of Disney's *The Jungle Book*, from Kipling's stories."
+  },
+  "ceed-2012-q19": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "The figure wears a dhoti with a kurta (panjabi) and shawl and holds up the pleated end of the dhoti in one hand. That is the classic Bengali gentleman's attire, a common subject of Krishnanagar clay dolls: **Bengal (C)**."
+  },
+  "ceed-2012-q20": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "everyday-science",
+   "difficulty": 2,
+   "explanation": "The word is mirror-reversed (a reflection) and bulged: middle letters are large in both width and height, end letters small and squeezed. Magnification falling off from the centre in every direction is barrel distortion, produced by a **convex** curved mirror (C). A flat mirror would keep sizes equal; a vertical cylinder would change only widths, not heights."
+  },
+  "ceed-2012-q21": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "In light (additive) colour theory, RGB = **Red, Green, Blue (C)**, the three primaries of screens."
+  },
+  "ceed-2012-q22": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Gandhi's full name is **Mohandas Karamchand Gandhi (B)**."
+  },
+  "ceed-2012-q23": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The national fruit of India is the **mango (D)**."
+  },
+  "ceed-2012-q24": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "*Uski Roti* (1969), a landmark of Indian parallel cinema, was directed by **Mani Kaul (D)**."
+  },
+  "ceed-2012-q26": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "observation",
+   "difficulty": 1,
+   "explanation": "A (guitar-type), C (harp) and D (veena) are string instruments. **B** is a recorder/flute, a wind instrument, so it does not belong."
+  },
+  "ceed-2012-q27": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "*The God of Small Things* (Booker Prize 1997) is by **Arundhati Roy (B)**."
+  },
+  "ceed-2012-q28": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "D. Udaya Kumar designed the Indian rupee symbol (₹) in 2010, so he is known for **graphic design (D)**."
+  },
+  "ceed-2012-q29": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Cubism was founded by **Pablo Picasso (A)** with Georges Braque, around 1907–08."
+  },
+  "ceed-2012-q30": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "DSLR = **Digital Single Lens Reflex (B)**: one lens, with a mirror reflecting its image to the viewfinder."
+  },
+  "ceed-2012-q32": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "The arch with openwork spandrels filled with rings is the Iron Bridge at Coalbrookdale (1779), the first major bridge built of **cast iron (D)**."
+  },
+  "ceed-2012-q35": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Three chasing arrows forming a loop (the Möbius loop) is the universal **recycling (C)** symbol."
+  },
+  "ceed-2012-q36": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "observation",
+   "difficulty": 1,
+   "explanation": "A sporty look comes from a chunky, rugged resin case, protective bezel and thick strap, built for impact and water. **D** has all of these; A is a plain digital, B a dress watch, C a minimal analogue."
+  },
+  "ceed-2012-q37": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The sculpture is Michelangelo's *Pietà* (St Peter's, Rome), carved from Carrara **marble (D)**."
+  },
+  "ceed-2012-q38": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The white central dome with corner domed towers is the **Victoria Memorial (B)**, Kolkata."
+  },
+  "ceed-2012-q39": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "everyday-science",
+   "difficulty": 1,
+   "explanation": "Hot drinks need a cup that insulates (so the hand is not burnt), does not soften or leach when hot and can be reused. **Ceramic (D)** does all three. Paper and polystyrene are disposable and weaken or leach with heat; stainless steel conducts heat to the hand."
+  },
+  "ceed-2013-q01": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Full HD = **1920 × 1080 pixels** (option 3, **C**)."
+  },
+  "ceed-2013-q02": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. PAL video runs at **25 frames per second** (option 2, **B**); NTSC is ~30, film 24."
+  },
+  "ceed-2013-q03": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. HDMI = **High Definition Multimedia Interface** (option 3, **C**)."
+  },
+  "ceed-2013-q04": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. *Arjun: The Warrior Prince* (2012) was directed by **Arnab Chaudhuri** (option 1, **A**)."
+  },
+  "ceed-2013-q05": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Widescreen is **16:9** (option 3, **C**); 4:3 is the older standard format."
+  },
+  "ceed-2013-q06": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. The character is Jon Arbuckle, Garfield's owner, from the comic strip **Garfield** (option 1, **A**)."
+  },
+  "ceed-2013-q08": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. A joyous invitation calls for an elegant, flowing script. **B** is a calligraphic script face; A is a heavy display face, C a dripping horror face, D a blackletter. Option 2, **B**."
+  },
+  "ceed-2013-q10": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "everyday-science",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. The text is mirror-reversed (a reflection) and bulged: the middle letters (D, 2) are large in width and height, the end letters small and squeezed. That barrel distortion comes from a **convex surface** (option 2, **B**). A cylinder would only change widths; a concave mirror enlarges the edges instead."
+  },
+  "ceed-2013-q12": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Mary Kom is an Olympic-medal-winning **boxer** (option 4, **D**)."
+  },
+  "ceed-2013-q14": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. CMYK is the print process colour set: **Cyan, Magenta, Yellow, Black (Key)** (option 2, **B**)."
+  },
+  "ceed-2013-q15": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Equal R, G and B values give a neutral; on the 0–255 scale, 100 is below the midpoint, so the result is a darkish **gray** (option 3, **C**). 0,0,0 would be black, 255,255,255 white."
+  },
+  "ceed-2013-q16": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "observation",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Solid round black spots scattered evenly on a tawny coat belong to the **cheetah** (option 4, **D**). Tigers and zebras are striped; giraffes have large polygonal patches."
+  },
+  "ceed-2013-q17": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. A cylindrical drum on a handle with a weight on a chain, spun by hand, is a **Tibetan prayer wheel** (option 1, **A**)."
+  },
+  "ceed-2013-q19": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. The large, bright, multi-coloured turban (pagdi) with a bold moustache is typical of **Rajasthan** (option 3, **C**)."
+  },
+  "ceed-2013-q20": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Bluetooth is a short-range **wireless communication** technology (option 4, **D**)."
+  },
+  "ceed-2013-q21": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. A circular image with strong barrel distortion (straight buildings bent outward) is the mark of a **fish-eye lens** (option 1, **A**)."
+  },
+  "ceed-2013-q22": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "observation",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. A D-shaped grip with a flat sole and a small blade clamped by a wing nut at the base is pushed along the floor to slice sheet material: a **carpet cutter** (option 2, **B**)."
+  },
+  "ceed-2013-q23": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. A long stick-like body (dandi) resting on two equal gourd resonators is the **Rudra Veena** (option 4, **D**). The sitar has one main gourd at the base of a long fretted neck; the sarod and tanpura have no paired gourds."
+  },
+  "ceed-2013-q25": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "mechanisms",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Belt speed is the same on both pulleys.\n\n- Belt travel = 600 rev × 1.2 m = 720 m.\n- Driver revolutions = 720 m ÷ 0.4 m = 1800.\n- Time = 1800 ÷ 60 rpm = **30 minutes** (option 2, **B**).\n\nThe belt length (7.2 m) is not needed."
+  },
+  "ceed-2013-q27": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "everyday-science",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Local (solar) time changes by 4 minutes per degree east or west, so it depends on **longitude** (option 2, **B**)."
+  },
+  "ceed-2013-q29": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "mechanisms",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Both wheels are fixed to the same tractor and roll without slipping, so their rims move over the road at the tractor's speed: **40 km/h** (option 2, **B**). The smaller wheel simply turns twice as many times per minute."
+  },
+  "ceed-2013-q30": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "logic-and-counting",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. - Slope length = 2 km/h × 0.5 h = 1 km = 1000 m.\n- Height = 800 m, so base radius = √(1000² − 800²) = 600 m.\n- Diameter = 2 × 600 = **1200 m** (option 4, **D**)."
+  },
+  "ceed-2013-q31": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "observation",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. The blue patches are printed in the same colour (sampled pixels match). They look different only because of the surrounding black-and-white pattern (simultaneous contrast). **Both patches have the same tone** (option 3, **C**)."
+  },
+  "ceed-2013-q32": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "observation",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Option A repeats frame 1, B repeats frame 3 and D repeats frame 6. A walk cycle alternates contact (legs wide apart) and passing (legs together) poses; frames 3 and 5 are passing poses, so frame 4 must be the wide-stride contact pose, the only new drawing: **C** (option 3)."
+  },
+  "ceed-2013-q34": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "everyday-science",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. The runner is smeared along the direction of motion while the background is sharp. The subject moved while the shutter was open, which happens when the **shutter speed is low** (option 1, **A**). Camera shake would blur the background too."
+  },
+  "ceed-2013-q35": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "logic-and-counting",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. At the same moment, shadow length is proportional to height: 15/25 = x/40, so x = **24 m** (option 2, **B**)."
+  },
+  "ceed-2013-q36": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "logic-and-counting",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Opposite positions on a circle of n evenly spaced children are n/2 apart. 28 − 3 = 25 = n/2, so n = **50** (option 2, **B**)."
+  },
+  "ceed-2013-q37": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "3d-visualisation",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Unroll the cylinder into a rectangle. Each turn advances 15/5 = 3 cm along the length while going 4 cm around, so one turn of string = √(3² + 4²) = 5 cm. Five turns = **25 cm** (option 3, **C**)."
+  },
+  "ceed-2013-q38": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "logic-and-counting",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Let the pole be L. Soil L/2 + water L/3 = 5L/6, leaving L/6 above water = 2 m, so L = **12 m** (option 2, **B**)."
+  },
+  "ceed-2013-q39": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "3d-visualisation",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Plan A shows an outer square, lines from its corners to an inner square (sloping sides of a frustum), and an X inside the inner square (a pyramid roof seen from above).\n\n- 1: a pyramid on a slab gives an X but no inner square.\n- 2: the box with a rod on top gives an inner square with a dot, no X.\n- 3: an inverted pyramid shows only its flat top square from above, no X.\n- **4**: frustum topped by a box with a pyramid roof gives exactly the inner square with the X. Option 4, **D**."
+  },
+  "ceed-2013-q41": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. In 2013 Nissan and Renault built cars at their Chennai plant and Skoda at Aurangabad. **Citroën** had no Indian manufacturing (option 2, **B**)."
+  },
+  "ceed-2013-q44": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "observation",
+   "difficulty": 1,
+   "explanation": "Options are printed 1–4; they map to A–D in order. A guard needs a long throw, durable metal body and a long heavy barrel that is easy to grip and can double as a baton. **B** (a large multi-cell metal torch) fits; A is a small plastic household torch, C and D are pocket or novelty lights. Option 2, **B**."
+  },
+  "ceed-2013-q46": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "everyday-science",
+   "difficulty": 2,
+   "explanation": "Options are printed 1–4; they map to A–D in order. Stability depends on whether the seat's load stays over the base. A (four legs), B (A-frame) and D (full-width base) have bases as wide as the seat. **C** sits a wide seat on a narrow central column, so leaning toward either edge tips it: the most unstable. Option 3, **C**."
+  },
+  "ceed-2013-q47": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "3d-visualisation",
+   "difficulty": 3,
+   "explanation": "Options are printed 1–4; they map to A–D in order. The room is in one-point perspective with the vanishing point near the centre of the back wall; every receding edge should run toward it.\n\n- Walls and the side-wall window: their receding edges converge on the vanishing point.\n- Back-wall window: faces the viewer, so it stays a true rectangle.\n- **Table:** its top is drawn symmetric about its own centre, so the left receding edge leans away from the vanishing point instead of toward it. It is not in the room's perspective. Option 2, **B**."
+  },
+  "ceed-2014-q01": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "*Ship of Theseus* (2013) was written and directed by **Anand Gandhi (D)**."
+  },
+  "ceed-2014-q02": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "*India After Gandhi* (2007) is by historian **Ramachandra Guha (B)**."
+  },
+  "ceed-2014-q03": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Zaha Hadid (1950–2016) was an Iraqi-British **architect (D)**, the first woman to win the Pritzker Prize."
+  },
+  "ceed-2014-q04": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The June 2013 Uttarakhand floods devastated the town around the **Kedarnath (C)** temple; the temple itself survived."
+  },
+  "ceed-2014-q05": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "Monolithic architecture is carved from a single rock. The **Kailasanatha temple (C)** at Ellora (cave 16) was cut down from one basalt cliff. The others are built from assembled stone."
+  },
+  "ceed-2014-q06": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "everyday-science",
+   "difficulty": 2,
+   "explanation": "f/2.8 → f/8 is a smaller aperture opening. A smaller aperture narrows the cone of light, so more of the scene stays acceptably sharp: depth of field **increases (A)**."
+  },
+  "ceed-2014-q07": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "PostScript, the page description language behind desktop publishing, was developed by **Adobe (D)** (1982–84)."
+  },
+  "ceed-2014-q08": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The swirling sky and the figure clutching its face is *The Scream*; this lithograph version (1895) is by **Edvard Munch (B)**."
+  },
+  "ceed-2014-q09": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The Sarnath Ashoka capital shows four lions on top and a lion, elephant, bull and horse on its abacus. The **tiger (D)** does not appear."
+  },
+  "ceed-2014-q10": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "The India Design Mark (I Mark), launched by the India Design Council, is a black 'i' dot over a wedge beside a 'D' shape: **C**."
+  },
+  "ceed-2014-q11": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Women in saris painted in a realistic, academic oil style is *Galaxy of Musicians* by **Raja Ravi Varma (C)**."
+  },
+  "ceed-2014-q12": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "A hemispherical stupa with a richly carved stone torana (gateway) of three crossbars is the Great Stupa at **Sanchi (B)**."
+  },
+  "ceed-2014-q13": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "**Stereolithography (C)** was the first 3D printing process: a UV laser cures liquid resin layer by layer. The others are microscopy or 2D printing."
+  },
+  "ceed-2014-q14": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "A car's boot (trunk) space is its **luggage space (A)**."
+  },
+  "ceed-2014-q16": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "logic-and-counting",
+   "difficulty": 1,
+   "explanation": "Equal circles touching a central circle have their centres 2r from its centre and 2r from each neighbour, forming equilateral triangles of 60°. 360° / 60° = **6 (A)**."
+  },
+  "ceed-2014-q17": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "3d-visualisation",
+   "difficulty": 1,
+   "explanation": "'Sides' here means faces. The Platonic solid with 12 (pentagonal) faces is the **dodecahedron (D)**. Tetrahedron 4, cube 6, icosahedron 20."
+  },
+  "ceed-2014-q18": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Kathak, Mohiniyattam and Odissi are classical dances. **Thumri (D)** is a semi-classical vocal music form."
+  },
+  "ceed-2014-q19": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "language",
+   "difficulty": 1,
+   "explanation": "'Which of …' asks about one person, so the verb is singular: '**Which of your two colleagues is here**' (B)."
+  },
+  "ceed-2014-q20": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "language",
+   "difficulty": 1,
+   "explanation": "The blank needs a phrase meaning 'because of' before a noun phrase: '**Due to** his carelessness our car was ruined' (D). 'Since' and 'for' need a clause; 'cause of' is not idiomatic here."
+  },
+  "ceed-2014-q23": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "Animals filled with fine dashes, dots and stripes in bright colours, stacked in a flowing composition, is the style of **Gond (D)** painting from Madhya Pradesh. Warli uses white stick figures; Saura is ritual wall art with stick figures; Madhubani uses double outlines and dense fills."
+  },
+  "ceed-2014-q24": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "3d-visualisation",
+   "difficulty": 3,
+   "explanation": "The plan is a fluted cylinder: about 30 equal scallops around a circle. In front view each cusp becomes a vertical line at horizontal offset r·sin θ, so lines are widest apart at the centre and crowd together toward both silhouettes, symmetrically.\n\n- **B** follows that pattern (spacing shrinks steadily from centre to edges).\n- A has an extra cluster of tightly spaced lines at the centre.\n- C crowds lines unevenly at the edges.\n- D crowds lines at the centre.\n\nAnswer **B**."
+  },
+  "ceed-2014-q25": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "language",
+   "difficulty": 1,
+   "explanation": "'Latent' means present but hidden or not yet developed, i.e. **veiled (B)**."
+  },
+  "ceed-2014-q26": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "MPEG stands for the Moving Picture Experts Group, the standards body behind MP3/MP4. **A** is the matching option."
+  },
+  "ceed-2014-q27": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Sergei Eisenstein directed *Battleship Potemkin* (1925), famous for its montage editing: **C**."
+  },
+  "ceed-2014-q28": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "**Sudarshan Dheer (B)** is a pioneering Indian graphic designer (logos such as Mafatlal and Kotak). Sabyasachi is a fashion designer, Dilip Chhabria a car customiser, Hafeez Contractor an architect."
+  },
+  "ceed-2014-q29": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The twin 'kidney' grille is **BMW's (B)** signature front face."
+  },
+  "ceed-2014-q30": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "A coloured crest inside a laurel wreath is the **Cadillac (A)** emblem."
+  },
+  "ceed-2014-q31": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "folding-and-patterns",
+   "difficulty": 2,
+   "explanation": "Each step reflects the pentagon across a shared edge; four reflections make an even number, so the final copy is not mirror-reversed. Tracing the mark across the four edges (lower-right edge, vertical edge, upper-right edge, vertical edge) brings it back to the upper part of the left vertical edge, pointing inward, in a pentagon with the same orientation as the first. The chain's zigzag cancels out, so the net effect is a pure shift: **A**."
+  },
+  "ceed-2014-q32": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "everyday-science",
+   "difficulty": 2,
+   "explanation": "The same push gives the heavier ball less acceleration (a = F/m), so it leaves the edge slower. Both fall at the same rate, so the slower ball lands closer to the wall. In **A** the frames on top are closer together and the ball drops almost straight down; in B it travels far out. The heavier ball is in **A**."
+  },
+  "ceed-2014-q36": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "In lost-wax (cire perdue) casting, a wax model is coated in a mould, the wax is melted out and molten metal poured in: **casting (B)**. Dhokra and bronze idols are made this way."
+  },
+  "ceed-2014-q37": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "logic-and-counting",
+   "difficulty": 1,
+   "explanation": "Each A-size is half the one before: A0 = 2 A1 = 4 A2 = 8 A3 = **16 A4 (C)**."
+  },
+  "ceed-2014-q38": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "ISO 216 (DIN 476) A4 is **210 × 297 mm (A)**."
+  },
+  "ceed-2014-q39": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "Accessibility standards (ADA, India's barrier-free guidelines) set the maximum wheelchair ramp slope at **1:12 (B)**: 1 unit of rise for every 12 of run."
+  },
+  "ceed-2014-q40": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "Household buckets are injection-moulded from tough, cheap, chemically resistant polyolefins. Of the options that is **HDPE (D)**. ABS and nylon are costlier engineering plastics; PVC is used for pipes and sheet."
+  },
+  "ceed-2014-q41": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "Jiggering and jollying shape clay on a rotating mould with a profile tool to make plates and cups: a **ceramics (A)** process."
+  },
+  "ceed-2014-q42": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "everyday-science",
+   "difficulty": 1,
+   "explanation": "A carbon footprint is the total greenhouse gas emitted by a person, product or activity, a measure of its contribution to **environmental pollution (A)**."
+  },
+  "ceed-2014-q43": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "PET bottles are made by injection-moulding a preform, then stretch **blow moulding (C)** it into the bottle shape. Blow moulding makes hollow, thin-walled containers."
+  },
+  "ceed-2014-q44": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "Tyeb Mehta (1925–2009) was a modern Indian **painter (B)**, a member of the Progressive Artists' Group."
+  },
+  "ceed-2014-q45": {
+   "format": "MCQ",
+   "answer": "D",
+   "topic": "design-knowledge",
+   "difficulty": 2,
+   "explanation": "Two green hands cupping a circle with a sprouting leaf is the logo of **NABARD (D)**, the National Bank for Agriculture and Rural Development. LIC's logo is hands around a lamp; FCI's shows wheat."
+  },
+  "ceed-2014-q46": {
+   "format": "MCQ",
+   "answer": "B",
+   "topic": "folding-and-patterns",
+   "difficulty": 2,
+   "explanation": "Each figure has three concentric arcs. Take the half-circle middle arc as reference: in A, C and D the outer arc's gap sits about 225° on (counter-clockwise) and the small inner arc about 135° on. In **B** the two are swapped (gap at 135°, inner arc at 225°), so B is a mirror image while the others are rotations of one figure. Odd one out: **B**."
+  },
+  "ceed-2014-q47": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The red fingerprint swirl under a yellow sun is the logo of **Aadhaar (C)**, India's unique ID programme."
+  },
+  "ceed-2014-q48": {
+   "format": "MCQ",
+   "answer": "C",
+   "topic": "design-knowledge",
+   "difficulty": 1,
+   "explanation": "The musician is Ustad Amjad Ali Khan, and the instrument has a skin-covered wooden bowl and a smooth, fretless metal fingerboard: the **sarod (C)**."
+  },
+  "ceed-2014-q49": {
+   "format": "MCQ",
+   "answer": "A",
+   "topic": "logic-and-counting",
+   "difficulty": 1,
+   "explanation": "In the golden proportion, (a + b)/a = a/b = φ ≈ 1.618. So a : (a + b) = **1 : 1.618 (A)**."
+  }
+ },
+ "excluded": {
+  "ceed-2010-q01": "Three options only (select the wrong one of three developed views); the content contract requires four options A-D.",
+  "ceed-2012-q01": "Tail photo too degraded in the scan to tell cow from elephant with confidence.",
+  "ceed-2012-q04": "Face unrecognisable in the scan.",
+  "ceed-2012-q05": "B and C differ only in slot width and notch shape; scan too coarse to pick the true SBI mark confidently.",
+  "ceed-2012-q08": "Pug mark ambiguous at scan resolution.",
+  "ceed-2012-q11": "Running-animal silhouettes too small to determine the gallop phase.",
+  "ceed-2012-q12": "Ambiguous: bulb could mean Knowledge or Enlightenment.",
+  "ceed-2012-q14": "Subjective (most comfortable handle) with no defensible single key.",
+  "ceed-2012-q15": "Mask/carving could not be attributed to a state with confidence.",
+  "ceed-2012-q16": "Carton nets too close to verify which folds correctly.",
+  "ceed-2012-q18": "A and C both read as wrinkled hide in the scan; low confidence on re-check.",
+  "ceed-2012-q25": "Ambiguous: none of the four is primarily a designer.",
+  "ceed-2012-q31": "Rupee glyph variants differ in fine bar details; not confident which is the official one.",
+  "ceed-2012-q33": "India map variants indistinguishable at scan resolution.",
+  "ceed-2012-q34": "Face count depends on whether coplanar faces merge; no option matched a defensible count.",
+  "ceed-2012-q40": "Marks in the reflected compositions illegible in the scan.",
+  "ceed-2013-q07": "Car not identifiable with confidence from the partial tail-lamp view.",
+  "ceed-2013-q09": "Not confident which pictogram is the London 2012 one.",
+  "ceed-2013-q11": "Ambiguous: a car's interior rear-view mirror is plane, its wing mirrors convex.",
+  "ceed-2013-q13": "Ill-posed: for a bounding size d the cone has the least surface area, not the sphere the question likely intends.",
+  "ceed-2013-q18": "Chair material (steel, plastic or laminated wood) not decidable from the render.",
+  "ceed-2013-q24": "Folding bellows vs twin-lens reflex camera: oldest not certain.",
+  "ceed-2013-q26": "Ill-posed: no crossing time is given, so the width cannot be computed.",
+  "ceed-2013-q28": "Ambiguous odd-one-out (curved vs flat faces, regular vs not).",
+  "ceed-2013-q33": "Figure differences too subtle to key confidently.",
+  "ceed-2013-q40": "Re-check disagreed (A business jet vs B experimental motor-glider); 'latest technology' has no defensible single key.",
+  "ceed-2013-q42": "Product use ambiguous.",
+  "ceed-2013-q43": "Product use ambiguous.",
+  "ceed-2013-q45": "Subjective (sporty pen).",
+  "ceed-2013-q48": "Hidden-cube count not determinable with confidence from the drawing.",
+  "ceed-2013-q49": "Surface count includes hidden faces; not confident.",
+  "ceed-2013-q50": "Subjective (aesthetically pleasing).",
+  "ceed-2014-q15": "Logo not attributable with confidence.",
+  "ceed-2014-q21": "Surface count of the drawn solid ambiguous.",
+  "ceed-2014-q22": "Perspective differences between options too fine to key confidently.",
+  "ceed-2014-q33": "Direction depends on whether the small circles read as a motion trail or as positions ahead; both readings are self-consistent, so no single key.",
+  "ceed-2014-q34": "Walk-cycle passing pose ambiguous between options.",
+  "ceed-2014-q35": "Correct boat drawing not decidable (wind cues conflict).",
+  "ceed-2014-q50": "Cut-and-fold drawings illegible at source resolution."
+ }
+}

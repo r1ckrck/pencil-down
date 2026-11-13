@@ -1,0 +1,241 @@
+[
+  {
+    "id": "ceed-2010",
+    "exam": "CEED",
+    "year": 2010,
+    "label": "CEED 2010",
+    "durationMin": 60,
+    "scheme": {
+      "NAT": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "MCQ": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "MSQ": {
+        "correct": 2,
+        "wrong": 0,
+        "partial": false
+      }
+    },
+    "totalMarks": 4,
+    "questionIds": [
+      "ceed-2010-q06"
+    ],
+    "pastPaperEligible": false,
+    "cutoff": null
+  },
+  {
+    "id": "ceed-2011",
+    "exam": "CEED",
+    "year": 2011,
+    "label": "CEED 2011",
+    "durationMin": 60,
+    "scheme": {
+      "NAT": {
+        "correct": 1,
+        "wrong": 0
+      },
+      "MCQ": {
+        "correct": 1,
+        "wrong": 0
+      },
+      "MSQ": {
+        "correct": 1,
+        "wrong": 0,
+        "partial": false
+      }
+    },
+    "totalMarks": 1,
+    "questionIds": [
+      "ceed-2011-q06"
+    ],
+    "pastPaperEligible": false,
+    "cutoff": null
+  },
+  {
+    "id": "ceed-2012",
+    "exam": "CEED",
+    "year": 2012,
+    "label": "CEED 2012",
+    "durationMin": 60,
+    "scheme": {
+      "NAT": {
+        "correct": 1.25,
+        "wrong": 0
+      },
+      "MCQ": {
+        "correct": 1.25,
+        "wrong": 0
+      },
+      "MSQ": {
+        "correct": 1.25,
+        "wrong": 0,
+        "partial": false
+      }
+    },
+    "totalMarks": 50,
+    "questionIds": [
+      "ceed-2012-q02",
+      "ceed-2012-q03",
+      "ceed-2012-q06",
+      "ceed-2012-q07",
+      "ceed-2012-q09",
+      "ceed-2012-q10",
+      "ceed-2012-q13",
+      "ceed-2012-q17",
+      "ceed-2012-q19",
+      "ceed-2012-q20",
+      "ceed-2012-q21",
+      "ceed-2012-q22",
+      "ceed-2012-q23",
+      "ceed-2012-q24",
+      "ceed-2012-q26",
+      "ceed-2012-q27",
+      "ceed-2012-q28",
+      "ceed-2012-q29",
+      "ceed-2012-q30",
+      "ceed-2012-q32",
+      "ceed-2012-q35",
+      "ceed-2012-q36",
+      "ceed-2012-q37",
+      "ceed-2012-q38",
+      "ceed-2012-q39"
+    ],
+    "pastPaperEligible": false,
+    "cutoff": null
+  },
+  {
+    "id": "ceed-2013",
+    "exam": "CEED",
+    "year": 2013,
+    "label": "CEED 2013",
+    "durationMin": 60,
+    "scheme": {
+      "NAT": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "MCQ": {
+        "correct": 2,
+        "wrong": -0.5
+      },
+      "MSQ": {
+        "correct": 2,
+        "wrong": -0.5,
+        "partial": false
+      }
+    },
+    "totalMarks": 100,
+    "questionIds": [
+      "ceed-2013-q01",
+      "ceed-2013-q02",
+      "ceed-2013-q03",
+      "ceed-2013-q04",
+      "ceed-2013-q05",
+      "ceed-2013-q06",
+      "ceed-2013-q08",
+      "ceed-2013-q10",
+      "ceed-2013-q12",
+      "ceed-2013-q14",
+      "ceed-2013-q15",
+      "ceed-2013-q16",
+      "ceed-2013-q17",
+      "ceed-2013-q19",
+      "ceed-2013-q20",
+      "ceed-2013-q21",
+      "ceed-2013-q22",
+      "ceed-2013-q23",
+      "ceed-2013-q25",
+      "ceed-2013-q27",
+      "ceed-2013-q29",
+      "ceed-2013-q30",
+      "ceed-2013-q31",
+      "ceed-2013-q32",
+      "ceed-2013-q34",
+      "ceed-2013-q35",
+      "ceed-2013-q36",
+      "ceed-2013-q37",
+      "ceed-2013-q38",
+      "ceed-2013-q39",
+      "ceed-2013-q41",
+      "ceed-2013-q44",
+      "ceed-2013-q46",
+      "ceed-2013-q47"
+    ],
+    "pastPaperEligible": false,
+    "cutoff": null
+  },
+  {
+    "id": "ceed-2014",
+    "exam": "CEED",
+    "year": 2014,
+    "label": "CEED 2014",
+    "durationMin": 60,
+    "scheme": {
+      "NAT": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "MCQ": {
+        "correct": 2,
+        "wrong": -0.5
+      },
+      "MSQ": {
+        "correct": 2,
+        "wrong": -0.5,
+        "partial": false
+      }
+    },
+    "totalMarks": 100,
+    "questionIds": [
+      "ceed-2014-q01",
+      "ceed-2014-q02",
+      "ceed-2014-q03",
+      "ceed-2014-q04",
+      "ceed-2014-q05",
+      "ceed-2014-q06",
+      "ceed-2014-q07",
+      "ceed-2014-q08",
+      "ceed-2014-q09",
+      "ceed-2014-q10",
+      "ceed-2014-q11",
+      "ceed-2014-q12",
+      "ceed-2014-q13",
+      "ceed-2014-q14",
+      "ceed-2014-q16",
+      "ceed-2014-q17",
+      "ceed-2014-q18",
+      "ceed-2014-q19",
+      "ceed-2014-q20",
+      "ceed-2014-q23",
+      "ceed-2014-q24",
+      "ceed-2014-q25",
+      "ceed-2014-q26",
+      "ceed-2014-q27",
+      "ceed-2014-q28",
+      "ceed-2014-q29",
+      "ceed-2014-q30",
+      "ceed-2014-q31",
+      "ceed-2014-q32",
+      "ceed-2014-q36",
+      "ceed-2014-q37",
+      "ceed-2014-q38",
+      "ceed-2014-q39",
+      "ceed-2014-q40",
+      "ceed-2014-q41",
+      "ceed-2014-q42",
+      "ceed-2014-q43",
+      "ceed-2014-q44",
+      "ceed-2014-q45",
+      "ceed-2014-q46",
+      "ceed-2014-q47",
+      "ceed-2014-q48",
+      "ceed-2014-q49"
+    ],
+    "pastPaperEligible": false,
+    "cutoff": null
+  }
+]

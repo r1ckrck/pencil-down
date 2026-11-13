@@ -1,0 +1,8 @@
+**/node_modules
+**/.next
+.git
+data
+docs
+pipeline
+app/public/content
+app/tests

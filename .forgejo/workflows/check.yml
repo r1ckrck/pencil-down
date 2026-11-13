@@ -1,0 +1,18 @@
+# Runs on every push to main: content validation, unit tests, type check and production build.
+name: check
+on:
+  push:
+    branches: [main]
+jobs:
+  check:
+    runs-on: docker
+    container:
+      image: node:24-alpine
+    steps:
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - run: cd app && pnpm install --frozen-lockfile
+      - run: cd app && pnpm validate:content
+      - run: cd app && pnpm test
+      - run: cd app && npx tsc --noEmit
+      - run: cd app && pnpm build

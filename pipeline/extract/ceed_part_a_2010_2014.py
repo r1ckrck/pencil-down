@@ -47,6 +47,8 @@ def scheme(correct, wrong, natural=None):
 
 
 # count = objective single-answer items in the paper; total = their printed marks.
+# The 2010-2011 booklets have no objective section (their other Q1 items are drawn or
+# sequenced), so a "past paper" of one or two items is never offered.
 PAPERS = {
     2010: dict(count=2, total=4, duration=60, scheme=scheme(2, 0)),  # Q1.1 (2), Q1.6 (2)
     2011: dict(count=1, total=1, duration=60, scheme=scheme(1, 0)),  # Q1.6 (1)
@@ -259,7 +261,8 @@ def main():
         papers.append({
             "id": f"ceed-{year}", "exam": "CEED", "year": year, "label": f"CEED {year}",
             "durationMin": cfg["duration"], "scheme": cfg["scheme"], "totalMarks": cfg["total"],
-            "questionIds": ids, "pastPaperEligible": len(ids) == cfg["count"], "cutoff": None,
+            "questionIds": ids, "pastPaperEligible": year >= 2012 and len(ids) == cfg["count"],
+            "cutoff": None,
         })
         print(f"{year}: {len(ids)} of {cfg['count']} objective items")
     (PART_A / "questions-ceed-2010-2014.json").write_text(json.dumps(questions, indent=2) + "\n")
