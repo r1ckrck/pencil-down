@@ -76,7 +76,7 @@ export function SegmentedControl<T extends string>({
             onClick={() => onValueChange(o.value)}
             onKeyDown={(e) => onKeyDown(e, o.value)}
             className={cn(
-              "flex min-h-touch select-none flex-col items-center justify-center whitespace-nowrap rounded-sm px-3 py-1 text-small font-medium",
+              "flex min-h-touch min-w-touch select-none flex-col items-center justify-center whitespace-nowrap rounded-sm px-3 py-1 text-small font-medium",
               "transition-colors duration-(--dur-fast) ease-measured disabled:opacity-40",
               selected ? "bg-fg text-on-fg" : "text-mute hover:bg-tint hover:text-fg",
             )}

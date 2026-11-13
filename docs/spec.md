@@ -58,7 +58,7 @@ pencil-down/
 │   ├── verify/               totals, joins, contact sheets
 │   └── raw/                  downloaded PDFs (git-ignored)
 ├── docs/                     research/, spec.md
-├── Dockerfile · docker-compose.yml · .forgejo/workflows/deploy.yml
+├── Dockerfile · docker-compose.yml · .forgejo/workflows/check.yml
 ```
 
 ---
@@ -350,7 +350,7 @@ Photos stored under `/data/photos/`. Content is read from `content/` (bundled), 
 
 - `Dockerfile`: multi-stage, Next standalone output on `node:24-alpine`, runs as `${PUID}:${PGID}`.
 - `docker-compose.yml`: `container_name: pencil-down`, `homelab-net` (external), `env_file: /opt/homelab/.env`, `mem_limit: 512m`, volume `/data/appdata/pencil-down:/data`, healthcheck on `/api/health`.
-- `.forgejo/workflows/deploy.yml` per the server contract.
+- `.forgejo/workflows/check.yml`: validate content, unit tests, types and build on every push to `main`. Image build and container start on the server are wired server side.
 - Hostname, Authelia gate and folder: server side.
 - Development and testing run natively with Node on `localhost`; the container is first exercised on the server.
 

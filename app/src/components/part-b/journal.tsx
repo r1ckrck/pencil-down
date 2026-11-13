@@ -3,10 +3,13 @@
 import { ArrowRight } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import { Eyebrow, RoleLabel } from "@/components/ui/label";
 import type { Slot } from "@/content/types";
+import type { Mode, Switches } from "@/engine/modes";
 import { cn } from "@/lib/cn";
 import type { JournalPhoto } from "./load";
+import { BStartDialog } from "./start-dialog";
 import { SLOT_NAME } from "./types";
 
 type Reattempt = { promptId: string; title: string; slot: Slot; sessionId: number; daysAgo: number };
@@ -14,7 +17,19 @@ type Reattempt = { promptId: string; title: string; slot: Slot; sessionId: numbe
 const dayFmt = new Intl.DateTimeFormat("en-IN", { day: "numeric", month: "short", year: "numeric", timeZone: "Asia/Kolkata" });
 
 /** Photos of her pages, grouped by day, filterable by slot. Nothing here is scored. */
-export function Journal({ photos, reattempts }: { photos: JournalPhoto[]; reattempts: Reattempt[] }) {
+export function Journal({
+  photos,
+  reattempts,
+  defaultMode,
+  custom,
+  locked,
+}: {
+  photos: JournalPhoto[];
+  reattempts: Reattempt[];
+  defaultMode: Mode;
+  custom: Switches;
+  locked: boolean;
+}) {
   const [slot, setSlot] = useState<Slot | "all">("all");
   const shown = photos.filter((p) => slot === "all" || p.slot === slot);
   const days = new Map<string, JournalPhoto[]>();
@@ -24,7 +39,7 @@ export function Journal({ photos, reattempts }: { photos: JournalPhoto[]; reatte
   }
   const chip = (selected: boolean) =>
     cn(
-      "inline-flex min-h-touch items-center gap-2 rounded-sm border px-3 text-small font-medium",
+      "inline-flex min-h-touch min-w-touch items-center justify-center gap-2 rounded-sm border px-3 text-small font-medium",
       "transition-colors duration-(--dur-fast) ease-measured",
       selected ? "border-fg bg-fg text-on-fg" : "border-hairline text-fg hover:border-fg",
     );
@@ -35,22 +50,40 @@ export function Journal({ photos, reattempts }: { photos: JournalPhoto[]; reatte
       {reattempts.length > 0 && (
         <section className="flex flex-col gap-3" data-testid="reattempts">
           <Eyebrow>Due for a re-attempt</Eyebrow>
-          <RoleLabel>Same prompt, 10–14 days on. Re-read it, set a 24-minute clock on paper, then compare pages.</RoleLabel>
+          <RoleLabel>Same prompt, 10–14 days on, under the same clock. Then compare the two pages.</RoleLabel>
           <ul className="flex flex-col">
             {reattempts.map((r) => (
-              <li key={r.promptId}>
-                <Link
-                  href={`/part-b/results/${r.sessionId}`}
-                  className="group flex min-h-touch items-center justify-between gap-4 border-b border-hairline py-3 hover:bg-tint"
-                >
-                  <span className="flex min-w-0 flex-col">
-                    <span className="text-body text-fg">{r.title}</span>
-                    <span className="text-caption text-mute">
-                      {SLOT_NAME[r.slot]} · last tried <span className="font-mono">{r.daysAgo}</span> days ago
-                    </span>
+              <li
+                key={r.promptId}
+                className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-hairline py-3"
+              >
+                <span className="flex min-w-0 flex-col">
+                  <span className="text-body text-fg">{r.title}</span>
+                  <span className="text-caption text-mute">
+                    {SLOT_NAME[r.slot]} · last tried <span className="font-mono">{r.daysAgo}</span> days ago
                   </span>
-                  <ArrowRight size={18} weight="duotone" aria-hidden className="shrink-0 text-mute group-hover:text-fg" />
-                </Link>
+                </span>
+                <span className="flex items-center gap-2">
+                  <Link
+                    href={`/part-b/results/${r.sessionId}`}
+                    className="inline-flex min-h-touch items-center gap-2 rounded-sm px-3 text-small text-mute hover:bg-tint hover:text-fg"
+                  >
+                    Last attempt
+                    <ArrowRight size={16} weight="duotone" aria-hidden />
+                  </Link>
+                  <BStartDialog
+                    title={`Re-attempt · ${SLOT_NAME[r.slot]}`}
+                    summary={`24 min · ${r.title}`}
+                    request={{ kind: "b-drill", promptId: r.promptId }}
+                    defaultMode={defaultMode}
+                    custom={custom}
+                    trigger={
+                      <Button variant="quiet" disabled={locked}>
+                        Re-attempt
+                      </Button>
+                    }
+                  />
+                </span>
               </li>
             ))}
           </ul>

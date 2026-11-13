@@ -28,7 +28,7 @@ function ScanZoom({ src, alt, width, height }: { src: string; alt: string; width
         <button
           type="button"
           aria-label="Zoom question image"
-          className="group relative block w-full cursor-zoom-in rounded-md text-left"
+          className="group relative block min-h-touch w-full cursor-zoom-in rounded-md text-left"
         >
           {/* eslint-disable-next-line @next/next/no-img-element -- static scan, sized by its own dimensions */}
           <img

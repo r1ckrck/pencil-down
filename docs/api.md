@@ -99,7 +99,7 @@ Images are static files: `/content/part-a/…`, `/content/part-b/…`, `/content
 
 | Method · path | Body | Response |
 |---|---|---|
-| `POST /api/sessions` | `{ kind, mode?, paperId?, bPaperId?, topic?, format?, n?, slot? }` — `mode` defaults to last used; `drill`: `topic` and/or `format`, `n` 1–44 (default 10); `past-paper`: `paperId`; `b-drill`: `slot` (omit = least practised); `b-past-paper`: `bPaperId` | `SessionState` · 409 `{sessionId}` if one is live · 422 if no content |
+| `POST /api/sessions` | `{ kind, mode?, paperId?, bPaperId?, topic?, format?, n?, slot?, promptId? }` — `mode` defaults to last used; `drill`: `topic` and/or `format`, `n` 1–44 (default 10); `past-paper`: `paperId`; `b-drill`: `slot` (omit = least practised) or `promptId` (re-attempt that exact prompt; 400 if unknown or not in `slot`); `b-past-paper`: `bPaperId` | `SessionState` · 409 `{sessionId}` if one is live · 422 if no content |
 | `GET /api/sessions/live` | | `{ serverNow, live: SessionState\|null }` — use on app open to return to a running session |
 | `GET /api/sessions/:id` | | `SessionState` |
 | `GET /api/sessions/:id/results` | | `Results` (below) |

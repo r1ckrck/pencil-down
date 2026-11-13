@@ -200,3 +200,33 @@ test("Full exam: Part A runs first, then hands over to Part B in place; reload l
   await page.reload();
   await expect(page.getByTestId("phase-name")).toHaveText("Read all");
 });
+
+test("Journal: a prompt tried 11 days ago offers a re-attempt that starts the same prompt", async ({ page, request }) => {
+  const first = await (await request.post("/api/sessions", { data: { kind: "b-drill", slot: "form", mode: "easy" } })).json();
+  const id = first.session.id;
+  const prompt = first.partB.attempts[0].prompt;
+  expect((await request.post(`/api/sessions/${id}/b/commit`, { data: { pos: 0, label: "first go" } })).ok()).toBeTruthy();
+  expect((await request.post(`/api/sessions/${id}/finish`)).ok()).toBeTruthy();
+  travel(id, 11 * 86_400);
+
+  const errors = trackErrors(page);
+  await page.goto("/part-b/journal");
+  const row = page.getByTestId("reattempts").getByRole("listitem").filter({ hasText: prompt.title });
+  await expect(row).toContainText("last tried 11 days ago");
+  await row.getByRole("button", { name: "Re-attempt" }).click();
+  const dialog = page.getByRole("dialog");
+  await dialog.getByRole("radio", { name: "Easy" }).click();
+  await dialog.getByRole("button", { name: "Start" }).click();
+  await page.waitForURL(/\/part-b\/\d+$/);
+  const again = await (await request.get(`/api/sessions/${Number(page.url().split("/").pop())}`)).json();
+  expect(again.session.id).not.toBe(id);
+  expect(again.partB.attempts[0].prompt.id).toBe(prompt.id);
+  await expect(page.getByTestId("prompt")).toContainText(prompt.title);
+
+  // A quit re-attempt leaves the prompt due, dated from the last committed attempt.
+  expect((await request.post(`/api/sessions/${again.session.id}/quit`)).ok()).toBeTruthy();
+  await page.goto("/part-b/journal");
+  await expect(row).toContainText("last tried 11 days ago");
+  await expect(row.getByRole("link", { name: "Last attempt" })).toHaveAttribute("href", `/part-b/results/${id}`);
+  expect(errors).toEqual([]);
+});

@@ -5,6 +5,7 @@ import { Journal } from "@/components/part-b/journal";
 import { journalPhotos, reattempts } from "@/components/part-b/load";
 import { PageHeader } from "@/components/shell/page-header";
 import { today } from "@/engine/progress";
+import { getSettings } from "@/engine/settings";
 import { getCtx } from "@/server/api";
 
 export const metadata: Metadata = { title: "Journal · Part B" };
@@ -15,14 +16,23 @@ async function Pages() {
   await connection();
   const ctx = getCtx();
   const now = ctx.now();
-  const due = reattempts(today(ctx).reattemptPromptIds).map((r) => ({
+  const t = today(ctx);
+  const due = reattempts(t.reattemptPromptIds).map((r) => ({
     promptId: r.promptId,
     title: r.title,
     slot: r.slot,
     sessionId: r.sessionId,
     daysAgo: Math.floor((now - r.lastAt) / DAY_MS),
   }));
-  return <Journal photos={journalPhotos()} reattempts={due} />;
+  return (
+    <Journal
+      photos={journalPhotos()}
+      reattempts={due}
+      defaultMode={t.defaultMode}
+      custom={getSettings(ctx.db).custom}
+      locked={t.liveSession !== null}
+    />
+  );
 }
 
 export default function JournalPage() {

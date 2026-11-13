@@ -72,7 +72,7 @@ export function PartBHub({ data }: { data: BHubData }) {
 
   const chip = (selected: boolean) =>
     cn(
-      "inline-flex min-h-touch items-center gap-2 rounded-sm border px-3 text-small font-medium",
+      "inline-flex min-h-touch min-w-touch items-center justify-center gap-2 rounded-sm border px-3 text-small font-medium",
       "transition-colors duration-(--dur-fast) ease-measured disabled:opacity-40",
       selected ? "border-fg bg-fg text-on-fg" : "border-hairline text-fg hover:border-fg",
     );

@@ -65,12 +65,12 @@ export function journalPhotos(): JournalPhoto[] {
   }));
 }
 
-/** Prompts due for a same-prompt re-attempt (10–14 days on), with where she last tried each. */
+/** Prompts due for a same-prompt re-attempt (10–14 days on), with her last committed attempt at each. */
 export function reattempts(promptIds: string[]) {
   const ctx = getCtx();
   const last = ctx.db.prepare(
     `SELECT a.session_id AS sid, s.started_at AS at FROM b_attempts a JOIN sessions s ON s.id = a.session_id
-     WHERE a.prompt_id = ? ORDER BY s.started_at DESC LIMIT 1`,
+     WHERE a.prompt_id = ? AND a.status = 'committed' ORDER BY s.started_at DESC LIMIT 1`,
   );
   return promptIds.flatMap((pid) => {
     const p = ctx.content.promptById.get(pid);

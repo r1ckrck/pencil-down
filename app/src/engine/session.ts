@@ -183,6 +183,7 @@ export interface CreateRequest {
   format?: Format | null;
   n?: number;
   slot?: Slot | null;
+  promptId?: string; // b-drill: re-attempt this exact prompt (journal)
 }
 
 export function createSession(ctx: Ctx, req: CreateRequest): SessionRow {
@@ -242,8 +243,12 @@ export function createSession(ctx: Ctx, req: CreateRequest): SessionRow {
           (r) => [r.slot, r.n],
         ),
       );
-      const slot = req.slot ?? leastPractisedSlot(counts);
-      const p = selectDrillPrompt(content, pool, ctx.rand, slot);
+      // A re-attempt names its prompt; otherwise the slot picked (or least practised), unseen first.
+      const again = req.promptId != null ? content.promptById.get(req.promptId) : undefined;
+      if (req.promptId != null && !again) throw badRequest("unknown promptId");
+      if (again && req.slot && req.slot !== again.slot) throw badRequest("promptId belongs to another slot");
+      const slot = again?.slot ?? req.slot ?? leastPractisedSlot(counts);
+      const p = again ?? selectDrillPrompt(content, pool, ctx.rand, slot);
       if (!p) throw new ApiError(422, `no prompts available for ${slot}`);
       prompts = [p];
       config.slot = slot;

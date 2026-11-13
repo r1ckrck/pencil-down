@@ -64,7 +64,7 @@ export function CreditLine({ credit }: { credit: NonNullable<CardCredit> }) {
         href={credit.sourceUrl}
         target="_blank"
         rel="noreferrer noopener"
-        className="underline decoration-hairline underline-offset-2 hover:text-fg hover:decoration-fg"
+        className="relative underline decoration-hairline underline-offset-2 after:absolute after:-inset-x-2 after:-inset-y-3.5 after:content-[''] hover:text-fg hover:decoration-fg"
       >
         source
       </a>

@@ -142,12 +142,21 @@ export function slotPlan(
 ): { topic: Topic; format: Format }[] {
   const rowT = topicQuotas(content.topicWeights?.weights ?? null);
   const colT = MOCK_FORMATS;
-  const m = TOPICS.map((t) =>
-    FORMAT_ORDER.map((f) => {
+  // Supply per cell: unseen eligible questions; unlimited where a generator covers the cell.
+  const cap = TOPICS.map((t) =>
+    FORMAT_ORDER.map((f) =>
+      gensFor(generators, t, f).length
+        ? Infinity
+        : content.questions.filter((q) => q.topic === t && q.format === f && isEligible(q, pool) && !pool.seen.has(q.id))
+            .length,
+    ),
+  );
+  const m = TOPICS.map((t, i) =>
+    FORMAT_ORDER.map((f, j) => {
       const unseen = content.questions.filter(
         (q) => q.topic === t && q.format === f && isEligible(q, pool) && !pool.seen.has(q.id),
       ).length;
-      return Math.max(unseen + (gensFor(generators, t, f).length ? 5 : 0), 0.01);
+      return Math.max(unseen + (cap[i][j] === Infinity ? 5 : 0), 0.01);
     }),
   );
   for (let it = 0; it < 100; it++) {
@@ -173,6 +182,21 @@ export function slotPlan(
         colLeft[c.j]--;
         if (strict) break;
       }
+  // Rounding can land a slot in a cell with no unseen supply. Move it with a 2×2 swap
+  // ((i,j)→(i,j2) and (i2,j2)→(i2,j)) that keeps both margins, so quotas hold without repeats.
+  for (let guard = 0; guard < 200; guard++) {
+    const over = cells.find(({ i, j }) => n[i][j] > cap[i][j]);
+    if (!over) break;
+    const { i, j } = over;
+    const swap = cells.find(
+      (c) => c.i !== i && c.j !== j && n[c.i][c.j] > 0 && n[i][c.j] < cap[i][c.j] && n[c.i][j] < cap[c.i][j],
+    );
+    if (!swap) break; // pool too thin: assembly falls back to the least recently seen
+    n[i][j]--;
+    n[i][swap.j]++;
+    n[swap.i][swap.j]--;
+    n[swap.i][j]++;
+  }
   return TOPICS.flatMap((t, i) => FORMAT_ORDER.flatMap((f, j) => Array.from({ length: n[i][j] }, () => ({ topic: t, format: f }))));
 }
 

@@ -11,7 +11,7 @@ import type { Mode, Switches } from "@/engine/modes";
 import { sessionHref } from "./api";
 
 export type BStartRequest =
-  | { kind: "b-drill"; slot?: Slot }
+  | { kind: "b-drill"; slot?: Slot; promptId?: string }
   | { kind: "b-mock" }
   | { kind: "b-past-paper"; bPaperId: string }
   | { kind: "full" };

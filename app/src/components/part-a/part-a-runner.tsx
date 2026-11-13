@@ -447,7 +447,7 @@ export function PartARunner({
             <p className="truncate text-small font-medium text-fg">
               {heading} <span className="text-mute">· {MODE_LABEL[st.session.mode]}</span>
             </p>
-            <p className="font-mono text-caption text-mute">
+            <p className="whitespace-nowrap font-mono text-caption text-mute">
               {current ? `Q ${pad(current.pos + 1)} / ${pad(total)}` : `${pad(total)} questions`}
             </p>
           </div>

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { SLOTS } from "@/content/types";
 import { ApiError } from "@/engine/errors";
+import { today } from "@/engine/progress";
 import {
   attempts,
   commit,
@@ -159,6 +160,27 @@ describe("Part B single drill", () => {
     expect(first.config.slot).toBe("sketching");
     quit(ctx, first.id);
     expect(createSession(ctx, { kind: "b-drill" }).config.slot).toBe("creativity");
+  });
+
+  it("re-attempt: the same prompt surfaces 10–14 days on and starts by promptId", () => {
+    const ctx = makeCtx();
+    const s = createSession(ctx, { kind: "b-drill", slot: "form" });
+    const pid = attempts(ctx.db, s.id)[0].prompt_id;
+    ctx.advance(24 * M);
+    sessionState(ctx, s.id); // auto-committed at the deadline, closed at the end
+    ctx.advance(10 * 24 * 60 * M - 24 * M - S);
+    expect(today(ctx).reattemptPromptIds).toEqual([]);
+    ctx.advance(S);
+    expect(today(ctx).reattemptPromptIds).toEqual([pid]);
+
+    expectApiError(() => createSession(ctx, { kind: "b-drill", promptId: "nope" }), 400);
+    expectApiError(() => createSession(ctx, { kind: "b-drill", promptId: pid, slot: "sketching" }), 400);
+    const again = createSession(ctx, { kind: "b-drill", promptId: pid });
+    expect(again.config.slot).toBe("form");
+    expect(attempts(ctx.db, again.id)[0].prompt_id).toBe(pid);
+    expect(again.ends_at - again.started_at).toBe(24 * M);
+    commit(ctx, again.id, 0, { label: "second go" });
+    expect(today(ctx).reattemptPromptIds).toEqual([]); // the newer attempt resets the clock
   });
 });
 

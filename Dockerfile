@@ -15,9 +15,12 @@ ENV NODE_ENV=production \
     HOSTNAME=0.0.0.0 \
     PENCIL_DATA_DIR=/data \
     PENCIL_CONTENT_DIR=/srv/content
+# V8 heap cap well inside the 512 MB container limit, so garbage is collected before the cgroup kills the process.
+ENV NODE_OPTIONS=--max-old-space-size=256
 COPY --from=build /repo/app/.next/standalone ./
 COPY --from=build /repo/app/.next/static ./.next/static
 COPY --from=build /repo/app/public ./public
 COPY --from=build /repo/content ./content
 EXPOSE 3000
-CMD ["node", "server.js"]
+# Group-writable files in /data (server reference §6): the host users share them through the group.
+CMD ["sh", "-c", "umask 002 && exec node server.js"]

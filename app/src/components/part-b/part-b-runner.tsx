@@ -423,7 +423,7 @@ function Frame({ children }: { children: React.ReactNode }) {
 function TopBar({ left, right }: { left: React.ReactNode; right?: React.ReactNode }) {
   return (
     <div className="flex min-h-touch items-center justify-between gap-4 pb-4">
-      <div className="min-w-0 truncate">{left}</div>
+      <div className="min-w-0">{left}</div>
       {right}
     </div>
   );
