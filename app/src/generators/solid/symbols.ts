@@ -9,8 +9,7 @@ export const SYMBOLS: Record<string, string> = {
   disc: `<circle r="0.2" ${F}/>`,
   ring: `<circle r="0.22" ${S}/>`,
   plus: `<path d="M-0.06 -0.26h0.12v0.2h0.2v0.12h-0.2v0.2h-0.12v-0.2h-0.2v-0.12h0.2Z" ${F}/>`,
-  cross: `<path d="M-0.2 -0.2L0.2 0.2M0.2 -0.2L-0.2 0.2" ${stroke(2.4)}/>`,
-  square: `<rect x="-0.2" y="-0.2" width="0.4" height="0.4" ${S}/>`,
+  bullseye: `<circle r="0.25" ${S}/><circle r="0.09" ${F}/>`,
   diamond: `<path d="M0 -0.26L0.26 0L0 0.26L-0.26 0Z" ${F}/>`,
   dots: `<circle cx="-0.14" cy="-0.14" r="0.07" ${F}/><circle cx="0.14" cy="-0.14" r="0.07" ${F}/><circle cx="-0.14" cy="0.14" r="0.07" ${F}/><circle cx="0.14" cy="0.14" r="0.07" ${F}/>`,
   // oriented
@@ -20,6 +19,8 @@ export const SYMBOLS: Record<string, string> = {
   tee: `<path d="M-0.24 -0.24h0.48v0.12h-0.18v0.36h-0.12v-0.36h-0.18Z" ${F}/>`,
 };
 
-export const SYMMETRIC = ["disc", "ring", "plus", "cross", "square", "diamond", "dots"];
+// No two symmetric marks turn into each other: an outlined square would read as a turned diamond and an X as a
+// turned plus once a face is turned or drawn in perspective, so neither is used.
+export const SYMMETRIC = ["disc", "ring", "bullseye", "plus", "diamond", "dots"];
 export const ORIENTED = ["arrow", "tri", "half", "tee"];
 export const isOriented = (s: string) => ORIENTED.includes(s);

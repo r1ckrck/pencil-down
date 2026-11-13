@@ -28,8 +28,8 @@ const TURN: Record<T, string> = {
   r90: "rotated 90° clockwise",
   r180: "rotated 180°",
   r270: "rotated 90° anticlockwise",
-  fh: "flipped over left to right",
-  fv: "flipped over top to bottom",
+  fh: "flipped over sideways (face down, its left and right edges swap)",
+  fv: "flipped over top to bottom (face down, its top and bottom edges swap)",
 };
 const NAMES = ["P", "Q", "R"];
 

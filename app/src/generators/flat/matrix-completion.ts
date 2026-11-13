@@ -55,7 +55,7 @@ function pickDistinct(rng: Rng, pool: number[], k: number) {
 
 function varyingRule(rng: Rng, attr: Attr, difficulty: Difficulty): Rule {
   if (attr === "shape") {
-    const t = rng.pick(difficulty === 1 ? (["byCol", "latinPlus"] as const) : (["byCol", "byRow", "latinPlus", "latinMinus"] as const));
+    const t = rng.pick(difficulty === 1 ? (["byCol", "byRow", "latinPlus"] as const) : (["byCol", "byRow", "latinPlus", "latinMinus"] as const));
     return { t, vals: pickDistinct(rng, SYMMETRIC, 3) };
   }
   if (attr === "fill") {
@@ -214,11 +214,13 @@ function describeCell(c: Cell): string {
 
 function generate(seed: number, difficulty: Difficulty, format: Format): GeneratedQuestion {
   if (format !== "MCQ") throw new Error(`${ID}: unsupported format ${format}`);
-  const rng = createRng(seed);
+  // each level draws its own grids (levels 1 and 2 share rule families, so a shared stream would repeat grids)
+  const rng = createRng(seed + difficulty * 1_000_003);
   for (;;) {
     const turning = rng.bool(0.35);
     const pool: Attr[] = [turning ? "angle" : "shape", "count", "fill"];
-    const varying = difficulty === 3 ? pool : rng.shuffle(pool).slice(0, difficulty);
+    // level 1: two attributes on simple rules; level 2: two attributes, any rule; level 3: all three
+    const varying = difficulty === 3 ? pool : rng.shuffle(pool).slice(0, 2);
     const rules = {} as Record<Attr, Rule>;
     for (const a of ATTRS) {
       if (varying.includes(a)) rules[a] = varyingRule(rng, a, difficulty);
@@ -227,6 +229,9 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
       else if (a === "count") rules[a] = { t: "const", v: rng.int(1, 3) };
       else rules[a] = { t: "const", v: rng.int(0, 2) };
     }
+    // level 2 needs at least one rule beyond "same down a column / along a row / shift one place"
+    const simple = (r: Rule) => r.t === "const" || r.t === "byCol" || r.t === "byRow" || r.t === "latinPlus" || (r.t === "linear" && r.d === 0);
+    if (difficulty === 2 && varying.every((a) => simple(rules[a]))) continue;
     const cells: Cell[] = [];
     for (let r = 0; r < 3; r++)
       for (let c = 0; c < 3; c++) cells.push(Object.fromEntries(ATTRS.map((a) => [a, evalRule(rules[a], r, c)])) as Cell);
@@ -234,6 +239,10 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
     const grid: (Cell | null)[] = [...cells.slice(0, 8), null];
     // reject grids that admit more than one reading
     if (ATTRS.some((a) => predict(grid, a).size !== 1)) continue;
+    // no copy-the-neighbour grids: the bottom row must not repeat a row above, nor the right column a column
+    const same = (i: number, j: number) => cellKey(cells[i]) === cellKey(cells[j]);
+    if ([0, 1, 2].every((c) => same(6 + c, c)) || [0, 1, 2].every((c) => same(6 + c, 3 + c))) continue;
+    if ([0, 1, 2].every((r) => same(3 * r + 2, 3 * r)) || [0, 1, 2].every((r) => same(3 * r + 2, 3 * r + 1))) continue;
 
     // distractors: one attribute off, preferring values that appear in the grid
     const cand: { cell: Cell; key: string; correct: boolean }[] = [];
@@ -258,8 +267,17 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
     }
     // interleave so the three distractors spread over attributes where possible
     const byAttr = attrsByPriority.map((a) => cand.filter((c) => c.cell[a] !== answer[a]));
-    const ordered: typeof cand = [];
+    let ordered: typeof cand = [];
     for (let i = 0; ordered.length < cand.length && i < 12; i++) for (const list of byAttr) if (list[i]) ordered.push(list[i]);
+    if (difficulty === 1) {
+      // every option uses only values that appear in the grid: one or both varying attributes swapped for another
+      // value seen in the grid, so all four options look like they belong
+      const seen = (a: Attr) => [...new Set(cells.slice(0, 8).map((c) => c[a]))].filter((v) => v !== answer[a]);
+      const [a, b] = varying;
+      const singles = [...seen(a).map((v) => ({ ...answer, [a]: v })), ...seen(b).map((v) => ({ ...answer, [b]: v }))];
+      const doubles = seen(a).flatMap((va) => seen(b).map((vb) => ({ ...answer, [a]: va, [b]: vb })));
+      ordered = [...rng.shuffle(singles), ...rng.shuffle(doubles)].map((cell) => ({ cell, key: cellKey(cell), correct: false }));
+    }
     const right = { cell: answer, key: cellKey(answer), correct: true };
     const items = [right, ...takeDistinct(ordered, 3, new Set([right.key]))];
     if (items.length !== 4) continue;

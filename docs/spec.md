@@ -273,9 +273,11 @@ Animated-GIF questions are excluded. Topic tagging and explanations are written 
 | ortho-to-iso | 3d-visualisation | MCQ | Candidates projected and compared |
 | matrix-completion | logic-and-counting | MCQ | Rule applied per row/column |
 | transparent-overlay | folding-and-patterns | MCQ | Union of transformed layers |
-| visible-faces | 3d-visualisation | NAT, MCQ | Face visibility from a view direction. The stem states that a hidden cube only ever holds up a visible one; generation rejects any stack whose drawing leaves a column height open under that rule |
+| visible-faces | 3d-visualisation | NAT, MCQ | Face visibility from a view direction. The figure draws the floor grid; the stem states its size and the rule (piles on the floor, the top of every pile visible); a complete reading search rejects any stack whose drawing has a second reading under that rule |
 
 Every generator: seed → identical question; difficulty 1–3; distractors are near-misses (mirror instead of rotation, one cell off); rendered as SVG in the design palette.
+
+Isometric solids (rotation-3d, iso-to-ortho, ortho-to-iso) follow one stated convention: "all cubes are visible; there are no hidden cubes". Every cube in every drawing shows, no other all-visible solid draws the same picture, and no completely hidden extra cube can make a wrong option right. Orthographic views: thick lines = edge of the view or a step in depth, thin = cubes side by side (stated in the stem). Numeric options put the key at an end about half the time.
 
 ### 7.4 Eligibility (applies before any assembly)
 - **Retired:** a real question answered correctly twice (any mode, any time) is never served again. Generated questions are unique per seed, so they never repeat by construction.

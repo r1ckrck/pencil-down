@@ -77,7 +77,7 @@ function build(rng: Rng, difficulty: Difficulty, axis: Axis): { fig: Drawing; ca
             cand(t("r180"), false, "a half turn"),
           ]
         : [
-            cand(wordDrawing(word, { flipEach: "v", reverse: true }), false, "a half turn"),
+            cand(wordDrawing(word, { flipEach: "v", reverse: true }), false, "letters upside down but in reverse order"),
             cand(wordDrawing(word, { flipEach: "h" }), false, "letters flipped sideways instead of upside down"),
             cand(t("fh"), false, otherName),
             cand(wordDrawing(word, { reverse: true }), false, "order reversed but letters not flipped"),

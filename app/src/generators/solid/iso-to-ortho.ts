@@ -1,5 +1,8 @@
 // iso-to-ortho (MCQ): isometric drawing with an arrow; pick the orthographic view in that direction.
-// Views show the unit grid thinly and every depth step as a heavier line, like a technical drawing.
+// Views show the unit grid thinly and every depth step as a thick line, like a technical drawing; the stem states
+// both conventions ("all cubes are visible", thick vs thin lines). Every cube in the drawing shows, the drawing has
+// no other all-visible reading (objects.readable), and no completely hidden extra cube would turn the view into a
+// wrong option.
 //
 // Data: figure <svg data-voxels="..." data-ask="top|front|side">; options <svg data-view="w h d,d,./...">.
 // Construction projects voxels onto the picture plane (nearest wins). The solver casts a ray per cell
@@ -8,7 +11,7 @@ import type { Difficulty, Format, GeneratedQuestion, Generator, SimpleAnswer } f
 import { createRng } from "../rng";
 import { arrange, answerFrom, qid } from "./common";
 import { isoPiece } from "./iso";
-import { mirrorSolid, nearMiss, randomSolid, viewArrow, viewVisibleInIso } from "./objects";
+import { hiddenAdditions, mirrorSolid, nearMiss, randomSolid, viewArrow, viewVisibleInIso } from "./objects";
 import {
   type View,
   type ViewDir,
@@ -37,13 +40,14 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
     const seen = new Set([signature(correct)]);
     const outline = signature(correct, false);
     const wrong: View[] = [];
-    const later: View[] = [];
+    // distractors with the key's outline differ only in thick depth lines: none at level 1, at most one at 2
+    const sameOutlineCap = difficulty === 1 ? 0 : difficulty === 2 ? 1 : 3;
+    let sameOutline = 0;
     const add = (v: View | null) => {
       if (!v || wrong.length >= 3) return;
-      // easy level: first take distractors whose outline already differs
-      if (difficulty === 1 && signature(v, false) === outline) {
-        later.push(v);
-        return;
+      if (signature(v, false) === outline) {
+        if (sameOutline >= sameOutlineCap) return;
+        if (!seen.has(signature(v))) sameOutline++;
       }
       const s = signature(v);
       if (seen.has(s)) return;
@@ -64,14 +68,10 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
     }
     for (let i = 0; i < 12 && wrong.length < 3; i++) add(near());
     for (const o of others) add(o);
-    for (const v of later) {
-      const s = signature(v);
-      if (wrong.length < 3 && !seen.has(s)) {
-        seen.add(s);
-        wrong.push(v);
-      }
-    }
     if (wrong.length < 3) continue;
+    // a cube hidden in the drawing must not be able to turn the view into a wrong option
+    const wrongSigs = new Set(wrong.map((v) => signature(v)));
+    if (hiddenAdditions(solid.vs).some((vs) => wrongSigs.has(signature(project(vs, ask))))) continue;
 
     const views = [correct, ...wrong];
     const svgs = rootAll(
@@ -93,10 +93,12 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
       svgs.map((svg, i) => ({ svg, correct: i === 0 })),
       "MCQ",
     );
+    const rules =
+      "The solid is made of identical cubes, and all of them are visible: there are no hidden cubes. In the options, thick lines are the edge of the view or a step in depth; thin lines separate cubes at the same depth.";
     const stem =
       ask === "top"
-        ? "Which option is the top view of the object, drawn with its front edge at the bottom?"
-        : "Which option shows the object as seen in the direction of the arrow?";
+        ? `${rules} Which option is the top view, looking down as the Top arrow shows, with the Front side at the bottom?`
+        : `${rules} Which option is the view looking straight along the arrow?`;
     return {
       id: qid("iso-to-ortho", format, difficulty, seed),
       generator: "iso-to-ortho",
@@ -109,7 +111,7 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
       options,
       answer,
       explanation:
-        `**${label[0]}**. Count cubes across and up in the viewing direction to get the outline, then mark a heavier line wherever two neighbouring faces sit at different depths. ` +
+        `**${label[0]}**. Count cubes across and up in the viewing direction to get the outline, then draw a thick line wherever two neighbouring faces sit at different depths. ` +
         `The other options are mirrored, seen from another side, or belong to a solid with one cube changed.`,
     };
   }

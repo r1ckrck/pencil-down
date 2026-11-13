@@ -12,14 +12,15 @@
 // Solver: exhaustive branch-and-bound over every cell height in {1, min(front, side)}.
 import type { Difficulty, Format, GeneratedQuestion, Generator, SimpleAnswer } from "@/content/types";
 import { createRng } from "../rng";
-import { arrange, answerFrom, numericDistractors, optionValue, qid } from "./common";
+import { arrange, answerFrom, optionValue, qid, spreadDistractors } from "./common";
 import { threeViewPiece, type View } from "./ortho";
 import { numberOption, readData, root } from "./svg";
 import { randomHeights } from "./voxel";
 
+// Levels do not overlap in grid size: 2 x 3 up to 2 high, 3 x 3 up to 3 high, 3-4 x 4 up to 4 high.
 const DIMS: Record<Difficulty, { rows: [number, number]; cols: [number, number]; maxH: number; fill: number }> = {
-  1: { rows: [2, 3], cols: [3, 3], maxH: 3, fill: 0.85 },
-  2: { rows: [3, 3], cols: [3, 4], maxH: 3, fill: 0.8 },
+  1: { rows: [2, 2], cols: [3, 3], maxH: 2, fill: 0.85 },
+  2: { rows: [3, 3], cols: [3, 3], maxH: 3, fill: 0.8 },
   3: { rows: [3, 4], cols: [4, 4], maxH: 4, fill: 0.8 },
 };
 
@@ -123,7 +124,7 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
   });
 
   const stem =
-    "Top, front and right-side views of a stack of identical cubes are shown (top view above the front view, side view to its right). What is the minimum number of cubes needed to make this stack?";
+    "Top, front and right side views of a stack of identical cubes are shown: the top view above the front view, and the right side view, seen from the right so the front of the stack is on its left, beside it. What is the minimum number of cubes needed to make this stack?";
   const explanation =
     `**${answer}**. Every square of the top view needs at least one cube (${cells.length}). ` +
     `Each column of the front view and each column of the side view then needs one cube raised to its height; ` +
@@ -142,7 +143,7 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
     explanation,
   };
   if (format === "NAT") return { ...base, options: null, answer: { kind: "NAT", min: answer, max: answer } };
-  const wrong = numericDistractors(rng, answer, rng.shuffle([maxCount, actual, cells.length, answer + 1]));
+  const wrong = spreadDistractors(rng, answer, [maxCount, actual, cells.length], 1);
   const { options, answer: key } = arrange(
     rng,
     [answer, ...wrong].map((v, i) => ({ svg: numberOption(v), correct: i === 0 })),

@@ -1,4 +1,4 @@
-// rotation-3d (MCQ): a polycube on the left; one option is the same solid turned, the others are its
+// rotation-3d (MCQ): a polycube is shown; one option is the same solid turned, the others are its
 // mirror image or a near-miss (one cube moved), each drawn in its own random orientation.
 //
 // Data: every <svg> carries data-voxels="x,y,z x,y,z ..." for exactly the cubes drawn.
@@ -8,6 +8,7 @@ import type { Difficulty, Format, GeneratedQuestion, Generator, SimpleAnswer } f
 import { createRng, type Rng } from "../rng";
 import { arrange, answerFrom, qid } from "./common";
 import { isoPiece, readableFree } from "./iso";
+import { isoAlternatives } from "./iso-reading";
 import { readData, root, rootAll } from "./svg";
 import {
   ROTATIONS,
@@ -24,17 +25,29 @@ import {
 
 const SIZE: Record<Difficulty, [number, number]> = { 1: [4, 5], 2: [5, 6], 3: [7, 8] };
 
-/** A random orientation of `vs` that draws without hidden or floating-looking cubes. */
+/**
+ * A random orientation of `vs` that draws with every cube showing (at least `minTris` triangles), no
+ * floating-looking overlaps, and no other all-visible reading of the drawing.
+ */
 export function readableTurn(rng: Rng, vs: Vox[], avoid: string[] = [], minTris = 2): Vox[] | null {
   for (const m of rng.shuffle(ROTATIONS)) {
     const r = rotate(vs, m);
     if (avoid.includes(serial(r))) continue;
-    if (readableFree(r, minTris)) return r;
+    if (readableFree(r, minTris) && isoAlternatives(r, 3, 1).length === 0) return r;
   }
   return null;
 }
 
 export const enc = (vs: Vox[]) => serial(vs);
+
+// The figure (~360 px) is framed so its cubes draw about 1.6x the option cubes (~140 px), not 4x.
+function frameFor(sets: Vox[][]): { w: number; h: number } {
+  const boxes = sets.map((vs) => isoPiece(vs).box);
+  const w = Math.max(...boxes.map((b) => b.x1 - b.x0)) + 12;
+  const h = Math.max(...boxes.map((b) => b.y1 - b.y0)) + 12;
+  const k = 360 / 140 / 1.6;
+  return { w: w * k, h: h * 1.1 };
+}
 
 function build(rng: Rng, d: Difficulty) {
   for (;;) {
@@ -89,8 +102,8 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
     difficulty,
     format,
     topic: "3d-visualisation",
-    stem: "Which option shows the same solid as the one on the left, only turned to a different position?",
-    figure: root(isoPiece(shown), { kind: "voxels", voxels: enc(shown) }),
+    stem: `The solid shown is made of ${shown.length} identical cubes, and every cube in it and in the options is visible: there are no hidden cubes. Which option shows the same solid, only turned to a different position?`,
+    figure: root(isoPiece(shown), { kind: "voxels", voxels: enc(shown) }, 6, frameFor(sets)),
     options,
     answer: key,
     explanation:

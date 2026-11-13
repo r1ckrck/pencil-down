@@ -9,7 +9,7 @@ import type { Difficulty, Format, GeneratedQuestion, Generator, SimpleAnswer } f
 import { createRng } from "../rng";
 import { arrange, answerFrom, qid } from "./common";
 import { isoPiece } from "./iso";
-import { type Solid, mirrorSolid, nearMiss, randomSolid, readable } from "./objects";
+import { type Solid, hiddenAdditions, mirrorSolid, nearMiss, randomSolid, readable } from "./objects";
 import { VIEW_DIRS, decodeView, encodeView, project, rayView, signature, threeViewPiece } from "./ortho";
 import { readData, root, rootAll } from "./svg";
 import { canonical, parseVoxels, serial } from "./voxel";
@@ -27,6 +27,8 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
       if (!s || wrong.length >= 3 || !readable(s)) return;
       const c = canonical(s.vs);
       if (canon.has(c) || viewsKey(s) === key) return;
+      // no completely hidden extra cube may make this wrong option fit all three views
+      if (hiddenAdditions(s.vs).some((vs) => viewsKey({ vs, heights: null }) === key)) return;
       canon.add(c);
       wrong.push(s);
     };
@@ -61,7 +63,7 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
       difficulty,
       format,
       topic: "3d-visualisation",
-      stem: "Top, front and right-side views of a solid are shown; heavier lines inside a view mark a step in depth. Which option is the solid, drawn with its front face on the left?",
+      stem: "Top, front and right side views of a solid made of identical cubes are shown. In the views, thick lines are the edge of the view or a step in depth; thin lines separate cubes at the same depth. In the options all cubes are visible: there are no hidden cubes. Which option is the solid, drawn with its front face on the left?",
       figure,
       options,
       answer,

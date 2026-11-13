@@ -1,8 +1,9 @@
 // visible-faces (NAT, MCQ): a stack of cubes on a floor, every cube resting on the floor or another cube.
 // Two registrations share this file:
-//   visible-faces    — retired; kept so questions already served still regenerate identically.
-//   visible-faces-2  — current; the stem states the convention (hidden cubes only hold up visible ones) and
-//                      generation rejects any stack whose drawing does not pin down every column height under it.
+//   visible-faces    — retired; never selected again (served questions replay from snapshots / legacy-v1).
+//   visible-faces-2  — current; the figure draws the floor grid, the stem states its size and the reading rule
+//                      (piles on the floor, the top of every pile visible), and generation keeps only stacks whose
+//                      drawing has exactly one reading under that rule (complete search, stack-reading.ts).
 // Asks one of:
 //   hidden     — how many cubes cannot be seen in this drawing
 //   painted    — the stack is painted on every exposed surface except the base; how many cube faces get paint
@@ -15,17 +16,18 @@
 // towards the viewer.
 import type { Difficulty, Format, GeneratedQuestion, Generator, SimpleAnswer } from "@/content/types";
 import { createRng } from "../rng";
-import { arrange, answerFrom, numericDistractors, optionValue, qid } from "./common";
-import { isoPiece, isoScene, readableStack } from "./iso";
-import { numberOption, readData, root } from "./svg";
+import { arrange, answerFrom, numericDistractors, optionValue, qid, spreadDistractors } from "./common";
+import { floorPiece, isoPiece, isoScene, readableStack } from "./iso";
+import { countReadings, pilesOf } from "./stack-reading";
+import { numberOption, readData, root, union } from "./svg";
 import { DIRS6, type Vox, fromHeights, isConnected, vkey } from "./voxel";
 
 type Ask = "hidden" | "painted" | `painted:${number}`;
 
 const SHAPE: Record<Difficulty, { rows: number; cols: [number, number]; maxH: number; asks: ("hidden" | "painted" | "k")[] }> = {
   1: { rows: 3, cols: [3, 3], maxH: 2, asks: ["hidden", "k"] },
-  2: { rows: 3, cols: [3, 4], maxH: 3, asks: ["hidden", "k"] },
-  3: { rows: 3, cols: [4, 4], maxH: 4, asks: ["k", "painted", "hidden"] },
+  2: { rows: 3, cols: [3, 4], maxH: 3, asks: ["hidden", "k", "painted"] }, // "painted" only for small stacks (below)
+  3: { rows: 3, cols: [4, 4], maxH: 4, asks: ["k", "hidden"] },
 };
 
 function paintedPerCube(vs: Vox[]): number[] {
@@ -39,49 +41,13 @@ function paintedPerCube(vs: Vox[]): number[] {
   );
 }
 
-// Drawing signature in absolute lattice coordinates: per visible triangle its face, and for each lattice neighbour
-// whether it is empty, the same cube, or another cube (that decides which lines are drawn). Equal signatures
-// mean identical pictures.
-function picture(vs: Vox[]): string {
-  const scene = isoScene(vs);
-  const parts: string[] = [];
-  const rel = (vi: number, k: number) => {
-    const o = scene.get(k);
-    return o === undefined ? 0 : o.vi === vi ? 1 : 2;
-  };
-  for (const [k, o] of scene) {
-    const h = k & 1;
-    const r = k >> 1;
-    const i = Math.floor(r / 512);
-    const j = r % 512;
-    const tk = (a: number, b: number, c: number) => ((a * 512 + b) << 1) + c;
-    const nb = h === 0 ? [tk(i, j, 1), tk(i - 1, j, 1), tk(i, j + 1, 1)] : [tk(i, j, 0), tk(i, j - 1, 0), tk(i + 1, j, 0)];
-    parts.push(`${k}:${o.face}:${nb.map((n) => rel(o.vi, n)).join("")}`);
-  }
-  return parts.sort().join("|");
-}
-
-const columns = (H: number[][]): Vox[] =>
-  H.flatMap((row, x) => row.flatMap((n, y) => Array.from({ length: n }, (_, z): Vox => [x, y, z])));
-
 /**
- * True when, under the stem's rule (a hidden cube is only ever there to hold up a cube you can see, so every
- * column's top shows), no single-column change, one cube more or less including a new column in a one-cell
- * margin, draws the same picture.
+ * True when the drawing has exactly one reading under the stem's rule: piles on a rows x cols floor grid, every
+ * cube on the floor or on another cube, the top of every pile visible. Complete search over every height for
+ * every visible top face (stack-reading.ts).
  */
 function determined(H: number[][]): boolean {
-  const P = [new Array(H[0].length + 2).fill(0), ...H.map((r) => [0, ...r, 0]), new Array(H[0].length + 2).fill(0)];
-  const base = picture(columns(P));
-  for (let x = 0; x < P.length; x++)
-    for (let y = 0; y < P[0].length; y++)
-      for (const d of [1, -1]) {
-        if (P[x][y] + d < 0) continue;
-        const Q = P.map((r) => [...r]);
-        Q[x][y] += d;
-        const q = columns(Q);
-        if (q.length && readableStack(q) && picture(q) === base) return false;
-      }
-  return true;
+  return countReadings(pilesOf(H), 2, { rows: H.length, cols: H[0].length }).count === 1;
 }
 
 function hiddenCount(vs: Vox[]): number {
@@ -115,6 +81,7 @@ function generateWith(strict: boolean, seed: number, difficulty: Difficulty, for
       ask = "hidden";
       alt = [vs.length - answer, answer + 1];
     } else if (kind === "painted") {
+      if (strict && vs.length > 12) continue; // keep the face count to a two-minute job
       answer = per.reduce((a, b) => a + b, 0);
       ask = "painted";
       const bases = vs.filter((v) => v[2] === 0).length;
@@ -128,7 +95,7 @@ function generateWith(strict: boolean, seed: number, difficulty: Difficulty, for
     }
 
     const stemBase = strict
-      ? "The stack of identical cubes rests on a floor, and every cube sits on the floor or on another cube. A cube you cannot see is there only to hold up a cube you can see; count those too."
+      ? `Identical cubes stand in piles on a ${p.rows} × ${cols} grid of squares drawn on the floor. Every cube sits on the floor or on another cube, and the top of every pile can be seen.`
       : "The stack of identical cubes rests on a floor, and every cube sits on the floor or on another cube.";
     const stem =
       ask === "hidden"
@@ -138,12 +105,15 @@ function generateWith(strict: boolean, seed: number, difficulty: Difficulty, for
           : `${stemBase} Every exposed surface except the base is painted. How many cubes have exactly ${ask.slice(8)} painted face${ask.slice(8) === "1" ? "" : "s"}?`;
     const explanation =
       ask === "hidden"
-        ? `**${answer}**. Read each column's height from its top face: ${vs.length} cubes in all. Subtract every cube that shows at least part of a face; ${answer} ${answer === 1 ? "stays" : "stay"} hidden behind or under others.`
+        ? `**${answer}**. Read each pile's height from its top face down to the floor: ${vs.length} cubes in all. Subtract every cube that shows at least part of a face; ${answer} ${answer === 1 ? "stays" : "stay"} hidden behind or under others.`
         : ask === "painted"
           ? `**${answer}**. Count the top of each column, then the side faces column by column: a side is painted for every level above the neighbouring column's height. Faces resting on the floor stay bare.`
           : `**${answer}**. Read each column's height from its top face; every column is solid down to the floor, so cubes hidden behind or under others count too. For each cube, count its exposed sides and top (a top counts only for the highest cube in its column); faces on the floor stay bare. ${answer} cube${answer === 1 ? " has" : "s have"} exactly ${ask.slice(8)}.`;
 
-    const figure = root(isoPiece(vs), {
+    const cubes = isoPiece(vs);
+    const floor = strict ? floorPiece(vs, p.rows, cols) : null;
+    const pic = floor ? { body: floor.body + cubes.body, box: union(cubes.box, floor.box) } : cubes;
+    const figure = root(pic, {
       kind: "stack",
       heights: H.map((r) => r.join(",")).join("/"),
       ask,
@@ -160,7 +130,7 @@ function generateWith(strict: boolean, seed: number, difficulty: Difficulty, for
       explanation,
     };
     if (format === "NAT") return { ...base, options: null, answer: { kind: "NAT", min: answer, max: answer } };
-    const wrong = numericDistractors(rng, answer, rng.shuffle(alt));
+    const wrong = strict ? spreadDistractors(rng, answer, alt) : numericDistractors(rng, answer, rng.shuffle(alt));
     const { options, answer: key } = arrange(
       rng,
       [answer, ...wrong].map((v, i) => ({ svg: numberOption(v), correct: i === 0 })),

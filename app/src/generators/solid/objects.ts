@@ -2,11 +2,14 @@
 // free polycubes with overhangs for difficulty 3.
 import type { Difficulty } from "@/content/types";
 import type { Rng } from "../rng";
-import { isoScene, project as isoProject, readableFree, readableStack, visibleFaces } from "./iso";
+import { isoScene, project as isoProject, readableFree, readableStack, visibleCounts, visibleFaces } from "./iso";
+import { isoAlternatives } from "./iso-reading";
 import { type ViewDir } from "./ortho";
 import { arrow, text } from "./svg";
 import {
+  DIRS6,
   type Vox,
+  vkey,
   fromHeights,
   growPolycube,
   isConnected,
@@ -19,8 +22,54 @@ export interface Solid {
   heights: number[][] | null; // set for stacks
 }
 
+/**
+ * Drawable under the stated rule "all cubes are visible; there are no hidden cubes": every cube shows at least
+ * two triangles, and no other solid with every cube visible draws the same picture (iso-reading.ts).
+ */
 export function readable(s: Solid): boolean {
-  return s.heights ? readableStack(s.vs) : readableFree(s.vs, 2);
+  if (s.heights ? !readableStack(s.vs, 1) || visibleCounts(s.vs).some((c) => c < 2) : !readableFree(s.vs, 2)) return false;
+  return isoAlternatives(s.vs, 3, 1).length === 0;
+}
+
+/** Empty cells next to the solid where a cube would be completely hidden in the isometric drawing. */
+export function hiddenAdditions(vs: Vox[]): Vox[][] {
+  const set = new Set(vs.map(vkey));
+  const out: Vox[][] = [];
+  const seen = new Set<string>();
+  for (const v of vs)
+    for (const d of DIRS6) {
+      const c: Vox = [v[0] + d[0], v[1] + d[1], v[2] + d[2]];
+      const k = vkey(c);
+      if (set.has(k) || seen.has(k)) continue;
+      seen.add(k);
+      const next = [...vs, c];
+      if (visibleCounts(next)[vs.length] === 0) out.push(next);
+    }
+  return out;
+}
+
+/**
+ * Random height map in which every cube shows at least two triangles. A cube can only be covered by cubes in
+ * columns at or in front of it on both axes (x' >= x, y' >= y), so columns are filled front to back and each
+ * one takes a random height among those that leave all of its cubes visible.
+ */
+function visibleHeights(rng: Rng, rows: number, cols: number, maxH: number, fill: number): number[][] {
+  const h = Array.from({ length: rows }, () => Array(cols).fill(0) as number[]);
+  const placed: Vox[] = [];
+  for (let x = rows - 1; x >= 0; x--)
+    for (let y = cols - 1; y >= 0; y--) {
+      if (!rng.bool(fill)) continue;
+      const ok: number[] = [];
+      for (let n = 1; n <= maxH; n++) {
+        const col = Array.from({ length: n }, (_, z): Vox => [x, y, z]);
+        const counts = visibleCounts([...placed, ...col]);
+        if (counts.slice(placed.length).every((c) => c >= 2)) ok.push(n);
+      }
+      if (!ok.length) continue;
+      h[x][y] = rng.pick(ok);
+      for (let z = 0; z < h[x][y]; z++) placed.push([x, y, z]);
+    }
+  return h;
 }
 
 export function randomSolid(rng: Rng, d: Difficulty): Solid {
@@ -33,9 +82,7 @@ export function randomSolid(rng: Rng, d: Difficulty): Solid {
       const rows = 3;
       const cols = d === 1 ? 3 : rng.int(3, 4);
       const maxH = d === 1 ? 2 : 3;
-      const heights: number[][] = Array.from({ length: rows }, () =>
-        Array.from({ length: cols }, () => (rng.bool(0.82) ? rng.int(1, maxH) : 0)),
-      );
+      const heights = visibleHeights(rng, rows, cols, maxH, 0.82);
       const vs = fromHeights(heights);
       if (vs.length < 4 || !isConnected(vs)) continue;
       if (new Set(vs.map((v) => v[0])).size !== rows || new Set(vs.map((v) => v[1])).size !== cols) continue;
@@ -96,12 +143,13 @@ export function viewArrow(vs: Vox[], dir: ViewDir, label: string): { body: strin
   const mz = Math.max(...vs.map((v) => v[2])) + 1;
   let a: [number, number, number];
   let b: [number, number, number];
+  // front and side arrows point straight at the middle of that face
   if (dir === "front") {
-    a = [mx + 2.4, my / 2, 0.3];
-    b = [mx + 0.45, my / 2, 0.3];
+    a = [mx + 2.6, my / 2, mz / 2];
+    b = [mx + 0.4, my / 2, mz / 2];
   } else if (dir === "side") {
-    a = [mx / 2, my + 2.4, 0.3];
-    b = [mx / 2, my + 0.45, 0.3];
+    a = [mx / 2, my + 2.6, mz / 2];
+    b = [mx / 2, my + 0.4, mz / 2];
   } else {
     a = [0.3, 0.3, mz + 2];
     b = [0.3, 0.3, mz + 0.45];
@@ -110,7 +158,7 @@ export function viewArrow(vs: Vox[], dir: ViewDir, label: string): { body: strin
   const [x1, y1] = isoProject(...b);
   const lx = x0 + (x0 - x1) * 0.18;
   const ly = y0 + (y0 - y1) * 0.18 + 4;
-  const body = arrow(x0, y0, x1, y1, 8) + text(lx, ly, label, 10);
+  const body = arrow(x0, y0, x1, y1, 8) + text(lx, ly, label);
   const half = label.length * 3.2;
   return {
     body,

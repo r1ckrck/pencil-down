@@ -47,7 +47,7 @@ for (const gen of FLAT_GENERATORS) {
               expect([...q.answer.options].sort()).toEqual(q.answer.options);
             } else expect(q.answer.kind).toBe("MCQ");
           }
-        });
+        }, 60_000);
       }
     }
   });

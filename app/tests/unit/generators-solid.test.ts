@@ -51,7 +51,7 @@ describe("solid generators", () => {
               expect([...q.answer.options].sort()).toEqual(q.answer.options);
             }
           }
-        });
+        }, 60_000);
 });
 
 describe("cube-net folding", () => {

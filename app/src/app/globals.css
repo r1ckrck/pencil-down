@@ -151,7 +151,7 @@
   }
 }
 
-/* Generator SVG vocabulary: ink is currentColor; .mute → secondary ink; .soft → faint ink for fills. */
+/* Generator SVG vocabulary: ink is currentColor; .mute → secondary ink; .soft → a faint ink fill (strokes keep full ink). */
 @layer components {
   .figure svg {
     color: var(--fg);
@@ -160,7 +160,7 @@
     color: var(--mute);
   }
   .figure svg .soft {
-    color: color-mix(in oklab, var(--fg) 16%, transparent);
+    fill: color-mix(in oklab, var(--fg) 20%, transparent);
   }
 }
 

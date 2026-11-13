@@ -23,13 +23,15 @@ export const n2 = (v: number) => {
 export const W_OUTLINE = 2.2;
 export const W_EDGE = 1.5;
 export const W_GRID = 0.6;
+export const W_FLOOR = 0.9;
 
 export const stroke = (w: number, extra = "") =>
   `fill="none" stroke="currentColor" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"${extra}`;
 
-// Shading: top faces soft, front faces mute, side faces left open.
-export const FILL_SOFT = `class="soft" fill="currentColor" fill-opacity="0.12"`;
-export const FILL_MUTE = `class="mute" fill="currentColor" fill-opacity="0.3"`;
+// Shading, three clear tones in both themes: top faces light (the app paints .soft with a faint ink fill; the
+// opacity here keeps tops lighter than flat .soft areas), front faces mid (secondary ink), side faces open.
+export const FILL_SOFT = `class="soft" fill="currentColor" fill-opacity="0.6"`;
+export const FILL_MUTE = `class="mute" fill="currentColor" fill-opacity="0.45"`;
 // Unit-grid lines between coplanar faces recede so real edges and depth steps read first.
 export const GRID_LINE = ` stroke-opacity="0.5"`;
 
@@ -52,8 +54,15 @@ export const translate = (p: Piece, dx: number, dy: number): Piece => ({
   box: { x0: p.box.x0 + dx, y0: p.box.y0 + dy, x1: p.box.x1 + dx, y1: p.box.y1 + dy },
 });
 
-export function text(x: number, y: number, s: string, size = 10, anchor = "middle"): string {
-  return `<text x="${n2(x)}" y="${n2(y)}" font-size="${size}" text-anchor="${anchor}" fill="currentColor">${s}</text>`;
+// Labels inside figures are sized by root() so every figure shows them at the same on-screen size, whatever its
+// viewBox: a figure is drawn ~360 px wide, so LABEL_PX / 360 of the frame width gives ~15 px text.
+const LABEL = "label";
+const LABEL_PX = 15;
+const FIGURE_PX = 360;
+
+/** Text at a fixed size, or (no size) a figure label sized by root(). */
+export function text(x: number, y: number, s: string, size?: number, anchor = "middle"): string {
+  return `<text x="${n2(x)}" y="${n2(y)}" font-size="${size ?? LABEL}" text-anchor="${anchor}" fill="currentColor">${s}</text>`;
 }
 
 const attrs = (data: Record<string, string>) =>
@@ -69,7 +78,8 @@ export function root(p: Piece, data: Record<string, string> = {}, pad = 6, size?
   const H = Math.max(h, size?.h ?? 0) + 2 * pad;
   const x = p.box.x0 - (W - w) / 2;
   const y = p.box.y0 - (H - h) / 2;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${n2(x)} ${n2(y)} ${n2(W)} ${n2(H)}"${attrs(data)}>${p.body}</svg>`;
+  const body = p.body.replaceAll(`font-size="${LABEL}"`, `font-size="${n2((W * LABEL_PX) / FIGURE_PX)}"`);
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${n2(x)} ${n2(y)} ${n2(W)} ${n2(H)}"${attrs(data)}>${body}</svg>`;
 }
 
 /** Root several pieces in one shared frame so options draw at the same scale. */

@@ -21,6 +21,7 @@ import {
   W_GRID,
   GRID_LINE,
   W_OUTLINE,
+  W_FLOOR,
 } from "./svg";
 
 export const UNIT = 20;
@@ -188,5 +189,36 @@ export function isoPiece(vs: Vox[]): Piece {
     (lines[2] ? `<path d="${lines[2]}" ${stroke(W_GRID, GRID_LINE)}/>` : "") +
     (lines[1] ? `<path d="${lines[1]}" ${stroke(W_EDGE)}/>` : "") +
     (lines[0] ? `<path d="${lines[0]}" ${stroke(W_OUTLINE)}/>` : "");
+  return { body, box };
+}
+
+/**
+ * The floor grid under a pile stack: rows x cols squares at z = 0, drawn only where no cube covers it, in thin
+ * secondary ink. Floor square (x, y) is the top face of a virtual cube at (x, y, -1), so its two triangles are
+ * lattice cell (x, y) and it shows exactly where the cubes leave that cell empty.
+ */
+export function floorPiece(vs: Vox[], rows: number, cols: number): Piece {
+  const scene = isoScene(vs);
+  const seg = new Set<string>();
+  const box = emptyBox();
+  const add = (a: [number, number], b: [number, number]) => {
+    const [x0, y0] = lat(...a);
+    const [x1, y1] = lat(...b);
+    grow(box, x0, y0);
+    grow(box, x1, y1);
+    seg.add(`M${n2(x0)} ${n2(y0)}L${n2(x1)} ${n2(y1)}`);
+  };
+  for (let x = 0; x < rows; x++)
+    for (let y = 0; y < cols; y++) {
+      if (!scene.has(tk(x, y, U))) {
+        add([x, y], [x, y + 1]);
+        add([x, y + 1], [x + 1, y + 1]);
+      }
+      if (!scene.has(tk(x, y, L))) {
+        add([x, y], [x + 1, y]);
+        add([x + 1, y], [x + 1, y + 1]);
+      }
+    }
+  const body = seg.size ? `<g class="mute"><path d="${[...seg].sort().join("")}" ${stroke(W_FLOOR)}/></g>` : "";
   return { body, box };
 }

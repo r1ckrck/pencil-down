@@ -173,7 +173,7 @@ function build(rng: Rng, difficulty: Difficulty, edgeBias: number): Built {
         if (d.some((v) => v > 1e-9 && v < 1)) continue;
         if (!touching.length) {
           if (x % 1 === 0.5 && y % 1 === 0.5) interior.push(p);
-        } else if (touching.every((e) => foldLines.has(e.line))) onCrease.push(p);
+        } else if (touching.length === 1 && foldLines.has(touching[0].line)) onCrease.push(p); // never at a corner
       }
     const count = difficulty === 3 ? 2 : rng.int(1, 2);
     const useEdge = difficulty > 1 && onCrease.length > 0 && rng.bool(edgeBias);
@@ -184,16 +184,45 @@ function build(rng: Rng, difficulty: Difficulty, edgeBias: number): Built {
     if (pts.length < count) continue;
     const shapes: Shape[] = difficulty === 3 ? rng.shuffle(["circle", "square"] as Shape[]) : [rng.pick(["circle", "square"] as Shape[])];
     const punches = pts.map((p, i) => ({ x: p[0], y: p[1], shape: shapes[i % shapes.length] }));
+    // every punch must read as a clear mark on the folded sheet: at least 45% of its shape inside the paper
+    if (punches.some((h) => area(clipToPoly(shapePoly(h), final)) < 0.45 * area(shapePoly(h)))) continue;
     const holes = unfold(punches, folds);
     if (!validHoles(holes)) continue;
     return { folds, regions, punches, holes };
   }
 }
 
+function area(poly: Pt[]): number {
+  let a = 0;
+  for (let i = 0; i < poly.length; i++) {
+    const p = poly[i];
+    const q = poly[(i + 1) % poly.length];
+    a += p[0] * q[1] - q[0] * p[1];
+  }
+  return Math.abs(a) / 2;
+}
+
 // ---------- distractors ----------
-function variants(rng: Rng, b: Built): { holes: Hole[]; note: string }[] {
+function variants(rng: Rng, b: Built, difficulty: Difficulty): { holes: Hole[]; note: string }[] {
   const out: { holes: Hole[]; note: string }[] = [];
   const target = b.holes.length;
+  // punch in the wrong place on the folded sheet, then unfolded correctly: the pattern keeps the right symmetry,
+  // so checking the mirror lines alone does not rule it out
+  const sym: { holes: Hole[]; note: string }[] = [];
+  b.punches.forEach((p, i) => {
+    for (const [dx, dy] of rng.shuffle([
+      [1, 0],
+      [-1, 0],
+      [0, 1],
+      [0, -1],
+    ] as const)) {
+      const punches = b.punches.map((q, j) => (j === i ? { ...q, x: q.x + dx, y: q.y + dy } : q));
+      const hs = unfold(punches, b.folds);
+      if (hs.length === target && validHoles(hs)) sym.push({ holes: hs, note: "the punch one square out of place" });
+    }
+    const swapped = b.punches.map((q, j) => (j === i ? { ...q, shape: q.shape === "circle" ? ("square" as const) : ("circle" as const) } : q));
+    sym.push({ holes: unfold(swapped, b.folds), note: `the ${p.shape} punch drawn as the wrong shape` });
+  });
   // wrong crease: unfold one fold across the perpendicular line through the same point
   b.folds.forEach((f, i) => {
     const chord = b.regions[i].filter((p) => Math.abs(f.a * p[0] + f.b * p[1] - f.c) < 1e-9);
@@ -243,7 +272,7 @@ function variants(rng: Rng, b: Built): { holes: Hole[]; note: string }[] {
     holes: b.holes.map((h, j) => (j === i ? { ...h, shape: h.shape === "circle" ? "square" : "circle" } : h)),
     note: "one hole of the wrong shape",
   });
-  const shuffled = rng.shuffle(out);
+  const shuffled = difficulty === 1 ? [...rng.shuffle(sym), ...rng.shuffle(out)] : rng.shuffle([...out, ...sym]);
   // fallback: forgetting one unfold (fewer holes)
   b.folds.forEach((_, k) => {
     const hs = unfold(
@@ -403,7 +432,7 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
   if (format === "NAT") {
     return {
       ...base,
-      stem: "A square sheet of paper is folded as shown and then punched through all layers in the last step. How many separate holes will the sheet have when it is fully unfolded?",
+      stem: "A square sheet of paper is folded as shown and then punched through all layers in the last step. A punch made across a folded edge opens into a single hole. How many separate holes will the sheet have when it is fully unfolded?",
       options: null,
       answer: { kind: "NAT", min: count, max: count },
       explanation: `**${count}**. ${why}`,
@@ -411,7 +440,7 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
   }
   const correct = { holes: b.holes, note: "", key: holesKey(b.holes), correct: true };
   const seen = new Set([correct.key]);
-  const pool = variants(rng, b).map((v) => ({ ...v, key: holesKey(v.holes), correct: false }));
+  const pool = variants(rng, b, difficulty).map((v) => ({ ...v, key: holesKey(v.holes), correct: false }));
   const items = [correct, ...takeDistinct(pool, 3, seen)];
   if (items.length !== 4) throw new Error(`${ID}: not enough distractors for seed ${seed}`);
   const { placed, answer, labels } = placeOptions(rng, items, "MCQ");
@@ -421,7 +450,7 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
     .join("; ");
   return {
     ...base,
-    stem: "A square sheet of paper is folded as shown and then punched through all layers in the last step. Which option shows the sheet when it is fully unfolded?",
+    stem: "A square sheet of paper is folded as shown and then punched through all layers in the last step. A punch made across a folded edge opens into a single hole. Which option shows the sheet when it is fully unfolded?",
     options: placed.map((p, i) => ({ label: labels[i], svg: optionSvg(p.holes) })),
     answer,
     explanation: `**${labels[placed.findIndex((p) => p.correct)]}**, with ${count} holes. ${why} Others — ${wrong}.`,

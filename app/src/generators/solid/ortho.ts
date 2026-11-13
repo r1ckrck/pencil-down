@@ -4,11 +4,11 @@
 //   top    = seen from +z, front edge at the bottom:                right = +y, up = -x, depth = z
 // A view is a grid of cells (c across, r up) holding the depth of the nearest face.
 import { type Vox, vkey } from "./voxel";
-import { type Piece, n2, stroke, FILL_SOFT, W_EDGE, W_GRID, W_OUTLINE, GRID_LINE, text } from "./svg";
+import { type Piece, n2, stroke, FILL_SOFT, W_GRID, W_OUTLINE, GRID_LINE, text } from "./svg";
 
 export type ViewDir = "top" | "front" | "side";
 export const VIEW_DIRS: ViewDir[] = ["top", "front", "side"];
-export const VIEW_LABEL: Record<ViewDir, string> = { top: "Top view", front: "Front view", side: "Side view" };
+export const VIEW_LABEL: Record<ViewDir, string> = { top: "Top view", front: "Front view", side: "Right side view" };
 
 export interface View {
   w: number;
@@ -118,7 +118,10 @@ export function decodeView(s: string): View {
 
 export const CELL = 16;
 
-/** Draw a view: soft fill, unit grid, heavier lines at depth steps (when `edges`), heaviest outline. */
+/**
+ * Draw a view: soft fill, thin unit grid, and thick lines for the outline and (when `edges`) every step in depth,
+ * so the stated convention is binary: thick = edge of the view or a step in depth, thin = cubes side by side.
+ */
 export function viewPiece(v: View, edges = true, label?: string): Piece {
   const occ = (r: number, c: number) => r >= 0 && c >= 0 && r < v.h && c < v.w && v.depth[r][c] !== null;
   const d = (r: number, c: number) => v.depth[r][c];
@@ -162,11 +165,11 @@ export function viewPiece(v: View, edges = true, label?: string): Piece {
   let body =
     `<path d="${fill}" ${FILL_SOFT}/>` +
     (lines[2] ? `<path d="${lines[2]}" ${stroke(W_GRID, GRID_LINE)}/>` : "") +
-    (lines[1] ? `<path d="${lines[1]}" ${stroke(W_EDGE)}/>` : "") +
+    (lines[1] ? `<path d="${lines[1]}" ${stroke(W_OUTLINE)}/>` : "") +
     (lines[0] ? `<path d="${lines[0]}" ${stroke(W_OUTLINE)}/>` : "");
   let y1 = v.h * CELL;
   if (label) {
-    body += text((v.w * CELL) / 2, y1 + 11, label, 8);
+    body += text((v.w * CELL) / 2, y1 + 11, label);
     y1 += 14;
   }
   return { body, box: { x0: 0, y0: 0, x1: Math.max(v.w * CELL, label ? label.length * 4.2 : 0), y1 } };

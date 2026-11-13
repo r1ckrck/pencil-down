@@ -16,8 +16,8 @@ import type { Difficulty, Format, GeneratedQuestion, Generator, SimpleAnswer } f
 import { createRng, type Rng } from "../rng";
 import { arrange, answerFrom, qid } from "./common";
 import { isoPiece, project } from "./iso";
-import { viewPiece, CELL } from "./ortho";
-import { type Piece, n2, readData, root, rootAll } from "./svg";
+import { CELL } from "./ortho";
+import { type Piece, FILL_SOFT, W_EDGE, W_OUTLINE, n2, readData, root, rootAll, stroke } from "./svg";
 import { ORIENTED, SYMBOLS, SYMMETRIC, isOriented } from "./symbols";
 import { ROTATIONS, apply, type Vox } from "./voxel";
 
@@ -84,8 +84,13 @@ const hasBlock = (cs: Cell[]) => cs.some(([c, r]) => has(cs, c + 1, r) && has(cs
 const longRun = (cs: Cell[]) =>
   cs.some(([c, r]) => [1, 2, 3, 4].every((k) => has(cs, c + k, r)) || [1, 2, 3, 4].every((k) => has(cs, c, r + k)));
 
-function randomValidNet(rng: Rng): Cell[] {
-  return normCells(rng.pick(ELEVEN).map(rng.pick(D4)));
+// Nets by how hard they are to fold in the head: the six with four squares in a row (1-4-1 family) are the
+// familiar ones; the other five (2-3-1, 2-2-2, 3-3) are harder.
+const EASY = ELEVEN.slice(0, 6);
+const HARD = ELEVEN.slice(6);
+
+function randomValidNet(rng: Rng, from: Cell[][] = ELEVEN): Cell[] {
+  return normCells(rng.pick(from).map(rng.pick(D4)));
 }
 
 /** One square of a real net moved: looks plausible, does not fold. */
@@ -241,29 +246,45 @@ function cubePiece(v: CubeView): Piece {
   return { body: base.body + marks, box: base.box };
 }
 
+/** A net: soft squares, dashed fold lines between squares, a thick outline. */
 function netPiece(cells: Cell[], marks?: { sym: string; up: number }[]): Piece {
   const w = Math.max(...cells.map((c) => c[0])) + 1;
   const h = Math.max(...cells.map((c) => c[1])) + 1;
-  const depth = Array.from({ length: h }, (_, r) =>
-    Array.from({ length: w }, (_, c) => (has(cells, c, h - 1 - r) ? 0 : null)),
-  );
-  const p = viewPiece({ w, h, depth }, false);
-  if (!marks) return p;
-  const body =
-    p.body +
-    cells
+  let fill = "";
+  let folds = "";
+  let edge = "";
+  for (const [c, r] of cells) {
+    fill += `M${c * CELL} ${r * CELL}h${CELL}v${CELL}h${-CELL}Z`;
+    // each side: a fold when the neighbour is in the net (drawn once, from the lower-index side), else outline
+    const sides: [number, number, string][] = [
+      [c, r - 1, `M${c * CELL} ${r * CELL}h${CELL}`],
+      [c + 1, r, `M${(c + 1) * CELL} ${r * CELL}v${CELL}`],
+      [c, r + 1, `M${c * CELL} ${(r + 1) * CELL}h${CELL}`],
+      [c - 1, r, `M${c * CELL} ${r * CELL}v${CELL}`],
+    ];
+    sides.forEach(([nc, nr, d], s) => {
+      if (!has(cells, nc, nr)) edge += d;
+      else if (s === 1 || s === 2) folds += d;
+    });
+  }
+  let body =
+    `<path d="${fill}" ${FILL_SOFT}/>` +
+    `<path d="${folds}" ${stroke(W_EDGE, ' stroke-dasharray="5 4"')}/>` +
+    `<path d="${edge}" ${stroke(W_OUTLINE)}/>`;
+  if (marks)
+    body += cells
       .map(([c, r], i) => {
         const t = `translate(${n2((c + 0.5) * CELL)} ${n2((r + 0.5) * CELL)}) rotate(${marks[i].up * 90}) scale(${CELL})`;
         return `<g transform="${t}">${SYMBOLS[marks[i].sym]}</g>`;
       })
       .join("");
-  return { body, box: p.box };
+  return { body, box: { x0: 0, y0: 0, x1: w * CELL, y1: h * CELL } };
 }
 
 // ---------- generate ----------
 
 function genMCQ(rng: Rng, d: Difficulty) {
-  const cells = randomValidNet(rng);
+  const cells = randomValidNet(rng, d === 1 ? EASY : d === 2 ? HARD : ELEVEN);
   const nOriented = d === 3 ? rng.int(2, 3) : 0;
   const syms = [...rng.shuffle(ORIENTED).slice(0, nOriented), ...rng.shuffle(SYMMETRIC).slice(0, 6 - nOriented)];
   const marks = rng.shuffle(syms).map((sym) => ({ sym, up: isOriented(sym) ? rng.int(0, 3) : 0 }));
@@ -354,8 +375,8 @@ function genMCQ(rng: Rng, d: Difficulty) {
   return {
     stem:
       d === 3
-        ? "The net on the left is folded into a cube with the marks on the outside. Which option shows the folded cube, marks turned the right way?"
-        : "The net on the left is folded into a cube with the marks on the outside. Which option shows the folded cube?",
+        ? "The net shown is folded along the dashed lines into a cube, with the marks on the outside. Which option shows the folded cube, marks turned the right way?"
+        : "The net shown is folded along the dashed lines into a cube, with the marks on the outside. Which option shows the folded cube?",
     figure,
     options,
     answer,
@@ -368,7 +389,10 @@ function genMCQ(rng: Rng, d: Difficulty) {
 }
 
 function genMSQ(rng: Rng, d: Difficulty) {
-  const k = rng.pick([1, 2, 2, 3, 3, 4]);
+  // level 1: familiar nets against obvious failures; level 2: any net, one obvious failure, near misses;
+  // level 3: the harder nets against near misses only
+  const k = rng.pick(d === 1 ? [1, 2, 2, 3] : d === 2 ? [1, 2, 3, 3] : [1, 2, 2, 3, 4]);
+  const validFrom = d === 1 ? EASY : d === 2 ? ELEVEN : HARD;
   const nets: { cells: Cell[]; ok: boolean }[] = [];
   const seen = new Set<string>();
   const push = (cells: Cell[], ok: boolean) => {
@@ -378,7 +402,7 @@ function genMSQ(rng: Rng, d: Difficulty) {
     nets.push({ cells, ok });
     return true;
   };
-  while (nets.length < k) push(randomValidNet(rng), true);
+  while (nets.length < k) push(randomValidNet(rng, validFrom), true);
   let obvious = d === 1 ? 4 - k : d === 2 ? Math.min(1, 4 - k) : 0;
   while (nets.length < 4) {
     if (obvious > 0) {
@@ -395,7 +419,7 @@ function genMSQ(rng: Rng, d: Difficulty) {
     "MSQ",
   );
   return {
-    stem: "Which of the following nets can be folded into a closed cube? Fold along the lines between squares.",
+    stem: "Which of the following nets can be folded into a closed cube? Fold only along the dashed lines between squares.",
     figure: root(isoPiece([[0, 0, 0]]), { kind: "illustration" }),
     options,
     answer,

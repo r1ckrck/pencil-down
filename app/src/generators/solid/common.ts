@@ -37,6 +37,22 @@ export function numericDistractors(rng: Rng, answer: number, preferred: number[]
   return out;
 }
 
+/**
+ * Numeric MCQ distractors placed so the key is the smallest or largest of the four options about half the time
+ * (a solver cannot lean on "the answer is a middle value"). Distractors come from `preferred` first (plausible wrong counts), then from near
+ * values on the needed side. Values stay >= `floor`.
+ */
+export function spreadDistractors(rng: Rng, answer: number, preferred: number[], floor = 0): number[] {
+  const uniq = (vs: number[]) => [...new Set(vs)].filter((v) => v !== answer && v >= floor);
+  const below = uniq([...rng.shuffle(preferred.filter((v) => v < answer)), ...[1, 2, 3, 4, 5, 6].map((d) => answer - d)]);
+  const above = uniq([...rng.shuffle(preferred.filter((v) => v > answer)), ...[1, 2, 3, 4, 5, 6].map((d) => answer + d)]);
+  // half the time the key sits at an end (smallest or largest), half the time inside, as far as values allow
+  const ends = [0, 3].filter((r) => r <= below.length);
+  const inner = [1, 2].filter((r) => r <= below.length);
+  const rank = inner.length && !rng.bool() ? rng.pick(inner) : rng.pick(ends);
+  return [...below.slice(0, rank), ...above.slice(0, 3 - rank)];
+}
+
 export const optionValue = (q: GeneratedQuestion, svg: string) => {
   const m = /data-value="(-?\d+)"/.exec(svg);
   if (!m) throw new Error(`${q.id}: option without data-value`);
