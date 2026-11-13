@@ -81,7 +81,7 @@ FIXED = failed on first check, corrected, re-verified. Commands run in `app/`; t
 | Criterion | Status | Evidence |
 |---|---|---|
 | Standalone build starts natively; `/api/health` 200; data persists across restart | PASS | `node server.js` → 200; history 37 sessions before and after a process restart |
-| Node RSS < 512 MB during a full 3-hour exam | FIXED | One full exam driven end to end with fast-forwarding (≈ 1,500 requests). Without a heap cap RSS kept climbing across exams (365 → 374 → 407 MB): V8 holds collectable garbage. Dockerfile sets `NODE_OPTIONS=--max-old-space-size=256`; measured 116 → 290 → 299 → 316 MB max over three back-to-back exams |
+| Node RSS < 512 MB during a full 3-hour exam | FIXED | One full exam driven end to end with fast-forwarding (≈ 1,500 requests). Without a heap cap RSS kept climbing across exams (365 → 374 → 407 MB): V8 holds collectable garbage. `docs/run.md` sets `NODE_OPTIONS=--max-old-space-size=256`; measured 116 → 290 → 299 → 316 MB max over three back-to-back exams |
 | `docs/run.md` reproduces a working production run from a clean checkout | PASS | Fresh `git clone` → `pnpm install --frozen-lockfile` → `pnpm build` → runtime folder assembled with `cp -a` → `node server.js` with the documented variables: `/api/health` 200, `/`, `/part-a`, a content image and CSS 200, DB and `photos/` created in the data dir |
 
 ## Features checked beyond §13
