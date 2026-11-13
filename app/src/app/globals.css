@@ -1,26 +1,175 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Tailwind reads tokens; it holds no values of its own.
+ * - Default palette, radii, fonts and type sizes are cleared so only system tokens exist.
+ * - Colours map to tokens by var().
+ * - `@theme reference` registers utilities whose names match a token 1:1 (rounded-sm → var(--radius-sm)).
+ *   The values written there are inert placeholders; tokens.css supplies the real ones.
+ * - Spacing: the 4px base unit is --space-1, so the 8-point scale is the even Tailwind steps.
+ *   --space-1..9 = 1, 2, 3, 4, 6, 8, 12, 16, 24 (p-6 = 24px, gap-12 = 48px). Use only these for spacing.
+ *   `touch` = 44px minimum target (min-h-touch, size-touch).
+ */
+
+@theme {
+  --color-*: initial;
+  --radius-*: initial;
+  --font-*: initial;
+  --text-*: initial;
+  --shadow-*: initial;
+  --ease-*: initial;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-mute: var(--mute);
+  --color-hairline: var(--hairline);
+  --color-accent: var(--accent);
+  --color-code: var(--code-bg);
+  --color-tint: var(--tint);
+  --color-on-fg: var(--on-fg);
+  --color-on-accent: var(--on-accent);
+  --color-good: var(--data-good);
+  --color-mid: var(--data-mid);
+  --color-bad: var(--data-bad);
+  --color-cat-1: var(--data-cat-1);
+  --color-cat-2: var(--data-cat-2);
+  --color-cat-3: var(--data-cat-3);
+  --color-cat-4: var(--data-cat-4);
+  --color-cat-5: var(--data-cat-5);
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --spacing: var(--space-1);
+  --spacing-touch: var(--touch);
+
+  --default-transition-duration: var(--dur-fast);
+  --default-transition-timing-function: var(--ease-measured);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme reference {
+  --radius-xs: 0;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-pill: 0;
+
+  --font-display: x;
+  --font-body: x;
+  --font-mono: x;
+
+  --text-display: 0;
+  --text-display--line-height: 0;
+  --text-display--letter-spacing: 0;
+  --text-display-sm: 0;
+  --text-display-sm--line-height: 0;
+  --text-display-sm--letter-spacing: 0;
+  --text-title: 0;
+  --text-title--line-height: 0;
+  --text-title--letter-spacing: 0;
+  --text-heading: 0;
+  --text-heading--line-height: 0;
+  --text-lead: 0;
+  --text-lead--line-height: 0;
+  --text-body: 0;
+  --text-body--line-height: 0;
+  --text-small: 0;
+  --text-small--line-height: 0;
+  --text-caption: 0;
+  --text-caption--line-height: 0;
+  --text-caption--letter-spacing: 0;
+  --text-label: 0;
+  --text-label--line-height: 0;
+  --text-label--letter-spacing: 0;
+  --text-timer: 0;
+  --text-timer--line-height: 0;
+  --text-counter: 0;
+  --text-counter--line-height: 0;
+
+  --ease-measured: 0;
+  --ease-out: 0;
+  --ease-in: 0;
+}
+
+@layer base {
+  html {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--bg);
+    color: var(--fg);
+    position: relative;
+  }
+
+  /* Paper grain over the whole surface, both modes. Never intercepts input. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+    background-image: url("/cream-paper.png");
+    background-size: 158px 144px;
+    opacity: var(--grain-opacity);
+    mix-blend-mode: var(--grain-blend);
+  }
+
+  ::selection {
+    background: var(--fg);
+    color: var(--on-fg);
+  }
+
+  :focus-visible {
+    outline: 1.5px solid var(--fg);
+    outline-offset: 2px;
+  }
+
+  /* Numbers line up in every mono and data context. */
+  .font-mono,
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0ms !important;
+      animation-duration: 0ms !important;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Generator SVG vocabulary: ink is currentColor; .mute → secondary ink; .soft → faint ink for fills. */
+@layer components {
+  .figure svg {
+    color: var(--fg);
+  }
+  .figure svg .mute {
+    color: var(--mute);
+  }
+  .figure svg .soft {
+    color: color-mix(in oklab, var(--fg) 16%, transparent);
+  }
+}
+
+@keyframes pd-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pd-rise-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
 }

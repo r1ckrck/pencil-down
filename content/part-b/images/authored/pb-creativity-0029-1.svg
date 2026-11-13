@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 360" fill="none" stroke="none">
+<rect x="30" y="30" width="300" height="300" stroke="currentColor" stroke-width="3"/>
+<g transform="translate(30 30) rotate(0 150 150)"><path d="M140 150 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="360" y="30" width="300" height="300" stroke="currentColor" stroke-width="3"/>
+<g transform="translate(360 30) rotate(180 150 150)"><path d="M100 110 L150 200 L200 110" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="690" y="30" width="300" height="300" stroke="currentColor" stroke-width="3"/>
+<g transform="translate(690 30) rotate(0 150 150)"><circle cx="125" cy="150" r="9" fill="currentColor"/><circle cx="175" cy="150" r="9" fill="currentColor"/></g>
+<rect x="1020" y="30" width="300" height="300" stroke="currentColor" stroke-width="3"/>
+<g transform="translate(1020 30) rotate(180 150 150)"><path d="M90 170 A60 60 0 0 1 210 170" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="1350" y="30" width="300" height="300" stroke="currentColor" stroke-width="3"/>
+<g transform="translate(1350 30) rotate(45 150 150)"><path d="M110 110 L190 190 M190 110 L110 190" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

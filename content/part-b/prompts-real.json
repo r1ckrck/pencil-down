@@ -1,0 +1,5051 @@
+[
+  {
+    "id": "ceed-2020-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2020,
+      "qno": 1,
+      "originalSection": "Sketching",
+      "adapted": false
+    },
+    "slot": "sketching",
+    "title": "Gouri, the Versova fisherwoman",
+    "text": "Gouri is a fisherwoman from Versova, Mumbai. She sells fish at the same spot every day on a dusty pavement along the main road. She gets upset and angry when someone takes her spot. She doesn't like it when customers bargain with her.\n\nGiven the character design of Gouri as above, sketch the following:\n\n1. Gouri sitting at her spot and impatiently waiting for customers. She uses a towel to chase away the flies; she hates them sitting on the fish. (10 marks)\n2. Gouri very angry at the customer (do not draw the customer). (10 marks)",
+    "rules": [
+      "Make a line drawing using only pencils. Do not use any kind of colour",
+      "Do not draw the environments",
+      "Do not use any drawing instrument or straight-edges such as a ruler, compass, set-square etc."
+    ],
+    "criteria": [
+      {
+        "name": "Ability to keep the character consistent",
+        "marks": 7
+      },
+      {
+        "name": "Expression and body gesture of the character",
+        "marks": 7
+      },
+      {
+        "name": "Final line quality and finish of the drawing",
+        "marks": 6
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2020-b-q1-1.png",
+        "alt": "Line-drawn character sheet of Gouri: a stout fisherwoman in a sari with a bindi and nose ring, frowning, holding a basket of fish on her hip."
+      }
+    ],
+    "tags": {
+      "user": "woman street vendor",
+      "setting": "street market pavement",
+      "object": "character poses",
+      "twist": "given character in two emotions; no environment",
+      "hook": "Indian occupation (Koli fisherwoman, Mumbai)"
+    }
+  },
+  {
+    "id": "ceed-2020-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2020,
+      "qno": 2,
+      "originalSection": "Creativity",
+      "adapted": false
+    },
+    "slot": "creativity",
+    "title": "Ten boxes of marks",
+    "text": "Using the visual elements given in the ten boxes create recognizable objects and give a title to each.\n\n*The published paper shows only the first of the ten boxes (below); the other nine were printed in the answer booklet. Use this box's elements as the starting point for each of your ten images.*",
+    "rules": [
+      "Use only BLACK pencil/pen",
+      "Draw only within the boundaries of the boxes"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of sketches",
+        "marks": 5
+      },
+      {
+        "name": "Neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2020-b-q2-1.png",
+        "alt": "A square box containing three marks: a short diagonal line, a small circle, and a curved arc, with a title line below."
+      }
+    ],
+    "tags": {
+      "object": "titled images",
+      "twist": "complete given abstract marks"
+    }
+  },
+  {
+    "id": "ceed-2020-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2020,
+      "qno": 3,
+      "originalSection": "Visual Sensitivity",
+      "adapted": false
+    },
+    "slot": "visual",
+    "title": "Plant photos to icons",
+    "text": "Create 2D graphic icons for each of the images given below. All icons should belong to the same design language/style.",
+    "rules": [
+      "Use only BLACK colour"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency",
+        "marks": 7
+      },
+      {
+        "name": "Composition",
+        "marks": 7
+      },
+      {
+        "name": "2D form",
+        "marks": 6
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2020-b-q3-1.png",
+        "alt": "Five photographs: a pink hibiscus flower, a palm tree, a pair of cactus stems, a white calla lily, and a cluster of tulips."
+      }
+    ],
+    "tags": {
+      "setting": "nature",
+      "object": "icon set",
+      "twist": "photo-to-icon abstraction"
+    }
+  },
+  {
+    "id": "ceed-2020-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2020,
+      "qno": 4,
+      "originalSection": "Form",
+      "adapted": false
+    },
+    "slot": "form",
+    "title": "Mixer-grinder body for a given jar",
+    "text": "Visualize a form for a mixer-grinder body matching the design language of the given jar. Sketch and render the body with the jar. Use the same perspective as that of the given jar.",
+    "rules": [
+      "Use the same perspective as the given jar"
+    ],
+    "criteria": [
+      {
+        "name": "Originality in the form of the body and its proportion",
+        "marks": 4
+      },
+      {
+        "name": "Consistency with the form of the jar",
+        "marks": 4
+      },
+      {
+        "name": "Details like buttons, knobs and indicators",
+        "marks": 4
+      },
+      {
+        "name": "Surface shading",
+        "marks": 4
+      },
+      {
+        "name": "Quality of line/strokes",
+        "marks": 4
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2020-b-q4-1.png",
+        "alt": "Photo of a steel mixer-grinder jar with a clear domed lid and a curved blue handle, seen in three-quarter view."
+      }
+    ],
+    "tags": {
+      "user": "household",
+      "setting": "kitchen",
+      "object": "kitchen appliance",
+      "pov": "same perspective as the given jar",
+      "twist": "companion product to a given part",
+      "hook": "Indian kitchen appliance"
+    }
+  },
+  {
+    "id": "ceed-2020-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2020,
+      "qno": 5,
+      "originalSection": "Problem identification",
+      "adapted": false
+    },
+    "slot": "problem-id",
+    "title": "Toothbrush problems",
+    "text": "Shown below is the picture of a toothbrush. According to you, what are the 6 most important problems that users might face while using such a toothbrush? Illustrate and annotate these problems in the space provided and describe each problem in one sentence. **Do not suggest solutions.**",
+    "rules": [
+      "Do not suggest solutions",
+      "One sentence per problem"
+    ],
+    "criteria": [
+      {
+        "name": "Quality and diversity of your observation",
+        "marks": 7
+      },
+      {
+        "name": "Analytical skills",
+        "marks": 7
+      },
+      {
+        "name": "Communication",
+        "marks": 6
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2020-b-q5-1.png",
+        "alt": "Photo of an ordinary toothbrush with white bristles and a blue-and-white handle, on a black background."
+      }
+    ],
+    "tags": {
+      "user": "general",
+      "setting": "bathroom",
+      "object": "toothbrush",
+      "twist": "no solutions allowed"
+    }
+  },
+  {
+    "id": "ceed-2021-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2021,
+      "qno": 1,
+      "originalSection": "Sketching",
+      "adapted": false
+    },
+    "slot": "sketching",
+    "title": "Rohan after play",
+    "text": "A comic book is to be illustrated that tells the story of Rohan. In the morning, when he goes to school, Rohan looks like the image given below, well dressed with combed hair and ironed clothes. But by the time he returns home, like any playful young boy, he has a dishevelled look with dirt and grime all over. In summer he loves to shoot mangoes out of the tree with his catapult and during monsoon he loves to play football despite the puddles.\n\nCreate separate illustrations of the character in the following two situations:\n\n1. Rohan shooting the mango out of the tree. (10 marks)\n2. Rohan kicking the football oblivious of the muddy ground after rains. (10 marks)",
+    "rules": [
+      "Make a line drawing using only pencils. Do not use any kind of colour",
+      "Do not illustrate the surroundings, but only the boy and what he is physically interacting with. Do not draw the tree or the entire playground but only the catapult and immediate floor he is standing on if the composition requires it"
+    ],
+    "criteria": [
+      {
+        "name": "Ability to keep the character consistent",
+        "marks": 7
+      },
+      {
+        "name": "Expression and body gesture of the character",
+        "marks": 7
+      },
+      {
+        "name": "Line quality and finish of the drawing",
+        "marks": 6
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2021-b-q1-1.png",
+        "alt": "Line drawing of Rohan: a neat schoolboy with combed hair, tie, short-sleeved shirt, shorts, socks and laced shoes."
+      }
+    ],
+    "tags": {
+      "user": "child (boy)",
+      "setting": "outdoor play",
+      "object": "character poses",
+      "twist": "given character, dishevelled after play; no surroundings",
+      "hook": "Indian childhood seasons (summer mangoes, monsoon football)"
+    }
+  },
+  {
+    "id": "ceed-2021-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2021,
+      "qno": 2,
+      "originalSection": "Creativity",
+      "adapted": false
+    },
+    "slot": "creativity",
+    "title": "Ten boxes, three themed",
+    "text": "Building upon the visual elements given in the ten boxes, create recognizable images and give a title to each. A theme for each of the first three boxes has been given as printed in the answer booklet.\n\n*The published paper shows only the first of the ten boxes (below); the other boxes and the three themes were printed in the answer booklet. Use this box's elements as the starting point for each of your ten images.*",
+    "rules": [
+      "Use only BLACK pencil/pen",
+      "Draw only within the boundaries of the boxes"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of sketches",
+        "marks": 5
+      },
+      {
+        "name": "Neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2021-b-q2-1.png",
+        "alt": "A square box containing a V of two straight lines meeting at a vertical line near the top, a small arc in the middle, and a quarter circle in the bottom-right corner, with a title line below."
+      }
+    ],
+    "tags": {
+      "object": "titled images",
+      "twist": "complete given abstract marks"
+    }
+  },
+  {
+    "id": "ceed-2021-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2021,
+      "qno": 3,
+      "originalSection": "Visual Sensitivity",
+      "adapted": false
+    },
+    "slot": "visual",
+    "title": "Rural hospital ward icons",
+    "text": "A rural hospital uses the following icon system to depict Male, Female, Cardiology, Casualty, Ophthalmology and Neurology.\n\nThe hospital then decides to expand, and opens four new wards which are as follows:\n\n- COVID-19 Isolation Ward\n- Cancer Ward\n- Paediatric (Children) Ward\n- Maternity Ward\n\nCreate icons for these four wards. All icons should follow the same visual language. Draw the icons in squares provided in the answer booklet.",
+    "rules": [
+      "Use only BLACK colour",
+      "Draw the icons in squares"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency with given examples",
+        "marks": 7
+      },
+      {
+        "name": "Composition",
+        "marks": 7
+      },
+      {
+        "name": "Clarity of communication",
+        "marks": 6
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2021-b-q3-1.png",
+        "alt": "Six bold black pictograms in rounded squares: a man, a woman in a sari, a torso with a heart (cardiology), a bandaged figure (casualty), a head with a large eye (ophthalmology), and a head showing the brain (neurology)."
+      }
+    ],
+    "tags": {
+      "user": "patients (women, children)",
+      "setting": "rural hospital",
+      "object": "icon set",
+      "twist": "extend an existing icon system",
+      "hook": "pandemic; rural healthcare"
+    }
+  },
+  {
+    "id": "ceed-2021-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2021,
+      "qno": 4,
+      "originalSection": "Form sensitivity",
+      "adapted": false
+    },
+    "slot": "form",
+    "title": "Lunch box to match a kid's bottle",
+    "text": "Image of a kid's water bottle is shown below. Visualise a lunch box to pair with it. It should be matching in design language with relevant details. Sketch and render the bottle and the lunch box with required graphics.",
+    "rules": [],
+    "criteria": [
+      {
+        "name": "Originality in the form of the lunch box, and its proportion",
+        "marks": 4
+      },
+      {
+        "name": "Visual consistency with the form of the water bottle",
+        "marks": 4
+      },
+      {
+        "name": "Relevant details for the lunch box",
+        "marks": 4
+      },
+      {
+        "name": "Surface shading",
+        "marks": 4
+      },
+      {
+        "name": "Quality of line/strokes",
+        "marks": 4
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2021-b-q4-1.png",
+        "alt": "Photo of a child's water bottle: pink flip cap with a carry ring, translucent white body printed with pink bubble circles."
+      }
+    ],
+    "tags": {
+      "user": "child",
+      "setting": "school",
+      "object": "lunch box",
+      "twist": "companion product to a given product"
+    }
+  },
+  {
+    "id": "ceed-2021-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2021,
+      "qno": 5,
+      "originalSection": "Problem identification",
+      "adapted": false
+    },
+    "slot": "problem-id",
+    "title": "School wash basin and infection",
+    "text": "Shown below is a picture of a wash basin in a primary school.\n\nIn the space provided in the answer booklet, list down ten various problems related to the possibility of a viral infection like COVID-19 spreading in the school. (5 marks)\n\nIdentify three problems that you consider to be the most important and clearly illustrate them. (3 × 5 marks)",
+    "rules": [],
+    "criteria": [
+      {
+        "name": "Quality and diversity of your observation",
+        "marks": 7
+      },
+      {
+        "name": "Analytical skills",
+        "marks": 7
+      },
+      {
+        "name": "Communication",
+        "marks": 6
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2021-b-q5-1.png",
+        "alt": "Photo of an outdoor concrete wash basin at a school, with a row of taps on a white tank, a bucket below, and trees behind."
+      }
+    ],
+    "tags": {
+      "user": "children",
+      "setting": "primary school",
+      "object": "wash basin",
+      "hook": "pandemic hygiene"
+    }
+  },
+  {
+    "id": "ceed-2022-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2022,
+      "qno": 1,
+      "originalSection": "Sketching",
+      "adapted": false
+    },
+    "slot": "sketching",
+    "title": "The swab test moment",
+    "text": "A sample is being collected for an RT-PCR swab test for COVID-19. The man collecting the sample is standing in a PPE (protective) suit. The lady who is being tested is sitting on a chair in front of him. She shows uneasiness through her facial expression when a swab is inserted in her nose.\n\nDraw a free-hand sketch of the moment described above. Drawing of surroundings is not necessary.",
+    "rules": [
+      "Free-hand sketch",
+      "Surroundings are not necessary"
+    ],
+    "criteria": [
+      {
+        "name": "Quality of composition",
+        "marks": 4
+      },
+      {
+        "name": "Observation and drawing skills",
+        "marks": 4
+      },
+      {
+        "name": "Expression of the person being tested",
+        "marks": 4
+      },
+      {
+        "name": "Scale and relative proportions",
+        "marks": 4
+      },
+      {
+        "name": "Use of light and shade",
+        "marks": 4
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "woman; health worker",
+      "setting": "clinic",
+      "object": "two-figure scene",
+      "twist": "render discomfort",
+      "hook": "pandemic"
+    }
+  },
+  {
+    "id": "ceed-2022-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2022,
+      "qno": 3,
+      "originalSection": "Visual Sensitivity",
+      "adapted": false
+    },
+    "slot": "visual",
+    "title": "Mela icons",
+    "text": "Create visual icons in the boxes given, for the following in an Indian mela (fair/exhibition):\n\n1. Information Desk\n2. Craft zone\n3. Children zone\n4. Game zone",
+    "rules": [
+      "Draw the icons in the boxes given"
+    ],
+    "criteria": [
+      {
+        "name": "Aesthetics of 2D form",
+        "marks": 5
+      },
+      {
+        "name": "Effectiveness to convey meaning",
+        "marks": 5
+      },
+      {
+        "name": "Consistency of visual language (style)",
+        "marks": 5
+      },
+      {
+        "name": "Composition",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "visitors, children",
+      "setting": "mela (fair)",
+      "object": "icon set",
+      "hook": "Indian culture (mela, crafts)"
+    }
+  },
+  {
+    "id": "ceed-2022-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2022,
+      "qno": 4,
+      "originalSection": "Form sensitivity",
+      "adapted": false
+    },
+    "slot": "form",
+    "title": "Electric iron from a building",
+    "text": "Three views of a building are shown below. Visualise the form of an electric iron (for ironing clothes) based on the image(s) of the given building. It should match the design language with relevant details. Sketch and render the form of the electric iron.",
+    "rules": [],
+    "criteria": [
+      {
+        "name": "Sensitivity towards form",
+        "marks": 4
+      },
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 4
+      },
+      {
+        "name": "Relevant details of the iron",
+        "marks": 4
+      },
+      {
+        "name": "Surface shading",
+        "marks": 4
+      },
+      {
+        "name": "Quality of lines/strokes",
+        "marks": 4
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2022-b-q4-1.png",
+        "alt": "Three photos of one flowing white building: smooth continuous curved shells rising into peaks and folding into a glazed opening, shown from three angles."
+      }
+    ],
+    "tags": {
+      "user": "household",
+      "setting": "home",
+      "object": "electric iron",
+      "twist": "borrow design language from architecture",
+      "hook": "unnamed design-history reference (flowing white building)"
+    }
+  },
+  {
+    "id": "ceed-2022-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2022,
+      "qno": 5,
+      "originalSection": "Problem identification",
+      "adapted": false
+    },
+    "slot": "problem-id",
+    "title": "General compartment boarding",
+    "text": "Getting into the general compartment of a long-distance train is not a pleasant experience, especially for women, children, elderly and the disabled. The photo depicts one such scene.\n\nIn the space provided in the answer booklet, list TEN unique design problems or opportunities in this situation. Each problem or opportunity could be based on either what you can observe in the photo or your experiences as a passenger. Each problem or opportunity should have potential for a design solution. For example, large crowds or less availability of seats are not design problems. (10 marks)\n\nWithin the space provided clearly illustrate TWO design problems or opportunities that you consider to be the most important. (2 × 5 marks)\n\nFocus on depicting problems and opportunities. **DO NOT provide solutions.**",
+    "rules": [
+      "Do not provide solutions",
+      "Large crowds or fewer seats are not design problems"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of observations",
+        "marks": 5
+      },
+      {
+        "name": "Analytical skills",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2022-b-q5-1.png",
+        "alt": "Photo of a dense crowd of passengers with bags pushing to board the door of a blue general-class railway coach."
+      }
+    ],
+    "tags": {
+      "user": "women, children, elderly, disabled",
+      "setting": "railway general compartment",
+      "object": "boarding scene",
+      "twist": "no solutions allowed",
+      "hook": "Indian Railways; inclusive design"
+    }
+  },
+  {
+    "id": "ceed-2023-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2023,
+      "qno": 1,
+      "originalSection": "Sketching",
+      "adapted": false
+    },
+    "slot": "sketching",
+    "title": "Family selfie from the ceiling camera",
+    "text": "Mr. Singh (5 feet 11 inches tall) is smiling and capturing a selfie of his entire family with his mobile phone held vertically. He is with his wife (5 feet tall), standing towards his left with her two mischievous kids. Pinky (girl) and Bablu (boy) are making funny expressions looking into the mobile. They all are standing facing a digital camera installed in the top corner of the room. The size of the room is 12 × 12 × 12 feet.\n\nDraw the picture of the above description from the point of view of a digital camera capturing this moment.",
+    "rules": [
+      "Use only pencils",
+      "Do not illustrate the surroundings. Only draw the family"
+    ],
+    "criteria": [
+      {
+        "name": "Imagination",
+        "marks": 4
+      },
+      {
+        "name": "Overall composition of the picture",
+        "marks": 4
+      },
+      {
+        "name": "Quality of lines",
+        "marks": 4
+      },
+      {
+        "name": "Attention to details",
+        "marks": 4
+      },
+      {
+        "name": "Anatomy and perspective",
+        "marks": 4
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "family with children",
+      "setting": "home (room)",
+      "object": "figure group",
+      "pov": "camera in the top corner of the room",
+      "twist": "high-angle camera view",
+      "hook": "smartphone selfie"
+    }
+  },
+  {
+    "id": "ceed-2023-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2023,
+      "qno": 2,
+      "originalSection": "Creativity",
+      "adapted": false
+    },
+    "slot": "creativity",
+    "title": "Boxes with a title's first word",
+    "text": "Each of the boxes in the answer script shows some visual elements and the FIRST word for a title of the image. Draw recognizable images by interpreting the visual elements and give a title to the images using the given first word.",
+    "rules": [
+      "Use only BLACK pencil/pen",
+      "Draw only within the boundaries of the boxes",
+      "Each title must start with the given first word"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness: ability to create unusual images",
+        "marks": 5
+      },
+      {
+        "name": "Diversity: variation between the created images",
+        "marks": 5
+      },
+      {
+        "name": "Clarity: effective use of the visual elements and title",
+        "marks": 5
+      },
+      {
+        "name": "Fun: ability to use humour and surprise in the images and title",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2023-b-q2-1.png",
+        "alt": "Four rounded boxes, each with one small outline element and a title's first word: a narrow bottle-like shape (Walk), a keyhole-like loop (Pull), a small house outline (Cover), and a bell-shaped lamp (See)."
+      }
+    ],
+    "tags": {
+      "object": "titled images",
+      "twist": "title's first word is fixed"
+    }
+  },
+  {
+    "id": "ceed-2023-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2023,
+      "qno": 3,
+      "originalSection": "Visual Sensitivity",
+      "adapted": false
+    },
+    "slot": "visual",
+    "title": "IWHA identity",
+    "text": "Create a new visual identity for Indian Women's Hockey Association. The identity has to be original and should have the abbreviation 'IWHA' as part of the visual design. DO NOT draw from any existing designs.",
+    "rules": [
+      "Include 'IWHA' in the design",
+      "Do not draw from any existing designs"
+    ],
+    "criteria": [
+      {
+        "name": "Creative visual representation",
+        "marks": 5
+      },
+      {
+        "name": "Effective communication of the concept",
+        "marks": 5
+      },
+      {
+        "name": "Visual aesthetics",
+        "marks": 5
+      },
+      {
+        "name": "Composition",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "women athletes",
+      "setting": "sport",
+      "object": "visual identity",
+      "hook": "women's sport in India"
+    }
+  },
+  {
+    "id": "ceed-2023-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2023,
+      "qno": 4,
+      "originalSection": "Form sensitivity",
+      "adapted": false
+    },
+    "slot": "form",
+    "title": "Children's cutlery from an abstract form",
+    "text": "An abstract three-dimensional form is shown below. Visualise the form of a cutlery set (fork, bowl and glass) for 3–6 year old children based on the image of the given form. It should match the design language with relevant details. Sketch and render the form of the cutlery set.",
+    "rules": [],
+    "criteria": [
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 4
+      },
+      {
+        "name": "Form should complement function",
+        "marks": 4
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 4
+      },
+      {
+        "name": "Surface shading",
+        "marks": 4
+      },
+      {
+        "name": "Quality of lines/strokes",
+        "marks": 4
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2023-b-q4-1.png",
+        "alt": "Photo of a smooth white abstract sculpture made of swelling, bulbous lobes, on a wooden plinth against a black background."
+      }
+    ],
+    "tags": {
+      "user": "children aged 3–6",
+      "setting": "home dining",
+      "object": "cutlery set",
+      "twist": "derive product from an abstract sculpture"
+    }
+  },
+  {
+    "id": "ceed-2023-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2023,
+      "qno": 5,
+      "originalSection": "Problem identification",
+      "adapted": false
+    },
+    "slot": "problem-id",
+    "title": "Bus stop at rush hour",
+    "text": "Shown in the image is an example of a bus stop during the busy hours.\n\nDraw and annotate FIVE distinct design problems in this context.",
+    "rules": [
+      "Use only one visual for each problem",
+      "Answer in the given space only"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problem",
+        "marks": 7
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 7
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 6
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2023-b-q5-1.png",
+        "alt": "High-angle photo of a crowded city bus stop: a shelter with a few seats and an advertising panel, commuters spilling onto the road, a vendor cart behind."
+      }
+    ],
+    "tags": {
+      "user": "commuters",
+      "setting": "urban bus stop",
+      "object": "bus stop scene",
+      "hook": "urban India"
+    }
+  },
+  {
+    "id": "ceed-2024-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2024,
+      "qno": 1,
+      "originalSection": "Sketching",
+      "adapted": false
+    },
+    "slot": "sketching",
+    "title": "Chinnu's carton, four frames",
+    "text": "7-year-old Chinnu has collected all her old toys in a carton. The carton weighs around 2 kg. Draw Chinnu lifting the box and keeping it in the top shelf of her cupboard in 4 frames.",
+    "rules": [
+      "Use only pencils",
+      "Do not use colours",
+      "Four frames"
+    ],
+    "criteria": [
+      {
+        "name": "Humour",
+        "marks": 5
+      },
+      {
+        "name": "Expressions",
+        "marks": 5
+      },
+      {
+        "name": "Body language",
+        "marks": 5
+      },
+      {
+        "name": "Anticipation and exaggeration",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "child (girl)",
+      "setting": "home bedroom",
+      "object": "action sequence",
+      "twist": "four-frame sequence with animation principles"
+    }
+  },
+  {
+    "id": "ceed-2024-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2024,
+      "qno": 2,
+      "originalSection": "Creativity",
+      "adapted": false
+    },
+    "slot": "creativity",
+    "title": "Head as a cube",
+    "text": "Imagine the human head as a cube. With this scenario, illustrate the following interactions inside the given boxes in this order:\n\n1. Human–human\n2. Human–animal\n3. Human–environment\n4. Human–object\n\nWrite the titles below the boxes, in the space provided.",
+    "rules": [
+      "Use only BLACK pencil/pen",
+      "Draw only within the boundaries of the boxes",
+      "Keep the given order"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness: ability to create unusual images",
+        "marks": 5
+      },
+      {
+        "name": "Diversity: variation between each created image",
+        "marks": 5
+      },
+      {
+        "name": "Clarity: effective use of visual elements and titles",
+        "marks": 5
+      },
+      {
+        "name": "Fun: ability to use humour and surprise in the images and titles",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "object": "titled images",
+      "twist": "premise transformation (head is a cube)"
+    }
+  },
+  {
+    "id": "ceed-2024-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2024,
+      "qno": 3,
+      "originalSection": "Visual Sensitivity",
+      "adapted": false
+    },
+    "slot": "visual",
+    "title": "'Forest' in an ornamental font",
+    "text": "Shown below are two letters A and B of an ornamental font. Using this font style create the word 'Forest' (the first letter in uppercase and the remaining in lowercase).",
+    "rules": [
+      "First letter uppercase, the rest lowercase"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency in visual characteristics",
+        "marks": 5
+      },
+      {
+        "name": "Font anatomy",
+        "marks": 5
+      },
+      {
+        "name": "Proportion",
+        "marks": 5
+      },
+      {
+        "name": "Rendering skills",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2024-b-q3-1.png",
+        "alt": "Two ornamental capital letters, A and B, in outline with a drop shadow, scroll curls at the feet and a column of swirl ornaments inside the stems."
+      }
+    ],
+    "tags": {
+      "object": "lettering",
+      "twist": "extrapolate a font from two letters",
+      "hook": "type design"
+    }
+  },
+  {
+    "id": "ceed-2024-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2024,
+      "qno": 4,
+      "originalSection": "Form sensitivity",
+      "adapted": false
+    },
+    "slot": "form",
+    "title": "Living-room seat from a torus",
+    "text": "Inspired from the given three-dimensional form, conceptualise, sketch, and render a single seater furniture for a living room.",
+    "rules": [],
+    "criteria": [
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 4
+      },
+      {
+        "name": "Form should complement function",
+        "marks": 4
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 4
+      },
+      {
+        "name": "Surface shading",
+        "marks": 4
+      },
+      {
+        "name": "Quality of lines/strokes",
+        "marks": 4
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2024-b-q4-1.png",
+        "alt": "Grey shaded rendering of a torus (a ring doughnut shape) seen from slightly above."
+      }
+    ],
+    "tags": {
+      "user": "general",
+      "setting": "living room",
+      "object": "single-seat furniture",
+      "twist": "derive product from a primitive (torus)"
+    }
+  },
+  {
+    "id": "ceed-2024-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2024,
+      "qno": 5,
+      "originalSection": "Problem identification",
+      "adapted": false
+    },
+    "slot": "problem-id",
+    "title": "Rural kitchen",
+    "text": "Shown below is the image of a rural kitchen. There are many challenges in using such a setup for cooking and related activities.\n\nDraw and annotate FIVE distinct design problems in this context.",
+    "rules": [
+      "Use only one visual for each problem",
+      "Answer in the given space only",
+      "Adhere to no more than 5 problems"
+    ],
+    "criteria": [
+      {
+        "name": "Significance of the identified problems",
+        "marks": 7
+      },
+      {
+        "name": "Ability to identify unique problems",
+        "marks": 7
+      },
+      {
+        "name": "Ability to explain the problem through visuals",
+        "marks": 6
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2024-b-q5-1.png",
+        "alt": "Photo of a rural mud stove at floor level with a wood fire burning, blackened pots on top, firewood and sacks scattered around."
+      }
+    ],
+    "tags": {
+      "user": "rural household",
+      "setting": "rural kitchen",
+      "object": "mud stove (chulha) setup",
+      "hook": "rural India"
+    }
+  },
+  {
+    "id": "ceed-2025-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2025,
+      "qno": 1,
+      "originalSection": "Sketching",
+      "adapted": false
+    },
+    "slot": "sketching",
+    "title": "Bear chase from the fox's view",
+    "text": "Two kids, Kaa and Kii, are on an adventure trip in a forest. While exploring, suddenly a bear emerges and starts chasing them. The kids start running in panic through the forest. A fox is watching the whole scene. Sketch this scene from the fox's point of view. The sketch should be clear and visible.",
+    "rules": [
+      "Use only black/HB-series pencils",
+      "Do not use other colours",
+      "Draw only in the given space"
+    ],
+    "criteria": [
+      {
+        "name": "Character and expressions",
+        "marks": 5
+      },
+      {
+        "name": "Proportion and composition",
+        "marks": 5
+      },
+      {
+        "name": "Quality of sketching",
+        "marks": 5
+      },
+      {
+        "name": "Environment and props",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "children; animals",
+      "setting": "forest",
+      "object": "scene",
+      "pov": "a fox watching (low, hidden)",
+      "twist": "animal point of view"
+    }
+  },
+  {
+    "id": "ceed-2025-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2025,
+      "qno": 2,
+      "originalSection": "Creativity",
+      "adapted": false
+    },
+    "slot": "creativity",
+    "title": "Bulb, tap, mosquito panorama",
+    "text": "Shown below is a canvas with four frames containing certain elements. Create a meaningful sequence of visuals using the elements in the frames. Ensure that continuity is maintained across the frames by using additional prop(s) and/or character(s) as needed. You may choose to create the sequence either from left to right or right to left, but indicate the direction using an arrow. Give an appropriate title in the space provided.",
+    "rules": [
+      "Mark the reading direction with an arrow",
+      "Give a title"
+    ],
+    "criteria": [
+      {
+        "name": "Imagination and creative ideas",
+        "marks": 5
+      },
+      {
+        "name": "Composition",
+        "marks": 5
+      },
+      {
+        "name": "Drawing quality and clarity",
+        "marks": 5
+      },
+      {
+        "name": "Continuity in the sequence",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2025-b-q2-1.png",
+        "alt": "A curved panoramic canvas split into four frames by dotted lines: a hanging light bulb top-left in frame 1, a water tap on the line between frames 2 and 3, and a mosquito at the right edge of frame 4."
+      }
+    ],
+    "tags": {
+      "setting": "home (implied)",
+      "object": "four-frame sequence",
+      "twist": "fixed elements; choose reading direction",
+      "hook": "everyday hazards (mosquito, water)"
+    }
+  },
+  {
+    "id": "ceed-2025-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2025,
+      "qno": 3,
+      "originalSection": "Visual Sensitivity",
+      "adapted": false
+    },
+    "slot": "visual",
+    "title": "Zoo enclosure icons",
+    "text": "Shown below are new animals that have been acquired by an Indian zoo.\n\n- A. Indian Grey Mongoose\n- B. Honey Badger\n- C. Indian Bison\n- D. Indian Pangolin\n\nThe zoo wishes to create a signage to guide visitors around the enclosures of these animals. Create four icons to indicate the animal in the enclosure. All icons should be clear and visible, and have a consistent visual language. Draw the icons in the FOUR squares provided in the answer booklet.",
+    "rules": [
+      "Use only BLACK colour",
+      "Draw the icons in the four squares"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency in the visual language",
+        "marks": 5
+      },
+      {
+        "name": "Representation of the animals",
+        "marks": 5
+      },
+      {
+        "name": "Visual composition",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2025-b-q3-1.png",
+        "alt": "Four labelled wildlife photos: A, an Indian grey mongoose; B, a honey badger; C, an Indian bison (gaur); D, an Indian pangolin."
+      }
+    ],
+    "tags": {
+      "user": "zoo visitors",
+      "setting": "zoo",
+      "object": "icon set",
+      "hook": "Indian wildlife"
+    }
+  },
+  {
+    "id": "ceed-2025-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2025,
+      "qno": 4,
+      "originalSection": "Form sensitivity",
+      "adapted": false
+    },
+    "slot": "form",
+    "title": "Character tea flask",
+    "text": "Shown on the left is a character-based design of a product. Inspired from this product, re-imagine, conceptualise, and render the tea flask given on the right. Make it clear and visible.",
+    "rules": [],
+    "criteria": [
+      {
+        "name": "Characterization of the product",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details and usability",
+        "marks": 5
+      },
+      {
+        "name": "Quality of sketching",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading/rendering",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2025-b-q4-1.png",
+        "alt": "Left: a corkscrew designed as a smiling figure with a round chrome face, a black flared body and two lever arms. Right: a stainless-steel tea flask with a black lid and handle."
+      }
+    ],
+    "tags": {
+      "user": "general",
+      "setting": "home",
+      "object": "tea flask",
+      "twist": "anthropomorphic redesign",
+      "hook": "unnamed design-history reference (character corkscrew)"
+    }
+  },
+  {
+    "id": "ceed-2025-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2025,
+      "qno": 5,
+      "originalSection": "Problem identification",
+      "adapted": false
+    },
+    "slot": "problem-id",
+    "title": "Vegetable cart, buyer and seller",
+    "text": "A typical vegetable cart, as seen in India, is shown below.\n\n**A.** Identify and list FIVE distinct problems from a buyer's point of view and FIVE distinct problems from a seller's point of view in this context. List the problems only in the given space. (5 + 5 marks)\n\n**B.** From the above-listed problems, draw and visually explain any ONE problem of the buyers, and any ONE problem of the sellers in the given boxes. (5 + 5 marks)",
+    "rules": [
+      "Do not limit yourself to the buyer and seller in the given image",
+      "Write the identified problems only on the dotted lines",
+      "Draw and visually explain the listed problems only in the given boxes"
+    ],
+    "criteria": [
+      {
+        "name": "Ability to identify unique and relevant problems in the given context",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems identified",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate problems through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Presentation, clarity and neatness",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2025-b-q5-1.png",
+        "alt": "Photo of a wooden push-cart with bicycle wheels piled with vegetables and fruit; a vendor stands behind it and a child in red reaches up to it."
+      }
+    ],
+    "tags": {
+      "user": "vendor and buyer",
+      "setting": "street market",
+      "object": "vegetable cart",
+      "pov": "buyer and seller",
+      "twist": "two stakeholder points of view",
+      "hook": "Indian street commerce"
+    }
+  },
+  {
+    "id": "ceed-2026-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2026,
+      "qno": 1,
+      "originalSection": "Sketching",
+      "adapted": false
+    },
+    "slot": "sketching",
+    "title": "Kitchen snack time from a chair",
+    "text": "One afternoon, seven years old Chinu and her pet dog are enjoying snacks in their kitchen. Chinu's father suddenly enters the kitchen and sees this pleasant moment with a smile.\n\nSketch the whole scene from the point of view of a chair kept nearby.",
+    "rules": [
+      "Use only black/HB-series pencils",
+      "Do not use other colours",
+      "Draw only in the given space"
+    ],
+    "criteria": [
+      {
+        "name": "Character and expressions",
+        "marks": 5
+      },
+      {
+        "name": "Proportion and composition",
+        "marks": 5
+      },
+      {
+        "name": "Quality of sketching",
+        "marks": 5
+      },
+      {
+        "name": "Environment and props",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "child, pet dog, parent",
+      "setting": "home kitchen",
+      "object": "scene",
+      "pov": "a chair kept nearby",
+      "twist": "inanimate-object point of view"
+    }
+  },
+  {
+    "id": "ceed-2026-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2026,
+      "qno": 2,
+      "originalSection": "Creativity",
+      "adapted": false
+    },
+    "slot": "creativity",
+    "title": "Twelve symbols, four frames",
+    "text": "In the given frames, sketch a story by incorporating the symbols shown below. Follow these instructions:\n\n- Give an appropriate title to the story.\n- Use ANY TWO symbols in each frame; use each symbol ONLY ONCE in the whole story.\n- The symbols cannot be modified, but can be rotated, flipped or scaled proportionately.\n- You are free to sketch additional elements (backgrounds, characters, props etc.) to make the story meaningful.\n- Label the frames in the bottom left corners with the number 1, 2, 3 and 4 to indicate the sequence of your story.",
+    "rules": [
+      "Any two symbols per frame; each symbol once",
+      "Symbols may be rotated, flipped or scaled, not modified",
+      "Number the frames 1–4 in the bottom-left corners"
+    ],
+    "criteria": [
+      {
+        "name": "Originality",
+        "marks": 5
+      },
+      {
+        "name": "Graphical narrative (story communication)",
+        "marks": 5
+      },
+      {
+        "name": "Humour and surprise",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2026-b-q2-1.png",
+        "alt": "Twelve solid black symbols in two rows: ant, scissors, signal waves, megaphone, alarm clock, wrench; clapperboard, surprised face, magnifying glass, aeroplane, cactus, kick-scooter."
+      }
+    ],
+    "tags": {
+      "object": "four-frame story",
+      "twist": "fixed symbol-use rules"
+    }
+  },
+  {
+    "id": "ceed-2026-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2026,
+      "qno": 3,
+      "originalSection": "Visual sensitivity",
+      "adapted": false
+    },
+    "slot": "visual",
+    "title": "Museum of Science icons",
+    "text": "A new museum with the theme \"Indian Museum of Science\" is being set up, which will cater primarily to Indian visitors. Create four icons based on the museum theme, to communicate the following sections to visitors:\n\n- Robotics\n- Energy Science\n- Ocean Science\n- Food Technology\n\nAll icons should be clear and visible, and have a consistent visual language. Draw the icons in the FOUR squares provided in the answer booklet.",
+    "rules": [
+      "Icons should only have visuals. DO NOT use text",
+      "Only BLACK & WHITE colours"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency of visual language",
+        "marks": 5
+      },
+      {
+        "name": "Thematic appropriateness",
+        "marks": 5
+      },
+      {
+        "name": "Effective communication",
+        "marks": 5
+      },
+      {
+        "name": "Composition, clarity and neatness",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "Indian visitors",
+      "setting": "science museum",
+      "object": "icon set",
+      "hook": "science and technology"
+    }
+  },
+  {
+    "id": "ceed-2026-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2026,
+      "qno": 4,
+      "originalSection": "Form sensitivity",
+      "adapted": false
+    },
+    "slot": "form",
+    "title": "Living-room seat from a sphere",
+    "text": "Conceptualise and render a usable single seat furniture that is inspired by a sphere, for a living room. The sphere may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the sphere should be retained.",
+    "rules": [
+      "Keep the essence of the sphere"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "general",
+      "setting": "living room",
+      "object": "single-seat furniture",
+      "twist": "primitive with allowed operations (cut, add, subtract, deform, repeat)"
+    }
+  },
+  {
+    "id": "ceed-2026-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2026,
+      "qno": 5,
+      "originalSection": "Problem identification",
+      "adapted": false
+    },
+    "slot": "problem-id",
+    "title": "Srinagar to Chennai, elderly couple",
+    "text": "An elderly couple from Srinagar is travelling to Chennai for medical treatment. They will travel by train for most of their journey and plan to take a bus and auto rickshaws for all local commutes.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions.\n\nWrite the FOUR problem statements starting with the words \"How can we…\" for the given context. (2 × 4 = 8 marks)\n\nFor your reference, an example of \"How can we…\" from another context: *How can we make science learning enjoyable for primary school children?*\n\nSelect any ONE of the four identified problem statements. Draw TWO potential design solutions for the selected problem statement. Write a short title for each solution. (6 × 2 = 12 marks)",
+    "rules": [
+      "Problem statements start with \"How can we…\""
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "elderly couple",
+      "setting": "long-distance train, bus and auto-rickshaw",
+      "object": "journey",
+      "twist": "How-can-we statements, then two solutions",
+      "hook": "travel for medical care; India north to south"
+    }
+  },
+  {
+    "id": "ceed-2010-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2010,
+      "qno": 1,
+      "originalSection": "Visual Perception and Design Sensitivity (1.5)",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Angry shoe, friendly shoe",
+    "text": "Below is an image of a pair of shoes. Redraw the pair large on your sheet and colour the shoes to depict two expressions: **Angry** on the left shoe and **Friendly** on the right shoe.\n\nKeep the basic form of each shoe as given. Use colour, pattern and surface graphics to carry each expression.",
+    "rules": [
+      "Keep the given shoe forms",
+      "Colour allowed"
+    ],
+    "criteria": [
+      {
+        "name": "Thematic appropriateness of colour and graphics",
+        "marks": 5
+      },
+      {
+        "name": "Effective communication of each expression",
+        "marks": 5
+      },
+      {
+        "name": "Consistency with the given shoe form",
+        "marks": 5
+      },
+      {
+        "name": "Composition, clarity and neatness",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2010-b-q1-1.png",
+        "alt": "Line drawing of a pair of ankle boots with laces; the left one is labelled Angry and the right one Friendly."
+      }
+    ],
+    "tags": {
+      "object": "pair of shoes",
+      "twist": "emotion through colour alone",
+      "hook": "colour and emotion"
+    }
+  },
+  {
+    "id": "ceed-2010-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2010,
+      "qno": 2,
+      "originalSection": "Drawing Abilities and Skills",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Rubber cup, glass saucer, wooden spoon",
+    "text": "Illustrate in perspective a composition with a **cup**, a **saucer** and a **spoon** placed on a flat surface. The cup is made of rubber, the saucer is made of glass and the spoon is made of wood.",
+    "rules": [
+      "Freehand, black pencil only",
+      "Do not use drawing instruments"
+    ],
+    "criteria": [
+      {
+        "name": "Composition and correctness of perspective",
+        "marks": 5
+      },
+      {
+        "name": "Quality of surface representation through shading",
+        "marks": 5
+      },
+      {
+        "name": "Quality of lines",
+        "marks": 5
+      },
+      {
+        "name": "Correctness of relative proportions",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "setting": "tabletop",
+      "object": "cup, saucer and spoon",
+      "twist": "unexpected material for each object"
+    }
+  },
+  {
+    "id": "ceed-2010-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2010,
+      "qno": 3,
+      "originalSection": "Creativity I",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Five uses for discarded CDs",
+    "text": "Imagine five distinct uses of discarded compact discs (CDs). The CDs can be cut, bent, pasted or used in multiples to execute your ideas.\n\nRepresent your ideas with five neat sketches, with a brief note for each if necessary.",
+    "rules": [
+      "Five sketches with brief notes"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Humour and surprise",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "object": "discarded CDs",
+      "twist": "cut, bend, paste or multiply",
+      "hook": "reuse"
+    }
+  },
+  {
+    "id": "ceed-2010-b-q4a",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2010,
+      "qno": 4,
+      "originalSection": "Problem Identification and Analysis (A)",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Pressure cooker problems",
+    "text": "Below is an image of a pressure cooker commonly used in Indian households. Identify five unique problems from the point of view of the users.\n\n- Write each problem briefly and justify it in one line.\n- Choose the three most important problems and illustrate a solution for each with a sketch.",
+    "rules": [
+      "Problems from the users' point of view"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of unique problems and proper justification",
+        "marks": 10
+      },
+      {
+        "name": "Appropriateness of your solutions",
+        "marks": 10
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2010-b-q4a-1.png",
+        "alt": "Photo of an aluminium pressure cooker with a long black handle, a lid and a weighted whistle on top."
+      }
+    ],
+    "tags": {
+      "user": "household cook",
+      "setting": "home kitchen",
+      "object": "pressure cooker",
+      "pov": "users",
+      "hook": "Indian kitchen"
+    }
+  },
+  {
+    "id": "ceed-2010-b-q4b",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2010,
+      "qno": 4,
+      "originalSection": "Problem Identification and Analysis (B)",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Railway platform communication",
+    "text": "Below is an image of a typical railway platform in India. Identify five unique **communication design** problems from the point of view of the users.\n\n- Write each problem briefly and justify it in one line.\n- Choose the three most important problems and illustrate a solution for each with a sketch.",
+    "rules": [
+      "Communication design problems only",
+      "Problems from the users' point of view"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of unique problems and proper justification",
+        "marks": 10
+      },
+      {
+        "name": "Appropriateness of your solutions",
+        "marks": 10
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2010-b-q4b-1.png",
+        "alt": "Black-and-white photo of a long Indian railway platform under a steel roof, with hanging bilingual signboards, a book stall sign, waiting passengers and a train alongside."
+      }
+    ],
+    "tags": {
+      "user": "rail commuters",
+      "setting": "railway platform",
+      "object": "signage and wayfinding",
+      "pov": "users",
+      "twist": "communication problems only",
+      "hook": "Indian Railways"
+    }
+  },
+  {
+    "id": "ceed-2010-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2010,
+      "qno": 5,
+      "originalSection": "Creativity II",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Cone, three discs and a wire",
+    "text": "You have at your disposal five objects: **1 cone, 3 discs and 1 flexible wire**, as shown below.\n\nImagine five interesting products made out of a combination of all five objects. You can scale the objects to any size or dimension. Represent your ideas with neat sketches, name each product and add a brief note if necessary.",
+    "rules": [
+      "Use all five objects in every product",
+      "Name each product"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Humour and surprise",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2010-b-q5-1.png",
+        "alt": "Outline drawing of a cone, three discs of different orientations and a long curved flexible wire."
+      }
+    ],
+    "tags": {
+      "object": "products from primitives",
+      "twist": "use all five objects every time"
+    }
+  },
+  {
+    "id": "ceed-2010-b-q6a",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2010,
+      "qno": 6,
+      "originalSection": "Design Problem Solving: Product Design / Interaction Design (A)",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Scissors for the blind",
+    "text": "People who are fully blind need products that help them carry out day-to-day activities with ease. One such product is a pair of scissors, used for cutting liquid pouches, cloth, paper, etc. Design a new pair of scissors for the visually impaired. You can make use of new technologies if needed.\n\n1. Identify five distinct factors essential for designing scissors for the blind.\n2. Generate three quick concepts as pencil sketches based on these factors.\n3. Develop one into a final concept showing the overall form, construction details and materials.",
+    "rules": [
+      "Pencil sketches"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of distinct factors",
+        "marks": 4
+      },
+      {
+        "name": "Novelty of your alternate concepts",
+        "marks": 4
+      },
+      {
+        "name": "Appropriateness of your final solution",
+        "marks": 8
+      },
+      {
+        "name": "Quality of your presentation",
+        "marks": 4
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "blind people",
+      "setting": "home",
+      "object": "scissors",
+      "twist": "user cannot see the tool",
+      "hook": "accessibility"
+    }
+  },
+  {
+    "id": "ceed-2010-b-q6b",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2010,
+      "qno": 6,
+      "originalSection": "Design Problem Solving: Communication Design (B)",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Flu symbol and school poster",
+    "text": "Influenza A (H1N1), also known as swine flu, is an influenza virus that is contagious and spreads rapidly.\n\nDesign a new symbol to capture the essence of this disease, using text, graphics or both.\n\n1. List five distinct factors essential for representing the disease.\n2. Sketch three quick symbol concepts and finalise one.\n3. Design a poster that uses your final symbol to create awareness about the disease among school children.",
+    "rules": [
+      "Colours allowed if necessary",
+      "The poster must use your final symbol"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of distinct factors",
+        "marks": 4
+      },
+      {
+        "name": "Novelty of your alternate concepts",
+        "marks": 4
+      },
+      {
+        "name": "Appropriateness of your final symbol",
+        "marks": 4
+      },
+      {
+        "name": "Clarity of your final poster design",
+        "marks": 8
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "school children",
+      "setting": "school",
+      "object": "symbol and poster",
+      "hook": "public health"
+    }
+  },
+  {
+    "id": "ceed-2011-b-q1a",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2011,
+      "qno": 1,
+      "originalSection": "Visual Perception and Design Sensitivity (1.4)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Four forms from one line",
+    "text": "Below is a line. Visualise and illustrate **four different forms** by making use of the line. An example is shown next to it.\n\nDraw each form in its own box and give it a title.",
+    "rules": [
+      "Use the given line in every form",
+      "Title each form"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Humour and surprise",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2011-b-q1a-1.png",
+        "alt": "A box showing a single smooth S-curved line on the left, labelled Line, and on the right the same curve turned into a looping spring-like garland, labelled Example."
+      }
+    ],
+    "tags": {
+      "object": "titled images",
+      "twist": "build from one given line"
+    }
+  },
+  {
+    "id": "ceed-2011-b-q1b",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2011,
+      "qno": 1,
+      "originalSection": "Visual Perception and Design Sensitivity (1.7)",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Masculine car, feminine car",
+    "text": "Below are two images of the same car. Redraw them large on your sheet and use a minimum of two colours on each car to depict two expressions: **Masculine** and **Feminine**.\n\nKeep the car's form as given; carry each expression through colour, pattern and graphics.",
+    "rules": [
+      "At least two colours per car",
+      "Keep the given car form"
+    ],
+    "criteria": [
+      {
+        "name": "Thematic appropriateness of colour and graphics",
+        "marks": 5
+      },
+      {
+        "name": "Effective communication of each expression",
+        "marks": 5
+      },
+      {
+        "name": "Consistency with the given car form",
+        "marks": 5
+      },
+      {
+        "name": "Composition, clarity and neatness",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2011-b-q1b-1.png",
+        "alt": "Two identical outline drawings of a rounded vintage hatchback car, labelled Masculine and Feminine."
+      }
+    ],
+    "tags": {
+      "object": "car",
+      "twist": "character through colour alone",
+      "hook": "colour and gender coding"
+    }
+  },
+  {
+    "id": "ceed-2011-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2011,
+      "qno": 2,
+      "originalSection": "Drawing Abilities and Skills",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Open book under a lit lamp",
+    "text": "Illustrate in perspective a composition of an **open book** and a **table lamp, with the light switched on**, placed on a flat surface.",
+    "rules": [
+      "Freehand, black pencils only",
+      "Do not use drawing instruments or colour pencils"
+    ],
+    "criteria": [
+      {
+        "name": "Composition and correctness of perspective",
+        "marks": 5
+      },
+      {
+        "name": "Correctness of light and shadow",
+        "marks": 5
+      },
+      {
+        "name": "Quality of lines",
+        "marks": 5
+      },
+      {
+        "name": "Correctness of relative proportions",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "setting": "tabletop",
+      "object": "book and table lamp",
+      "twist": "the lamp is the light source"
+    }
+  },
+  {
+    "id": "ceed-2011-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2011,
+      "qno": 3,
+      "originalSection": "Creativity",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Eight primitives, five products",
+    "text": "The following objects are available to you: **2 hemispheres, 2 cubes, 2 cylinders and 2 wires** (flexible rods), as shown below.\n\nImagine five interesting products made out of a combination of all 8 objects. You can scale the objects to any size or dimension. Represent your ideas with neat sketches, name each product and add a brief note if necessary.",
+    "rules": [
+      "Use all eight objects in every product",
+      "Name each product"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Humour and surprise",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2011-b-q3-1.png",
+        "alt": "Outline drawing in a box: two hemispheres, two cubes, two cylinders and two long wavy wires."
+      }
+    ],
+    "tags": {
+      "object": "products from primitives",
+      "twist": "use all eight objects every time"
+    }
+  },
+  {
+    "id": "ceed-2011-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2011,
+      "qno": 4,
+      "originalSection": "Problem Identification and Analysis",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Bus stop problems",
+    "text": "Below is an image of a typical bus stop in India. Identify five unique problems from the point of view of the users.\n\n- Write each problem briefly.\n- Choose the three most important problems and illustrate a solution for each with a sketch.",
+    "rules": [
+      "Problems from the users' point of view"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of each unique problem",
+        "marks": 10
+      },
+      {
+        "name": "Appropriateness of your solutions",
+        "marks": 10
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2011-b-q4-1.png",
+        "alt": "Black-and-white photo of a roadside bus shelter covered in large advertising hoardings, with people sitting and standing under it and one holding an umbrella."
+      }
+    ],
+    "tags": {
+      "user": "commuters",
+      "setting": "city bus stop",
+      "object": "bus shelter",
+      "pov": "users",
+      "hook": "urban India"
+    }
+  },
+  {
+    "id": "ceed-2011-b-q5a",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2011,
+      "qno": 5,
+      "originalSection": "Design Problem Solving: Product Design (A)",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Mobile phone for the elderly",
+    "text": "Mobile phones have great potential to address the special needs of the elderly. Design a new mobile phone for elderly users.\n\n1. Identify five distinct factors essential for designing a mobile phone for the elderly.\n2. Generate three quick concepts as pencil sketches based on these factors.\n3. Develop one into a final concept showing the overall form and the design of its interface.",
+    "rules": [
+      "Pencil sketches"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of distinct factors",
+        "marks": 3
+      },
+      {
+        "name": "Originality of your alternate concepts",
+        "marks": 7
+      },
+      {
+        "name": "Appropriateness of your final solution",
+        "marks": 7
+      },
+      {
+        "name": "Quality of your presentation",
+        "marks": 3
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "elderly",
+      "object": "mobile phone",
+      "hook": "accessibility; technology"
+    }
+  },
+  {
+    "id": "ceed-2011-b-q5b",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2011,
+      "qno": 5,
+      "originalSection": "Design Problem Solving: Communication Design (B)",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Organic vegetable drink brand",
+    "text": "A new business wants to introduce an original health drink made from organically grown vegetables. Name the brand yourself.\n\n1. List five distinct factors essential for representing the brand.\n2. Sketch three quick logo/symbol concepts using text, graphics or both, and finalise one.\n3. Design the graphics for the label of a one-litre pack, using your final logo/symbol.",
+    "rules": [
+      "Colours allowed if necessary",
+      "The label must use your final logo/symbol"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of distinct factors",
+        "marks": 3
+      },
+      {
+        "name": "Originality of your alternate concepts",
+        "marks": 7
+      },
+      {
+        "name": "Appropriateness of your final logo/symbol",
+        "marks": 3
+      },
+      {
+        "name": "Clarity of your final label design for packaging",
+        "marks": 7
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "consumers",
+      "setting": "market shelf",
+      "object": "logo and pack label",
+      "hook": "organic food"
+    }
+  },
+  {
+    "id": "ceed-2011-b-q5c",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2011,
+      "qno": 5,
+      "originalSection": "Design Problem Solving: Animation Design (C)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Tiger, sparrow and the poacher",
+    "text": "The tiger and the sparrow are endangered species in our country, and their protection needs attention.\n\nCreate an interesting comic strip involving a **tiger**, a **sparrow** and a **poacher** (a person who captures animals by laying a trap), using text and images.\n\n1. Write the abstract of the story in five lines.\n2. Make two quick alternate sketches of each character.\n3. Draw the story in four key frames, with a title.",
+    "rules": [
+      "Text and images",
+      "Colours allowed if necessary"
+    ],
+    "criteria": [
+      {
+        "name": "Abstract of the story",
+        "marks": 3
+      },
+      {
+        "name": "Appropriate portrayal of the characters",
+        "marks": 7
+      },
+      {
+        "name": "Originality of your storyboard (text and images)",
+        "marks": 7
+      },
+      {
+        "name": "Quality of your presentation",
+        "marks": 3
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "animals; poacher",
+      "setting": "forest",
+      "object": "comic strip",
+      "hook": "wildlife conservation"
+    }
+  },
+  {
+    "id": "ceed-2012-b-q1a",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2012,
+      "qno": 1,
+      "originalSection": "Drawing Ability (option 1)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Favourite car, three-quarter view",
+    "text": "Draw your favourite car in proper perspective in **three-quarter view**. You may use shading to give a realistic three-dimensional feel.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)"
+    ],
+    "criteria": [
+      {
+        "name": "Composition",
+        "marks": 5
+      },
+      {
+        "name": "Perspective",
+        "marks": 5
+      },
+      {
+        "name": "Light, shade and shadow",
+        "marks": 5
+      },
+      {
+        "name": "Quality of lines",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "object": "car",
+      "pov": "three-quarter view"
+    }
+  },
+  {
+    "id": "ceed-2012-b-q1b",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2012,
+      "qno": 1,
+      "originalSection": "Drawing Ability (option 2)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Five-year-old on a chair",
+    "text": "Draw a **5-year-old boy sitting on a chair**. You may use shading to give a realistic three-dimensional feel.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)"
+    ],
+    "criteria": [
+      {
+        "name": "Composition",
+        "marks": 5
+      },
+      {
+        "name": "Perspective",
+        "marks": 5
+      },
+      {
+        "name": "Light, shade and shadow",
+        "marks": 5
+      },
+      {
+        "name": "Quality of lines",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "child (boy)",
+      "object": "figure on a chair"
+    }
+  },
+  {
+    "id": "ceed-2012-b-q2a",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2012,
+      "qno": 2,
+      "originalSection": "Design Problem Solving (A)",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Jar-cap opener for the elderly",
+    "text": "Screw caps on glass bottles of pickle and jam are often difficult for senior citizens to open. Design an opener for screw-on bottle caps, to be used by the elderly.\n\n1. Identify five distinct factors essential for designing a cap opener for the elderly.\n2. Generate three quick concepts as pencil sketches based on these factors.\n3. Develop one into a final concept showing the overall form and its features. Mention the materials and why you chose them.",
+    "rules": [
+      "Pencil sketches"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of distinct factors",
+        "marks": 5
+      },
+      {
+        "name": "Originality of your alternate concepts",
+        "marks": 5
+      },
+      {
+        "name": "Appropriateness of your final solution and choice of materials",
+        "marks": 5
+      },
+      {
+        "name": "Quality of your presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "elderly",
+      "setting": "home kitchen",
+      "object": "jar-cap opener",
+      "hook": "accessibility; Indian pickle jars"
+    }
+  },
+  {
+    "id": "ceed-2012-b-q2b",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2012,
+      "qno": 2,
+      "originalSection": "Design Problem Solving (B)",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Anti-corruption awareness poster",
+    "text": "Corruption is a big concern and people are agitating over the issue. It is a social responsibility of a designer to create awareness of this issue amongst common people through visual media.\n\nDesign an anti-corruption awareness poster that captures the essence of the issue, using text, graphics or both.\n\n1. List five distinct factors essential for representing the issue.\n2. Sketch three quick poster concepts.\n3. Develop one into the final poster.",
+    "rules": [
+      "Colours allowed if necessary"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of distinct factors",
+        "marks": 5
+      },
+      {
+        "name": "Originality of your alternate concepts",
+        "marks": 5
+      },
+      {
+        "name": "Appropriateness of your final poster",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of your poster in representing the issue",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "general public",
+      "object": "awareness poster",
+      "hook": "civic awareness"
+    }
+  },
+  {
+    "id": "ceed-2012-b-q2c",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2012,
+      "qno": 2,
+      "originalSection": "Design Problem Solving (C)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Dengue mosquito comic",
+    "text": "Dengue fever claiming human lives is becoming a concern. Create an imaginary **female mosquito character** spreading dengue fever, and draw an interesting comic strip involving her. You may add characters to complement the story.\n\n1. Write an abstract of the story in five lines.\n2. Make two quick alternative sketches of each character.\n3. Draw the story in four frames, with a title.",
+    "rules": [
+      "Colours allowed if necessary"
+    ],
+    "criteria": [
+      {
+        "name": "Abstract of the story",
+        "marks": 5
+      },
+      {
+        "name": "Appropriateness of the characters",
+        "marks": 5
+      },
+      {
+        "name": "Originality of the storyboard",
+        "marks": 5
+      },
+      {
+        "name": "Quality of presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "mosquito character; people",
+      "object": "comic strip",
+      "twist": "the villain is the hero of the strip",
+      "hook": "public health"
+    }
+  },
+  {
+    "id": "ceed-2013-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2013,
+      "qno": 1,
+      "originalSection": "Part B Mandatory",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Apple and bananas on a plate",
+    "text": "Create a freehand sketch of an **apple** and a **bunch of six bananas** placed on a dinner plate. You may use shading to create a realistic three-dimensional feel.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)"
+    ],
+    "criteria": [
+      {
+        "name": "Perspective and three-dimensional quality",
+        "marks": 5
+      },
+      {
+        "name": "Light, shade and shadow",
+        "marks": 5
+      },
+      {
+        "name": "Quality of lines",
+        "marks": 5
+      },
+      {
+        "name": "Composition",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "setting": "tabletop",
+      "object": "fruit on a plate"
+    }
+  },
+  {
+    "id": "ceed-2013-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2013,
+      "qno": 2,
+      "originalSection": "Part B Mandatory",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Invisibility spray",
+    "text": "You are given a special magic liquid. You can make anything invisible by spraying this liquid on it. Describe five instances where you will use this liquid in your daily life.\n\nUse a sketch and a brief note (less than 20 words) to describe each answer.",
+    "rules": [
+      "Notes under 20 words each"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Ability to imagine",
+        "marks": 5
+      },
+      {
+        "name": "Sense of humour",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "object": "magic liquid",
+      "twist": "anything sprayed turns invisible",
+      "hook": "daily life"
+    }
+  },
+  {
+    "id": "ceed-2013-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2013,
+      "qno": 3,
+      "originalSection": "Part B Mandatory",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "College canteen problems",
+    "text": "Below is an image of a college canteen in India. Identify five problems in this scenario.\n\n- Describe each problem briefly (in less than 20 words).\n- Illustrate the two problems you consider most important.\n\nDo not suggest solutions.",
+    "rules": [
+      "Problem descriptions under 20 words each",
+      "Do not suggest solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of unique problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to understand the problems",
+        "marks": 5
+      },
+      {
+        "name": "Design sensitivity",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2013-b-q3-1.png",
+        "alt": "Photo of a college canteen interior: a service counter, a red soft-drink cooler, food posters on the wall, plastic chairs and a few people at the counter."
+      }
+    ],
+    "tags": {
+      "user": "students",
+      "setting": "college canteen",
+      "object": "canteen interior",
+      "twist": "no solutions allowed",
+      "hook": "Indian everyday"
+    }
+  },
+  {
+    "id": "ceed-2013-b-q4a",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2013,
+      "qno": 4,
+      "originalSection": "Part B Optional (Product Design)",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Floor mop that reaches everywhere",
+    "text": "Mopping floors is one of the tedious daily household chores. A normal mop cannot reach all the crevices and under the furniture. Design a manually operated floor mop for domestic use.\n\n1. Identify five distinct factors essential for designing such a mop.\n2. Generate three quick concepts as pencil sketches, each with a note of no more than 15 words.\n3. Develop one into a final concept showing the overall form and its features. Indicate the materials for the various parts.",
+    "rules": [
+      "Concept notes no more than 15 words",
+      "Manually operated"
+    ],
+    "criteria": [
+      {
+        "name": "Identification of distinct factors",
+        "marks": 5
+      },
+      {
+        "name": "Originality of your alternate concepts",
+        "marks": 5
+      },
+      {
+        "name": "Appropriateness of your final solution and choice of materials",
+        "marks": 5
+      },
+      {
+        "name": "Quality of presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "homemaker",
+      "setting": "home",
+      "object": "floor mop",
+      "hook": "domestic chores"
+    }
+  },
+  {
+    "id": "ceed-2013-b-q4b",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2013,
+      "qno": 4,
+      "originalSection": "Part B Optional (Visual Communication)",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Text-free medicine instructions",
+    "text": "The following instructions are to be printed on a medicine packet. Represent them visually **without using any text**:\n\n1. One tablet before breakfast at 7:00 AM.\n2. One tablet after lunch at 2:00 PM.\n3. One and a half tablets after dinner at 9:00 PM.\n4. Not to be taken by pregnant women.\n\nThe packet is 50 mm high, 200 mm wide and 50 mm deep. Your final artwork (all four visuals together) should fit within 40 mm × 160 mm. Explain your design solution in not more than 20 words.",
+    "rules": [
+      "No text in the visuals",
+      "All four visuals fit within 40 mm × 160 mm",
+      "Explanation in not more than 20 words"
+    ],
+    "criteria": [
+      {
+        "name": "Ability to communicate clearly using visuals without text",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of visuals",
+        "marks": 5
+      },
+      {
+        "name": "Quality of renderings",
+        "marks": 5
+      },
+      {
+        "name": "Overall effectiveness of the final design solution",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "patients, pregnant women",
+      "setting": "pharmacy pack",
+      "object": "pictogram set",
+      "twist": "no text, fixed size",
+      "hook": "health literacy"
+    }
+  },
+  {
+    "id": "ceed-2013-b-q4c",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2013,
+      "qno": 4,
+      "originalSection": "Part B Optional (Animation Design)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Autobiography of a crow",
+    "text": "The crow is the most common bird we get to see in India, and it carries many deep-rooted associations in Indian society.\n\nImagine that you are a crow and narrate your autobiography.\n\n1. Write your story in 5 sentences.\n2. Make 3 quick sketches of the crow in your story in various poses, moods or expressions.\n3. Tell your story in 4 frames, with a title.",
+    "rules": [
+      "Story in 5 sentences"
+    ],
+    "criteria": [
+      {
+        "name": "Ability to design an interesting character and story",
+        "marks": 5
+      },
+      {
+        "name": "Originality of the story",
+        "marks": 5
+      },
+      {
+        "name": "Graphical narrative (story communication)",
+        "marks": 5
+      },
+      {
+        "name": "Quality and finish of drawings",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "crow",
+      "object": "character and story",
+      "pov": "first person, as the crow",
+      "twist": "you are the crow",
+      "hook": "Indian culture"
+    }
+  },
+  {
+    "id": "ceed-2014-b-q1a",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2014,
+      "qno": 1,
+      "originalSection": "Sketching (option 1)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Opening the fridge",
+    "text": "Draw a freehand perspective drawing of **a person opening the refrigerator door in the kitchen**.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)"
+    ],
+    "criteria": [
+      {
+        "name": "Abilities in perspective drawing",
+        "marks": 5
+      },
+      {
+        "name": "Light, shade and shadow",
+        "marks": 5
+      },
+      {
+        "name": "Quality of lines",
+        "marks": 5
+      },
+      {
+        "name": "Sense of scale, proportion and composition",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "setting": "home kitchen",
+      "object": "figure with refrigerator"
+    }
+  },
+  {
+    "id": "ceed-2014-b-q1b",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2014,
+      "qno": 1,
+      "originalSection": "Sketching (option 2)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Person beside a parked scooter",
+    "text": "Draw a freehand perspective drawing of **a person standing next to a scooter parked on the street**.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)"
+    ],
+    "criteria": [
+      {
+        "name": "Abilities in perspective drawing",
+        "marks": 5
+      },
+      {
+        "name": "Light, shade and shadow",
+        "marks": 5
+      },
+      {
+        "name": "Quality of lines",
+        "marks": 5
+      },
+      {
+        "name": "Sense of scale, proportion and composition",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "setting": "street",
+      "object": "figure with scooter",
+      "hook": "Indian street"
+    }
+  },
+  {
+    "id": "ceed-2014-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2014,
+      "qno": 2,
+      "originalSection": "Creativity and Imagination",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "The club house incident",
+    "text": "The illustration below is an artist's impression of an incident in a club house. Narrate the incident based on your creative imagination.\n\n- Write the incident in less than 100 words.\n- Sketch two frames: the moment just before this scene and the moment just after it.",
+    "rules": [
+      "Narrative in less than 100 words",
+      "Two sketched frames"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of the narrative",
+        "marks": 5
+      },
+      {
+        "name": "Imagination and ideation",
+        "marks": 5
+      },
+      {
+        "name": "Storytelling ability",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2014-b-q2-1.png",
+        "alt": "Busy black-and-white line illustration of a crowded room: an older man seated in an armchair surrounded by men and women in saris, people at the doorways, a wall clock, a cat, potted plants and large pots on the floor."
+      }
+    ],
+    "tags": {
+      "setting": "social interior",
+      "object": "busy illustration",
+      "twist": "invent what happened",
+      "hook": "Indian social scene"
+    }
+  },
+  {
+    "id": "ceed-2014-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2014,
+      "qno": 3,
+      "originalSection": "Creativity",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Umbrella out of season",
+    "text": "Umbrellas are used mainly during the rainy season and usually remain unused during the rest of the year.\n\nCreatively generate **four** alternative uses of the umbrella other than protection from rain or sunshine. Illustrate each idea as a sketch with a short description.",
+    "rules": [
+      "Not for rain or sun protection"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of the ideas",
+        "marks": 5
+      },
+      {
+        "name": "Creativity and innovation",
+        "marks": 5
+      },
+      {
+        "name": "Imagination and ideation",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "object": "umbrella",
+      "twist": "idle object, new use",
+      "hook": "monsoon season"
+    }
+  },
+  {
+    "id": "ceed-2014-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2014,
+      "qno": 4,
+      "originalSection": "Part B Optional (Visual Communication and Interaction)",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Navrang Chitrapat ticket booking",
+    "text": "Design a graphical user interface for the website of a movie theatre complex named **'Navrang Chitrapat'** for booking movie tickets online. The complex has 3 theatres, each screening a different film, three shows per day.\n\nDraw **four** key screens in sequence that take the user through the booking. Between them, the screens should present: basic information about the complex, name of film, date, time, availability of tickets, price, payment options and confirmation of booking. Add a brief note on your design decisions.",
+    "rules": [
+      "Four screens in sequence"
+    ],
+    "criteria": [
+      {
+        "name": "Usability of the interface",
+        "marks": 5
+      },
+      {
+        "name": "Structure and clarity of information",
+        "marks": 5
+      },
+      {
+        "name": "Visual quality of icons and overall screens",
+        "marks": 5
+      },
+      {
+        "name": "Logic of design decisions",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "moviegoers",
+      "setting": "cinema",
+      "object": "booking website",
+      "hook": "technology; Indian naming"
+    }
+  },
+  {
+    "id": "ceed-2014-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2014,
+      "qno": 5,
+      "originalSection": "Part B Optional (Animation Design)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Bag-snatch on the platform",
+    "text": "A woman is walking on a crowded railway platform. A train pulls in and people alight. A man suddenly comes up behind the woman, snatches her bag and runs away. The woman shouts for help. A policeman standing near a vendor's cart looks up and immediately gives chase. Two women standing by try to console the shocked woman. The thief runs towards the stairs to the overhead bridge. The policeman throws his baton at the thief's legs. The thief stumbles and comes crashing down on the platform. A group of men catch him and retrieve the bag as the policeman reaches. A loud cheer goes up amongst the watching public.\n\nAssume you are one of the characters: **the woman, the thief, the policeman or a bystander**. Illustrate the story as you see it unfolding in front of you, in **six frames**.",
+    "rules": [
+      "Choose one character's point of view and keep it",
+      "Six frames"
+    ],
+    "criteria": [
+      {
+        "name": "Visual narrative structure",
+        "marks": 5
+      },
+      {
+        "name": "Point of view",
+        "marks": 5
+      },
+      {
+        "name": "Quality of illustrations",
+        "marks": 5
+      },
+      {
+        "name": "Character and environment development",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "commuters; policeman",
+      "setting": "railway platform",
+      "object": "storyboard",
+      "pov": "one character of your choice",
+      "twist": "first-person character view",
+      "hook": "Indian Railways"
+    }
+  },
+  {
+    "id": "ceed-2014-b-q6",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2014,
+      "qno": 6,
+      "originalSection": "Part B Optional (Product Design)",
+      "adapted": true
+    },
+    "slot": "form",
+    "title": "Roadside segregation bins",
+    "text": "Roadside waste containers are often dirty, stinking and spilling over. Design roadside waste bin(s) for public places that segregate:\n\n- different types of packaging\n- wet and dry organic waste\n- organic food waste\n- all other kinds of leftover\n\nThe containers should be rugged and movable so that the waste can be transported for periodic disposal.\n\nPresent a neat freehand sketch showing the form, an exploded view, the materials and processes, and a brief note on your design decisions.",
+    "rules": [
+      "Include an exploded view"
+    ],
+    "criteria": [
+      {
+        "name": "User-centric design for hygiene, portability and Indian conditions",
+        "marks": 5
+      },
+      {
+        "name": "Sustainability (recycle, reduce, regenerate, refuse)",
+        "marks": 5
+      },
+      {
+        "name": "Originality of ideas and design insight",
+        "marks": 5
+      },
+      {
+        "name": "Appropriateness of materials and manufacturing",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "public",
+      "setting": "street",
+      "object": "waste bins",
+      "twist": "four-way segregation",
+      "hook": "sustainability; Indian conditions"
+    }
+  },
+  {
+    "id": "ceed-2015-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2015,
+      "qno": 1,
+      "originalSection": "Part B (mandatory)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Cookery-show pressure cooker",
+    "text": "Imagine a scene from a cookery show. The chef has just placed a **pressure cooker on a two-burner gas stove**. Draw a freehand perspective drawing of this setup.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)"
+    ],
+    "criteria": [
+      {
+        "name": "Perspective",
+        "marks": 5
+      },
+      {
+        "name": "Light, shade and shadow",
+        "marks": 5
+      },
+      {
+        "name": "Quality of lines",
+        "marks": 5
+      },
+      {
+        "name": "Scale and proportion in the composition",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "chef",
+      "setting": "TV kitchen set",
+      "object": "pressure cooker on a gas stove",
+      "hook": "Indian kitchen"
+    }
+  },
+  {
+    "id": "ceed-2015-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2015,
+      "qno": 2,
+      "originalSection": "Part B (mandatory)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Half-size for three hours",
+    "text": "You are given a handheld magic device that can reduce the size of any object by 50%. The reduction lasts only three hours. To reduce the size, point the device towards an object and press the button.\n\nIllustrate **four** creative applications of this device. Support each with a brief note of no more than 50 words if required.",
+    "rules": [
+      "Notes no more than 50 words each"
+    ],
+    "criteria": [
+      {
+        "name": "Variety",
+        "marks": 5
+      },
+      {
+        "name": "Creativity",
+        "marks": 5
+      },
+      {
+        "name": "Innovation",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "object": "magic device",
+      "twist": "50% smaller for only three hours"
+    }
+  },
+  {
+    "id": "ceed-2015-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2015,
+      "qno": 3,
+      "originalSection": "Part B (mandatory)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Five primitives, any three",
+    "text": "The following objects are available to you: **1 cone, 1 hemisphere, 1 cuboid, 1 cylinder and 1 disc**, as shown below.\n\nImagine **four** interesting products, each made out of a combination of at least 3 of these objects. You can scale the objects to any size and dimension. Represent your ideas with neat sketches and name each product.",
+    "rules": [
+      "At least three objects per product",
+      "Name each product"
+    ],
+    "criteria": [
+      {
+        "name": "Variety",
+        "marks": 5
+      },
+      {
+        "name": "Creativity",
+        "marks": 5
+      },
+      {
+        "name": "Innovation",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2015-b-q3-1.png",
+        "alt": "Outline drawing of five primitives: a cuboid, a cylinder, a hemisphere bowl, a cone and a flat disc."
+      }
+    ],
+    "tags": {
+      "object": "products from primitives",
+      "twist": "at least three of five objects"
+    }
+  },
+  {
+    "id": "ceed-2015-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2015,
+      "qno": 4,
+      "originalSection": "Part B (mandatory)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Cobbler, football, footpath",
+    "text": "Construct two different stories from a combination of these 3 words: **Cobbler, Football and Footpath**. Each story should be no longer than three sentences. (A cobbler is a person who repairs footwear, umbrellas, etc.)\n\nOne possible story: *A child cries. The cobbler on the footpath repairs the child's football. The child smiles.*\n\nThen pick one of your stories and draw it as a three-frame strip, one frame per sentence, with a title.",
+    "rules": [
+      "Each story no longer than three sentences",
+      "Three frames, one per sentence"
+    ],
+    "criteria": [
+      {
+        "name": "Variety of plots",
+        "marks": 5
+      },
+      {
+        "name": "Creativity of plots",
+        "marks": 5
+      },
+      {
+        "name": "Graphical narrative (story communication)",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "cobbler; child",
+      "setting": "footpath",
+      "object": "three-sentence stories",
+      "twist": "three fixed words",
+      "hook": "Indian street trade"
+    }
+  },
+  {
+    "id": "ceed-2015-b-q5a",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2015,
+      "qno": 5,
+      "originalSection": "Optional (Product Design) 5a",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Carrying four water pots",
+    "text": "Women in rural India often walk a long distance carrying three to four pots of drinking water home, which causes a lot of physical strain. Design a device to help women carry **four earthen pots** of drinking water over uneven terrain.\n\n1. Identify five distinct factors that make this device relevant for rural India.\n2. Draw a neat freehand sketch of the overall form and its features.\n3. Sketch the usage scenario, and indicate the materials and processes.",
+    "rules": [
+      "Four earthen pots",
+      "Uneven terrain"
+    ],
+    "criteria": [
+      {
+        "name": "User-centric design considerations",
+        "marks": 5
+      },
+      {
+        "name": "Feasibility and overall effectiveness of the design solution",
+        "marks": 5
+      },
+      {
+        "name": "Appropriateness of materials and processes",
+        "marks": 5
+      },
+      {
+        "name": "Originality of concepts and quality of presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "rural women",
+      "setting": "rural village paths",
+      "object": "carrying aid",
+      "hook": "rural India; water"
+    }
+  },
+  {
+    "id": "ceed-2015-b-q5b",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2015,
+      "qno": 5,
+      "originalSection": "Optional (Interaction Design) 5b",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Interactive pencil box",
+    "text": "An organisation wants to develop an interactive pencil box (the box students carry pens, pencils, eraser, ruler etc. in) for students of standards 7–10 (about 12–15 years old), to act as a learning aid both inside and outside the classroom.\n\n1. Sketch the 3D form of the device with its graphical interface, designed to appeal to this age group.\n2. State three original features that would help students study. **Do not** describe features already in present-day smart devices (calculator, dictionary, e-book reader etc.).\n3. Show, in a short screen sequence, how the device helps a student learn a topic from the history of India.",
+    "rules": [
+      "No features from present-day smart devices"
+    ],
+    "criteria": [
+      {
+        "name": "Logic and flow in the interface",
+        "marks": 5
+      },
+      {
+        "name": "Usability and appropriateness of information",
+        "marks": 5
+      },
+      {
+        "name": "Originality of concepts",
+        "marks": 5
+      },
+      {
+        "name": "Overall effectiveness and quality of presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "students aged 12–15",
+      "setting": "school",
+      "object": "interactive pencil box",
+      "twist": "no existing smart-device features",
+      "hook": "education; Indian history"
+    }
+  },
+  {
+    "id": "ceed-2015-b-q5c",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2015,
+      "qno": 5,
+      "originalSection": "Optional (Animation Design) 5c",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Kid, puppy and the eagle",
+    "text": "An animation film for 5 to 12 year old children is in pre-production. It is based on the relationship between a kid (girl or boy) and their puppy. Here is a shot breakdown of one sequence:\n\n1. A 10-year-old kid and the puppy are playing with a ball in a field.\n2. Suddenly the kid notices a huge eagle swooping down on the puppy.\n3. The eagle reaches out with its talons, grabs the puppy and flies off.\n4. The kid sees the puppy carried away.\n5. The kid picks up the ball and throws it at the eagle.\n6. The ball hits the eagle, and it drops the puppy.\n7. The kid is reunited with the puppy and hugs it.\n\nCreate a storyboard of these seven shots as a series of picture frames.",
+    "rules": [
+      "One frame per shot",
+      "Line drawing is sufficient"
+    ],
+    "criteria": [
+      {
+        "name": "Communication of the narrative through sequential pictures",
+        "marks": 5
+      },
+      {
+        "name": "Shot composition",
+        "marks": 5
+      },
+      {
+        "name": "Character and expressions",
+        "marks": 5
+      },
+      {
+        "name": "Quality of sketching",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "child; puppy; eagle",
+      "setting": "open field",
+      "object": "storyboard",
+      "twist": "peril and rescue in seven shots"
+    }
+  },
+  {
+    "id": "ceed-2015-b-q5d",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2015,
+      "qno": 5,
+      "originalSection": "Optional (Visual Communication) 5d",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Suraksha gas-cylinder booklet",
+    "text": "The government is starting a home-safety campaign called **'Suraksha'** (safety) to make citizens aware of safety with household appliances. Support it with a section of an information booklet on gas cylinders.\n\n1. Design a logo for the campaign title 'Suraksha'.\n2. Identify four problems users face while changing a domestic gas cylinder.\n3. Lay out one 6 × 6 inch booklet page that illustrates those four problems as a clear, safe sequence, using text minimally or not at all.",
+    "rules": [
+      "Booklet page 6 × 6 inches",
+      "Minimal or no text"
+    ],
+    "criteria": [
+      {
+        "name": "Quality of visual renderings",
+        "marks": 5
+      },
+      {
+        "name": "Appropriate selection of views of objects and actions",
+        "marks": 5
+      },
+      {
+        "name": "Effectiveness of presentation in minimal space",
+        "marks": 5
+      },
+      {
+        "name": "Clarity in the structure and sequencing of information",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "households",
+      "setting": "home kitchen",
+      "object": "logo and booklet page",
+      "twist": "minimal or no text",
+      "hook": "LPG safety campaign"
+    }
+  },
+  {
+    "id": "ceed-2016-s1-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 1,
+      "originalSection": "Part B (mandatory)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Patient and doctor at the clinic",
+    "text": "A patient is sitting on a chair in front of a doctor at a clinic. A stethoscope, bottles of medicine, a glass of water, a thermometer, a mobile phone, a landline phone and a torch are kept on the table in front of the doctor.\n\nDraw a freehand perspective drawing of this setup, showing all the elements listed above, **from any point of view**.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)",
+      "Show every listed element"
+    ],
+    "criteria": [
+      {
+        "name": "Overall composition and drawing",
+        "marks": 5
+      },
+      {
+        "name": "Perspective",
+        "marks": 5
+      },
+      {
+        "name": "Light, shade and shadow",
+        "marks": 5
+      },
+      {
+        "name": "Scale and proportion",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "patient; doctor",
+      "setting": "clinic",
+      "object": "figures with listed props",
+      "pov": "any point of view",
+      "twist": "every listed object must appear"
+    }
+  },
+  {
+    "id": "ceed-2016-s1-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 2,
+      "originalSection": "Part B (mandatory)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Mind-to-text device",
+    "text": "You are given a magic computer device that can read the human mind and translate the data into text. This data can be stored in various digital media.\n\nCreate five sketches with brief notes to illustrate five creative uses of this device.",
+    "rules": [
+      "Five sketches with brief notes"
+    ],
+    "criteria": [
+      {
+        "name": "Imagination and creativity",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of visual presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "object": "magic device",
+      "twist": "thoughts become text",
+      "hook": "technology"
+    }
+  },
+  {
+    "id": "ceed-2016-s1-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 3,
+      "originalSection": "Part B (mandatory)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Thief, wallet, school",
+    "text": "Construct two different stories from a combination of these 3 words: **Thief, Wallet and School**. Each story should not be longer than three sentences.\n\nThen pick one of your stories and draw it as a three-frame strip, one frame per sentence, with a title.",
+    "rules": [
+      "Each story no longer than three sentences",
+      "Three frames, one per sentence"
+    ],
+    "criteria": [
+      {
+        "name": "Variety of plots",
+        "marks": 5
+      },
+      {
+        "name": "Creativity of plots",
+        "marks": 5
+      },
+      {
+        "name": "Graphical narrative (story communication)",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "setting": "school",
+      "object": "three-sentence stories",
+      "twist": "three fixed words"
+    }
+  },
+  {
+    "id": "ceed-2016-s1-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 4,
+      "originalSection": "Optional (Product Design)",
+      "adapted": true
+    },
+    "slot": "form",
+    "title": "Packable solar cooker for site workers",
+    "text": "Construction workers migrate frequently and are economically challenged; they could benefit from cooking with solar energy. Design a solar cooking unit for construction workers.\n\n- It should be easy to assemble, store and transport.\n- It should cook food for at least 20 people at a time.\n- Packed, it should not exceed 2 ft × 3 ft × 2 ft.\n\nPresent quick sketches of two alternatives, then a neat freehand sketch of the final form, an exploded view, and the materials and processes.",
+    "rules": [
+      "Packed size within 2 ft × 3 ft × 2 ft",
+      "Include an exploded view"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Ability to understand the strengths and weaknesses of the user",
+        "marks": 5
+      },
+      {
+        "name": "Appropriateness of materials and processes, and sustainability",
+        "marks": 5
+      },
+      {
+        "name": "Ability to articulate design decisions and effectiveness of presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "migrant construction workers",
+      "setting": "construction site",
+      "object": "solar cooker",
+      "twist": "packed-size limit",
+      "hook": "solar energy; migrant labour"
+    }
+  },
+  {
+    "id": "ceed-2016-s1-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 5,
+      "originalSection": "Optional (Interaction Design)",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Soil tester for farmers",
+    "text": "A smartphone manufacturer wants to develop a portable soil tester for farmers in India. It measures water content (very low to very high), pH level (alkaline to acidic) and fertiliser content (very low to very high). It has three probes that are inserted into the soil to take readings, and it can use components from smartphones.\n\n1. Sketch the 3D form of the device.\n2. Detail its graphical interface.\n3. Illustrate one typical scenario of use, showing the interface and information flow with brief notes.",
+    "rules": [
+      "Three probes",
+      "Smartphone components allowed"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Ability to understand the strengths and weaknesses of the user",
+        "marks": 5
+      },
+      {
+        "name": "Logic and flow in the interface, usability and appropriateness of information",
+        "marks": 5
+      },
+      {
+        "name": "Ability to articulate design decisions and effectiveness of presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "farmers",
+      "setting": "farm field",
+      "object": "soil tester",
+      "hook": "agriculture; technology"
+    }
+  },
+  {
+    "id": "ceed-2016-s1-b-q6",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 6,
+      "originalSection": "Optional (Animation)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "The Potter and the Wagher",
+    "text": "A Gujarati folktale (from *Folktales of India*, 1987) is to be made into an animation film:\n\n> A strong, tall potter and a very thin Wagher (a warrior) were neighbours, and their wives were friends. The potter's wife kept mocking the Wagher's wife: how could such a thin man ever face a foe? One day the drums thundered as outlaws entered the village. The potter hid on his verandah. The Wagher took his sword, walked into the potter's house, picked up a crowbar and, telling the potter's wife to watch whether he was brave, bent it into a collar around her neck. Then he went out and drove the outlaws from the village. Ashamed, the potter's wife finally asked the Wagher's wife to have the collar removed. \"My husband gets such strength only when the drums thunder and danger is near,\" she replied. \"When that time returns, you will be set free.\"\n\nCreate a storyboard of this story in **six frames** that include all the major events.",
+    "rules": [
+      "Six frames",
+      "Include all the major events"
+    ],
+    "criteria": [
+      {
+        "name": "Clarity, continuity and plot structure",
+        "marks": 5
+      },
+      {
+        "name": "Visual continuity",
+        "marks": 5
+      },
+      {
+        "name": "Point of view",
+        "marks": 5
+      },
+      {
+        "name": "Character design",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "villagers",
+      "setting": "village",
+      "object": "storyboard",
+      "twist": "compress a folktale into six frames",
+      "hook": "Indian folktale"
+    }
+  },
+  {
+    "id": "ceed-2016-s1-b-q7",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 7,
+      "originalSection": "Optional (Visual Communication)",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "IIT Goa symbol and logo",
+    "text": "A new Indian Institute of Technology is starting in Goa. Design a **symbol** (a visual representation of the ideas associated with the institute) and a **logo** (the way the institute's name is depicted).\n\nThey must work in black & white and in colour, at all sizes, on stationery, vehicles, websites and buildings. They should reflect: technology, world-class education, research and development, India and Goa.\n\n1. Sketch three quick alternatives.\n2. Present the final symbol and logo neatly.\n3. Show them applied on a letterhead.",
+    "rules": [
+      "Must work in black & white and colour",
+      "Must work at all sizes"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Ability to understand and reflect the keywords of the brief",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of thought and effectiveness of presentation",
+        "marks": 5
+      },
+      {
+        "name": "Ability to create an identity that works across media",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "institution",
+      "setting": "education",
+      "object": "symbol and logo",
+      "hook": "new Indian institution; Goa"
+    }
+  },
+  {
+    "id": "ceed-2016-s2-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 1,
+      "originalSection": "Part B (mandatory)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Kirana counter",
+    "text": "A shop owner is standing at the shop's billing counter, taking money from a customer. The shop has shelves, different kinds of food products, groceries and a weighing scale.\n\nDraw a freehand perspective drawing of this setup, showing all the elements listed above.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)",
+      "Show every listed element"
+    ],
+    "criteria": [
+      {
+        "name": "Drawing and overall composition",
+        "marks": 5
+      },
+      {
+        "name": "Perspective",
+        "marks": 5
+      },
+      {
+        "name": "Light, shade and shadow",
+        "marks": 5
+      },
+      {
+        "name": "Scale and proportion",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "shopkeeper; customer",
+      "setting": "kirana shop",
+      "object": "figures with listed props",
+      "twist": "every listed object must appear",
+      "hook": "Indian corner shop"
+    }
+  },
+  {
+    "id": "ceed-2016-s2-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 2,
+      "originalSection": "Part B (mandatory)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Animal-thought translator",
+    "text": "You are given a handheld device that can understand animal behaviour and translate their needs and thoughts into images that humans can understand. This data can be stored in various digital media.\n\nCreate five sketches with brief notes to illustrate creative uses of this device.",
+    "rules": [
+      "Five sketches with brief notes"
+    ],
+    "criteria": [
+      {
+        "name": "Imagination and creativity",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of visual presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "animals and people",
+      "object": "magic device",
+      "twist": "animal thoughts become images",
+      "hook": "technology"
+    }
+  },
+  {
+    "id": "ceed-2016-s2-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 3,
+      "originalSection": "Part B (mandatory)",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Farmer, gold, tree",
+    "text": "Construct two different stories from a combination of these 3 words: **Farmer, Gold and Tree**. Each story should not be longer than three sentences.\n\nThen pick one of your stories and draw it as a three-frame strip, one frame per sentence, with a title.",
+    "rules": [
+      "Each story no longer than three sentences",
+      "Three frames, one per sentence"
+    ],
+    "criteria": [
+      {
+        "name": "Variety of plots",
+        "marks": 5
+      },
+      {
+        "name": "Creativity of plots",
+        "marks": 5
+      },
+      {
+        "name": "Graphical narrative (story communication)",
+        "marks": 5
+      },
+      {
+        "name": "Clarity and neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "farmer",
+      "setting": "rural",
+      "object": "three-sentence stories",
+      "twist": "three fixed words"
+    }
+  },
+  {
+    "id": "ceed-2016-s2-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 4,
+      "originalSection": "Optional (Product Design)",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Bicycle toy-vendor kit",
+    "text": "Cities have many vendors who move around selling goods, using hand carts and other accessories because they lack dedicated space. Design a system or set of accessories to be used with an **existing bicycle**, so that a vendor can move around and sell **toys for kids**.\n\nThe vendor should be able to display and sell when parked, and pack up and move. Consider ease of assembly, materials and manufacturing, ease of use, a child-friendly display, and ease of opening and packing up.\n\nPresent quick sketches of two alternatives, then the final concept with all details, its materials and processes, and a brief note on your decisions.",
+    "rules": [
+      "Works with an existing bicycle"
+    ],
+    "criteria": [
+      {
+        "name": "Originality and innovative use of material in constrained situations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to understand the needs of the seller and buyers",
+        "marks": 5
+      },
+      {
+        "name": "Appropriateness of materials, processes, assembly, deployment and transport",
+        "marks": 5
+      },
+      {
+        "name": "Ability to articulate design decisions and effectiveness of presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "itinerant vendor; child buyers",
+      "setting": "city street",
+      "object": "bicycle accessory kit",
+      "twist": "sell when parked, pack up to move",
+      "hook": "informal economy"
+    }
+  },
+  {
+    "id": "ceed-2016-s2-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 5,
+      "originalSection": "Optional (Interaction Design)",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Science museum guide for children",
+    "text": "A science museum that admits only children aged 10–14 wants a digital handheld guide, handed out at entry, that helps children understand the exhibits and their underlying concepts. It should work for a single child and for children in groups.\n\n1. Sketch the 3D form of the device and give it a name.\n2. Detail its graphical interface.\n3. Illustrate one typical scenario of use, showing the interface and information flow with brief notes.",
+    "rules": [
+      "Must work for one child and for groups"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Ability to understand the strengths and weaknesses of the user",
+        "marks": 5
+      },
+      {
+        "name": "Logic and flow in the interface, usability and appropriateness of information",
+        "marks": 5
+      },
+      {
+        "name": "Ability to articulate design decisions and effectiveness of presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "children aged 10–14",
+      "setting": "science museum",
+      "object": "handheld guide",
+      "hook": "education; technology"
+    }
+  },
+  {
+    "id": "ceed-2016-s2-b-q6",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 6,
+      "originalSection": "Optional (Animation)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Dhanna Bhagat's gourds",
+    "text": "A Rajasthani folktale is to be made into an animation film:\n\n> Dhanna Singh, a young farmer, was so generous that his father thought him good for nothing. One day his father sent him to the weekly market to sell the farm's produce and buy seeds for the new crop. On the way Dhanna gave a ride to four priests and gifted them half the produce; then he gave the rest to an old woman crying by the road, thrown out of her house by her son. She gave him a few seeds in return. Dhanna planted them and told his father the seeds were sown. Weeks later his father found only wild gourds that goats eat. In anger he dashed one to the ground; it burst open, full of diamonds and emeralds. From then on he called his son Dhanna Bhagat and never scolded him for his generosity.\n\nCreate a storyboard of this story in **six frames** that include all the major events.",
+    "rules": [
+      "Six frames",
+      "Include all the major events"
+    ],
+    "criteria": [
+      {
+        "name": "Clarity, continuity and plot structure",
+        "marks": 5
+      },
+      {
+        "name": "Visual continuity",
+        "marks": 5
+      },
+      {
+        "name": "Point of view",
+        "marks": 5
+      },
+      {
+        "name": "Character design",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "farmer and father",
+      "setting": "rural Rajasthan",
+      "object": "storyboard",
+      "twist": "compress a folktale into six frames",
+      "hook": "Indian folktale"
+    }
+  },
+  {
+    "id": "ceed-2016-s2-b-q7",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2016,
+      "qno": 7,
+      "originalSection": "Optional (Visual Communication)",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "AMRC Karnataka symbol and logo",
+    "text": "A new Ayurvedic Medical Research Centre (AMRC) is being set up in Karnataka to research fields related to Ayurveda. Design a **symbol** (a visual representation of the ideas associated with the centre) and a **logo** (the centre's name in letterforms). The logo must show \"AMRC Karnataka\" in English.\n\nThey must work in black & white and in colour, at all sizes, on stationery, vehicles, websites and buildings. They should reflect: Ayurveda, India, research and development.\n\n1. Sketch three quick alternatives.\n2. Present the final symbol and logo neatly.\n3. Show them applied on a letterhead.",
+    "rules": [
+      "Logo shows \"AMRC Karnataka\" in English",
+      "Must work in black & white and colour, at all sizes"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Ability to understand and reflect the keywords of the brief",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of thought and effectiveness of presentation",
+        "marks": 5
+      },
+      {
+        "name": "Ability to create an identity that works across media",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "institution",
+      "setting": "health research",
+      "object": "symbol and logo",
+      "hook": "Ayurveda; Indian tradition"
+    }
+  },
+  {
+    "id": "ceed-2017-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2017,
+      "qno": 1,
+      "originalSection": "Industrial Design",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "Motorised chassis in a hospital",
+    "text": "You are given a base (chassis) of 100 cm × 75 cm, as shown below. It has:\n\n- an inbuilt motor and battery-charger system\n- capacity to carry a maximum load of 200 kg (apart from its own weight)\n- a maximum speed of 5 km/h\n\nYou are free to add other parts and accessories to make it a complete, stable product.\n\n1. Using this platform, sketch 3 quick ideas for its use in a **hospital**.\n2. Pick one and list 5 critical factors you will consider.\n3. Sketch the concept with its functional details, features, usage and materials.",
+    "rules": [
+      "Use the given chassis"
+    ],
+    "criteria": [
+      {
+        "name": "Critical thinking, identification of user needs and understanding of the context",
+        "marks": 5
+      },
+      {
+        "name": "Problem solving and appropriateness of the solution",
+        "marks": 5
+      },
+      {
+        "name": "Ability to explain details and features through sketching",
+        "marks": 5
+      },
+      {
+        "name": "Knowledge of materials and processes",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2017-b-q1-1.png",
+        "alt": "Outline drawing of a flat rectangular motorised chassis on four wheels with a battery box mounted at one end."
+      }
+    ],
+    "tags": {
+      "user": "patients and hospital staff",
+      "setting": "hospital",
+      "object": "motorised platform",
+      "twist": "given platform, find the use",
+      "hook": "technology"
+    }
+  },
+  {
+    "id": "ceed-2017-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2017,
+      "qno": 2,
+      "originalSection": "Communication Design",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Malaria poster for Shaaradapur",
+    "text": "Shaaradapur is an Indian village with a multilingual, low-literate population. A lack of awareness about health and hygiene has led to an outbreak of malaria. Malaria is a mosquito-borne disease; its symptoms include fever, headache, vomiting and fatigue, and if left untreated it can be life-threatening. Timely diagnosis and treatment by a trained practitioner at the village government hospital is important. It can be prevented by draining stagnant water and spraying insecticides; bites can be avoided with mosquito nets and repellents.\n\nDesign a poster for the villagers, to be displayed prominently in a public place, that communicates (a) the seriousness, (b) the symptoms, (c) the actions to be taken and (d) the prevention of malaria.\n\nThen sketch the poster in the location you choose, and write 3 sentences justifying the location, size and way it is displayed.",
+    "rules": [
+      "Readers are multilingual and low-literate"
+    ],
+    "criteria": [
+      {
+        "name": "Ability to understand the design brief",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of thought and articulation",
+        "marks": 5
+      },
+      {
+        "name": "Creativity",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "low-literate villagers",
+      "setting": "village public place",
+      "object": "health poster",
+      "twist": "choose where it hangs",
+      "hook": "public health; multilingual India"
+    }
+  },
+  {
+    "id": "ceed-2017-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2017,
+      "qno": 3,
+      "originalSection": "Animation Design",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Priya, the cat and the bird",
+    "text": "An animation film for 5 to 12 year old children is in pre-production. It is about 10-year-old Priya and her cat. Here is the shot breakdown of one sequence:\n\n1. On a bright day, Priya plays with her cat in the garden.\n2. The cat's attention is diverted by a little bird singing on a tree.\n3. The cat climbs the tree and creeps along the branch where the bird is perched.\n4. Priya watches anxiously from below.\n5. As the cat approaches, the branch breaks and the bird flies away.\n6. Shocked, Priya runs to catch the falling cat.\n7. Priya trips and falls.\n8. Terrified, she looks up to see the cat land safely on its feet.\n9. Priya picks up the cat and scolds her.\n10. Then she gives the cat a warm hug; the cat meows back with a big smile.\n\nStoryboard this sequence in **eight frames** (combine shots where needed).",
+    "rules": [
+      "Eight frames"
+    ],
+    "criteria": [
+      {
+        "name": "Communication of the narrative through sequential pictures",
+        "marks": 5
+      },
+      {
+        "name": "Shot composition and perspective",
+        "marks": 5
+      },
+      {
+        "name": "Character attitudes and expressions",
+        "marks": 5
+      },
+      {
+        "name": "Quality of sketching",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "child (girl); cat; bird",
+      "setting": "garden",
+      "object": "storyboard",
+      "twist": "ten shots into eight frames"
+    }
+  },
+  {
+    "id": "ceed-2017-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2017,
+      "qno": 4,
+      "originalSection": "Interaction Design",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "RTO licence kiosk",
+    "text": "About 500 people visit the city Regional Transport Office (RTO) every day for a driving licence; some cannot read. The RTO is short-staffed. To get a learner's licence, a user fills a form, takes an objective test, and submits copies of age proof, address proof, a phone number, fingerprints and a photograph. After a month with a learner's licence, the user may apply for a permanent licence, choose a date for a driving test, and is then issued the licence.\n\nThe RTO will put an interactive public information system in its lobby for learner's and permanent licence applicants (typically 18–20 years old).\n\n1. Write, in about 20 words, the needs of the different users and the information the system should provide. State your assumptions about technology.\n2. Sketch the lobby showing where the system sits and how people use it.\n3. Show one scenario (submitting an application) as a short screen sequence that solves a specific problem the user faces.",
+    "rules": [
+      "User needs in about 20 words"
+    ],
+    "criteria": [
+      {
+        "name": "Ability to understand the needs of users",
+        "marks": 5
+      },
+      {
+        "name": "Originality",
+        "marks": 5
+      },
+      {
+        "name": "Logic and flow in the interface, usability and appropriateness of information",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "licence applicants, some who cannot read",
+      "setting": "RTO lobby",
+      "object": "public kiosk",
+      "twist": "design for users who cannot read",
+      "hook": "public services"
+    }
+  },
+  {
+    "id": "ceed-2017-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2017,
+      "qno": 5,
+      "originalSection": "Mobility and Vehicle Design",
+      "adapted": true
+    },
+    "slot": "form",
+    "title": "Electric two-wheeler taxi for Banaras",
+    "text": "A company plans to introduce an **electric two-wheeler taxi** in Banaras (Varanasi) for local commuters and pilgrims. Design it so that it is relevant to the city in function and aesthetics.\n\n1. Identify five distinct factors essential for this vehicle.\n2. Draw a neat side elevation of the vehicle.\n3. Draw a neat freehand perspective sketch showing the overall form and its features, and indicate materials for the body.",
+    "rules": [
+      "Side elevation and perspective view"
+    ],
+    "criteria": [
+      {
+        "name": "User-centric design considerations",
+        "marks": 5
+      },
+      {
+        "name": "Form and originality",
+        "marks": 5
+      },
+      {
+        "name": "Feasibility and effectiveness of the design solution",
+        "marks": 5
+      },
+      {
+        "name": "Quality of sketch and appropriateness of materials",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "commuters and pilgrims",
+      "setting": "Varanasi streets",
+      "object": "electric two-wheeler taxi",
+      "pov": "side elevation and perspective",
+      "hook": "electric mobility; Indian city"
+    }
+  },
+  {
+    "id": "ceed-2017-b-q6a",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2017,
+      "qno": 6,
+      "originalSection": "Sketching (option A)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Mixed-material still life",
+    "text": "Illustrate in perspective a still-life composition with a **plastic water bottle**, a **transparent half-empty glass of water with a metal spoon inside it**, and a **kitchen knife** placed next to a **half-eaten apple** on a **grey ceramic plate**.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)"
+    ],
+    "criteria": [
+      {
+        "name": "Realistic drawing and proportions",
+        "marks": 5
+      },
+      {
+        "name": "Quality of surface texture",
+        "marks": 5
+      },
+      {
+        "name": "Shading",
+        "marks": 5
+      },
+      {
+        "name": "Perspective and composition",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "setting": "tabletop",
+      "object": "still life",
+      "twist": "plastic, glass, metal and ceramic together"
+    }
+  },
+  {
+    "id": "ceed-2017-b-q6b",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2017,
+      "qno": 6,
+      "originalSection": "Sketching (option B)",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Dog chases the banana seller",
+    "text": "Illustrate this scene: **a dog chases a fruit seller carrying a basket full of bananas. A kid on a tricycle watches.**\n\nFigures may be realistic or stylised.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)"
+    ],
+    "criteria": [
+      {
+        "name": "Drawing",
+        "marks": 5
+      },
+      {
+        "name": "Perspective",
+        "marks": 5
+      },
+      {
+        "name": "Proportions",
+        "marks": 5
+      },
+      {
+        "name": "Composition",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "vendor; child; dog",
+      "setting": "street",
+      "object": "action scene",
+      "hook": "Indian street"
+    }
+  },
+  {
+    "id": "ceed-2017-b-q7",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2017,
+      "qno": 7,
+      "originalSection": "Creativity",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Five lives of a helmet",
+    "text": "A helmet is used to prevent head injury in risky situations, in many sports and while riding a bike.\n\nDescribe five DIFFERENT creative ways you can use a helmet other than as headgear. Sketch each idea and write a one-line note to describe it.",
+    "rules": [
+      "Not as headgear",
+      "One-line note per idea"
+    ],
+    "criteria": [
+      {
+        "name": "Originality",
+        "marks": 5
+      },
+      {
+        "name": "Imagination",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "object": "helmet",
+      "twist": "never on a head"
+    }
+  },
+  {
+    "id": "ceed-2017-b-q8",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2017,
+      "qno": 8,
+      "originalSection": "Stories",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Orphan, mango, cycle shop",
+    "text": "Construct two different stories using these three terms: **Orphan, Mango, Cycle shop**. Each story should not be longer than three sentences.\n\nThen pick one of your stories and draw it as a three-frame strip, one frame per sentence, with a title.",
+    "rules": [
+      "Each story no longer than three sentences",
+      "Three frames, one per sentence"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of plots",
+        "marks": 5
+      },
+      {
+        "name": "Creativity of plots",
+        "marks": 5
+      },
+      {
+        "name": "Ability to tell the story in only three sentences",
+        "marks": 5
+      },
+      {
+        "name": "Graphical narrative (story communication)",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "child; shopkeeper",
+      "setting": "cycle shop",
+      "object": "three-sentence stories",
+      "twist": "three fixed words"
+    }
+  },
+  {
+    "id": "ceed-2018-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2018,
+      "qno": 1,
+      "originalSection": "Industrial Design",
+      "adapted": true
+    },
+    "slot": "problem-id",
+    "title": "One-handed milk-pouch aid",
+    "text": "Mr. Chatterjee, a right-handed person, recently lost his right hand in an accident. He lives alone and finds everyday activities difficult. Every morning a standard 500 ml milk pouch is delivered to his home, and he struggles to cut it open and pour the milk into a utensil to heat it.\n\nDesign a product that helps him, with one hand, to:\n\n- lift and support the pouch\n- cut the pouch\n- pour the milk without spilling\n- discard the empty pouch\n\nPresent neat freehand sketches of the form and its features, sketches of the usage scenario, the materials and processes, and a note on your decisions (max 50 words).",
+    "rules": [
+      "One-handed use (left hand)",
+      "Note max 50 words"
+    ],
+    "criteria": [
+      {
+        "name": "User-centric design considerations",
+        "marks": 5
+      },
+      {
+        "name": "Feasibility and overall effectiveness of the solution",
+        "marks": 5
+      },
+      {
+        "name": "Appropriateness of materials and processes",
+        "marks": 5
+      },
+      {
+        "name": "Originality, attention to detail and quality of presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "amputee living alone",
+      "setting": "home kitchen",
+      "object": "milk-pouch aid",
+      "twist": "only the non-dominant hand",
+      "hook": "accessibility; Indian milk pouch"
+    }
+  },
+  {
+    "id": "ceed-2018-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2018,
+      "qno": 2,
+      "originalSection": "Communication Design",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "The Art of Optical Illusion cover",
+    "text": "An optical illusion uses colour, light and patterns to create images that deceive our brains. Akihito Yujumari, an established artist and author, is releasing his 25th book, documenting the greatest optical illusions of the world. He has commissioned you to design its cover.\n\n- Title: *The Art of Optical Illusion*\n- Author: Akihito Yujumari\n- Publisher: Square Book Publishers\n- ISBN-13: 93-34567898765 (with barcode)\n- Book dimensions: 22.9 × 2.2 × 25.4 cm\n\nDesign:\n\n1. The **front cover**, with the author's name and the title.\n2. The **spine**, with the title, the author's name and the publisher's logo and name.\n3. The **back cover**, with the ISBN and barcode and this paragraph: \"This intriguing collection contains more than 275 optical illusions that appear to change before your eyes. Akihito Yujumari has carefully selected every type of optical illusion, which intrigues the mind and delights the eye, along with notes about the science behind each illusion.\"",
+    "rules": [
+      "Keep the given dimensions in proportion"
+    ],
+    "criteria": [
+      {
+        "name": "Ability to understand the design brief",
+        "marks": 5
+      },
+      {
+        "name": "Originality and creativity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Design sensitivity and attention to details",
+        "marks": 5
+      },
+      {
+        "name": "Neatness and effectiveness of presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "general readers",
+      "object": "book cover, spine and back",
+      "twist": "the cover itself should play with perception",
+      "hook": "perception science"
+    }
+  },
+  {
+    "id": "ceed-2018-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2018,
+      "qno": 3,
+      "originalSection": "Animation Design",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "The crow and the biscuits",
+    "text": "An animation film for children is based on the relationship between a crow and a man. One scene:\n\n> The man is about to have breakfast in the garden: a cup of tea and a plate of biscuits on the table. A crow on a nearby tree eyes the biscuits. The man gets a phone call and walks back and forth talking. The crow swoops down onto the table. The man notices and shoos it away. He finishes his call and sits down. The crow caws insistently; the man feels sorry for it and throws a biscuit in the air. The crow catches it midair. The crow and the man are happy!\n\nStoryboard this scene in **six frames**, using a variety of shots (long shot, close-up, top angle, low angle etc.).",
+    "rules": [
+      "Six frames",
+      "Vary the shots"
+    ],
+    "criteria": [
+      {
+        "name": "Communication of the narrative through sequential pictures",
+        "marks": 5
+      },
+      {
+        "name": "Shot composition (long shot, close-up, top and low angles)",
+        "marks": 5
+      },
+      {
+        "name": "Perspective",
+        "marks": 5
+      },
+      {
+        "name": "Attitude and expressions of the characters",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "man; crow",
+      "setting": "garden",
+      "object": "storyboard",
+      "twist": "shot variety is scored"
+    }
+  },
+  {
+    "id": "ceed-2018-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2018,
+      "qno": 4,
+      "originalSection": "Interaction Design",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "ASHA app icons",
+    "text": "ASHA workers are local women trained as village health educators and monitors. One key task is keeping the health records of pregnant women, until now in paper booklets. The health ministry is moving these records to a smartphone app that every ASHA worker will use on home visits: she retrieves a woman's record, measures her weight, blood sugar and blood pressure, enters them, and the app flags any risk.\n\nDesign a consistent set of icons for this app:\n\n1. the app itself\n2. age of the foetus\n3. weight\n4. blood sugar\n5. blood pressure\n\nDraw each icon in a 5 cm × 5 cm square.",
+    "rules": [
+      "Each icon in a 5 cm × 5 cm square",
+      "One consistent visual language"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency of visual language",
+        "marks": 5
+      },
+      {
+        "name": "Appropriateness to the users and context",
+        "marks": 5
+      },
+      {
+        "name": "Effective communication",
+        "marks": 5
+      },
+      {
+        "name": "Composition, clarity and neatness",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "village health workers; pregnant women",
+      "setting": "rural home visits",
+      "object": "app icon set",
+      "hook": "rural public health; digitisation"
+    }
+  },
+  {
+    "id": "ceed-2018-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2018,
+      "qno": 5,
+      "originalSection": "Mobility and Vehicle Design",
+      "adapted": true
+    },
+    "slot": "form",
+    "title": "Bookseller's kiosk two-wheeler",
+    "text": "A roadside bookseller wants a new two-wheeler that also serves as a book display kiosk. He uses it as a kiosk during the day, and in the evenings or at weekends he wants to take his family out on trips. It must let him:\n\n- travel from home to a crowded market\n- set up the kiosk to sell 100 books\n- store the books and fold the kiosk away safely and securely\n- go out with his family at weekends\n\nPresent: a few quick sketches of the key factors, a neat side elevation, and a perspective sketch of the final concept with its detailing and materials.",
+    "rules": [
+      "Side elevation and perspective view"
+    ],
+    "criteria": [
+      {
+        "name": "Design insights leading to novel ideas",
+        "marks": 5
+      },
+      {
+        "name": "Concept exploration through good quality sketches",
+        "marks": 5
+      },
+      {
+        "name": "Presentation of the final concept through rendering",
+        "marks": 5
+      },
+      {
+        "name": "Detailing and appropriate materials",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "bookseller and his family",
+      "setting": "street market",
+      "object": "two-wheeler kiosk",
+      "pov": "side elevation and perspective",
+      "twist": "shop by day, family vehicle at weekends",
+      "hook": "informal economy"
+    }
+  },
+  {
+    "id": "ceed-2018-b-q6",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2018,
+      "qno": 6,
+      "originalSection": "Sketching",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "After the axe",
+    "text": "A room 10 ft × 10 ft has a 5 ft × 4 ft table in the centre. On the table are a matchbox, a watermelon cut into two halves and a glass of water. A person with an axe enters the room and switches on the light. With a harsh blow of the axe he breaks the table into two and leaves the room with his axe, leaving the light on.\n\nChoose a point of view and draw a freehand perspective drawing of this scene **after the person has left**.",
+    "rules": [
+      "Any medium of your choice",
+      "Draw the scene after he leaves"
+    ],
+    "criteria": [
+      {
+        "name": "Perspective",
+        "marks": 5
+      },
+      {
+        "name": "Light, shade and shadow",
+        "marks": 5
+      },
+      {
+        "name": "Textures and quality of lines",
+        "marks": 5
+      },
+      {
+        "name": "Scale and proportion in the composition",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "setting": "room",
+      "object": "aftermath scene",
+      "pov": "your choice",
+      "twist": "draw the result, not the action"
+    }
+  },
+  {
+    "id": "ceed-2018-b-q7",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2018,
+      "qno": 7,
+      "originalSection": "Creativity",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Tyre, bottle, bat, bucket",
+    "text": "Imagine you are provided with a **tyre, a plastic bottle, a cricket bat and a bucket**. Illustrate five DIFFERENT creative ideas that use these objects in combination, at your home or in a public place.\n\nUse all the objects in each idea. You may use an object more than once and change its scale and proportions.",
+    "rules": [
+      "All four objects in every idea"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Humour and surprise",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "setting": "home or public place",
+      "object": "object combinations",
+      "twist": "all four objects every time",
+      "hook": "cricket; reuse"
+    }
+  },
+  {
+    "id": "ceed-2018-b-q8",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2018,
+      "qno": 8,
+      "originalSection": "Visualization",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Lowercase d for 'Flows'",
+    "text": "The image below shows a word written in a particular font. Visualise and draw the lower-case letter **\"d\"** from the same font. The letter should be **15 cm** tall.",
+    "rules": [
+      "Letter height 15 cm"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency with the existing letters",
+        "marks": 5
+      },
+      {
+        "name": "Font anatomy",
+        "marks": 5
+      },
+      {
+        "name": "Proportion",
+        "marks": 5
+      },
+      {
+        "name": "Quality of rendering",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2018-b-q8-1.png",
+        "alt": "The word Flows set in a heavy, high-contrast serif typeface with thick vertical strokes and thin hairline serifs."
+      }
+    ],
+    "tags": {
+      "object": "letterform",
+      "twist": "extrapolate a font from one word",
+      "hook": "type design"
+    }
+  },
+  {
+    "id": "ceed-2019-b-q1",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2019,
+      "qno": 1,
+      "originalSection": "Industrial Design",
+      "adapted": true
+    },
+    "slot": "form",
+    "title": "Monsoon clothes-drying fan",
+    "text": "During the monsoon, washed clothes take a long time to dry and the house is damp. People often spread wet clothes on a chair or other furniture under a ceiling fan. A leading fan manufacturer wants a clothes-drying product, sold with a fan, that:\n\n- uses the fan to dry clothes\n- has the fan integrated during the rainy season, and usable as a normal fan in other seasons\n- folds compact for storage\n\n1. Present three ideas as rough sketches. (5 marks)\n2. List five critical factors (key words only). (5 marks)\n3. Develop one idea into a final product: a neat sketch showing all its parts, materials and features. (10 marks)",
+    "rules": [
+      "Must work as a normal fan off-season",
+      "Folds compact"
+    ],
+    "criteria": [
+      {
+        "name": "Quality of creative ideas and neatness of sketches",
+        "marks": 5
+      },
+      {
+        "name": "Understanding of the situation and product use",
+        "marks": 5
+      },
+      {
+        "name": "Sketching quality, details, product features and usability",
+        "marks": 10
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "household",
+      "setting": "home in monsoon",
+      "object": "fan-integrated clothes dryer",
+      "twist": "two products in one, by season",
+      "hook": "monsoon"
+    }
+  },
+  {
+    "id": "ceed-2019-b-q2",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2019,
+      "qno": 2,
+      "originalSection": "Communication Design",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "World Cup hoarding for team India",
+    "text": "Cricket is a popular sport in India. The 12th Cricket World Cup is to be held in England and Wales in 2019. India has already been champion twice; to win a third time, the team needs the support and wishes of a billion Indians.\n\nDesign a visual campaign to gather support for the Indian team, centred on a **30 ft × 20 ft hoarding** placed at prominent locations in cities and towns.\n\n1. Sketch three completely different concepts. (5 marks)\n2. Write three slogans in English or any Indian language (name the language). (5 marks)\n3. Make a detailed design of one hoarding with a slogan. (10 marks)",
+    "rules": [
+      "Hoarding 30 ft × 20 ft (keep the proportion)",
+      "Slogans in English or any Indian language"
+    ],
+    "criteria": [
+      {
+        "name": "Originality and diversity of ideas, creativity, understanding of scale and proportion",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of message and literary creativity",
+        "marks": 5
+      },
+      {
+        "name": "Visualisation, quality of lines, composition, colour and detailing",
+        "marks": 10
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "general public",
+      "setting": "cities and towns",
+      "object": "campaign hoarding and slogans",
+      "twist": "slogans in any Indian language",
+      "hook": "cricket"
+    }
+  },
+  {
+    "id": "ceed-2019-b-q3",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2019,
+      "qno": 3,
+      "originalSection": "Animation Design",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Tommy saves the baby",
+    "text": "An animation film for children is about the bond between a baby and a dog, as the baby grows up and the dog grows old. One scene:\n\n> A dog watches a hungry, crying baby. The baby suddenly sees something and stops: its milk bottle (and other things) on a table. The baby crawls to the table, followed by the curious dog, grabs a corner of the tablecloth and starts pulling. The dog's expression turns to alarm as the things slide towards the edge. He leaps forward, grabs the end of the baby's diaper and pulls the baby away just as everything topples. The baby is safe, but everything falls on the poor dog. The mother's scream is heard: \"Tommy!! BAD DOG!!\" The dog peeps out sheepishly from under the tablecloth, surrounded by the mess.\n\nStoryboard this scene in **six frames**, using a variety of shots (long shot, close-up, top angle, low angle etc.).",
+    "rules": [
+      "Six frames",
+      "Vary the shots"
+    ],
+    "criteria": [
+      {
+        "name": "Communication of the narrative through sequential pictures",
+        "marks": 5
+      },
+      {
+        "name": "Shot composition (long shot, close-up, top and low angles)",
+        "marks": 5
+      },
+      {
+        "name": "Perspective",
+        "marks": 5
+      },
+      {
+        "name": "Attitude and expressions of the characters",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "baby; dog; mother",
+      "setting": "home",
+      "object": "storyboard",
+      "twist": "the hero gets blamed",
+      "hook": "humour and irony"
+    }
+  },
+  {
+    "id": "ceed-2019-b-q4",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2019,
+      "qno": 4,
+      "originalSection": "Interaction Design",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Bicycle navigator for 12-year-olds",
+    "text": "A bicycle company has developed a navigation device: a colour display (not a touch screen), 7 physical buttons, a speaker, a microphone, GPS and wireless internet. It is waterproof, readable in bright sunlight, and charged by pedalling.\n\nDesign a version of this device, mounted on the bicycle, for **12-year-old children**.\n\n1. Create a 5-step storyboard of the interface that lets the child set a new destination they have never been to. (10 marks)\n2. Present one detailed screen showing the information that helps the child navigate while riding. (10 marks)",
+    "rules": [
+      "Not a touch screen: 7 physical buttons",
+      "Five steps for the storyboard"
+    ],
+    "criteria": [
+      {
+        "name": "Appropriateness of the user interface and integration of hardware and software",
+        "marks": 10
+      },
+      {
+        "name": "Originality and appropriateness of the information design",
+        "marks": 10
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "children aged 12",
+      "setting": "cycling on city streets",
+      "object": "navigation interface",
+      "twist": "buttons only, no touch",
+      "hook": "GPS technology"
+    }
+  },
+  {
+    "id": "ceed-2019-b-q5",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2019,
+      "qno": 5,
+      "originalSection": "Mobility and Vehicle Design",
+      "adapted": true
+    },
+    "slot": "form",
+    "title": "Hill-region utility four-wheeler",
+    "text": "Local improvised vehicles in rural India carry many people, small machines, farm equipment and even cattle and goats. They are neither safe nor comfortable, but they are indispensable and often the only transport available.\n\nDesign a context-sensitive, safe, workable and pleasing **four-wheeler for hilly regions** that:\n\n- carries at least 6 passengers including the driver\n- has a convertible space for at least 1 cattle, a small machine, milk cans or fuel drums, plus a tool kit (used by passengers when no goods are carried)\n- protects against the weather (sunshades etc.)\n- is easy to maintain\n\n1. Explore the concept in two quick sketches that each show a distinct design insight. (10 marks)\n2. Draw a neat freehand perspective sketch of the final vehicle showing its overall form and features. (10 marks)",
+    "rules": [
+      "Perspective view of the final vehicle"
+    ],
+    "criteria": [
+      {
+        "name": "Context-sensitivity, design insight and exploratory concepts",
+        "marks": 10
+      },
+      {
+        "name": "Ability to sketch the vehicle in perspective and detail the final concept",
+        "marks": 10
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "rural hill communities",
+      "setting": "hilly rural roads",
+      "object": "utility four-wheeler",
+      "twist": "people one day, cattle the next",
+      "hook": "rural India; improvised vehicles"
+    }
+  },
+  {
+    "id": "ceed-2019-b-q6",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2019,
+      "qno": 6,
+      "originalSection": "Sketching",
+      "adapted": true
+    },
+    "slot": "sketching",
+    "title": "Kitchen at 5½ feet",
+    "text": "Draw a perspective view of a kitchen interior with a stove, kitchen utensils (such as a pressure cooker, cooking pans, sauce pans), dining utensils (such as ceramic plates, cups, glasses), a wash basin, storage racks with stored cooking ingredients (such as spices in small plastic bottles), fresh cut vegetables kept beside the stove and at least two kitchen gadgets.\n\nMake a freehand perspective drawing of this setup, showing all the elements listed above, as seen from the point of view of a **5½ feet tall person**.",
+    "rules": [
+      "Use only pencils",
+      "Do not use any kind of colour",
+      "Do not use drawing instruments (ruler, compass, set-square)",
+      "Show every listed element"
+    ],
+    "criteria": [
+      {
+        "name": "Quality of composition and sense of perspective",
+        "marks": 5
+      },
+      {
+        "name": "Observation and drawing skills",
+        "marks": 5
+      },
+      {
+        "name": "Scale and relative proportions",
+        "marks": 5
+      },
+      {
+        "name": "Use of light, shade and surface finish",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "setting": "home kitchen",
+      "object": "interior scene",
+      "pov": "standing person, 5½ ft eye level",
+      "twist": "every listed object must appear",
+      "hook": "Indian kitchen"
+    }
+  },
+  {
+    "id": "ceed-2019-b-q7",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2019,
+      "qno": 7,
+      "originalSection": "Creativity",
+      "adapted": true
+    },
+    "slot": "creativity",
+    "title": "Four frames and a fifth",
+    "text": "Imagination is the power of the mind: some visual elements can come together to create a bigger picture. Observe the visual elements in the boxes below.\n\nComplete the visual elements based on your imagination; each may become a character, a product, a landscape, etc. Use the given elements to complete the first four frames. Then choose **any three elements** from the first four frames and complete the fifth frame.",
+    "rules": [
+      "Sketch only within the boundaries of the boxes",
+      "Fifth frame uses any three elements from frames 1–4"
+    ],
+    "criteria": [
+      {
+        "name": "Originality of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of ideas",
+        "marks": 5
+      },
+      {
+        "name": "Clarity of sketches",
+        "marks": 5
+      },
+      {
+        "name": "Neatness of sketches",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2019-b-q7-1.png",
+        "alt": "Five square frames: frame 1 has a short diagonal line and a wavy line; frame 2 a wavy line, a vertical line and a solid blue dot; frame 3 a wavy line, a blue ring and a diagonal line; frame 4 a wavy line, a diagonal line and a blue triangle at its edge; frame 5 is empty."
+      }
+    ],
+    "tags": {
+      "object": "completed frames",
+      "twist": "fifth frame combines three earlier elements"
+    }
+  },
+  {
+    "id": "ceed-2019-b-q8",
+    "source": "real",
+    "origin": {
+      "exam": "CEED",
+      "year": 2019,
+      "qno": 8,
+      "originalSection": "Visualization",
+      "adapted": true
+    },
+    "slot": "visual",
+    "title": "Complete the S-shaped motif",
+    "text": "Shown below is part of an **S-shaped motif**. The dotted lines mark the incomplete part. Visualise the remaining motif and draw the complete motif at a height of **15 cm**. Do not draw the dotted lines.",
+    "rules": [
+      "Motif height 15 cm",
+      "Do not draw the dotted lines"
+    ],
+    "criteria": [
+      {
+        "name": "Faithful reproduction of the given part of the motif in the required size",
+        "marks": 5
+      },
+      {
+        "name": "Consistency with the existing visual language, harmony and balance in the imagined part",
+        "marks": 10
+      },
+      {
+        "name": "Rendering quality of the final form",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/real/ceed-2019-b-q8-1.png",
+        "alt": "Bold black ornamental motif: the top half of an S-shape curling into a round spiral, with its middle hidden by a dotted rectangle and only a black curved edge visible below it."
+      }
+    ],
+    "tags": {
+      "object": "ornamental motif",
+      "twist": "complete a hidden half"
+    }
+  }
+]

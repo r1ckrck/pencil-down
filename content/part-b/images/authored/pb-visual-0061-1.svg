@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none" stroke="none">
+<rect x="10" y="10" width="580" height="580" stroke="currentColor" stroke-width="3" stroke-dasharray="12 10"/>
+<line x1="300.0" y1="10" x2="300.0" y2="590" stroke="currentColor" stroke-width="2" stroke-dasharray="6 10"/>
+<line x1="10" y1="300.0" x2="590" y2="300.0" stroke="currentColor" stroke-width="2" stroke-dasharray="6 10"/>
+<path d="M300 240 A60 60 0 0 1 360 300" stroke="currentColor" stroke-width="5"/>
+<path d="M300 130 A170 170 0 0 1 470 300" stroke="currentColor" stroke-width="5"/>
+<path d="M300 40 A260 260 0 0 1 560 300" stroke="currentColor" stroke-width="5"/>
+<ellipse cx="322.44" cy="187.21" rx="46" ry="18" transform="rotate(-78.75 322.44 187.21)" stroke="currentColor" stroke-width="5"/>
+<circle cx="341.94" cy="89.13" r="14" fill="currentColor"/>
+<ellipse cx="363.89" cy="204.38" rx="46" ry="18" transform="rotate(-56.25 363.89 204.38)" stroke="currentColor" stroke-width="5"/>
+<circle cx="419.45" cy="121.23" r="14" fill="currentColor"/>
+<ellipse cx="395.62" cy="236.11" rx="46" ry="18" transform="rotate(-33.75 395.62 236.11)" stroke="currentColor" stroke-width="5"/>
+<circle cx="478.77" cy="180.55" r="14" fill="currentColor"/>
+<ellipse cx="412.79" cy="277.56" rx="46" ry="18" transform="rotate(-11.25 412.79 277.56)" stroke="currentColor" stroke-width="5"/>
+<circle cx="510.87" cy="258.06" r="14" fill="currentColor"/>
+<circle cx="300" cy="15" r="5" fill="currentColor"/>
+<circle cx="355.6" cy="20.48" r="5" fill="currentColor"/>
+<circle cx="409.06" cy="36.69" r="5" fill="currentColor"/>
+<circle cx="458.34" cy="63.03" r="5" fill="currentColor"/>
+<circle cx="501.53" cy="98.47" r="5" fill="currentColor"/>
+<circle cx="536.97" cy="141.66" r="5" fill="currentColor"/>
+<circle cx="563.31" cy="190.94" r="5" fill="currentColor"/>
+<circle cx="579.52" cy="244.4" r="5" fill="currentColor"/>
+<circle cx="585" cy="300" r="5" fill="currentColor"/>
+<circle cx="300.0" cy="300.0" r="22" fill="currentColor"/>
+</svg>

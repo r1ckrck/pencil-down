@@ -1,0 +1,175 @@
+/*
+ * Pencil Down design tokens — the only file allowed to hold colour literals.
+ * Base: assistant/docs/tokens.css (colour, data ramp, space, radius). App type scale and motion added.
+ *
+ * Theme: follows the system by default. <html data-theme="light|dark"> overrides it.
+ * The dark set is declared twice (system + explicit) because CSS cannot share a block between selectors.
+ *
+ * Usage rules (spec §4):
+ *   - Accent (--accent) once per screen: the single live thing. Never body, frames, wide fills.
+ *   - Display font only for the one statement or number (days to exam, a results score).
+ *   - Mono for numbers, timers, ids, question numbers, seeds.
+ *   - Data colours (--data-*) for correct/wrong and charts only; never stand in for the accent.
+ *   - Hairlines, not shadows. No gradients. Rounded squares, not circles.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* ── Colour ─────────────────────────────────────────────────────── */
+  --bg: #F2EEE3;            /* warm off-white anchor — never cold pure white */
+  --fg: #111111;            /* near-black; carries body, marks, structural lines */
+  --mute: #7A7569;          /* secondary voice — annotations, captions, support */
+  --hairline: rgba(31, 31, 31, 0.30);
+                            /* drafting-line presence at low opacity */
+  --accent: #5C3F4E;        /* dusty plum — once per screen */
+  --code-bg: rgba(17, 17, 17, 0.06);
+                            /* tinted panel — fg at 6% */
+  --tint: rgba(17, 17, 17, 0.04);
+                            /* quietest fill: pressed/hover wash, filled cells */
+  --on-fg: #F2EEE3;         /* text set on a solid --fg fill (primary button) */
+  --on-accent: #F2EEE3;     /* text set on a solid --accent fill */
+  --grain-opacity: 0.35;    /* paper texture strength */
+  --grain-blend: multiply;
+
+  /* ── Data ramp — charts, correct/wrong, overrun only ─────────────── */
+  --data-cat-1: #138282;    /* teal */
+  --data-cat-2: #3A75AF;    /* slate */
+  --data-cat-3: #7C61A8;    /* violet */
+  --data-cat-4: #976712;    /* ochre */
+  --data-cat-5: #A7593D;    /* clay */
+  --data-good:  #3A874F;
+  --data-mid:   #976B03;
+  --data-bad:   #AD5944;
+
+  /* ── Icons (Phosphor duotone) ────────────────────────────────────── */
+  --icon-primary: var(--fg);
+  --icon-secondary: var(--mute);
+
+  /* ── Fonts — families come from next/font (layout.tsx) ───────────── */
+  --font-display: var(--ff-display), "PP Neue Machina Inktrap", sans-serif;
+                            /* the rare voice — the one statement or number */
+  --font-body: var(--ff-body), "General Sans", ui-sans-serif, sans-serif;
+                            /* the workhorse — everything non-technical */
+  --font-mono: var(--ff-mono), "JetBrains Mono", ui-monospace, monospace;
+                            /* the technical voice — numbers, timers, ids */
+
+  /* ── App type scale ──────────────────────────────────────────────── */
+  --text-display: clamp(88px, 22vw, 176px);
+  --text-display--line-height: 0.88;
+  --text-display--letter-spacing: -0.02em;
+                            /* the one statement: days to exam */
+  --text-display-sm: clamp(56px, 12vw, 96px);
+  --text-display-sm--line-height: 0.92;
+  --text-display-sm--letter-spacing: -0.015em;
+                            /* the one number on a results screen */
+  --text-title: 28px;
+  --text-title--line-height: 34px;
+  --text-title--letter-spacing: -0.01em;
+                            /* page title, body face 600 */
+  --text-heading: 20px;
+  --text-heading--line-height: 28px;
+                            /* panel / section heading, body face 500 */
+  --text-lead: 18px;
+  --text-lead--line-height: 28px;
+                            /* question stem, Part B prompt */
+  --text-body: 16px;
+  --text-body--line-height: 24px;
+                            /* default reading size */
+  --text-small: 14px;
+  --text-small--line-height: 20px;
+                            /* dense supporting copy, controls */
+  --text-caption: 13px;
+  --text-caption--line-height: 18px;
+  --text-caption--letter-spacing: 0.01em;
+                            /* annotations, helper text */
+  --text-label: 11px;
+  --text-label--line-height: 16px;
+  --text-label--letter-spacing: 0.12em;
+                            /* mono caps eyebrow */
+  --text-timer: 32px;
+  --text-timer--line-height: 36px;
+                            /* mono countdown, exam chrome */
+  --text-counter: 96px;
+  --text-counter--line-height: 1;
+                            /* tap-counter tally, read at arm's length */
+
+  /* ── Spacing — 8-point scale ─────────────────────────────────────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --touch: 44px;            /* minimum touch target */
+
+  /* ── Radius — bigger element, bigger radius ──────────────────────── */
+  --radius-xs: 4px;         /* markers, ticks, palette cells */
+  --radius-sm: 8px;         /* buttons, chips, keys */
+  --radius-md: 14px;        /* grouped regions */
+  --radius-lg: 22px;        /* panels */
+  --radius-pill: 999px;     /* switch track only */
+
+  /* ── Motion — mechanical, measured; never bouncy ─────────────────── */
+  --dur-instant: 80ms;      /* press feedback */
+  --dur-fast: 140ms;        /* state flips: hover, check, toggle */
+  --dur-base: 220ms;        /* panels, dialogs entering */
+  --dur-slow: 360ms;        /* structure revealing itself */
+  --ease-measured: cubic-bezier(0.65, 0, 0.35, 1);
+                            /* in-out: a drafting tool sliding into place */
+  --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
+                            /* arrivals */
+  --ease-in: cubic-bezier(0.5, 0, 0.75, 0);
+                            /* departures */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #111111;
+    --fg: #F2EEE3;
+    --mute: #A8A39A;
+    --hairline: rgba(242, 238, 227, 0.30);
+    --accent: #B89AAA;
+    --code-bg: rgba(242, 238, 227, 0.06);
+    --tint: rgba(242, 238, 227, 0.05);
+    --on-fg: #111111;
+    --on-accent: #111111;
+    --grain-opacity: 0.07;
+    --grain-blend: screen;
+    --data-cat-1: #57CCCC;
+    --data-cat-2: #83BDF8;
+    --data-cat-3: #C2A8F1;
+    --data-cat-4: #DFAE68;
+    --data-cat-5: #F1A084;
+    --data-good:  #82CB92;
+    --data-mid:   #DCAF61;
+    --data-bad:   #F59D87;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111111;            /* inverted anchor — same warmth, opposite charge */
+  --fg: #F2EEE3;
+  --mute: #A8A39A;          /* lifted warm grey */
+  --hairline: rgba(242, 238, 227, 0.30);
+  --accent: #B89AAA;        /* same hue, lifted for dark */
+  --code-bg: rgba(242, 238, 227, 0.06);
+  --tint: rgba(242, 238, 227, 0.05);
+  --on-fg: #111111;
+  --on-accent: #111111;
+  --grain-opacity: 0.07;
+  --grain-blend: screen;
+  --data-cat-1: #57CCCC;
+  --data-cat-2: #83BDF8;
+  --data-cat-3: #C2A8F1;
+  --data-cat-4: #DFAE68;
+  --data-cat-5: #F1A084;
+  --data-good:  #82CB92;
+  --data-mid:   #DCAF61;
+  --data-bad:   #F59D87;
+}

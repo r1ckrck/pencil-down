@@ -1,0 +1,6538 @@
+[
+  {
+    "id": "ceed-2020-q01",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 1,
+    "format": "NAT",
+    "image": "images/ceed-2020-q01.webp",
+    "imageWidth": 1169,
+    "imageHeight": 631,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 14,
+      "max": 14
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q02",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 2,
+    "format": "NAT",
+    "image": "images/ceed-2020-q02.webp",
+    "imageWidth": 1393,
+    "imageHeight": 932,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 6,
+      "max": 6
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q03",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 3,
+    "format": "NAT",
+    "image": "images/ceed-2020-q03.webp",
+    "imageWidth": 1366,
+    "imageHeight": 528,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 20,
+      "max": 20
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q04",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 4,
+    "format": "NAT",
+    "image": "images/ceed-2020-q04.webp",
+    "imageWidth": 1400,
+    "imageHeight": 592,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 28,
+      "max": 28
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q05",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 5,
+    "format": "NAT",
+    "image": "images/ceed-2020-q05.webp",
+    "imageWidth": 1375,
+    "imageHeight": 689,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 18,
+      "max": 18
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q06",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 6,
+    "format": "NAT",
+    "image": "images/ceed-2020-q06.webp",
+    "imageWidth": 1288,
+    "imageHeight": 701,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 8,
+      "max": 8
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q07",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 7,
+    "format": "NAT",
+    "image": "images/ceed-2020-q07.webp",
+    "imageWidth": 1355,
+    "imageHeight": 882,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 1690,
+      "max": 1690
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q08",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 8,
+    "format": "NAT",
+    "image": "images/ceed-2020-q08.webp",
+    "imageWidth": 1376,
+    "imageHeight": 1012,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 24,
+      "max": 24
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q09",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 9,
+    "format": "MSQ",
+    "image": "images/ceed-2020-q09.webp",
+    "imageWidth": 1398,
+    "imageHeight": 1006,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q10",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 10,
+    "format": "MSQ",
+    "image": "images/ceed-2020-q10.webp",
+    "imageWidth": 1317,
+    "imageHeight": 757,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q11",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 11,
+    "format": "MSQ",
+    "image": "images/ceed-2020-q11.webp",
+    "imageWidth": 1400,
+    "imageHeight": 677,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q12",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 12,
+    "format": "MSQ",
+    "image": "images/ceed-2020-q12.webp",
+    "imageWidth": 1117,
+    "imageHeight": 992,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q13",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 13,
+    "format": "MSQ",
+    "image": "images/ceed-2020-q13.webp",
+    "imageWidth": 1377,
+    "imageHeight": 589,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q14",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 14,
+    "format": "MSQ",
+    "image": "images/ceed-2020-q14.webp",
+    "imageWidth": 1331,
+    "imageHeight": 418,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q15",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 15,
+    "format": "MSQ",
+    "image": "images/ceed-2020-q15.webp",
+    "imageWidth": 1323,
+    "imageHeight": 742,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q16",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 16,
+    "format": "MSQ",
+    "image": "images/ceed-2020-q16.webp",
+    "imageWidth": 1360,
+    "imageHeight": 328,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q17",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 17,
+    "format": "MSQ",
+    "image": "images/ceed-2020-q17.webp",
+    "imageWidth": 1397,
+    "imageHeight": 852,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q18",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 18,
+    "format": "MSQ",
+    "image": "images/ceed-2020-q18.webp",
+    "imageWidth": 1346,
+    "imageHeight": 563,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "language",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q19",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 19,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q19.webp",
+    "imageWidth": 1366,
+    "imageHeight": 1134,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q20",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 20,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q20.webp",
+    "imageWidth": 1387,
+    "imageHeight": 750,
+    "optionCount": 4,
+    "answer": {
+      "kind": "DROPPED",
+      "marks": 2
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q21",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 21,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q21.webp",
+    "imageWidth": 1381,
+    "imageHeight": 1299,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q22",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 22,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q22.webp",
+    "imageWidth": 1391,
+    "imageHeight": 643,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q23",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 23,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q23.webp",
+    "imageWidth": 1398,
+    "imageHeight": 535,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q24",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 24,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q24.webp",
+    "imageWidth": 1267,
+    "imageHeight": 492,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q25",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 25,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q25.webp",
+    "imageWidth": 1174,
+    "imageHeight": 660,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q26",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 26,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q26.webp",
+    "imageWidth": 1372,
+    "imageHeight": 1052,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q27",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 27,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q27.webp",
+    "imageWidth": 1390,
+    "imageHeight": 1051,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q28",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 28,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q28.webp",
+    "imageWidth": 1348,
+    "imageHeight": 744,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q29",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 29,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q29.webp",
+    "imageWidth": 1040,
+    "imageHeight": 708,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q30",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 30,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q30.webp",
+    "imageWidth": 1297,
+    "imageHeight": 612,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": true,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q31",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 31,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q31.webp",
+    "imageWidth": 1390,
+    "imageHeight": 657,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q32",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 32,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q32.webp",
+    "imageWidth": 1377,
+    "imageHeight": 813,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q33",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 33,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q33.webp",
+    "imageWidth": 1294,
+    "imageHeight": 1228,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q34",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 34,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q34.webp",
+    "imageWidth": 793,
+    "imageHeight": 811,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q35",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 35,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q35.webp",
+    "imageWidth": 1398,
+    "imageHeight": 809,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q36",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 36,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q36.webp",
+    "imageWidth": 1369,
+    "imageHeight": 795,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q37",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 37,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q37.webp",
+    "imageWidth": 1372,
+    "imageHeight": 1142,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q38",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 38,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q38.webp",
+    "imageWidth": 1377,
+    "imageHeight": 632,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q39",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 39,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q39.webp",
+    "imageWidth": 939,
+    "imageHeight": 1268,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q40",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 40,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q40.webp",
+    "imageWidth": 1174,
+    "imageHeight": 668,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2020-q41",
+    "exam": "CEED",
+    "year": 2020,
+    "paperId": "ceed-2020",
+    "qno": 41,
+    "format": "MCQ",
+    "image": "images/ceed-2020-q41.webp",
+    "imageWidth": 1400,
+    "imageHeight": 552,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q01",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 1,
+    "format": "NAT",
+    "image": "images/ceed-2021-q01.webp",
+    "imageWidth": 1357,
+    "imageHeight": 732,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 72,
+      "max": 72
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q02",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 2,
+    "format": "NAT",
+    "image": "images/ceed-2021-q02.webp",
+    "imageWidth": 1056,
+    "imageHeight": 536,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 3,
+      "max": 3
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q03",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 3,
+    "format": "NAT",
+    "image": "images/ceed-2021-q03.webp",
+    "imageWidth": 1387,
+    "imageHeight": 549,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 68,
+      "max": 68
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q04",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 4,
+    "format": "NAT",
+    "image": "images/ceed-2021-q04.webp",
+    "imageWidth": 1392,
+    "imageHeight": 747,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 55,
+      "max": 55
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q05",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 5,
+    "format": "NAT",
+    "image": "images/ceed-2021-q05.webp",
+    "imageWidth": 1400,
+    "imageHeight": 1111,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 34,
+      "max": 34
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q06",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 6,
+    "format": "NAT",
+    "image": "images/ceed-2021-q06.webp",
+    "imageWidth": 1229,
+    "imageHeight": 910,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 5,
+      "max": 5
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q07",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 7,
+    "format": "NAT",
+    "image": "images/ceed-2021-q07.webp",
+    "imageWidth": 1307,
+    "imageHeight": 886,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 92.9,
+      "max": 94.6
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q08",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 8,
+    "format": "NAT",
+    "image": "images/ceed-2021-q08.webp",
+    "imageWidth": 1331,
+    "imageHeight": 867,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 2.24,
+      "max": 2.26
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q09",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 9,
+    "format": "MSQ",
+    "image": "images/ceed-2021-q09.webp",
+    "imageWidth": 1303,
+    "imageHeight": 820,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q10",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 10,
+    "format": "MSQ",
+    "image": "images/ceed-2021-q10.webp",
+    "imageWidth": 1400,
+    "imageHeight": 1024,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q11",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 11,
+    "format": "MSQ",
+    "image": "images/ceed-2021-q11.webp",
+    "imageWidth": 1381,
+    "imageHeight": 1031,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q12",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 12,
+    "format": "MSQ",
+    "image": "images/ceed-2021-q12.webp",
+    "imageWidth": 1400,
+    "imageHeight": 843,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q13",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 13,
+    "format": "MSQ",
+    "image": "images/ceed-2021-q13.webp",
+    "imageWidth": 1385,
+    "imageHeight": 943,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q14",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 14,
+    "format": "MSQ",
+    "image": "images/ceed-2021-q14.webp",
+    "imageWidth": 1323,
+    "imageHeight": 920,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q15",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 15,
+    "format": "MSQ",
+    "image": "images/ceed-2021-q15.webp",
+    "imageWidth": 1369,
+    "imageHeight": 1014,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q16",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 16,
+    "format": "MSQ",
+    "image": "images/ceed-2021-q16.webp",
+    "imageWidth": 1397,
+    "imageHeight": 1022,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q17",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 17,
+    "format": "MSQ",
+    "image": "images/ceed-2021-q17.webp",
+    "imageWidth": 1400,
+    "imageHeight": 1071,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q18",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 18,
+    "format": "MSQ",
+    "image": "images/ceed-2021-q18.webp",
+    "imageWidth": 1379,
+    "imageHeight": 737,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "language",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q19",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 19,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q19.webp",
+    "imageWidth": 1079,
+    "imageHeight": 824,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q20",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 20,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q20.webp",
+    "imageWidth": 1339,
+    "imageHeight": 1129,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q21",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 21,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q21.webp",
+    "imageWidth": 1393,
+    "imageHeight": 1227,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q22",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 22,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q22.webp",
+    "imageWidth": 1376,
+    "imageHeight": 785,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q23",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 23,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q23.webp",
+    "imageWidth": 1294,
+    "imageHeight": 1087,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q24",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 24,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q24.webp",
+    "imageWidth": 1227,
+    "imageHeight": 850,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q25",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 25,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q25.webp",
+    "imageWidth": 1389,
+    "imageHeight": 692,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q26",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 26,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q26.webp",
+    "imageWidth": 1397,
+    "imageHeight": 945,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q27",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 27,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q27.webp",
+    "imageWidth": 1396,
+    "imageHeight": 1077,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q28",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 28,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q28.webp",
+    "imageWidth": 1038,
+    "imageHeight": 1006,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q29",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 29,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q29.webp",
+    "imageWidth": 1390,
+    "imageHeight": 434,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q30",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 30,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q30.webp",
+    "imageWidth": 1399,
+    "imageHeight": 976,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q31",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 31,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q31.webp",
+    "imageWidth": 907,
+    "imageHeight": 1010,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q32",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 32,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q32.webp",
+    "imageWidth": 1319,
+    "imageHeight": 950,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q33",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 33,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q33.webp",
+    "imageWidth": 1368,
+    "imageHeight": 852,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": true,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q34",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 34,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q34.webp",
+    "imageWidth": 1362,
+    "imageHeight": 1031,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q35",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 35,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q35.webp",
+    "imageWidth": 1376,
+    "imageHeight": 963,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q36",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 36,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q36.webp",
+    "imageWidth": 1328,
+    "imageHeight": 780,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q37",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 37,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q37.webp",
+    "imageWidth": 1380,
+    "imageHeight": 805,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q38",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 38,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q38.webp",
+    "imageWidth": 1274,
+    "imageHeight": 1011,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": true,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q39",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 39,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q39.webp",
+    "imageWidth": 1389,
+    "imageHeight": 1006,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q40",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 40,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q40.webp",
+    "imageWidth": 1400,
+    "imageHeight": 962,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2021-q41",
+    "exam": "CEED",
+    "year": 2021,
+    "paperId": "ceed-2021",
+    "qno": 41,
+    "format": "MCQ",
+    "image": "images/ceed-2021-q41.webp",
+    "imageWidth": 1367,
+    "imageHeight": 799,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q01",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 1,
+    "format": "NAT",
+    "image": "images/ceed-2022-q01.webp",
+    "imageWidth": 1394,
+    "imageHeight": 1122,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 27,
+      "max": 27
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q02",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 2,
+    "format": "NAT",
+    "image": "images/ceed-2022-q02.webp",
+    "imageWidth": 1400,
+    "imageHeight": 648,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 3214765,
+      "max": 3214765
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q03",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 3,
+    "format": "NAT",
+    "image": "images/ceed-2022-q03.webp",
+    "imageWidth": 1324,
+    "imageHeight": 841,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 5,
+      "max": 5
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q04",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 4,
+    "format": "NAT",
+    "image": "images/ceed-2022-q04.webp",
+    "imageWidth": 1358,
+    "imageHeight": 991,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 0.5,
+      "max": 0.5
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q05",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 5,
+    "format": "NAT",
+    "image": "images/ceed-2022-q05.webp",
+    "imageWidth": 1397,
+    "imageHeight": 914,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 112,
+      "max": 112
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q06",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 6,
+    "format": "NAT",
+    "image": "images/ceed-2022-q06.webp",
+    "imageWidth": 1376,
+    "imageHeight": 283,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 7.2,
+      "max": 7.2
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q07",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 7,
+    "format": "NAT",
+    "image": "images/ceed-2022-q07.webp",
+    "imageWidth": 1392,
+    "imageHeight": 903,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 420,
+      "max": 420
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q08",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 8,
+    "format": "NAT",
+    "image": "images/ceed-2022-q08.webp",
+    "imageWidth": 1338,
+    "imageHeight": 751,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 14,
+      "max": 14
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q09",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 9,
+    "format": "MSQ",
+    "image": "images/ceed-2022-q09.webp",
+    "imageWidth": 1400,
+    "imageHeight": 1037,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q10",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 10,
+    "format": "MSQ",
+    "image": "images/ceed-2022-q10.webp",
+    "imageWidth": 1373,
+    "imageHeight": 800,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q11",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 11,
+    "format": "MSQ",
+    "image": "images/ceed-2022-q11.webp",
+    "imageWidth": 1398,
+    "imageHeight": 680,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q12",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 12,
+    "format": "MSQ",
+    "image": "images/ceed-2022-q12.webp",
+    "imageWidth": 1200,
+    "imageHeight": 1063,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q13",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 13,
+    "format": "MSQ",
+    "image": "images/ceed-2022-q13.webp",
+    "imageWidth": 1308,
+    "imageHeight": 1007,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q14",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 14,
+    "format": "MSQ",
+    "image": "images/ceed-2022-q14.webp",
+    "imageWidth": 1380,
+    "imageHeight": 806,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q15",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 15,
+    "format": "MSQ",
+    "image": "images/ceed-2022-q15.webp",
+    "imageWidth": 1347,
+    "imageHeight": 823,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q16",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 16,
+    "format": "MSQ",
+    "image": "images/ceed-2022-q16.webp",
+    "imageWidth": 1360,
+    "imageHeight": 763,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": true,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q17",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 17,
+    "format": "MSQ",
+    "image": "images/ceed-2022-q17.webp",
+    "imageWidth": 1361,
+    "imageHeight": 787,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q18",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 18,
+    "format": "MSQ",
+    "image": "images/ceed-2022-q18.webp",
+    "imageWidth": 1341,
+    "imageHeight": 696,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q19",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 19,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q19.webp",
+    "imageWidth": 1390,
+    "imageHeight": 770,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q20",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 20,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q20.webp",
+    "imageWidth": 1375,
+    "imageHeight": 351,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q21",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 21,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q21.webp",
+    "imageWidth": 1400,
+    "imageHeight": 717,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q22",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 22,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q22.webp",
+    "imageWidth": 1368,
+    "imageHeight": 820,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q23",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 23,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q23.webp",
+    "imageWidth": 1381,
+    "imageHeight": 851,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q24",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 24,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q24.webp",
+    "imageWidth": 1371,
+    "imageHeight": 714,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q25",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 25,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q25.webp",
+    "imageWidth": 1379,
+    "imageHeight": 1114,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q26",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 26,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q26.webp",
+    "imageWidth": 1400,
+    "imageHeight": 473,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q27",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 27,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q27.webp",
+    "imageWidth": 1373,
+    "imageHeight": 734,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q28",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 28,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q28.webp",
+    "imageWidth": 1325,
+    "imageHeight": 838,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q29",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 29,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q29.webp",
+    "imageWidth": 1390,
+    "imageHeight": 1148,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q30",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 30,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q30.webp",
+    "imageWidth": 1400,
+    "imageHeight": 902,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q31",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 31,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q31.webp",
+    "imageWidth": 1373,
+    "imageHeight": 1020,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q32",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 32,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q32.webp",
+    "imageWidth": 1367,
+    "imageHeight": 899,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q33",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 33,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q33.webp",
+    "imageWidth": 1346,
+    "imageHeight": 1205,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q34",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 34,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q34.webp",
+    "imageWidth": 1385,
+    "imageHeight": 805,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q35",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 35,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q35.webp",
+    "imageWidth": 1378,
+    "imageHeight": 790,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q36",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 36,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q36.webp",
+    "imageWidth": 1380,
+    "imageHeight": 886,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q37",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 37,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q37.webp",
+    "imageWidth": 1348,
+    "imageHeight": 1604,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q38",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 38,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q38.webp",
+    "imageWidth": 1358,
+    "imageHeight": 1418,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q39",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 39,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q39.webp",
+    "imageWidth": 1346,
+    "imageHeight": 783,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q40",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 40,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q40.webp",
+    "imageWidth": 1400,
+    "imageHeight": 836,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2022-q41",
+    "exam": "CEED",
+    "year": 2022,
+    "paperId": "ceed-2022",
+    "qno": 41,
+    "format": "MCQ",
+    "image": "images/ceed-2022-q41.webp",
+    "imageWidth": 1388,
+    "imageHeight": 845,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q01",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 1,
+    "format": "NAT",
+    "image": "images/ceed-2023-q01.webp",
+    "imageWidth": 1369,
+    "imageHeight": 232,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 8,
+      "max": 8
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q02",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 2,
+    "format": "NAT",
+    "image": "images/ceed-2023-q02.webp",
+    "imageWidth": 1391,
+    "imageHeight": 772,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 13,
+      "max": 13
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q03",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 3,
+    "format": "NAT",
+    "image": "images/ceed-2023-q03.webp",
+    "imageWidth": 964,
+    "imageHeight": 793,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 16,
+      "max": 16
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q04",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 4,
+    "format": "NAT",
+    "image": "images/ceed-2023-q04.webp",
+    "imageWidth": 1375,
+    "imageHeight": 183,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 3,
+      "max": 3
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q05",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 5,
+    "format": "NAT",
+    "image": "images/ceed-2023-q05.webp",
+    "imageWidth": 1397,
+    "imageHeight": 169,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 20,
+      "max": 20
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q06",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 6,
+    "format": "NAT",
+    "image": "images/ceed-2023-q06.webp",
+    "imageWidth": 1366,
+    "imageHeight": 894,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 42,
+      "max": 42
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q07",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 7,
+    "format": "NAT",
+    "image": "images/ceed-2023-q07.webp",
+    "imageWidth": 1244,
+    "imageHeight": 989,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 13,
+      "max": 13
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q08",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 8,
+    "format": "NAT",
+    "image": "images/ceed-2023-q08.webp",
+    "imageWidth": 1328,
+    "imageHeight": 891,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 2,
+      "max": 2
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q09",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 9,
+    "format": "MSQ",
+    "image": "images/ceed-2023-q09.webp",
+    "imageWidth": 1353,
+    "imageHeight": 1089,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q10",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 10,
+    "format": "MSQ",
+    "image": "images/ceed-2023-q10.webp",
+    "imageWidth": 1339,
+    "imageHeight": 908,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q11",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 11,
+    "format": "MSQ",
+    "image": "images/ceed-2023-q11.webp",
+    "imageWidth": 1387,
+    "imageHeight": 753,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "language",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q12",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 12,
+    "format": "MSQ",
+    "image": "images/ceed-2023-q12.webp",
+    "imageWidth": 1367,
+    "imageHeight": 586,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q13",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 13,
+    "format": "MSQ",
+    "image": "images/ceed-2023-q13.webp",
+    "imageWidth": 1394,
+    "imageHeight": 1546,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q14",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 14,
+    "format": "MSQ",
+    "image": "images/ceed-2023-q14.webp",
+    "imageWidth": 1392,
+    "imageHeight": 405,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q15",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 15,
+    "format": "MSQ",
+    "image": "images/ceed-2023-q15.webp",
+    "imageWidth": 1400,
+    "imageHeight": 919,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q16",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 16,
+    "format": "MSQ",
+    "image": "images/ceed-2023-q16.webp",
+    "imageWidth": 1383,
+    "imageHeight": 947,
+    "optionCount": 4,
+    "answer": {
+      "kind": "ANY",
+      "of": [
+        {
+          "kind": "MSQ",
+          "options": [
+            "B"
+          ]
+        },
+        {
+          "kind": "MSQ",
+          "options": [
+            "B",
+            "D"
+          ]
+        }
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q17",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 17,
+    "format": "MSQ",
+    "image": "images/ceed-2023-q17.webp",
+    "imageWidth": 1363,
+    "imageHeight": 1034,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q18",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 18,
+    "format": "MSQ",
+    "image": "images/ceed-2023-q18.webp",
+    "imageWidth": 1329,
+    "imageHeight": 969,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q19",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 19,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q19.webp",
+    "imageWidth": 1393,
+    "imageHeight": 1173,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q20",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 20,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q20.webp",
+    "imageWidth": 1355,
+    "imageHeight": 909,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q21",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 21,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q21.webp",
+    "imageWidth": 1397,
+    "imageHeight": 447,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q22",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 22,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q22.webp",
+    "imageWidth": 1385,
+    "imageHeight": 462,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q23",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 23,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q23.webp",
+    "imageWidth": 1389,
+    "imageHeight": 398,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q24",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 24,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q24.webp",
+    "imageWidth": 1379,
+    "imageHeight": 1221,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q25",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 25,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q25.webp",
+    "imageWidth": 1340,
+    "imageHeight": 465,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q26",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 26,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q26.webp",
+    "imageWidth": 1383,
+    "imageHeight": 734,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q27",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 27,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q27.webp",
+    "imageWidth": 1400,
+    "imageHeight": 1131,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q28",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 28,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q28.webp",
+    "imageWidth": 1168,
+    "imageHeight": 1010,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q29",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 29,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q29.webp",
+    "imageWidth": 1400,
+    "imageHeight": 765,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q30",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 30,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q30.webp",
+    "imageWidth": 1380,
+    "imageHeight": 918,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "language",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q31",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 31,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q31.webp",
+    "imageWidth": 1398,
+    "imageHeight": 1826,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q32",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 32,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q32.webp",
+    "imageWidth": 1339,
+    "imageHeight": 950,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q33",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 33,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q33.webp",
+    "imageWidth": 1379,
+    "imageHeight": 947,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q34",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 34,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q34.webp",
+    "imageWidth": 952,
+    "imageHeight": 778,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q35",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 35,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q35.webp",
+    "imageWidth": 1317,
+    "imageHeight": 954,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q36",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 36,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q36.webp",
+    "imageWidth": 1396,
+    "imageHeight": 830,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q37",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 37,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q37.webp",
+    "imageWidth": 1398,
+    "imageHeight": 1225,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q38",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 38,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q38.webp",
+    "imageWidth": 1400,
+    "imageHeight": 1008,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q39",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 39,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q39.webp",
+    "imageWidth": 1382,
+    "imageHeight": 1011,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q40",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 40,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q40.webp",
+    "imageWidth": 1400,
+    "imageHeight": 684,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2023-q41",
+    "exam": "CEED",
+    "year": 2023,
+    "paperId": "ceed-2023",
+    "qno": 41,
+    "format": "MCQ",
+    "image": "images/ceed-2023-q41.webp",
+    "imageWidth": 1400,
+    "imageHeight": 1094,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q01",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 1,
+    "format": "NAT",
+    "image": "images/ceed-2024-q01.webp",
+    "imageWidth": 1319,
+    "imageHeight": 671,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 25,
+      "max": 25
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q02",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 2,
+    "format": "NAT",
+    "image": "images/ceed-2024-q02.webp",
+    "imageWidth": 1318,
+    "imageHeight": 688,
+    "optionCount": 4,
+    "answer": {
+      "kind": "ANY",
+      "of": [
+        {
+          "kind": "NAT",
+          "min": 7,
+          "max": 7
+        },
+        {
+          "kind": "NAT",
+          "min": 9,
+          "max": 9
+        }
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q03",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 3,
+    "format": "NAT",
+    "image": "images/ceed-2024-q03.webp",
+    "imageWidth": 914,
+    "imageHeight": 565,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 10,
+      "max": 10
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q04",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 4,
+    "format": "NAT",
+    "image": "images/ceed-2024-q04.webp",
+    "imageWidth": 1278,
+    "imageHeight": 624,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 3,
+      "max": 3
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q05",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 5,
+    "format": "NAT",
+    "image": "images/ceed-2024-q05.webp",
+    "imageWidth": 1318,
+    "imageHeight": 778,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 16,
+      "max": 16
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q06",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 6,
+    "format": "NAT",
+    "image": "images/ceed-2024-q06.webp",
+    "imageWidth": 776,
+    "imageHeight": 426,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 162,
+      "max": 162
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q07",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 7,
+    "format": "NAT",
+    "image": "images/ceed-2024-q07.webp",
+    "imageWidth": 1318,
+    "imageHeight": 892,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 4,
+      "max": 4
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q08",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 8,
+    "format": "NAT",
+    "image": "images/ceed-2024-q08.webp",
+    "imageWidth": 1400,
+    "imageHeight": 714,
+    "optionCount": 4,
+    "answer": {
+      "kind": "ANY",
+      "of": [
+        {
+          "kind": "NAT",
+          "min": 1,
+          "max": 1
+        },
+        {
+          "kind": "NAT",
+          "min": 2,
+          "max": 2
+        }
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q09",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 9,
+    "format": "MSQ",
+    "image": "images/ceed-2024-q09.webp",
+    "imageWidth": 1255,
+    "imageHeight": 579,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q10",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 10,
+    "format": "MSQ",
+    "image": "images/ceed-2024-q10.webp",
+    "imageWidth": 1287,
+    "imageHeight": 597,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q11",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 11,
+    "format": "MSQ",
+    "image": "images/ceed-2024-q11.webp",
+    "imageWidth": 1328,
+    "imageHeight": 473,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q12",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 12,
+    "format": "MSQ",
+    "image": "images/ceed-2024-q12.webp",
+    "imageWidth": 1344,
+    "imageHeight": 730,
+    "optionCount": 4,
+    "answer": {
+      "kind": "ANY",
+      "of": [
+        {
+          "kind": "MSQ",
+          "options": [
+            "B"
+          ]
+        },
+        {
+          "kind": "MSQ",
+          "options": [
+            "B",
+            "C"
+          ]
+        }
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q13",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 13,
+    "format": "MSQ",
+    "image": "images/ceed-2024-q13.webp",
+    "imageWidth": 1317,
+    "imageHeight": 1060,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q14",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 14,
+    "format": "MSQ",
+    "image": "images/ceed-2024-q14.webp",
+    "imageWidth": 1268,
+    "imageHeight": 920,
+    "optionCount": 4,
+    "answer": {
+      "kind": "DROPPED",
+      "marks": 4
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q15",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 15,
+    "format": "MSQ",
+    "image": "images/ceed-2024-q15.webp",
+    "imageWidth": 1272,
+    "imageHeight": 796,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q16",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 16,
+    "format": "MSQ",
+    "image": "images/ceed-2024-q16.webp",
+    "imageWidth": 1060,
+    "imageHeight": 687,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q17",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 17,
+    "format": "MSQ",
+    "image": "images/ceed-2024-q17.webp",
+    "imageWidth": 1317,
+    "imageHeight": 640,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q18",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 18,
+    "format": "MSQ",
+    "image": "images/ceed-2024-q18.webp",
+    "imageWidth": 1143,
+    "imageHeight": 618,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q19",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 19,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q19.webp",
+    "imageWidth": 1317,
+    "imageHeight": 559,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q20",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 20,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q20.webp",
+    "imageWidth": 1077,
+    "imageHeight": 611,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q21",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 21,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q21.webp",
+    "imageWidth": 1261,
+    "imageHeight": 583,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "language",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q22",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 22,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q22.webp",
+    "imageWidth": 1138,
+    "imageHeight": 696,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q23",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 23,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q23.webp",
+    "imageWidth": 1317,
+    "imageHeight": 693,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q24",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 24,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q24.webp",
+    "imageWidth": 1195,
+    "imageHeight": 560,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q25",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 25,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q25.webp",
+    "imageWidth": 1318,
+    "imageHeight": 956,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q26",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 26,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q26.webp",
+    "imageWidth": 1281,
+    "imageHeight": 469,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q27",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 27,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q27.webp",
+    "imageWidth": 1205,
+    "imageHeight": 552,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q28",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 28,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q28.webp",
+    "imageWidth": 1287,
+    "imageHeight": 781,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": true,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q29",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 29,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q29.webp",
+    "imageWidth": 1098,
+    "imageHeight": 386,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q30",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 30,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q30.webp",
+    "imageWidth": 1233,
+    "imageHeight": 727,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q31",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 31,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q31.webp",
+    "imageWidth": 1318,
+    "imageHeight": 410,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q32",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 32,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q32.webp",
+    "imageWidth": 1296,
+    "imageHeight": 817,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q33",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 33,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q33.webp",
+    "imageWidth": 1097,
+    "imageHeight": 675,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q34",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 34,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q34.webp",
+    "imageWidth": 1320,
+    "imageHeight": 687,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q35",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 35,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q35.webp",
+    "imageWidth": 1165,
+    "imageHeight": 631,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q36",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 36,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q36.webp",
+    "imageWidth": 1202,
+    "imageHeight": 495,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q37",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 37,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q37.webp",
+    "imageWidth": 1318,
+    "imageHeight": 726,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q38",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 38,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q38.webp",
+    "imageWidth": 1317,
+    "imageHeight": 873,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q39",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 39,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q39.webp",
+    "imageWidth": 965,
+    "imageHeight": 962,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q40",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 40,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q40.webp",
+    "imageWidth": 963,
+    "imageHeight": 869,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q41",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 41,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q41.webp",
+    "imageWidth": 1317,
+    "imageHeight": 793,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q42",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 42,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q42.webp",
+    "imageWidth": 1151,
+    "imageHeight": 385,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q43",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 43,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q43.webp",
+    "imageWidth": 1318,
+    "imageHeight": 824,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2024-q44",
+    "exam": "CEED",
+    "year": 2024,
+    "paperId": "ceed-2024",
+    "qno": 44,
+    "format": "MCQ",
+    "image": "images/ceed-2024-q44.webp",
+    "imageWidth": 1247,
+    "imageHeight": 648,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q01",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 1,
+    "format": "NAT",
+    "image": "images/ceed-2025-q01.webp",
+    "imageWidth": 1384,
+    "imageHeight": 1031,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 2,
+      "max": 2
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q02",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 2,
+    "format": "NAT",
+    "image": "images/ceed-2025-q02.webp",
+    "imageWidth": 1400,
+    "imageHeight": 620,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 10,
+      "max": 10
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q03",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 3,
+    "format": "NAT",
+    "image": "images/ceed-2025-q03.webp",
+    "imageWidth": 1342,
+    "imageHeight": 774,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 9,
+      "max": 9
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q04",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 4,
+    "format": "NAT",
+    "image": "images/ceed-2025-q04.webp",
+    "imageWidth": 1371,
+    "imageHeight": 1038,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 11,
+      "max": 11
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q05",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 5,
+    "format": "NAT",
+    "image": "images/ceed-2025-q05.webp",
+    "imageWidth": 1367,
+    "imageHeight": 955,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 48,
+      "max": 48
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q06",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 6,
+    "format": "NAT",
+    "image": "images/ceed-2025-q06.webp",
+    "imageWidth": 1397,
+    "imageHeight": 998,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 96,
+      "max": 96
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q07",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 7,
+    "format": "NAT",
+    "image": "images/ceed-2025-q07.webp",
+    "imageWidth": 1341,
+    "imageHeight": 585,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 30,
+      "max": 30
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q08",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 8,
+    "format": "NAT",
+    "image": "images/ceed-2025-q08.webp",
+    "imageWidth": 1386,
+    "imageHeight": 217,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 41.4,
+      "max": 41.4
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q09",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 9,
+    "format": "MSQ",
+    "image": "images/ceed-2025-q09.webp",
+    "imageWidth": 1362,
+    "imageHeight": 942,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q10",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 10,
+    "format": "MSQ",
+    "image": "images/ceed-2025-q10.webp",
+    "imageWidth": 1400,
+    "imageHeight": 885,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q11",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 11,
+    "format": "MSQ",
+    "image": "images/ceed-2025-q11.webp",
+    "imageWidth": 1398,
+    "imageHeight": 1302,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q12",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 12,
+    "format": "MSQ",
+    "image": "images/ceed-2025-q12.webp",
+    "imageWidth": 1365,
+    "imageHeight": 741,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q13",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 13,
+    "format": "MSQ",
+    "image": "images/ceed-2025-q13.webp",
+    "imageWidth": 1388,
+    "imageHeight": 1315,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q14",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 14,
+    "format": "MSQ",
+    "image": "images/ceed-2025-q14.webp",
+    "imageWidth": 1400,
+    "imageHeight": 1021,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q15",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 15,
+    "format": "MSQ",
+    "image": "images/ceed-2025-q15.webp",
+    "imageWidth": 1364,
+    "imageHeight": 1062,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q16",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 16,
+    "format": "MSQ",
+    "image": "images/ceed-2025-q16.webp",
+    "imageWidth": 1370,
+    "imageHeight": 589,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q17",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 17,
+    "format": "MSQ",
+    "image": "images/ceed-2025-q17.webp",
+    "imageWidth": 1385,
+    "imageHeight": 992,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q18",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 18,
+    "format": "MSQ",
+    "image": "images/ceed-2025-q18.webp",
+    "imageWidth": 1400,
+    "imageHeight": 860,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q19",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 19,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q19.webp",
+    "imageWidth": 1350,
+    "imageHeight": 630,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q20",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 20,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q20.webp",
+    "imageWidth": 1368,
+    "imageHeight": 650,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": true,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q21",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 21,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q21.webp",
+    "imageWidth": 1357,
+    "imageHeight": 935,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q22",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 22,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q22.webp",
+    "imageWidth": 1302,
+    "imageHeight": 786,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "language",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q23",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 23,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q23.webp",
+    "imageWidth": 1348,
+    "imageHeight": 981,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q24",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 24,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q24.webp",
+    "imageWidth": 1400,
+    "imageHeight": 948,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q25",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 25,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q25.webp",
+    "imageWidth": 1400,
+    "imageHeight": 954,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q26",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 26,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q26.webp",
+    "imageWidth": 1368,
+    "imageHeight": 1000,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q27",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 27,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q27.webp",
+    "imageWidth": 1314,
+    "imageHeight": 909,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q28",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 28,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q28.webp",
+    "imageWidth": 1200,
+    "imageHeight": 957,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q29",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 29,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q29.webp",
+    "imageWidth": 1388,
+    "imageHeight": 828,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q30",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 30,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q30.webp",
+    "imageWidth": 1277,
+    "imageHeight": 772,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q31",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 31,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q31.webp",
+    "imageWidth": 1400,
+    "imageHeight": 548,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q32",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 32,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q32.webp",
+    "imageWidth": 1396,
+    "imageHeight": 1043,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q33",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 33,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q33.webp",
+    "imageWidth": 1400,
+    "imageHeight": 708,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q34",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 34,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q34.webp",
+    "imageWidth": 1387,
+    "imageHeight": 960,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q35",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 35,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q35.webp",
+    "imageWidth": 1386,
+    "imageHeight": 832,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": true,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q36",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 36,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q36.webp",
+    "imageWidth": 1400,
+    "imageHeight": 834,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q37",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 37,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q37.webp",
+    "imageWidth": 1370,
+    "imageHeight": 869,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q38",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 38,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q38.webp",
+    "imageWidth": 1400,
+    "imageHeight": 713,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q39",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 39,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q39.webp",
+    "imageWidth": 1374,
+    "imageHeight": 622,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q40",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 40,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q40.webp",
+    "imageWidth": 1341,
+    "imageHeight": 999,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q41",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 41,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q41.webp",
+    "imageWidth": 1396,
+    "imageHeight": 968,
+    "optionCount": 4,
+    "answer": {
+      "kind": "DROPPED",
+      "marks": 3
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q42",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 42,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q42.webp",
+    "imageWidth": 1368,
+    "imageHeight": 943,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q43",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 43,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q43.webp",
+    "imageWidth": 1233,
+    "imageHeight": 663,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2025-q44",
+    "exam": "CEED",
+    "year": 2025,
+    "paperId": "ceed-2025",
+    "qno": 44,
+    "format": "MCQ",
+    "image": "images/ceed-2025-q44.webp",
+    "imageWidth": 1381,
+    "imageHeight": 767,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q01",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 1,
+    "format": "NAT",
+    "image": "images/ceed-2026-q01.webp",
+    "imageWidth": 1333,
+    "imageHeight": 803,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 6,
+      "max": 6.5
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q02",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 2,
+    "format": "NAT",
+    "image": "images/ceed-2026-q02.webp",
+    "imageWidth": 1385,
+    "imageHeight": 901,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 126,
+      "max": 128
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q03",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 3,
+    "format": "NAT",
+    "image": "images/ceed-2026-q03.webp",
+    "imageWidth": 1400,
+    "imageHeight": 685,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 24,
+      "max": 25.5
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q04",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 4,
+    "format": "NAT",
+    "image": "images/ceed-2026-q04.webp",
+    "imageWidth": 1389,
+    "imageHeight": 824,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 18,
+      "max": 18
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q05",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 5,
+    "format": "NAT",
+    "image": "images/ceed-2026-q05.webp",
+    "imageWidth": 1400,
+    "imageHeight": 554,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 19,
+      "max": 19
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": true,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q06",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 6,
+    "format": "NAT",
+    "image": "images/ceed-2026-q06.webp",
+    "imageWidth": 1388,
+    "imageHeight": 752,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 4,
+      "max": 4
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q07",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 7,
+    "format": "NAT",
+    "image": "images/ceed-2026-q07.webp",
+    "imageWidth": 1395,
+    "imageHeight": 645,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 2,
+      "max": 2
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q08",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 8,
+    "format": "NAT",
+    "image": "images/ceed-2026-q08.webp",
+    "imageWidth": 1367,
+    "imageHeight": 930,
+    "optionCount": 4,
+    "answer": {
+      "kind": "NAT",
+      "min": 15,
+      "max": 15
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q09",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 9,
+    "format": "MSQ",
+    "image": "images/ceed-2026-q09.webp",
+    "imageWidth": 1344,
+    "imageHeight": 801,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q10",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 10,
+    "format": "MSQ",
+    "image": "images/ceed-2026-q10.webp",
+    "imageWidth": 1400,
+    "imageHeight": 833,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "C",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q11",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 11,
+    "format": "MSQ",
+    "image": "images/ceed-2026-q11.webp",
+    "imageWidth": 1367,
+    "imageHeight": 1138,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q12",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 12,
+    "format": "MSQ",
+    "image": "images/ceed-2026-q12.webp",
+    "imageWidth": 1392,
+    "imageHeight": 782,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q13",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 13,
+    "format": "MSQ",
+    "image": "images/ceed-2026-q13.webp",
+    "imageWidth": 1384,
+    "imageHeight": 849,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q14",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 14,
+    "format": "MSQ",
+    "image": "images/ceed-2026-q14.webp",
+    "imageWidth": 1400,
+    "imageHeight": 883,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q15",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 15,
+    "format": "MSQ",
+    "image": "images/ceed-2026-q15.webp",
+    "imageWidth": 1346,
+    "imageHeight": 927,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q16",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 16,
+    "format": "MSQ",
+    "image": "images/ceed-2026-q16.webp",
+    "imageWidth": 1400,
+    "imageHeight": 1048,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": true,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q17",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 17,
+    "format": "MSQ",
+    "image": "images/ceed-2026-q17.webp",
+    "imageWidth": 1314,
+    "imageHeight": 681,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q18",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 18,
+    "format": "MSQ",
+    "image": "images/ceed-2026-q18.webp",
+    "imageWidth": 1389,
+    "imageHeight": 509,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MSQ",
+      "options": [
+        "B",
+        "D"
+      ]
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q19",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 19,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q19.webp",
+    "imageWidth": 1357,
+    "imageHeight": 1223,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q20",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 20,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q20.webp",
+    "imageWidth": 1400,
+    "imageHeight": 682,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q21",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 21,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q21.webp",
+    "imageWidth": 1381,
+    "imageHeight": 764,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q22",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 22,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q22.webp",
+    "imageWidth": 1371,
+    "imageHeight": 570,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q23",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 23,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q23.webp",
+    "imageWidth": 1400,
+    "imageHeight": 700,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q24",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 24,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q24.webp",
+    "imageWidth": 1400,
+    "imageHeight": 718,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q25",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 25,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q25.webp",
+    "imageWidth": 1367,
+    "imageHeight": 908,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q26",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 26,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q26.webp",
+    "imageWidth": 1400,
+    "imageHeight": 806,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "logic-and-counting",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q27",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 27,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q27.webp",
+    "imageWidth": 1400,
+    "imageHeight": 813,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q28",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 28,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q28.webp",
+    "imageWidth": 1400,
+    "imageHeight": 1138,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q29",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 29,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q29.webp",
+    "imageWidth": 1400,
+    "imageHeight": 647,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q30",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 30,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q30.webp",
+    "imageWidth": 1368,
+    "imageHeight": 767,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "observation",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q31",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 31,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q31.webp",
+    "imageWidth": 1400,
+    "imageHeight": 788,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q32",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 32,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q32.webp",
+    "imageWidth": 1365,
+    "imageHeight": 872,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q33",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 33,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q33.webp",
+    "imageWidth": 1301,
+    "imageHeight": 862,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "folding-and-patterns",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q34",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 34,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q34.webp",
+    "imageWidth": 1400,
+    "imageHeight": 681,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q35",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 35,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q35.webp",
+    "imageWidth": 1400,
+    "imageHeight": 892,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "mechanisms",
+    "difficulty": 3,
+    "animated": true,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q36",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 36,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q36.webp",
+    "imageWidth": 1400,
+    "imageHeight": 979,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q37",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 37,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q37.webp",
+    "imageWidth": 1332,
+    "imageHeight": 678,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q38",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 38,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q38.webp",
+    "imageWidth": 1383,
+    "imageHeight": 1021,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "D"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q39",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 39,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q39.webp",
+    "imageWidth": 1395,
+    "imageHeight": 1031,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 2,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q40",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 40,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q40.webp",
+    "imageWidth": 1398,
+    "imageHeight": 973,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "A"
+    },
+    "answerStatus": "official",
+    "topic": "3d-visualisation",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q41",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 41,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q41.webp",
+    "imageWidth": 1380,
+    "imageHeight": 1043,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "C"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q42",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 42,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q42.webp",
+    "imageWidth": 1341,
+    "imageHeight": 691,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "everyday-science",
+    "difficulty": 3,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q43",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 43,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q43.webp",
+    "imageWidth": 1294,
+    "imageHeight": 789,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  },
+  {
+    "id": "ceed-2026-q44",
+    "exam": "CEED",
+    "year": 2026,
+    "paperId": "ceed-2026",
+    "qno": 44,
+    "format": "MCQ",
+    "image": "images/ceed-2026-q44.webp",
+    "imageWidth": 1394,
+    "imageHeight": 579,
+    "optionCount": 4,
+    "answer": {
+      "kind": "MCQ",
+      "option": "B"
+    },
+    "answerStatus": "official",
+    "topic": "design-knowledge",
+    "difficulty": 1,
+    "animated": false,
+    "explanation": null
+  }
+]

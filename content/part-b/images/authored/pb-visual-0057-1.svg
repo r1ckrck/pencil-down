@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 340" fill="none" stroke="none">
+<polyline points="50,290 130,50 210,290" stroke="currentColor" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="90,194 170,194" stroke="currentColor" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="62,302 142,62 222,302" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="102,206 182,206" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="280,290 280,50 440,290 440,50" stroke="currentColor" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="292,302 292,62 452,302 452,62" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

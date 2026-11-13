@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ceed-2020-b",
+    "year": 2020,
+    "label": "CEED 2020 Part B",
+    "durationMin": 120,
+    "promptIds": [
+      "ceed-2020-b-q1",
+      "ceed-2020-b-q2",
+      "ceed-2020-b-q3",
+      "ceed-2020-b-q4",
+      "ceed-2020-b-q5"
+    ]
+  },
+  {
+    "id": "ceed-2021-b",
+    "year": 2021,
+    "label": "CEED 2021 Part B",
+    "durationMin": 120,
+    "promptIds": [
+      "ceed-2021-b-q1",
+      "ceed-2021-b-q2",
+      "ceed-2021-b-q3",
+      "ceed-2021-b-q4",
+      "ceed-2021-b-q5"
+    ]
+  },
+  {
+    "id": "ceed-2023-b",
+    "year": 2023,
+    "label": "CEED 2023 Part B",
+    "durationMin": 120,
+    "promptIds": [
+      "ceed-2023-b-q1",
+      "ceed-2023-b-q2",
+      "ceed-2023-b-q3",
+      "ceed-2023-b-q4",
+      "ceed-2023-b-q5"
+    ]
+  },
+  {
+    "id": "ceed-2024-b",
+    "year": 2024,
+    "label": "CEED 2024 Part B",
+    "durationMin": 120,
+    "promptIds": [
+      "ceed-2024-b-q1",
+      "ceed-2024-b-q2",
+      "ceed-2024-b-q3",
+      "ceed-2024-b-q4",
+      "ceed-2024-b-q5"
+    ]
+  },
+  {
+    "id": "ceed-2025-b",
+    "year": 2025,
+    "label": "CEED 2025 Part B",
+    "durationMin": 120,
+    "promptIds": [
+      "ceed-2025-b-q1",
+      "ceed-2025-b-q2",
+      "ceed-2025-b-q3",
+      "ceed-2025-b-q4",
+      "ceed-2025-b-q5"
+    ]
+  },
+  {
+    "id": "ceed-2026-b",
+    "year": 2026,
+    "label": "CEED 2026 Part B",
+    "durationMin": 120,
+    "promptIds": [
+      "ceed-2026-b-q1",
+      "ceed-2026-b-q2",
+      "ceed-2026-b-q3",
+      "ceed-2026-b-q4",
+      "ceed-2026-b-q5"
+    ]
+  }
+]

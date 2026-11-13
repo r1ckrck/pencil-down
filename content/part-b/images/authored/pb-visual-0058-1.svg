@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 340" fill="none" stroke="none">
+<polyline points="50,50 90,290 130,130 170,290 210,50" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="59,59 99,299 139,139 179,299 219,59" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="68,68 108,308 148,148 188,308 228,68" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="280,50 360,170 440,50" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="360,170 360,290" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="289,59 369,179 449,59" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="369,179 369,299" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="298,68 378,188 458,68" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="378,188 378,308" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

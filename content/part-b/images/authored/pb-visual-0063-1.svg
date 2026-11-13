@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" fill="none" stroke="none">
+<circle cx="100" cy="100" r="60" stroke="currentColor" stroke-width="5"/>
+<circle cx="160" cy="100" r="60" stroke="currentColor" stroke-width="5"/>
+<circle cx="220" cy="100" r="60" stroke="currentColor" stroke-width="5"/>
+<path d="M280 40 A60 60 0 0 0 280 160" stroke="currentColor" stroke-width="5"/>
+<circle cx="100" cy="160" r="60" stroke="currentColor" stroke-width="5"/>
+<circle cx="160" cy="160" r="60" stroke="currentColor" stroke-width="5"/>
+<circle cx="220" cy="160" r="60" stroke="currentColor" stroke-width="5"/>
+<path d="M280 100 A60 60 0 0 0 280 220" stroke="currentColor" stroke-width="5"/>
+<circle cx="100" cy="220" r="60" stroke="currentColor" stroke-width="5"/>
+<circle cx="160" cy="220" r="60" stroke="currentColor" stroke-width="5"/>
+<circle cx="220" cy="220" r="60" stroke="currentColor" stroke-width="5"/>
+<path d="M280 160 A60 60 0 0 0 280 280" stroke="currentColor" stroke-width="5"/>
+<circle cx="100" cy="280" r="60" stroke="currentColor" stroke-width="5"/>
+<circle cx="160" cy="280" r="60" stroke="currentColor" stroke-width="5"/>
+<circle cx="220" cy="280" r="60" stroke="currentColor" stroke-width="5"/>
+<path d="M280 220 A60 60 0 0 0 280 340" stroke="currentColor" stroke-width="5"/>
+<circle cx="100" cy="340" r="60" stroke="currentColor" stroke-width="5"/>
+<circle cx="160" cy="340" r="60" stroke="currentColor" stroke-width="5"/>
+<circle cx="220" cy="340" r="60" stroke="currentColor" stroke-width="5"/>
+<path d="M280 280 A60 60 0 0 0 280 400" stroke="currentColor" stroke-width="5"/>
+<rect x="40" y="40" width="480" height="360" stroke="currentColor" stroke-width="3" stroke-dasharray="12 10"/>
+<line x1="280" y1="20" x2="280" y2="420" stroke="currentColor" stroke-width="2" stroke-dasharray="6 10"/>
+</svg>

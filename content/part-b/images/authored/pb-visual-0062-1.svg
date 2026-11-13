@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 540" fill="none" stroke="none">
+<path d="M20 100 Q60 40 100 100 T180 100" stroke="currentColor" stroke-width="6"/>
+<circle cx="60" cy="110" r="10" fill="currentColor"/>
+<path d="M140 90 C125 70 130 45 140 35 C150 45 155 70 140 90 Z" fill="currentColor"/>
+<path d="M180 100 Q220 40 260 100 T340 100" stroke="currentColor" stroke-width="6"/>
+<circle cx="220" cy="110" r="10" fill="currentColor"/>
+<path d="M300 90 C285 70 290 45 300 35 C310 45 315 70 300 90 Z" fill="currentColor"/>
+<line x1="20" y1="30" x2="340" y2="30" stroke="currentColor" stroke-width="4"/>
+<line x1="20" y1="160" x2="340" y2="160" stroke="currentColor" stroke-width="4"/>
+<path d="M340 30 L560 30 L560 520 L430 520 L430 160 L340 160" stroke="currentColor" stroke-width="3" stroke-dasharray="12 10"/>
+</svg>

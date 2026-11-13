@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 360" fill="none" stroke="none">
+<rect x="30" y="30" width="300" height="300" stroke="currentColor" stroke-width="3"/>
+<g transform="translate(30 30) rotate(90 150 150)"><path d="M180 90 C110 90 110 150 150 150 C190 150 190 210 120 210" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="360" y="30" width="300" height="300" stroke="currentColor" stroke-width="3"/>
+<g transform="translate(360 30) rotate(0 150 150)"><path d="M80 210 L80 180 L120 180 L120 150 L160 150 L160 120 L200 120 L200 90" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="690" y="30" width="300" height="300" stroke="currentColor" stroke-width="3"/>
+<g transform="translate(690 30) rotate(180 150 150)"><path d="M170 95 A60 60 0 1 0 170 205 A45 45 0 1 1 170 95 Z" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="1020" y="30" width="300" height="300" stroke="currentColor" stroke-width="3"/>
+<g transform="translate(1020 30) rotate(0 150 150)"><path d="M90 120 L210 120 M100 120 L100 170 M130 120 L130 170 M160 120 L160 170 M190 120 L190 170" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="1350" y="30" width="300" height="300" stroke="currentColor" stroke-width="3"/>
+<g transform="translate(1350 30) rotate(0 150 150)"><path d="M70 190 C120 190 190 170 170 120 C150 80 110 120 140 160 C170 200 220 190 240 180" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

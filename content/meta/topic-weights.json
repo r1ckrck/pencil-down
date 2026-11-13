@@ -1,0 +1,12 @@
+{
+  "weights": {
+    "3d-visualisation": 0.1591,
+    "folding-and-patterns": 0.2197,
+    "mechanisms": 0.0833,
+    "everyday-science": 0.0606,
+    "observation": 0.1742,
+    "logic-and-counting": 0.1288,
+    "design-knowledge": 0.1591,
+    "language": 0.0152
+  }
+}
