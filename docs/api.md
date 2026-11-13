@@ -178,3 +178,7 @@ type BResults = { id, pos, slot, status, prompt: PromptPayload, secondsToCommit,
 - **Scoring**: spec §9 (current scheme) except past papers (their own scheme, incl. non-partial MSQ). `ANY` scores the best alternative; `DROPPED` gives everyone its marks.
 - **Mastery / error log** at Part A close: correct real question → `correct_count + 1`, retired at 2. Wrong or partial → `wrong`; correct but unsure → `unsure-correct`; blank after a forced skip → `forced-skip`. Due ladder 1 · 3 · 7 · 14 · 30 days: a miss resets to 1 day, unsure-correct climbs one rung (first entry 3 days); a sure correct answer resolves the entry. Revisit serves open entries with `due_at ≤ now`.
 - **Part B mock / past paper clock**: 6 min read-all · 5 × 22 min blocks (each slot script clipped at 22 min) · the remaining 4 min as final buffer, totalling the paper's 120 min. Problem ID: framing 2–10, pick 10–12, commit 12–13.
+
+## Expired login
+
+Behind the auth gate, an expired login answers API calls with a redirect to the login page. Client calls go through `app/src/lib/session-fetch.ts` (`redirect: "manual"`): a redirect raises `AuthExpiredError` and the `pencil:auth-expired` event, and the root layout's banner offers "Log in again" (a reload, which returns to the same screen). Everything already answered is saved server side; the clock keeps running.

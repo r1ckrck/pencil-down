@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { AuthExpiredBanner } from "@/components/shell/auth-expired-banner";
 import { THEME_SCRIPT } from "@/components/shell/theme-script";
 import { fontVariables } from "@/fonts";
 import "./globals.css";
@@ -25,7 +26,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <AuthExpiredBanner />
+      </body>
     </html>
   );
 }

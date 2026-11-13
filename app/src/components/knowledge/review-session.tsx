@@ -1,4 +1,5 @@
 "use client";
+import { sessionFetch } from "@/lib/session-fetch";
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -52,7 +53,7 @@ export function ReviewSession() {
   const load = useCallback(async () => {
     setError(null);
     try {
-      const r = await fetch("/api/cards/due", { cache: "no-store" });
+      const r = await sessionFetch("/api/cards/due", { cache: "no-store" });
       if (!r.ok) throw new Error();
       const d = (await r.json()) as { cards: DueCard[] };
       setCards(d.cards);
@@ -76,7 +77,7 @@ export function ReviewSession() {
       setBusy(true);
       setError(null);
       try {
-        const r = await fetch("/api/cards/review", {
+        const r = await sessionFetch("/api/cards/review", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ cardId: card.id, grade }),

@@ -1,4 +1,5 @@
 "use client";
+import { AuthExpiredError, sessionFetch } from "@/lib/session-fetch";
 
 import { ArrowLeft, ArrowRight, Flag, SquaresFour } from "@phosphor-icons/react";
 import { useRouter } from "next/navigation";
@@ -306,10 +307,11 @@ export function PartARunner({
     (byClock = false) => {
       chain.current = chain.current.then(async () => {
         try {
-          const r = await fetch(`/api/sessions/${sessionId}`, { cache: "no-store" });
+          const r = await sessionFetch(`/api/sessions/${sessionId}`, { cache: "no-store" });
           if (r.ok) receive(await r.json(), byClock);
-        } catch {
-          setOffline(true);
+        } catch (e) {
+          // An expired login has its own banner; only a network drop means offline.
+          if (!(e instanceof AuthExpiredError)) setOffline(true);
         }
       });
       return chain.current;
@@ -322,18 +324,19 @@ export function PartARunner({
     (path: string, body: unknown = {}) => {
       chain.current = chain.current.then(async () => {
         try {
-          const r = await fetch(`/api/sessions/${sessionId}/${path}`, {
+          const r = await sessionFetch(`/api/sessions/${sessionId}/${path}`, {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(body),
           });
           if (r.ok) receive(await r.json(), false);
           else {
-            const g = await fetch(`/api/sessions/${sessionId}`, { cache: "no-store" });
+            const g = await sessionFetch(`/api/sessions/${sessionId}`, { cache: "no-store" });
             if (g.ok) receive(await g.json(), true);
           }
-        } catch {
-          setOffline(true);
+        } catch (e) {
+          // An expired login has its own banner; only a network drop means offline.
+          if (!(e instanceof AuthExpiredError)) setOffline(true);
         }
       });
       return chain.current;

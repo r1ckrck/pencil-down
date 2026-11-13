@@ -1,3 +1,4 @@
+import { sessionFetch } from "@/lib/session-fetch";
 // Thin fetch helpers for the session API. Errors carry status and the JSON body.
 
 export class RequestError extends Error {
@@ -16,12 +17,12 @@ async function parse<T>(res: Response): Promise<T> {
 }
 
 export async function getJSON<T>(url: string): Promise<T> {
-  return parse<T>(await fetch(url, { cache: "no-store" }));
+  return parse<T>(await sessionFetch(url, { cache: "no-store" }));
 }
 
 export async function postJSON<T>(url: string, body?: unknown): Promise<T> {
   return parse<T>(
-    await fetch(url, {
+    await sessionFetch(url, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(body ?? {}),
@@ -30,7 +31,7 @@ export async function postJSON<T>(url: string, body?: unknown): Promise<T> {
 }
 
 export async function postForm<T>(url: string, form: FormData): Promise<T> {
-  return parse<T>(await fetch(url, { method: "POST", body: form }));
+  return parse<T>(await sessionFetch(url, { method: "POST", body: form }));
 }
 
 /** Where a session's live screen lives, by kind. */

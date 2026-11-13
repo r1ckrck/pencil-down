@@ -1,4 +1,5 @@
 "use client";
+import { sessionFetch } from "@/lib/session-fetch";
 
 import { useRouter } from "next/navigation";
 import { useState, type ReactNode } from "react";
@@ -63,7 +64,7 @@ export function BStartDialog({
     setBusy(true);
     setError(null);
     try {
-      const r = await fetch("/api/sessions", {
+      const r = await sessionFetch("/api/sessions", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ ...request, mode }),

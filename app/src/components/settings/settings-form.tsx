@@ -1,4 +1,5 @@
 "use client";
+import { sessionFetch } from "@/lib/session-fetch";
 
 import { DownloadSimple } from "@phosphor-icons/react";
 import { useEffect, useId, useState } from "react";
@@ -57,7 +58,7 @@ export function SettingsForm({ examDate }: { examDate: string }) {
   const [status, setStatus] = useState<{ tone: "mute" | "bad"; text: string } | null>(null);
 
   useEffect(() => {
-    fetch("/api/settings", { cache: "no-store" })
+    sessionFetch("/api/settings", { cache: "no-store" })
       .then((r) => (r.ok ? r.json() : Promise.reject(r)))
       .then(setSettings)
       .catch(() => setStatus({ tone: "bad", text: "Could not load settings. Reload to try again." }));
@@ -73,7 +74,7 @@ export function SettingsForm({ examDate }: { examDate: string }) {
       custom: { ...settings.custom, ...patch.custom },
     });
     try {
-      const r = await fetch("/api/settings", {
+      const r = await sessionFetch("/api/settings", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(patch),

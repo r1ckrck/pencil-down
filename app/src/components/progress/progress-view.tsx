@@ -1,4 +1,5 @@
 "use client";
+import { sessionFetch } from "@/lib/session-fetch";
 
 import { CaretRight } from "@phosphor-icons/react";
 import Link from "next/link";
@@ -108,7 +109,7 @@ export function resultsHref(kind: string, id: number, part: PartFilter = "all") 
 }
 
 async function getJson<T>(url: string): Promise<T> {
-  const r = await fetch(url, { cache: "no-store" });
+  const r = await sessionFetch(url, { cache: "no-store" });
   if (!r.ok) throw new Error(String(r.status));
   return r.json() as Promise<T>;
 }

@@ -1,4 +1,5 @@
 "use client";
+import { sessionFetch } from "@/lib/session-fetch";
 
 import { useEffect, useState } from "react";
 import { Figure } from "@/components/ui/figure";
@@ -18,7 +19,7 @@ export function Stimulus({ url, alt, className }: { url: string; alt: string; cl
   useEffect(() => {
     if (!isSvg || svgCache.has(url)) return;
     let alive = true;
-    fetch(url)
+    sessionFetch(url)
       .then((r) => (r.ok ? r.text() : Promise.reject()))
       .then((text) => {
         // Trusted, committed content; still drop anything executable before inlining.

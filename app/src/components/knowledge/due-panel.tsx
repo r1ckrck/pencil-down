@@ -1,4 +1,5 @@
 "use client";
+import { sessionFetch } from "@/lib/session-fetch";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -15,7 +16,7 @@ export function DuePanel() {
 
   useEffect(() => {
     let live = true;
-    fetch("/api/cards/due", { cache: "no-store" })
+    sessionFetch("/api/cards/due", { cache: "no-store" })
       .then((r) => (r.ok ? r.json() : Promise.reject(r)))
       .then((d: Due) => live && setDue({ dueCount: d.dueCount, newCount: d.newCount }))
       .catch(() => live && setFailed(true));
