@@ -42,7 +42,7 @@ node server.js
 | `PENCIL_CONTENT_DIR` | `<runtime>/content` | Question pool; read-only |
 | `NODE_OPTIONS` | `--max-old-space-size=256` | Heap cap; keeps RSS ~320 MB across back-to-back 3-hour exams. Pair with a 512 MB memory limit |
 
-- Health: `GET /api/health` → `200 {"ok":true,…}`.
+- Health: `GET /api/health` → `200 {"ok":true,…}`. Inside a container use `127.0.0.1`, not `localhost` (Node listens on IPv4 `0.0.0.0`).
 - Run with `umask 002` so `photos/` and its files are group-writable. SQLite creates `pencil-down.db*` as 0644 regardless of umask; `chmod g+w` them once if another host user must write them.
 - Single user, no app-level auth: put it behind an auth gate.
 - Back up `PENCIL_DATA_DIR` (or use Settings → Export, which downloads the database and photos as one archive).

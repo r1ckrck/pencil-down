@@ -1,0 +1,62 @@
+# Push to main → test → build → publish a release for pencil.nesh.studio.
+# Runtime contract: docs/run.md. Server side: /opt/homelab/pencil-down (compose + entrypoint).
+# Each deploy lands in app/releases/<sha>/; app/current is swapped atomically at the end.
+# The container watches app/current and restarts onto the new release within ~30 s.
+# Don't push to main during a live exam (a ~5 s restart interrupts the open tab).
+name: deploy
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: docker
+    container:
+      image: node:24-alpine
+      volumes:
+        - /data/appdata/pencil-down/app:/mnt/app
+    steps:
+      - name: Tools
+        run: apk add --no-cache git rsync
+
+      - uses: actions/checkout@v4
+
+      - name: Install
+        run: corepack enable && cd app && pnpm install --frozen-lockfile
+
+      - name: Check
+        run: cd app && pnpm validate:content && pnpm test
+
+      - name: Build
+        run: cd app && pnpm build
+
+      - name: Assemble runtime
+        run: |
+          set -eu
+          test -f app/.next/standalone/server.js || { echo "standalone/server.js missing"; exit 1; }
+          rm -rf runtime && mkdir runtime
+          rsync -a app/.next/standalone/ runtime/
+          mkdir -p runtime/.next
+          rsync -a app/.next/static runtime/.next/
+          rsync -a app/public runtime/
+          rsync -a content runtime/
+          echo "${GITHUB_SHA}" > runtime/BUILD_ID
+
+      - name: Publish
+        run: |
+          set -eu
+          umask 002
+          rel="releases/${GITHUB_SHA}"
+          mkdir -p /mnt/app/releases
+          rsync -a --delete runtime/ "/mnt/app/${rel}/"
+          # Atomic switch: relative link so it resolves inside the container too.
+          ln -sfn "${rel}" /mnt/app/current.new
+          mv -T /mnt/app/current.new /mnt/app/current
+          # Keep the 3 newest releases (current is always the newest).
+          cd /mnt/app/releases && ls -1t | tail -n +4 | xargs -r rm -rf
+          echo "published ${GITHUB_SHA}"
