@@ -1,0 +1,2813 @@
+[
+  {
+    "id": "card-renaissance",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-renaissance.jpg"
+    },
+    "back": "**Renaissance**, c.14th–16th c., Italy\nLinear perspective, balance, idealised classical figures\nLeonardo, Michelangelo, Raphael · *Mona Lisa*, *Vitruvian Man*",
+    "credit": {
+      "author": "Leonardo da Vinci",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"
+    }
+  },
+  {
+    "id": "card-baroque",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-baroque.jpg"
+    },
+    "back": "**Baroque**, c.1600–1750\nDrama, chiaroscuro (strong light–dark), movement, rich darks\nCaravaggio, Rembrandt, Vermeer, Bernini · CEED 2026 showed Vermeer's *Girl with a Pearl Earring*",
+    "credit": {
+      "author": "Johannes Vermeer",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg"
+    }
+  },
+  {
+    "id": "card-realism",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-realism.jpg"
+    },
+    "back": "**Realism**, c.1840s–1880s, France\nOrdinary working life, unidealised, earthy palette\nCourbet, Millet · *The Gleaners* (Millet, 1857)",
+    "credit": {
+      "author": "Jean-François Millet",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg"
+    }
+  },
+  {
+    "id": "card-arts-and-crafts",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-arts-and-crafts.jpg"
+    },
+    "back": "**Arts & Crafts**, c.1860–1910, Britain\nHandcraft over machine, honest materials, nature patterns\nWilliam Morris, John Ruskin · *Strawberry Thief* textile (1883)",
+    "credit": {
+      "author": "William Morris",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morris_Strawberry_Thief_1883.jpg"
+    }
+  },
+  {
+    "id": "card-impressionism",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-impressionism.jpg"
+    },
+    "back": "**Impressionism**, 1860s–1880s, France\nVisible brushstrokes, light and its change, outdoor scenes, modern life\nMonet, Renoir, Degas; Manet as forerunner · name from Monet's *Impression, Sunrise* (1872)",
+    "credit": {
+      "author": "Claude Monet",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg"
+    }
+  },
+  {
+    "id": "card-post-impressionism",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-post-impressionism.jpg"
+    },
+    "back": "**Post-Impressionism**, 1880s–1900s\nBold non-natural colour, expressive or structured form\nVan Gogh, Gauguin, Cézanne, Seurat (pointillism) · *The Starry Night* (1889)",
+    "credit": {
+      "author": "Vincent van Gogh",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+    }
+  },
+  {
+    "id": "card-art-nouveau",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-art-nouveau.jpg"
+    },
+    "back": "**Art Nouveau** (Jugendstil in Germany), c.1890–1910\nWhiplash curves, plant forms, flat decorative women, ornament on everyday objects\nMucha, Gaudí, Horta, Guimard (Paris Métro), Mackintosh · CEED 2026 showed a *Jugend* magazine cover",
+    "credit": {
+      "author": "Alphonse Mucha",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alphonse_Mucha_-_Job_-_Google_Art_Project.jpg"
+    }
+  },
+  {
+    "id": "card-vienna-secession",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-vienna-secession.jpg"
+    },
+    "back": "**Vienna Secession**, 1897–, Austrian branch of Art Nouveau\nGold leaf, flat mosaic patterns, sensual figures\nGustav Klimt (*The Kiss*, 1907–08), Koloman Moser, Otto Wagner · Klimt paintings asked 2016",
+    "credit": {
+      "author": "Gustav Klimt",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
+    }
+  },
+  {
+    "id": "card-cubism",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-cubism.jpg"
+    },
+    "back": "**Cubism**, 1907–1920s, Paris\nObject broken into flat planes, several viewpoints at once, muted palette (analytic phase)\nPicasso, Braque, Juan Gris · *Les Demoiselles d'Avignon* (Picasso, 1907)",
+    "credit": {
+      "author": "Juan Gris",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Juan_Gris_-_Portrait_of_Pablo_Picasso_-_Google_Art_Project.jpg"
+    }
+  },
+  {
+    "id": "card-futurism",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-futurism.jpg"
+    },
+    "back": "**Futurism**, 1909–1940s, Italy\nSpeed, machines, motion lines, dynamism\nMarinetti (manifesto 1909), Boccioni, Balla · *Unique Forms of Continuity in Space* (1913)",
+    "credit": {
+      "author": "Umberto Boccioni",
+      "licence": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unique_Forms_of_Continuity_in_Space_MET_DT6411.jpg"
+    }
+  },
+  {
+    "id": "card-dada",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-dada.jpg"
+    },
+    "back": "**Dada**, 1916–1920s, Zurich then Berlin, Paris, New York\nAnti-art, absurdity, chance, readymades, photomontage\nDuchamp (*Fountain*, 1917, a signed urinal), Hannah Höch, Tzara",
+    "credit": {
+      "author": "Marcel Duchamp / Alfred Stieglitz",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marcel_Duchamp,_1917,_Fountain,_photograph_by_Alfred_Stieglitz.jpg"
+    }
+  },
+  {
+    "id": "card-surrealism",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: melting clocks, dream imagery.",
+      "image": null
+    },
+    "back": "**Surrealism**, 1924– (Breton's manifesto), Paris\nDream logic, the unconscious, unexpected juxtapositions\nDalí (*The Persistence of Memory*, 1931), Magritte (*The Treachery of Images*), Ernst",
+    "credit": null
+  },
+  {
+    "id": "card-de-stijl",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-de-stijl.jpg"
+    },
+    "back": "**De Stijl**, 1917–1931, Netherlands\nBlack grid, primary colours plus white, only horizontals and verticals\nMondrian, van Doesburg, Rietveld (Red and Blue Chair, Schröder House) · asked 2026",
+    "credit": {
+      "author": "Piet Mondrian",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piet_Mondriaan,_1930_-_Mondrian_Composition_II_in_Red,_Blue,_and_Yellow.jpg"
+    }
+  },
+  {
+    "id": "card-constructivism",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-constructivism.jpg"
+    },
+    "back": "**Constructivism**, c.1915–1930s, Russia\nDiagonals, red and black, geometric blocks, photomontage, propaganda\nRodchenko, El Lissitzky (*Beat the Whites with the Red Wedge*, 1919), Tatlin",
+    "credit": {
+      "author": "El Lissitzky",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Klinom_Krasnym_Bej_Belych.JPG"
+    }
+  },
+  {
+    "id": "card-bauhaus",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-bauhaus.jpg"
+    },
+    "back": "**Bauhaus**, 1919–1933: Weimar → Dessau (building 1926) → Berlin\nForm follows function, primary shapes, tubular steel, geometric sans, no ornament\nGropius (founder), Breuer, Mies, Kandinsky, Klee, Albers · Dessau centenary 2026",
+    "credit": {
+      "author": "Unknown",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bauhaus-Dessau_main_building.jpg"
+    }
+  },
+  {
+    "id": "card-art-deco",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-art-deco.jpg"
+    },
+    "back": "**Art Deco**, 1920s–30s (Paris Expo 1925)\nGeometric luxury: zigzags, sunbursts, chrome, stepped forms, streamlining\nCassandre, Erté, Lalique · Chrysler Building (1930) · asked 2018 ordering",
+    "credit": {
+      "author": "Tony Hisgett from Birmingham, UK",
+      "licence": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_1_(4684845155).jpg"
+    }
+  },
+  {
+    "id": "card-modernisme",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-modernisme.jpg"
+    },
+    "back": "**Catalan Modernisme** (Spanish Art Nouveau), c.1888–1911\nOrganic, bone-like and wave forms, broken-tile mosaic (trencadís)\nAntoni Gaudí (d. 1926): Casa Batlló, Sagrada Família (still being completed)",
+    "credit": {
+      "author": "Bernard Gagnon",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casa_Batll%C3%B3_01.jpg"
+    }
+  },
+  {
+    "id": "card-mid-century-modern",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-mid-century-modern.jpg"
+    },
+    "back": "**Mid-century Modern**, 1945–1970\nMoulded plywood, fibreglass, organic shells, tapered legs\nCharles & Ray Eames, Saarinen, Arne Jacobsen, Bertoia · Eames Lounge Chair (1956)",
+    "credit": {
+      "author": "Michael Steeber from USA",
+      "licence": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Exploded_Eames_Lounge_Chair_and_Ottoman_(2006)_Sculpture_designed_by_Vincent_Faust._Components_made_by_Herman_Miller._Chair_designed_by_Ray_%26_Charles_Eames_(ID2008.7.1)_-_Fully_Furnished_-_Historic_Furniture_Exhibit_-_Henry_Ford_Museum.jpg"
+    }
+  },
+  {
+    "id": "card-swiss-style",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: grid, sans-serif, asymmetric posters.",
+      "image": null
+    },
+    "back": "**Swiss Style** (International Typographic Style), 1950s–\nStrict grid, asymmetric layout, sans-serif (Helvetica, Univers), objective photos, flush-left text\nJosef Müller-Brockmann, Armin Hofmann, Emil Ruder",
+    "credit": null
+  },
+  {
+    "id": "card-pop-art",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Name the movement: comic panels, Ben-Day dots, soup cans.",
+      "image": null
+    },
+    "back": "**Pop Art**, 1950s–60s, UK and USA\nMass media and ads, comic Ben-Day dots, repetition, flat bright colour\nWarhol (*Campbell's Soup Cans*, 1962), Lichtenstein (*Drowning Girl*, asked 2026), Richard Hamilton",
+    "credit": null
+  },
+  {
+    "id": "card-op-art",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: black-and-white patterns that seem to move.",
+      "image": null
+    },
+    "back": "**Op Art**, 1960s\nOptical illusion: patterns that vibrate, bulge or flicker\nBridget Riley (*Movement in Squares*, 1961), Victor Vasarely",
+    "credit": null
+  },
+  {
+    "id": "card-minimalism-braun",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the design approach: \"less, but better\".",
+      "image": "images/card-minimalism-braun.jpg"
+    },
+    "back": "**German functionalism / minimalism**, 1950s–\nRestraint, grid, neutral colours, only what the function needs\nDieter Rams at Braun (SK4 radio-phono 1956, T3 radio); his 10 principles of good design",
+    "credit": {
+      "author": "With Associates",
+      "licence": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Braun_SK_4.1.jpg"
+    }
+  },
+  {
+    "id": "card-memphis",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: clashing colours, laminate squiggles, totem bookcase.",
+      "image": null
+    },
+    "back": "**Memphis Group**, 1981–1987, Milan\nClashing colour, plastic laminates, squiggle and terrazzo patterns, playful anti-function\nEttore Sottsass (Carlton room divider, 1981), Michele De Lucchi",
+    "credit": null
+  },
+  {
+    "id": "card-postmodernism",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Name the movement: dates, traits, key names.",
+      "image": "images/card-postmodernism.jpg"
+    },
+    "back": "**Postmodernism**, 1970s–90s\nIrony, historical quotation, colour and ornament return\nVenturi (\"Less is a bore\"), Michael Graves, Mendini, Starck (Juicy Salif, Alessi, 1990)",
+    "credit": {
+      "author": "Smallbones",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:V_Venturi_H_720am.JPG"
+    }
+  },
+  {
+    "id": "card-order-2015",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Put in time order: Cubism, Renaissance, Realism, Baroque.",
+      "image": null
+    },
+    "back": "**Renaissance → Baroque → Realism → Cubism**\n14th–16th c. → 1600–1750 → 1840s–80s → 1907–\nAsked 2015 Q19",
+    "credit": null
+  },
+  {
+    "id": "card-order-2018",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Put in time order: Art Deco, Baroque, Arts & Crafts, Renaissance.",
+      "image": null
+    },
+    "back": "**Renaissance → Baroque → Arts & Crafts → Art Deco**\n14th–16th c. → 1600–1750 → 1860–1910 → 1920s–30s\nAsked 2018 Q23",
+    "credit": null
+  },
+  {
+    "id": "card-order-modern",
+    "category": "art-movement",
+    "priority": "P2",
+    "front": {
+      "text": "Put in time order: Bauhaus, Art Nouveau, Pop Art, Impressionism, Memphis.",
+      "image": null
+    },
+    "back": "**Impressionism (1860s) → Art Nouveau (1890) → Bauhaus (1919) → Pop Art (1950s) → Memphis (1981)**",
+    "credit": null
+  },
+  {
+    "id": "card-rembrandt",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Whose painting? Name the painter and movement.",
+      "image": "images/card-rembrandt.jpg"
+    },
+    "back": "**Rembrandt van Rijn** (1606–1669), Dutch **Baroque**\nDeep shadows, warm browns, many self-portraits\n*The Night Watch* (1642) · asked 2016",
+    "credit": {
+      "author": "Rembrandt",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_ronda_de_noche,_por_Rembrandt_van_Rijn.jpg"
+    }
+  },
+  {
+    "id": "card-van-gogh",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Whose painting? Name the painter and movement.",
+      "image": "images/card-van-gogh.jpg"
+    },
+    "back": "**Vincent van Gogh** (1853–1890), **Post-Impressionism**\nThick swirling impasto strokes, intense yellows and blues\n*Sunflowers*, *The Starry Night*, self-portraits · asked 2017",
+    "credit": {
+      "author": "Vincent van Gogh",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Sunflowers_(1888,_National_Gallery_London).jpg"
+    }
+  },
+  {
+    "id": "card-gauguin",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Whose painting? Name the painter and movement.",
+      "image": "images/card-gauguin.jpg"
+    },
+    "back": "**Paul Gauguin** (1848–1903), **Post-Impressionism**\nFlat areas of bold colour, outlined forms, Tahiti subjects\n*Where Do We Come From? What Are We? Where Are We Going?* (1897) · asked 2017",
+    "credit": {
+      "author": "Paul Gauguin",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gauguin_-_Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F_(1897-98).jpg"
+    }
+  },
+  {
+    "id": "card-picasso",
+    "category": "art-movement",
+    "priority": "P1",
+    "front": {
+      "text": "Picasso: name his periods and signature works.",
+      "image": null
+    },
+    "back": "**Pablo Picasso** (1881–1973): Blue Period (1901–04) → Rose → **Cubism** (with Braque)\n*Les Demoiselles d'Avignon* (1907), *Guernica* (1937)\nPainter questions 2015, 2017; Blue Period = analogous scheme (2023)",
+    "credit": null
+  },
+  {
+    "id": "card-warli",
+    "category": "indian-painting",
+    "priority": "P1",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-warli.jpg"
+    },
+    "back": "**Warli**, Maharashtra (Thane–Palghar), Warli tribe\nWhite rice paste on red-brown mud wall; circles, triangles, lines only\nTarpa dance circle, harvest scenes · asked 2020; 2025 drew dancers in Warli style",
+    "credit": {
+      "author": "Omrmankar",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Warli_painting.jpg"
+    }
+  },
+  {
+    "id": "card-madhubani",
+    "category": "indian-painting",
+    "priority": "P1",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-madhubani.jpg"
+    },
+    "back": "**Madhubani (Mithila)**, Bihar\nDouble-line outlines, every gap filled with pattern, no empty space\nNatural dyes, painted by women; fish, deities, kohbar · asked 2020",
+    "credit": {
+      "author": "Unknown authorUnknown author",
+      "licence": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mithila-Madhubani_Painting.jpg"
+    }
+  },
+  {
+    "id": "card-kalamkari",
+    "category": "indian-painting",
+    "priority": "P1",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-kalamkari.jpg"
+    },
+    "back": "**Kalamkari**, Andhra Pradesh: Srikalahasti (freehand with a bamboo *kalam* pen), Machilipatnam (block-printed)\nCotton cloth, natural dyes, myrobalan and alum mordants\nEarthy reds, indigo, black; temple epics · asked 2020",
+    "credit": {
+      "author": "rajaraman sundaram",
+      "licence": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:KALAMKARI_HAND_PAINTED_CLOTH_SRIKALAHASTI_AP_-_panoramio.jpg"
+    }
+  },
+  {
+    "id": "card-mysore",
+    "category": "indian-painting",
+    "priority": "P1",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-mysore.jpg"
+    },
+    "back": "**Mysore painting**, Karnataka (Wodeyar patronage)\nThin gesso relief with gold foil, subtle colours, delicate lines\nDeities; lower relief and quieter than Tanjore · asked 2020",
+    "credit": {
+      "author": "Durgada Krishnappa",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mysore_Painting.jpg"
+    }
+  },
+  {
+    "id": "card-tanjore",
+    "category": "indian-painting",
+    "priority": "P2",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-tanjore.jpg"
+    },
+    "back": "**Tanjore (Thanjavur)**, Tamil Nadu\nRaised gesso relief, heavy gold foil, glass and gem inlay, wooden plank base\nRich reds and greens, round-faced Krishna · heavier than Mysore",
+    "credit": {
+      "author": "Subha murugan",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Venugopala_Tanjore_glass_painting.jpg"
+    }
+  },
+  {
+    "id": "card-pattachitra",
+    "category": "indian-painting",
+    "priority": "P1",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-pattachitra.jpg"
+    },
+    "back": "**Pattachitra**, Odisha (Raghurajpur) and West Bengal\nCloth (*patta*) coated with chalk + tamarind-seed gum; natural pigments (conch-shell white, lamp black)\nJagannath and epic scenes, ornate borders · asked 2024 (materials)",
+    "credit": {
+      "author": "Chinmayee Mishra",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raghurajpur_Pattachitra,ODISHA.JPG"
+    }
+  },
+  {
+    "id": "card-gond",
+    "category": "indian-painting",
+    "priority": "P2",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-gond.jpg"
+    },
+    "back": "**Gond**, Madhya Pradesh, Gond tribe\nAnimals and trees filled with dots, dashes and fine lines; bright flat colour\nJangarh Singh Shyam brought it to canvas (1980s)",
+    "credit": {
+      "author": "Durgabai Vyam",
+      "licence": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015.2.24_Durga_Bai_Gond.jpg"
+    }
+  },
+  {
+    "id": "card-kalighat",
+    "category": "indian-painting",
+    "priority": "P2",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-kalighat.jpg"
+    },
+    "back": "**Kalighat**, Kolkata, 19th c., near Kalighat temple\nWatercolour on mill paper, bold sweeping outlines, plain background\nDeities and satire of the *babu*",
+    "credit": {
+      "author": "anonymous",
+      "licence": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:India,_Calcutta,_Kalighat_painting,_19th_century_-_Trivikramapada_(Three_Steps_of_Vishnu)_-_2003.165_-_Cleveland_Museum_of_Art.jpg"
+    }
+  },
+  {
+    "id": "card-pichwai",
+    "category": "indian-painting",
+    "priority": "P2",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-pichwai.jpg"
+    },
+    "back": "**Pichwai**, Nathdwara, Rajasthan\nLarge cloth hangings behind the Shrinathji (Krishna) idol\nLotus ponds, cows, festival scenes, dark backgrounds",
+    "credit": {
+      "author": "Unknown Nathdwar artist",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nandmahotsav_pichvai_c._1900.png"
+    }
+  },
+  {
+    "id": "card-phad",
+    "category": "indian-painting",
+    "priority": "P2",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-phad.jpg"
+    },
+    "back": "**Phad**, Rajasthan (Bhilwara, Shahpura)\nLong horizontal cloth scroll, epics of Pabuji and Devnarayan\nSung and performed by Bhopa priests; Joshi family painters",
+    "credit": {
+      "author": "Nomu420",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pabuji_ka_phad_02.JPG"
+    }
+  },
+  {
+    "id": "card-cheriyal",
+    "category": "indian-painting",
+    "priority": "P3",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-cheriyal.jpg"
+    },
+    "back": "**Cheriyal scroll**, Telangana\nBold red backgrounds, narrative panels in long scrolls\nUsed by storytellers; Nakash family painters",
+    "credit": {
+      "author": "Subha murugan",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cheriyal_painting_-_toddy_tappers.jpg"
+    }
+  },
+  {
+    "id": "card-mughal-miniature",
+    "category": "indian-painting",
+    "priority": "P2",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-mughal-miniature.jpg"
+    },
+    "back": "**Mughal miniature**, 16th–18th c., Akbar's and Jahangir's ateliers\nPersian + Indian: court scenes, portraits, naturalistic animals and birds\nFine brush, gold borders · Mansur (animal studies), *Akbarnama*",
+    "credit": {
+      "author": "Unknown (production) Basawan (probably, designed by)",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1561-Akbar_riding_the_elephant_Hawa%27I_pursuing_another_elephant_across_a_collapsing_bridge_of_boats_(left).jpg"
+    }
+  },
+  {
+    "id": "card-rajput-miniature",
+    "category": "indian-painting",
+    "priority": "P2",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-rajput-miniature.jpg"
+    },
+    "back": "**Rajput miniature**, Rajasthan: Mewar, Bundi, Kishangarh\nFlat bright colour, stylised faces; Kishangarh's *Bani Thani* has elongated eyes\nKrishna legends, ragamala, court life",
+    "credit": {
+      "author": "Eugene a",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:4_Radha_(Bani_Thani),_Kishangarh,_ca._1750,_National_Museum_New_Delhi.jpg"
+    }
+  },
+  {
+    "id": "card-pahari-kangra",
+    "category": "indian-painting",
+    "priority": "P2",
+    "front": {
+      "text": "Name the painting style, its state and materials.",
+      "image": "images/card-pahari-kangra.jpg"
+    },
+    "back": "**Pahari / Kangra**, Himachal Pradesh (Kangra, Basohli, Guler)\nLyrical, soft greens, delicate figures; Radha–Krishna romance\nBasohli is bolder; Nainsukh of Guler is the best-known painter",
+    "credit": {
+      "author": "SpeakingArch",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Radha_Krishna,_19th_century_CE,_Kangra_School_of_Art,_Museum_of_Kangra_Art,_Dharamshala.jpg"
+    }
+  },
+  {
+    "id": "card-ravi-varma",
+    "category": "indian-painting",
+    "priority": "P1",
+    "front": {
+      "text": "Whose painting? Name the painter and subject.",
+      "image": "images/card-ravi-varma.jpg"
+    },
+    "back": "**Raja Ravi Varma** (1848–1906), Kerala\nOil, European academic realism applied to Indian myths\n*Shakuntala*, *Damayanti*, *Lakshmi*, *Saraswati*; oleograph press 1894 · asked 2018",
+    "credit": {
+      "author": "Raja Ravi Varma",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raja_Ravi_Varma_-_Mahabharata_-_Shakuntala.jpg"
+    }
+  },
+  {
+    "id": "card-sher-gil",
+    "category": "indian-painting",
+    "priority": "P2",
+    "front": {
+      "text": "Whose painting? Name the painter.",
+      "image": "images/card-sher-gil.jpg"
+    },
+    "back": "**Amrita Sher-Gil** (1913–1941)\nModern Indian oil painter; flat, muted, melancholic Indian women\n*Three Girls* (1935)",
+    "credit": {
+      "author": "Amrita Sher-Gil",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amrita_Sher-Gil_Group_of_Three_Girls.jpg"
+    }
+  },
+  {
+    "id": "card-bengal-school",
+    "category": "indian-painting",
+    "priority": "P2",
+    "front": {
+      "text": "Name the painter and the art movement.",
+      "image": "images/card-bengal-school.jpg"
+    },
+    "back": "**Bengal School**, early 20th c.: Abanindranath Tagore, *Bharat Mata* (1905)\nSoft Japanese-style wash, Indian and Mughal sources, against Ravi Varma's European style\nNandalal Bose (Santiniketan)",
+    "credit": {
+      "author": "Abanindranath Tagore",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bharat_Mata_by_Abanindranath_Tagore.jpg"
+    }
+  },
+  {
+    "id": "card-progressive-artists",
+    "category": "indian-painting",
+    "priority": "P3",
+    "front": {
+      "text": "Progressive Artists' Group: when, where, who?",
+      "image": null
+    },
+    "back": "**Bombay, 1947**, founded by F.N. Souza\nS.H. Raza (the *Bindu*), M.F. Husain (horses), K.H. Ara, S.K. Bakre, H.A. Gade\nIndian modernism after Independence",
+    "credit": null
+  },
+  {
+    "id": "card-bharatanatyam",
+    "category": "indian-dance",
+    "priority": "P1",
+    "front": {
+      "text": "Name the dance and its state.",
+      "image": "images/card-bharatanatyam.jpg"
+    },
+    "back": "**Bharatanatyam**, Tamil Nadu\nHalf-sitting *aramandi*, fan-pleated costume, crisp geometric lines\nSolo; asked 2025 (Warli-style figures)",
+    "credit": {
+      "author": "Bobinson",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bharatanatyam_dancer_amrutha_naresh_rao_1.jpg"
+    }
+  },
+  {
+    "id": "card-kathakali",
+    "category": "indian-dance",
+    "priority": "P1",
+    "front": {
+      "text": "Name the dance and its state.",
+      "image": "images/card-kathakali.jpg"
+    },
+    "back": "**Kathakali**, Kerala\nDance-drama: green face (*pacha*), huge headdress, full skirt, traditionally men\nAsked 2025",
+    "credit": {
+      "author": "Vis M",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kathakali_performer_(2023)_03.jpg"
+    }
+  },
+  {
+    "id": "card-manipuri",
+    "category": "indian-dance",
+    "priority": "P1",
+    "front": {
+      "text": "Name the dance and its state.",
+      "image": "images/card-manipuri.jpg"
+    },
+    "back": "**Manipuri**, Manipur\n*Ras Lila*: stiff cylindrical mirror-work skirt (*potloi*), veil, soft flowing moves\nAsked 2025 (first in the answer order)",
+    "credit": {
+      "author": "https://www.flickr.com/photos/matsukin/",
+      "licence": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rasa_Lila_in_Manipuri_dance_style.jpg"
+    }
+  },
+  {
+    "id": "card-chhau",
+    "category": "indian-dance",
+    "priority": "P1",
+    "front": {
+      "text": "Name the dance and its state.",
+      "image": "images/card-chhau.jpg"
+    },
+    "back": "**Chhau**, semi-classical, martial: Purulia (West Bengal, masks), Seraikela (Jharkhand, masks), Mayurbhanj (Odisha, no masks)\nBig painted masks, leaps, epic themes · asked 2025",
+    "credit": {
+      "author": "Suyash Dwivedi",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chhau_Nritya_face_mask_001.jpg"
+    }
+  },
+  {
+    "id": "card-odissi",
+    "category": "indian-dance",
+    "priority": "P1",
+    "front": {
+      "text": "Name the dance and its state.",
+      "image": "images/card-odissi.jpg"
+    },
+    "back": "**Odissi**, Odisha\n*Tribhangi* (three-bend) pose, silver jewellery, temple-tower headdress\nAsked 2015",
+    "credit": {
+      "author": "Augustus Binu : flickr",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Odissi_pose.JPG"
+    }
+  },
+  {
+    "id": "card-kuchipudi",
+    "category": "indian-dance",
+    "priority": "P1",
+    "front": {
+      "text": "Name the dance and its state.",
+      "image": "images/card-kuchipudi.jpg"
+    },
+    "back": "**Kuchipudi**, Andhra Pradesh\nDance-drama; signature: dancing on the rim of a brass plate (*tarangam*)\nAsked 2015 (as an option)",
+    "credit": {
+      "author": "Augustus Binu/ facebook",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuchipudi_Performer_DS.jpg"
+    }
+  },
+  {
+    "id": "card-kathak",
+    "category": "indian-dance",
+    "priority": "P2",
+    "front": {
+      "text": "Name the dance and its state.",
+      "image": "images/card-kathak.jpg"
+    },
+    "back": "**Kathak**, North India (Lucknow, Jaipur, Banaras gharanas)\nFast spins (*chakkar*), footwork with heavy ankle bells, Mughal-style *angarkha*\nOnly classical form from the north",
+    "credit": {
+      "author": "Suyash Dwivedi",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kathak_Solo_Performance_(15).jpg"
+    }
+  },
+  {
+    "id": "card-mohiniyattam",
+    "category": "indian-dance",
+    "priority": "P2",
+    "front": {
+      "text": "Name the dance and its state.",
+      "image": "images/card-mohiniyattam.jpg"
+    },
+    "back": "**Mohiniyattam**, Kerala\nWhite and gold *kasavu* sari, side bun with jasmine, swaying gentle moves\nSolo, traditionally women",
+    "credit": {
+      "author": "Shagil Kannur",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mohiniyattam_at_Kerala_state_school_kalothsavam_2019.jpg"
+    }
+  },
+  {
+    "id": "card-sattriya",
+    "category": "indian-dance",
+    "priority": "P2",
+    "front": {
+      "text": "Name the dance and its state.",
+      "image": "images/card-sattriya.jpg"
+    },
+    "back": "**Sattriya**, Assam\nFrom Vaishnava monasteries (*sattras*) founded by Sankaradeva\nRecognised as classical in 2000",
+    "credit": {
+      "author": "Joydeep Chakraborty",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Sattriya_dancer_performing_the_dance_form_in_Assam,_India.jpg"
+    }
+  },
+  {
+    "id": "card-classical-list",
+    "category": "indian-dance",
+    "priority": "P1",
+    "front": {
+      "text": "List India's classical dances with their states.",
+      "image": null
+    },
+    "back": "Bharatanatyam (TN) · Kathak (North) · Kathakali, Mohiniyattam (Kerala) · Kuchipudi (AP)\nOdissi (Odisha) · Manipuri (Manipur) · Sattriya (Assam)\nChhau is often added as semi-classical (WB, Jharkhand, Odisha)",
+    "credit": null
+  },
+  {
+    "id": "card-order-2025",
+    "category": "indian-dance",
+    "priority": "P1",
+    "front": {
+      "text": "2025 Q32: Warli-style dancers. What were they, in order?",
+      "image": null
+    },
+    "back": "**Manipuri, Chhau, Bharatanatyam, Kathakali** (key D)\nRead costume silhouette: cylinder skirt · mask · fan pleat · huge headdress",
+    "credit": null
+  },
+  {
+    "id": "card-golden-temple",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-golden-temple.jpg"
+    },
+    "back": "**Harmandir Sahib (Golden Temple)**, Amritsar, Punjab · ~31.6° N\nGilded upper storeys in a sacred pool; Sikh architecture\nNorthernmost of the usual set",
+    "credit": {
+      "author": "This picture has been taken by Oleg Yunakov. Contact e-mail: yunakovgmail.com. Image can be used in accordance with the terms of the СС-BY-SA license. Other pho",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamandir_Sahib_(Golden_Temple).jpg"
+    }
+  },
+  {
+    "id": "card-qutub-minar",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-qutub-minar.jpg"
+    },
+    "back": "**Qutub Minar**, Delhi · ~28.5° N\n73 m fluted red sandstone tower, begun c.1199 by Qutb-ud-din Aibak\nDelhi Sultanate, UNESCO",
+    "credit": {
+      "author": "Sfu",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qutb_Minar_2011.jpg"
+    }
+  },
+  {
+    "id": "card-humayuns-tomb",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-humayuns-tomb.jpg"
+    },
+    "back": "**Humayun's Tomb**, Delhi · ~28.6° N\n1570, Mughal; first garden tomb (charbagh), red sandstone with white marble, double dome\nPrototype for the Taj · first in the 2026 N→S answer",
+    "credit": {
+      "author": "Naveen R Gowda",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humayun%27s_Tomb,_Delhi_1.jpg"
+    }
+  },
+  {
+    "id": "card-taj-mahal",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-taj-mahal.jpg"
+    },
+    "back": "**Taj Mahal**, Agra · ~27.2° N\nShah Jahan, 1632–1653; white Makrana marble, pietra dura inlay, four minarets\nMughal, UNESCO",
+    "credit": {
+      "author": "Yann; edited by King of Hearts",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit2.jpg"
+    }
+  },
+  {
+    "id": "card-fatehpur-sikri",
+    "category": "indian-monument",
+    "priority": "P3",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-fatehpur-sikri.jpg"
+    },
+    "back": "**Fatehpur Sikri / Buland Darwaza**, near Agra · ~27.1° N\nAkbar's red sandstone capital (1570s); Buland Darwaza gate\nMughal",
+    "credit": {
+      "author": "Marcin Białek",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg"
+    }
+  },
+  {
+    "id": "card-hawa-mahal",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-hawa-mahal.jpg"
+    },
+    "back": "**Hawa Mahal**, Jaipur · ~26.9° N\n1799, pink sandstone screen of 953 small windows (*jharokhas*) for air and seeing out unseen\nRajput; second in the 2026 N→S answer",
+    "credit": {
+      "author": "Chainwit.",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_facade_Hawa_Mahal_Jaipur_from_ground_level_(July_2022)_-_img_01.jpg"
+    }
+  },
+  {
+    "id": "card-khajuraho",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-khajuraho.jpg"
+    },
+    "back": "**Khajuraho temples**, Madhya Pradesh · ~24.9° N\nChandela dynasty, c.950–1050; **Nagara** style, rising shikharas, dense sculpture\nUNESCO",
+    "credit": {
+      "author": "Dey.sandip",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Homosexuality_in_Khajuraho_sculpture.jpg"
+    }
+  },
+  {
+    "id": "card-sanchi",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-sanchi.jpg"
+    },
+    "back": "**Great Stupa, Sanchi**, Madhya Pradesh · ~23.5° N\nBegun by Ashoka, 3rd c. BCE; hemispherical dome, four carved gateways (*toranas*)\nBuddhist, UNESCO",
+    "credit": {
+      "author": "iMahesh",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gilded_replica_of_Sanchi_Stupa_Northern_Torana_at_The_Great_Hall_of_Vajradhamma,_Muang_Boran,_Thailand.jpg"
+    }
+  },
+  {
+    "id": "card-modhera",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-modhera.jpg"
+    },
+    "back": "**Modhera Sun Temple**, Gujarat · ~23.6° N\n1026, Solanki dynasty; **Maru-Gurjara** style; stepped tank (*kund*) in front\nStyle asked 2016",
+    "credit": {
+      "author": "Bernard Gagnon",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sun_Temple,_Modhera_-_Sabha_Mandap_01.jpg"
+    }
+  },
+  {
+    "id": "card-victoria-memorial",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-victoria-memorial.jpg"
+    },
+    "back": "**Victoria Memorial**, Kolkata · ~22.5° N\n1921, William Emerson; white Makrana marble; **Indo-Saracenic** with classical dome",
+    "credit": {
+      "author": "Soumenmenon",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Victoria_Memorial_Hall_Kolkata_at_sunny_day.jpg"
+    }
+  },
+  {
+    "id": "card-konark",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-konark.jpg"
+    },
+    "back": "**Konark Sun Temple**, Odisha · ~19.9° N\n13th c., Narasimhadeva I; temple as the Sun's chariot, 24 carved stone wheels, 7 horses\n**Kalinga** style (asked 2016), UNESCO",
+    "credit": {
+      "author": "Joydeep",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheel_engraved_in_the_13th_century_built_Konark_Sun_Temple_in_Orissa,_India.jpg"
+    }
+  },
+  {
+    "id": "card-lingaraj",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-lingaraj.jpg"
+    },
+    "back": "**Lingaraj Temple**, Bhubaneswar · ~20.2° N\n11th c.; **Kalinga** style: curved tower (*rekha deula*) + stepped-roof hall (*pidha deula*)",
+    "credit": {
+      "author": "Bernard Gagnon",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lingaraja_Temple_01.jpg"
+    }
+  },
+  {
+    "id": "card-ajanta",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-ajanta.jpg"
+    },
+    "back": "**Ajanta Caves**, Maharashtra · ~20.5° N\nBuddhist rock-cut caves, 2nd c. BCE–5th c. CE; famous murals (Padmapani)\nRock-cut chaitya type asked 2026",
+    "credit": {
+      "author": "Shishirdasika",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ajanta_caves_view.jpg"
+    }
+  },
+  {
+    "id": "card-ellora-kailasa",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-ellora-kailasa.jpg"
+    },
+    "back": "**Kailasa temple (Ellora Cave 16)**, Maharashtra · ~20.0° N\n8th c., Rashtrakuta (Krishna I); one monolith carved top-down from the cliff\nBuddhist, Hindu and Jain caves at Ellora",
+    "credit": {
+      "author": "Rohit Sharma",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Courtyard_and_Mahabharata_Reliefs_at_the_Kailasa_Temple,_Ellora_01.jpg"
+    }
+  },
+  {
+    "id": "card-karla-chaitya",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the rock-cut hall type and a famous example.",
+      "image": "images/card-karla-chaitya.jpg"
+    },
+    "back": "**Chaitya hall**: Buddhist rock-cut prayer hall, apsidal plan, stupa at the end, horseshoe window\nKarla (Maharashtra, ~18.8° N, largest), Ajanta Cave 19 and 26 · third in the 2026 N→S answer",
+    "credit": {
+      "author": "Unknown",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karla_Caves_Interior.jpg"
+    }
+  },
+  {
+    "id": "card-gateway-of-india",
+    "category": "indian-monument",
+    "priority": "P3",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-gateway-of-india.jpg"
+    },
+    "back": "**Gateway of India**, Mumbai · ~18.9° N\n1924, George Wittet; basalt arch; **Indo-Saracenic**",
+    "credit": {
+      "author": "Joe Ravi",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gateway_Of_India.jpg"
+    }
+  },
+  {
+    "id": "card-charminar",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-charminar.jpg"
+    },
+    "back": "**Charminar**, Hyderabad · ~17.4° N\n1591, Muhammad Quli Qutb Shah; square arch with four minarets\nQutb Shahi",
+    "credit": {
+      "author": "DidierTais",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charminar_Hyderabad_1.jpg"
+    }
+  },
+  {
+    "id": "card-gol-gumbaz",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-gol-gumbaz.jpg"
+    },
+    "back": "**Gol Gumbaz**, Vijayapura (Bijapur), Karnataka · ~16.8° N\n1656, tomb of Mohammed Adil Shah; huge dome, whispering gallery\nDeccan Sultanate",
+    "credit": {
+      "author": "Rangan Datta Wiki",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gol_Gumbaz,_Bijapur_1.jpg"
+    }
+  },
+  {
+    "id": "card-pattadakal",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-pattadakal.jpg"
+    },
+    "back": "**Pattadakal**, Karnataka · ~15.9° N\n7th–8th c., **Chalukya** (asked 2016); Nagara and Dravida temples side by side\nBadami and Aihole nearby · UNESCO",
+    "credit": {
+      "author": "Unknown",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pattadakal_Virupaksha_Temple.jpg"
+    }
+  },
+  {
+    "id": "card-hampi-chariot",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-hampi-chariot.jpg"
+    },
+    "back": "**Stone chariot, Vittala temple, Hampi**, Karnataka · ~15.3° N\n16th c., Vijayanagara empire; shrine carved as a chariot (on the ₹50 note)\nFourth in the 2026 N→S answer",
+    "credit": {
+      "author": "Ram Nagesh Thota",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iconic_Stone_Chariot_@_Vittala_Temple,_Hampi,_Karnataka.jpg"
+    }
+  },
+  {
+    "id": "card-hoysala",
+    "category": "indian-monument",
+    "priority": "P3",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-hoysala.jpg"
+    },
+    "back": "**Chennakeshava temple, Belur** (and Halebidu), Karnataka · ~13.2° N\n12th c., **Hoysala**: star-shaped plan, soft soapstone, dense lathe-like carving",
+    "credit": {
+      "author": "Dineshkannambadi (talk)",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chennakeshava_Temple_at_Belur.jpg"
+    }
+  },
+  {
+    "id": "card-mysore-palace",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-mysore-palace.jpg"
+    },
+    "back": "**Mysore Palace**, Karnataka · ~12.3° N\n1912, Henry Irwin; **Indo-Saracenic**: domes, arches, chhatris\nFifth in the 2026 N→S answer",
+    "credit": {
+      "author": "Hari R",
+      "licence": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mysore_Palace_(1).jpg"
+    }
+  },
+  {
+    "id": "card-shore-temple",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-shore-temple.jpg"
+    },
+    "back": "**Shore Temple, Mahabalipuram**, Tamil Nadu · ~12.6° N\n8th c., Pallava (Narasimhavarman II); early structural **Dravida** temple\nUNESCO",
+    "credit": {
+      "author": "Vyacheslav Argenberg",
+      "licence": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mamallapuram,_Shore_Temple,_India.jpg"
+    }
+  },
+  {
+    "id": "card-brihadeeswarar",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-brihadeeswarar.jpg"
+    },
+    "back": "**Brihadeeswarar Temple**, Thanjavur, Tamil Nadu · ~10.8° N\n1010, Rajaraja Chola I; **Chola**, ~66 m pyramidal vimana\nLast (southernmost) in the 2026 N→S answer",
+    "credit": {
+      "author": "Vengolis",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brihadeeswarar_Temple_3522.jpg"
+    }
+  },
+  {
+    "id": "card-meenakshi",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the monument, its city and its style.",
+      "image": "images/card-meenakshi.jpg"
+    },
+    "back": "**Meenakshi Temple**, Madurai, Tamil Nadu · ~9.9° N\nNayak period; towering painted gateway towers (*gopurams*)\n**Dravida**",
+    "credit": {
+      "author": "MADHURANTHAKAN JAGADEESAN",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:S-TN-34_Meenakshi_Amman_Temple_South_Gopuram_enriched_with_delicate_Stucco_works.jpg"
+    }
+  },
+  {
+    "id": "card-order-2026",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "2026 Q36: order these north → south.",
+      "image": null
+    },
+    "back": "**Humayun's Tomb (Delhi) → Hawa Mahal (Jaipur) → rock-cut chaitya (Maharashtra) → Hampi chariot → Mysore Palace → Brihadeeswarar (Thanjavur)**\nKey B. Anchor latitudes: Delhi 28.6, Jaipur 26.9, Mumbai 19, Hampi 15.3, Mysore 12.3, Thanjavur 10.8",
+    "credit": null
+  },
+  {
+    "id": "card-temple-styles",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Nagara vs Dravida vs Vesara: tell them apart.",
+      "image": null
+    },
+    "back": "**Nagara** (north): curved beehive tower (*shikhara*), no big enclosure walls\n**Dravida** (south): stepped pyramid tower (*vimana*), walled compound, gateway *gopurams*\n**Vesara** (Deccan): hybrid · Chalukya, Hoysala",
+    "credit": null
+  },
+  {
+    "id": "card-maru-gurjara",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Maru-Gurjara style: where and what?",
+      "image": "images/card-maru-gurjara.jpg"
+    },
+    "back": "Rajasthan and Gujarat, 11th–13th c. (Solanki)\nLace-like marble or sandstone carving, ornate ceilings\nDilwara temples (Mount Abu), Modhera Sun Temple · asked 2016",
+    "credit": {
+      "author": "Lala Deen Dayal",
+      "licence": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marble_Carved_Ceilings_Showing_Jain_Mythology_in_Dilwara_Temple,_Mt._Abu.jpg"
+    }
+  },
+  {
+    "id": "card-indo-saracenic",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Indo-Saracenic: what and examples?",
+      "image": null
+    },
+    "back": "Late 19th–early 20th c. British-era revival mixing Mughal/Indian domes, chhatris, arches with Gothic and classical\nMysore Palace, Victoria Memorial, Gateway of India, Madras High Court",
+    "credit": null
+  },
+  {
+    "id": "card-maurya",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the sculpture style and period.",
+      "image": "images/card-maurya.jpg"
+    },
+    "back": "**Maurya**, 3rd c. BCE\nHighly polished Chunar sandstone, animal capitals on pillars\nAshoka's Lion Capital, Sarnath (national emblem); Didarganj Yakshi · asked 2016",
+    "credit": {
+      "author": "lisa bat",
+      "licence": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lion_capital_of_Ashoka,_Sarnath.jpg"
+    }
+  },
+  {
+    "id": "card-gandhara",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the sculpture style and period.",
+      "image": "images/card-gandhara.jpg"
+    },
+    "back": "**Gandhara**, 1st–5th c. CE, north-west (Peshawar, Taxila)\nGreco-Buddhist: grey schist, wavy hair, toga-like heavy folds, realistic face\nAsked 2016",
+    "credit": {
+      "author": "Daderot",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seated_Buddha,_Gandhara,_Pakistan,_Kushan_dynasty,_100s-200s_AD,_schist_-_Tokyo_National_Museum_-_Tokyo,_Japan_-_DSC08664.jpg"
+    }
+  },
+  {
+    "id": "card-kushana-mathura",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the sculpture style and period.",
+      "image": "images/card-kushana-mathura.jpg"
+    },
+    "back": "**Mathura school (Kushana)**, 1st–3rd c. CE\nSpotted red sandstone, smiling fleshy figures, thin clinging drapery\nHeadless statue of Kanishka · asked 2016",
+    "credit": {
+      "author": "Biswarup Ganguly",
+      "licence": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inscribed_Seated_Buddha_Image_in_Abhaya_Mudra_-_Kushan_Period_-_Katra_Keshav_Dev_-_ACCN_A-1_-_Government_Museum_-_Mathura_2013-02-24_5972.JPG"
+    }
+  },
+  {
+    "id": "card-pala",
+    "category": "indian-monument",
+    "priority": "P1",
+    "front": {
+      "text": "Name the sculpture style and period.",
+      "image": "images/card-pala.jpg"
+    },
+    "back": "**Pala**, 8th–12th c., Bihar and Bengal (Nalanda)\nBlack basalt and bronze, ornate, crisp detail, Buddhist and Hindu deities\nAsked 2016",
+    "credit": {
+      "author": "Daderot",
+      "licence": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monkey_gives_honey_to_Buddha_Shakyamuni,_India,_Bihar,_probably_Kurkihar,_Pala_dynasty,_c._1000_AD,_black_stone_-_%C3%96stasiatiska_museet,_Stockholm_-_DSC09270.JPG"
+    }
+  },
+  {
+    "id": "card-chola-bronze",
+    "category": "indian-monument",
+    "priority": "P2",
+    "front": {
+      "text": "Name the object, period and making process.",
+      "image": "images/card-chola-bronze.jpg"
+    },
+    "back": "**Chola bronze Nataraja**, Tamil Nadu, 10th–12th c.\nShiva dancing in a ring of fire; solid **lost-wax** casting",
+    "credit": {
+      "author": "Shiva_as_the_Lord_of_Dance_LACMA.jpg, photographed by the LACMA. derivative work: Julia\\talk",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shiva_as_the_Lord_of_Dance_LACMA_edit.jpg"
+    }
+  },
+  {
+    "id": "card-channapatna",
+    "category": "craft-process",
+    "priority": "P1",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-channapatna.jpg"
+    },
+    "back": "**Channapatna toys**, Karnataka (GI tag)\nIvory wood (*aale mara*), lathe-turned, coloured with lac stick pressed on while spinning\nRounded forms, glossy natural colours",
+    "credit": {
+      "author": "KartikMistry",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Finished_Channapatna_toys.jpg"
+    }
+  },
+  {
+    "id": "card-channapatna-process",
+    "category": "craft-process",
+    "priority": "P1",
+    "front": {
+      "text": "Lacquered turned wooden rattle: which operations make it?",
+      "image": null
+    },
+    "back": "**Sizing → Turning → Drilling → Lacquering** (2025 Q23, key B)\nLac is applied by friction heat on the lathe; reject milling, punching, powder coating",
+    "credit": null
+  },
+  {
+    "id": "card-wood-process-rule",
+    "category": "craft-process",
+    "priority": "P1",
+    "front": {
+      "text": "Traditional wooden artefact: what is the valid operation set?",
+      "image": null
+    },
+    "back": "**Cut/size → turn or chisel → drill → sand → finish/lacquer**\n2026 Q38 answer set: Finishing, Sanding, Drilling, Chiselling\n2019 Q36: Drilling, Chiselling, Cutting, Finishing",
+    "credit": null
+  },
+  {
+    "id": "card-craft-distractors",
+    "category": "craft-process",
+    "priority": "P1",
+    "front": {
+      "text": "Craft-process MCQ: how to spot the wrong options?",
+      "image": null
+    },
+    "back": "Wrong options mix **industrial** steps (milling, punching, casting, forming, powder coating) or **fake** terms (balling, circling)\nKeep only hand or lathe operations a village workshop could do",
+    "credit": null
+  },
+  {
+    "id": "card-kondapalli",
+    "category": "craft-process",
+    "priority": "P2",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-kondapalli.jpg"
+    },
+    "back": "**Kondapalli toys**, Andhra Pradesh (near Vijayawada), GI tag\nSoft light *tella poniki* wood, carved in parts, joined, painted bright\nVillage life, animals, Dasavatara",
+    "credit": {
+      "author": "Adityamadhav83",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kondapalli_toys_at_a_house_in_Vijayawada.jpg"
+    }
+  },
+  {
+    "id": "card-etikoppaka",
+    "category": "craft-process",
+    "priority": "P2",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-etikoppaka.jpg"
+    },
+    "back": "**Etikoppaka toys**, Andhra Pradesh (Visakhapatnam), GI tag\nLathe-turned soft wood with **lac and natural dyes**, like Channapatna",
+    "credit": {
+      "author": "Ashokpatnaik3",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Etikoppaka_Lakka_Bommalu.jpg"
+    }
+  },
+  {
+    "id": "card-dhokra",
+    "category": "craft-process",
+    "priority": "P1",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-dhokra.jpg"
+    },
+    "back": "**Dhokra**, tribal brass (copper + zinc), Bastar (Chhattisgarh), Odisha, West Bengal, Jharkhand\n**Lost-wax casting**: one-off mould, so every piece is unique\nWax threads leave a linear, thread-wrapped texture · 2021 Q11",
+    "credit": {
+      "author": "Duttasubha88",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dokra_Art.jpg"
+    }
+  },
+  {
+    "id": "card-lost-wax-steps",
+    "category": "craft-process",
+    "priority": "P1",
+    "front": {
+      "text": "Lost-wax (Dhokra) casting: the steps.",
+      "image": null
+    },
+    "back": "Clay core → model in wax (beeswax + resin), add wax threads → coat in clay → heat: wax melts out\n→ pour molten metal → break the mould → finish\nThin parts (tail, leg) join where wax threads met (2021 Q11)",
+    "credit": null
+  },
+  {
+    "id": "card-bidri",
+    "category": "craft-process",
+    "priority": "P2",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-bidri.jpg"
+    },
+    "back": "**Bidriware**, Bidar, Karnataka (Bahmani sultans, 14th c.)\nZinc–copper alloy cast, engraved, **inlaid with silver**\nBlackened with soil from Bidar fort + ammonium chloride: silver shines on matte black",
+    "credit": {
+      "author": "Randhirreddy at English Wikipedia",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bidriware_vases_and_decanter.jpg"
+    }
+  },
+  {
+    "id": "card-blue-pottery",
+    "category": "craft-process",
+    "priority": "P2",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-blue-pottery.jpg"
+    },
+    "back": "**Blue pottery**, Jaipur, Rajasthan (Persian–Turkic roots)\nNot clay: quartz powder, glass, Multani mitti, borax, gum; low firing\nCobalt blue and turquoise on white",
+    "credit": {
+      "author": "Neek-Theri",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_Pottery_Jaipur_Collection.jpg"
+    }
+  },
+  {
+    "id": "card-block-printing",
+    "category": "craft-process",
+    "priority": "P2",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-block-printing.jpg"
+    },
+    "back": "**Hand block printing**, Rajasthan (Bagru, Sanganer), Gujarat (Ajrakh)\nCarved wooden blocks: outline block first, then fill blocks; natural dyes\nBagru *dabu* = mud resist; Ajrakh = indigo and madder, both sides",
+    "credit": {
+      "author": "Ketayun, Katz",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Printing_with_Hand_Carved_Block.jpg"
+    }
+  },
+  {
+    "id": "card-ikat",
+    "category": "craft-process",
+    "priority": "P2",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-ikat.jpg"
+    },
+    "back": "**Ikat**: yarn is tied and dyed **before** weaving, so motifs have blurred edges\nDouble ikat (warp + weft): Patola, Patan, Gujarat\nPochampally (Telangana), Sambalpuri (Odisha)",
+    "credit": {
+      "author": "Ramkumar Kalyani",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pochampalli_Ikat_saree.jpg"
+    }
+  },
+  {
+    "id": "card-bandhani",
+    "category": "craft-process",
+    "priority": "P2",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-bandhani.jpg"
+    },
+    "back": "**Bandhani**, Gujarat and Rajasthan: cloth pinched and tied in tiny knots, then dyed → dot patterns\n*Leheriya* (Rajasthan): rolled and tied diagonally → waves\nResist on cloth (ikat resists the yarn)",
+    "credit": {
+      "author": "goblinbox_(queen_of_ad_hoc_bento)",
+      "licence": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bandhani_Dupatta_(5788125979).jpg"
+    }
+  },
+  {
+    "id": "card-kashmir-papier-mache",
+    "category": "craft-process",
+    "priority": "P3",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-kashmir-papier-mache.jpg"
+    },
+    "back": "**Papier-mâché**, Kashmir\nPaper pulp moulded (*sakhtsazi*), then painted in fine floral patterns (*naqashi*)",
+    "credit": {
+      "author": "Catlemur",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kashmir_papier-m%C3%A2ch%C3%A9_trinket_boxes.jpg"
+    }
+  },
+  {
+    "id": "card-chikankari",
+    "category": "craft-process",
+    "priority": "P3",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-chikankari.jpg"
+    },
+    "back": "**Chikankari**, Lucknow, Uttar Pradesh\nWhite thread embroidery on fine muslin or cotton; shadow work from the back",
+    "credit": {
+      "author": "Joey Berzowska",
+      "licence": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chikan_embroidery,_Lucknow.jpg"
+    }
+  },
+  {
+    "id": "card-phulkari",
+    "category": "craft-process",
+    "priority": "P3",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-phulkari.jpg"
+    },
+    "back": "**Phulkari**, Punjab: \"flower work\"\nFloss silk darning stitch worked from the back of hand-spun khaddar",
+    "credit": {
+      "author": "Kritzolina",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Embroidery_on_a_shawl_from_Punjab_05.jpg"
+    }
+  },
+  {
+    "id": "card-bankura-horse",
+    "category": "craft-process",
+    "priority": "P2",
+    "front": {
+      "text": "Name the craft, its state and how it is made.",
+      "image": "images/card-bankura-horse.jpg"
+    },
+    "back": "**Bankura horse**, Panchmura, West Bengal\nTerracotta, long stylised neck and ears, wheel-thrown parts joined",
+    "credit": {
+      "author": "AkashPratimDe",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terracotta-bankura-horse-ZineArt.webp"
+    }
+  },
+  {
+    "id": "card-cane-bamboo",
+    "category": "craft-process",
+    "priority": "P2",
+    "front": {
+      "text": "Cane and bamboo craft: where and how?",
+      "image": "images/card-cane-bamboo.jpg"
+    },
+    "back": "North-east: Assam, Tripura, Manipur\nSplit, shave, soak, then weave or bend over heat\nWicker baskets, furniture, mats (wicker asked 2019 Q35)",
+    "credit": {
+      "author": "পাপৰি বৰা",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bamboo_Craft.jpg"
+    }
+  },
+  {
+    "id": "card-weave-backside",
+    "category": "craft-process",
+    "priority": "P1",
+    "front": {
+      "text": "Two-colour woven mat: what does the back look like?",
+      "image": null
+    },
+    "back": "In a plain weave each strand on top in front is underneath at the back\nSo the back shows the **colours swapped** (and mirrored left–right when flipped)\n2022 Q27, key D",
+    "credit": null
+  },
+  {
+    "id": "card-shrink-fit",
+    "category": "craft-process",
+    "priority": "P1",
+    "front": {
+      "text": "Bullock-cart wheel rim: how is the iron tyre fixed?",
+      "image": null
+    },
+    "back": "**Shrink fit**: heat the iron ring → it expands → slip over the wooden wheel → cool → it contracts tight\n2021 Q29",
+    "credit": null
+  },
+  {
+    "id": "card-plastic-processes",
+    "category": "craft-process",
+    "priority": "P1",
+    "front": {
+      "text": "Match: carry bag, tiffin box, jerry can, water tank.",
+      "image": null
+    },
+    "back": "Carry bag → **blown-film extrusion** · Tiffin box, bucket → **injection moulding**\nBottle, jerry can → **blow moulding** · Large water tank → **rotational moulding**\nAsked 2015, 2016",
+    "credit": null
+  },
+  {
+    "id": "card-metal-processes",
+    "category": "craft-process",
+    "priority": "P1",
+    "front": {
+      "text": "Steel spoon, boat hull, Tetra Pak: how made?",
+      "image": null
+    },
+    "back": "Spoon → cut from sheet, **formed/pressed** (2020 Q14) · Boat hull → **FRP** hand lay-up\nTetra Pak → layers of paperboard, polyethylene, aluminium foil (2015)",
+    "credit": null
+  },
+  {
+    "id": "card-brass-metal-crafts",
+    "category": "craft-process",
+    "priority": "P3",
+    "front": {
+      "text": "Moradabad brassware: what technique?",
+      "image": null
+    },
+    "back": "**Moradabad**, Uttar Pradesh, \"Brass City\"\nBrass sheet and cast ware, engraved; also *meenakari* enamel colouring",
+    "credit": null
+  },
+  {
+    "id": "card-percentile-basics",
+    "category": "anthropometry",
+    "priority": "P1",
+    "front": {
+      "text": "What does \"5th percentile stature\" mean?",
+      "image": "images/card-percentile-basics.svg"
+    },
+    "back": "5% of the population are **shorter** than this value; 95% are taller\n50th = median; 95th = only 5% are larger",
+    "credit": null
+  },
+  {
+    "id": "card-rule-reach",
+    "category": "anthropometry",
+    "priority": "P1",
+    "front": {
+      "text": "Reach or height-limited dimension: design for which percentile?",
+      "image": "images/card-rule-reach.svg"
+    },
+    "back": "**5th percentile**, often 5th female: if the small user can reach, everyone can\nShelf height, control reach, washbasin rim, seat depth",
+    "credit": null
+  },
+  {
+    "id": "card-rule-clearance",
+    "category": "anthropometry",
+    "priority": "P1",
+    "front": {
+      "text": "Clearance dimension: design for which percentile?",
+      "image": "images/card-rule-clearance.svg"
+    },
+    "back": "**95th percentile**, often 95th male: if the large user fits, everyone fits\nDoor height, seat width (hip breadth), legroom, gaps to pass through",
+    "credit": null
+  },
+  {
+    "id": "card-rule-average",
+    "category": "anthropometry",
+    "priority": "P1",
+    "front": {
+      "text": "When do you design for the 50th percentile?",
+      "image": null
+    },
+    "back": "When the dimension is **not adjustable** and neither extreme is critical\ne.g. backrest height from sitting height, public counter height",
+    "credit": null
+  },
+  {
+    "id": "card-rule-adjustable",
+    "category": "anthropometry",
+    "priority": "P2",
+    "front": {
+      "text": "Adjustable product: what range?",
+      "image": null
+    },
+    "back": "**5th female → 95th male** covers 90% of mixed users\nOffice chair height, car seat travel",
+    "credit": null
+  },
+  {
+    "id": "card-case-washbasin",
+    "category": "anthropometry",
+    "priority": "P1",
+    "front": {
+      "text": "CEED 2022: washbasin height designed for…?",
+      "image": "images/card-case-washbasin.svg"
+    },
+    "back": "**Shortest 5% adult Indian female** (key C)\nHeight limits reach: the smallest user must use it comfortably",
+    "credit": null
+  },
+  {
+    "id": "card-case-bus-seat",
+    "category": "anthropometry",
+    "priority": "P1",
+    "front": {
+      "text": "CEED 2026: bus seat. Which percentiles for sitting height and hip breadth?",
+      "image": "images/card-case-bus-seat.svg"
+    },
+    "back": "**50th percentile sitting height** (backrest, non-adjustable average)\n**95th percentile hip breadth** (seat width is a clearance)\nKey B",
+    "credit": null
+  },
+  {
+    "id": "card-work-heights",
+    "category": "anthropometry",
+    "priority": "P1",
+    "front": {
+      "text": "Kitchen: washing, rolling dough, chopping. Same counter height?",
+      "image": "images/card-work-heights.svg"
+    },
+    "back": "**No: different heights** (2023 Q25, key D)\nSet each surface where the hands work: rolling (pressing down) lower; washing happens down in the basin, so the sink rim sits higher",
+    "credit": null
+  },
+  {
+    "id": "card-seat-height",
+    "category": "anthropometry",
+    "priority": "P2",
+    "front": {
+      "text": "Chair seat height: rule of thumb and percentile?",
+      "image": null
+    },
+    "back": "≈ **40–45 cm** for adults\nSet from **5th percentile popliteal height** (back of knee to floor) so short users' feet reach the floor",
+    "credit": null
+  },
+  {
+    "id": "card-no-percentile-sum",
+    "category": "anthropometry",
+    "priority": "P3",
+    "front": {
+      "text": "Can you add percentiles across body parts?",
+      "image": null
+    },
+    "back": "**No.** A 95th-percentile stature person is not 95th in every dimension\nUse the right percentile for each dimension separately",
+    "credit": null
+  },
+  {
+    "id": "card-gestalt-proximity",
+    "category": "gestalt",
+    "priority": "P1",
+    "front": {
+      "text": "Which Gestalt principle?",
+      "image": "images/card-gestalt-proximity.svg"
+    },
+    "back": "**Proximity**: things close together are seen as a group\nSpacing alone makes rows or columns",
+    "credit": null
+  },
+  {
+    "id": "card-gestalt-similarity",
+    "category": "gestalt",
+    "priority": "P1",
+    "front": {
+      "text": "Which Gestalt principle?",
+      "image": "images/card-gestalt-similarity.svg"
+    },
+    "back": "**Similarity**: things that look alike (shape, colour, size) group together\nEven when evenly spaced",
+    "credit": null
+  },
+  {
+    "id": "card-gestalt-continuity",
+    "category": "gestalt",
+    "priority": "P1",
+    "front": {
+      "text": "Which Gestalt principle?",
+      "image": "images/card-gestalt-continuity.svg"
+    },
+    "back": "**Continuity**: the eye follows the smoothest line or curve\nTwo crossing curves read as two lines, not four pieces",
+    "credit": null
+  },
+  {
+    "id": "card-gestalt-closure",
+    "category": "gestalt",
+    "priority": "P1",
+    "front": {
+      "text": "Which Gestalt principle?",
+      "image": "images/card-gestalt-closure.svg"
+    },
+    "back": "**Closure**: the mind fills gaps to see a complete shape\nBroken circle still reads as a circle (WWF panda logo)",
+    "credit": null
+  },
+  {
+    "id": "card-gestalt-figure-ground",
+    "category": "gestalt",
+    "priority": "P2",
+    "front": {
+      "text": "Which Gestalt principle?",
+      "image": "images/card-gestalt-figure-ground.svg"
+    },
+    "back": "**Figure–ground**: we split a scene into object and background; it can flip\nRubin's vase: vase or two faces",
+    "credit": null
+  },
+  {
+    "id": "card-gestalt-common-fate",
+    "category": "gestalt",
+    "priority": "P2",
+    "front": {
+      "text": "Which Gestalt principle?",
+      "image": "images/card-gestalt-common-fate.svg"
+    },
+    "back": "**Common fate**: elements moving in the same direction group together\nArrows pointing the same way, a flock of birds",
+    "credit": null
+  },
+  {
+    "id": "card-gestalt-symmetry",
+    "category": "gestalt",
+    "priority": "P2",
+    "front": {
+      "text": "Which Gestalt principle?",
+      "image": "images/card-gestalt-symmetry.svg"
+    },
+    "back": "**Symmetry**: symmetrical elements are seen as one unit\nBrackets [ ] { } pair up across a gap",
+    "credit": null
+  },
+  {
+    "id": "card-gestalt-common-region",
+    "category": "gestalt",
+    "priority": "P2",
+    "front": {
+      "text": "Which Gestalt principle?",
+      "image": "images/card-gestalt-common-region.svg"
+    },
+    "back": "**Common region**: elements inside a shared boundary group together\nCards and boxes in UI",
+    "credit": null
+  },
+  {
+    "id": "card-gestalt-pragnanz",
+    "category": "gestalt",
+    "priority": "P3",
+    "front": {
+      "text": "Which Gestalt principle?",
+      "image": "images/card-gestalt-pragnanz.svg"
+    },
+    "back": "**Prägnanz** (law of simplicity): we read complex figures in the simplest way\nOlympic rings = five circles, not a tangle of curves",
+    "credit": null
+  },
+  {
+    "id": "card-gestalt-order-2026",
+    "category": "gestalt",
+    "priority": "P1",
+    "front": {
+      "text": "2026 Q44: four Gestalt images left to right?",
+      "image": null
+    },
+    "back": "**Similarity, Continuity, Proximity, Closure** (key B)",
+    "credit": null
+  },
+  {
+    "id": "card-ui-radio",
+    "category": "ui-component",
+    "priority": "P1",
+    "front": {
+      "text": "Name the control and when to use it.",
+      "image": "images/card-ui-radio.svg"
+    },
+    "back": "**Radio buttons**: pick exactly **one** of a few (2–6) visible options\nOptions are mutually exclusive, e.g. payment method, gender",
+    "credit": null
+  },
+  {
+    "id": "card-ui-checkbox",
+    "category": "ui-component",
+    "priority": "P1",
+    "front": {
+      "text": "Name the control and when to use it.",
+      "image": "images/card-ui-checkbox.svg"
+    },
+    "back": "**Checkboxes**: pick **any number**, each independent\nAlso a single on/off that applies on submit (\"I agree\")",
+    "credit": null
+  },
+  {
+    "id": "card-ui-dropdown",
+    "category": "ui-component",
+    "priority": "P1",
+    "front": {
+      "text": "Name the control and when to use it.",
+      "image": "images/card-ui-dropdown.svg"
+    },
+    "back": "**Dropdown (select)**: pick one from a **long** list (country, state, year)\nSaves space; wrong for 2–3 options, which should be radios",
+    "credit": null
+  },
+  {
+    "id": "card-ui-toggle",
+    "category": "ui-component",
+    "priority": "P1",
+    "front": {
+      "text": "Name the control and when to use it.",
+      "image": "images/card-ui-toggle.svg"
+    },
+    "back": "**Toggle switch**: binary setting with **immediate** effect (Wi-Fi on/off)\nNo Save button needed; a checkbox waits for submit",
+    "credit": null
+  },
+  {
+    "id": "card-ui-stepper",
+    "category": "ui-component",
+    "priority": "P1",
+    "front": {
+      "text": "Name the control and when to use it.",
+      "image": "images/card-ui-stepper.svg"
+    },
+    "back": "**Stepper**: small whole-number changes with − / + (quantity, guests)\nGood for 1–10; use a text field for large numbers",
+    "credit": null
+  },
+  {
+    "id": "card-ui-slider",
+    "category": "ui-component",
+    "priority": "P2",
+    "front": {
+      "text": "Name the control and when to use it.",
+      "image": "images/card-ui-slider.svg"
+    },
+    "back": "**Slider**: approximate value in a continuous range (volume, price range)\nPoor for exact values",
+    "credit": null
+  },
+  {
+    "id": "card-ui-segmented",
+    "category": "ui-component",
+    "priority": "P2",
+    "front": {
+      "text": "Name the control and when to use it.",
+      "image": "images/card-ui-segmented.svg"
+    },
+    "back": "**Segmented control**: 2–5 mutually exclusive options as one joined bar\nSwitches a mode or view (Day / Week / Month)",
+    "credit": null
+  },
+  {
+    "id": "card-ui-tabs",
+    "category": "ui-component",
+    "priority": "P2",
+    "front": {
+      "text": "Name the control and when to use it.",
+      "image": "images/card-ui-tabs.svg"
+    },
+    "back": "**Tabs**: switch between sibling content views on one screen\nNavigation, not a form input",
+    "credit": null
+  },
+  {
+    "id": "card-ui-misuse-2026",
+    "category": "ui-component",
+    "priority": "P1",
+    "front": {
+      "text": "2026 Q37: how to spot a screen that misuses UI components?",
+      "image": null
+    },
+    "back": "Look for: **checkboxes for an either-or** choice · **radios for multi-select** · **dropdown for yes/no** · toggle that needs Save\nKey D was the screen breaking these rules",
+    "credit": null
+  },
+  {
+    "id": "card-fitts-law",
+    "category": "ui-component",
+    "priority": "P3",
+    "front": {
+      "text": "Fitts's law?",
+      "image": null
+    },
+    "back": "Time to hit a target rises with **distance** and falls with **size**\nMake frequent buttons big and close; screen edges and corners are easy targets",
+    "credit": null
+  },
+  {
+    "id": "card-hicks-law",
+    "category": "ui-component",
+    "priority": "P3",
+    "front": {
+      "text": "Hick's law?",
+      "image": null
+    },
+    "back": "Decision time grows with the **number of choices** (logarithmically)\nFewer, grouped options → faster choice",
+    "credit": null
+  },
+  {
+    "id": "card-nielsen-1",
+    "category": "ui-component",
+    "priority": "P3",
+    "front": {
+      "text": "Nielsen's usability heuristics 1–5?",
+      "image": null
+    },
+    "back": "1 Visibility of system status · 2 Match with the real world · 3 User control and freedom\n4 Consistency and standards · 5 Error prevention",
+    "credit": null
+  },
+  {
+    "id": "card-nielsen-2",
+    "category": "ui-component",
+    "priority": "P3",
+    "front": {
+      "text": "Nielsen's usability heuristics 6–10?",
+      "image": null
+    },
+    "back": "6 Recognition over recall · 7 Flexibility and efficiency · 8 Aesthetic, minimalist design\n9 Help users recover from errors · 10 Help and documentation",
+    "credit": null
+  },
+  {
+    "id": "card-affordance",
+    "category": "ui-component",
+    "priority": "P3",
+    "front": {
+      "text": "Affordance vs signifier (Don Norman)?",
+      "image": null
+    },
+    "back": "**Affordance**: what an object lets you do (a handle affords pulling)\n**Signifier**: the cue that shows how (\"Push\" plate) · a \"Norman door\" sends the wrong signal",
+    "credit": null
+  },
+  {
+    "id": "card-ux-stakeholders",
+    "category": "ui-component",
+    "priority": "P1",
+    "front": {
+      "text": "Food-delivery app research: whose views count?",
+      "image": null
+    },
+    "back": "**All stakeholders**: customers, delivery riders, restaurant staff, support staff\n2023 Q14, key A, B, C, D",
+    "credit": null
+  },
+  {
+    "id": "card-barcelona-chair",
+    "category": "design-icon",
+    "priority": "P1",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-barcelona-chair.jpg"
+    },
+    "back": "**Barcelona chair**, Mies van der Rohe (with Lilly Reich), 1929\nX-shaped flat steel legs, tufted leather cushions · asked 2018",
+    "credit": {
+      "author": "sailko",
+      "licence": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ngv_design,_ludwig_mies_van_der_rohe_%26_co,_barcelona_chair.JPG"
+    }
+  },
+  {
+    "id": "card-wassily-chair",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-wassily-chair.jpg"
+    },
+    "back": "**Wassily chair (B3)**, Marcel Breuer, 1925–26, Bauhaus\nBent tubular steel + leather or canvas straps; inspired by bicycle handlebars",
+    "credit": {
+      "author": "Lorkan",
+      "licence": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bauhaus_3_Chair.jpg"
+    }
+  },
+  {
+    "id": "card-red-blue-chair",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-red-blue-chair.jpg"
+    },
+    "back": "**Red and Blue Chair**, Gerrit Rietveld, c.1917–23, De Stijl\nFlat planes on a frame of sticks; primary colours, black frame, yellow ends",
+    "credit": {
+      "author": "Picture taken by User:Ellywa",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rietveld_chair_1.JPG"
+    }
+  },
+  {
+    "id": "card-eames-lounge",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-eames-lounge.jpg"
+    },
+    "back": "**Eames Lounge Chair & Ottoman**, Charles & Ray Eames, 1956\nMoulded plywood shells + leather cushions on a swivel base",
+    "credit": {
+      "author": "sailko",
+      "licence": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ngv_design,_charles_eames_and_herman_miller,_lounge_chair_670,_1956.JPG"
+    }
+  },
+  {
+    "id": "card-eames-lcw",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-eames-lcw.jpg"
+    },
+    "back": "**LCW (Lounge Chair Wood)**, Charles & Ray Eames, 1945\nMoulded plywood seat and back on plywood legs, rubber shock mounts",
+    "credit": {
+      "author": "Hiart",
+      "licence": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LCW_(Lounge_Chair_Wood)_Chair_by_Charles_and_Ray_Eames,_Honolulu_Museum_of_Art_4410.1.JPG"
+    }
+  },
+  {
+    "id": "card-thonet-14",
+    "category": "design-icon",
+    "priority": "P3",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-thonet-14.jpg"
+    },
+    "back": "**Thonet No. 14 (café chair)**, Michael Thonet, 1859\nSteam-bent beechwood, six parts, flat-packed; best-selling chair ever",
+    "credit": {
+      "author": "Holger.Ellgaard",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Michael_Thonet_14.jpg"
+    }
+  },
+  {
+    "id": "card-tulip-chair",
+    "category": "design-icon",
+    "priority": "P3",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-tulip-chair.jpg"
+    },
+    "back": "**Tulip chair**, Eero Saarinen, 1956\nSingle pedestal base, moulded fibreglass shell: no \"slum of legs\"",
+    "credit": {
+      "author": "Holger Ellgaard",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saarinen_Tulpanstolen.jpg"
+    }
+  },
+  {
+    "id": "card-egg-chair",
+    "category": "design-icon",
+    "priority": "P3",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-egg-chair.jpg"
+    },
+    "back": "**Egg chair**, Arne Jacobsen, 1958, for the SAS Royal Hotel, Copenhagen\nEnclosing upholstered shell on a swivel base",
+    "credit": {
+      "author": "Nasjonalmuseet",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egg_chair_-_Arne_Jacobsen_(1958)_2.jpg"
+    }
+  },
+  {
+    "id": "card-panton-chair",
+    "category": "design-icon",
+    "priority": "P3",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-panton-chair.jpg"
+    },
+    "back": "**Panton chair**, Verner Panton, 1967\nFirst single-piece moulded plastic cantilever chair",
+    "credit": {
+      "author": "sailko",
+      "licence": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ngv_design,_verner_panton,_panton_chair,_1960_02.JPG"
+    }
+  },
+  {
+    "id": "card-blow-chair",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Inflatable chair: name the icon (2026 Q28 toy ↔ furniture).",
+      "image": null
+    },
+    "back": "**Blow chair**, De Pas, D'Urbino, Lomazzi, Scolari for Zanotta, 1967\nInflatable PVC tubes; pop, cheap, temporary · 2026 matched inflatable toy ↔ inflatable chair",
+    "credit": null
+  },
+  {
+    "id": "card-cardboard-chair",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Corrugated-cardboard furniture icon?",
+      "image": null
+    },
+    "back": "**Wiggle Side Chair**, Frank Gehry, *Easy Edges* series, 1972\nLaminated corrugated cardboard layers · 2026 Q28 matched nesting doll ↔ stacked cardboard chairs",
+    "credit": null
+  },
+  {
+    "id": "card-spun-chair",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Spinning-top chair: name the icon.",
+      "image": null
+    },
+    "back": "**Spun chair**, Thomas Heatherwick, 2007–10\nRotationally symmetric; rock and spin in it · 2026 Q28 matched spinning top ↔ Spun-type chair",
+    "credit": null
+  },
+  {
+    "id": "card-toy-furniture-2026",
+    "category": "design-icon",
+    "priority": "P1",
+    "front": {
+      "text": "2026 Q28: match toys to furniture.",
+      "image": null
+    },
+    "back": "Inflatable toy ↔ inflatable chair · nesting doll ↔ stacked cardboard chairs\nLego ↔ modular kids' table · spinning top ↔ Spun-type chair\nShared principle (material, stacking, module, rotation), not looks",
+    "credit": null
+  },
+  {
+    "id": "card-juicy-salif",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-juicy-salif.jpg"
+    },
+    "back": "**Juicy Salif**, Philippe Starck for Alessi, 1990\nCast aluminium spider-legged lemon squeezer; postmodern icon",
+    "credit": {
+      "author": "Niklas Morberg",
+      "licence": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Juicy_Salif_-_78365.jpg"
+    }
+  },
+  {
+    "id": "card-anna-g",
+    "category": "design-icon",
+    "priority": "P1",
+    "front": {
+      "text": "Character corkscrew shaped like a smiling woman. Name it and designer.",
+      "image": null
+    },
+    "back": "**Anna G corkscrew**, Alessandro Mendini for Alessi, 1994\nArms rise as the screw goes in; postmodern character product\nCEED 2025 Part B Q4 stimulus (re-imagine a tea flask in its language)",
+    "credit": null,
+    "revealsPromptIds": [
+      "ceed-2025-b-q4"
+    ]
+  },
+  {
+    "id": "card-heydar-aliyev",
+    "category": "design-icon",
+    "priority": "P1",
+    "front": {
+      "text": "Flowing white building with no corners. Name it and architect.",
+      "image": "images/card-heydar-aliyev.jpg"
+    },
+    "back": "**Heydar Aliyev Center**, Baku, **Zaha Hadid**, 2012\nContinuous curved white surfaces, ground folding into roof; parametric\nCEED 2022 Part B Q4 stimulus (an electric iron in its language)",
+    "credit": {
+      "author": "Emin Allahverdi",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heydar_Aliyev_Center_1.2.jpg"
+    },
+    "revealsPromptIds": [
+      "ceed-2022-b-q4"
+    ]
+  },
+  {
+    "id": "card-sagrada-familia",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Name the building and architect.",
+      "image": "images/card-sagrada-familia.jpg"
+    },
+    "back": "**Sagrada Família**, Barcelona, Antoni Gaudí, 1882–\nOrganic, bone-like towers; Tower of Jesus Christ finished 2026 (Gaudí centenary)",
+    "credit": {
+      "author": "Jopparn",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sagrada_Fam%C3%ADlia_2010.JPG"
+    }
+  },
+  {
+    "id": "card-valentine",
+    "category": "design-icon",
+    "priority": "P3",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-valentine.jpg"
+    },
+    "back": "**Valentine typewriter**, Ettore Sottsass for Olivetti, 1969\nRed plastic portable with matching case",
+    "credit": {
+      "author": "Grey Geezer derivative work: Hic et nunc",
+      "licence": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Olivetti-Valentine-with-shell_(cut_out).jpg"
+    }
+  },
+  {
+    "id": "card-braun-sk4",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Dieter Rams: signature product and principle?",
+      "image": null
+    },
+    "back": "**Braun SK4** radio-phonograph (\"Snow White's Coffin\"), Rams + Gugelot, 1956\n\"Less, but better\"; 10 principles of good design; Braun inspired Apple's look",
+    "credit": null
+  },
+  {
+    "id": "card-tube-map",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Who made the first schematic metro map?",
+      "image": null
+    },
+    "back": "**Harry Beck**, London Underground diagram, 1933\nLines only at 90° and 45°, even station spacing: topology over geography\nVignelli's NYC subway diagram (1972) followed the idea",
+    "credit": null
+  },
+  {
+    "id": "card-i-love-ny",
+    "category": "design-icon",
+    "priority": "P1",
+    "front": {
+      "text": "Who designed the I♥NY logo?",
+      "image": null
+    },
+    "back": "**Milton Glaser**, 1977\nHeart as rebus, American Typewriter font · asked 2016 (vs Paul Rand, Saul Bass)",
+    "credit": null
+  },
+  {
+    "id": "card-paul-rand",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Paul Rand: known for?",
+      "image": null
+    },
+    "back": "Playful modernist corporate logos: **IBM** (striped), ABC, UPS, Westinghouse, NeXT",
+    "credit": null
+  },
+  {
+    "id": "card-saul-bass",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Saul Bass: known for?",
+      "image": null
+    },
+    "back": "Cut-paper **film title** sequences and posters: *Vertigo*, *Psycho*, *Anatomy of a Murder*\nLogos: AT&T, Kleenex",
+    "credit": null
+  },
+  {
+    "id": "card-otl-aicher",
+    "category": "design-icon",
+    "priority": "P2",
+    "front": {
+      "text": "Who drew the Munich 1972 Olympic pictograms?",
+      "image": null
+    },
+    "back": "**Otl Aicher**, 1972\nModular stick figures on a strict grid, only 90° and 45° angles\nModel for icon sets with a consistent visual language",
+    "credit": null
+  },
+  {
+    "id": "card-logos-tech",
+    "category": "design-icon",
+    "priority": "P1",
+    "front": {
+      "text": "Exact-form recall: Google, Chrome, Apple, Tesla logos.",
+      "image": null
+    },
+    "back": "**Google**: blue G, red o, yellow o, blue g, green l, red e (2016)\n**Chrome**: red, yellow, green ring segments around a blue centre (2020) · **Apple**: bitten apple + leaf, Rob Janoff 1977 (2018)\n**Tesla**: stylised T, a slice of an electric motor (2016)",
+    "credit": null
+  },
+  {
+    "id": "card-eames-india-report",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "What was the India Report?",
+      "image": null
+    },
+    "back": "Charles & Ray Eames, presented **7 April 1958** to the Government of India (Ford Foundation)\nRecommended a national design institute → NID\nUsed the *lota* as the model of well-designed everyday object",
+    "credit": null
+  },
+  {
+    "id": "card-nid",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "NID: when and how founded?",
+      "image": null
+    },
+    "back": "**National Institute of Design, Ahmedabad, 1961**, first as National Institute of Industrial Design\nSet up after the India Report with Ford Foundation support; Gira and Gautam Sarabhai",
+    "credit": null
+  },
+  {
+    "id": "card-idc",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "IDC, IIT Bombay: when?",
+      "image": null
+    },
+    "back": "**Industrial Design Centre, 1969**, now IDC School of Design\nPostgraduate industrial design at IIT Bombay; IIT Bombay runs CEED",
+    "credit": null
+  },
+  {
+    "id": "card-rupee-symbol",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "Who designed ₹ and how is it built?",
+      "image": "images/card-rupee-symbol.jpg"
+    },
+    "back": "**D. Udaya Kumar** (IIT Bombay alumnus), chosen 15 July 2010 from 3,000+ entries\nDevanagari *ra* + Latin R; two lines suggest the tricolour and \"equals\"\nUnicode U+20B9",
+    "credit": {
+      "author": "Original: D. Udaya Kumar Vector: Orionist",
+      "licence": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_Rupee_symbol.svg"
+    }
+  },
+  {
+    "id": "card-amul-girl",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "Who created the Amul girl and when?",
+      "image": null
+    },
+    "back": "**1966**, Sylvester daCunha (ASP agency), drawn by Eustace Fernandes\nTopical hoardings; \"Utterly Butterly Delicious\"",
+    "credit": null
+  },
+  {
+    "id": "card-air-india-maharaja",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "Air India's Maharaja mascot: who and when?",
+      "image": null
+    },
+    "back": "**1946**, conceived by Bobby Kooka, drawn by Umesh Rao (J. Walter Thompson)\nMoustached, turbaned host",
+    "credit": null
+  },
+  {
+    "id": "card-doordarshan-logo",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "Who designed the Doordarshan logo?",
+      "image": null
+    },
+    "back": "**Devashis Bhattacharyya**, NID student, early 1970s; chosen by Indira Gandhi\nTwo swirling curves forming an eye; animated by R.L. Mistry\nReplaced by a saffron version in 2024",
+    "credit": null
+  },
+  {
+    "id": "card-satyajit-ray-type",
+    "category": "indian-design-history",
+    "priority": "P1",
+    "front": {
+      "text": "Satyajit Ray as type designer: name his typefaces.",
+      "image": null
+    },
+    "back": "**Ray Roman, Ray Bizarre, Daphnis, Holiday Script**\nAlso designed book covers and his film posters · asked 2016",
+    "credit": null
+  },
+  {
+    "id": "card-parle-g",
+    "category": "indian-design-history",
+    "priority": "P1",
+    "front": {
+      "text": "Parle-G pack: what to remember?",
+      "image": null
+    },
+    "back": "Yellow-and-white wax-paper pack, red Parle-G wordmark, the Parle-G girl illustration (Maganlal Daiya, 1960s)\n\"G\" = glucose · pack font asked 2019",
+    "credit": null
+  },
+  {
+    "id": "card-make-in-india",
+    "category": "indian-design-history",
+    "priority": "P1",
+    "front": {
+      "text": "Government initiative symbols: Make in India, Swachh Bharat.",
+      "image": null
+    },
+    "back": "**Make in India** (2014): a lion made of cogs, by Wieden+Kennedy\n**Swachh Bharat**: Gandhi's round spectacles · asked 2016",
+    "credit": null
+  },
+  {
+    "id": "card-chandigarh",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "Who planned Chandigarh and its Capitol Complex?",
+      "image": "images/card-chandigarh.jpg"
+    },
+    "back": "**Le Corbusier**, 1950s, with Pierre Jeanneret; raw concrete (*béton brut*), Open Hand monument\nJeanneret's teak-and-cane chairs became design icons",
+    "credit": {
+      "author": "duncid",
+      "licence": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palace_of_Assembly_Chandigarh_2006.jpg"
+    }
+  },
+  {
+    "id": "card-bv-doshi",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "B.V. Doshi: known for?",
+      "image": null
+    },
+    "back": "First Indian **Pritzker Prize** (2018); born 1927 (centenary 2027)\nIIM Bangalore, Aranya low-cost housing (Indore), Sangath studio (Ahmedabad)",
+    "credit": null
+  },
+  {
+    "id": "card-charles-correa",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "Charles Correa: known for?",
+      "image": null
+    },
+    "back": "Architect: Gandhi Smarak Sangrahalaya (Ahmedabad), Jawahar Kala Kendra (Jaipur), Kanchanjunga apartments (Mumbai)\nClimate-led modernism, open-to-sky spaces",
+    "credit": null
+  },
+  {
+    "id": "card-ambassador",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-ambassador.jpg"
+    },
+    "back": "**Hindustan Ambassador**, 1958–2014, Uttarpara, West Bengal\nBased on the Morris Oxford Series III; India's official and taxi car",
+    "credit": {
+      "author": "David Howard",
+      "licence": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hindustan_Ambassador_Stanmore_station.jpg"
+    }
+  },
+  {
+    "id": "card-bajaj-chetak",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "Name the object, its designer and year.",
+      "image": "images/card-bajaj-chetak.jpg"
+    },
+    "back": "**Bajaj Chetak** scooter, 1972\nBased on the Vespa Sprint; \"Hamara Bajaj\" family scooter",
+    "credit": {
+      "author": "Dharmesh Patel",
+      "licence": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bajaj_chetak_scooter_01.jpg"
+    }
+  },
+  {
+    "id": "card-tata-nano",
+    "category": "indian-design-history",
+    "priority": "P3",
+    "front": {
+      "text": "Tata Nano: when and why notable?",
+      "image": null
+    },
+    "back": "Unveiled **2008** as the ₹1 lakh \"people's car\"\nRear engine, compact; frugal design case study",
+    "credit": null
+  },
+  {
+    "id": "card-colour-wheel",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "RYB colour wheel: primaries, secondaries, tertiaries.",
+      "image": "images/card-colour-wheel.svg"
+    },
+    "back": "Primaries **red, yellow, blue** → secondaries orange, green, violet\nTertiaries mix a primary + neighbouring secondary (red-orange…) → 12 hues",
+    "credit": null
+  },
+  {
+    "id": "card-monochromatic",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "Which colour scheme?",
+      "image": "images/card-monochromatic.svg"
+    },
+    "back": "**Monochromatic**: one hue in its tints, shades and tones",
+    "credit": null
+  },
+  {
+    "id": "card-analogous",
+    "category": "colour-and-type",
+    "priority": "P1",
+    "front": {
+      "text": "Which colour scheme?",
+      "image": "images/card-analogous.svg"
+    },
+    "back": "**Analogous**: 2–4 neighbouring hues on the wheel\nPicasso's Blue Period (blues, blue-greens, violets) → **simple analogous** (2023 Q23, key C)",
+    "credit": null
+  },
+  {
+    "id": "card-complementary",
+    "category": "colour-and-type",
+    "priority": "P1",
+    "front": {
+      "text": "Which colour scheme?",
+      "image": "images/card-complementary.svg"
+    },
+    "back": "**Complementary**: two opposite hues (red–green, blue–orange, yellow–violet)\nMaximum contrast",
+    "credit": null
+  },
+  {
+    "id": "card-split-complementary",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "Which colour scheme?",
+      "image": "images/card-split-complementary.svg"
+    },
+    "back": "**Split-complementary**: one hue + the two hues either side of its complement\nContrast with less tension",
+    "credit": null
+  },
+  {
+    "id": "card-triadic",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "Which colour scheme?",
+      "image": "images/card-triadic.svg"
+    },
+    "back": "**Triadic**: three hues equally spaced (120° apart), e.g. red, yellow, blue",
+    "credit": null
+  },
+  {
+    "id": "card-tetradic",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "Which colour scheme?",
+      "image": "images/card-tetradic.svg"
+    },
+    "back": "**Tetradic / double-complementary**: two complementary pairs (rectangle or square on the wheel)",
+    "credit": null
+  },
+  {
+    "id": "card-tint-shade-tone",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "Tint, shade, tone?",
+      "image": null
+    },
+    "back": "**Tint** = hue + white · **Shade** = hue + black · **Tone** = hue + grey\nHue (colour family), saturation (purity), value (lightness)",
+    "credit": null
+  },
+  {
+    "id": "card-warm-cool",
+    "category": "colour-and-type",
+    "priority": "P3",
+    "front": {
+      "text": "Warm vs cool colours?",
+      "image": null
+    },
+    "back": "**Warm** (red, orange, yellow) feel near and active; **cool** (blue, green, violet) recede and calm",
+    "credit": null
+  },
+  {
+    "id": "card-rgb-cmyk",
+    "category": "colour-and-type",
+    "priority": "P1",
+    "front": {
+      "text": "RGB vs CMYK. What is C0 M100 Y100 K0?",
+      "image": null
+    },
+    "back": "**RGB** additive (light, screens): R+G+B = white · **CMYK** subtractive (ink, print)\nM + Y = **red** · C + Y = green · C + M = blue · K adds true black\nC0 M100 Y100 K0 → red (2015 Q20)",
+    "credit": null
+  },
+  {
+    "id": "card-screen-angles",
+    "category": "colour-and-type",
+    "priority": "P1",
+    "front": {
+      "text": "CMYK halftone screen angles?",
+      "image": null
+    },
+    "back": "**K 45°** (most visible ink at the least visible angle), M 75°, C 15°, Y 0°\nAvoids moiré · asked 2016",
+    "credit": null
+  },
+  {
+    "id": "card-serif-sans",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "Serif vs sans-serif vs slab vs monospace?",
+      "image": "images/card-serif-sans.svg"
+    },
+    "back": "**Serif**: small feet on strokes (Times, Garamond) · **Sans**: none (Helvetica, Futura)\n**Slab**: thick block serifs (Rockwell) · **Monospace**: every glyph the same width (Courier; 2025 NAT)",
+    "credit": null
+  },
+  {
+    "id": "card-font-weights",
+    "category": "colour-and-type",
+    "priority": "P1",
+    "front": {
+      "text": "Which are real font-weight names?",
+      "image": null
+    },
+    "back": "Hairline/Thin, Extra Light, Light, Regular, Medium, Semibold, Bold, Extra Bold, Black (100–900)\n2015 Q13: **Hairline** and **Bold** real; Feather and Grey are not",
+    "credit": null
+  },
+  {
+    "id": "card-point-pica",
+    "category": "colour-and-type",
+    "priority": "P1",
+    "front": {
+      "text": "Point and pica?",
+      "image": null
+    },
+    "back": "1 point = 1/72 inch · **12 points = 1 pica** · 6 picas = 1 inch\n\"Pica\" is a typography unit (2015 Q46)",
+    "credit": null
+  },
+  {
+    "id": "card-type-anatomy",
+    "category": "colour-and-type",
+    "priority": "P1",
+    "front": {
+      "text": "Font anatomy: name the parts.",
+      "image": "images/card-type-anatomy.svg"
+    },
+    "back": "Baseline, x-height, cap height, ascender, descender\nCounter (enclosed space), bowl, stem, serif, terminal · \"font anatomy\" was a 2024 Part B criterion",
+    "credit": null
+  },
+  {
+    "id": "card-kern-track-lead",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "Kerning vs tracking vs leading?",
+      "image": "images/card-kern-track-lead.svg"
+    },
+    "back": "**Kerning**: space between one letter pair (AV) · **Tracking**: even spacing across a word or line\n**Leading**: space between lines (from strips of lead)",
+    "credit": null
+  },
+  {
+    "id": "card-type-classes",
+    "category": "colour-and-type",
+    "priority": "P3",
+    "front": {
+      "text": "Old-style vs transitional vs Didone?",
+      "image": null
+    },
+    "back": "**Old-style** (Garamond): low contrast, angled stress · **Transitional** (Baskerville, Times)\n**Didone** (Bodoni, Didot): extreme thick–thin, vertical stress, hairline serifs · Fat face = heavy Didone display (2018 Part B \"d\")",
+    "credit": null
+  },
+  {
+    "id": "card-helvetica",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "Helvetica: who and when?",
+      "image": null
+    },
+    "back": "**Max Miedinger & Eduard Hoffmann**, Haas foundry, **1957** (first named Neue Haas Grotesk)\nNeutral neo-grotesque sans; Swiss Style workhorse",
+    "credit": null
+  },
+  {
+    "id": "card-futura",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "Futura: who and when?",
+      "image": null
+    },
+    "back": "**Paul Renner**, **1927**, geometric sans built on circle, square, triangle\nBauhaus-era; centenary 2027",
+    "credit": null
+  },
+  {
+    "id": "card-sans-families",
+    "category": "colour-and-type",
+    "priority": "P3",
+    "front": {
+      "text": "Geometric vs grotesque vs humanist sans?",
+      "image": null
+    },
+    "back": "**Geometric** (Futura): circles and straight lines · **Neo-grotesque** (Helvetica, Akzidenz): uniform, closed\n**Humanist** (Gill Sans, Frutiger): calligraphic, open counters, best for signage",
+    "credit": null
+  },
+  {
+    "id": "card-writing-systems",
+    "category": "colour-and-type",
+    "priority": "P1",
+    "front": {
+      "text": "Kanji, Hiragana, Katakana, Jiaguwen are…?",
+      "image": null
+    },
+    "back": "**Writing systems**: Kanji, Hiragana, Katakana (Japanese); Jiaguwen = Chinese oracle-bone script\nAsked 2018 Q39",
+    "credit": null
+  },
+  {
+    "id": "card-devanagari",
+    "category": "colour-and-type",
+    "priority": "P2",
+    "front": {
+      "text": "Devanagari: key type terms?",
+      "image": null
+    },
+    "back": "**Shirorekha**: the headline joining letters · **Matra**: vowel sign attached to a consonant\n**Conjunct**: joined consonants · matra keyboard layout asked 2017",
+    "credit": null
+  }
+]

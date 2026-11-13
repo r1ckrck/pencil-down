@@ -1,0 +1,126 @@
+[
+  {
+    "slot": "sketching",
+    "name": "Sketching: commit the camera at minute 5",
+    "decision": "Camera height and framing",
+    "script": [
+      { "from": 0, "to": 2, "phase": "Read", "doThis": "Underline whose POV, who is present, the moment or emotion, and the medium limits (HB only, given space). Copy the 4 criteria into the margin." },
+      { "from": 2, "to": 4, "phase": "Generate", "doThis": "Two thumbnails (≈5 cm) with different eye heights or framings. Fix eye height first: a chair seat ≈ 45 cm gives a low horizon with adults looming; a ceiling camera is a plan view." },
+      { "from": 4, "to": 5, "phase": "Commit", "doThis": "Pick one thumbnail against the gate. Mark the horizon and vanishing points on the final sheet." },
+      { "from": 5, "to": 21, "phase": "Execute", "doThis": "5–8 block: ground plane, gesture figures in fore, middle and back, one in-frame POV cue (chair leg, snout, lamp rim). 8–18 line: heavy near, light far; most time on the faces and body language the brief names; add setting props. 18–21 tone: depth and ground shadows only." },
+      { "from": 21, "to": 24, "phase": "Buffer", "doThis": "Is the POV unmistakable? Every named character and action present? Inside the given space?" }
+    ],
+    "failureModes": [
+      "Drawing from a normal standing eye level: the brief's POV is lost",
+      "Tiny figures with faces too small to read an expression",
+      "Over-shading or rendering instead of finishing the whole scene",
+      "Drawing only part of the \"whole scene\" asked for",
+      "Hesitant, hairy lines and wrong proportions"
+    ],
+    "criteria": [
+      "Character and expressions",
+      "Proportion and composition",
+      "Quality of sketching",
+      "Environment and props"
+    ]
+  },
+  {
+    "slot": "creativity",
+    "name": "Creativity: generate readings, then commit to the twist",
+    "decision": "Which symbol readings make a story with a frame-4 twist",
+    "script": [
+      { "from": 0, "to": 2, "phase": "Read", "doThis": "Write the hard rules in shorthand: symbols per frame, each used once, rotate/flip/scale only, title, frames numbered 1–4. Breaking one is the cheapest way to lose marks." },
+      { "from": 2, "to": 10, "phase": "Generate", "doThis": "3+ literal and non-literal readings per symbol (circle → sun, coin, plate, porthole, eye). Pair readings into candidate worlds. Keep generating to the bell: ideas do not run out as early as they feel." },
+      { "from": 10, "to": 11, "phase": "Commit", "doThis": "Pick the pairing with a frame-4 reversal (setup, build, turn, punchline) that passes the gate. Assign symbols to frames. Draft the title." },
+      { "from": 11, "to": 22, "phase": "Execute", "doThis": "One consistent character, one action per frame, varied shot distance (wide, medium, close). Simple figures; symbols drawn unmodified and recognisable." },
+      { "from": 22, "to": 24, "phase": "Buffer", "doThis": "Title present, frames numbered, each symbol used exactly once and still readable, light hatching for clarity." }
+    ],
+    "failureModes": [
+      "First-reading cliché (sun drawn as a sun)",
+      "No ending turn: the story just stops",
+      "Symbols distorted, reused or missing",
+      "Character changes look between frames",
+      "Frames overcrowded with detail"
+    ],
+    "criteria": [
+      "Originality",
+      "Graphical narrative (story communication)",
+      "Humour and surprise",
+      "Clarity and neatness of sketches"
+    ]
+  },
+  {
+    "slot": "visual",
+    "name": "Visual sensitivity: write the system rules before drawing",
+    "decision": "The written visual-system rules",
+    "script": [
+      { "from": 0, "to": 2, "phase": "Read", "doThis": "Note the set members, audience, colour limit, text ban and box size." },
+      { "from": 2, "to": 10, "phase": "Generate", "doThis": "3 metaphors per subject (Ocean Science → wave, submarine, coral, conch). Keep the least generic one that still reads instantly; add an Indian cue where the audience asks for it." },
+      { "from": 10, "to": 11, "phase": "Commit", "doThis": "Write the rules: container shape, grid, single stroke weight or fill-vs-outline, corner radius, flat front view, one shared motif. For lettering: list the given letters' stroke contrast, terminals and ornament." },
+      { "from": 11, "to": 22, "phase": "Execute", "doThis": "Draw all items in parallel, stage by stage (container → main shape → detail), so none is left unfinished. Keep detail low enough to read small." },
+      { "from": 22, "to": 24, "phase": "Buffer", "doThis": "Squint test: equal visual weight across the set. No text crept in? Every item finished?" }
+    ],
+    "failureModes": [
+      "Mixed styles: one outline, one filled, one 3D",
+      "Illustrations instead of icons",
+      "Text creeping into a no-text brief",
+      "Last item rushed or unfinished"
+    ],
+    "criteria": [
+      "Consistency of visual language",
+      "Thematic appropriateness",
+      "Effective communication",
+      "Composition, clarity and neatness"
+    ]
+  },
+  {
+    "slot": "form",
+    "name": "Form sensitivity: run the operation matrix, then commit",
+    "decision": "Which transformation of the given form",
+    "script": [
+      { "from": 0, "to": 2, "phase": "Read", "doThis": "Note the function, the given form, the allowed operations (cut, add, subtract, deform, repeat) and that its essence must stay." },
+      { "from": 2, "to": 10, "phase": "Generate", "doThis": "5–8 thumbnails, about one per operation: cut → shell seat; subtract → scooped cavity; repeat → cluster; deform → squashed pouf; add → form on segment legs. Keep the source form readable in silhouette." },
+      { "from": 10, "to": 11, "phase": "Commit", "doThis": "Gate plus a usability check: right height (seat ≈ 40–45 cm), a back or lean surface, stable, clear how it is used." },
+      { "from": 11, "to": 22, "phase": "Execute", "doThis": "11–20: one large 3/4 hero view, one light source, material by tone, cast shadow. 20–22: side view or detail callout, human silhouette for scale, material labels, one-line form → function rationale." },
+      { "from": 22, "to": 24, "phase": "Buffer", "doThis": "Light direction consistent? Essence of the form still obvious? Labels legible?" }
+    ],
+    "failureModes": [
+      "Generic product with the form stuck on: essence not used",
+      "Form kept intact so it is not usable (a sphere that rolls)",
+      "All the time spent rendering one weak idea",
+      "Inconsistent light direction"
+    ],
+    "criteria": [
+      "Uniqueness of the form",
+      "Form–function relevance and relationship",
+      "Detailing",
+      "Rendering quality"
+    ]
+  },
+  {
+    "slot": "problem-id",
+    "name": "Problem identification: budget problem finding, then commit twice",
+    "decision": "Four problems of different types, then the one with two distinct solution directions",
+    "script": [
+      { "from": 0, "to": 2, "phase": "Read", "doThis": "Note the deliverable split and marks (2026: 8 for four HMWs, 12 for two solutions). The time split follows the marks." },
+      { "from": 2, "to": 10, "phase": "Generate", "doThis": "Framing: walk the journey or scene step by step. At each step apply lenses: user (age, mobility, language), activity (luggage, toilets, medicines, payment), environment (climate, crowds, steps), other stakeholders. Dump 10–15 raw problems as keywords." },
+      { "from": 10, "to": 11, "phase": "Commit", "doThis": "Pick 4 that differ in type (physical, informational, social, safety) and stage. Phrase each as \"How can we [verb] [for whom] [in what context]\"." },
+      { "from": 11, "to": 13, "phase": "Commit", "doThis": "Pick the one HMW with two clearly different directions (e.g. product vs service)." },
+      { "from": 13, "to": 22, "phase": "Execute", "doThis": "Each solution in its box: sketch it in use with the user and context, 2–4 arrow notes, a short title. The two must differ in principle, not just in form." },
+      { "from": 22, "to": 24, "phase": "Buffer", "doThis": "Titles present? Every statement starts with \"How can we\"? Feasible at Indian cost levels?" }
+    ],
+    "failureModes": [
+      "Five versions of one problem type",
+      "Vague statements (\"make travel easier\")",
+      "Tech-magic solutions: an app or robot for everything",
+      "Over-drawn scene that leaves no time for annotation",
+      "Solving more than the one HMW asked for"
+    ],
+    "criteria": [
+      "Variety and uniqueness of the problems",
+      "Relevance",
+      "Practical feasibility of the design solutions",
+      "Clarity in communication"
+    ]
+  }
+]
