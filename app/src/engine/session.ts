@@ -25,11 +25,13 @@ import {
   selectPastPaperPrompts,
 } from "./selection";
 import { getSettings, updateSettings } from "./settings";
+import { generatedQuestion, saveSnapshot } from "./snapshots";
 
 export interface Ctx {
   db: Db;
   content: Content;
-  generators: Generator[];
+  generators: Generator[]; // current registry: new generated items come from here
+  legacyGenerators?: Generator[]; // frozen first generators for ids served before snapshots; defaults to legacy-v1
   now: () => number; // epoch ms; injectable for tests
   rand: Rand;
 }
@@ -219,7 +221,7 @@ export function createSession(ctx: Ctx, req: CreateRequest): SessionRow {
       items = assembleDrill(content, generators, pool, ctx.rand, { topic: req.topic, format: req.format, n });
       Object.assign(config, { topic: req.topic ?? null, format: req.format ?? null, n });
     } else if (kind === "revisit") {
-      items = assembleRevisit(content, generators, pool, dueQuestionIds(db, now));
+      items = assembleRevisit(content, (id) => generatedQuestion(ctx, id), pool, dueQuestionIds(db, now));
     } else if (kind === "past-paper") {
       const paper = req.paperId ? content.paperById.get(req.paperId) : undefined;
       if (!paper) throw badRequest("unknown paperId");
@@ -287,9 +289,10 @@ export function createSession(ctx: Ctx, req: CreateRequest): SessionRow {
     const insItem = db.prepare(
       `INSERT INTO a_responses (session_id, pos, question_id, source, format, topic, budget_ms) VALUES (?, ?, ?, ?, ?, ?, ?)`,
     );
-    items.forEach((it, pos) =>
-      insItem.run(sid, pos, it.questionId, it.source, it.format, it.topic, config.budgets[it.format] * 1000),
-    );
+    items.forEach((it, pos) => {
+      insItem.run(sid, pos, it.questionId, it.source, it.format, it.topic, config.budgets[it.format] * 1000);
+      if (it.question) saveSnapshot(db, it.question, "current", now);
+    });
     if (items.length) startVisit(db, sid, 0, now);
 
     const insAttempt = db.prepare(
@@ -358,7 +361,7 @@ function settleVisits(db: Db, sid: number, t: number) {
 // ---------- closing ----------
 
 function closeA(ctx: Ctx, sid: number, at: number, status: "completed" | "quit" | "expired") {
-  const { db, content, generators } = ctx;
+  const { db } = ctx;
   const s = getSession(db, sid);
   const v = openVisit(db, sid);
   if (v) endVisit(db, v, at, "closed");
@@ -366,7 +369,7 @@ function closeA(ctx: Ctx, sid: number, at: number, status: "completed" | "quit" 
   let max = 0;
   const upd = db.prepare("UPDATE a_responses SET outcome = ?, marks = ? WHERE session_id = ? AND pos = ?");
   for (const r of responses(db, sid)) {
-    const key = questionKey(content, generators, r.question_id);
+    const key = questionKey(ctx, r.question_id);
     if (!key) continue;
     const input = r.answer ? (JSON.parse(r.answer) as AnswerInput) : null;
     const scored = scoreAnswer(key.answer, input, s.config.scheme);

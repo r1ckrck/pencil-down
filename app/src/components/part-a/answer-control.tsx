@@ -147,12 +147,15 @@ export function AnswerControl({
   onAnswer,
   natValue,
   onNatChange,
+  labels = LETTERS,
 }: {
   format: Format;
   answer: AnswerInput | null;
   onAnswer: (a: AnswerInput | null) => void;
   natValue: string;
   onNatChange: (v: string) => void;
+  /** Labels as printed on the question, in A–D order (e.g. 1–4), so the buttons match the scan. */
+  labels?: readonly string[];
 }) {
   if (format === "NAT") {
     return <NumericKeypad value={natValue} onValueChange={onNatChange} captureKeyboard className="max-w-none" />;
@@ -161,9 +164,16 @@ export function AnswerControl({
   const sel = selectedOptions(answer);
   return (
     <OptionGroup mode={mode} label={format === "MSQ" ? "Choose all that apply" : "Choose one"} className="grid! grid-cols-2">
-      {LETTERS.map((l) => (
-        <OptionButton key={l} letter={l} mode={mode} selected={sel.includes(l)} onSelect={() => onAnswer(pick(format, answer, l))}>
-          <span className="sr-only">Option {l}</span>
+      {LETTERS.map((l, i) => (
+        <OptionButton
+          key={l}
+          letter={l}
+          label={labels[i]}
+          mode={mode}
+          selected={sel.includes(l)}
+          onSelect={() => onAnswer(pick(format, answer, l))}
+        >
+          <span className="sr-only">Option {labels[i]}</span>
         </OptionButton>
       ))}
     </OptionGroup>

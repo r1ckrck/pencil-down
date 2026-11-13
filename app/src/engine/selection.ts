@@ -33,6 +33,7 @@ export interface ServedItem {
   source: "real" | "generated";
   format: Format;
   topic: Topic;
+  question?: GeneratedQuestion; // generated: the question as built now, stored as its snapshot when the session is created
 }
 
 const pick = <T>(items: T[], rand: Rand): T => items[Math.floor(rand() * items.length)];
@@ -46,9 +47,9 @@ function shuffle<T>(items: T[], rand: Rand): T[] {
   return out;
 }
 
-// Eligible for mocks, drills and revisit: not retired, not animated, not dropped by the key.
+// Eligible for mocks, drills and revisit: not retired, not animated, not dropped by the key, not excluded.
 export function isEligible(q: PartAQuestion, pool: PoolState): boolean {
-  return !q.animated && q.answer.kind !== "DROPPED" && !pool.retired.has(q.id);
+  return !q.animated && q.answer.kind !== "DROPPED" && !q.excluded && !pool.retired.has(q.id);
 }
 
 // ---------- generated questions ----------
@@ -95,7 +96,7 @@ function generate(
       const q = g.generate(seed, difficulty, f);
       if (used.has(q.id) || pool.seen.has(q.id)) continue;
       used.add(q.id);
-      return { questionId: q.id, source: "generated", format: q.format, topic: q.topic };
+      return { questionId: q.id, source: "generated", format: q.format, topic: q.topic, question: q };
     } catch {
       continue;
     }
@@ -283,9 +284,10 @@ export function assembleDrill(
 // ---------- revisit ----------
 
 // dueIds: open error-log question ids with due_at <= now, oldest due first.
+// resolve: a served generated id → its stored question (engine/snapshots.ts).
 export function assembleRevisit(
   content: Content,
-  generators: Generator[],
+  resolve: (id: string) => GeneratedQuestion | null,
   pool: PoolState,
   dueIds: string[],
   limit = MOCK_SIZE,
@@ -298,7 +300,7 @@ export function assembleRevisit(
       if (isEligible(real, pool)) items.push(realItem(real));
       continue;
     }
-    const g = regenerate(id, generators);
+    const g = resolve(id);
     if (g) items.push({ questionId: g.id, source: "generated", format: g.format, topic: g.topic });
   }
   return items;

@@ -1,4 +1,36 @@
-import type { Format, Kind, Mode, Switches, Topic } from "./types";
+import type { AnswerInput, Format, Key, Kind, Mode, Option, QuestionPayload, SimpleAnswer, Switches, Topic } from "./types";
+
+const OPTION_LETTERS: Option[] = ["A", "B", "C", "D"];
+
+/** Printed labels in A–D order: the paper's own (1–4, a–d…) when it does not print A–D. */
+export function printedLabels(q: QuestionPayload | null): readonly string[] {
+  return (q?.source === "real" && q.optionLabels) || OPTION_LETTERS;
+}
+
+/** The label printed on the paper for an option, so it matches the scan. */
+export function optionLabel(q: QuestionPayload | null, o: Option): string {
+  return printedLabels(q)[OPTION_LETTERS.indexOf(o)] ?? o;
+}
+
+/** Printed label with the internal letter when they differ: "2 (B)". */
+export function optionText(q: QuestionPayload | null, o: Option): string {
+  const p = optionLabel(q, o);
+  return p === o ? o : `${p} (${o})`;
+}
+
+/** Keyboard pick: the printed label first, then A–D (case-insensitive); null when the key names no option. */
+export function optionForKey(q: QuestionPayload | null, key: string): Option | null {
+  const k = key.toLowerCase();
+  const printed = printedLabels(q).findIndex((l) => l.toLowerCase() === k);
+  if (printed >= 0) return OPTION_LETTERS[printed];
+  return OPTION_LETTERS.find((l) => l.toLowerCase() === k) ?? null;
+}
+
+/** "A–D", "1–4": the key range shown in hints. */
+export function optionRange(q: QuestionPayload | null): string {
+  const l = printedLabels(q);
+  return `${l[0]}–${l[3]}`;
+}
 
 export const TOPIC_LABEL: Record<Topic, string> = {
   "3d-visualisation": "3D visualisation",
@@ -58,4 +90,25 @@ export function marks(n: number, signed = false): string {
 
 export function seconds(ms: number): string {
   return `${Math.round(ms / 1000)}`;
+}
+
+// Options read as printed on the question, with the letter when they differ: "2 (B)".
+export function answerText(a: AnswerInput | null, q: QuestionPayload | null): string {
+  if (!a) return "—";
+  if (a.kind === "MCQ") return optionText(q, a.option);
+  if (a.kind === "MSQ") return a.options.map((o) => optionText(q, o)).join(", ");
+  return String(a.value);
+}
+
+function simpleKey(k: SimpleAnswer, q: QuestionPayload | null): string {
+  if (k.kind === "MCQ") return optionText(q, k.option);
+  if (k.kind === "MSQ") return k.options.map((o) => optionText(q, o)).join(", ");
+  return k.min === k.max ? String(k.min) : `${k.min} to ${k.max}`;
+}
+
+export function keyText(k: Key | null, q: QuestionPayload | null): string {
+  if (!k) return "—";
+  if (k.kind === "DROPPED") return "dropped by the paper";
+  if (k.kind === "ANY") return k.of.map((x) => simpleKey(x, q)).join(" or ");
+  return simpleKey(k, q);
 }

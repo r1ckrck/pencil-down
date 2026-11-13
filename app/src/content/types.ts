@@ -65,6 +65,8 @@ export interface PartAQuestion {
   difficulty: Difficulty;
   animated: boolean; // original used an animated GIF: excluded from mocks, drills and revisit; shown as a still with a note in past papers
   explanation: string | null; // markdown; must reach the stored answer
+  optionLabels?: [string, string, string, string]; // labels as printed when not A–D, e.g. ["1","2","3","4"] or ["a","b","c","d"]; maps in order to A–D
+  excluded?: string; // reason the question is kept for its paper but never served in mocks, drills or revisit (duplicate, ambiguous, subjective)
 }
 
 // ---------- Part A: papers (content/part-a/papers.json) ----------
@@ -111,7 +113,7 @@ export interface Generator {
   generate(seed: number, difficulty: Difficulty, format: Format): GeneratedQuestion;
   // Independent solver: derives the answer by a different method than generate() used.
   solve(q: GeneratedQuestion): SimpleAnswer;
-  // Retired generators still regenerate questions already served (history, review) but are never selected again.
+  // Retired generators are never selected again; questions they already served read back from their snapshot.
   retired?: boolean;
 }
 

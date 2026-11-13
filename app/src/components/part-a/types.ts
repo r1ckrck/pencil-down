@@ -23,6 +23,7 @@ export type QuestionPayload =
       imageWidth: number;
       imageHeight: number;
       options: Option[];
+      optionLabels: [string, string, string, string] | null; // printed labels for A–D, e.g. 1–4; null = printed A–D
     }
   | {
       id: string;

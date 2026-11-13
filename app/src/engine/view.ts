@@ -52,7 +52,7 @@ export function sessionState(ctx: Ctx, sid: number) {
         budgetEndsAt,
         overBudget: now >= budgetEndsAt,
         elapsedMs: r.time_ms + (now - v.started_at), // total on this question across visits
-        question: questionPayload(ctx.content, ctx.generators, r.question_id),
+        question: questionPayload(ctx, r.question_id),
         answer: r.answer ? JSON.parse(r.answer) : null,
         confidence: r.confidence,
         marked: !!r.marked,
@@ -160,7 +160,7 @@ export function partAResults(ctx: Ctx, sid: number) {
   let leftBySkipping = 0;
   let forcedSkips = 0;
   const questions = responses(ctx.db, sid).map((r) => {
-    const key = questionKey(ctx.content, ctx.generators, r.question_id);
+    const key = questionKey(ctx, r.question_id);
     const max = key?.answer.kind === "DROPPED" ? key.answer.marks : fullMarks(r.format, scheme);
     const outcome = r.outcome ?? "blank";
     const marks = r.marks ?? 0;
@@ -195,7 +195,7 @@ export function partAResults(ctx: Ctx, sid: number) {
       budgetMs: r.budget_ms,
       visits: r.visits,
       forcedSkip: !!r.forced_skip,
-      question: questionPayload(ctx.content, ctx.generators, r.question_id),
+      question: questionPayload(ctx, r.question_id),
     };
   });
   const paper = s.config.paperId ? ctx.content.paperById.get(s.config.paperId) : undefined;

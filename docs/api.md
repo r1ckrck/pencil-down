@@ -30,7 +30,8 @@ type Switches = { questionTimer: boolean; forcedSkip: boolean; phaseTimer: boole
 
 type QuestionPayload =                                   // never contains the key
   | { id; source: "real"; format; topic; label: "CEED 2026 · Q14";
-      image: "/content/part-a/images/…"; imageWidth; imageHeight; options: ["A","B","C","D"] }
+      image: "/content/part-a/images/…"; imageWidth; imageHeight; options: ["A","B","C","D"];
+      optionLabels: [string, string, string, string] | null /* as printed, in A–D order, e.g. ["1","2","3","4"]; null = A–D */ }
   | { id; source: "generated"; format; topic; label; stem: string; figure: string /* SVG */;
       options: { label: Option; svg: string }[] | null /* NAT */ };
 
@@ -90,7 +91,7 @@ Hidden prompt → `prompt: null`, show only `slot` and `now.phase`. Once the ses
 | Method · path | Response |
 |---|---|
 | `GET /api/content/catalog` | `{ serverNow, defaultMode, papers: {id, exam, year, label, durationMin, totalMarks, questionCount, cutoff, sittings}[] (past-paper eligible, newest first), bPapers: {id, year, label, durationMin, sittings}[], topics: {topic, eligible, unseen, generators: {id, formats}[]}[], slots: {slot, prompts, unseen}[], playbooks: Playbook[], counts: {questions, retired, prompts, cards} }` |
-| `GET /api/content/questions/:id` | `QuestionPayload` (id URL-encoded; generated ids `gen:<generator>:<format>:<difficulty>:<seed>`) |
+| `GET /api/content/questions/:id` | `QuestionPayload` (id URL-encoded; generated ids `gen:<generator>:<format>:<difficulty>:<seed>`, from their stored snapshot; 404 for a generated id never served) |
 | `GET /api/content/prompts/:id` | `PromptPayload`; **409** if the prompt belongs to the live session (no peek route) |
 
 Images are static files: `/content/part-a/…`, `/content/part-b/…`, `/content/cards/…` (synced into `public/` at build).
@@ -174,7 +175,9 @@ type BResults = { id, pos, slot, status, prompt: PromptPayload, secondsToCommit,
 
 ## Rules the server applies
 
-- **Selection**: retired (real, 2 correct, any mode), animated and dropped questions never enter mocks, drills or revisit. Past papers serve the whole paper in printed order with its own scheme (retired, animated and dropped included). Mocks: 8 NAT / 10 MSQ / 26 MCQ, topic quotas from `content/meta/topic-weights.json`, ~30% of visual-topic slots generated, unseen first; served NAT → MSQ → MCQ. Seeds are chosen server-side and live in the question id.
+- **Selection**: retired (real, 2 correct, any mode), animated, dropped and `excluded` questions never enter mocks, drills or revisit. Past papers serve the whole paper in printed order with its own scheme (retired, animated, dropped and excluded included). Retired generators are never selected. Mocks: 8 NAT / 10 MSQ / 26 MCQ, topic quotas from `content/meta/topic-weights.json`, ~30% of visual-topic slots generated, unseen first; served NAT → MSQ → MCQ. Seeds are chosen server-side and live in the question id.
+- **Generated snapshots**: a generated question is stored whole (`generated_questions`) when its session is created; payload, key, explanation, scoring, results and revisit all read that copy, so generator changes never alter served questions. Ids served before snapshots existed are rebuilt once from `generators/legacy-v1` (backfilled on the first request after start, otherwise on first read) and stored.
+- **Option labels**: real questions whose paper prints 1–4 or a–d carry `optionLabels`; answers and keys stay A–D on the wire, the UI shows the printed label (results: `2 (B)`), and the keyboard accepts the printed label or A–D.
 - **Scoring**: spec §9 (current scheme) except past papers (their own scheme, incl. non-partial MSQ). `ANY` scores the best alternative; `DROPPED` gives everyone its marks.
 - **Mastery / error log** at Part A close: correct real question → `correct_count + 1`, retired at 2. Wrong or partial → `wrong`; correct but unsure → `unsure-correct`; blank after a forced skip → `forced-skip`. Due ladder 1 · 3 · 7 · 14 · 30 days: a miss resets to 1 day, unsure-correct climbs one rung (first entry 3 days); a sure correct answer resolves the entry. Revisit serves open entries with `due_at ≤ now`.
 - **Part B mock / past paper clock**: 6 min read-all · 5 × 22 min blocks (each slot script clipped at 22 min) · the remaining 4 min as final buffer, totalling the paper's 120 min. Problem ID: framing 2–10, pick 10–12, commit 12–13.

@@ -213,11 +213,13 @@ origin        { exam: CEED|UCEED, year, qno } | { generator, seed, params }
 format        NAT | MSQ | MCQ
 stem_image    path (real) | null (generated renders SVG)
 options       4 labels; option visuals live inside stem_image for real questions
+option_labels real only, optional: the 4 labels as printed (1–4, a–d), mapped in order to A–D; the UI shows these, keys stay A–D
 answer        MCQ "B" | MSQ ["A","C"] | NAT { min, max }
 answer_status official | solved | constructed
 topic         one of the topic list (§7)
 difficulty    1–3
 animated      true if original used a GIF (excluded from pool)
+excluded      real only, optional: reason (duplicate, ambiguous, subjective); kept in its paper, never served elsewhere
 explanation   markdown | null
 ```
 
@@ -277,6 +279,8 @@ Every generator: seed → identical question; difficulty 1–3; distractors are 
 
 ### 7.4 Eligibility (applies before any assembly)
 - **Retired:** a real question answered correctly twice (any mode, any time) is never served again. Generated questions are unique per seed, so they never repeat by construction.
+- **Never in mocks, drills or revisit:** animated, `DROPPED` by the key, or `excluded`. Past papers still serve them whole, in printed order.
+- **Retired generators** are never selected; questions they already served still read back from their snapshot (§10).
 
 ### 7.5 Mock assembly
 1. Slot plan: 8 NAT, 10 MSQ, 26 MCQ, with topic quotas from the 2024–2026 papers' distribution (`content/meta/topic-weights.json`).
@@ -340,6 +344,7 @@ Every question, from any year, scores with the current scheme — except in past
 | `b_self_ratings` | attempt, criterion, 0–5 |
 | `photos` | attempt, file path |
 | `card_reviews` | card id, FSRS state fields |
+| `generated_questions` | generated id, full question JSON as first served, origin (current \| legacy-v1), created_at. Every read of a generated question uses this copy; ids served before it existed are rebuilt once from the frozen `generators/legacy-v1` and stored (backfill on server start, else first read) |
 | `settings` | key, value |
 
 Photos stored under `/data/photos/`. Content is read from `content/` (bundled), never written.

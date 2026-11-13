@@ -15,8 +15,8 @@ import { SegmentedControl } from "@/components/ui/segmented-control";
 import { Toggle } from "@/components/ui/switch";
 import type { MarkScheme } from "@/content/types";
 import { cn } from "@/lib/cn";
-import { AnswerControl, LETTERS, OptionTiles, parseNat, pick } from "./answer-control";
-import { KIND_LABEL, MODE_LABEL, TOPIC_LABEL, marks } from "./labels";
+import { AnswerControl, OptionTiles, parseNat, pick } from "./answer-control";
+import { KIND_LABEL, MODE_LABEL, TOPIC_LABEL, marks, optionForKey, optionRange, printedLabels } from "./labels";
 import { QuestionView } from "./question-view";
 import type { AnswerInput, Confidence, CurrentQuestion, Format, PartAState, SessionState } from "./types";
 
@@ -113,7 +113,7 @@ function Stage({
     actions.answer(current.pos, a);
   }
 
-  // Laptop keys: A–D pick, Enter moves on. Digits go to the keypad (it captures them itself).
+  // Laptop keys: the printed label (e.g. 1–4) or A–D picks, Enter moves on. NAT digits go to the keypad (it captures them itself).
   const answerRef = useRef(answer);
   useEffect(() => {
     answerRef.current = answer;
@@ -129,15 +129,15 @@ function Stage({
         actions.next();
         return;
       }
-      const letter = e.key.toUpperCase();
-      if (format !== "NAT" && (LETTERS as string[]).includes(letter) && e.key.length === 1) {
+      const letter = format === "NAT" ? null : optionForKey(q, e.key);
+      if (letter) {
         e.preventDefault();
-        choose(pick(format, answerRef.current, letter as (typeof LETTERS)[number]));
+        choose(pick(format, answerRef.current, letter));
       }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [actions, choose, format]);
+  }, [actions, choose, format, q]);
 
   const inRevisit = partA.phase === "revisit";
   const isLastFirstPass = !inRevisit && current.pos === total - 1;
@@ -191,14 +191,21 @@ function Stage({
         <div className="flex flex-col gap-1">
           <p className="text-small font-medium text-fg">
             {FORMAT_HINT[format]}
-            {q?.source === "generated" && q.options && <span className="font-normal text-mute"> · tap an option, or press A–D</span>}
+            {format !== "NAT" && <span className="font-normal text-mute"> · tap an option, or press {optionRange(q)}</span>}
           </p>
           <p className="font-mono text-caption text-mute">{stakeLine(format, scheme)}</p>
         </div>
 
         {/* Generated options are pictures: their tiles under the figure are the control. */}
         {!(q?.source === "generated" && q.options) && (
-          <AnswerControl format={format} answer={answer} onAnswer={choose} natValue={nat} onNatChange={onNat} />
+          <AnswerControl
+            format={format}
+            answer={answer}
+            onAnswer={choose}
+            natValue={nat}
+            onNatChange={onNat}
+            labels={printedLabels(q)}
+          />
         )}
 
         <div className="flex flex-wrap items-center gap-2">

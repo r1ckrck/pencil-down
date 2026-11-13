@@ -16,6 +16,7 @@ export type OptionReview = "correct" | "wrong" | "key";
  */
 export function OptionButton({
   letter,
+  label,
   mode,
   selected,
   onSelect,
@@ -25,6 +26,8 @@ export function OptionButton({
   className,
 }: {
   letter: OptionLetter;
+  /** Label printed on the paper when it is not the letter (e.g. "1" for A). */
+  label?: string;
   mode: "radio" | "checkbox";
   selected: boolean;
   onSelect?: () => void;
@@ -59,7 +62,7 @@ export function OptionButton({
           selected ? "border-fg bg-fg text-on-fg" : "border-hairline text-fg group-hover:border-fg",
         )}
       >
-        {letter}
+        {label ?? letter}
       </span>
       <span className="min-w-0 flex-1 text-body">{children}</span>
       <span

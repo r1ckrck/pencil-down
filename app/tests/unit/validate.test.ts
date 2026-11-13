@@ -92,6 +92,35 @@ describe("content validation", () => {
     expect(validateContent(d).join()).toMatch(/marks sum to 6, printed total is 7/);
   });
 
+  it("excluded needs a non-empty reason; optionLabels must be four distinct short labels", () => {
+    const bad = [
+      question("q1", "mechanisms", "MCQ", { excluded: "" }),
+      question("q2", "mechanisms", "MCQ", { excluded: "   " }),
+      question("q3", "mechanisms", "MCQ", { excluded: true as unknown as string }),
+      question("q4", "mechanisms", "MCQ", { optionLabels: ["1", "2", "3"] as unknown as [string, string, string, string] }),
+      question("q5", "mechanisms", "MCQ", { optionLabels: ["a", "A", "c", "d"] }),
+      question("q6", "mechanisms", "MCQ", { optionLabels: ["1", "", "3", "4"] }),
+    ];
+    const good = [
+      question("q7", "mechanisms", "MCQ", { excluded: "duplicate of ceed-2021-q4" }),
+      question("q8", "mechanisms", "MCQ", { optionLabels: ["1", "2", "3", "4"] }),
+    ];
+    const all = [...bad, ...good];
+    const files: Record<string, unknown> = {
+      "part-a/questions.json": all,
+      "part-a/papers.json": [paper(all.map((q) => q.id), 8 * 3)],
+    };
+    for (const q of [...bad, ...good]) files[`part-a/images/${q.id}.png`] = "x";
+    const problems = validateContent(tree(files));
+    const of = (id: string) => problems.filter((p) => p.includes(` ${id}:`)).join();
+    for (const id of ["q1", "q2", "q3"]) expect(of(id)).toMatch(/excluded must be a non-empty reason string/);
+    expect(of("q4")).toMatch(/optionLabels must be four short non-empty strings/);
+    expect(of("q5")).toMatch(/optionLabels repeat/);
+    expect(of("q6")).toMatch(/optionLabels must be four/);
+    expect(of("q7")).toBe("");
+    expect(of("q8")).toBe("");
+  });
+
   it("banned terms match whole words, case-insensitive", () => {
     const m = bannedMatcher(["riot", "political party", "BJP"]);
     expect(m("A RIOT of colour")).toEqual(["riot"]);

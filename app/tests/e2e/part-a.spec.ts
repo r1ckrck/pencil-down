@@ -1,3 +1,5 @@
+import { readFileSync, readdirSync } from "node:fs";
+import { join, resolve } from "node:path";
 import { expect, test, type APIRequestContext, type Page } from "@playwright/test";
 
 // Part A flows against the real API: Hard mock with a forced skip, reload and quit; Easy drill to submit;
@@ -193,5 +195,68 @@ test("Past paper: printed paper, zoomable scan, own cutoff, retake", async ({ pa
 
   await page.goto("/part-a");
   await expect(page.getByRole("listitem").filter({ hasText: "CEED 2026" }).getByRole("button", { name: "Retake" })).toBeVisible();
+  expect(errors).toEqual([]);
+});
+
+/** The first MCQ with printed option labels in a past-paper-eligible paper, read from the content the server uses. */
+function labelledQuestion(): { paperId: string; pos: number; labels: string[] } | null {
+  const dir = join(resolve(process.env.PENCIL_CONTENT_DIR ?? "../content"), "part-a");
+  const read = (prefix: string) =>
+    readdirSync(dir)
+      .filter((f) => f.startsWith(prefix) && f.endsWith(".json"))
+      .flatMap((f) => {
+        const d = JSON.parse(readFileSync(join(dir, f), "utf8"));
+        return Array.isArray(d) ? d : (Object.values(d)[0] as unknown[]);
+      });
+  type Q = { id: string; format: string; optionLabels?: string[] };
+  const qs = new Map((read("questions") as Q[]).map((q) => [q.id, q]));
+  for (const p of read("papers") as { id: string; pastPaperEligible: boolean; questionIds: string[] }[]) {
+    if (!p.pastPaperEligible) continue;
+    const pos = p.questionIds.findIndex((id) => qs.get(id)?.format === "MCQ" && qs.get(id)?.optionLabels);
+    if (pos >= 0) return { paperId: p.id, pos, labels: qs.get(p.questionIds[pos])!.optionLabels! };
+  }
+  return null;
+}
+
+test("Printed option labels: buttons, keys, hint and review read as the paper prints them", async ({ page, request }) => {
+  const found = labelledQuestion();
+  test.skip(!found, "no MCQ with optionLabels in a past-paper-eligible paper");
+  const { paperId, pos, labels } = found!;
+  const errors = trackErrors(page);
+  await clearLive(request);
+  const s = await api(request, "POST", "/api/sessions", { kind: "past-paper", paperId, mode: "easy" });
+  const id = s.session.id;
+  const st = await api(request, "POST", `/api/sessions/${id}/visit`, { pos });
+  expect(st.partA.current.question.optionLabels).toEqual(labels);
+
+  await page.goto(`/part-a/${id}`);
+  await expect.poll(() => currentQ(page)).toBe(pos + 1);
+  const option = (i: number) => page.getByRole("radio", { name: `Option ${labels[i]}`, exact: true });
+  for (let i = 0; i < 4; i++) await expect(option(i)).toContainText(labels[i]);
+  await expect(page.getByText(`tap an option, or press ${labels[0]}–${labels[3]}`)).toBeVisible();
+
+  // The printed label picks its option; A–D still works.
+  await page.keyboard.press(labels[1]);
+  await expect(option(1)).toHaveAttribute("aria-checked", "true");
+  await page.keyboard.press("c");
+  await expect(option(2)).toHaveAttribute("aria-checked", "true");
+  await expect(option(1)).toHaveAttribute("aria-checked", "false");
+  await expect.poll(async () => (await api(request, "GET", `/api/sessions/${id}`)).partA.current.answer).toEqual({
+    kind: "MCQ",
+    option: "C",
+  });
+  await shot(page, "live-option-labels");
+
+  await api(request, "POST", `/api/sessions/${id}/quit`);
+  await page.goto(`/part-a/results/${id}`);
+  const row = page.locator("details").nth(pos);
+  await row.locator("summary").click();
+  await expect(row.getByText(`${labels[2]} (C)`, { exact: true }).first()).toBeVisible();
+  const r = await api(request, "GET", `/api/sessions/${id}/results`);
+  const key = r.partA.questions[pos].key;
+  if (key.kind === "MCQ") {
+    const i = ["A", "B", "C", "D"].indexOf(key.option);
+    await expect(row.getByText(`${labels[i]} (${key.option})`, { exact: true }).last()).toBeVisible();
+  }
   expect(errors).toEqual([]);
 });

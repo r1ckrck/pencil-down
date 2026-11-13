@@ -50,6 +50,14 @@ CREATE TABLE IF NOT EXISTS a_responses (
   PRIMARY KEY (session_id, pos)
 );
 
+-- Every served generated question, frozen as first served so later generator changes never alter it.
+CREATE TABLE IF NOT EXISTS generated_questions (
+  id         TEXT PRIMARY KEY,   -- "gen:<generator>:<format>:<difficulty>:<seed>"
+  question   TEXT NOT NULL,      -- JSON GeneratedQuestion
+  origin     TEXT NOT NULL,      -- current (built at serve time) | legacy-v1 (served before snapshots; rebuilt by generators/legacy-v1)
+  created_at INTEGER NOT NULL
+);
+
 -- Each time a question is on screen. The open visit (ended_at null) is the current question.
 CREATE TABLE IF NOT EXISTS a_visits (
   id         INTEGER PRIMARY KEY,

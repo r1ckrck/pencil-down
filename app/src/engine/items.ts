@@ -1,8 +1,12 @@
-// Resolves served item ids to display payloads and answer keys.
+// Resolves served item ids to display payloads and answer keys. Generated ids read their stored snapshot.
 import type { Content } from "../content/load";
-import type { Answer, Format, Generator, Option, PartBPrompt, Topic } from "../content/types";
+import type { Answer, Format, Option, PartBPrompt, Topic } from "../content/types";
 import { OPTIONS } from "../content/types";
-import { regenerate } from "./selection";
+import { type SnapshotCtx, generatedQuestion } from "./snapshots";
+
+export interface ItemsCtx extends SnapshotCtx {
+  content: Content;
+}
 
 export type QuestionPayload =
   | {
@@ -15,6 +19,7 @@ export type QuestionPayload =
       imageWidth: number;
       imageHeight: number;
       options: Option[];
+      optionLabels: [string, string, string, string] | null; // printed labels for A–D when the paper does not use A–D
     }
   | {
       id: string;
@@ -27,8 +32,8 @@ export type QuestionPayload =
       options: { label: Option; svg: string }[] | null;
     };
 
-export function questionPayload(content: Content, generators: Generator[], id: string): QuestionPayload | null {
-  const q = content.questionById.get(id);
+export function questionPayload(ctx: ItemsCtx, id: string): QuestionPayload | null {
+  const q = ctx.content.questionById.get(id);
   if (q)
     return {
       id: q.id,
@@ -40,8 +45,9 @@ export function questionPayload(content: Content, generators: Generator[], id: s
       imageWidth: q.imageWidth,
       imageHeight: q.imageHeight,
       options: OPTIONS,
+      optionLabels: q.optionLabels ?? null,
     };
-  const g = regenerate(id, generators);
+  const g = generatedQuestion(ctx, id);
   if (!g) return null;
   return {
     id: g.id,
@@ -56,13 +62,12 @@ export function questionPayload(content: Content, generators: Generator[], id: s
 }
 
 export function questionKey(
-  content: Content,
-  generators: Generator[],
+  ctx: ItemsCtx,
   id: string,
 ): { answer: Answer; explanation: string | null; answerStatus: string } | null {
-  const q = content.questionById.get(id);
+  const q = ctx.content.questionById.get(id);
   if (q) return { answer: q.answer, explanation: q.explanation, answerStatus: q.answerStatus };
-  const g = regenerate(id, generators);
+  const g = generatedQuestion(ctx, id);
   return g ? { answer: g.answer, explanation: g.explanation, answerStatus: "constructed" } : null;
 }
 

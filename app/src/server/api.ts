@@ -5,11 +5,20 @@ import { getContent } from "@/content/load";
 import { getDb } from "@/db/db";
 import { ApiError } from "@/engine/errors";
 import type { Ctx } from "@/engine/session";
+import { backfillSnapshots } from "@/engine/snapshots";
 import { GENERATORS } from "@/generators";
 
+let backfilled = false;
+
 export function getCtx(): Ctx {
+  const db = getDb();
+  if (!backfilled) {
+    // Freeze every generated question served before snapshots existed (first request after start).
+    backfillSnapshots(db, Date.now());
+    backfilled = true;
+  }
   return {
-    db: getDb(),
+    db,
     content: getContent(),
     generators: GENERATORS,
     now: () => Date.now(),

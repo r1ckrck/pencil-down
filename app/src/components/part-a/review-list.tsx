@@ -2,9 +2,9 @@ import { CaretDown } from "@phosphor-icons/react/dist/ssr";
 import { Markdown } from "@/lib/markdown";
 import { cn } from "@/lib/cn";
 import { OptionTile } from "./answer-control";
-import { FORMAT_LABEL, TOPIC_LABEL, marks } from "./labels";
+import { FORMAT_LABEL, TOPIC_LABEL, answerText, keyText, marks } from "./labels";
 import { QuestionView } from "./question-view";
-import type { AnswerInput, Confidence, Format, Key, Option, QuestionPayload, SimpleAnswer, Topic } from "./types";
+import type { AnswerInput, Confidence, Format, Key, Option, QuestionPayload, Topic } from "./types";
 
 export type ReviewQuestion = {
   pos: number;
@@ -34,26 +34,6 @@ const OUTCOME: Record<ReviewQuestion["outcome"], { label: string; tone: string }
   blank: { label: "skipped", tone: "text-mute" },
   dropped: { label: "dropped", tone: "text-mute" },
 };
-
-function answerText(a: AnswerInput | null): string {
-  if (!a) return "—";
-  if (a.kind === "MCQ") return a.option;
-  if (a.kind === "MSQ") return a.options.join(", ");
-  return String(a.value);
-}
-
-function simpleKey(k: SimpleAnswer): string {
-  if (k.kind === "MCQ") return k.option;
-  if (k.kind === "MSQ") return k.options.join(", ");
-  return k.min === k.max ? String(k.min) : `${k.min} to ${k.max}`;
-}
-
-function keyText(k: Key | null): string {
-  if (!k) return "—";
-  if (k.kind === "DROPPED") return "dropped by the paper";
-  if (k.kind === "ANY") return k.of.map(simpleKey).join(" or ");
-  return simpleKey(k);
-}
 
 function keyOptions(k: Key | null): Option[] {
   if (!k) return [];
@@ -134,11 +114,11 @@ function ReviewItem({ q, animated }: { q: ReviewQuestion; animated: boolean }) {
           <div className="flex min-w-0 flex-col gap-4">
             <dl>
               <Row label="Yours">
-                <span className="font-mono">{answerText(q.answer)}</span>
+                <span className="font-mono">{answerText(q.answer, q.question)}</span>
                 {q.answer && <span className="text-mute"> · {q.confidence}</span>}
               </Row>
               <Row label="Key">
-                <span className={cn(q.key?.kind === "DROPPED" ? "text-mute" : "font-mono")}>{keyText(q.key)}</span>
+                <span className={cn(q.key?.kind === "DROPPED" ? "text-mute" : "font-mono")}>{keyText(q.key, q.question)}</span>
                 {q.answerStatus === "solved" && (
                   <span className="block text-caption italic text-mute">answer worked out by us, not official</span>
                 )}

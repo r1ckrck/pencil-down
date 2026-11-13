@@ -37,7 +37,7 @@ Design rules live in `spec.md` §4. This file is how to use what exists. Gallery
 | `Metric` | Every other number |
 | `DimensionBar budgetMs elapsedMs live concealed` | Time budget as a dimension line; `live` = accent fill; `concealed` = Hard mode |
 | `QuestionPalette items={[{ n, state }]} current onSelect` + `PaletteLegend` | state: unseen · answered · skipped · marked |
-| `OptionButton letter mode="radio|checkbox" selected onSelect review?` inside `OptionGroup` | |
+| `OptionButton letter label? mode="radio|checkbox" selected onSelect review?` inside `OptionGroup` | `label`: printed label shown instead of the letter, e.g. "1" for A |
 | `NumericKeypad value onValueChange captureKeyboard unit` | Also exports `applyKey` |
 | `TapCounter` | Part B idea counter |
 | `CheckRow value: boolean \| null` | Commit-screen checks |

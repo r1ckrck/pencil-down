@@ -118,6 +118,14 @@ export function validateContent(dir: string): string[] {
     if (![1, 2, 3].includes(q.difficulty as number)) err(at, "difficulty must be 1–3");
     if (typeof q.animated !== "boolean") err(at, "animated must be boolean");
     if (q.explanation !== null && typeof q.explanation !== "string") err(at, "explanation must be string | null");
+    if (q.excluded !== undefined && !(isStr(q.excluded) && q.excluded.trim()))
+      err(at, "excluded must be a non-empty reason string");
+    if (q.optionLabels !== undefined) {
+      const l = q.optionLabels;
+      if (!Array.isArray(l) || l.length !== 4 || !l.every((x) => isStr(x) && x.trim() === x && x.length <= 3))
+        err(at, "optionLabels must be four short non-empty strings");
+      else if (new Set(l.map((x: string) => x.toLowerCase())).size !== 4) err(at, "optionLabels repeat");
+    }
   }
 
   // ---------- Part A papers ----------
