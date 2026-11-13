@@ -73,6 +73,7 @@ pencil-down/
 
 - This repo owns: app, content, pipeline, `docs/run.md` (runtime contract), CI workflow.
 - The owner owns: image, compose, hosting, hostname, Authelia/2FA, server folders, deploy wiring. Don't design for these.
+- Live at `pencil.nesh.studio` behind Authelia. Every push to `main` redeploys via `.forgejo/workflows/deploy.yml` (~30 s restart) — never push during a live exam. Data: `/data/appdata/pencil-down/data` on the server; no backups (Settings → Export only).
 
 ## Git
 
