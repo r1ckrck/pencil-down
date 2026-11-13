@@ -11,6 +11,10 @@ Pencil Down: a private, single-user web platform that trains one aspirant for **
 | Need | Read |
 |---|---|
 | What to build, rules, acceptance criteria | `docs/spec.md` — authoritative |
+| API contract (routes, shapes, server rules) | `docs/api.md` |
+| UI components, tokens in Tailwind, shells | `docs/ui-components.md` |
+| Acceptance status per criterion | `docs/qa.md` |
+| Content shapes (questions, prompts, cards) | `app/src/content/types.ts` |
 | Why (exam facts, evidence, prompt themes) | `docs/research/<n>-*/report.md`, then that folder's notes |
 | Look and feel | `~/Documents/Projects/assistant/docs/design.md` + `tokens.css`; adaptations in spec §4 |
 | Fonts, paper texture | `~/Documents/Projects/assistant/assets/fonts/`, `assets/textures/cream-paper.png` |
@@ -23,17 +27,34 @@ Spec wins over research. Change the spec before changing behaviour.
 ```
 pencil-down/
 ├── CLAUDE.md
-├── docs/
-│   ├── spec.md
+├── docs/            spec.md · api.md · ui-components.md · qa.md
 │   └── research/
 │       ├── 1-exam-and-prep/          exam pattern, marking, cutoffs, prep habits, tools landscape
 │       ├── 2-part-b-timed-thinking/  slot playbooks, ideation science, drills
 │       └── 3-part-b-prompt-themes/   2010–2026 Part B audits, prompt grammar, design history, India context
-├── pipeline/      laptop-only Python: fetch/ extract/ verify/ raw/ (raw is git-ignored)
-├── content/       committed question pool, read-only at runtime: part-a/ part-b/ cards/ meta/
-├── app/           Next.js app: src/app (routes) · components · engine · generators · db · tests
-├── Dockerfile · docker-compose.yml · .forgejo/workflows/
+├── pipeline/        laptop-only Python (.venv): fetch/ extract/ verify/ cards/ authored/ · raw/ git-ignored
+├── content/         committed pool, read-only at runtime
+│   ├── part-a/      questions*.json · papers*.json · images/   (CEED 2010–2026, UCEED 2015–2026)
+│   ├── part-b/      prompts*.json · papers*.json · images/     (real + authored)
+│   ├── cards/       cards.json · images/
+│   └── meta/        topic-weights · playbooks · banned.txt
+├── app/             Next.js 16 (read app/AGENTS.md before Next code)
+│   ├── src/app/     (app)/ routes with chrome · (exam)/ live sessions · api/
+│   ├── src/         components/ · engine/ · generators/ (flat, solid) · db/ · content/ · server/ · lib/ · styles/
+│   └── tests/       unit/ (vitest) · e2e/ (playwright)
+├── Dockerfile · docker-compose.yml · .forgejo/workflows/check.yml
 ```
+
+## Commands (in `app/`)
+
+| Task | Command |
+|---|---|
+| Dev server | `pnpm dev` (data in `../data`, git-ignored) |
+| Unit tests · types · lint | `pnpm test` · `npx tsc --noEmit` · `pnpm lint` |
+| Validate all content | `pnpm validate:content` |
+| Production build | `pnpm build` (standalone output) |
+| E2E | `pnpm test:e2e`, or against a running server: `PD_BASE_URL=… PENCIL_DATA_DIR=… pnpm exec playwright test` |
+| Rebuild content | scripts in `pipeline/`, run with `pipeline/.venv/bin/python -I`; each folder's verify script must pass |
 
 ## Rules that hold everywhere
 
