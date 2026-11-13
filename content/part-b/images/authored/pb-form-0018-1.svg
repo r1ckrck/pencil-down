@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img">
+<title>A right-angled wedge, shaded</title>
+<g fill="currentColor" stroke="none" fill-rule="evenodd">
+<path fill-opacity="0.08" d="M179.7 105.2 L183.1 104.6 L224.7 151.3Z"/>
+<path fill-opacity="0.1" d="M149.3 186.0 L15.3 137.8 L15.3 48.7Z"/>
+<path fill-opacity="0.2" d="M224.7 151.3 L149.3 186.0 L15.3 48.7 L90.7 14.0Z"/>
+</g>
+<path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" d="M149.3 186.0 L15.3 48.7M15.3 48.7 L15.3 137.8 L149.3 186.0M149.3 186.0 L224.7 151.3 L90.7 14.0 L15.3 48.7"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img">
+<title>An L-shaped extruded block, shaded</title>
+<g fill="currentColor" stroke="none" fill-rule="evenodd">
+<path fill-opacity="0.08" d="M164.8 134.1 L189.4 130.3 L214.4 136.3 L194.1 160.0 L155.7 184.5 L128.1 186.0 L166.5 161.5 L166.5 134.5Z"/>
+<path fill-opacity="0.1" d="M128.1 186.0 L25.6 161.5 L25.6 38.5 L50.6 44.5 L50.6 140.4 L128.1 158.9Z"/>
+<path fill-opacity="0.32" d="M166.5 161.5 L128.1 186.0 L128.1 158.9 L166.5 134.5ZM89.0 115.9 L50.6 140.4 L50.6 44.5 L89.0 20.0Z"/>
+</g>
+<path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" d="M50.6 44.5 L25.6 38.5M25.6 38.5 L25.6 161.5 L128.1 186.0M89.0 20.0 L64.0 14.0 L25.6 38.5M50.6 140.4 L50.6 44.5M50.6 44.5 L89.0 20.0M128.1 158.9 L50.6 140.4M89.0 115.9 L50.6 140.4M89.0 115.9 L89.0 20.0M166.5 134.5 L89.0 115.9M128.1 186.0 L128.1 158.9M166.5 134.5 L128.1 158.9M128.1 186.0 L166.5 161.5 L166.5 134.5"/>
+</svg>

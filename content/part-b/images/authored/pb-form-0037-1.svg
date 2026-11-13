@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img">
+<title>A cube in three-quarter view, shaded</title>
+<g fill="currentColor" stroke="none" fill-rule="evenodd">
+<path fill-opacity="0.08" d="M140.6 119.2 L155.5 116.3 L226.0 138.2 L169.9 165.8 L84.5 166.2 L140.6 138.7Z"/>
+<path fill-opacity="0.1" d="M84.5 83.3 L84.5 166.2 L14.0 144.3 L14.0 61.3Z"/>
+<path fill-opacity="0.32" d="M140.6 55.7 L140.6 138.7 L84.5 166.2 L84.5 83.3Z"/>
+</g>
+<path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" d="M84.5 83.3 L14.0 61.3M14.0 61.3 L14.0 144.3 L84.5 166.2M140.6 55.7 L70.1 33.8 L14.0 61.3M84.5 166.2 L84.5 83.3M140.6 55.7 L84.5 83.3M84.5 166.2 L140.6 138.7 L140.6 55.7"/>
+</svg>

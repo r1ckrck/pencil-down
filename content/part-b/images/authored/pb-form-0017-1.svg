@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img">
+<title>A block with three equal steps, like a staircase, shaded</title>
+<g fill="currentColor" stroke="none" fill-rule="evenodd">
+<path fill-opacity="0.08" d="M173.1 122.9 L179.8 121.3 L217.6 129.9 L213.1 153.7 L175.8 182.8 L135.8 186.0 L173.1 157.0Z"/>
+<path fill-opacity="0.1" d="M135.8 186.0 L22.4 160.0 L22.4 43.0 L60.2 51.7 L60.2 90.7 L98.0 99.4 L98.0 138.3 L135.8 147.0Z"/>
+<path fill-opacity="0.32" d="M173.1 157.0 L135.8 186.0 L135.8 147.0 L173.1 118.0ZM135.3 109.3 L98.0 138.3 L98.0 99.4 L135.3 70.3ZM97.5 61.7 L60.2 90.7 L60.2 51.7 L97.5 22.7Z"/>
+</g>
+<path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" d="M60.2 51.7 L22.4 43.0M22.4 43.0 L22.4 160.0 L135.8 186.0M97.5 22.7 L59.7 14.0 L22.4 43.0M60.2 90.7 L60.2 51.7M97.5 22.7 L60.2 51.7M98.0 99.4 L60.2 90.7M97.5 61.7 L60.2 90.7M97.5 61.7 L97.5 22.7M135.3 70.3 L97.5 61.7M98.0 138.3 L98.0 99.4M135.3 70.3 L98.0 99.4M135.8 147.0 L98.0 138.3M135.3 109.3 L98.0 138.3M135.3 109.3 L135.3 70.3M173.1 118.0 L135.3 109.3M135.8 186.0 L135.8 147.0M173.1 118.0 L135.8 147.0M135.8 186.0 L173.1 157.0 L173.1 118.0"/>
+</svg>

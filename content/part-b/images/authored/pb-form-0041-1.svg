@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img">
+<title>A square pyramid, shaded</title>
+<g fill="currentColor" stroke="none" fill-rule="evenodd">
+<path fill-opacity="0.08" d="M226.0 138.9 L114.1 178.2 L188.1 135.9Z"/>
+<path fill-opacity="0.1" d="M101.1 21.8 L114.1 178.2 L14.0 146.9Z"/>
+<path fill-opacity="0.32" d="M101.1 21.8 L188.1 135.9 L114.1 178.2Z"/>
+</g>
+<path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" d="M114.1 178.2 L188.1 135.9 L101.1 21.8M114.1 178.2 L101.1 21.8M101.1 21.8 L14.0 146.9 L114.1 178.2"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img">
+<title>A triangular prism lying on one rectangular face, shaded</title>
+<g fill="currentColor" stroke="none" fill-rule="evenodd">
+<path fill-opacity="0.08" d="M226.0 140.7 L123.5 158.9 L181.1 126.8Z"/>
+<path fill-opacity="0.32" d="M181.1 126.8 L123.5 158.9 L152.3 71.1Z"/>
+</g>
+<path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" d="M152.3 71.1 L42.8 41.1 L14.0 128.9 L123.5 158.9M152.3 71.1 L123.5 158.9M123.5 158.9 L181.1 126.8 L152.3 71.1"/>
+</svg>

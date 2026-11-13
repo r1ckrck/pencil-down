@@ -1,0 +1,4948 @@
+[
+  {
+    "id": "pb-form-0001",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Sphere to hostel desk lamp",
+    "text": "Conceptualise and render a usable table lamp, inspired by the sphere shown below, for a study desk in a girls' hostel room in Pune. Two students share the desk and study at different hours. The sphere may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the sphere should be retained. Show how the light is switched and directed.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the sphere"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0001-1.svg",
+        "alt": "A sphere, shaded, in three-quarter view."
+      }
+    ],
+    "tags": {
+      "user": "hostel students",
+      "setting": "shared hostel room, Pune",
+      "object": "table lamp"
+    }
+  },
+  {
+    "id": "pb-form-0002",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Hemisphere to stacking tea-stall stool",
+    "text": "A tea stall outside the bus depot in Guwahati has no space for fixed seating. Conceptualise and render a stool for its customers, inspired by the hemisphere shown below. The hemisphere may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. At closing time the owner stacks all the stools in one corner, so at least four of your stools must stack one on top of the other. Show the stacked state in a second, smaller view.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the hemisphere",
+      "At least four stools must stack",
+      "Show the stacked state"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0002-1.svg",
+        "alt": "A hemisphere resting on its flat face, shaded."
+      }
+    ],
+    "tags": {
+      "user": "chaiwala and customers",
+      "setting": "tea stall at a bus depot, Guwahati",
+      "object": "stool",
+      "twist": "must stack"
+    }
+  },
+  {
+    "id": "pb-form-0003",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Cone to bus-depot water dispenser",
+    "text": "On May afternoons, passengers at a bus depot in Jaipur queue for drinking water. Conceptualise and render a public drinking-water dispenser inspired by the cone shown below. The cone may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the cone should be retained. Children, adults and wheelchair users should all be able to drink from it.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the cone"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0003-1.svg",
+        "alt": "An upright cone, shaded."
+      }
+    ],
+    "tags": {
+      "user": "bus passengers",
+      "setting": "bus depot, Jaipur, May",
+      "object": "drinking-water dispenser",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-form-0004",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Cylinder to worker's tiffin carrier",
+    "text": "Conceptualise and render a three-tier tiffin carrier, inspired by the cylinder shown below, for a construction worker in Surat who eats lunch sitting on site. The cylinder may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. All three tiers must open and close using only one hand, since the other hand is usually holding a roti or a phone.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the cylinder",
+      "Every tier must open and close with one hand"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0004-1.svg",
+        "alt": "An upright cylinder, shaded."
+      }
+    ],
+    "tags": {
+      "user": "construction worker",
+      "setting": "construction site, Surat",
+      "object": "tiffin carrier",
+      "twist": "one-hand use"
+    }
+  },
+  {
+    "id": "pb-form-0005",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Torus to OPD waiting seat",
+    "text": "Families wait for hours outside the out-patient department of a district hospital in Bhubaneswar. Conceptualise and render a seating unit for four people, inspired by the torus shown below, for this waiting area. The torus may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the torus should be retained. Consider elderly patients who find it difficult to sit down and get up.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the torus"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0005-1.svg",
+        "alt": "A torus (ring doughnut) lying flat, shaded."
+      }
+    ],
+    "tags": {
+      "user": "elderly patients and attendants",
+      "setting": "district hospital OPD, Bhubaneswar",
+      "object": "four-seat waiting bench",
+      "hook": "ageing"
+    }
+  },
+  {
+    "id": "pb-form-0006",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Cube to chawl study unit",
+    "text": "A family of five lives in a single room in a Mumbai chawl. Their daughter, in Class 10, needs a place to study in the evening. Conceptualise and render a study table with storage, inspired by the cube shown below. The cube may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. When not in use, the unit must fold or close back into a cube no larger than 60 cm on each side.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the cube",
+      "Must close back into a cube of 60 cm or less"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0006-1.svg",
+        "alt": "A cube in three-quarter view, shaded."
+      }
+    ],
+    "tags": {
+      "user": "Class 10 student",
+      "setting": "one-room chawl home, Mumbai",
+      "object": "study table with storage",
+      "twist": "folds into a cube"
+    }
+  },
+  {
+    "id": "pb-form-0007",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Prism to village school bookshelf",
+    "text": "Inspired from the given three-dimensional form, conceptualise, sketch and render a bookshelf for the library corner of a government primary school in a village near Barmer, Rajasthan. Children aged 6 to 10 should be able to see the covers of the books and pick them up themselves.",
+    "rules": [
+      "Match the design language of the given form"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form should complement function",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and quality of lines",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0007-1.svg",
+        "alt": "A triangular prism lying on one rectangular face, shaded."
+      }
+    ],
+    "tags": {
+      "user": "primary school children",
+      "setting": "village school library corner, Barmer",
+      "object": "bookshelf"
+    }
+  },
+  {
+    "id": "pb-form-0008",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Hexagonal prism to masala dabba",
+    "text": "A hexagonal prism is shown below. Using its design language, visualise a spice box (masala dabba) for the small kitchen of a Chennai flat, where the cook reaches for six or seven spices while tempering every dish. Sketch and render the spice box, with the lid open in one view.",
+    "rules": [
+      "Match the design language of the given form"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form should complement function",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and quality of lines",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0008-1.svg",
+        "alt": "An upright hexagonal prism, shaded."
+      }
+    ],
+    "tags": {
+      "user": "home cook",
+      "setting": "small flat kitchen, Chennai",
+      "object": "spice box"
+    }
+  },
+  {
+    "id": "pb-form-0009",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Pyramid to Sundarbans solar lantern",
+    "text": "A family in a village in the Sundarbans uses a solar lantern after dark, inside the house and on the boat. Conceptualise and render a solar lantern inspired by the square pyramid shown below. The pyramid may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the pyramid should be retained. The lantern must both stand on a flat surface and hang from a hook.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the pyramid",
+      "Must both stand and hang"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0009-1.svg",
+        "alt": "A square pyramid, shaded."
+      }
+    ],
+    "tags": {
+      "user": "village family",
+      "setting": "river-island village, Sundarbans",
+      "object": "solar lantern",
+      "twist": "stands and hangs"
+    }
+  },
+  {
+    "id": "pb-form-0010",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Helix to balcony planter",
+    "text": "Conceptualise and render a hanging planter for herbs, inspired by the helix shown below, for the narrow balcony of a rented flat in Bengaluru. The helix may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. Show how the plants are watered without water dripping onto the balcony below.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the helix"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0010-1.svg",
+        "alt": "A helix of round section, three turns, like a coil spring, shaded."
+      }
+    ],
+    "tags": {
+      "user": "tenant in a rented flat",
+      "setting": "apartment balcony, Bengaluru",
+      "object": "hanging planter"
+    }
+  },
+  {
+    "id": "pb-form-0011",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Twisted prism to tailor's table fan",
+    "text": "A tailor in Ludhiana works at a foot-pedal machine in a small shop with no window. Conceptualise and render a table fan for him, inspired by the twisted form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the twist should be retained. The air should cool him without blowing the cloth and paper patterns off his table.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the twisted prism"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0011-1.svg",
+        "alt": "A square prism twisted through a quarter turn from bottom to top, shaded."
+      }
+    ],
+    "tags": {
+      "user": "tailor",
+      "setting": "tailor's shop, Ludhiana, summer",
+      "object": "table fan",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-form-0012",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "L-block to anganwadi chair",
+    "text": "Inspired from the given three-dimensional form, conceptualise, sketch and render a chair for children aged 3 to 6 at an anganwadi in a village in Gaya, Bihar. The room is also used for meals and health check-ups, so ten chairs must stack in one pile against the wall.",
+    "rules": [
+      "Match the design language of the given form",
+      "Ten chairs must stack",
+      "User is 3 to 6 years old"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form should complement function",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and quality of lines",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0012-1.svg",
+        "alt": "An L-shaped extruded block, shaded."
+      }
+    ],
+    "tags": {
+      "user": "children aged 3–6",
+      "setting": "anganwadi, Gaya",
+      "object": "children's chair",
+      "twist": "stackable, user 3–6"
+    }
+  },
+  {
+    "id": "pb-form-0013",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "U-channel to bathing stool",
+    "text": "Mr. Banerjee, 78, lives alone in a Kolkata flat and bathes with a bucket and mug. Conceptualise and render a bathing stool for him, inspired by the U-shaped form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. It should help him sit down and stand up safely on a wet floor.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the U-shaped channel"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0013-1.svg",
+        "alt": "A U-shaped channel, extruded, open at the top, shaded."
+      }
+    ],
+    "tags": {
+      "user": "elderly man living alone",
+      "setting": "bathroom, Kolkata flat",
+      "object": "bathing stool",
+      "hook": "ageing"
+    }
+  },
+  {
+    "id": "pb-form-0014",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Cross to coaching-centre bag stand",
+    "text": "Students at a coaching centre in Kota carry heavy bags, water bottles and helmets into class. Conceptualise and render a stand for these belongings, inspired by the plus-shaped form shown below, to be placed in the corridor outside a classroom of 60 students. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the form should be retained.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the plus-shaped block"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0014-1.svg",
+        "alt": "A plus-shaped (cross) extruded block standing upright, shaded."
+      }
+    ],
+    "tags": {
+      "user": "coaching students",
+      "setting": "coaching centre corridor, Kota",
+      "object": "bag and helmet stand"
+    }
+  },
+  {
+    "id": "pb-form-0015",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Star to bakery biscuit tin",
+    "text": "A star-shaped three-dimensional form is shown below. Visualise the form of a biscuit tin for a family bakery in Kochi, based on the given form. Customers buy it as a gift and keep it afterwards for storage. It should match the design language with relevant details. Sketch and render the tin, open and closed.",
+    "rules": [
+      "Match the design language of the given form"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form should complement function",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and quality of lines",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0015-1.svg",
+        "alt": "A five-pointed star extruded into a thick slab lying flat, shaded."
+      }
+    ],
+    "tags": {
+      "user": "bakery customers",
+      "setting": "family bakery, Kochi",
+      "object": "biscuit tin"
+    }
+  },
+  {
+    "id": "pb-form-0016",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Zigzag to doorway shoe rack",
+    "text": "Conceptualise and render a shoe rack, inspired by the zigzag form shown below, for the entrance of a joint-family home in Indore, where eleven people leave their footwear at the door. The form may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. Consider chappals, school shoes and an elderly member's walking sandals.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the zigzag block"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0016-1.svg",
+        "alt": "A zigzag strip extruded into a solid, shaded."
+      }
+    ],
+    "tags": {
+      "user": "joint family",
+      "setting": "home entrance, Indore",
+      "object": "shoe rack"
+    }
+  },
+  {
+    "id": "pb-form-0017",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Steps to school wash-basin step",
+    "text": "At a government primary school in Tiruchirappalli, the wash basins are too high for the youngest children. Conceptualise and render a step for children aged 4 to 6 to reach the basin, inspired by the stepped form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the form should be retained. Only one material may be used for the whole product; name it on your sheet.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the stepped block",
+      "One material only; name it",
+      "User is 4 to 6 years old"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0017-1.svg",
+        "alt": "A block with three equal steps, like a staircase, shaded."
+      }
+    ],
+    "tags": {
+      "user": "children aged 4–6",
+      "setting": "school wash area, Tiruchirappalli",
+      "object": "step for a wash basin",
+      "twist": "one material only"
+    }
+  },
+  {
+    "id": "pb-form-0018",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Wedge to survey worker's writing board",
+    "text": "A government survey worker walks from house to house in a district of Odisha, recording each family's details on a tablet and a paper form. She works standing, at doorways and in courtyards. Conceptualise and render a writing board that also carries her tablet, forms and pens, inspired by the wedge shown below. The wedge may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the wedge"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0018-1.svg",
+        "alt": "A right-angled wedge, shaded."
+      }
+    ],
+    "tags": {
+      "user": "door-to-door survey worker",
+      "setting": "village doorways, Odisha",
+      "object": "writing board and carrier",
+      "hook": "digital census"
+    }
+  },
+  {
+    "id": "pb-form-0019",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Ring to waiting-room clock",
+    "text": "Inspired from the given three-dimensional form, conceptualise, sketch and render a wall clock for the waiting room of a railway station in Vijayawada. Passengers should be able to read it from across the hall, and it should also show which platform the next train will arrive on.",
+    "rules": [
+      "Match the design language of the given form"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form should complement function",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and quality of lines",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0019-1.svg",
+        "alt": "A thick flat ring with a round hole through the centre, shaded."
+      }
+    ],
+    "tags": {
+      "user": "waiting passengers",
+      "setting": "railway waiting room, Vijayawada",
+      "object": "wall clock"
+    }
+  },
+  {
+    "id": "pb-form-0020",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Arch to rocking cradle",
+    "text": "Conceptualise and render a cradle for a newborn, inspired by the arch-shaped form shown below, for a family in a village near Alappuzha, Kerala. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the arch should be retained. The mother should be able to rock the cradle while sitting on the floor.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the arch"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0020-1.svg",
+        "alt": "Half a torus standing as an arch on both cut ends, shaded."
+      }
+    ],
+    "tags": {
+      "user": "mother and newborn",
+      "setting": "village home, Alappuzha",
+      "object": "cradle"
+    }
+  },
+  {
+    "id": "pb-form-0021",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Capsule to auto-rickshaw speaker",
+    "text": "Raju drives an auto-rickshaw in Lucknow and plays old film songs for his passengers. Conceptualise and render a portable speaker for his auto, inspired by the capsule shown below. The capsule may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. Show where it is mounted and how it survives rain and bumpy roads.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the capsule"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0021-1.svg",
+        "alt": "A capsule (cylinder with hemispherical ends) lying on its side, shaded."
+      }
+    ],
+    "tags": {
+      "user": "auto-rickshaw driver",
+      "setting": "auto-rickshaw, Lucknow",
+      "object": "portable speaker"
+    }
+  },
+  {
+    "id": "pb-form-0022",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Egg to PG-room kettle",
+    "text": "Conceptualise and render an electric kettle, inspired by the egg-shaped form shown below, for a working woman living in a paying-guest room in Noida, where cooking is not allowed but making tea and instant noodles is. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the egg should be retained.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the egg form"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0022-1.svg",
+        "alt": "An upright egg-shaped form, wider at the base, shaded."
+      }
+    ],
+    "tags": {
+      "user": "working woman in a PG",
+      "setting": "paying-guest room, Noida",
+      "object": "electric kettle"
+    }
+  },
+  {
+    "id": "pb-form-0023",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Pebble to delivery rider's power bank",
+    "text": "A food-delivery rider in Hyderabad uses his phone for navigation for ten hours a day, often in the rain. Conceptualise and render a power bank for him, inspired by the pebble-like form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. Show how it stays with him on the scooter and how he checks how much charge is left.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the pebble form"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0023-1.svg",
+        "alt": "A smooth, flattened oval form like a river pebble, shaded."
+      }
+    ],
+    "tags": {
+      "user": "food-delivery rider",
+      "setting": "scooter, Hyderabad, monsoon",
+      "object": "power bank",
+      "hook": "gig workers"
+    }
+  },
+  {
+    "id": "pb-form-0024",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Frustum to mandi waste bin",
+    "text": "Conceptualise and render a waste bin for the vegetable market in Nashik, inspired by the truncated cone shown below. Vendors throw away vegetable waste, plastic bags and broken crates every evening. The truncated cone may be modified by cutting, adding, subtracting, deforming and repeating. However, its essence should be retained. The bin must keep wet and dry waste separate.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the truncated cone",
+      "Must keep wet and dry waste separate"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0024-1.svg",
+        "alt": "A truncated cone, wider at the base, shaded."
+      }
+    ],
+    "tags": {
+      "user": "market vendors",
+      "setting": "vegetable market, Nashik",
+      "object": "waste bin"
+    }
+  },
+  {
+    "id": "pb-form-0025",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Octahedron to toddler's toy",
+    "text": "Conceptualise and render a toy for a child aged 1 to 3, inspired by the octahedron shown below. The toy should keep the child busy while the mother works in a small home tailoring unit in Bhopal. The octahedron may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. No part of the toy may be small enough to swallow.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the octahedron",
+      "No detachable part small enough to swallow"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0025-1.svg",
+        "alt": "An octahedron (two square pyramids joined at their bases) standing on one vertex, shaded."
+      }
+    ],
+    "tags": {
+      "user": "toddler aged 1–3",
+      "setting": "home tailoring unit, Bhopal",
+      "object": "toy"
+    }
+  },
+  {
+    "id": "pb-form-0026",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Tetrahedron to milking stool",
+    "text": "Conceptualise and render a stool for a dairy farmer in a village near Anand, Gujarat, who milks four buffaloes by hand every morning and evening, inspired by the tetrahedron shown below. The tetrahedron may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the tetrahedron should be retained. The stool must also hold the milk can steady.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the tetrahedron"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0026-1.svg",
+        "alt": "A tetrahedron (triangular pyramid with four equal faces), shaded."
+      }
+    ],
+    "tags": {
+      "user": "dairy farmer",
+      "setting": "cattle shed, near Anand",
+      "object": "milking stool"
+    }
+  },
+  {
+    "id": "pb-form-0027",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Spindle to night guard's torch",
+    "text": "Shankar is a night security guard at a warehouse in Kanpur. On his rounds he checks locks, reads labels on cartons and signals to trucks. Conceptualise and render a hand torch for him, inspired by the spindle-shaped form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. Show the different ways he holds and uses it.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the spindle form"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0027-1.svg",
+        "alt": "Two cones joined base to base, forming a spindle standing on one tip, shaded."
+      }
+    ],
+    "tags": {
+      "user": "night security guard",
+      "setting": "warehouse yard, Kanpur",
+      "object": "hand torch"
+    }
+  },
+  {
+    "id": "pb-form-0028",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Hourglass to barber's waiting stool",
+    "text": "Customers wait for their turn at a barber's shop under a banyan tree in a village near Madurai. Conceptualise and render a seat for them, inspired by the hourglass form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the hourglass should be retained. The seat stays outdoors through sun and rain.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the hourglass form"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0028-1.svg",
+        "alt": "Two cones joined at their tips, forming an hourglass, shaded."
+      }
+    ],
+    "tags": {
+      "user": "waiting customers",
+      "setting": "barber's spot under a tree, near Madurai",
+      "object": "outdoor seat"
+    }
+  },
+  {
+    "id": "pb-form-0029",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Lying cylinder to pull-along toy",
+    "text": "Conceptualise and render a pull-along toy for a 3-year-old, inspired by the cylinder lying on its side shown below. The cylinder may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. The toy must be made entirely of turned and painted wood, with no metal or plastic parts. Show the toy being pulled on an uneven courtyard floor.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the cylinder",
+      "Wood only: no metal or plastic parts"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0029-1.svg",
+        "alt": "A cylinder lying on its side, shaded."
+      }
+    ],
+    "tags": {
+      "user": "child aged 3",
+      "setting": "home courtyard",
+      "object": "pull-along toy",
+      "twist": "one material only"
+    }
+  },
+  {
+    "id": "pb-form-0030",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Cylinder and cone to platform chai kettle",
+    "text": "A cylinder and a cone are shown below. Visualise the form of a tea kettle for a chaiwala who walks up and down a railway platform at Itarsi Junction, pouring tea into paper cups through train windows. Use both forms, each at least once. It should match the design language with relevant details. Sketch and render the kettle, including how it is carried and kept hot.",
+    "rules": [
+      "Match the design language of the given form",
+      "Use both given forms, each at least once"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form should complement function",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and quality of lines",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0030-1.svg",
+        "alt": "Two forms side by side: a short cylinder and a cone of the same base, shaded."
+      }
+    ],
+    "tags": {
+      "user": "platform chaiwala",
+      "setting": "railway platform, Itarsi Junction",
+      "object": "tea kettle",
+      "twist": "use both forms"
+    }
+  },
+  {
+    "id": "pb-form-0031",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Cube and sphere to ASHA kit box",
+    "text": "Kamla is an ASHA worker in a village near Nagaur, Rajasthan. On home visits she carries a weighing scale for babies, a BP machine, medicines, registers and a phone. Conceptualise and render a kit box for her, inspired by the cube and sphere shown below. The forms may be cut, added, subtracted, deformed and repeated, but the essence of both should be retained. Show how she carries it and how it opens at a doorstep.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of both forms"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0031-1.svg",
+        "alt": "Two forms side by side: a cube and a sphere, shaded."
+      }
+    ],
+    "tags": {
+      "user": "ASHA worker",
+      "setting": "village home visits, near Nagaur",
+      "object": "health kit box",
+      "hook": "ASHA workers"
+    }
+  },
+  {
+    "id": "pb-form-0032",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Dome on drum to grain bin",
+    "text": "Conceptualise and render a grain storage bin, inspired by the form shown below, for a farming family in a village near Bathinda, Punjab, who store 100 kg of wheat for the year. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, its essence should be retained. The grain should be easy to take out from the bottom and safe from rats and moisture.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the dome and drum"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0032-1.svg",
+        "alt": "A hemisphere sitting on a cylinder of the same diameter, shaded."
+      }
+    ],
+    "tags": {
+      "user": "farming family",
+      "setting": "village home, near Bathinda",
+      "object": "grain storage bin"
+    }
+  },
+  {
+    "id": "pb-form-0033",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Stacked spheres to water filter",
+    "text": "Conceptualise and render a water filter for a household in a village in Jharkhand that collects water from a handpump, inspired by the three stacked spheres shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. The filter must work without electricity.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the stacked spheres",
+      "Must work without electricity"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0033-1.svg",
+        "alt": "Three spheres of decreasing size stacked on one another, shaded."
+      }
+    ],
+    "tags": {
+      "user": "village household",
+      "setting": "village home, Jharkhand",
+      "object": "water filter",
+      "twist": "no electricity"
+    }
+  },
+  {
+    "id": "pb-form-0034",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Cone and sphere to cart lamp",
+    "text": "A fruit seller in Ahmedabad keeps his cart open till 10 pm. Conceptualise and render a battery lamp that clamps onto his cart, inspired by the cone and sphere shown below. The forms may be cut, added, subtracted, deformed and repeated, but the essence of both should be retained. The light should make the fruit look fresh without dazzling the customers.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of both forms"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0034-1.svg",
+        "alt": "Two forms side by side: a tall cone and a sphere, shaded."
+      }
+    ],
+    "tags": {
+      "user": "fruit seller",
+      "setting": "fruit cart at night, Ahmedabad",
+      "object": "cart lamp"
+    }
+  },
+  {
+    "id": "pb-form-0035",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Torus to fish vendor's cool box",
+    "text": "Every morning a fisherwoman in Ratnagiri carries fish on her head from the jetty to the market, two kilometres away. Conceptualise and render a cool box for her, inspired by the torus shown below. The torus may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the torus should be retained. The box must be carried on the head and must keep ice from melting for three hours.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the torus",
+      "Must be carried on the head"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0035-1.svg",
+        "alt": "A torus standing upright on its edge, shaded."
+      }
+    ],
+    "tags": {
+      "user": "fisherwoman",
+      "setting": "jetty to fish market, Ratnagiri",
+      "object": "cool box",
+      "twist": "carried on the head"
+    }
+  },
+  {
+    "id": "pb-form-0036",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Sphere to child's piggy bank",
+    "text": "Conceptualise and render a piggy bank (gullak) for an 8-year-old in Varanasi, inspired by the sphere shown below. The sphere may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. Unlike a clay gullak, it should not have to be broken to take the money out, but it should still feel special to open.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the sphere"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0036-1.svg",
+        "alt": "A sphere, shaded, in three-quarter view."
+      }
+    ],
+    "tags": {
+      "user": "child aged 8",
+      "setting": "home, Varanasi",
+      "object": "piggy bank"
+    }
+  },
+  {
+    "id": "pb-form-0037",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Cube to bedside medicine table",
+    "text": "An elderly couple in Mysuru take eleven tablets a day between them. The husband cannot bend because of a back problem. Conceptualise and render a bedside table with medicine storage for them, inspired by the cube shown below. The cube may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the cube should be retained. Nothing he needs every day may be stored below the height of the bed.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the cube",
+      "Nothing used daily may be stored below bed height"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0037-1.svg",
+        "alt": "A cube in three-quarter view, shaded."
+      }
+    ],
+    "tags": {
+      "user": "elderly couple",
+      "setting": "bedroom, Mysuru",
+      "object": "bedside table with medicine storage",
+      "twist": "user cannot bend",
+      "hook": "ageing"
+    }
+  },
+  {
+    "id": "pb-form-0038",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Cylinder to highway bus-stop seat",
+    "text": "Conceptualise and render a seat for a bus stop on a highway near Sagar, Madhya Pradesh, inspired by the cylinder shown below. Villagers wait here for up to an hour in the afternoon sun, with bags of grain and small children. The cylinder may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. The seat must not become too hot to sit on.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the cylinder"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0038-1.svg",
+        "alt": "An upright cylinder, shaded."
+      }
+    ],
+    "tags": {
+      "user": "village bus passengers",
+      "setting": "highway bus stop, near Sagar, summer",
+      "object": "bus-stop seat",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-form-0039",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Helix to dish-drying rack",
+    "text": "A helix is shown below. Visualise the form of a dish-drying rack for the small kitchen of a family of four in a Delhi flat, where steel plates, glasses and a pressure cooker are washed three times a day. It should match the design language with relevant details. Sketch and render the rack, with utensils in place.",
+    "rules": [
+      "Match the design language of the given form"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form should complement function",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and quality of lines",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0039-1.svg",
+        "alt": "A helix of round section, three turns, like a coil spring, shaded."
+      }
+    ],
+    "tags": {
+      "user": "family of four",
+      "setting": "small flat kitchen, Delhi",
+      "object": "dish-drying rack"
+    }
+  },
+  {
+    "id": "pb-form-0040",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Hexagonal prism to flood-proof storage",
+    "text": "Every July, a family in a village on the Brahmaputra flood plain in Assam moves its belongings to a raised platform when water enters the house. Conceptualise and render a storage unit for their documents, grain and clothes, inspired by the hexagonal prism shown below. The prism may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. The unit must float if the water rises above it.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the hexagonal prism",
+      "Must float when the water rises"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0040-1.svg",
+        "alt": "An upright hexagonal prism, shaded."
+      }
+    ],
+    "tags": {
+      "user": "village family",
+      "setting": "flood-plain village home, Assam",
+      "object": "storage unit",
+      "twist": "must float",
+      "hook": "floods"
+    }
+  },
+  {
+    "id": "pb-form-0041",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Pyramid to cobbler's cooler",
+    "text": "A cobbler sits on the pavement outside a market in Nagpur from 9 am to 7 pm, under a torn umbrella. Conceptualise and render a small cooling product for him, inspired by the square pyramid shown below. The pyramid may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the pyramid should be retained. It must work without electricity.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the pyramid",
+      "Must work without electricity"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0041-1.svg",
+        "alt": "A square pyramid, shaded."
+      }
+    ],
+    "tags": {
+      "user": "pavement cobbler",
+      "setting": "market pavement, Nagpur, May",
+      "object": "personal cooler",
+      "twist": "no electricity",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-form-0042",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Prism to cart QR stand",
+    "text": "Most customers of a vegetable seller in Patna pay by scanning a QR code. They often cannot find the code, and the payment confirmation is hard to hear in the noise. Conceptualise and render a QR stand with a speaker for her cart, inspired by the triangular prism shown below. The prism may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the triangular prism"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0042-1.svg",
+        "alt": "A triangular prism lying on one rectangular face, shaded."
+      }
+    ],
+    "tags": {
+      "user": "vegetable seller and buyers",
+      "setting": "vegetable cart, Patna",
+      "object": "QR payment stand with speaker",
+      "hook": "digital payments"
+    }
+  },
+  {
+    "id": "pb-form-0043",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "L-block to wheelchair reading desk",
+    "text": "Conceptualise and render a reading desk for the public library in Chandigarh, inspired by the L-shaped form shown below. Readers in wheelchairs must be able to use it as easily as those on chairs. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the form should be retained. Show a wheelchair user at the desk.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the L-shaped block",
+      "Must work for a wheelchair user",
+      "Show a wheelchair user at the desk"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0043-1.svg",
+        "alt": "An L-shaped extruded block, shaded."
+      }
+    ],
+    "tags": {
+      "user": "wheelchair user",
+      "setting": "public library, Chandigarh",
+      "object": "reading desk",
+      "hook": "accessibility"
+    }
+  },
+  {
+    "id": "pb-form-0044",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Star to fruit bowl",
+    "text": "Conceptualise and render a fruit bowl for the dining table of a family in Goa, inspired by the star-shaped form shown below. The family eats mangoes, bananas and jackfruit through summer. The form may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. You may use only two of the five operations; state which two you chose.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the star",
+      "Use only two of the five operations; state which"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0044-1.svg",
+        "alt": "A five-pointed star extruded into a thick slab lying flat, shaded."
+      }
+    ],
+    "tags": {
+      "user": "family",
+      "setting": "dining table, Goa",
+      "object": "fruit bowl",
+      "twist": "two operations only"
+    }
+  },
+  {
+    "id": "pb-form-0045",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Twisted prism to football trophy",
+    "text": "A twisted three-dimensional form is shown below. Visualise the form of a trophy for the winners of a district-level girls' football tournament in Imphal, Manipur, based on the given form. It should match the design language with relevant details, and the team should be able to hold it up together. Sketch and render the trophy.",
+    "rules": [
+      "Match the design language of the given form"
+    ],
+    "criteria": [
+      {
+        "name": "Sensitivity towards form",
+        "marks": 5
+      },
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and line quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0045-1.svg",
+        "alt": "A square prism twisted through a quarter turn from bottom to top, shaded."
+      }
+    ],
+    "tags": {
+      "user": "girls' football team",
+      "setting": "district tournament, Imphal",
+      "object": "trophy",
+      "hook": "women's sport"
+    }
+  },
+  {
+    "id": "pb-form-0046",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Frustum to matka stand",
+    "text": "Conceptualise and render a stand for an earthen water pot (matka) for a home in Jodhpur, inspired by the truncated cone shown below. The frustum may be modified by cutting, adding, subtracting, deforming and repeating. However, its essence should be retained. The stand should help the water stay cool and make pouring easy for a child.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the truncated cone"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0046-1.svg",
+        "alt": "A truncated cone, wider at the base, shaded."
+      }
+    ],
+    "tags": {
+      "user": "family with children",
+      "setting": "home, Jodhpur, summer",
+      "object": "matka stand",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-form-0047",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Egg to pressure cooker",
+    "text": "Conceptualise and render a pressure cooker for a family of four in Ranchi, inspired by the egg-shaped form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. The person cooking should be able to tell how many whistles have gone without listening for them.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the egg form"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0047-1.svg",
+        "alt": "An upright egg-shaped form, wider at the base, shaded."
+      }
+    ],
+    "tags": {
+      "user": "family cook",
+      "setting": "home kitchen, Ranchi",
+      "object": "pressure cooker"
+    }
+  },
+  {
+    "id": "pb-form-0048",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Capsule to pencil box",
+    "text": "Inspired from the given three-dimensional form, conceptualise, sketch and render a pencil box for a Class 4 student in a government school in a village in Telangana, who sits on the floor to write and carries the box in a cloth bag. Show the box open and closed.",
+    "rules": [
+      "Match the design language of the given form"
+    ],
+    "criteria": [
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form should complement function",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and quality of lines",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0048-1.svg",
+        "alt": "A capsule (cylinder with hemispherical ends) lying on its side, shaded."
+      }
+    ],
+    "tags": {
+      "user": "Class 4 student",
+      "setting": "village government school, Telangana",
+      "object": "pencil box"
+    }
+  },
+  {
+    "id": "pb-form-0049",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Ring to smokeless chulha",
+    "text": "Conceptualise and render a cooking stove that burns wood and dung cakes, for a home in a village in Chhattisgarh where the family cooks sitting on the floor, inspired by the ring shown below. The ring may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the ring should be retained. Show how the smoke is led away from the cook.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the ring"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0049-1.svg",
+        "alt": "A thick flat ring with a round hole through the centre, shaded."
+      }
+    ],
+    "tags": {
+      "user": "rural cook",
+      "setting": "village kitchen, Chhattisgarh",
+      "object": "wood-burning stove"
+    }
+  },
+  {
+    "id": "pb-form-0050",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Hemisphere to platform wash basin",
+    "text": "Conceptualise and render a wash basin for a railway platform, inspired by the hemisphere shown below, where passengers wash their hands and faces and fill bottles before boarding. The hemisphere may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. Water should not splash onto people's clothes or luggage.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the hemisphere"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0050-1.svg",
+        "alt": "A hemisphere resting on its flat face, shaded."
+      }
+    ],
+    "tags": {
+      "user": "train passengers",
+      "setting": "railway platform",
+      "object": "wash basin"
+    }
+  },
+  {
+    "id": "pb-form-0051",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "T-block to sleeper-berth organiser",
+    "text": "On an overnight sleeper train, passengers keep their phones, glasses, water bottles and slippers wherever they can on the berth. Conceptualise and render a berth-side organiser, inspired by the T-shaped form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the form should be retained. It must clip on without screws or tools and come off at the end of the journey.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the T-shaped block",
+      "Must attach without screws or tools"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0051-1.svg",
+        "alt": "A T-shaped extruded block standing upright, shaded."
+      }
+    ],
+    "tags": {
+      "user": "sleeper-coach passengers",
+      "setting": "sleeper berth, overnight train",
+      "object": "berth-side organiser",
+      "twist": "no screws or tools",
+      "hook": "sleeper trains"
+    }
+  },
+  {
+    "id": "pb-form-0052",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Hexagonal prism to community-hall seat",
+    "text": "Conceptualise and render a seat for the community hall of a village in Haryana, inspired by the hexagonal prism shown below. The hall is used for meetings, wedding meals and a tuition class, so the seats are moved every day. The prism may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. Show how several seats fit together into a bench and how they are moved.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the hexagonal prism"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0052-1.svg",
+        "alt": "An upright hexagonal prism, shaded."
+      }
+    ],
+    "tags": {
+      "user": "villagers",
+      "setting": "village community hall, Haryana",
+      "object": "modular seat"
+    }
+  },
+  {
+    "id": "pb-form-0053",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Owl figure to night lamp",
+    "text": "A character-based form is shown below. Re-imagine, conceptualise and render a night lamp for a 5-year-old who is afraid of the dark, inspired by this character. The lamp is for a small bedroom in a Pune flat that the child shares with her grandmother.",
+    "rules": [
+      "Retain the character of the given figure"
+    ],
+    "criteria": [
+      {
+        "name": "Characterisation",
+        "marks": 5
+      },
+      {
+        "name": "Details and usability",
+        "marks": 5
+      },
+      {
+        "name": "Sketch quality",
+        "marks": 5
+      },
+      {
+        "name": "Shading and rendering",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0053-1.svg",
+        "alt": "A character figure built from simple forms: an owl with an egg-shaped body, two pointed ear tufts, two large disc eyes with round pupils and a small pointed beak."
+      }
+    ],
+    "tags": {
+      "user": "child aged 5 and grandmother",
+      "setting": "shared bedroom, Pune flat",
+      "object": "night lamp"
+    }
+  },
+  {
+    "id": "pb-form-0054",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Turned doll to oil dispenser",
+    "text": "A turned wooden doll is shown below. Re-imagine, conceptualise and render a cooking-oil dispenser for a home kitchen in Kozhikode, inspired by this character. The dispenser should pour a little oil at a time and not leave the kitchen counter sticky.",
+    "rules": [
+      "Retain the character of the given figure"
+    ],
+    "criteria": [
+      {
+        "name": "Characterisation",
+        "marks": 5
+      },
+      {
+        "name": "Details and usability",
+        "marks": 5
+      },
+      {
+        "name": "Sketch quality",
+        "marks": 5
+      },
+      {
+        "name": "Shading and rendering",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0054-1.svg",
+        "alt": "A character figure turned on a lathe: a rounded body, a narrow neck and a round head with a small knob on top, like a traditional wooden doll."
+      }
+    ],
+    "tags": {
+      "user": "home cook",
+      "setting": "home kitchen, Kozhikode",
+      "object": "oil dispenser"
+    }
+  },
+  {
+    "id": "pb-form-0055",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Robot figure to desert cooler",
+    "text": "A character-based form is shown below. Re-imagine, conceptualise and render an air cooler for a small electronics repair shop in Agra, inspired by this character. The shop is 2 m wide and the cooler must not take floor space from customers.",
+    "rules": [
+      "Retain the character of the given figure",
+      "Must not stand on the floor"
+    ],
+    "criteria": [
+      {
+        "name": "Characterisation",
+        "marks": 5
+      },
+      {
+        "name": "Details and usability",
+        "marks": 5
+      },
+      {
+        "name": "Sketch quality",
+        "marks": 5
+      },
+      {
+        "name": "Shading and rendering",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0055-1.svg",
+        "alt": "A character figure built from blocks: a box body on two short cylinder legs, a box head with two round eyes, cylinder arms and an antenna."
+      }
+    ],
+    "tags": {
+      "user": "repair-shop owner and customers",
+      "setting": "electronics repair shop, Agra, May",
+      "object": "air cooler",
+      "twist": "off the floor",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-form-0056",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Bird figure to alarm clock",
+    "text": "A character-based form is shown below. Re-imagine, conceptualise and render an alarm clock for a Class 6 student in Dehradun who has to wake up at 5:30 am for school, inspired by this character. The clock should make the student laugh and also be impossible to switch off without getting out of bed.",
+    "rules": [
+      "Retain the character of the given figure"
+    ],
+    "criteria": [
+      {
+        "name": "Characterisation",
+        "marks": 5
+      },
+      {
+        "name": "Details and usability",
+        "marks": 5
+      },
+      {
+        "name": "Sketch quality",
+        "marks": 5
+      },
+      {
+        "name": "Shading and rendering",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0056-1.svg",
+        "alt": "A character figure built from simple forms: a round bird with an egg-shaped body, round head, small pointed beak, dot eyes and a pointed tail."
+      }
+    ],
+    "tags": {
+      "user": "Class 6 student",
+      "setting": "bedroom, Dehradun",
+      "object": "alarm clock"
+    }
+  },
+  {
+    "id": "pb-form-0057",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Seed pod to farm worker's lunch box",
+    "text": "A seed-pod-like form is shown below. Visualise the form of a lunch box for a woman farm worker in a paddy field in Thanjavur, who leaves home at 6 am and eats in the field at noon. It should match the design language with relevant details. Sketch and render the lunch box.",
+    "rules": [
+      "Match the design language of the given form"
+    ],
+    "criteria": [
+      {
+        "name": "Sensitivity towards form",
+        "marks": 5
+      },
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and line quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0057-1.svg",
+        "alt": "A long seed-pod form, tapered to points at both ends, lying on its side, shaded."
+      }
+    ],
+    "tags": {
+      "user": "woman farm worker",
+      "setting": "paddy field, Thanjavur",
+      "object": "lunch box"
+    }
+  },
+  {
+    "id": "pb-form-0058",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Drop to school soap dispenser",
+    "text": "A drop-shaped form is shown below. Visualise the form of a soap dispenser for the wash basins of a primary school in Jalandhar, based on the given form. Children aged 6 to 10 wash their hands here before the mid-day meal. It should match the design language with relevant details. Sketch and render the dispenser.",
+    "rules": [
+      "Match the design language of the given form"
+    ],
+    "criteria": [
+      {
+        "name": "Sensitivity towards form",
+        "marks": 5
+      },
+      {
+        "name": "Consistency with the visual language of the form",
+        "marks": 5
+      },
+      {
+        "name": "Relevant details of the product",
+        "marks": 5
+      },
+      {
+        "name": "Surface shading and line quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0058-1.svg",
+        "alt": "An upright drop form, round at the base and pointed at the top, shaded."
+      }
+    ],
+    "tags": {
+      "user": "primary school children",
+      "setting": "school wash area, Jalandhar",
+      "object": "soap dispenser"
+    }
+  },
+  {
+    "id": "pb-form-0059",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Mushroom form to stand-up chai table",
+    "text": "Customers at a busy tea stall in Shillong drink standing up. Conceptualise and render a stand-up table for them, inspired by the mushroom-like form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, its essence should be retained. The table stands outside in the rain for much of the year.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the mushroom form"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0059-1.svg",
+        "alt": "A mushroom-like form: a domed cap on a short tapering stem, shaded."
+      }
+    ],
+    "tags": {
+      "user": "tea-stall customers",
+      "setting": "roadside tea stall, Shillong",
+      "object": "stand-up table"
+    }
+  },
+  {
+    "id": "pb-form-0060",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Gourd to fair hand-wash station",
+    "text": "A large fair in a riverside town draws thousands of visitors a day for a week. Conceptualise and render a portable hand-wash station for its food lanes, inspired by the gourd-like form shown below. The form may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. There is no piped water and no tap: show how water is filled, used and drained.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the gourd form",
+      "No tap and no piped water"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0060-1.svg",
+        "alt": "A gourd-like form with a large lower bulb and a smaller upper bulb, shaded."
+      }
+    ],
+    "tags": {
+      "user": "fair visitors and food vendors",
+      "setting": "food lane at a large fair",
+      "object": "hand-wash station",
+      "twist": "no tap",
+      "hook": "mass gatherings"
+    }
+  },
+  {
+    "id": "pb-form-0061",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Spinning top to buttermilk churner",
+    "text": "Conceptualise and render a hand churner for making buttermilk and butter, inspired by the spinning top shown below, for a home in a village near Kolhapur. The form may be modified by cutting, adding, subtracting, deforming and repeating. However, its essence should be retained. Show how the churner is held and turned.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the spinning top"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0061-1.svg",
+        "alt": "A spinning top: a cone on its tip, a rounded rim and a short stem, shaded."
+      }
+    ],
+    "tags": {
+      "user": "home cook",
+      "setting": "village kitchen, near Kolhapur",
+      "object": "buttermilk churner"
+    }
+  },
+  {
+    "id": "pb-form-0062",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Three forms to building toy",
+    "text": "A cone, a cube and a cylinder are shown below. Conceptualise and render a building toy for children aged 4 to 6 at a balwadi in a Delhi resettlement colony, using all three forms. The forms may be cut, added, subtracted, deformed and repeated, but their essence should be retained. Each form must be used at least twice, and the parts must build at least three different things; draw two of them.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the cube, cylinder and cone",
+      "Use each form at least twice",
+      "Show at least two things built from the parts"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0062-1.svg",
+        "alt": "Three forms side by side: a cone, a cube and a cylinder, shaded."
+      }
+    ],
+    "tags": {
+      "user": "children aged 4–6",
+      "setting": "balwadi, Delhi resettlement colony",
+      "object": "building toy",
+      "twist": "each form at least twice"
+    }
+  },
+  {
+    "id": "pb-form-0063",
+    "source": "authored",
+    "origin": null,
+    "slot": "form",
+    "title": "Block to pavement book kiosk",
+    "text": "A bookseller on a pavement in Kolkata's College Street lays out second-hand books on the ground every morning and packs them up every night. Conceptualise and render a folding display for his books, inspired by the rectangular block shown below. The block may be modified by cutting, adding, subtracting, deforming and repeating, but its essence should be retained. When closed, it must lock and be pushed on wheels.",
+    "rules": [
+      "Allowed operations: cutting, adding, subtracting, deforming and repeating",
+      "Retain the essence of the rectangular block",
+      "When closed it must lock and roll on wheels"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness of the form",
+        "marks": 5
+      },
+      {
+        "name": "Form–function relevance and relationship",
+        "marks": 5
+      },
+      {
+        "name": "Detailing",
+        "marks": 5
+      },
+      {
+        "name": "Rendering quality",
+        "marks": 5
+      }
+    ],
+    "images": [
+      {
+        "path": "images/authored/pb-form-0063-1.svg",
+        "alt": "A rectangular block, wider than it is tall, shaded."
+      }
+    ],
+    "tags": {
+      "user": "pavement bookseller",
+      "setting": "book street pavement, Kolkata",
+      "object": "folding book display",
+      "twist": "closes into a lockable trolley"
+    }
+  },
+  {
+    "id": "pb-problem-id-0001",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Seasonal workers' train journey",
+    "text": "Sunil and Rekha, with their one-year-old son, travel from a village near Darbhanga, Bihar, to Ludhiana for six months of work in a factory. They travel in the unreserved coach of a long-distance train for 30 hours, carrying two tin trunks, a bedroll and a gas stove, and then take a shared auto to a rented room.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "migrant worker family with an infant",
+      "setting": "unreserved coach, Darbhanga to Ludhiana",
+      "hook": "migrant work"
+    }
+  },
+  {
+    "id": "pb-problem-id-0002",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Wheelchair user to physiotherapy",
+    "text": "Pooja, 22, uses a wheelchair after a spinal injury. Once a month she travels from her village near Satara to a hospital in Pune for physiotherapy: a walk on a mud road, a state transport bus, then an auto-rickshaw. Her younger brother goes with her.\n\nImagine her journey and identify FOUR distinct problems that she might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "young woman in a wheelchair",
+      "setting": "village to city hospital, Satara to Pune",
+      "hook": "accessibility"
+    }
+  },
+  {
+    "id": "pb-problem-id-0003",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "First flight, alone, at 62",
+    "text": "Valliammal, 62, has never left Tamil Nadu. She is flying alone from Madurai to Delhi to help her daughter after a childbirth. She reads only Tamil, carries a steel dabba of homemade sweets and has a basic phone.\n\nImagine her journey and identify FOUR distinct problems that she might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)\n\nAt least one solution must not depend on reading.",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement",
+      "At least one solution must not depend on reading"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "elderly first-time flyer",
+      "setting": "airport, Madurai to Delhi",
+      "twist": "user reads only Tamil",
+      "hook": "ageing"
+    }
+  },
+  {
+    "id": "pb-problem-id-0004",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Girls' hockey team on a sleeper train",
+    "text": "Sixteen girls aged 13 to 15 from a hockey hostel in Sundargarh, Odisha, travel overnight with their coach by sleeper train to a national tournament in Ranchi. Each carries a kit bag and a hockey stick, and they must play a match three hours after arriving.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "girls' hockey team and coach",
+      "setting": "overnight sleeper train, Sundargarh to Ranchi",
+      "hook": "women's sport, sleeper trains"
+    }
+  },
+  {
+    "id": "pb-problem-id-0005",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Potter to a city crafts bazaar",
+    "text": "Ramesh, a potter from Khurja, Uttar Pradesh, carries forty pieces of glazed ceramic tableware by bus and local train to a weekend crafts bazaar in Delhi. He sets up his stall alone and returns home on Sunday night with whatever is unsold.\n\nImagine his journey and identify FOUR distinct problems that he might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "potter",
+      "setting": "bus and train to a crafts bazaar, Khurja to Delhi"
+    }
+  },
+  {
+    "id": "pb-problem-id-0006",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Blind teacher's local-train commute",
+    "text": "Ms. Fernandes is a visually impaired schoolteacher. Every weekday she travels from Thane to Dadar by Mumbai local train in the 8:10 am rush, then walks ten minutes to her school with her cane.\n\nImagine her journey and identify FOUR distinct problems that she might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)\n\nNeither solution may depend on a smartphone.",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement",
+      "Neither solution may depend on a smartphone"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "visually impaired teacher",
+      "setting": "Mumbai local train, Thane to Dadar",
+      "twist": "no smartphone solutions",
+      "hook": "accessibility"
+    }
+  },
+  {
+    "id": "pb-problem-id-0007",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Milk cans in December fog",
+    "text": "Every morning at 5:30, Bhikhabhai cycles 3 km from his farm in Banaskantha, Gujarat, to the village milk collection centre with two 20-litre cans hung from his cycle. In December the road is dark and foggy, and trucks use the same road.\n\nImagine his journey and identify FOUR distinct problems that he might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "dairy farmer",
+      "setting": "village road to milk collection centre, Banaskantha, December"
+    }
+  },
+  {
+    "id": "pb-problem-id-0008",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Diabetic patient to the district hospital",
+    "text": "Kunhiraman, 71, lives alone in a hill village in Wayanad. Every month he goes to the district hospital for check-ups and insulin, which must be kept cool. He takes a shared jeep and then two buses, and the trip takes the whole day.\n\nImagine his journey and identify FOUR distinct problems that he might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "elderly man living alone",
+      "setting": "hill village to district hospital, Wayanad",
+      "twist": "medicine must stay cool",
+      "hook": "ageing"
+    }
+  },
+  {
+    "id": "pb-problem-id-0009",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Family to a wedding by sleeper bus",
+    "text": "A family of five, including a grandmother and a 4-year-old, travels from Kolkata to Siliguri by overnight sleeper bus for a cousin's wedding. They carry suitcases, gifts, and a sari and sherwani that must not crease.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "family of five",
+      "setting": "overnight sleeper bus, Kolkata to Siliguri"
+    }
+  },
+  {
+    "id": "pb-problem-id-0010",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Hill student's monsoon school walk",
+    "text": "Anjali, in Class 9, lives in a village in the hills of Uttarakhand. In July she walks 5 km on a slippery trail, crosses a stream and takes a shared jeep to reach her school in the valley by 8 am.\n\nImagine her journey and identify FOUR distinct problems that she might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)\n\nYour four statements must cover four different stages of the journey.",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement",
+      "Your four statements must cover four different stages of the journey"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "Class 9 girl",
+      "setting": "hill trail and shared jeep, Uttarakhand, July",
+      "twist": "four stages of the journey",
+      "hook": "floods (unnamed)"
+    }
+  },
+  {
+    "id": "pb-problem-id-0011",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Pregnant woman to the district hospital",
+    "text": "Sunita is eight months pregnant and lives in a village in Barwani, Madhya Pradesh. Her ASHA worker accompanies her for a check-up at the district hospital, 40 km away: a walk to the main road, a crowded shared tempo, and a long wait in the hospital queue.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "pregnant woman and ASHA worker",
+      "setting": "village to district hospital, Barwani",
+      "hook": "ASHA workers"
+    }
+  },
+  {
+    "id": "pb-problem-id-0012",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Vegetable seller's 4 am mandi run",
+    "text": "Shantabai, 50, grows vegetables near Nashik. At 4 am she loads three sacks of tomatoes and coriander into a crowded tempo to the city wholesale market, sells them, buys supplies, and returns by bus before noon.\n\nImagine her journey and identify FOUR distinct problems that she might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "woman vegetable grower",
+      "setting": "tempo and bus to the wholesale market, Nashik"
+    }
+  },
+  {
+    "id": "pb-problem-id-0013",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Deaf student's long train journey",
+    "text": "Imran, 20, is deaf. He travels alone from Guwahati to Bengaluru for an internship: a two-night train journey with changes in platform and coach position announced only over loudspeakers.\n\nImagine his journey and identify FOUR distinct problems that he might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "deaf college student",
+      "setting": "two-night train, Guwahati to Bengaluru",
+      "hook": "accessibility"
+    }
+  },
+  {
+    "id": "pb-problem-id-0014",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Grandparents move in with their son",
+    "text": "A retired couple from Jaipur, both 74, are moving for six months to their son's flat on the fourteenth floor of a high-rise in Bengaluru. They travel by train with their pickle jars and medicines, and arrive in a city where they do not speak the local language.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)\n\nProblems must be about the first week after arrival, not the train.",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement",
+      "Problems must be about the first week after arrival, not the train"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "elderly couple",
+      "setting": "high-rise flat in a new city, Bengaluru",
+      "twist": "first week after arrival only",
+      "hook": "ageing with a twist"
+    }
+  },
+  {
+    "id": "pb-problem-id-0015",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "First day at a residential school",
+    "text": "Sukhmati, 11, from a village in Bastar, Chhattisgarh, travels to a residential school in Raipur for the first time with her father. They take a bus and then a city auto, carrying a tin trunk with her clothes, books and a steel plate.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "girl aged 11 and her father",
+      "setting": "village to residential school, Bastar to Raipur"
+    }
+  },
+  {
+    "id": "pb-problem-id-0016",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Island family by inter-island ferry",
+    "text": "A fisherman's family of four travels from Neil Island to Port Blair by government ferry for their son's school admission. The ferry leaves at 6 am, the sea is rough in June, and they must be back the same evening.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "island family",
+      "setting": "inter-island ferry, Neil Island to Port Blair, June"
+    }
+  },
+  {
+    "id": "pb-problem-id-0017",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Grandmother in a wheelchair at a large fair",
+    "text": "A family from a village in Uttar Pradesh takes the grandmother, who uses a wheelchair, to a week-long fair at a riverside town. They travel by tractor-trolley and then on foot, stay in a tent camp, and walk to the river ghats each morning with lakhs of other visitors.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "family with a grandmother in a wheelchair",
+      "setting": "tent camp at a large riverside fair",
+      "hook": "mass gatherings, accessibility"
+    }
+  },
+  {
+    "id": "pb-problem-id-0018",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Truck driver, Chennai to Kolkata",
+    "text": "Murugan drives a truck from Chennai to Kolkata, a three-day trip, with a young helper. They sleep in the cab, eat at highway dhabas, and wait for hours at loading points and toll plazas.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "truck driver and helper",
+      "setting": "highway truck cab, Chennai to Kolkata"
+    }
+  },
+  {
+    "id": "pb-problem-id-0019",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Kidney patient's dialysis commute",
+    "text": "Rashida, 45, lives in a small town near Malda, West Bengal, and needs dialysis twice a week in Kolkata. She takes an overnight train with her husband, spends the day at the hospital, and returns the same night, too tired to walk far.\n\nImagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)\n\nOne solution must work without electricity.",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement",
+      "One solution must work without electricity"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "dialysis patient and husband",
+      "setting": "overnight train to a city hospital, Malda to Kolkata",
+      "twist": "one solution without electricity"
+    }
+  },
+  {
+    "id": "pb-problem-id-0020",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Class trip to a science centre",
+    "text": "Forty Class 6 students and two teachers from a government school in Sangli travel by school bus to a science centre in Pune for a day trip. Many children have never been to a city before.\n\nImagine the journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)\n\nWrite all four statements from the teachers' point of view.",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement",
+      "Write all four statements from the teachers' point of view"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "Class 6 students and teachers",
+      "setting": "school bus day trip, Sangli to Pune",
+      "pov": "teachers",
+      "twist": "teachers' point of view"
+    }
+  },
+  {
+    "id": "pb-problem-id-0021",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "ASHA worker's monsoon rounds",
+    "text": "Meena is an ASHA worker in a village near Sambalpur, Odisha. On a July morning she visits eight homes on foot along flooded paths, carrying registers, a baby-weighing scale, medicines and a phone to record each visit.\n\nImagine her day and identify FOUR distinct problems that she might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "ASHA worker",
+      "setting": "village home visits, Sambalpur, July",
+      "hook": "ASHA workers"
+    }
+  },
+  {
+    "id": "pb-problem-id-0022",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Survey worker in a high-rise and a basti",
+    "text": "Neha is a government survey worker in Gurugram. In one day she records details of families in a gated high-rise society in the morning and in a basti beside it in the afternoon, using a tablet that needs network and charge.\n\nImagine her day and identify FOUR distinct problems that she might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "door-to-door survey worker",
+      "setting": "gated society and basti, Gurugram",
+      "hook": "digital census"
+    }
+  },
+  {
+    "id": "pb-problem-id-0023",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Paying by phone at 80",
+    "text": "Mrs. Sengupta, 80, lives alone in a Kolkata flat. Her son has set up phone payments for her, and now the milkman, the domestic help and the chemist all expect her to pay by scanning a QR code.\n\nImagine her day and identify FOUR distinct problems that she might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)\n\nSolutions must not require reading English.",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement",
+      "Solutions must not require reading English"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "elderly woman living alone",
+      "setting": "flat and neighbourhood shops, Kolkata",
+      "twist": "no English reading",
+      "hook": "digital payments, ageing"
+    }
+  },
+  {
+    "id": "pb-problem-id-0024",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Night guard at a society gate",
+    "text": "Ramprasad works a 12-hour night shift as a security guard at the gate of a housing society in Noida in December. The air is smoky, delivery riders arrive till 1 am, and he has a plastic chair and a register.\n\nImagine his day and identify FOUR distinct problems that he might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "night security guard",
+      "setting": "housing society gate, Noida, December",
+      "hook": "gig workers"
+    }
+  },
+  {
+    "id": "pb-problem-id-0025",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Mid-day meal cook in May",
+    "text": "Selvi cooks the mid-day meal for 200 children at a village school near Ramanathapuram, Tamil Nadu. In May she works in a small tin-roofed kitchen, with large aluminium vessels and a gas stove, and serves the meal in under 30 minutes.\n\nImagine her day and identify FOUR distinct problems that she might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "mid-day meal cook",
+      "setting": "village school kitchen, Ramanathapuram, May",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-problem-id-0026",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Traffic constable at a June junction",
+    "text": "Head Constable Yadav controls traffic at a busy junction in Lucknow from 12 noon to 8 pm in June. He stands on a small raised platform, uses hand signals and a whistle, and has no shade.\n\nImagine his day and identify FOUR distinct problems that he might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "traffic constable",
+      "setting": "traffic junction, Lucknow, June",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-problem-id-0027",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Attendants camping at the hospital",
+    "text": "Ravi's father is admitted to a government hospital in Patna. Ravi and his mother stay for five days as attendants, sleeping on the corridor floor, buying medicines from outside and running between counters for reports.\n\nImagine their day and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)\n\nTwo of your four problems must be the mother's, not Ravi's.",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement",
+      "Two of your four problems must be the mother's, not Ravi's"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "patient attendants",
+      "setting": "government hospital corridor, Patna",
+      "twist": "two problems must be the mother's"
+    }
+  },
+  {
+    "id": "pb-problem-id-0028",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Delivery rider's first heavy rain",
+    "text": "Arif delivers food in Hyderabad on a scooter. On the first heavy rain of June, orders double, roads flood, his phone screen gets wet and buildings do not let him wait inside.\n\nImagine his day and identify FOUR distinct problems that he might face, which may need design solutions. Write the FOUR problem statements starting with the words \"How can we…\". (2 x 4 = 8 marks)\n\nSelect any ONE of the four statements. Draw TWO potential design solutions for it, and write a short title for each solution. (6 x 2 = 12 marks)\n\nNeither solution may be an app or a phone feature.",
+    "rules": [
+      "Exactly FOUR \"How can we…\" statements",
+      "TWO titled solutions for ONE chosen statement",
+      "Neither solution may be an app or a phone feature"
+    ],
+    "criteria": [
+      {
+        "name": "Variety and uniqueness of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Relevance of the problems",
+        "marks": 4
+      },
+      {
+        "name": "Practical feasibility of the design solutions",
+        "marks": 6
+      },
+      {
+        "name": "Clarity in communication",
+        "marks": 6
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "food-delivery rider",
+      "setting": "city streets, Hyderabad, first monsoon rain",
+      "twist": "no app solutions",
+      "hook": "gig workers"
+    }
+  },
+  {
+    "id": "pb-problem-id-0029",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Sleeper coach at dawn",
+    "text": "It is 5 am in the sleeper coach of an overnight train approaching Itarsi. Passengers are folding bedsheets, queuing for the toilet with toothbrushes, getting down from upper berths and pulling luggage out from under the seats.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "sleeper-coach passengers",
+      "setting": "sleeper coach at dawn",
+      "hook": "sleeper trains"
+    }
+  },
+  {
+    "id": "pb-problem-id-0030",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Tin-roof classroom in May",
+    "text": "A government school classroom in Banda, Uttar Pradesh, has a tin roof, one ceiling fan and 52 students. It is 11 am in May, and the exams are next week.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "students and teacher",
+      "setting": "tin-roof classroom, Banda, May",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-problem-id-0031",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Ration shop on distribution day",
+    "text": "It is distribution day at the ration shop of a village in Jharkhand. Families wait to verify their fingerprints on a machine that needs network, then collect rice, wheat and oil in their own bags.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)\n\nProblems may not be about the number of people waiting.",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions",
+      "Problems may not be about the number of people waiting"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "ration card holders and shopkeeper",
+      "setting": "village ration shop, Jharkhand",
+      "twist": "crowding is not a design problem",
+      "hook": "digital payments/ID"
+    }
+  },
+  {
+    "id": "pb-problem-id-0032",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Weekly haat on tarps",
+    "text": "Every Thursday, a weekly market sets up on open ground in a village in Dindori, Madhya Pradesh. Women sell vegetables, mahua and bangles on tarpaulins on the ground, and buyers walk in from villages up to 10 km away.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "women vendors and buyers",
+      "setting": "weekly village market, Dindori"
+    }
+  },
+  {
+    "id": "pb-problem-id-0033",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Hospital pharmacy counter",
+    "text": "It is 11 am at the free-medicine counter of a district hospital in Kanpur. Patients and attendants hold prescription slips up to a small window, and medicines are handed out in paper packets.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "patients and pharmacist",
+      "setting": "district hospital pharmacy counter, Kanpur"
+    }
+  },
+  {
+    "id": "pb-problem-id-0034",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "E-rickshaw stand at a metro station",
+    "text": "At 6 pm, office-goers stream out of a metro station in east Delhi to an e-rickshaw stand on the roadside. Drivers call out destinations, and passengers squeeze in with bags and vegetables.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "commuters and e-rickshaw drivers",
+      "setting": "e-rickshaw stand outside a metro station, Delhi"
+    }
+  },
+  {
+    "id": "pb-problem-id-0035",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Chawl kitchen at dinner time",
+    "text": "A family of five cooks dinner in the corner of their single room in a Mumbai chawl. The kitchen is a platform with a two-burner stove, a gas cylinder underneath and steel utensils on a wall rack. Two children are doing homework a metre away.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "family of five",
+      "setting": "single-room chawl kitchen, Mumbai"
+    }
+  },
+  {
+    "id": "pb-problem-id-0036",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Highway pay-and-use toilet",
+    "text": "A pay-and-use public toilet at a highway bus stand in Haryana is used by bus passengers during a 10-minute halt. An attendant collects coins at the door.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)\n\nAt least two problems must be the attendant's.",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions",
+      "At least two problems must be the attendant's"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "bus passengers and toilet attendant",
+      "setting": "highway bus stand toilet, Haryana",
+      "twist": "two problems must be the attendant's"
+    }
+  },
+  {
+    "id": "pb-problem-id-0037",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Fish market at 6 am",
+    "text": "It is 6 am at a fish market in Kolkata. Women vendors sit on raised platforms with fish on ice, cutting to order with a curved blade fixed to a wooden base (bonti). The floor is wet and buyers bargain loudly.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "women fish vendors and buyers",
+      "setting": "fish market, Kolkata"
+    }
+  },
+  {
+    "id": "pb-problem-id-0038",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Village handpump in May",
+    "text": "Women and children in a village in Bundelkhand queue at the only working handpump on a May morning. They fill pots and plastic cans and carry them home on their heads and hips.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "women and children fetching water",
+      "setting": "village handpump, Bundelkhand, May",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-problem-id-0039",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Anganwadi at lunch time",
+    "text": "It is lunch time at an anganwadi in a village in Bihar. Twenty-five children aged 3 to 6 sit on the floor while the worker serves khichdi from a large vessel, and two mothers have come to collect take-home rations.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "children aged 3–6 and anganwadi worker",
+      "setting": "anganwadi at lunch, Bihar"
+    }
+  },
+  {
+    "id": "pb-problem-id-0040",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Ferry jetty during the morning rush",
+    "text": "It is 8:30 am at a ferry jetty in Kochi. Office-goers, students and fish vendors with baskets wait to board a ferry. The jetty floats and rises and falls with the tide.\n\nDraw and annotate FIVE distinct design problems in this context. Use only one visual for each problem. Do not provide solutions. (5 x 4 = 20 marks)\n\nDraw every problem from the point of view of someone already on the ferry.",
+    "rules": [
+      "Exactly FIVE problems",
+      "One visual per problem",
+      "No solutions",
+      "Draw every problem from the point of view of someone already on the ferry"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Ability to make distinct observations",
+        "marks": 5
+      },
+      {
+        "name": "Ability to communicate through visuals",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the given context",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "ferry commuters",
+      "setting": "ferry jetty, Kochi",
+      "pov": "person already on the ferry",
+      "twist": "fixed point of view"
+    }
+  },
+  {
+    "id": "pb-problem-id-0041",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Boarding a city bus at 8:30 am",
+    "text": "Boarding a city bus in Bengaluru at 8:30 am is difficult, especially for the elderly, women carrying children and people with disabilities.\n\nList TEN unique design problems or opportunities in this situation. Each may come from what you can imagine of the scene or from your own experience, and each should have potential for a design solution. (10 marks)\n\nClearly illustrate the TWO problems you consider the most important. (2 x 5 = 10 marks)\n\nFocus on the problems. DO NOT provide solutions.\n\nLarge crowds or too few buses are not design problems.",
+    "rules": [
+      "List TEN problems",
+      "Illustrate TWO",
+      "No solutions",
+      "Large crowds or too few buses are not design problems"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of observations",
+        "marks": 5
+      },
+      {
+        "name": "Analytical skills",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "elderly, women with children, people with disabilities",
+      "setting": "city bus stop, Bengaluru, morning rush",
+      "twist": "crowding excluded"
+    }
+  },
+  {
+    "id": "pb-problem-id-0042",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Village wedding feast",
+    "text": "A wedding feast is being served to 400 guests in a courtyard in a village in Rajasthan. Guests sit in rows on the ground, food is served on leaf plates by relatives walking along the rows, and cooking happens on large wood fires nearby.\n\nList TEN unique design problems or opportunities in this situation. Each may come from what you can imagine of the scene or from your own experience, and each should have potential for a design solution. (10 marks)\n\nClearly illustrate the TWO problems you consider the most important. (2 x 5 = 10 marks)\n\nFocus on the problems. DO NOT provide solutions.",
+    "rules": [
+      "List TEN problems",
+      "Illustrate TWO",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of observations",
+        "marks": 5
+      },
+      {
+        "name": "Analytical skills",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "guests, cooks and servers",
+      "setting": "village wedding feast, Rajasthan"
+    }
+  },
+  {
+    "id": "pb-problem-id-0043",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Terrace on kite-flying day",
+    "text": "It is the kite-flying festival in Ahmedabad. Families crowd onto flat terraces in the old city from morning till night, with children running across rooftops, loud music and kite string everywhere.\n\nList TEN unique design problems or opportunities in this situation. Each may come from what you can imagine of the scene or from your own experience, and each should have potential for a design solution. (10 marks)\n\nClearly illustrate the TWO problems you consider the most important. (2 x 5 = 10 marks)\n\nFocus on the problems. DO NOT provide solutions.",
+    "rules": [
+      "List TEN problems",
+      "Illustrate TWO",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of observations",
+        "marks": 5
+      },
+      {
+        "name": "Analytical skills",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "families and children on rooftops",
+      "setting": "terraces on kite-flying day, Ahmedabad"
+    }
+  },
+  {
+    "id": "pb-problem-id-0044",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Shared-jeep stand in the hills",
+    "text": "Shared jeeps leave from a stand in Gangtok, Sikkim, to villages up to 80 km away. In the monsoon, passengers wait in the rain with luggage, gas cylinders and sacks of rice that must go on the roof.\n\nList TEN unique design problems or opportunities in this situation. Each may come from what you can imagine of the scene or from your own experience, and each should have potential for a design solution. (10 marks)\n\nClearly illustrate the TWO problems you consider the most important. (2 x 5 = 10 marks)\n\nFocus on the problems. DO NOT provide solutions.",
+    "rules": [
+      "List TEN problems",
+      "Illustrate TWO",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of observations",
+        "marks": 5
+      },
+      {
+        "name": "Analytical skills",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "hill passengers and jeep drivers",
+      "setting": "shared-jeep stand, Gangtok, monsoon"
+    }
+  },
+  {
+    "id": "pb-problem-id-0045",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Coaching centre between classes",
+    "text": "Between two classes at a coaching centre in Kota, 300 students have ten minutes to leave one hall, eat, refill water and reach the next class on another floor.\n\nList TEN unique design problems or opportunities in this situation. Each may come from what you can imagine of the scene or from your own experience, and each should have potential for a design solution. (10 marks)\n\nClearly illustrate the TWO problems you consider the most important. (2 x 5 = 10 marks)\n\nFocus on the problems. DO NOT provide solutions.",
+    "rules": [
+      "List TEN problems",
+      "Illustrate TWO",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of observations",
+        "marks": 5
+      },
+      {
+        "name": "Analytical skills",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "coaching students",
+      "setting": "coaching centre corridors, Kota"
+    }
+  },
+  {
+    "id": "pb-problem-id-0046",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Post office on pension day",
+    "text": "On the first working day of the month, elderly pensioners line up at a post office in a small town in Kerala to withdraw their pensions. Many come alone by bus.\n\nList TEN unique design problems or opportunities in this situation. Each may come from what you can imagine of the scene or from your own experience, and each should have potential for a design solution. (10 marks)\n\nClearly illustrate the TWO problems you consider the most important. (2 x 5 = 10 marks)\n\nFocus on the problems. DO NOT provide solutions.\n\nAt least four of the ten problems must happen before they reach the counter.",
+    "rules": [
+      "List TEN problems",
+      "Illustrate TWO",
+      "No solutions",
+      "At least four of the ten problems must happen before they reach the counter"
+    ],
+    "criteria": [
+      {
+        "name": "Severity of the identified problems",
+        "marks": 5
+      },
+      {
+        "name": "Diversity of observations",
+        "marks": 5
+      },
+      {
+        "name": "Analytical skills",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "elderly pensioners",
+      "setting": "small-town post office, Kerala",
+      "twist": "four problems before the counter",
+      "hook": "ageing, digital payments"
+    }
+  },
+  {
+    "id": "pb-problem-id-0047",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Tea stall at a bus depot",
+    "text": "A tea stall at the main bus depot in Nagpur serves 600 cups a day from a single stove. Customers drink standing, often while watching for their bus.\n\nList FIVE problems faced by the tea seller and FIVE problems faced by the customers. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "chaiwala and customers",
+      "setting": "tea stall at a bus depot, Nagpur",
+      "pov": "seller and buyer"
+    }
+  },
+  {
+    "id": "pb-problem-id-0048",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Late-night pharmacy near a hospital",
+    "text": "A pharmacy opposite a government hospital in Lucknow stays open all night. At 2 am, attendants of patients come with handwritten prescriptions, often in a hurry and unsure of the medicine names.\n\nList FIVE problems faced by the pharmacist and FIVE problems faced by the customers. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "pharmacist and patient attendants",
+      "setting": "all-night pharmacy, Lucknow",
+      "pov": "pharmacist and customer"
+    }
+  },
+  {
+    "id": "pb-problem-id-0049",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Auto-rickshaw in the monsoon",
+    "text": "An auto-rickshaw in Pune on a heavy-rain evening in July carries passengers through waterlogged streets. The sides are open, and the plastic sheets are tied with string.\n\nList FIVE problems faced by the driver and FIVE problems faced by the passengers. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "auto driver and passengers",
+      "setting": "auto-rickshaw, Pune, monsoon",
+      "pov": "driver and passenger"
+    }
+  },
+  {
+    "id": "pb-problem-id-0050",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Barber under a tree",
+    "text": "A barber in a village in Bareilly district works under a neem tree with a chair, a mirror nailed to the trunk and a box of tools. Customers wait on a bench.\n\nList FIVE problems faced by the barber and FIVE problems faced by the customers. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "barber and customers",
+      "setting": "roadside barber under a tree, Bareilly district",
+      "pov": "barber and customer"
+    }
+  },
+  {
+    "id": "pb-problem-id-0051",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Tailor in the festival rush",
+    "text": "A tailor's shop in Hyderabad two weeks before a festival has 80 orders pending. Customers come for measurements, trials and alterations, and want delivery on time.\n\nList FIVE problems faced by the tailor and FIVE problems faced by the customers. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "tailor and customers",
+      "setting": "tailor's shop in festival week, Hyderabad",
+      "pov": "tailor and customer"
+    }
+  },
+  {
+    "id": "pb-problem-id-0052",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Station two-wheeler parking",
+    "text": "The two-wheeler parking lot at a suburban railway station in Thane fills up by 8 am. An attendant issues paper tokens and collects fees, and commuters return late at night to find their vehicles.\n\nList FIVE problems faced by the parking attendant and FIVE problems faced by the commuters. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "parking attendant and commuters",
+      "setting": "station two-wheeler parking, Thane",
+      "pov": "attendant and commuter"
+    }
+  },
+  {
+    "id": "pb-problem-id-0053",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "School van in Indore",
+    "text": "A school van in Indore picks up 14 children aged 5 to 12 from homes across the neighbourhood every morning. The driver also loads their bags and lunch boxes, and parents wave from the gate.\n\nList FIVE problems faced by the driver and FIVE problems faced by the children. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "van driver and schoolchildren",
+      "setting": "school van, Indore",
+      "pov": "driver and children"
+    }
+  },
+  {
+    "id": "pb-problem-id-0054",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Delivery rider at the society gate",
+    "text": "At a gated housing society in Chennai, a grocery delivery rider has ten minutes to deliver an order. The security guard at the gate must check every visitor and call the flat before letting anyone in.\n\nList FIVE problems faced by the delivery rider and FIVE problems faced by the security guard. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.\n\nDo not list problems about the customer who ordered.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder",
+      "Do not list problems about the customer who ordered"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "delivery rider and security guard",
+      "setting": "housing society gate, Chennai",
+      "pov": "rider and guard",
+      "twist": "customer excluded",
+      "hook": "gig workers"
+    }
+  },
+  {
+    "id": "pb-problem-id-0055",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Vaccination day at the anganwadi",
+    "text": "It is vaccination day at an anganwadi in a village near Nashik. An auxiliary nurse vaccinates babies while mothers wait with infants and older children, and the anganwadi worker updates registers.\n\nList FIVE problems faced by the health staff and FIVE problems faced by the mothers. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "mothers with infants and health staff",
+      "setting": "anganwadi vaccination day, near Nashik",
+      "pov": "health staff and mothers",
+      "hook": "ASHA workers"
+    }
+  },
+  {
+    "id": "pb-problem-id-0056",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Highway dhaba at midnight",
+    "text": "A dhaba on the highway near Panipat stays open all night for truck drivers. They eat sitting on charpais, park their trucks along the road and sometimes sleep for a few hours before driving on.\n\nList FIVE problems faced by the dhaba owner and FIVE problems faced by the truck drivers. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "dhaba owner and truck drivers",
+      "setting": "highway dhaba at night, near Panipat",
+      "pov": "owner and driver"
+    }
+  },
+  {
+    "id": "pb-problem-id-0057",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Vegetable vendor and buyers in a heatwave",
+    "text": "On a 46-degree afternoon in Nagpur, a woman sells vegetables from a pushcart near a housing colony. Buyers come out only after 5 pm, and her leafy vegetables wilt before then.\n\nList FIVE problems faced by the vendor and FIVE problems faced by the buyers. (5 + 5 marks)\n\nDraw and explain ONE problem from each list. (5 + 5 marks)\n\nDo not limit yourself to what happens at this one moment.\n\nAll ten problems must be caused or made worse by the heat.",
+    "rules": [
+      "FIVE problems for each stakeholder",
+      "Draw and explain ONE problem for each stakeholder",
+      "All ten problems must be caused or made worse by the heat"
+    ],
+    "criteria": [
+      {
+        "name": "Uniqueness and relevance of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Severity of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Visual communication",
+        "marks": 5
+      },
+      {
+        "name": "Presentation",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "vegetable vendor and buyers",
+      "setting": "pushcart near a housing colony, Nagpur, May",
+      "pov": "seller and buyer",
+      "twist": "every problem caused by heat",
+      "hook": "heat"
+    }
+  },
+  {
+    "id": "pb-problem-id-0058",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "LPG cylinder at home",
+    "text": "A 14.2 kg LPG cylinder is used in most Indian kitchens. Consider a woman of 65 who lives with her husband in a second-floor flat in Vadodara and has to receive, move and connect a new cylinder every month.\n\nIdentify SIX problems that she and others like her face in using the cylinder. Illustrate each problem and describe it in one sentence. Do not provide solutions.",
+    "rules": [
+      "Exactly SIX problems",
+      "One illustration and one sentence per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Quality and diversity of observation",
+        "marks": 5
+      },
+      {
+        "name": "Analysis of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the user",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "elderly woman",
+      "setting": "second-floor flat kitchen, Vadodara",
+      "object": "LPG cylinder",
+      "hook": "ageing"
+    }
+  },
+  {
+    "id": "pb-problem-id-0059",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Bucket and mug in a village bathroom",
+    "text": "A plastic bucket and mug are used for bathing in a village home in Odisha, where water is drawn from a well and heated on the chulha in winter.\n\nIdentify SIX problems that family members face in using them. Illustrate each problem and describe it in one sentence. Do not provide solutions.",
+    "rules": [
+      "Exactly SIX problems",
+      "One illustration and one sentence per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Quality and diversity of observation",
+        "marks": 5
+      },
+      {
+        "name": "Analysis of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the user",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "village family",
+      "setting": "village bathroom, Odisha",
+      "object": "bucket and mug"
+    }
+  },
+  {
+    "id": "pb-problem-id-0060",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Class 2 school bag",
+    "text": "Consider the school bag of a 7-year-old in Class 2 who walks 2 km to a government school in a town in Bihar, crosses a highway, and sits on the floor in class.\n\nIdentify SIX problems that children like him face in using the bag. Illustrate each problem and describe it in one sentence. Do not provide solutions.\n\nAt least two problems must occur when the bag is not being carried.",
+    "rules": [
+      "Exactly SIX problems",
+      "One illustration and one sentence per problem",
+      "No solutions",
+      "At least two problems must occur when the bag is not being carried"
+    ],
+    "criteria": [
+      {
+        "name": "Quality and diversity of observation",
+        "marks": 5
+      },
+      {
+        "name": "Analysis of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the user",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "child aged 7",
+      "setting": "walk to school and classroom, Bihar",
+      "object": "school bag",
+      "twist": "two problems when not carried"
+    }
+  },
+  {
+    "id": "pb-problem-id-0061",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "QR code standee at a vegetable cart",
+    "text": "A laminated QR code standee hangs from a vegetable cart in Bhubaneswar. The seller takes most payments through it, from morning to late evening, in sun and rain.\n\nIdentify SIX problems that the seller and the buyers face in using the standee. Illustrate each problem and describe it in one sentence. Do not provide solutions.\n\nInclude problems for both the seller and the buyers.",
+    "rules": [
+      "Exactly SIX problems",
+      "One illustration and one sentence per problem",
+      "No solutions",
+      "Include problems for both the seller and the buyers"
+    ],
+    "criteria": [
+      {
+        "name": "Quality and diversity of observation",
+        "marks": 5
+      },
+      {
+        "name": "Analysis of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the user",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "vegetable seller and buyers",
+      "setting": "vegetable cart, Bhubaneswar",
+      "object": "QR code standee",
+      "twist": "two users of one object",
+      "hook": "digital payments"
+    }
+  },
+  {
+    "id": "pb-problem-id-0062",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Plastic chair at a community event",
+    "text": "Stackable plastic chairs are hired by the hundred for weddings, meetings and functions across India. Consider the chairs at a community function in a small town in Andhra Pradesh, used by guests of all ages over a long evening.\n\nIdentify SIX problems that guests and organisers face in using these chairs. Illustrate each problem and describe it in one sentence. Do not provide solutions.",
+    "rules": [
+      "Exactly SIX problems",
+      "One illustration and one sentence per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Quality and diversity of observation",
+        "marks": 5
+      },
+      {
+        "name": "Analysis of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the user",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "guests at a community function",
+      "setting": "community function, small town, Andhra Pradesh",
+      "object": "stackable plastic chair"
+    }
+  },
+  {
+    "id": "pb-problem-id-0063",
+    "source": "authored",
+    "origin": null,
+    "slot": "problem-id",
+    "title": "Shared family smartphone",
+    "text": "A family of five in a village in Madhya Pradesh shares one smartphone. The father uses it for farm prices, the mother for calls to her family, and the children for online homework in the evening.\n\nIdentify SIX problems that family members face in using one shared phone. Illustrate each problem and describe it in one sentence. Do not provide solutions.",
+    "rules": [
+      "Exactly SIX problems",
+      "One illustration and one sentence per problem",
+      "No solutions"
+    ],
+    "criteria": [
+      {
+        "name": "Quality and diversity of observation",
+        "marks": 5
+      },
+      {
+        "name": "Analysis of the problems",
+        "marks": 5
+      },
+      {
+        "name": "Relevance to the user",
+        "marks": 5
+      },
+      {
+        "name": "Communication",
+        "marks": 5
+      }
+    ],
+    "images": [],
+    "tags": {
+      "user": "family of five",
+      "setting": "village home, Madhya Pradesh",
+      "object": "shared smartphone",
+      "hook": "digital payments"
+    }
+  }
+]
