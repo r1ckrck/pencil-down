@@ -104,7 +104,7 @@ function generate(
 }
 
 const gensFor = (generators: Generator[], topic: Topic | null, format: Format | null) =>
-  generators.filter((g) => (!topic || g.topic === topic) && (!format || g.formats.includes(format)));
+  generators.filter((g) => !g.retired && (!topic || g.topic === topic) && (!format || g.formats.includes(format)));
 
 // Unseen first (random among them); otherwise the least recently seen.
 function pickReal(cands: PartAQuestion[], pool: PoolState, rand: Rand, allowSeen = true): PartAQuestion | null {

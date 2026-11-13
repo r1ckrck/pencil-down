@@ -111,6 +111,8 @@ export interface Generator {
   generate(seed: number, difficulty: Difficulty, format: Format): GeneratedQuestion;
   // Independent solver: derives the answer by a different method than generate() used.
   solve(q: GeneratedQuestion): SimpleAnswer;
+  // Retired generators still regenerate questions already served (history, review) but are never selected again.
+  retired?: boolean;
 }
 
 // ---------- Part B (content/part-b/prompts.json, papers.json) ----------

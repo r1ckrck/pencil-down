@@ -8,5 +8,5 @@ import { SOLID_GENERATORS } from "./solid";
 export const GENERATORS: Generator[] = [...FLAT_GENERATORS, ...SOLID_GENERATORS];
 
 export function generatorsFor(topic: Topic, format: Format): Generator[] {
-  return GENERATORS.filter((g) => g.topic === topic && g.formats.includes(format));
+  return GENERATORS.filter((g) => !g.retired && g.topic === topic && g.formats.includes(format));
 }
