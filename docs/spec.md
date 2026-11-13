@@ -32,7 +32,7 @@ A single-user web platform that prepares one aspirant for CEED 2027 (17 Jan 2027
 | Spaced repetition | `ts-fsrs` | FSRS scheduler engine; not worth reimplementing |
 | Tests | Vitest (logic) + Playwright (flows) | |
 | Content pipeline | Python 3.12 + PyMuPDF + Tesseract (laptop only) | Best-in-class PDF cropping and OCR; never runs on the server |
-| Ship | Dockerfile (Next standalone, `node:24-alpine`) + compose in house shape + `.forgejo/workflows/` | Server reference §5, §7 |
+| Ship | Next standalone output + `docs/run.md` runtime contract + `.forgejo/workflows/check.yml` | Packaging is server side |
 
 ---
 
@@ -58,7 +58,7 @@ pencil-down/
 │   ├── verify/               totals, joins, contact sheets
 │   └── raw/                  downloaded PDFs (git-ignored)
 ├── docs/                     research/, spec.md
-├── Dockerfile · docker-compose.yml · .forgejo/workflows/check.yml
+├── .forgejo/workflows/check.yml
 ```
 
 ---
@@ -348,11 +348,10 @@ Photos stored under `/data/photos/`. Content is read from `content/` (bundled), 
 
 ## 11 · Ship contract
 
-- `Dockerfile`: multi-stage, Next standalone output on `node:24-alpine`, runs as `${PUID}:${PGID}`.
-- `docker-compose.yml`: `container_name: pencil-down`, `homelab-net` (external), `env_file: /opt/homelab/.env`, `mem_limit: 512m`, volume `/data/appdata/pencil-down:/data`, healthcheck on `/api/health`.
-- `.forgejo/workflows/check.yml`: validate content, unit tests, types and build on every push to `main`. Image build and container start on the server are wired server side.
-- Hostname, Authelia gate and folder: server side.
-- Development and testing run natively with Node on `localhost`; the container is first exercised on the server.
+- The repo ships the app, the content and `.forgejo/workflows/check.yml` (validate content, unit tests, types and build on every push to `main`).
+- `docs/run.md` is the runtime contract: build steps, runtime folder layout, environment variables, health route, memory cap.
+- Image, compose, hostname, Authelia gate and data folder: server side.
+- Development and testing run natively with Node on `localhost`.
 
 ---
 
@@ -365,7 +364,7 @@ One continuous build, worked in this order because each step feeds the next:
 | 1 Content pipeline | Real Part A questions + keys, real Part B prompts, raw card facts |
 | 2 Generated content | 11 generators; ≥250 authored Part B prompts; cards with images |
 | 3 App | Screens, engine, DB, timers, selection |
-| 4 Ship files | Dockerfile, compose, workflow |
+| 4 Ship files | Runtime contract (`docs/run.md`), CI workflow |
 | 5 QA | Every acceptance criterion in §13, laptop and phone widths, light and dark |
 
 ---
@@ -421,7 +420,7 @@ One continuous build, worked in this order because each step feeds the next:
 ### Ship
 - [ ] The production build (Next standalone) starts natively; `/api/health` returns 200; data persists across a process restart.
 - [ ] Node process memory stays under 512 MB during a full 3-hour exam session.
-- [ ] Dockerfile and compose match every item in §11 and server reference §5 (checklist review).
+- [ ] `docs/run.md` reproduces a working production run from a clean checkout (follow it step by step).
 
 ---
 

@@ -1,7 +1,7 @@
 # Pencil Down — QA
 
 Status of every acceptance criterion in `spec.md` §13. **36 PASS · 2 FIXED · 1 FAIL.**
-FIXED = failed on first check, corrected, re-verified. Commands run in `app/`; the production run is the standalone server (`.next/standalone/server.js`, `public/` and `.next/static/` copied in as the Dockerfile does) on a fresh data dir, with `PD_BASE_URL=… PENCIL_DATA_DIR=… pnpm exec playwright test`.
+FIXED = failed on first check, corrected, re-verified. Commands run in `app/`; the production run is the standalone server (`.next/standalone/server.js`, `public/` and `.next/static/` copied in as `docs/run.md` describes) on a fresh data dir, with `PD_BASE_URL=… PENCIL_DATA_DIR=… pnpm exec playwright test`.
 
 ## Evidence at a glance
 
@@ -82,7 +82,7 @@ FIXED = failed on first check, corrected, re-verified. Commands run in `app/`; t
 |---|---|---|
 | Standalone build starts natively; `/api/health` 200; data persists across restart | PASS | `node server.js` → 200; history 37 sessions before and after a process restart |
 | Node RSS < 512 MB during a full 3-hour exam | FIXED | One full exam driven end to end with fast-forwarding (≈ 1,500 requests). Without a heap cap RSS kept climbing across exams (365 → 374 → 407 MB): V8 holds collectable garbage. Dockerfile sets `NODE_OPTIONS=--max-old-space-size=256`; measured 116 → 290 → 299 → 316 MB max over three back-to-back exams |
-| Dockerfile and compose match §11 and server reference §5 | PASS | multi-stage, standalone on `node:24-alpine`; compose: `container_name`, `homelab-net` external, `env_file`, `user: ${PUID}:${PGID}`, `mem_limit: 512m`, `/data/appdata/pencil-down:/data`, healthcheck `/api/health`, restart policy. Container runs `umask 002` (server reference §6) |
+| `docs/run.md` reproduces a working production run from a clean checkout | PASS | Fresh `git clone` → `pnpm install --frozen-lockfile` → `pnpm build` → runtime folder assembled with `cp -a` → `node server.js` with the documented variables: `/api/health` 200, `/`, `/part-a`, a content image and CSS 200, DB and `photos/` created in the data dir |
 
 ## Features checked beyond §13
 
@@ -95,8 +95,8 @@ FIXED = failed on first check, corrected, re-verified. Commands run in `app/`; t
 ## Known limitations
 
 - **2022 Part B Q2 is absent** (stimulus only in the answer booklet), so 2022 has no Part B past paper; its four other prompts are in the pool.
-- **Deploy**: the repo ships `.forgejo/workflows/check.yml` (validate, test, types, build); building the image and starting the container are wired server side.
-- **Container not run locally** (no Docker on the laptop, per spec §11); memory was measured on the native macOS process, where RSS accounting differs from a cgroup.
+- **Deploy**: the repo ships `docs/run.md` (runtime contract) and `.forgejo/workflows/check.yml` (validate, test, types, build); image, compose and container start live on the server.
+- **No container run in QA**: packaging is server side; memory was measured on the native macOS process, where RSS accounting differs from a cgroup.
 - **Mock no-repeat** holds while every topic × format cell the plan needs has unseen supply or a generator. Language NAT has 7 questions; once language runs dry, quotas slip ± 1 or the least-recently-seen question returns, by design.
 - **Real scans at 360 px** render small; the zoom control is the reading path on a phone.
 - Solved (2010–2019) explanations were checked by the scripted parser only; the manual read covered official ones.

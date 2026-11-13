@@ -14,6 +14,7 @@ Pencil Down: a private, single-user web platform that trains one aspirant for **
 | API contract (routes, shapes, server rules) | `docs/api.md` |
 | UI components, tokens in Tailwind, shells | `docs/ui-components.md` |
 | Acceptance status per criterion | `docs/qa.md` |
+| Build and run in production | `docs/run.md` |
 | Content shapes (questions, prompts, cards) | `app/src/content/types.ts` |
 | Why (exam facts, evidence, prompt themes) | `docs/research/<n>-*/report.md`, then that folder's notes |
 | Look and feel | `~/Documents/Projects/assistant/docs/design.md` + `tokens.css`; adaptations in spec §4 |
@@ -27,7 +28,7 @@ Spec wins over research. Change the spec before changing behaviour.
 ```
 pencil-down/
 ├── CLAUDE.md
-├── docs/            spec.md · api.md · ui-components.md · qa.md
+├── docs/            spec.md · api.md · ui-components.md · qa.md · run.md
 │   └── research/
 │       ├── 1-exam-and-prep/          exam pattern, marking, cutoffs, prep habits, tools landscape
 │       ├── 2-part-b-timed-thinking/  slot playbooks, ideation science, drills
@@ -42,7 +43,7 @@ pencil-down/
 │   ├── src/app/     (app)/ routes with chrome · (exam)/ live sessions · api/
 │   ├── src/         components/ · engine/ · generators/ (flat, solid) · db/ · content/ · server/ · lib/ · styles/
 │   └── tests/       unit/ (vitest) · e2e/ (playwright)
-├── Dockerfile · docker-compose.yml · .forgejo/workflows/check.yml
+├── .forgejo/workflows/check.yml
 ```
 
 ## Commands (in `app/`)
@@ -70,8 +71,8 @@ pencil-down/
 
 ## Ownership
 
-- This repo owns: app, content, pipeline, Dockerfile, compose, workflow file.
-- The owner owns: hosting, hostname, Authelia/2FA, server folders, deploy wiring. Don't design for these.
+- This repo owns: app, content, pipeline, `docs/run.md` (runtime contract), CI workflow.
+- The owner owns: image, compose, hosting, hostname, Authelia/2FA, server folders, deploy wiring. Don't design for these.
 
 ## Git
 
