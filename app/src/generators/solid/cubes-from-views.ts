@@ -124,7 +124,7 @@ function generate(seed: number, difficulty: Difficulty, format: Format): Generat
   });
 
   const stem =
-    "Top, front and right side views of a stack of identical cubes are shown: the top view above the front view, and the right side view, seen from the right so the front of the stack is on its left, beside it. What is the minimum number of cubes needed to make this stack?";
+    "Top, front and right side views of a stack of identical cubes are shown: the top view above the front view, and the right side view, seen from the right so the front of the stack is on its left, beside it. Lines inside a view only separate squares; they do not show height or depth. What is the minimum number of cubes needed to make this stack?";
   const explanation =
     `**${answer}**. Every square of the top view needs at least one cube (${cells.length}). ` +
     `Each column of the front view and each column of the side view then needs one cube raised to its height; ` +

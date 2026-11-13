@@ -100,3 +100,18 @@ FIXED = failed on first check, corrected, re-verified. Commands run in `app/`; t
 - **Mock no-repeat** holds while every topic × format cell the plan needs has unseen supply or a generator. Language NAT has 7 questions; once language runs dry, quotas slip ± 1 or the least-recently-seen question returns, by design.
 - **Real scans at 360 px** render small; the zoom control is the reading path on a phone.
 - Solved (2010–2019) explanations were checked by the scripted parser only; the manual read covered official ones.
+
+## Question review
+
+Independent review of every question source: sighted audits of the generators and the content, blind solves (solver sees only the rendered question, keys hidden) and adjudication.
+
+| Check | Result |
+|---|---|
+| Generators, blind solve (first pass, 144 questions, all generators × formats × levels) | 144 / 144 agree with the key; 10 flagged unfair (hidden cubes, unstated line rule, slivers) → fixed |
+| Generators, sighted audit | 2 blockers (pictures not fixing the answer), 7 major, minor items → fixed; probes over thousands of seeds find 0 ambiguous outputs |
+| Generators, blind solve (second pass on the fixed generators, 96 fresh questions) | 96 / 96 agree; 1 flag (line rule unstated in the stack stem) → stated in that stem and in the minimum-cubes stem |
+| Self-solved real answers (CEED 2010–19), blind re-solve of all 320 | 308 / 320 agree first time; every disagreement and flag adjudicated: 4 keys corrected, 8 arguable items excluded, rest kept with a review note |
+| Real questions, content audit | 0 blockers; duplicates excluded, printed option labels (1–4, a–d) shown on the answer buttons |
+| Part B prompts, content audit | Older prompts reshaped into 24-minute single tasks; full briefs moved out of problem identification; authored text and images aligned |
+| History safety | Generated questions are stored when first served; items served earlier replay from a frozen copy of the original generators |
+

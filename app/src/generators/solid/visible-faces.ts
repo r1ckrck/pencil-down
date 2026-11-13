@@ -95,7 +95,7 @@ function generateWith(strict: boolean, seed: number, difficulty: Difficulty, for
     }
 
     const stemBase = strict
-      ? `Identical cubes stand in piles on a ${p.rows} × ${cols} grid of squares drawn on the floor. Every cube sits on the floor or on another cube, and the top of every pile can be seen.`
+      ? `Identical cubes stand in piles on a ${p.rows} × ${cols} grid of squares drawn on the floor. Every cube sits on the floor or on another cube, and the top of every pile can be seen. Thick lines mark the outline and every edge where the surface turns or steps; thin lines separate cubes on the same flat surface.`
       : "The stack of identical cubes rests on a floor, and every cube sits on the floor or on another cube.";
     const stem =
       ask === "hidden"
