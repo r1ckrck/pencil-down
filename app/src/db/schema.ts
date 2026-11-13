@@ -1,3 +1,5 @@
+// Database schema, applied idempotently on open. Kept as a TS string so every bundle layer (route handlers and server components) embeds it.
+export const SCHEMA_SQL = `
 -- Pencil Down schema. Applied on every open; every statement is idempotent.
 -- All times are epoch milliseconds set by the server clock.
 
@@ -159,3 +161,4 @@ CREATE TABLE IF NOT EXISTS card_review_log (
   was_review     INTEGER NOT NULL, -- card was in review state before (counts toward retention)
   scheduled_days REAL
 );
+`;

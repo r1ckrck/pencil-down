@@ -1,7 +1,8 @@
 // Server-only: the single SQLite database (node:sqlite), opened lazily and shared.
-import { mkdirSync, readFileSync } from "node:fs";
+import { mkdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { DatabaseSync } from "node:sqlite";
+import { SCHEMA_SQL } from "./schema";
 
 export type Db = DatabaseSync;
 
@@ -14,15 +15,8 @@ export function photosDir(): string {
   return join(dataDir(), "photos");
 }
 
-let schemaSql: string | null = null;
-function schema(): string {
-  // The bundler emits schema.sql as an asset and rewrites this URL to it.
-  schemaSql ??= readFileSync(new URL("./schema.sql", import.meta.url), "utf8");
-  return schemaSql;
-}
-
 export function applySchema(db: Db): void {
-  db.exec(schema());
+  db.exec(SCHEMA_SQL);
 }
 
 // path ":memory:" for tests.

@@ -4,7 +4,7 @@ JSON over HTTP, same origin, no auth (Authelia sits in front). Every route runs 
 
 Errors: `{ "error": string, ...extra }` with status 400 (bad input), 404, 409 (rule: not live, not on screen, already committed, outside window, live session exists → `sessionId`), 413/415 (photo), 422 (no content for that session), 500.
 
-Engine code: `app/src/engine/` · routes: `app/src/app/api/` · schema: `app/src/db/schema.sql`.
+Engine code: `app/src/engine/` · routes: `app/src/app/api/` · schema: `app/src/db/schema.ts`.
 
 ---
 

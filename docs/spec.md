@@ -45,7 +45,7 @@ pencil-down/
 │   ├── src/components/       UI (shadcn copies + own)
 │   ├── src/engine/           pure logic: scoring, timers, selection, FSRS glue
 │   ├── src/generators/       Part A puzzle generators (SVG + answer by construction)
-│   ├── src/db/               schema.sql, queries
+│   ├── src/db/               schema.ts, queries
 │   └── tests/                vitest + playwright
 ├── content/                  committed pool (read-only at runtime)
 │   ├── part-a/               questions.json + images/
