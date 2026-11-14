@@ -85,7 +85,8 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key 28 disputed: two independent counts of the figure both give 32."
   },
   {
     "id": "ceed-2020-q05",
@@ -4758,7 +4759,8 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key 30 disputed: every consistent count of the object built from the three views comes out well above 30."
   },
   {
     "id": "ceed-2025-q08",
@@ -5722,7 +5724,8 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key 2 disputed: the plane through the three vertices cuts off a corner of 4/3 cm\u00b3, not 2."
   },
   {
     "id": "ceed-2026-q08",

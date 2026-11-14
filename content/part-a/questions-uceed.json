@@ -2587,7 +2587,8 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key 26 disputed: a careful count of the figure does not reach 26."
   },
   {
     "id": "uceed-2016-q17",
@@ -2845,7 +2846,8 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key C disputed: the solid read from the figure does not match option C."
   },
   {
     "id": "uceed-2016-q28",
@@ -4819,7 +4821,8 @@
     "topic": "everyday-science",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key A, C, D disputed: statement C says oxygen and ozone are not greenhouse gases, but ozone is one, so C is false."
   },
   {
     "id": "uceed-2017-q36",
@@ -7552,7 +7555,8 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key C (18) disputed: a careful count of the faces with a moustache does not reach 18."
   },
   {
     "id": "uceed-2018-q70",
@@ -13955,7 +13959,8 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key A disputed: no feature in A sets it apart from B, C and D."
   },
   {
     "id": "uceed-2022-q51",
@@ -15023,7 +15028,8 @@
     "topic": "observation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key A, D disputed: the drawn rings do not support A and D at the same crossing."
   },
   {
     "id": "uceed-2023-q31",
@@ -15441,7 +15447,8 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key D disputed: folding the nets shows that both C and D make the solid."
   },
   {
     "id": "uceed-2023-q50",
@@ -17732,7 +17739,8 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": null,
+    "excluded": "Official key B, D disputed: comparing the pieces one by one does not support B, D."
   },
   {
     "id": "uceed-2025-q28",
