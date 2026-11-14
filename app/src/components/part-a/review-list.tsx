@@ -140,12 +140,14 @@ function ReviewItem({ q, animated }: { q: ReviewQuestion; animated: boolean }) {
               </Row>
               <Row label="Format">{FORMAT_LABEL[q.format]}</Row>
             </dl>
-            {q.explanation && (
-              <div className="flex flex-col gap-2 border-t border-hairline pt-4">
-                <p className="font-mono text-label uppercase text-mute">Explanation</p>
+            <div className="flex flex-col gap-2 border-t border-hairline pt-4">
+              <p className="font-mono text-label uppercase text-mute">Explanation</p>
+              {q.explanation ? (
                 <Markdown source={q.explanation} className="text-small text-fg" />
-              </div>
-            )}
+              ) : (
+                <p className="text-small text-mute">No worked solution for this one yet.</p>
+              )}
+            </div>
           </div>
         </div>
       </details>
