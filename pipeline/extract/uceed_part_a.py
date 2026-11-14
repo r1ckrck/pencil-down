@@ -34,6 +34,8 @@ RAW = ROOT / "pipeline" / "raw" / "uceed"
 PART_A = ROOT / "content" / "part-a"
 IMAGES = PART_A / "images"
 TAGS = Path(__file__).with_name("uceed_part_a_tags.json")
+# Worked explanations, one file per year: {question id: markdown}. Missing ids keep explanation null.
+EXPLANATIONS = Path(__file__).with_name("explanations") / "uceed"
 
 YEARS = range(2015, 2027)
 
@@ -260,6 +262,9 @@ def parse_answer(fmt, text, sch):
 def main():
     IMAGES.mkdir(parents=True, exist_ok=True)
     tags = json.loads(TAGS.read_text()) if TAGS.exists() else {}
+    explanations = {}
+    for path in sorted(EXPLANATIONS.glob("*.json")):
+        explanations.update({k: v.strip() for k, v in json.loads(path.read_text()).items() if v and v.strip()})
     questions, papers, untagged, lossless = [], [], [], []
     for year in YEARS:
         cfg = PAPERS[year]
@@ -290,7 +295,7 @@ def main():
                 "topic": tag["topic"] if tag else None,
                 "difficulty": tag["difficulty"] if tag else None,
                 "animated": gif or bool(tag and tag.get("animated")),
-                "explanation": None,
+                "explanation": explanations.get(qid),
             })
             if tag and tag.get("excluded"):
                 # kept for its paper, never served in mocks, drills or revisit

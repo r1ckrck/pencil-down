@@ -18,6 +18,8 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[2]
 PART_A = ROOT / "content" / "part-a"
 CONTACT = ROOT / "pipeline" / "raw" / "contact"
+UCEED_EXPLANATIONS = {k: v.strip() for f in sorted((ROOT / "pipeline/extract/explanations/uceed").glob("*.json"))
+                      for k, v in json.loads(f.read_text()).items() if v and v.strip()}
 sys.path.insert(0, str(ROOT / "pipeline" / "extract"))
 from uceed_part_a import SKIP, raw_key  # noqa: E402  (same key reader the extractor used)
 
@@ -109,7 +111,9 @@ def main():
             else:
                 ok = valid_simple(a, q["format"])
             check(ok, f"{qid}: invalid answer {a}")
-            check(q["answerStatus"] == "official" and q["explanation"] is None, f"{qid}: status/explanation")
+            # explanations come only from pipeline/extract/explanations/uceed/<year>.json
+            check(q["answerStatus"] == "official" and q["explanation"] == UCEED_EXPLANATIONS.get(qid),
+                  f"{qid}: status/explanation")
             check(q["optionCount"] == 4 and isinstance(q["animated"], bool), f"{qid}: optionCount/animated")
             check(q["topic"] in TOPICS, f"{qid}: topic {q['topic']}")
             check(q["difficulty"] in (1, 2, 3), f"{qid}: difficulty {q['difficulty']}")

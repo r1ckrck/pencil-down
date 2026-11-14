@@ -1397,7 +1397,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Read each matrix row by row and check what sits **directly beside each white dot**. A rule that holds in every row of all three given matrices is the logic to look for.\n\n- Every row has **exactly one white dot**.\n- The white dot **never touches a black dot in its row**: there is always a gap (or the edge) on its left and right. In matrix 1 the rows are \u25cf_\u25cb_\u25cf, \u25cf\u25cf_\u25cb_, _\u25cb_\u25cf\u25cf, \u25cf\u25cf\u25cf_\u25cb, \u25cf_\u25cb_\u25cf. Matrices 2 and 3 follow the same rule.\n- Dot counts don't help: matrix 1 has 11 black dots, matrix 2 has 10 and matrix 3 has 11.\n\nNow check the options:\n- **C** works. Its rows are \u25cf_\u25cb_\u25cf, _\u25cb_\u25cf\u25cf, \u25cf\u25cf_\u25cb_, \u25cf\u25cf_\u25cb_, \u25cb_\u25cf\u25cf_, and every white dot has a gap on both sides. **Answer: C**\n- **A** fails: in row 1, \u25cf\u25cb are side by side.\n- **B** fails: in row 1, the white dot sits between two blacks (\u25cf\u25cb\u25cf).\n- **D** fails: in row 3, \u25cf\u25cb are side by side."
   },
   {
     "id": "uceed-2015-q62",
@@ -1544,7 +1544,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "The star has 5 arms, so one **notch** of rotation is 72\u00b0. Pick one end-shape, such as the circle, and count how many notches it moves at each step. The step sizes are the pattern.\n\n- Fig 1 \u2192 2: circle moves from lower-left to top, **2 notches clockwise** (144\u00b0)\n- Fig 2 \u2192 3: **3 notches** (216\u00b0), which brings it back to lower-left\n- Fig 3 \u2192 4: **5 notches** (a full 360\u00b0), so the figure looks unchanged\n- Fig 4 \u2192 5: **7 notches** (504\u00b0), which looks the same as a 2-notch turn\n\nThe steps are the **primes 2, 3, 5, 7**, so the next is **11 notches**. That looks the same as 1 notch (72\u00b0) clockwise. Turn Fig 5 one notch clockwise: arrow at the top, circle at the right, a square at bottom-right, pentagon at lower-left, a square at upper-left. That is **D**.\n\n- **A**: a copy of Fig 5, so no turn\n- **B**: Fig 5 turned 1 notch anticlockwise\n- **C**: a copy of Fig 4, which is a 3-notch clockwise turn"
   },
   {
     "id": "uceed-2015-q69",
@@ -2225,7 +2225,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Read the cut on the visible faces, then flip P over: where P reaches deep becomes a tall part, and where it is shallow becomes a low part. P's cut has only two depths (about one-third and two-thirds down), so flipped P has exactly two top levels.\n\n- **Left face:** shallow at both ends, with a deep tongue in the middle. Flipped, it reads **low\u2013high\u2013low**.\n- **Back face (hidden):** the cut meets the back-left edge shallow and the back-right edge deep (see where the right face ends). Flipped, it is low at the back-left corner and high toward the back-right.\n\n**B** is P flipped with its back-left corner facing you. Its left face is low\u2013high\u2013low. Its right face is P's back face: low at the near corner, then a step up. It has only two levels.\n\n- **A** and **D**: the long face is high\u2013low\u2013high. That is a slot where P has a tongue, so it is Q's shape.\n- **C**: the long face matches, but a third, taller level rises behind it. P has only two levels."
   },
   {
     "id": "uceed-2016-q01",
@@ -4054,7 +4054,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Draw the full figure first, then count rectangles **by size** so you don't miss or double-count any. A rectangle only counts if all four of its sides are actual drawn lines.\n\nTake one small square as 1 unit. The original is a 1\u00d72 tall box beside a column of three squares touching XY. The mirror image adds the same shape on the other side, giving a 4-wide figure: two middle columns of 3 squares each, with a 1\u00d72 box on each outer side (top-aligned).\n\n- 1\u00d71: **6** (the small squares)\n- 1 wide \u00d7 2 tall: **6** (2 outer boxes + 2 in each middle column)\n- 1 wide \u00d7 3 tall: **2** (each full middle column)\n- 2 wide \u00d7 1 tall: **3** (each row across the middle two columns)\n- 2\u00d72: **4** (outer box + its neighbour, on both sides; middle pair top and bottom)\n- 2 wide \u00d7 3 tall: **1**\n- 3 wide \u00d7 2 tall: **2**\n- 4 wide \u00d7 2 tall: **1** (the whole top band)\n\nTotal: 6 + 6 + 2 + 3 + 4 + 1 + 2 + 1 = **25**"
   },
   {
     "id": "uceed-2017-q03",
@@ -4770,7 +4770,7 @@
     "topic": "language",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "In an extended **analogy**, match each part of the story to the real thing it stands for, then keep only the statements the author actually supports.\n\n- Banquet = 150 years of burning **fossil fuels**; bill = global warming; waiter = the scientists who bring the bad news.\n- **A** works: \"dining on the energy stored in fossil fuels, and the bill has come due\" means the bill (warming) comes from our fossil-fuel use.\n- **C** works: diners \"doubting the credibility of the man who delivered it\" stands for people who are sceptical of the science.\n- **D** works: diners \"denying that it is our bill\" stands for people refusing to take responsibility.\n- **B** fails: the whole point is that we ate the meal, so the bill is ours. The author clearly sees warming as man-made, and \"may not be man-made\" goes against that.\n\n**Answer: A, C, D**"
   },
   {
     "id": "uceed-2017-q34",
@@ -5264,7 +5264,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The X axis is the vertical stem. From the top, each blob sweeps an arc around it, with radius equal to its distance from the stem. A **180\u00b0 turn draws a half circle**: two blobs at equal distance on opposite sides make a full circle; an unpaired blob leaves a **semicircle**.\n\nDistances in blob-spacing units:\n- **Top row:** left 1 to 8, right 0 to 7. The blob at 0 sits on the axis: a **dot**.\n- **Joints:** left 3.5, 5.5; right 1.5, 3.5, 5.5.\n- **Unpaired:** 8 (left) and 1.5 (right). All other distances give full circles.\n- A top view puts the front at the bottom. Turning anticlockwise, the left blob sweeps through the front (**bottom arc**), the right blob through the back (**top arc**).\n\n**B** matches: dot, small top arc, large bottom arc.\n- A: all rings are full circles.\n- C: the outer arc is on top.\n- D: has a ring at 6.5, not 5.5."
   },
   {
     "id": "uceed-2017-q55",
@@ -5747,7 +5747,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Measure everything in **unit squares**, where one unit is the width of the H's stem. Add up each option's pieces; if the total doesn't match the figure's area, rule the option out. Then check that the remaining option really fits.\n\n- **Fig. 1**: two 1\u00d75 stems + a 2\u00d71 crossbar = **12** squares.\n- **A**: four trapezoids (2.5 + 1.5 + 1.5 + 1.5), the large piece with a triangular nub (3) and two squares (2) = **12**. It assembles. The two top-row trapezoids join into a 1\u00d74 strip; stood upright with one square, it makes the left stem. The large piece's 3-long edge runs down the right stem, its nub pointing into the crossbar. The other two trapezoids fill the stem above it and the rest of the crossbar. The last square closes the bottom of the right stem.\n- **B**: seven triangles of 1, five of \u00bd and one of 2 = 11.5. Not enough.\n- **C**: two L's of 1.5, three of 1.75 and seven \u00bd-strips = 11.75. Not enough.\n- **D**: only 11 squares.\n\n**Answer: A**"
   },
   {
     "id": "uceed-2017-q78",
@@ -5915,7 +5915,7 @@
     "topic": "design-knowledge",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Read the order from how each dome meets its base. Early roofs sit on flat-sided (many-sided) bases. Later ones sit on round drums (a drum is a cylindrical base under a dome). The last ones are **bulbous (onion) domes** that swell wider than their neck.\n\n- **iii**: a pyramid roof on a many-sided base, not a true dome yet. This is the earliest stage.\n- **ii**: a true dome, but it still sits on a flat-faceted, many-sided base.\n- **i**: the dome now sits on a round, moulded ring and has a tall finial.\n- **iv**: the dome swells wider than its neck and rises from a ring of lotus petals (Mughal).\n- **v**: the most developed form, an onion dome raised on a tall plain drum.\n\nThat gives **C: iii, ii, i, iv, v**.\n- **A** and **D** start with ii, but the pyramid roof comes before any true dome.\n- **B** puts i's round ring before ii's faceted base.\n- **D** also puts v before iv."
   },
   {
     "id": "uceed-2018-q01",
@@ -6233,7 +6233,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The most private room is the one that takes the **most doors** to reach from the street. First find every gap in the outer walls (the entrances). Then, for each room, count the fewest doors needed to reach it from outside by the shortest route.\n\n- **House 1\u20137:** 1, 3 and 5 open to the street. 2, 4, 6 and 7 are one room further in. Deepest is 2.\n- **House 8\u201313:** 8, 10, 12 and 13 open to the street. 9 is reached through 10, and 11 through 12. Deepest is 2.\n- **House 14\u201321:** 14, 17, 19, 20 and 21 open to the street. 18 is reached through 14, 15 through 19 and 16 through 20. Deepest is 2.\n- **House 22\u201328:** 22, 26, 27 and 28 have street doors. 23 has none and is reached only from 22. 24 is reached only from 23, and 25 only from 24. The walls of 25 facing 26 and 28 are solid.\n\nRoute to 25: street \u2192 22 \u2192 23 \u2192 24 \u2192 25, which is 4 doors. No other room needs more than 2, so the answer is **25**."
   },
   {
     "id": "uceed-2018-q15",
@@ -6569,7 +6569,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "A rotation keeps every radial **stack** (outer band \u2192 second band \u2192 third band) together, and keeps the stacks in the same **clockwise order**. A mirror image keeps the stacks but reverses their order. So pick one stack, find it in each option, then walk clockwise.\n\nIn the figure, going clockwise from the top side, the stacks are:\n- purple / dark green / purple \u2192 light blue / maroon / yellow \u2192 green / pink / purple \u2192 purple / dark green / red \u2192 peach / maroon / purple \u2192 green / pink / blue\n- The centre triangles alternate red and green. The purple / dark green / purple side has a red triangle.\n\n**D** has the purple / dark green / purple stack on its left side, with a red centre triangle. Going clockwise from there, every stack matches in order. It is the figure turned 90\u00b0 anticlockwise, so **D** is correct.\n- **A**: its upper-left stack is purple / dark green / **blue**. The figure has no such stack, because its blue sits inside green and pink.\n- **B**: all the stacks are right, but they run anticlockwise, so it is a mirror image.\n- **C**: its third band has two blue pieces, but the figure has only one."
   },
   {
     "id": "uceed-2018-q29",
@@ -6983,7 +6983,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "To estimate a pie chart, compare each slice with a **quarter** (90\u00b0, 25%). A 120\u00b0 slice is **one-third**. Then add slices together and check them against **half** (180\u00b0).\n\n- **Doctors** (blue) starts at 12 o'clock and ends before 3 o'clock, at about 72\u00b0: **\u224820%**\n- **Engineers** (red) runs from there to just past 6 o'clock, about 118\u00b0: **\u224833%**\n- **Businessmen** (green) is about the same size as blue, about 72\u00b0: **\u224820%**\n- **Designers** (purple) is slightly more than a quarter: **\u224827%**\n\nChecking the options:\n- **A** is correct. Doctors and businessmen together are \u224840%, so blue and green fill clearly less than half the circle.\n- **B** is correct. The red slice is about 120\u00b0, so it is roughly one-third.\n- **C** is correct. Engineers and designers together are 33% + 27% \u2248 60%.\n- **D** is wrong. It is the opposite of A.\n\n**Answer: A, B, C**"
   },
   {
     "id": "uceed-2018-q45",
@@ -7101,7 +7101,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Update your heading after every turn: walking west, right is north; walking south, right is west. Count roads branching on the side you need; a sharp corner counts as a turn.\n- West from Hampalkatte, the 1st right is the big curved road. The **2nd right** is the next road north, rising past the Dum Dum bend.\n- Heading north, the 1st left is Sadashiv road. The **2nd left** is at the top, a short stretch west along the Hoskote road.\n- That stretch bends sharply south: the **first left**.\n- Heading south, you pass rights at Sadashiv and Hampalkatte roads; the bottom road is the **third right**.\n- Heading west, the 1st left is the short diagonal. The **2nd left** is the curving road south. Follow it through Badi Chaudi to its end: **A. Kandivali**.\n\nA right at the top junction leads to D (Hoskote). Skipping the last left, the bottom road ends at C (Navrangpura). B (Gurugram) is dead-end streets this route never enters."
   },
   {
     "id": "uceed-2018-q49",
@@ -7396,7 +7396,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Mirroring across a shared edge sends each corner to the corner directly opposite it across that edge. So follow **one corner, the one holding the triangle**, from heptagon to heptagon. Don't jump ahead: each flip moves it somewhere different.\n\n- Start: triangle sits in the **top-left corner** of the solid heptagon.\n- Heptagon 2 (upper): it lands in the top-left corner.\n- Heptagon 3 (lower): bottom-right corner.\n- Heptagon 4 (upper): right end of the flat bottom edge.\n- Heptagon 5: that corner is an end of the mirror edge, so the triangle stays put and becomes heptagon 5's left corner.\n- Heptagon 6 (bottom): bottom-left corner.\n- Heptagon 7 (\"?\"): **lower-right corner**, pointing inward.\n\n**Answer: A**, which has the triangle in the lower-right corner.\n\n- **B** puts it back in the starting corner. Six flips cancel the mirror-image effect, but they don't bring the triangle back to where it began.\n- **C** (bottom-left) and **D** (upper-right) are corners the trace never reaches."
   },
   {
     "id": "uceed-2018-q63",
@@ -7531,7 +7531,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Convert each hand to degrees per real time. The hour hand runs at half speed: **15\u00b0 per hour**. The minute hand runs at 6\u00d7 speed: 2160\u00b0 per hour, or **36\u00b0 per minute**.\n\n- The hour hand points at **4** (120\u00b0): 120 \u00f7 15 = **8 hours** after noon.\n- The minute hand points at **6** (180\u00b0). 36 \u00d7 5 = 180\u00b0, and every 10 more minutes adds a full turn, so it is at 6 at 5, 15, 25 \u2026 minutes past each hour.\n- At 8.00 the minute hand is at 12 (480 \u00d7 36\u00b0 = 48 full turns). The next time it reaches 6 is **8.05**, when the hour hand is at 121\u00b0, just past 4. Answer: **C**.\n\nAll four options put the minute hand at 6, so the hour hand decides:\n- **A** (8.45): 131\u00b0, a third of the way to 5.\n- **B** (9.05): 136\u00b0, past halfway to 5.\n- **D** (10.15): 154\u00b0, past 5."
   },
   {
     "id": "uceed-2018-q69",
@@ -9265,7 +9265,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Cutting a tetrahedron with a plane through one corner gives a small **tetrahedron** and a **pyramid on a four-sided base**. Both pieces keep that corner, and their cut faces must match. So find where the pyramid's base is missing a corner.\n\n- Fig 2 has apex i and base f-g-h-e. Extend sides e-f and h-g: they meet beyond the short edge **fg**. The tetrahedron fills that gap.\n- Face c-a-b of Fig 1 (short edge ab) matches face i-f-g (short edge fg). That gives **ci**, **af**, **bg**.\n- Then d sits on the missing corner, d-f-e and d-g-h become straight edges, and the whole solid is tetrahedron i-d-e-h.\n\n**Answer: B**\n\n- **A** fails because g and e are opposite corners of the base, so i-g-e is not a face to join to.\n- **C** fails because ef is long while ab is short, and lines g-f and h-e spread apart past ef, so no corner forms.\n- **D** fails because lines g-h and f-e spread apart past he, so no corner forms there."
   },
   {
     "id": "uceed-2019-q60",
@@ -10997,7 +10997,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Put yourself in the creature's eyes. It faces right, so buildings at the **back** of the picture end up on its **left**, buildings at the front end up on its **right**, and anything above eye level is seen **from below**.\n- **Layout:** the tall white tower is furthest back, so it sits on the left. The beige block and the small cyan block are at the front, so they go right. All four options get this right.\n- **Helicopter:** it flies above the horizon and its nose points toward the creature. The creature should see its **underside, nose-on**. **A** and **B** draw it level with the eye (front or rear view, skids hanging below), so they fail.\n- **Overlap:** the low beige block stands right against the taller blue tower. Looking down, the tall tower rises toward the eye and hides the beige block's near edge, so blue overlaps beige. **C** shows this. **D** puts beige over blue, so it fails.\n\nAnswer: **C**"
   },
   {
     "id": "uceed-2020-q54",
@@ -12873,7 +12873,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "When paths run in stages and every arrow points forward, count the choices at each stage and **multiply** them. All arrows here point left to right, so no path can loop back and repeat a node.\n\n- **A \u2192 first column:** A has 4 arrows, one to each of the 4 left nodes.\n- **First column \u2192 second column:** each left node joins its partner with **4 parallel arrows**, so there are 4 choices.\n- **Second column \u2192 right pair:** each of the 4 second-column nodes sends one arrow to the upper right node and one to the lower right node, so there are 2 choices.\n- **Right pair \u2192 B:** each right node has exactly 1 arrow into B.\n\nTotal = 4 \u00d7 4 \u00d7 2 \u00d7 1 = **32**"
   },
   {
     "id": "uceed-2022-q03",
@@ -13225,7 +13225,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Express both inner radii (**inradius** = radius of the circle touching every side) in terms of the shared perimeter P. Circumference grows in step with the radius, so the ratio of the two radii is the ratio of the two circumferences.\n\n- **Triangle:** side = P/3. Its inradius is side \u00f7 (2\u221a3), which gives **P/(6\u221a3)**.\n- **Hexagon:** side = P/6. A regular hexagon is six equilateral triangles, so its inradius is the height of one of them: side \u00d7 \u221a3/2, which gives **P\u221a3/12**.\n- **Ratio:** (P\u221a3/12) \u00f7 (P/(6\u221a3)) = (\u221a3 \u00d7 6\u221a3)/12 = 18/12 = **1.5**\n\nThe blue circle is 1.5 times the red one. The figure agrees: the blue circle looks clearly bigger.\n\nBlue circumference = 1.5 \u00d7 10 = **15** cm."
   },
   {
     "id": "uceed-2022-q19",
@@ -13589,7 +13589,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Count squares first: the missing piece must cover exactly the area the board has left over. Then check that the shape actually fits the gap.\n\n- Board: 6 columns \u00d7 5 rows = **30 squares**\n- Given pieces: orange T 4 + purple L 4 + dark-green S 4 + blue corner 3 + mustard U 5 + light-green P 5 = **25**\n- Missing area: 30 \u2212 25 = **5 squares**\n\nOption areas: A (plus) 5, B (square) 4, C (bar) 3, D (zigzag) 5.\n\n- **B** and **C** fail on area alone. Too small, so a gap stays open.\n- **A** fits: put the U in the top-right corner, opening down. The plus's top arm slots into the U's notch. T, L, S, P and the blue corner fill the left and bottom.\n- **D** fits: put the U in the bottom-right corner, opening up. The zigzag's lower end drops into the notch. The other pieces fill the rest.\n\n**Answer: A and D**"
   },
   {
     "id": "uceed-2022-q34",
@@ -13976,7 +13976,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Ignore the camera angle and track what can't change: the **order of branches along the main tube**, which end each branch **tilts toward**, and how neighbours sit around the tube. Don't orient by the open end. The box never shows the bottom end, so it may be open too.\n\nFrom the box views (top to bottom, branches 1\u20134):\n- Tilts **alternate**: toward the top, bottom, top, bottom.\n- 1 and 2 share a side but **splay apart**, one in front of the tube and one behind. 3 and 4 do the same on the opposite side.\n\n**A** fits. Read it from the hidden upper-left end: left, down, up, right. The tilts alternate. Left and down form one splayed pair (one in front, one behind), and up and right form the other.\n- **B**: two branches bunch at each end, leaving the middle empty.\n- **C**: the two upper branches both lean toward the same end, so the tilts don't alternate.\n- **D**: the two lower branches both point straight down from under the tube instead of splaying front and back."
   },
   {
     "id": "uceed-2022-q52",
@@ -14377,7 +14377,7 @@
     "topic": "logic-and-counting",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Split each path into **straight cell sides** and **arcs**, then add up. With side 7 and \u03c0 = 22/7, arcs come in three sizes:\n- Quarter arc across one cell (radius 7): \u00bc \u00d7 2\u03c0 \u00d7 7 = **11** (a one-cell-radius semicircle is two of these)\n- Small semicircle bump, one cell wide (radius 3.5): \u03c0 \u00d7 3.5 = **11**\n- Quarter arc across two cells (radius 14): **22**\n\nTrace each path from its label to the right edge. Where lines cross, go straight through.\n- **P**: 4 straight (28) + 4 small quarters (44) + 1 bump (11) + 2 big quarters (44) = 127\n- **Q**: 3 straight (21) + 7 small quarters (77) + 1 big quarter (22) = 120\n- **S**: 3 straight (21) + 3 small quarters (33) + 1 bump (11) + 3 big quarters (66) = 131\n- **R**: big quarter up to the top bump (22), bump (11), quarter (11), side bump (11), two quarters (22), then 8 straight sides along P's starting line to the edge (56) = 133\n\nThe longest is R: **133**"
   },
   {
     "id": "uceed-2023-q03",
@@ -14531,7 +14531,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Scan both pictures in a fixed order, zone by zone (wall, then each child from left to right, then the floor), and check every small detail: colour, count, shape and angle. Tick each change off once so none is counted twice.\n\n- **Bookshelf:** the second book is blue on the left and yellow on the right\n- **Laughing boy:** his orange tongue is missing on the right\n- **Table:** one pink crayon on the left, two on the right\n- **Boy with his hair pulled:** two shirt buttons on the left, one on the right\n- **Fighting girl:** the tip of her tie loses its white stripe\n- **Girl with raised fists:** her hair bow changes shape\n- **Same girl:** her round badge becomes a triangle\n- **Floor pencil** by the cupboard: upright on the left, tilted on the right\n- **Cupcake:** the dots on its icing are missing on the right\n\nPoster, bag, bottles, biscuits and paper plane all match.\n\nTotal: **9**"
   },
   {
     "id": "uceed-2023-q10",
@@ -14851,7 +14851,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Sort the stickers into species, then match silhouettes by outline. Tails and poses survive in a silhouette, faces don't. An option works only if **every group** holds one species.\n\n- **Langurs** have black faces and very long tails: the standing one with its tail looped overhead, the sitter whose tail coils below it, and the mother whose long tail ends in a hook.\n- **Macaques** have pale, muzzled faces and short tails: the two mothers with young, the grooming pair (one straight tail out to the right), the sitter and the low, stretched walker.\n\nChecking the options:\n- **A** works: the left group (walker, tall sitters, straight tail) is all macaques. The right group (overhead loop, coiled tail, hooked tail) is all langurs.\n- **C** works: the same langur trio, plus a group of compact shapes with no loop or long curling tail, all macaques.\n- **B** fails: the overhead-loop langur shares a group with the walker and the straight-tailed macaques.\n- **D** fails: the overhead loop sits beside the walker and the macaques.\n\n**Answer: A, C**"
   },
   {
     "id": "uceed-2023-q24",
@@ -16626,7 +16626,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "In a grid like this, track one element at a time across the row. Here the **red square** gives the rule: it sits upright, then turns 45\u00b0 into a **diamond**, then upright again, so it alternates in every row.\n- Every row reads: square, diamond, square, diamond, square, diamond.\n- Circle 1 (row 2, column 6) must be a **diamond**. The black shape in that row narrows towards a peak, so it ends as a triangle with the diamond on top.\n- Circle 2 (row 3, column 4) must be a **diamond**.\n- Circle 3 (row 4, column 3) must be an **upright square**.\n\n**C** fits all three: a diamond on a triangle, a diamond on a wedge, and an upright square beside a wedge.\n- **A** and **B** fail because their shape 1 has an upright square.\n- **D** fails because shape 2 is an upright square and shape 3 is a diamond, which is the wrong way round."
   },
   {
     "id": "uceed-2024-q35",
@@ -16962,7 +16962,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Spot the two most distinctive faces first, then fold the net and check how the remaining faces are turned.\n\n- **Key faces from view 2:** the **arc face** (a thin band curving from one corner to the opposite corner) and the **horseshoe face** (a U-shaped band starting at one corner). They share an edge, and the arc's thick end meets the horseshoe's corner.\n- **A fails:** no face has the corner-to-corner arc.\n- **B fails:** no face has the horseshoe.\n- **C works:** fold with the arc on top. The horseshoe folds down beside it, and its corner meets the arc's thick end, as in view 2. The far-left square meets the arc's other end and gives view 2's third face. The two middle squares and the cross-shaped flap meet at one corner and match view 1.\n- **D fails:** it has the same six faces, but the cross-shaped face is turned a quarter turn off. In view 1, the cross's thick knot sits just under the top face. When D is folded, the knot is pushed against the right-hand face.\n\n**Answer: C**"
   },
   {
     "id": "uceed-2024-q51",
@@ -17514,7 +17514,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Most screw threads are **right-hand threads**: looked at from the side you turn from, **clockwise tightens, counter-clockwise loosens** (\"righty-tighty, lefty-loosey\"). Apply this rule to A\u2013C, then check D separately against the Earth's spin.\n\n- **A, correct:** a bottle cap is a right-hand thread. Seen from the top, turning it clockwise tightens it.\n- **B, wrong:** a tap head also sits on a right-hand screw. Turning it counter-clockwise lifts the valve and opens the tap, and clockwise closes it. B has the directions reversed.\n- **C, correct:** the option has a stray word (\"counter-clockwise clockwise\"). Read it as counter-clockwise. A car wheel nut is a right-hand thread, so from where the person holding the spanner stands, turning it counter-clockwise loosens the nut.\n- **D, wrong:** the Earth spins west to east, which is why the Sun rises in the east. Seen from above the North Pole, that spin is **counter-clockwise**.\n\n**Answer: A, C**"
   },
   {
     "id": "uceed-2025-q19",
@@ -17708,7 +17708,7 @@
     "topic": "logic-and-counting",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Line up words that share letters and match each letter to a piece of the code. Then rebuild the last code from those pieces.\n\n- **TEA** = \u25a0\u25a0 | \u25a0, and **ATE** = \u25a0\u25a0\u25a0 |. **E** is in the middle of TEA and at the end of ATE, and the bar sits in exactly those places. So **E = the vertical bar**.\n- In TEA, T comes before the bar (\u25a0\u25a0) and A comes after it (\u25a0). So **T = \u25a0\u25a0** and **A = \u25a0**.\n- Check: EAT = | \u25a0 \u25a0\u25a0 and ATE = \u25a0 \u25a0\u25a0 |. Both match the figure.\n\nThe last code is six squares with no bar. So the word has no E, and its letters must add up to 6 squares (T = 2, A = 1). The squares are evenly spaced, so you can't tell where one letter ends. Every split that totals 6 works:\n\n- **A. TATA**: 2+1+2+1 = 6\n- **B. AAAAAA**: 6 \u00d7 1 = 6\n- **C. TAAT**: 2+1+1+2 = 6\n- **D. TTT**: 3 \u00d7 2 = 6\n\nAll four fit: **A, B, C, D**."
   },
   {
     "id": "uceed-2025-q27",
@@ -17757,7 +17757,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "**Depth of field** is how much of the scene, in front of and behind the focused subject, stays sharp. Three settings control it: **aperture**, **subject distance** and **focal length**. Change any of these and the background blur changes. Exposure time does not affect it.\n\n- **A (aperture):** a wider opening (smaller f-number) gives a shallower depth of field, so the background blurs. Works.\n- **B (distance, refocus):** moving closer to the subject and refocusing makes the depth of field shallower, so the background softens. Works.\n- **C (shutter speed):** this only sets how long light reaches the sensor. It changes brightness and motion blur, not which distances stay sharp. Fails.\n- **D (focal length):** zooming in to a longer focal length from the same spot makes the depth of field shallower and enlarges the background, so it blurs more. Works.\n\nAnswer: **A, B, D**."
   },
   {
     "id": "uceed-2025-q29",
@@ -17825,7 +17825,7 @@
     "topic": "observation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Split the figure into zones and count each zone on its own. Look for triangles that cross zones too. Ignore the circles and count only shapes with three straight sides.\n\n- **Head:** the vertical line splits the flat inverted triangle into 2 halves, plus the whole one = **3**\n- **Neck:** each side has a top piece, a bottom piece and the two together = **6**\n- **Body circle:** above and below the long diagonal on the left of the vertical (1 each), their union (top, left point, bottom), the long thin triangle above the circle, and the big triangle from the left point to the top line = **5**\n- **Back legs:** 3 per leg = 6. Then the left edge gives 2 more: left point, bottom-left corner, circle bottom; and left point, circle bottom, left foot = **8**\n- **Front legs:** the small triangle under the apex, 2 slivers at the feet, 2 tall side triangles = **5**\n\n3 + 6 + 5 + 8 + 5 = **27 (D)**.\n\n- **A (24), B (25), C (26)** come from missing triangles that run along the long left edge, or the thin one above the circle."
   },
   {
     "id": "uceed-2025-q32",
@@ -18035,7 +18035,7 @@
     "topic": "everyday-science",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "To check that something is level, you need a reference that **gravity** sets, not one you draw or measure. Ask of each kit: does anything in it settle into a true horizontal or vertical by itself?\n\n- **C works.** Fill the **transparent pipe** with water from the mug and hold one end at each top corner of the frame. Water in connected tubes settles at the **same height** at both ends (the mason's **water level**). Adjust the frame until each corner sits at its water line. The top edge is then horizontal, so the frame hangs straight. **Answer: C**\n- **A fails.** A stick, a cutter and a pencil can draw and cut. None of them shows which way is level.\n- **B fails.** A compass can draw perpendiculars, but only from a line you already have. That line could itself be tilted.\n- **D fails.** A ruler and card cut to a right angle measure from the floor or ceiling, and those may not be level."
   },
   {
     "id": "uceed-2025-q42",
@@ -18329,7 +18329,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 1,
     "animated": false,
-    "explanation": null
+    "explanation": "Reflecting across a **horizontal axis** turns the word upside down. Reflecting across a **vertical axis** turns it back to front. Doing both is the same as a **180\u00b0 rotation**. The letters end up upside down and reading backwards, with every letter's shape and spacing unchanged.\n\n- AXIS 1 is the line under the word, so the first reflection flips it top to bottom.\n- AXIS 2 is the line to the right, so the second reflection flips it left to right.\n- The result is TRANSFORM turned half a circle. From the left you see an upside-down M, then R, O, F, S, N, A, R and finally an upside-down T (\u22a5) on the far right.\n\n**B** matches exactly. Every letter is rotated and evenly spaced.\n- **A** is only flipped top to bottom (AXIS 1 alone). It still reads T\u2026M from left to right.\n- **C** is only flipped left to right (AXIS 2 alone). The letters are still upright.\n- **D** looks rotated, but the R and T at the right end are squeezed together and overlap. A reflection never changes shape or spacing."
   },
   {
     "id": "uceed-2025-q56",
@@ -19396,7 +19396,7 @@
     "topic": "observation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Scan the picture in strips (top half, then bottom half), left to right, and tick off each T as you go. A **T** is one bar with the stem joined at its **middle**, at any angle. Shapes with the stem at the end of the bar (**7**, **\u0393**), a mirrored **F**, or a bar with two legs (a turned **K**) are decoys.\n\n- **Top half: 8.** Two in \"LTTE\", one beside the F, and one each in \"TZRK\", \"TOD\" and \"TP\". Then the T in the top-right corner, and a tilted T beside the U near the right edge.\n- **Bottom half: 8.** \"LTA\", the T at the bottom-left corner, \"GT\", \"UTh\", the tilted T in \"LTV\", the T below it, the T above \"VMK\", and a tilted T at the right edge.\n\nTotal = 8 + 8 = **16 (C)**.\n- **A (12)** and **B (14)** miss the tilted or crowded Ts.\n- **D (18)** counts decoys like the two \"7\" shapes or the mirrored Fs."
   },
   {
     "id": "uceed-2026-q46",
@@ -19564,7 +19564,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "To match letters to logos, look for each wordmark's signature quirk: an accent, a tilted bar, an unusual width or slant. Place the easy ones first, then the rest fall into place.\n\n- **4th e**: very wide and stretched, with flat, sharp-cut ends. That is **Acer**'s green wordmark. Every option ends with Acer.\n- **3rd e**: has a thick bar floating above it. That is the stylised accent on the \u00e9 in **Nestl\u00e9**. So Nestl\u00e9 is third.\n- **2nd e**: heavy and geometric, with a **tilted crossbar**. That slanted bar is the best-known detail of the **Google** logo.\n- **1st e**: a classic e with a thin, tapering tail and a flat bar. This is the **Reliance** wordmark.\n\nSequence: **D (Reliance \u2013 Google \u2013 Nestl\u00e9 \u2013 Acer)**.\n\n- **A** puts Nestl\u00e9 second and Google third. The accented e is third, so that fails.\n- **B** puts Nestl\u00e9 first, but the first e has no accent.\n- **C** puts Google first, but the first e's bar is flat, not tilted."
   },
   {
     "id": "uceed-2026-q54",

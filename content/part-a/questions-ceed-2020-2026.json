@@ -1607,7 +1607,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Ink soaks through every layer, so undo the folds one at a time: **each fold line acts as a mirror**, copying every stain as its mirror image on the other side. Viewing from **behind** then swaps left and right.\n- From behind, the heart (left of the placket in Q) moves to the right side, and the splash (lower right in Q) moves to the left.\n- Undo folds 1 and 2 (the side strips): each stain gets a mirror twin just across its side fold line, giving **pairs** near the side seams.\n- Undo fold 3 (bottom half folded back): each pair is copied **upside down** below the waist line. The splashes sat closest to that line, so their copies sit just below it. The hearts' copies land lower.\n\n**B** gets all of this right.\n- **A**: the lower inner heart is turned 180\u00b0 instead of flipped. The heart is lopsided, so its bigger lobe ends up on the wrong side.\n- **C**: the lower splashes sit near the hem, too far from the fold line.\n- **D**: hearts and splashes are on the wrong sides. That is the front view."
   },
   {
     "id": "ceed-2021-q33",
@@ -4268,7 +4268,7 @@
     "topic": "design-knowledge",
     "difficulty": 2,
     "animated": true,
-    "explanation": null
+    "explanation": "In animation, **more frames go where the object moves slowly or changes a lot**. This is the **slow-in, slow-out** rule (also called ease in and ease out): drawings bunch up close together where motion slows, and spread far apart where it is fast.\n\nFollow the fish's arc: it leaves the water at A, rises through B, peaks at C and falls towards D.\n- **C (the peak):** the fish loses its upward speed, hangs for a moment and turns from nose-up to nose-down. Each frame moves it only slightly, so this point needs the most drawings. **Answer: C.**\n- **A:** the fish bursts out of the water at top speed, so it needs few, widely spaced frames.\n- **B:** it is still rising quickly, partway up, so the frames are spaced fairly wide.\n- **D:** gravity has sped it back up as it dives, so again it needs few frames."
   },
   {
     "id": "ceed-2024-q29",
