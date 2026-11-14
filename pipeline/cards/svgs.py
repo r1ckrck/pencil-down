@@ -48,11 +48,6 @@ def bell():
         y = 200 - math.exp(-z * z / 2) * 140
         body += f'<path d="M{x:.1f},200 L{x:.1f},{y:.1f}" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>'
         body += text(f"{x:.1f}", 222, lab, 15)
-    # shade the lower 5 percent tail
-    tail = [f"{40 + (x + 3) * 60:.1f},{200 - math.exp(-x * x / 2) * 140:.1f}"
-            for x in [-3 + i * 0.02 for i in range(0, 69)]]
-    body += f'<path d="M40,200 L{" L".join(tail)} L{40 + (1.355) * 60:.1f},200 Z" fill="currentColor" opacity="0.25"/>'
-    body += text(70, 160, "5% smaller", 13)
     body += text(220, 245, "body dimension →", 13)
     return svg(440, 260, body)
 
@@ -62,49 +57,33 @@ S["percentile-basics"] = bell()
 S["rule-reach"] = svg(320, 260, person(130, 240, 150, arm_up=True)
                       + '<path d="M150,88 L290,88" stroke="currentColor" stroke-width="4"/>'
                       + '<rect x="200" y="62" width="22" height="26" stroke="currentColor" stroke-width="2"/>'
-                      + '<path d="M20,240 L300,240" stroke="currentColor" stroke-width="2"/>'
-                      + text(225, 122, "shelf set for", 13) + text(225, 140, "5th %ile female reach", 13))
+                      + '<path d="M20,240 L300,240" stroke="currentColor" stroke-width="2"/>')
 
 S["rule-clearance"] = svg(320, 260, '<path d="M90,240 L90,40 L210,40 L210,240" stroke="currentColor" stroke-width="4"/>'
                           + person(150, 240, 185)
                           + '<path d="M150,44 L150,52" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/>'
-                          + '<path d="M20,240 L300,240" stroke="currentColor" stroke-width="2"/>'
-                          + text(260, 110, "door set for", 13) + text(260, 128, "95th %ile", 13) + text(260, 146, "male height", 13))
+                          + '<path d="M20,240 L300,240" stroke="currentColor" stroke-width="2"/>')
 
 S["case-washbasin"] = svg(320, 260, person(110, 240, 140)
                           + '<path d="M150,160 L250,160 L240,185 L160,185 Z" stroke="currentColor" stroke-width="3"/>'
                           + '<path d="M200,185 L200,240" stroke="currentColor" stroke-width="5"/>'
                           + '<path d="M270,160 L270,240" stroke="currentColor" stroke-width="1.5"/>'
                           + '<path d="M264,160 L276,160 M264,240 L276,240" stroke="currentColor" stroke-width="1.5"/>'
-                          + '<path d="M20,240 L300,240" stroke="currentColor" stroke-width="2"/>'
-                          + text(200, 40, "rim height:", 14) + text(200, 60, "shortest 5% adult female", 14))
+                          + '<path d="M20,240 L300,240" stroke="currentColor" stroke-width="2"/>')
 
 S["case-bus-seat"] = svg(420, 260,
-                         # side view: seat + backrest + seated figure
-                         '<path d="M50,170 L150,170 M150,170 L160,60 M60,170 L60,230 M140,170 L140,230" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>'
-                         '<g stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="135" cy="62" r="14"/>'
-                         '<path d="M137,78 L140,160 L70,160 L70,230"/></g>'
-                         '<path d="M180,60 L180,170 M174,60 L186,60 M174,170 L186,170" stroke="currentColor" stroke-width="1.5"/>'
-                         + text(110, 252, "sitting height: 50th", 13)
+                         # side view: seat height measured floor to seat, as in CEED 2026 Q39
+                         '<path d="M20,230 L210,230 M240,230 L410,230" stroke="currentColor" stroke-width="2"/>'
+                         '<path d="M60,150 L150,150 M150,150 L160,60 M65,150 L65,230 M145,150 L145,230" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>'
+                         '<g stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="132" cy="58" r="14"/>'
+                         '<path d="M134,74 L138,142 L80,142 L78,230 L64,230"/></g>'
+                         '<path d="M185,150 L185,230 M179,150 L191,150 M179,230 L191,230" stroke="currentColor" stroke-width="1.5"/>'
+                         + text(120, 252, "sitting height", 13)
                          # front view: seat width
-                         + '<path d="M260,170 L380,170 M260,170 L260,90 M380,170 L380,90" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>'
-                         '<g stroke="currentColor" stroke-width="3"><path d="M285,168 Q285,130 320,130 Q355,130 355,168"/></g>'
-                         '<path d="M285,195 L355,195 M285,189 L285,201 M355,189 L355,201" stroke="currentColor" stroke-width="1.5"/>'
-                         + text(320, 252, "hip breadth: 95th", 13))
-
-S["work-heights"] = svg(440, 260,
-                        '<path d="M20,90 L420,90" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 4"/>'
-                        + text(30, 82, "elbow height", 12, "start")
-                        # chop: just below elbow
-                        + '<rect x="40" y="110" width="100" height="130" stroke="currentColor" stroke-width="3"/>'
-                        + text(90, 255, "chop", 14)
-                        # roll: lower
-                        + '<rect x="170" y="135" width="100" height="105" stroke="currentColor" stroke-width="3"/>'
-                        + text(220, 255, "roll (press)", 14)
-                        # sink: rim higher, basin bottom is the work level
-                        + '<path d="M300,100 L300,240 L400,240 L400,100 M310,100 L310,140 L390,140 L390,100" stroke="currentColor" stroke-width="3"/>'
-                        + '<path d="M300,100 L310,100 M390,100 L400,100" stroke="currentColor" stroke-width="3"/>'
-                        + text(350, 255, "wash (in basin)", 14))
+                         + '<path d="M265,150 L385,150 M290,150 L290,230 M360,150 L360,230" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>'
+                         '<g stroke="currentColor" stroke-width="3"><path d="M288,147 Q288,108 325,108 Q362,108 362,147"/></g>'
+                         '<path d="M288,90 L362,90 M288,84 L288,96 M362,84 L362,96" stroke="currentColor" stroke-width="1.5"/>'
+                         + text(325, 252, "hip breadth", 13))
 
 # ---------- gestalt ----------
 def dot(x, y, r=9, filled=True):
@@ -171,9 +150,9 @@ def check(x, y, on, label):
     return s + text(x + 24, y + 5, label, 16, "start")
 
 
-S["ui-radio"] = svg(260, 150, text(30, 28, "Pay with (one)", 14, "start", 'opacity="0.6"')
+S["ui-radio"] = svg(260, 150, text(30, 28, "Pay with", 14, "start", 'opacity="0.6"')
                     + radio(42, 58, False, "UPI") + radio(42, 92, True, "Card") + radio(42, 126, False, "Cash"))
-S["ui-checkbox"] = svg(260, 150, text(30, 28, "Toppings (any)", 14, "start", 'opacity="0.6"')
+S["ui-checkbox"] = svg(260, 150, text(30, 28, "Toppings", 14, "start", 'opacity="0.6"')
                        + check(42, 58, True, "Onion") + check(42, 92, False, "Tomato") + check(42, 126, True, "Cheese"))
 S["ui-dropdown"] = svg(260, 200,
                        '<rect x="30" y="20" width="200" height="38" rx="6" stroke="currentColor" stroke-width="2.5"/>'
@@ -209,7 +188,7 @@ S["ui-tabs"] = svg(300, 160,
                              for i in range(3)))
 
 # ---------- colour wheels ----------
-def wheel(selected, mono=False, poly=True):
+def wheel(selected, mono=False, poly=True, labels=True):
     cx, cy, R, r = 130, 130, 110, 50
     body = ""
     for i in range(12):
@@ -234,7 +213,7 @@ def wheel(selected, mono=False, poly=True):
         else:
             body += f'<path d="{d}" stroke="currentColor" stroke-width="1.5" opacity="0.45"/>'
     # labels for primaries (RYB at 0, 4, 8)
-    for i, lab in ((0, "Y"), (4, "R"), (8, "B")):
+    for i, lab in ((0, "Y"), (4, "R"), (8, "B")) if labels else ():
         a = math.radians(i * 30 - 90)
         body += text(f"{cx + (R + 14) * math.cos(a):.1f}", f"{cy + (R + 14) * math.sin(a) + 5:.1f}", lab, 13)
     if poly and selected and len(selected) > 1 and not mono:
@@ -244,34 +223,32 @@ def wheel(selected, mono=False, poly=True):
     return svg(260, 260, body)
 
 
-S["colour-wheel"] = wheel({0, 4, 8})
 S["monochromatic"] = wheel(set(), mono=True)
 S["analogous"] = wheel({7, 8, 9}, poly=False)
 S["complementary"] = wheel({2, 8})
 S["split-complementary"] = wheel({2, 7, 9})
 S["triadic"] = wheel({0, 4, 8})
 S["tetradic"] = wheel({1, 4, 7, 10})
-S["colour-wheel"] = wheel({0, 4, 8}, poly=False)
+S["colour-wheel"] = wheel({0, 4, 8}, poly=False, labels=False)  # the card asks for the primaries
 
 # ---------- type ----------
 S["serif-sans"] = svg(440, 160,
                       text(60, 90, "Ag", 64, extra='font-family="Georgia, serif"')
                       + text(165, 90, "Ag", 64, extra='font-family="Helvetica, Arial, sans-serif"')
                       + text(270, 90, "Ag", 64, extra='font-family="Rockwell, Courier New, serif" font-weight="bold"')
-                      + text(380, 90, "Ag", 64, extra='font-family="Courier New, monospace"')
-                      + text(60, 140, "serif", 14) + text(165, 140, "sans", 14) + text(270, 140, "slab", 14) + text(380, 140, "mono", 14))
-lines = [(71, "cap height"), (92, "x-height"), (140, "baseline"), (162, "descender")]
+                      + text(380, 90, "Ag", 64, extra='font-family="Courier New, monospace"'))
+lines = [(71, "1"), (92, "2"), (140, "3"), (162, "4")]  # numbered: the card asks for the names
 S["type-anatomy"] = svg(480, 190,
                         "".join(f'<path d="M20,{y} L350,{y}" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3" opacity="0.6"/>'
                                 + text(360, y + 4, lab, 13, "start") for y, lab in lines)
                         + text(30, 140, "Hxbgp", 100, "start", 'font-family="Georgia, serif"'))
 S["kern-track-lead"] = svg(400, 220,
-                           text(80, 60, "A V", 40, extra='font-family="Georgia, serif"') + text(80, 85, "unkerned", 12)
-                           + text(220, 60, "AV", 40, extra='font-family="Georgia, serif" letter-spacing="-6"') + text(220, 85, "kerned", 12)
-                           + text(80, 140, "T R A C K", 22, extra='letter-spacing="4"') + text(80, 165, "tracking", 12)
+                           text(80, 60, "A V", 40, extra='font-family="Georgia, serif"') + text(80, 85, "1", 12)
+                           + text(220, 60, "AV", 40, extra='font-family="Georgia, serif" letter-spacing="-6"') + text(220, 85, "1", 12)
+                           + text(80, 140, "T R A C K", 22, extra='letter-spacing="4"') + text(80, 165, "2", 12)
                            + '<path d="M270,115 L370,115 M270,150 L370,150" stroke="currentColor" stroke-width="6" opacity="0.3"/>'
                            + '<path d="M260,115 L260,150 M255,115 L265,115 M255,150 L265,150" stroke="currentColor" stroke-width="1.5"/>'
-                           + text(320, 175, "leading", 12))
+                           + text(320, 175, "3", 12))
 
 for k, v in S.items():
     (OUT / f"card-{k}.svg").write_text(v)

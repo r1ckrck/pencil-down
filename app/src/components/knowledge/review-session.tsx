@@ -28,11 +28,14 @@ const GRADES = [
   { grade: 4, label: "Easy", note: "instant" },
 ] as const;
 
+// The scheduler returns fractional days; show whole days (and whole months past a month).
 function interval(days: number) {
   if (days < 1) return "later today";
-  if (days === 1) return "tomorrow";
-  if (days < 31) return `in ${days} days`;
-  return `in ${Math.round(days / 30)} months`;
+  const d = Math.round(days);
+  if (d <= 1) return "tomorrow";
+  if (d < 31) return `in ${d} days`;
+  const m = Math.round(d / 30);
+  return m === 1 ? "in a month" : `in ${m} months`;
 }
 
 export function ReviewSession() {
@@ -85,7 +88,7 @@ export function ReviewSession() {
         if (!r.ok) throw new Error();
         const d = (await r.json()) as { scheduledDays: number };
         setTally((t) => t.map((n, i) => (i === grade - 1 ? n + 1 : n)));
-        setLast(`${GRADES[grade - 1].label} · next ${interval(d.scheduledDays)}`);
+        setLast(`Last card: ${GRADES[grade - 1].label} · back ${interval(d.scheduledDays)}`);
         setIndex((i) => i + 1);
         setRevealed(false);
       } catch {

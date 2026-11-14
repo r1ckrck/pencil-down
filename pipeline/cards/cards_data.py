@@ -158,9 +158,9 @@ Flat areas of bold colour, outlined forms, Tahiti subjects
 *Where Do We Come From? What Are We? Where Are We Going?* (1897) · asked 2017
 """, "Paul Gauguin Where Do We Come From Boston")
 C("picasso", A, "P1", "Picasso: name his periods and signature works.", """
-**Pablo Picasso** (1881–1973): Blue Period (1901–04) → Rose → **Cubism** (with Braque)
-*Les Demoiselles d'Avignon* (1907), *Guernica* (1937)
-Painter questions 2015, 2017; Blue Period = analogous scheme (2023)
+**Pablo Picasso** (1881–1973), Spanish, worked in France
+Blue Period (1901–04) → Rose Period (1904–06) → **Cubism** with Braque (from 1907)
+*Les Demoiselles d'Avignon* (1907), *Guernica* (1937) · CEED 2023 called the Blue Period palette analogous
 """)
 
 # ---------------- indian-painting ----------------
@@ -174,7 +174,7 @@ Tarpa dance circle, harvest scenes · asked 2020; 2025 drew dancers in Warli sty
 C("madhubani", P, "P1", PF, """
 **Madhubani (Mithila)**, Bihar
 Double-line outlines, every gap filled with pattern, no empty space
-Natural dyes, painted by women; fish, deities, kohbar · asked 2020
+Natural dyes, painted by women; fish, deities, *kohbar* (wedding-chamber motif) · asked 2020
 """, "Madhubani painting Mithila")
 C("kalamkari", P, "P1", PF, """
 **Kalamkari**, Andhra Pradesh: Srikalahasti (freehand with a bamboo *kalam* pen), Machilipatnam (block-printed)
@@ -196,7 +196,7 @@ C("pattachitra", P, "P1", PF, """
 Cloth (*patta*) coated with chalk + tamarind-seed gum; natural pigments (conch-shell white, lamp black)
 Jagannath and epic scenes, ornate borders · asked 2024 (materials)
 """, "Pattachitra Raghurajpur")
-C("gond", P, "P2", PF, """
+C("gond", P, "P2", "Name the painting style and where it is from.", """
 **Gond**, Madhya Pradesh, Gond tribe
 Animals and trees filled with dots, dashes and fine lines; bright flat colour
 Jangarh Singh Shyam brought it to canvas (1980s)
@@ -216,22 +216,22 @@ C("phad", P, "P2", PF, """
 Long horizontal cloth scroll, epics of Pabuji and Devnarayan
 Sung and performed by Bhopa priests; Joshi family painters
 """, "Phad painting Pabuji")
-C("cheriyal", P, "P3", PF, """
+C("cheriyal", P, "P3", "Name the painting style and where it is from.", """
 **Cheriyal scroll**, Telangana
 Bold red backgrounds, narrative panels in long scrolls
 Used by storytellers; Nakash family painters
 """, "Cheriyal scroll painting")
-C("mughal-miniature", P, "P2", PF, """
+C("mughal-miniature", P, "P2", "Name the painting style and where it is from.", """
 **Mughal miniature**, 16th–18th c., Akbar's and Jahangir's ateliers
 Persian + Indian: court scenes, portraits, naturalistic animals and birds
 Fine brush, gold borders · Mansur (animal studies), *Akbarnama*
 """, "Mughal miniature Akbarnama")
-C("rajput-miniature", P, "P2", PF, """
+C("rajput-miniature", P, "P2", "Name the painting style and where it is from.", """
 **Rajput miniature**, Rajasthan: Mewar, Bundi, Kishangarh
 Flat bright colour, stylised faces; Kishangarh's *Bani Thani* has elongated eyes
 Krishna legends, ragamala, court life
 """, "Bani Thani Kishangarh painting")
-C("pahari-kangra", P, "P2", PF, """
+C("pahari-kangra", P, "P2", "Name the painting style and where it is from.", """
 **Pahari / Kangra**, Himachal Pradesh (Kangra, Basohli, Guler)
 Lyrical, soft greens, delicate figures; Radha–Krishna romance
 Basohli is bolder; Nainsukh of Guler is the best-known painter
@@ -239,7 +239,7 @@ Basohli is bolder; Nainsukh of Guler is the best-known painter
 C("ravi-varma", P, "P1", "Whose painting? Name the painter and subject.", """
 **Raja Ravi Varma** (1848–1906), Kerala
 Oil, European academic realism applied to Indian myths
-*Shakuntala*, *Damayanti*, *Lakshmi*, *Saraswati*; oleograph press 1894 · asked 2018
+This one: *Shakuntala* · also *Damayanti*, *Lakshmi*, *Saraswati*; oleograph press 1894 · asked 2018
 """, "Raja Ravi Varma Shakuntala")
 C("sher-gil", P, "P2", "Whose painting? Name the painter.", """
 **Amrita Sher-Gil** (1913–1941)
@@ -263,7 +263,7 @@ DF = "Name the dance and its state."
 C("bharatanatyam", D, "P1", DF, """
 **Bharatanatyam**, Tamil Nadu
 Half-sitting *aramandi*, fan-pleated costume, crisp geometric lines
-Solo; asked 2025 (Warli-style figures)
+Solo · CEED 2025 showed it drawn as a Warli-style figure
 """, "Bharatanatyam dancer aramandi")
 C("kathakali", D, "P1", DF, """
 **Kathakali**, Kerala
@@ -273,7 +273,7 @@ Asked 2025
 C("manipuri", D, "P1", DF, """
 **Manipuri**, Manipur
 *Ras Lila*: stiff cylindrical mirror-work skirt (*potloi*), veil, soft flowing moves
-Asked 2025 (first in the answer order)
+CEED 2025 showed it drawn as a Warli-style figure
 """, "Manipuri dance Ras Lila potloi")
 C("chhau", D, "P1", DF, """
 **Chhau**, semi-classical, martial: Purulia (West Bengal, masks), Seraikela (Jharkhand, masks), Mayurbhanj (Odisha, no masks)
@@ -309,9 +309,9 @@ Bharatanatyam (TN) · Kathak (North) · Kathakali, Mohiniyattam (Kerala) · Kuch
 Odissi (Odisha) · Manipuri (Manipur) · Sattriya (Assam)
 Chhau is often added as semi-classical (WB, Jharkhand, Odisha)
 """)
-C("order-2025", D, "P1", "2025 Q32: Warli-style dancers. What were they, in order?", """
-**Manipuri, Chhau, Bharatanatyam, Kathakali** (key D)
-Read costume silhouette: cylinder skirt · mask · fan pleat · huge headdress
+C("order-2025", D, "P1", "Four dancers drawn as Warli stick figures: stiff cylinder skirt · big mask · fan-pleated costume · huge headdress. Name each dance.", """
+**Manipuri** (cylinder skirt) · **Chhau** (mask) · **Bharatanatyam** (fan pleats) · **Kathakali** (headdress)
+In stick figures, read the costume outline (CEED 2025)
 """)
 
 # ---------------- indian-monument ----------------
@@ -320,7 +320,7 @@ MF = "Name the monument, its city and its style."
 C("golden-temple", M, "P2", MF, """
 **Harmandir Sahib (Golden Temple)**, Amritsar, Punjab · ~31.6° N
 Gilded upper storeys in a sacred pool; Sikh architecture
-Northernmost of the usual set
+Northernmost of the monuments usually asked in north → south questions
 """, "Golden Temple Amritsar")
 C("qutub-minar", M, "P2", MF, """
 **Qutub Minar**, Delhi · ~28.5° N
@@ -330,7 +330,7 @@ Delhi Sultanate, UNESCO
 C("humayuns-tomb", M, "P1", MF, """
 **Humayun's Tomb**, Delhi · ~28.6° N
 1570, Mughal; first garden tomb (charbagh), red sandstone with white marble, double dome
-Prototype for the Taj · first in the 2026 N→S answer
+Prototype for the Taj · northernmost in CEED 2026's north → south question
 """, "Humayun's Tomb Delhi")
 C("taj-mahal", M, "P2", MF, """
 **Taj Mahal**, Agra · ~27.2° N
@@ -345,7 +345,7 @@ Mughal
 C("hawa-mahal", M, "P1", MF, """
 **Hawa Mahal**, Jaipur · ~26.9° N
 1799, pink sandstone screen of 953 small windows (*jharokhas*) for air and seeing out unseen
-Rajput; second in the 2026 N→S answer
+Rajput style · 2nd of 6 in CEED 2026's north → south question
 """, "Hawa Mahal Jaipur")
 C("khajuraho", M, "P2", MF, """
 **Khajuraho temples**, Madhya Pradesh · ~24.9° N
@@ -387,7 +387,7 @@ Buddhist, Hindu and Jain caves at Ellora
 """, "Kailasa temple Ellora")
 C("karla-chaitya", M, "P1", "Name the rock-cut hall type and a famous example.", """
 **Chaitya hall**: Buddhist rock-cut prayer hall, apsidal plan, stupa at the end, horseshoe window
-Karla (Maharashtra, ~18.8° N, largest), Ajanta Cave 19 and 26 · third in the 2026 N→S answer
+Karla (Maharashtra, ~18.8° N, largest), Ajanta Caves 19 and 26 · 3rd of 6 in CEED 2026's north → south question
 """, "Karla Caves chaitya interior")
 C("gateway-of-india", M, "P3", MF, """
 **Gateway of India**, Mumbai · ~18.9° N
@@ -411,16 +411,16 @@ Badami and Aihole nearby · UNESCO
 C("hampi-chariot", M, "P1", MF, """
 **Stone chariot, Vittala temple, Hampi**, Karnataka · ~15.3° N
 16th c., Vijayanagara empire; shrine carved as a chariot (on the ₹50 note)
-Fourth in the 2026 N→S answer
+4th of 6 in CEED 2026's north → south question
 """, "Hampi stone chariot Vittala")
 C("hoysala", M, "P3", MF, """
 **Chennakeshava temple, Belur** (and Halebidu), Karnataka · ~13.2° N
-12th c., **Hoysala**: star-shaped plan, soft soapstone, dense lathe-like carving
+12th c., **Hoysala**: star-shaped plan, soft soapstone, lathe-turned pillars, dense carving
 """, "Chennakeshava Temple Belur")
 C("mysore-palace", M, "P1", MF, """
 **Mysore Palace**, Karnataka · ~12.3° N
 1912, Henry Irwin; **Indo-Saracenic**: domes, arches, chhatris
-Fifth in the 2026 N→S answer
+5th of 6 in CEED 2026's north → south question
 """, "Mysore Palace")
 C("shore-temple", M, "P2", MF, """
 **Shore Temple, Mahabalipuram**, Tamil Nadu · ~12.6° N
@@ -430,16 +430,16 @@ UNESCO
 C("brihadeeswarar", M, "P1", MF, """
 **Brihadeeswarar Temple**, Thanjavur, Tamil Nadu · ~10.8° N
 1010, Rajaraja Chola I; **Chola**, ~66 m pyramidal vimana
-Last (southernmost) in the 2026 N→S answer
+Southernmost in CEED 2026's north → south question
 """, "Brihadeeswarar Temple Thanjavur vimana")
 C("meenakshi", M, "P2", MF, """
 **Meenakshi Temple**, Madurai, Tamil Nadu · ~9.9° N
 Nayak period; towering painted gateway towers (*gopurams*)
 **Dravida**
 """, "Meenakshi Amman Temple gopuram")
-C("order-2026", M, "P1", "2026 Q36: order these north → south.", """
-**Humayun's Tomb (Delhi) → Hawa Mahal (Jaipur) → rock-cut chaitya (Maharashtra) → Hampi chariot → Mysore Palace → Brihadeeswarar (Thanjavur)**
-Key B. Anchor latitudes: Delhi 28.6, Jaipur 26.9, Mumbai 19, Hampi 15.3, Mysore 12.3, Thanjavur 10.8
+C("order-2026", M, "P1", "Order north → south: Mysore Palace, Hawa Mahal, Brihadeeswarar Temple, Hampi stone chariot, Humayun's Tomb, a Maharashtra chaitya hall.", """
+**Humayun's Tomb (Delhi) → Hawa Mahal (Jaipur) → chaitya hall (Maharashtra) → Hampi stone chariot → Mysore Palace → Brihadeeswarar (Thanjavur)**
+Anchor latitudes (°N): Delhi 28.6 · Jaipur 26.9 · Mumbai/Karla ~19 · Hampi 15.3 · Mysore 12.3 · Thanjavur 10.8
 """)
 C("temple-styles", M, "P1", "Nagara vs Dravida vs Vesara: tell them apart.", """
 **Nagara** (north): curved beehive tower (*shikhara*), no big enclosure walls
@@ -489,17 +489,18 @@ Ivory wood (*aale mara*), lathe-turned, coloured with lac stick pressed on while
 Rounded forms, glossy natural colours
 """, "Channapatna toys")
 C("channapatna-process", K, "P1", "Lacquered turned wooden rattle: which operations make it?", """
-**Sizing → Turning → Drilling → Lacquering** (2025 Q23, key B)
-Lac is applied by friction heat on the lathe; reject milling, punching, powder coating
+**Sizing → Turning → Drilling → Lacquering** (CEED 2025)
+Lac is pressed on while the piece spins on the lathe; the heat of friction melts it into a glossy coat
+Milling, punching and powder coating are factory metal processes, so they don't fit
 """)
-C("wood-process-rule", K, "P1", "Traditional wooden artefact: what is the valid operation set?", """
-**Cut/size → turn or chisel → drill → sand → finish/lacquer**
-2026 Q38 answer set: Finishing, Sanding, Drilling, Chiselling
-2019 Q36: Drilling, Chiselling, Cutting, Finishing
+C("wood-process-rule", K, "P1", "Making a traditional wooden artefact by hand: which operations belong?", """
+**Cut to size → turn or chisel → drill → sand → finish (polish or lacquer)**
+Hand and lathe work only; factory processes (milling, moulding, casting) don't fit
+CEED 2026 answer: finishing, sanding, drilling, chiselling · 2019: drilling, chiselling, cutting, finishing
 """)
-C("craft-distractors", K, "P1", "Craft-process MCQ: how to spot the wrong options?", """
-Wrong options mix **industrial** steps (milling, punching, casting, forming, powder coating) or **fake** terms (balling, circling)
-Keep only hand or lathe operations a village workshop could do
+C("craft-distractors", K, "P1", "A question asks which steps make a traditional craft object. Which options can you rule out?", """
+Any option with a **factory step** (milling, punching, casting, powder coating) or a **made-up word** for a step
+Keep the steps a village workshop does by hand or on a lathe: cutting, turning, carving, drilling, sanding, lacquering
 """)
 C("kondapalli", K, "P2", KF, """
 **Kondapalli toys**, Andhra Pradesh (near Vijayawada), GI tag
@@ -516,9 +517,10 @@ C("dhokra", K, "P1", KF, """
 Wax threads leave a linear, thread-wrapped texture · 2021 Q11
 """, "Dhokra brass figure")
 C("lost-wax-steps", K, "P1", "Lost-wax (Dhokra) casting: the steps.", """
-Clay core → model in wax (beeswax + resin), add wax threads → coat in clay → heat: wax melts out
-→ pour molten metal → break the mould → finish
-Thin parts (tail, leg) join where wax threads met (2021 Q11)
+1 Clay core, then model the form in wax (beeswax + resin), adding wax threads for detail
+2 Coat in clay and heat: the wax melts out, leaving a hollow mould
+3 Pour in molten metal, break the mould, finish
+One mould per piece, so every Dhokra piece is unique
 """)
 C("bidri", K, "P2", KF, """
 **Bidriware**, Bidar, Karnataka (Bahmani sultans, 14th c.)
@@ -567,22 +569,22 @@ Split, shave, soak, then weave or bend over heat
 Wicker baskets, furniture, mats (wicker asked 2019 Q35)
 """, "Bamboo basket weaving Assam")
 C("weave-backside", K, "P1", "Two-colour woven mat: what does the back look like?", """
-In a plain weave each strand on top in front is underneath at the back
-So the back shows the **colours swapped** (and mirrored left–right when flipped)
-2022 Q27, key D
+In a plain weave, wherever a strand passes over on the front, it passes under at the back
+If warp and weft are different colours, the back shows the **colours swapped**, mirrored left to right when you flip it (CEED 2022)
 """)
 C("shrink-fit", K, "P1", "Bullock-cart wheel rim: how is the iron tyre fixed?", """
 **Shrink fit**: heat the iron ring → it expands → slip over the wooden wheel → cool → it contracts tight
 2021 Q29
 """)
-C("plastic-processes", K, "P1", "Match: carry bag, tiffin box, jerry can, water tank.", """
+C("plastic-processes", K, "P1", "How is each made: carry bag, tiffin box, jerry can, large water tank?", """
 Carry bag → **blown-film extrusion** · Tiffin box, bucket → **injection moulding**
 Bottle, jerry can → **blow moulding** · Large water tank → **rotational moulding**
 Asked 2015, 2016
 """)
-C("metal-processes", K, "P1", "Steel spoon, boat hull, Tetra Pak: how made?", """
-Spoon → cut from sheet, **formed/pressed** (2020 Q14) · Boat hull → **FRP** hand lay-up
-Tetra Pak → layers of paperboard, polyethylene, aluminium foil (2015)
+C("metal-processes", K, "P1", "How is each made: steel spoon, small boat hull, Tetra Pak carton?", """
+Steel spoon → cut from sheet, then **pressed** to shape (CEED 2020)
+Small boat hull → **FRP** (fibre-reinforced plastic, i.e. fibreglass) laid up by hand in a mould
+Tetra Pak → layers of paperboard, polyethylene and aluminium foil (CEED 2015)
 """)
 C("brass-metal-crafts", K, "P3", "Moradabad brassware: what technique?", """
 **Moradabad**, Uttar Pradesh, "Brass City"
@@ -608,22 +610,21 @@ When the dimension is **not adjustable** and neither extreme is critical
 e.g. backrest height from sitting height, public counter height
 """)
 C("rule-adjustable", N, "P2", "Adjustable product: what range?", """
-**5th female → 95th male** covers 90% of mixed users
+**5th-percentile female to 95th-percentile male**: fits about 95% of a mixed group of men and women
 Office chair height, car seat travel
 """)
 C("case-washbasin", N, "P1", "CEED 2022: washbasin height designed for…?", """
-**Shortest 5% adult Indian female** (key C)
-Height limits reach: the smallest user must use it comfortably
+**The shortest 5% of adult Indian women** (5th-percentile female)
+Rim height is limited by reach: if the smallest user can use it comfortably, everyone can
 """, "svg")
-C("case-bus-seat", N, "P1", "CEED 2026: bus seat. Which percentiles for sitting height and hip breadth?", """
-**50th percentile sitting height** (backrest, non-adjustable average)
-**95th percentile hip breadth** (seat width is a clearance)
-Key B
+C("case-bus-seat", N, "P1", "CEED 2026: a public bus seat for adult Indians. Which percentile for seat height (floor to seat) and for seat width (hip breadth)?", """
+**Seat height: 50th percentile** of sitting height, a middle value for a mixed public on a fixed seat
+**Seat width: 95th percentile** of hip breadth: width is a clearance, so it must fit the largest users
 """, "svg")
-C("work-heights", N, "P1", "Kitchen: washing, rolling dough, chopping. Same counter height?", """
-**No: different heights** (2023 Q25, key D)
-Set each surface where the hands work: rolling (pressing down) lower; washing happens down in the basin, so the sink rim sits higher
-""", "svg")
+C("work-heights", N, "P1", "Kitchen: washing, rolling dough, chopping. Should they share one counter height?", """
+**No: each task needs its own height** (CEED 2023)
+Set each surface where the hands work: rolling dough (pressing down) sits lower; washing happens down inside the basin, so the sink rim sits higher
+""", None)
 C("seat-height", N, "P2", "Chair seat height: rule of thumb and percentile?", """
 ≈ **40–45 cm** for adults
 Set from **5th percentile popliteal height** (back of knee to floor) so short users' feet reach the floor
@@ -672,8 +673,9 @@ C("gestalt-pragnanz", G, "P3", GF, """
 **Prägnanz** (law of simplicity): we read complex figures in the simplest way
 Olympic rings = five circles, not a tangle of curves
 """, "svg")
-C("gestalt-order-2026", G, "P1", "2026 Q44: four Gestalt images left to right?", """
-**Similarity, Continuity, Proximity, Closure** (key B)
+C("gestalt-order-2026", G, "P1", "CEED 2026 showed four Gestalt images. Which four principles, and how do you spot each?", """
+**Similarity, Continuity, Proximity, Closure**
+Spot by what does the grouping: look-alike shapes · one smooth line · spacing · a gap the eye fills
 """)
 
 # ---------------- ui-component ----------------
@@ -711,9 +713,9 @@ C("ui-tabs", U, "P2", UF, """
 **Tabs**: switch between sibling content views on one screen
 Navigation, not a form input
 """, "svg")
-C("ui-misuse-2026", U, "P1", "2026 Q37: how to spot a screen that misuses UI components?", """
-Look for: **checkboxes for an either-or** choice · **radios for multi-select** · **dropdown for yes/no** · toggle that needs Save
-Key D was the screen breaking these rules
+C("ui-misuse-2026", U, "P1", "How do you spot a screen that misuses UI controls?", """
+Look for: **checkboxes for an either-or choice** · **radio buttons for picking several** · **a dropdown for yes/no** · **a toggle that still needs Save**
+Asked in CEED 2026
 """)
 C("fitts-law", U, "P3", "Fitts's law?", """
 Time to hit a target rises with **distance** and falls with **size**
@@ -736,8 +738,7 @@ C("affordance", U, "P3", "Affordance vs signifier (Don Norman)?", """
 **Signifier**: the cue that shows how ("Push" plate) · a "Norman door" sends the wrong signal
 """)
 C("ux-stakeholders", U, "P1", "Food-delivery app research: whose views count?", """
-**All stakeholders**: customers, delivery riders, restaurant staff, support staff
-2023 Q14, key A, B, C, D
+**All of them**: customers, delivery riders, restaurant staff and support staff (CEED 2023: every option was correct)
 """)
 
 # ---------------- design-icon ----------------
@@ -779,22 +780,22 @@ C("panton-chair", I, "P3", IF, """
 **Panton chair**, Verner Panton, 1967
 First single-piece moulded plastic cantilever chair
 """, "Panton chair")
-C("blow-chair", I, "P2", "Inflatable chair: name the icon (2026 Q28 toy ↔ furniture).", """
-**Blow chair**, De Pas, D'Urbino, Lomazzi, Scolari for Zanotta, 1967
-Inflatable PVC tubes; pop, cheap, temporary · 2026 matched inflatable toy ↔ inflatable chair
+C("blow-chair", I, "P2", "Name the 1960s inflatable chair and its designers.", """
+**Blow chair**, De Pas, D'Urbino, Lomazzi and Scolari for Zanotta, 1967
+Inflatable PVC tubes: pop, cheap, temporary · CEED 2026 paired it with an inflatable toy
 """)
 C("cardboard-chair", I, "P2", "Corrugated-cardboard furniture icon?", """
 **Wiggle Side Chair**, Frank Gehry, *Easy Edges* series, 1972
-Laminated corrugated cardboard layers · 2026 Q28 matched nesting doll ↔ stacked cardboard chairs
+Layers of corrugated cardboard glued together: cheap, strong, sculptural
 """)
 C("spun-chair", I, "P2", "Spinning-top chair: name the icon.", """
 **Spun chair**, Thomas Heatherwick, 2007–10
-Rotationally symmetric; rock and spin in it · 2026 Q28 matched spinning top ↔ Spun-type chair
+Rotationally symmetric: you rock and spin in it, like a spinning top
 """)
-C("toy-furniture-2026", I, "P1", "2026 Q28: match toys to furniture.", """
-Inflatable toy ↔ inflatable chair · nesting doll ↔ stacked cardboard chairs
-Lego ↔ modular kids' table · spinning top ↔ Spun-type chair
-Shared principle (material, stacking, module, rotation), not looks
+C("toy-furniture-2026", I, "P1", "Pair each toy with furniture that shares its principle: inflatable toy, nesting doll, Lego, spinning top.", """
+Inflatable toy ↔ inflatable chair · nesting doll ↔ nesting cardboard chairs
+Lego ↔ modular kids' table · spinning top ↔ Spun chair
+Match the shared principle (material, nesting, module, rotation), not the look (CEED 2026)
 """)
 C("juicy-salif", I, "P2", IF, """
 **Juicy Salif**, Philippe Starck for Alessi, 1990
@@ -803,12 +804,12 @@ Cast aluminium spider-legged lemon squeezer; postmodern icon
 C("anna-g", I, "P1", "Character corkscrew shaped like a smiling woman. Name it and designer.", """
 **Anna G corkscrew**, Alessandro Mendini for Alessi, 1994
 Arms rise as the screw goes in; postmodern character product
-CEED 2025 Part B Q4 stimulus (re-imagine a tea flask in its language)
+CEED 2025 Part B reference: redesign a tea flask in the same playful style
 """, None, ["ceed-2025-b-q4"])
 C("heydar-aliyev", I, "P1", "Flowing white building with no corners. Name it and architect.", """
 **Heydar Aliyev Center**, Baku, **Zaha Hadid**, 2012
 Continuous curved white surfaces, ground folding into roof; parametric
-CEED 2022 Part B Q4 stimulus (an electric iron in its language)
+CEED 2022 Part B reference: design an electric iron in the same flowing style
 """, "Heydar Aliyev Center Baku", ["ceed-2022-b-q4"])
 C("sagrada-familia", I, "P2", "Name the building and architect.", """
 **Sagrada Família**, Barcelona, Antoni Gaudí, 1882–
@@ -843,10 +844,10 @@ C("otl-aicher", I, "P2", "Who drew the Munich 1972 Olympic pictograms?", """
 Modular stick figures on a strict grid, only 90° and 45° angles
 Model for icon sets with a consistent visual language
 """)
-C("logos-tech", I, "P1", "Exact-form recall: Google, Chrome, Apple, Tesla logos.", """
-**Google**: blue G, red o, yellow o, blue g, green l, red e (2016)
-**Chrome**: red, yellow, green ring segments around a blue centre (2020) · **Apple**: bitten apple + leaf, Rob Janoff 1977 (2018)
-**Tesla**: stylised T, a slice of an electric motor (2016)
+C("logos-tech", I, "P1", "Recall exactly: the Google, Chrome, Apple and Tesla logos.", """
+**Google**: blue G, red o, yellow o, blue g, green l, red e (asked 2016)
+**Chrome**: red, yellow, green ring around a blue centre (asked 2020) · **Apple**: bitten apple + leaf, Rob Janoff, 1977 (asked 2018)
+**Tesla**: stylised T, a slice of an electric motor (asked 2016)
 """)
 
 # ---------------- indian-design-history ----------------
@@ -880,13 +881,13 @@ Moustached, turbaned host
 C("doordarshan-logo", H, "P3", "Who designed the Doordarshan logo?", """
 **Devashis Bhattacharyya**, NID student, early 1970s; chosen by Indira Gandhi
 Two swirling curves forming an eye; animated by R.L. Mistry
-Replaced by a saffron version in 2024
+DD News recoloured it saffron in 2024
 """)
 C("satyajit-ray-type", H, "P1", "Satyajit Ray as type designer: name his typefaces.", """
 **Ray Roman, Ray Bizarre, Daphnis, Holiday Script**
 Also designed book covers and his film posters · asked 2016
 """)
-C("parle-g", H, "P1", "Parle-G pack: what to remember?", """
+C("parle-g", H, "P1", "Parle-G pack: colours, wordmark, illustration, and who drew the girl?", """
 Yellow-and-white wax-paper pack, red Parle-G wordmark, the Parle-G girl illustration (Maganlal Daiya, 1960s)
 "G" = glucose · pack font asked 2019
 """)
@@ -906,12 +907,12 @@ C("charles-correa", H, "P3", "Charles Correa: known for?", """
 Architect: Gandhi Smarak Sangrahalaya (Ahmedabad), Jawahar Kala Kendra (Jaipur), Kanchanjunga apartments (Mumbai)
 Climate-led modernism, open-to-sky spaces
 """)
-C("ambassador", H, "P3", IF, """
-**Hindustan Ambassador**, 1958–2014, Uttarpara, West Bengal
+C("ambassador", H, "P3", "Name the object, its maker and years.", """
+**Hindustan Ambassador**, Hindustan Motors, 1958–2014, Uttarpara, West Bengal
 Based on the Morris Oxford Series III; India's official and taxi car
 """, "Hindustan Ambassador car")
-C("bajaj-chetak", H, "P3", IF, """
-**Bajaj Chetak** scooter, 1972
+C("bajaj-chetak", H, "P3", "Name the object, its maker and year.", """
+**Bajaj Chetak** scooter, Bajaj Auto, 1972
 Based on the Vespa Sprint; "Hamara Bajaj" family scooter
 """, "Bajaj Chetak scooter")
 C("tata-nano", H, "P3", "Tata Nano: when and why notable?", """
@@ -921,7 +922,7 @@ Rear engine, compact; frugal design case study
 
 # ---------------- colour-and-type ----------------
 T = "colour-and-type"
-C("colour-wheel", T, "P2", "RYB colour wheel: primaries, secondaries, tertiaries.", """
+C("colour-wheel", T, "P2", "Painter's colour wheel: primaries, secondaries, tertiaries.", """
 Primaries **red, yellow, blue** → secondaries orange, green, violet
 Tertiaries mix a primary + neighbouring secondary (red-orange…) → 12 hues
 """, "svg")
@@ -929,8 +930,8 @@ C("monochromatic", T, "P2", "Which colour scheme?", """
 **Monochromatic**: one hue in its tints, shades and tones
 """, "svg")
 C("analogous", T, "P1", "Which colour scheme?", """
-**Analogous**: 2–4 neighbouring hues on the wheel
-Picasso's Blue Period (blues, blue-greens, violets) → **simple analogous** (2023 Q23, key C)
+**Analogous**: 2–4 neighbouring hues on the colour wheel
+Picasso's Blue Period (blues, blue-greens, violets) is the textbook example (CEED 2023)
 """, "svg")
 C("complementary", T, "P1", "Which colour scheme?", """
 **Complementary**: two opposite hues (red–green, blue–orange, yellow–violet)
@@ -962,29 +963,30 @@ C("screen-angles", T, "P1", "CMYK halftone screen angles?", """
 **K 45°** (most visible ink at the least visible angle), M 75°, C 15°, Y 0°
 Avoids moiré · asked 2016
 """)
-C("serif-sans", T, "P2", "Serif vs sans-serif vs slab vs monospace?", """
+C("serif-sans", T, "P2", "Name each style, left to right, and what defines it.", """
 **Serif**: small feet on strokes (Times, Garamond) · **Sans**: none (Helvetica, Futura)
 **Slab**: thick block serifs (Rockwell) · **Monospace**: every glyph the same width (Courier; 2025 NAT)
 """, "svg")
-C("font-weights", T, "P1", "Which are real font-weight names?", """
+C("font-weights", T, "P1", "Name the standard font weights, thinnest to heaviest.", """
 Hairline/Thin, Extra Light, Light, Regular, Medium, Semibold, Bold, Extra Bold, Black (100–900)
-2015 Q13: **Hairline** and **Bold** real; Feather and Grey are not
+CEED 2015 asked which were real: **Hairline** and **Bold** are; Feather and Grey are not
 """)
 C("point-pica", T, "P1", "Point and pica?", """
 1 point = 1/72 inch · **12 points = 1 pica** · 6 picas = 1 inch
 "Pica" is a typography unit (2015 Q46)
 """)
-C("type-anatomy", T, "P1", "Font anatomy: name the parts.", """
-Baseline, x-height, cap height, ascender, descender
-Counter (enclosed space), bowl, stem, serif, terminal · "font anatomy" was a 2024 Part B criterion
+C("type-anatomy", T, "P1", "Font anatomy: name the lines 1–4.", """
+**1 cap height · 2 x-height · 3 baseline · 4 descender** (ascender: the part of b or d rising above the x-height)
+Also: counter (enclosed space), bowl, stem, serif, terminal · "font anatomy" was a CEED 2024 Part B criterion
 """, "svg")
-C("kern-track-lead", T, "P2", "Kerning vs tracking vs leading?", """
-**Kerning**: space between one letter pair (AV) · **Tracking**: even spacing across a word or line
-**Leading**: space between lines (from strips of lead)
+C("kern-track-lead", T, "P2", "Name each kind of spacing, 1–3, and define it.", """
+**1 Kerning**: space between one letter pair (AV) · **2 Tracking**: even spacing across a word or line
+**3 Leading**: space between lines (from strips of lead)
 """, "svg")
 C("type-classes", T, "P3", "Old-style vs transitional vs Didone?", """
-**Old-style** (Garamond): low contrast, angled stress · **Transitional** (Baskerville, Times)
-**Didone** (Bodoni, Didot): extreme thick–thin, vertical stress, hairline serifs · Fat face = heavy Didone display (2018 Part B "d")
+**Old-style** (Garamond): low thick–thin contrast, slanted stress
+**Transitional** (Baskerville, Times): more contrast, near-vertical stress
+**Didone** (Bodoni, Didot): extreme thick–thin, vertical stress, hairline serifs · *Fat face*: extra-heavy Didone for posters
 """)
 C("helvetica", T, "P2", "Helvetica: who and when?", """
 **Max Miedinger & Eduard Hoffmann**, Haas foundry, **1957** (first named Neue Haas Grotesk)

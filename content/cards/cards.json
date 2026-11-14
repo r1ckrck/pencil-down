@@ -425,7 +425,7 @@
       "text": "Picasso: name his periods and signature works.",
       "image": null
     },
-    "back": "**Pablo Picasso** (1881–1973): Blue Period (1901–04) → Rose → **Cubism** (with Braque)\n*Les Demoiselles d'Avignon* (1907), *Guernica* (1937)\nPainter questions 2015, 2017; Blue Period = analogous scheme (2023)",
+    "back": "**Pablo Picasso** (1881–1973), Spanish, worked in France\nBlue Period (1901–04) → Rose Period (1904–06) → **Cubism** with Braque (from 1907)\n*Les Demoiselles d'Avignon* (1907), *Guernica* (1937) · CEED 2023 called the Blue Period palette analogous",
     "credit": null
   },
   {
@@ -451,7 +451,7 @@
       "text": "Name the painting style, its state and materials.",
       "image": "images/card-madhubani.jpg"
     },
-    "back": "**Madhubani (Mithila)**, Bihar\nDouble-line outlines, every gap filled with pattern, no empty space\nNatural dyes, painted by women; fish, deities, kohbar · asked 2020",
+    "back": "**Madhubani (Mithila)**, Bihar\nDouble-line outlines, every gap filled with pattern, no empty space\nNatural dyes, painted by women; fish, deities, *kohbar* (wedding-chamber motif) · asked 2020",
     "credit": {
       "author": "Unknown authorUnknown author",
       "licence": "CC0",
@@ -523,7 +523,7 @@
     "category": "indian-painting",
     "priority": "P2",
     "front": {
-      "text": "Name the painting style, its state and materials.",
+      "text": "Name the painting style and where it is from.",
       "image": "images/card-gond.jpg"
     },
     "back": "**Gond**, Madhya Pradesh, Gond tribe\nAnimals and trees filled with dots, dashes and fine lines; bright flat colour\nJangarh Singh Shyam brought it to canvas (1980s)",
@@ -583,7 +583,7 @@
     "category": "indian-painting",
     "priority": "P3",
     "front": {
-      "text": "Name the painting style, its state and materials.",
+      "text": "Name the painting style and where it is from.",
       "image": "images/card-cheriyal.jpg"
     },
     "back": "**Cheriyal scroll**, Telangana\nBold red backgrounds, narrative panels in long scrolls\nUsed by storytellers; Nakash family painters",
@@ -598,7 +598,7 @@
     "category": "indian-painting",
     "priority": "P2",
     "front": {
-      "text": "Name the painting style, its state and materials.",
+      "text": "Name the painting style and where it is from.",
       "image": "images/card-mughal-miniature.jpg"
     },
     "back": "**Mughal miniature**, 16th–18th c., Akbar's and Jahangir's ateliers\nPersian + Indian: court scenes, portraits, naturalistic animals and birds\nFine brush, gold borders · Mansur (animal studies), *Akbarnama*",
@@ -613,7 +613,7 @@
     "category": "indian-painting",
     "priority": "P2",
     "front": {
-      "text": "Name the painting style, its state and materials.",
+      "text": "Name the painting style and where it is from.",
       "image": "images/card-rajput-miniature.jpg"
     },
     "back": "**Rajput miniature**, Rajasthan: Mewar, Bundi, Kishangarh\nFlat bright colour, stylised faces; Kishangarh's *Bani Thani* has elongated eyes\nKrishna legends, ragamala, court life",
@@ -628,7 +628,7 @@
     "category": "indian-painting",
     "priority": "P2",
     "front": {
-      "text": "Name the painting style, its state and materials.",
+      "text": "Name the painting style and where it is from.",
       "image": "images/card-pahari-kangra.jpg"
     },
     "back": "**Pahari / Kangra**, Himachal Pradesh (Kangra, Basohli, Guler)\nLyrical, soft greens, delicate figures; Radha–Krishna romance\nBasohli is bolder; Nainsukh of Guler is the best-known painter",
@@ -646,7 +646,7 @@
       "text": "Whose painting? Name the painter and subject.",
       "image": "images/card-ravi-varma.jpg"
     },
-    "back": "**Raja Ravi Varma** (1848–1906), Kerala\nOil, European academic realism applied to Indian myths\n*Shakuntala*, *Damayanti*, *Lakshmi*, *Saraswati*; oleograph press 1894 · asked 2018",
+    "back": "**Raja Ravi Varma** (1848–1906), Kerala\nOil, European academic realism applied to Indian myths\nThis one: *Shakuntala* · also *Damayanti*, *Lakshmi*, *Saraswati*; oleograph press 1894 · asked 2018",
     "credit": {
       "author": "Raja Ravi Varma",
       "licence": "Public domain",
@@ -702,7 +702,7 @@
       "text": "Name the dance and its state.",
       "image": "images/card-bharatanatyam.jpg"
     },
-    "back": "**Bharatanatyam**, Tamil Nadu\nHalf-sitting *aramandi*, fan-pleated costume, crisp geometric lines\nSolo; asked 2025 (Warli-style figures)",
+    "back": "**Bharatanatyam**, Tamil Nadu\nHalf-sitting *aramandi*, fan-pleated costume, crisp geometric lines\nSolo · CEED 2025 showed it drawn as a Warli-style figure",
     "credit": {
       "author": "Bobinson",
       "licence": "CC BY-SA 4.0",
@@ -732,7 +732,7 @@
       "text": "Name the dance and its state.",
       "image": "images/card-manipuri.jpg"
     },
-    "back": "**Manipuri**, Manipur\n*Ras Lila*: stiff cylindrical mirror-work skirt (*potloi*), veil, soft flowing moves\nAsked 2025 (first in the answer order)",
+    "back": "**Manipuri**, Manipur\n*Ras Lila*: stiff cylindrical mirror-work skirt (*potloi*), veil, soft flowing moves\nCEED 2025 showed it drawn as a Warli-style figure",
     "credit": {
       "author": "https://www.flickr.com/photos/matsukin/",
       "licence": "CC BY 2.0",
@@ -845,10 +845,10 @@
     "category": "indian-dance",
     "priority": "P1",
     "front": {
-      "text": "2025 Q32: Warli-style dancers. What were they, in order?",
+      "text": "Four dancers drawn as Warli stick figures: stiff cylinder skirt · big mask · fan-pleated costume · huge headdress. Name each dance.",
       "image": null
     },
-    "back": "**Manipuri, Chhau, Bharatanatyam, Kathakali** (key D)\nRead costume silhouette: cylinder skirt · mask · fan pleat · huge headdress",
+    "back": "**Manipuri** (cylinder skirt) · **Chhau** (mask) · **Bharatanatyam** (fan pleats) · **Kathakali** (headdress)\nIn stick figures, read the costume outline (CEED 2025)",
     "credit": null
   },
   {
@@ -859,7 +859,7 @@
       "text": "Name the monument, its city and its style.",
       "image": "images/card-golden-temple.jpg"
     },
-    "back": "**Harmandir Sahib (Golden Temple)**, Amritsar, Punjab · ~31.6° N\nGilded upper storeys in a sacred pool; Sikh architecture\nNorthernmost of the usual set",
+    "back": "**Harmandir Sahib (Golden Temple)**, Amritsar, Punjab · ~31.6° N\nGilded upper storeys in a sacred pool; Sikh architecture\nNorthernmost of the monuments usually asked in north → south questions",
     "credit": {
       "author": "This picture has been taken by Oleg Yunakov. Contact e-mail: yunakovgmail.com. Image can be used in accordance with the terms of the СС-BY-SA license. Other pho",
       "licence": "CC BY-SA 3.0",
@@ -889,7 +889,7 @@
       "text": "Name the monument, its city and its style.",
       "image": "images/card-humayuns-tomb.jpg"
     },
-    "back": "**Humayun's Tomb**, Delhi · ~28.6° N\n1570, Mughal; first garden tomb (charbagh), red sandstone with white marble, double dome\nPrototype for the Taj · first in the 2026 N→S answer",
+    "back": "**Humayun's Tomb**, Delhi · ~28.6° N\n1570, Mughal; first garden tomb (charbagh), red sandstone with white marble, double dome\nPrototype for the Taj · northernmost in CEED 2026's north → south question",
     "credit": {
       "author": "Naveen R Gowda",
       "licence": "CC BY-SA 4.0",
@@ -934,7 +934,7 @@
       "text": "Name the monument, its city and its style.",
       "image": "images/card-hawa-mahal.jpg"
     },
-    "back": "**Hawa Mahal**, Jaipur · ~26.9° N\n1799, pink sandstone screen of 953 small windows (*jharokhas*) for air and seeing out unseen\nRajput; second in the 2026 N→S answer",
+    "back": "**Hawa Mahal**, Jaipur · ~26.9° N\n1799, pink sandstone screen of 953 small windows (*jharokhas*) for air and seeing out unseen\nRajput style · 2nd of 6 in CEED 2026's north → south question",
     "credit": {
       "author": "Chainwit.",
       "licence": "CC BY-SA 4.0",
@@ -951,9 +951,9 @@
     },
     "back": "**Khajuraho temples**, Madhya Pradesh · ~24.9° N\nChandela dynasty, c.950–1050; **Nagara** style, rising shikharas, dense sculpture\nUNESCO",
     "credit": {
-      "author": "Dey.sandip",
+      "author": "WarmaFiesta",
       "licence": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Homosexuality_in_Khajuraho_sculpture.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kandariya_Mahadeva_Temple,_Khajuraho,_Madhya_Pradesh,_India_002.jpg"
     }
   },
   {
@@ -966,9 +966,9 @@
     },
     "back": "**Great Stupa, Sanchi**, Madhya Pradesh · ~23.5° N\nBegun by Ashoka, 3rd c. BCE; hemispherical dome, four carved gateways (*toranas*)\nBuddhist, UNESCO",
     "credit": {
-      "author": "iMahesh",
-      "licence": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gilded_replica_of_Sanchi_Stupa_Northern_Torana_at_The_Great_Hall_of_Vajradhamma,_Muang_Boran,_Thailand.jpg"
+      "author": "Bernard Gagnon",
+      "licence": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stupa_1,_Sanchi_02.jpg"
     }
   },
   {
@@ -1069,7 +1069,7 @@
       "text": "Name the rock-cut hall type and a famous example.",
       "image": "images/card-karla-chaitya.jpg"
     },
-    "back": "**Chaitya hall**: Buddhist rock-cut prayer hall, apsidal plan, stupa at the end, horseshoe window\nKarla (Maharashtra, ~18.8° N, largest), Ajanta Cave 19 and 26 · third in the 2026 N→S answer",
+    "back": "**Chaitya hall**: Buddhist rock-cut prayer hall, apsidal plan, stupa at the end, horseshoe window\nKarla (Maharashtra, ~18.8° N, largest), Ajanta Caves 19 and 26 · 3rd of 6 in CEED 2026's north → south question",
     "credit": {
       "author": "Unknown",
       "licence": "CC BY-SA 4.0",
@@ -1144,7 +1144,7 @@
       "text": "Name the monument, its city and its style.",
       "image": "images/card-hampi-chariot.jpg"
     },
-    "back": "**Stone chariot, Vittala temple, Hampi**, Karnataka · ~15.3° N\n16th c., Vijayanagara empire; shrine carved as a chariot (on the ₹50 note)\nFourth in the 2026 N→S answer",
+    "back": "**Stone chariot, Vittala temple, Hampi**, Karnataka · ~15.3° N\n16th c., Vijayanagara empire; shrine carved as a chariot (on the ₹50 note)\n4th of 6 in CEED 2026's north → south question",
     "credit": {
       "author": "Ram Nagesh Thota",
       "licence": "CC BY-SA 4.0",
@@ -1159,7 +1159,7 @@
       "text": "Name the monument, its city and its style.",
       "image": "images/card-hoysala.jpg"
     },
-    "back": "**Chennakeshava temple, Belur** (and Halebidu), Karnataka · ~13.2° N\n12th c., **Hoysala**: star-shaped plan, soft soapstone, dense lathe-like carving",
+    "back": "**Chennakeshava temple, Belur** (and Halebidu), Karnataka · ~13.2° N\n12th c., **Hoysala**: star-shaped plan, soft soapstone, lathe-turned pillars, dense carving",
     "credit": {
       "author": "Dineshkannambadi (talk)",
       "licence": "CC BY-SA 3.0",
@@ -1174,7 +1174,7 @@
       "text": "Name the monument, its city and its style.",
       "image": "images/card-mysore-palace.jpg"
     },
-    "back": "**Mysore Palace**, Karnataka · ~12.3° N\n1912, Henry Irwin; **Indo-Saracenic**: domes, arches, chhatris\nFifth in the 2026 N→S answer",
+    "back": "**Mysore Palace**, Karnataka · ~12.3° N\n1912, Henry Irwin; **Indo-Saracenic**: domes, arches, chhatris\n5th of 6 in CEED 2026's north → south question",
     "credit": {
       "author": "Hari R",
       "licence": "CC BY 2.0",
@@ -1204,7 +1204,7 @@
       "text": "Name the monument, its city and its style.",
       "image": "images/card-brihadeeswarar.jpg"
     },
-    "back": "**Brihadeeswarar Temple**, Thanjavur, Tamil Nadu · ~10.8° N\n1010, Rajaraja Chola I; **Chola**, ~66 m pyramidal vimana\nLast (southernmost) in the 2026 N→S answer",
+    "back": "**Brihadeeswarar Temple**, Thanjavur, Tamil Nadu · ~10.8° N\n1010, Rajaraja Chola I; **Chola**, ~66 m pyramidal vimana\nSouthernmost in CEED 2026's north → south question",
     "credit": {
       "author": "Vengolis",
       "licence": "CC BY-SA 4.0",
@@ -1231,10 +1231,10 @@
     "category": "indian-monument",
     "priority": "P1",
     "front": {
-      "text": "2026 Q36: order these north → south.",
+      "text": "Order north → south: Mysore Palace, Hawa Mahal, Brihadeeswarar Temple, Hampi stone chariot, Humayun's Tomb, a Maharashtra chaitya hall.",
       "image": null
     },
-    "back": "**Humayun's Tomb (Delhi) → Hawa Mahal (Jaipur) → rock-cut chaitya (Maharashtra) → Hampi chariot → Mysore Palace → Brihadeeswarar (Thanjavur)**\nKey B. Anchor latitudes: Delhi 28.6, Jaipur 26.9, Mumbai 19, Hampi 15.3, Mysore 12.3, Thanjavur 10.8",
+    "back": "**Humayun's Tomb (Delhi) → Hawa Mahal (Jaipur) → chaitya hall (Maharashtra) → Hampi stone chariot → Mysore Palace → Brihadeeswarar (Thanjavur)**\nAnchor latitudes (°N): Delhi 28.6 · Jaipur 26.9 · Mumbai/Karla ~19 · Hampi 15.3 · Mysore 12.3 · Thanjavur 10.8",
     "credit": null
   },
   {
@@ -1372,7 +1372,7 @@
       "text": "Lacquered turned wooden rattle: which operations make it?",
       "image": null
     },
-    "back": "**Sizing → Turning → Drilling → Lacquering** (2025 Q23, key B)\nLac is applied by friction heat on the lathe; reject milling, punching, powder coating",
+    "back": "**Sizing → Turning → Drilling → Lacquering** (CEED 2025)\nLac is pressed on while the piece spins on the lathe; the heat of friction melts it into a glossy coat\nMilling, punching and powder coating are factory metal processes, so they don't fit",
     "credit": null
   },
   {
@@ -1380,10 +1380,10 @@
     "category": "craft-process",
     "priority": "P1",
     "front": {
-      "text": "Traditional wooden artefact: what is the valid operation set?",
+      "text": "Making a traditional wooden artefact by hand: which operations belong?",
       "image": null
     },
-    "back": "**Cut/size → turn or chisel → drill → sand → finish/lacquer**\n2026 Q38 answer set: Finishing, Sanding, Drilling, Chiselling\n2019 Q36: Drilling, Chiselling, Cutting, Finishing",
+    "back": "**Cut to size → turn or chisel → drill → sand → finish (polish or lacquer)**\nHand and lathe work only; factory processes (milling, moulding, casting) don't fit\nCEED 2026 answer: finishing, sanding, drilling, chiselling · 2019: drilling, chiselling, cutting, finishing",
     "credit": null
   },
   {
@@ -1391,10 +1391,10 @@
     "category": "craft-process",
     "priority": "P1",
     "front": {
-      "text": "Craft-process MCQ: how to spot the wrong options?",
+      "text": "A question asks which steps make a traditional craft object. Which options can you rule out?",
       "image": null
     },
-    "back": "Wrong options mix **industrial** steps (milling, punching, casting, forming, powder coating) or **fake** terms (balling, circling)\nKeep only hand or lathe operations a village workshop could do",
+    "back": "Any option with a **factory step** (milling, punching, casting, powder coating) or a **made-up word** for a step\nKeep the steps a village workshop does by hand or on a lathe: cutting, turning, carving, drilling, sanding, lacquering",
     "credit": null
   },
   {
@@ -1450,7 +1450,7 @@
       "text": "Lost-wax (Dhokra) casting: the steps.",
       "image": null
     },
-    "back": "Clay core → model in wax (beeswax + resin), add wax threads → coat in clay → heat: wax melts out\n→ pour molten metal → break the mould → finish\nThin parts (tail, leg) join where wax threads met (2021 Q11)",
+    "back": "1 Clay core, then model the form in wax (beeswax + resin), adding wax threads for detail\n2 Coat in clay and heat: the wax melts out, leaving a hollow mould\n3 Pour in molten metal, break the mould, finish\nOne mould per piece, so every Dhokra piece is unique",
     "credit": null
   },
   {
@@ -1611,7 +1611,7 @@
       "text": "Two-colour woven mat: what does the back look like?",
       "image": null
     },
-    "back": "In a plain weave each strand on top in front is underneath at the back\nSo the back shows the **colours swapped** (and mirrored left–right when flipped)\n2022 Q27, key D",
+    "back": "In a plain weave, wherever a strand passes over on the front, it passes under at the back\nIf warp and weft are different colours, the back shows the **colours swapped**, mirrored left to right when you flip it (CEED 2022)",
     "credit": null
   },
   {
@@ -1630,7 +1630,7 @@
     "category": "craft-process",
     "priority": "P1",
     "front": {
-      "text": "Match: carry bag, tiffin box, jerry can, water tank.",
+      "text": "How is each made: carry bag, tiffin box, jerry can, large water tank?",
       "image": null
     },
     "back": "Carry bag → **blown-film extrusion** · Tiffin box, bucket → **injection moulding**\nBottle, jerry can → **blow moulding** · Large water tank → **rotational moulding**\nAsked 2015, 2016",
@@ -1641,10 +1641,10 @@
     "category": "craft-process",
     "priority": "P1",
     "front": {
-      "text": "Steel spoon, boat hull, Tetra Pak: how made?",
+      "text": "How is each made: steel spoon, small boat hull, Tetra Pak carton?",
       "image": null
     },
-    "back": "Spoon → cut from sheet, **formed/pressed** (2020 Q14) · Boat hull → **FRP** hand lay-up\nTetra Pak → layers of paperboard, polyethylene, aluminium foil (2015)",
+    "back": "Steel spoon → cut from sheet, then **pressed** to shape (CEED 2020)\nSmall boat hull → **FRP** (fibre-reinforced plastic, i.e. fibreglass) laid up by hand in a mould\nTetra Pak → layers of paperboard, polyethylene and aluminium foil (CEED 2015)",
     "credit": null
   },
   {
@@ -1710,7 +1710,7 @@
       "text": "Adjustable product: what range?",
       "image": null
     },
-    "back": "**5th female → 95th male** covers 90% of mixed users\nOffice chair height, car seat travel",
+    "back": "**5th-percentile female to 95th-percentile male**: fits about 95% of a mixed group of men and women\nOffice chair height, car seat travel",
     "credit": null
   },
   {
@@ -1721,7 +1721,7 @@
       "text": "CEED 2022: washbasin height designed for…?",
       "image": "images/card-case-washbasin.svg"
     },
-    "back": "**Shortest 5% adult Indian female** (key C)\nHeight limits reach: the smallest user must use it comfortably",
+    "back": "**The shortest 5% of adult Indian women** (5th-percentile female)\nRim height is limited by reach: if the smallest user can use it comfortably, everyone can",
     "credit": null
   },
   {
@@ -1729,10 +1729,10 @@
     "category": "anthropometry",
     "priority": "P1",
     "front": {
-      "text": "CEED 2026: bus seat. Which percentiles for sitting height and hip breadth?",
+      "text": "CEED 2026: a public bus seat for adult Indians. Which percentile for seat height (floor to seat) and for seat width (hip breadth)?",
       "image": "images/card-case-bus-seat.svg"
     },
-    "back": "**50th percentile sitting height** (backrest, non-adjustable average)\n**95th percentile hip breadth** (seat width is a clearance)\nKey B",
+    "back": "**Seat height: 50th percentile** of sitting height, a middle value for a mixed public on a fixed seat\n**Seat width: 95th percentile** of hip breadth: width is a clearance, so it must fit the largest users",
     "credit": null
   },
   {
@@ -1740,10 +1740,10 @@
     "category": "anthropometry",
     "priority": "P1",
     "front": {
-      "text": "Kitchen: washing, rolling dough, chopping. Same counter height?",
-      "image": "images/card-work-heights.svg"
+      "text": "Kitchen: washing, rolling dough, chopping. Should they share one counter height?",
+      "image": null
     },
-    "back": "**No: different heights** (2023 Q25, key D)\nSet each surface where the hands work: rolling (pressing down) lower; washing happens down in the basin, so the sink rim sits higher",
+    "back": "**No: each task needs its own height** (CEED 2023)\nSet each surface where the hands work: rolling dough (pressing down) sits lower; washing happens down inside the basin, so the sink rim sits higher",
     "credit": null
   },
   {
@@ -1872,10 +1872,10 @@
     "category": "gestalt",
     "priority": "P1",
     "front": {
-      "text": "2026 Q44: four Gestalt images left to right?",
+      "text": "CEED 2026 showed four Gestalt images. Which four principles, and how do you spot each?",
       "image": null
     },
-    "back": "**Similarity, Continuity, Proximity, Closure** (key B)",
+    "back": "**Similarity, Continuity, Proximity, Closure**\nSpot by what does the grouping: look-alike shapes · one smooth line · spacing · a gap the eye fills",
     "credit": null
   },
   {
@@ -1971,10 +1971,10 @@
     "category": "ui-component",
     "priority": "P1",
     "front": {
-      "text": "2026 Q37: how to spot a screen that misuses UI components?",
+      "text": "How do you spot a screen that misuses UI controls?",
       "image": null
     },
-    "back": "Look for: **checkboxes for an either-or** choice · **radios for multi-select** · **dropdown for yes/no** · toggle that needs Save\nKey D was the screen breaking these rules",
+    "back": "Look for: **checkboxes for an either-or choice** · **radio buttons for picking several** · **a dropdown for yes/no** · **a toggle that still needs Save**\nAsked in CEED 2026",
     "credit": null
   },
   {
@@ -2040,7 +2040,7 @@
       "text": "Food-delivery app research: whose views count?",
       "image": null
     },
-    "back": "**All stakeholders**: customers, delivery riders, restaurant staff, support staff\n2023 Q14, key A, B, C, D",
+    "back": "**All of them**: customers, delivery riders, restaurant staff and support staff (CEED 2023: every option was correct)",
     "credit": null
   },
   {
@@ -2183,10 +2183,10 @@
     "category": "design-icon",
     "priority": "P2",
     "front": {
-      "text": "Inflatable chair: name the icon (2026 Q28 toy ↔ furniture).",
+      "text": "Name the 1960s inflatable chair and its designers.",
       "image": null
     },
-    "back": "**Blow chair**, De Pas, D'Urbino, Lomazzi, Scolari for Zanotta, 1967\nInflatable PVC tubes; pop, cheap, temporary · 2026 matched inflatable toy ↔ inflatable chair",
+    "back": "**Blow chair**, De Pas, D'Urbino, Lomazzi and Scolari for Zanotta, 1967\nInflatable PVC tubes: pop, cheap, temporary · CEED 2026 paired it with an inflatable toy",
     "credit": null
   },
   {
@@ -2197,7 +2197,7 @@
       "text": "Corrugated-cardboard furniture icon?",
       "image": null
     },
-    "back": "**Wiggle Side Chair**, Frank Gehry, *Easy Edges* series, 1972\nLaminated corrugated cardboard layers · 2026 Q28 matched nesting doll ↔ stacked cardboard chairs",
+    "back": "**Wiggle Side Chair**, Frank Gehry, *Easy Edges* series, 1972\nLayers of corrugated cardboard glued together: cheap, strong, sculptural",
     "credit": null
   },
   {
@@ -2208,7 +2208,7 @@
       "text": "Spinning-top chair: name the icon.",
       "image": null
     },
-    "back": "**Spun chair**, Thomas Heatherwick, 2007–10\nRotationally symmetric; rock and spin in it · 2026 Q28 matched spinning top ↔ Spun-type chair",
+    "back": "**Spun chair**, Thomas Heatherwick, 2007–10\nRotationally symmetric: you rock and spin in it, like a spinning top",
     "credit": null
   },
   {
@@ -2216,10 +2216,10 @@
     "category": "design-icon",
     "priority": "P1",
     "front": {
-      "text": "2026 Q28: match toys to furniture.",
+      "text": "Pair each toy with furniture that shares its principle: inflatable toy, nesting doll, Lego, spinning top.",
       "image": null
     },
-    "back": "Inflatable toy ↔ inflatable chair · nesting doll ↔ stacked cardboard chairs\nLego ↔ modular kids' table · spinning top ↔ Spun-type chair\nShared principle (material, stacking, module, rotation), not looks",
+    "back": "Inflatable toy ↔ inflatable chair · nesting doll ↔ nesting cardboard chairs\nLego ↔ modular kids' table · spinning top ↔ Spun chair\nMatch the shared principle (material, nesting, module, rotation), not the look (CEED 2026)",
     "credit": null
   },
   {
@@ -2245,7 +2245,7 @@
       "text": "Character corkscrew shaped like a smiling woman. Name it and designer.",
       "image": null
     },
-    "back": "**Anna G corkscrew**, Alessandro Mendini for Alessi, 1994\nArms rise as the screw goes in; postmodern character product\nCEED 2025 Part B Q4 stimulus (re-imagine a tea flask in its language)",
+    "back": "**Anna G corkscrew**, Alessandro Mendini for Alessi, 1994\nArms rise as the screw goes in; postmodern character product\nCEED 2025 Part B reference: redesign a tea flask in the same playful style",
     "credit": null,
     "revealsPromptIds": [
       "ceed-2025-b-q4"
@@ -2259,7 +2259,7 @@
       "text": "Flowing white building with no corners. Name it and architect.",
       "image": "images/card-heydar-aliyev.jpg"
     },
-    "back": "**Heydar Aliyev Center**, Baku, **Zaha Hadid**, 2012\nContinuous curved white surfaces, ground folding into roof; parametric\nCEED 2022 Part B Q4 stimulus (an electric iron in its language)",
+    "back": "**Heydar Aliyev Center**, Baku, **Zaha Hadid**, 2012\nContinuous curved white surfaces, ground folding into roof; parametric\nCEED 2022 Part B reference: design an electric iron in the same flowing style",
     "credit": {
       "author": "Emin Allahverdi",
       "licence": "CC BY-SA 4.0",
@@ -2370,10 +2370,10 @@
     "category": "design-icon",
     "priority": "P1",
     "front": {
-      "text": "Exact-form recall: Google, Chrome, Apple, Tesla logos.",
+      "text": "Recall exactly: the Google, Chrome, Apple and Tesla logos.",
       "image": null
     },
-    "back": "**Google**: blue G, red o, yellow o, blue g, green l, red e (2016)\n**Chrome**: red, yellow, green ring segments around a blue centre (2020) · **Apple**: bitten apple + leaf, Rob Janoff 1977 (2018)\n**Tesla**: stylised T, a slice of an electric motor (2016)",
+    "back": "**Google**: blue G, red o, yellow o, blue g, green l, red e (asked 2016)\n**Chrome**: red, yellow, green ring around a blue centre (asked 2020) · **Apple**: bitten apple + leaf, Rob Janoff, 1977 (asked 2018)\n**Tesla**: stylised T, a slice of an electric motor (asked 2016)",
     "credit": null
   },
   {
@@ -2454,7 +2454,7 @@
       "text": "Who designed the Doordarshan logo?",
       "image": null
     },
-    "back": "**Devashis Bhattacharyya**, NID student, early 1970s; chosen by Indira Gandhi\nTwo swirling curves forming an eye; animated by R.L. Mistry\nReplaced by a saffron version in 2024",
+    "back": "**Devashis Bhattacharyya**, NID student, early 1970s; chosen by Indira Gandhi\nTwo swirling curves forming an eye; animated by R.L. Mistry\nDD News recoloured it saffron in 2024",
     "credit": null
   },
   {
@@ -2473,7 +2473,7 @@
     "category": "indian-design-history",
     "priority": "P1",
     "front": {
-      "text": "Parle-G pack: what to remember?",
+      "text": "Parle-G pack: colours, wordmark, illustration, and who drew the girl?",
       "image": null
     },
     "back": "Yellow-and-white wax-paper pack, red Parle-G wordmark, the Parle-G girl illustration (Maganlal Daiya, 1960s)\n\"G\" = glucose · pack font asked 2019",
@@ -2532,10 +2532,10 @@
     "category": "indian-design-history",
     "priority": "P3",
     "front": {
-      "text": "Name the object, its designer and year.",
+      "text": "Name the object, its maker and years.",
       "image": "images/card-ambassador.jpg"
     },
-    "back": "**Hindustan Ambassador**, 1958–2014, Uttarpara, West Bengal\nBased on the Morris Oxford Series III; India's official and taxi car",
+    "back": "**Hindustan Ambassador**, Hindustan Motors, 1958–2014, Uttarpara, West Bengal\nBased on the Morris Oxford Series III; India's official and taxi car",
     "credit": {
       "author": "David Howard",
       "licence": "CC0",
@@ -2547,10 +2547,10 @@
     "category": "indian-design-history",
     "priority": "P3",
     "front": {
-      "text": "Name the object, its designer and year.",
+      "text": "Name the object, its maker and year.",
       "image": "images/card-bajaj-chetak.jpg"
     },
-    "back": "**Bajaj Chetak** scooter, 1972\nBased on the Vespa Sprint; \"Hamara Bajaj\" family scooter",
+    "back": "**Bajaj Chetak** scooter, Bajaj Auto, 1972\nBased on the Vespa Sprint; \"Hamara Bajaj\" family scooter",
     "credit": {
       "author": "Dharmesh Patel",
       "licence": "CC BY 2.0",
@@ -2573,7 +2573,7 @@
     "category": "colour-and-type",
     "priority": "P2",
     "front": {
-      "text": "RYB colour wheel: primaries, secondaries, tertiaries.",
+      "text": "Painter's colour wheel: primaries, secondaries, tertiaries.",
       "image": "images/card-colour-wheel.svg"
     },
     "back": "Primaries **red, yellow, blue** → secondaries orange, green, violet\nTertiaries mix a primary + neighbouring secondary (red-orange…) → 12 hues",
@@ -2598,7 +2598,7 @@
       "text": "Which colour scheme?",
       "image": "images/card-analogous.svg"
     },
-    "back": "**Analogous**: 2–4 neighbouring hues on the wheel\nPicasso's Blue Period (blues, blue-greens, violets) → **simple analogous** (2023 Q23, key C)",
+    "back": "**Analogous**: 2–4 neighbouring hues on the colour wheel\nPicasso's Blue Period (blues, blue-greens, violets) is the textbook example (CEED 2023)",
     "credit": null
   },
   {
@@ -2694,7 +2694,7 @@
     "category": "colour-and-type",
     "priority": "P2",
     "front": {
-      "text": "Serif vs sans-serif vs slab vs monospace?",
+      "text": "Name each style, left to right, and what defines it.",
       "image": "images/card-serif-sans.svg"
     },
     "back": "**Serif**: small feet on strokes (Times, Garamond) · **Sans**: none (Helvetica, Futura)\n**Slab**: thick block serifs (Rockwell) · **Monospace**: every glyph the same width (Courier; 2025 NAT)",
@@ -2705,10 +2705,10 @@
     "category": "colour-and-type",
     "priority": "P1",
     "front": {
-      "text": "Which are real font-weight names?",
+      "text": "Name the standard font weights, thinnest to heaviest.",
       "image": null
     },
-    "back": "Hairline/Thin, Extra Light, Light, Regular, Medium, Semibold, Bold, Extra Bold, Black (100–900)\n2015 Q13: **Hairline** and **Bold** real; Feather and Grey are not",
+    "back": "Hairline/Thin, Extra Light, Light, Regular, Medium, Semibold, Bold, Extra Bold, Black (100–900)\nCEED 2015 asked which were real: **Hairline** and **Bold** are; Feather and Grey are not",
     "credit": null
   },
   {
@@ -2727,10 +2727,10 @@
     "category": "colour-and-type",
     "priority": "P1",
     "front": {
-      "text": "Font anatomy: name the parts.",
+      "text": "Font anatomy: name the lines 1–4.",
       "image": "images/card-type-anatomy.svg"
     },
-    "back": "Baseline, x-height, cap height, ascender, descender\nCounter (enclosed space), bowl, stem, serif, terminal · \"font anatomy\" was a 2024 Part B criterion",
+    "back": "**1 cap height · 2 x-height · 3 baseline · 4 descender** (ascender: the part of b or d rising above the x-height)\nAlso: counter (enclosed space), bowl, stem, serif, terminal · \"font anatomy\" was a CEED 2024 Part B criterion",
     "credit": null
   },
   {
@@ -2738,10 +2738,10 @@
     "category": "colour-and-type",
     "priority": "P2",
     "front": {
-      "text": "Kerning vs tracking vs leading?",
+      "text": "Name each kind of spacing, 1–3, and define it.",
       "image": "images/card-kern-track-lead.svg"
     },
-    "back": "**Kerning**: space between one letter pair (AV) · **Tracking**: even spacing across a word or line\n**Leading**: space between lines (from strips of lead)",
+    "back": "**1 Kerning**: space between one letter pair (AV) · **2 Tracking**: even spacing across a word or line\n**3 Leading**: space between lines (from strips of lead)",
     "credit": null
   },
   {
@@ -2752,7 +2752,7 @@
       "text": "Old-style vs transitional vs Didone?",
       "image": null
     },
-    "back": "**Old-style** (Garamond): low contrast, angled stress · **Transitional** (Baskerville, Times)\n**Didone** (Bodoni, Didot): extreme thick–thin, vertical stress, hairline serifs · Fat face = heavy Didone display (2018 Part B \"d\")",
+    "back": "**Old-style** (Garamond): low thick–thin contrast, slanted stress\n**Transitional** (Baskerville, Times): more contrast, near-vertical stress\n**Didone** (Bodoni, Didot): extreme thick–thin, vertical stress, hairline serifs · *Fat face*: extra-heavy Didone for posters",
     "credit": null
   },
   {
