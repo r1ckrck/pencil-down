@@ -874,7 +874,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "All four figures show **one block turning steadily**. Pick one face, see which way it turns from figure to figure, and carry that turn one step further. Then check which side faces should still be visible.\n\n- Track the face with the **notch at top-right and the cut-out at bottom-left**. In figure 3 it is one of three roughly equal faces. In figure 4 it fills most of the view, the **right face has narrowed to a strip**, and you see some of the **downward faces**.\n- One more step turns that face straight towards you. The right face disappears, and only thin strips of the downward faces remain.\n- **D** shows exactly this: the face almost square-on, no side face, and only thin strips of underside. **D** is correct.\n- **A, B, C** all show a **left side face**. That only appears once the block has turned past square-on, so none of them is the next small step."
   },
   {
     "id": "ceed-2020-q41",
@@ -1119,7 +1119,7 @@
     "topic": "3d-visualisation",
     "difficulty": 2,
     "animated": false,
-    "explanation": null
+    "explanation": "Treat the solid as a flat slab. Count the cells along the long bar and note where each arm leaves it and on which side. Then check how each end is finished: rounded **in plan** (a curved outline when you look straight at the big face) or rounded **in profile** (a quarter-round curving from one big face to the other). The two given views show opposite faces, which mirror each other, so a correct option can match either one.\n\n- **The solid:** a 6-cell bar. A 2-cell arm leaves cell 2, a 2-cell arm leaves cell 4 on the opposite side, and a 1-cell stub leaves cell 5 on the first arm's side.\n- Only the cell-2 arm is rounded in plan. Every other end is a quarter-round.\n- **A** shows the face seen in the second view and **C** the face seen in the first. Both match, so the answer is **A, C**.\n- **B** fails: the cell-2 arm ends in a quarter-round, and no end is rounded in plan.\n- **D** fails: the cell-4 arm is also rounded in plan."
   },
   {
     "id": "ceed-2021-q11",
@@ -1502,7 +1502,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Walk to the other end of a corridor and two things flip. **Left and right swap**, but the ceiling stays on top. **Near and far swap** too: art drawn near the centre of the original is now close to you and stretched huge, and art near the edges shrinks into the far opening.\n\n- **Big blobs near you** are the face's cheek-hearts and floor marks. In the original, the right heart sits higher than the left. After the swap it becomes the **left** wall blob, so the left blob must sit higher than the right.\n- **Tiny marks at the far end** are the outer ring of 12 dots: **2 on the ceiling, 2 on the floor, 2 on each side wall, plus one near each corner**.\n\n**B** matches on both.\n- **A**: same near blobs, but the far dots are wrong. The ones near the corners are missing.\n- **C**: a mirror image of B. The right blob sits higher, so left and right were never swapped.\n- **D**: the stretched virus ring is drawn as a doubled band, not a single one."
   },
   {
     "id": "ceed-2021-q28",
@@ -1862,7 +1862,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Each light casts the form straight onto its surface. A line pointing straight at a surface shows there as just a **dot**, and shadows can **overlap**, so one line can draw part of several Zs.\n\n- **1 sloping line** makes the slanted middle stroke of both wall Zs.\n- **2 flat lines**, one at the top and one at the bottom, sit directly above and below the sloping line's two ends, so seen from above they cover exactly the same path, running at 45\u00b0 across the room. On each wall they give the top and bottom strokes. Seen from above, all three lines fall on one segment, which is the floor Z's middle stroke.\n- **2 more lines** draw the floor Z's two outer strokes. Each runs parallel to the right wall's base, so it points straight at the left wall and shows there as a dot. On the right wall it lands on a top or bottom stroke that is already there.\n\nWhy not fewer: the walls need at least 3 lines. From above, those 3 must overlap as one stroke, because any other arrangement makes them cross in an X, which a Z never has. The floor's other two strokes therefore need two more lines.\n\nTotal: 1 + 2 + 2 = **5** lines."
   },
   {
     "id": "ceed-2022-q04",
@@ -2298,7 +2298,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The moulded part takes the shape of the **empty channel** left between the two halves. Trace that channel around the mould and match its turns to the options.\n\n- **Top:** green shows along the back two edges of the closed mould, so the part starts with an L-shaped top bar. All four options have this.\n- **Left leg:** the brown half's groove runs down its left wall and ends in **one ledge**, so the left leg finishes with a single small step, then dips to the bottom point.\n- **Centre:** the blue half's long vertical groove gives a **tall centre column** rising from the bottom to mid-height.\n- **Right side:** the brown notch on the right wall and the blue ledge near the top form **one step** out to the right before the leg rises to the top.\n\n**C** matches all of this. **A** has a double notch (a W) at the bottom, **B** has no centre column and a straight right leg, and **D** has no step at the bottom of the left leg."
   },
   {
     "id": "ceed-2022-q23",
@@ -2445,7 +2445,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "Closing a fan stacks every pleat into one narrow strip. Each band keeps its **distance from the pivot**, and what you see is whatever lies on the folds. Read the bands from the rim inwards.\n\n- **Rim and small rings:** the pale edge, then small white rings on magenta. The rings are big enough to cross the fold lines, so they show as **white\u2013magenta\u2013white stripes** near the tip. All four options have this.\n- **Orange band:** its edges shift around the fan, so when stacked they slant into an **orange wedge**.\n- **Large white circles with magenta centres:** they touch, so every fold crosses white, and most also cross a magenta centre. They become **broken white/magenta lines**, not solid bars.\n- **Small white dots:** they are sparse and sit between fold lines, so they **disappear** when the fan closes.\n\n**B** matches. A adds a white bar for the dots, C draws the large circles as solid bars, and D adds a striped block for the dots."
   },
   {
     "id": "ceed-2022-q30",
@@ -2487,7 +2487,7 @@
     "topic": "folding-and-patterns",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The pack has four sides, each a triangle over a band (a four-sided strip), on a square base. Fold each net and check where every line **ends**: at a corner, partway along an edge, or above or below the fold.\n\n- **Net C:** all four sides match both views.\n  - **Z face:** enters from the left edge, goes right, down-left to the fold, then down-right through the band to the base.\n  - **M face:** valley and peak in the triangle, then straight down to the base.\n  - **Bracket face:** drops into the band, zigzags up so the peak crosses into the triangle, and ends **partway up the band's right edge**.\n  - **Stepped face:** ends at the band's bottom-right corner.\n- **A** and **B** fail on the bracket face: the peak stays below the fold, and the line ends at the band's **bottom corner**.\n- **D** fails: one band has **no line**; every band on the pack has one.\n\n**Answer: C**"
   },
   {
     "id": "ceed-2022-q32",
@@ -2571,7 +2571,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "The grey piece is the **negative** of the red block: on each of the 16 base squares, **red height + grey height = 4**. The options are drawn **upside down**.\n\nRed heights, rows from the front-right face to the back-left, read left to right:\n- 1, 1, 2, 4\n- 3, 0 (see-through hole), 1, 3\n- 2, 2, 1, 2\n- 4, 3, 4, 4\n\nRed has 37 cubes, so grey needs **27**: 3, 3, 2, 0 / 1, 4, 3, 1 / 2, 2, 3, 2 / 0, 1, 0, 0.\n\n- **D** fits: a 4-tall column fills the hole, rising a cube above the 3-tall pair behind it. Squares under red's 4-tall towers stay empty. The front-right arm is 2 tall, the front-left stub 1.\n- **A** adds a cube at the far right, under red's 4-tall right-corner tower.\n- **B**'s front-right arm is 1 tall, not 2.\n- **C** has no 4-tall column, so the hole stays open."
   },
   {
     "id": "ceed-2022-q36",
@@ -5148,7 +5148,7 @@
     "topic": "3d-visualisation",
     "difficulty": 3,
     "animated": false,
-    "explanation": null
+    "explanation": "When the first and last turns cancel each other (90\u00b0 clockwise, then 90\u00b0 anticlockwise, both about y), the three steps reduce to one move: the middle turn, made about the axis the first turn brings onto x. Find that single move, then follow one feature that stands out.\n\n- A 90\u00b0 turn about y swaps the x and z axes. So the 180\u00b0 turn about x becomes a 180\u00b0 turn about z.\n- Net result: **a 180\u00b0 flip about the z-axis**, the horizontal line through the back-left and front-right arms. The object ends up **upside down**: those two arms stay where they are, upside down, and the other two swap places.\n- Feature to follow: the front-right post has a **rounded top**. After the flip it stays front-right, with its rounded end at the bottom.\n\n**C** matches: no post shows a rounded top, and the front-right post's top is flat.\n- **A**, **B**, **D**: each still shows the rounded end on top, so the object was never turned upside down."
   },
   {
     "id": "ceed-2025-q25",
