@@ -3,13 +3,14 @@ import { marks } from "./labels";
 
 /**
  * Score on a drafted scale from 0 to the paper's maximum, with the cutoff band shaded and the
- * target ticked (mocks), or that year's cutoff ticked (past papers). Ink only: the score is the
+ * target ticked (mocks and full exams, out of 150), or that year's cutoff ticked (past papers);
+ * drills and revisits show the plain scale. Ink only: the score is the
  * solid marker; references are hairline and mute.
  */
 export function ScoreScale({
   score,
   max,
-  band,
+  band: bandIn,
   target,
   cutoff,
 }: {
@@ -22,9 +23,12 @@ export function ScoreScale({
   const lo = Math.min(0, Math.floor(score));
   const span = Math.max(1, max - lo);
   const at = (v: number) => `${((Math.min(max, Math.max(lo, v)) - lo) / span) * 100}%`;
+  // A reference beyond the scale is not drawn: clamped to the end it would read as a real mark.
+  const inRange = (v: number) => v >= lo && v <= max;
   const ticks: { v: number; label: string }[] = [];
-  if (target !== null) ticks.push({ v: target, label: `target ${target}` });
-  if (cutoff !== null) ticks.push({ v: cutoff, label: `cutoff ${cutoff}` });
+  if (target !== null && inRange(target)) ticks.push({ v: target, label: `target ${target}` });
+  if (cutoff !== null && inRange(cutoff)) ticks.push({ v: cutoff, label: `cutoff ${cutoff}` });
+  const band = bandIn && inRange(bandIn.low) && inRange(bandIn.high) ? bandIn : null;
 
   return (
     <div className="w-full select-none" role="img" aria-label={`Score ${marks(score)} of ${max}`}>

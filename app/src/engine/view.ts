@@ -199,13 +199,15 @@ export function partAResults(ctx: Ctx, sid: number) {
     };
   });
   const paper = s.config.paperId ? ctx.content.paperById.get(s.config.paperId) : undefined;
+  const onFullPaper = !paper && (s.kind === "mock" || s.kind === "full");
   const acc = (c: { answered: number; correct: number }) => ({ ...c, accuracy: c.answered ? c.correct / c.answered : null });
   return {
     status: s.a_status,
     score: s.score,
     maxScore: s.max_score,
-    band: paper ? null : CUTOFF_BAND,
-    target: paper ? null : TARGET,
+    // The band and target are marks out of 150: only a full Part A paper (mock, full exam) is measured against them.
+    band: onFullPaper ? CUTOFF_BAND : null,
+    target: onFullPaper ? TARGET : null,
     cutoff: paper?.cutoff ?? null,
     paper: paper ? { id: paper.id, label: paper.label, totalMarks: paper.totalMarks } : null,
     retake: !!s.config.retake,

@@ -256,7 +256,7 @@ export function today(ctx: Ctx) {
     suggested: { partATopic: weakest, partBSlot: slot },
     last7Days: {
       sessions: recent.length,
-      lastPartAScore: lastA ? { score: lastA.score, maxScore: lastA.maxScore, sessionId: lastA.id } : null,
+      lastPartAScore: lastA ? { kind: lastA.kind, score: lastA.score, maxScore: lastA.maxScore, sessionId: lastA.id } : null,
       band: CUTOFF_BAND,
       medianSecondsToCommit: median(recentStc),
     },

@@ -115,7 +115,10 @@ async function TodayBody() {
                   <span className="ml-1 text-caption font-normal text-mute">/{last.maxScore}</span>
                 </span>
                 <span className="text-caption text-mute">
-                  last Part A · {last.maxScore === 150 ? bandNote(last.score ?? 0, week.band) : "past paper"}
+                  last Part A ·{" "}
+                  {last.kind === "mock" || last.kind === "full"
+                    ? bandNote(last.score ?? 0, week.band)
+                    : (KIND_LABEL[last.kind as Kind] ?? "session").toLowerCase()}
                 </span>
               </Link>
             ) : (

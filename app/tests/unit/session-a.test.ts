@@ -99,6 +99,25 @@ describe("mock assembly", () => {
   });
 });
 
+describe("results reference", () => {
+  it("band and target apply only to a full paper out of 150, never to a drill", () => {
+    const ctx = makeCtx(fixtureContent({ perFormat: { MCQ: 100, MSQ: 40, NAT: 35 } }));
+    const mock = createSession(ctx, { kind: "mock" });
+    quit(ctx, mock.id);
+    const m = partAResults(ctx, mock.id)!;
+    expect(m.maxScore).toBe(150);
+    expect(m.band).not.toBeNull();
+    expect(m.target).not.toBeNull();
+    ctx.advance(60 * S);
+    const drill = createSession(ctx, { kind: "drill", format: "MCQ", n: 5 });
+    quit(ctx, drill.id);
+    const d = partAResults(ctx, drill.id)!;
+    expect(d.band).toBeNull();
+    expect(d.target).toBeNull();
+    expect(d.cutoff).toBeNull();
+  });
+});
+
 describe("retirement", () => {
   it("a real question correct twice never appears in a later session", () => {
     const content = fixtureContent({ perCell: 2 }); // small pool: repeats are forced

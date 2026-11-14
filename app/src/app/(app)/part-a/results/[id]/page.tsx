@@ -33,7 +33,14 @@ function when(ms: number): string {
   }).format(ms);
 }
 
-function verdict(score: number, band: { low: number; high: number } | null, target: number | null, cutoff: number | null) {
+function verdict(
+  score: number,
+  max: number,
+  band: { low: number; high: number } | null,
+  target: number | null,
+  cutoff: number | null,
+  isPaper: boolean,
+) {
   if (band && target !== null) {
     if (score >= target) return "At or above target.";
     if (score > band.high) return `Above the band. ${marks(target - score)} to target.`;
@@ -41,7 +48,9 @@ function verdict(score: number, band: { low: number; high: number } | null, targ
     return `${marks(band.low - score)} below the band.`;
   }
   if (cutoff !== null) return score >= cutoff ? `Cleared that year's cutoff by ${marks(score - cutoff)}.` : `${marks(cutoff - score)} short of that year's cutoff.`;
-  return "No published cutoff for this year.";
+  if (isPaper) return "No published cutoff for this year.";
+  // Drills and revisits are not a paper: the cutoff does not apply, so report the share of marks.
+  return max > 0 ? `${Math.round((Math.max(0, score) / max) * 100)}% of the marks.` : "No marks on offer.";
 }
 
 function pct(x: number | null) {
@@ -139,7 +148,7 @@ async function Results({ params }: { params: Promise<{ id: string }> }) {
           unit={`/ ${marks(max)}`}
           size="lg"
           accent
-          note={verdict(score, a.band, a.target, a.cutoff)}
+          note={verdict(score, max, a.band, a.target, a.cutoff, !!a.paper)}
         />
         <ScoreScale score={score} max={max} band={a.band} target={a.target} cutoff={a.cutoff} />
       </section>
