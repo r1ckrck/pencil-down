@@ -51,7 +51,7 @@ pencil-down/
 | Task | Command |
 |---|---|
 | Dev server | `pnpm dev` (data in `../data`, git-ignored) |
-| Unit tests · types · lint | `pnpm test` · `npx tsc --noEmit` · `pnpm lint` |
+| Unit tests · types · lint | `pnpm test` · `pnpm typecheck` · `pnpm lint` |
 | Validate all content | `pnpm validate:content` |
 | Production build | `pnpm build` (standalone output) |
 | E2E | `pnpm test:e2e`, or against a running server: `PD_BASE_URL=… PENCIL_DATA_DIR=… pnpm exec playwright test` |

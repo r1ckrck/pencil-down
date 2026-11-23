@@ -9,7 +9,7 @@ FIXED = failed on first check, corrected, re-verified. Commands run in `app/`; t
 |---|---|
 | `pnpm validate:content` | content ok: 1494 questions, 30 papers, 427 prompts, 6 Part B papers, 215 cards |
 | `pnpm test` (vitest) | 11 files, 132 tests pass |
-| `npx tsc --noEmit` · `pnpm lint` | clean |
+| `pnpm typecheck` · `pnpm lint` | clean |
 | `pnpm build` | standalone output, all routes |
 | E2E against the production server | 30 / 30 (15 flows × laptop 1440 + phone 360) |
 | Pipeline verify scripts (`pipeline/verify/*.py`) | all 8 OK |

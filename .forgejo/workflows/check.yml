@@ -14,5 +14,5 @@ jobs:
       - run: cd app && pnpm install --frozen-lockfile
       - run: cd app && pnpm validate:content
       - run: cd app && pnpm test
-      - run: cd app && npx tsc --noEmit
+      - run: cd app && pnpm typecheck
       - run: cd app && pnpm build
