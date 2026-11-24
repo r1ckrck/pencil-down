@@ -9,11 +9,12 @@ A single-user web platform that prepares one aspirant for CEED 2027 (17 Jan 2027
 | Principle | Consequence |
 |---|---|
 | Part A is a gate, Part B is the rank | Part A targets ~60/150 (cutoff band 48–54). Part B carries 75% of the score. |
-| Train decisions, not drawings | No drawing evaluation anywhere. Part B measures seconds-to-commit, idea count, rule compliance. |
+| Train decisions, not drawings | No drawing evaluation anywhere. Part B measures seconds-to-commit and the idea count she reports. |
 | No runtime AI | All content is static data or deterministic code. No API keys, no external calls. |
 | One pool, no accidental repeats | Every accessible year's questions plus generated/authored questions form one pool. No paper is held back. Repeats only by design (error log). |
 | Parts are independent | Part A and Part B are separate practice areas. The full 3-hour exam is one optional mode, never a prerequisite. |
 | Pressure stays on | No pause, no save, no resume-later. A started session runs to the end; quitting records every unanswered question as skipped. |
+| Firm clock, free controls | She second-guesses, so Hard mode decides for her when time is up (forced skip, auto-commit, auto-advance). Moving on is never blocked: next, back, skip and finish-early are always one tap away. |
 | Mastered questions retire | A real question answered correctly twice (any mode) is never served again. |
 
 ---
@@ -69,7 +70,7 @@ Base: `assistant/docs/design.md` + `tokens.css`, copied into `app/src/styles/tok
 
 | Rule from the system | Applied here |
 |---|---|
-| Accent once per surface | The single live thing: the running per-question timer in Part A, the active phase in Part B, the one number on results |
+| Accent once per surface | The single live thing: the running per-question timer in Part A, the running question clock in Part B, the one number on results |
 | One large statement number | Days-to-exam on Today, the score on a results screen: General Sans semibold at display size, nothing else |
 | Mono for technical content | Question numbers, timers, scores, marks, seeds |
 | Rounded-square markers | Question palette cells (answered / skipped / marked / unseen) |
@@ -95,16 +96,22 @@ Chosen on the start screen of every session (pre-selected: the last mode used; f
 |---|---|---|
 | **Part A question timer** | Visible countdown | Hidden — the budget runs unseen |
 | **Part A forced skip** | Off — at zero the bar turns `--data-bad` and stays; she moves on when she chooses | On — at zero the answer state is saved as-is and the question moves to the revisit queue |
-| **Part B phase timer** | Visible | Visible (the phases need a clock) |
-| **Part B question hiding** | Off — the question stays on screen | On — the question is visible only during Read; then it hides for the rest of the attempt |
+| **Part B phase timer** | Visible | Visible (the steps need a clock) |
+| **Part B question hiding** | Off — the question stays on screen | On — visible only in the windows below; Reread brings it back |
+| **Part B forced advance** | Off — a step or question past its target turns `--data-bad`; she moves on when she chooses | On — at the commit target the question commits on its own and Draw opens; at the question budget the screen moves to the next open question |
 
-**Custom** (in Settings): the four switches individually, for any combination outside the two presets.
+**Custom** (in Settings): the five switches individually, for any combination outside the two presets.
 
-**Question hiding (Part B, Hard).** Trains her to read once, fix the goal in her head and work from it.
-- Single drill: visible for the Read phase (0–2 min), then replaced by a blank panel showing only the slot name and phase.
-- Full mock and past paper: each question is visible during the 6-minute read-all, and again for the first 2 minutes of its own 22-minute block; hidden otherwise.
-- No peek control while hidden.
-- The question reappears in the Debrief so she can self-rate against its criteria.
+**Question hiding (Part B).** Trains her to read once, fix the goal in her head and work from it. With hiding on, a question's prompt is visible only:
+- during read-all (full mock and past paper: all five at once);
+- during its own Read step (until she taps "Got it" or the Read target passes);
+- for 15 s each time she opens the question (next, back or the palette), whatever its state, including after its budget has run out;
+- for a Reread window (below);
+- in the Debrief, so she can self-rate against its criteria.
+
+Otherwise a panel shows the slot name, the current step and the Reread control.
+
+**Reread.** Three tries per question, each shorter: 60 s, then 30 s, then 15 s; after the third the control is gone. The question clock keeps running while she rereads, so the time comes out of the steps still ahead (the step bar shows the loss). Not offered once the question's budget has run out. Every reread is recorded with its time.
 
 ### 5.1 Today
 - Days to 17 Jan 2027 (the screen's one large number).
@@ -152,16 +159,24 @@ Every question has a time budget: MCQ 60 s, MSQ 90 s, NAT 120 s (editable). What
 
 ### 5.3 Part B
 
-**Single-slot drill**
-1. Pick slot (or "least practised").
-2. Prompt shown with its rules (medium, constraints) and its 4 criteria.
-3. Phase timer runs the slot script (table below). Phases: Read → Generate → Commit → Execute → Buffer.
-4. **Generate:** big tap button counts ideas; drawing happens on paper.
-5. **Commit (60 s):** three yes/no checks — obeys every rule · not my first obvious idea · drawable in the time left. First idea passing all three is the one. She types a one-line label. Timer expiry auto-commits the last starred idea.
-6. **Execute:** countdown only, minimal screen.
-7. **Debrief (90 s):** tag each idea with one word (diversity count = distinct tags); self-rate each criterion 0–5 (trend only); optional photo of the page.
+She works one question per screen and moves herself through it. The clock measures and, in Hard, decides when time is up (§5.0); it never holds her back.
 
-| Slot | Read | Generate | Commit by | Execute | Buffer |
+**A question: four steps**
+
+| Step | On screen | She moves on with |
+|---|---|---|
+| **Read** | The prompt with its rules and criteria | "Got it" → Ideas |
+| **Ideas** | Instructions only; the ideas happen on paper. "Sketch quick thumbnails: many small ideas, not one finished drawing · Don't judge yet · Aim for at least three before you choose." Problem identification: "List every problem you can see · In the last 2 minutes, pick the one you will solve." | "I've picked one" → Commit |
+| **Commit** | A checklist to think through, not a form: it obeys every rule · it isn't my first obvious idea · I can draw it in the time left. "Any no: take your next idea and check again." | "Commit · start drawing" → Draw · "Back to ideas" |
+| **Draw** | "Committed at m:ss. Draw your pick." and the clock | "Done · next question" (paper) · "Pencil down" (drill) |
+
+- **Question clock.** Each question has a budget: 24 min in a drill, 22 min in a full mock or past paper. It runs only while that question is open; time across visits adds up. Leaving a question stops its clock where it is.
+- **Targets.** Each step has a target on the question clock, from the slot script below (a paper question uses the script clipped at 22 min). Before the target, nothing happens. Past it: Easy marks the step `--data-bad` and shows the overrun; Hard acts — at the Read target the prompt hides and Ideas opens, at the Ideas target Commit opens, at the commit target the question commits on its own (`auto_committed`) and Draw opens, at the budget the screen moves on.
+- **Ideas and Commit** stay open until she commits. A commit is final. Nothing is typed or tapped per idea. Seconds-to-commit = question-clock seconds at the commit.
+- **Step bar.** One segment per step, sized by its target share of the budget, each labelled on screen with its name: past steps show the time they took, the current one fills and shows time left, future ones show their length. Problem identification splits Ideas into Framing and Pick. A Reread eats into the current segment and pushes the rest later, visibly. Labels are always on screen, never in tooltips.
+- **Debrief (90 s per question):** "How many ideas did you sketch?" (one number); self-rate each criterion 0–5 (trend only); optional photo of the page.
+
+| Slot | Read | Ideas | Commit by | Draw | Buffer |
 |---|---|---|---|---|---|
 | Sketching | 0–2 | 2–4 | min 5 | 5–21 | 21–24 |
 | Creativity | 0–2 | 2–10 | min 11 | 11–22 | 22–24 |
@@ -169,9 +184,20 @@ Every question has a time budget: MCQ 60 s, MSQ 90 s, NAT 120 s (editable). What
 | Form sensitivity | 0–2 | 2–10 | min 11 | 11–22 | 22–24 |
 | Problem identification | 0–2 | 2–10 framing, 10–12 pick | min 13 (window 12–13) | 13–22 | 22–24 |
 
-**Full Part B mock (120 min):** 6 min read-all with idea-seed notes · 5 × 22 min with hard stamps (one per slot, real paper order) · 4 min buffer incl. "tick answered" reminder. Commit screens fire at each slot's commit point.
+Buffer is the tail of Draw (touch-up), shown as its own segment; it is not a separate step.
 
-**Past paper (separate option, 120 min):** one real year's five Part B questions as printed, in printed order, with that year's own criteria and marks. Same structure as the full mock (6 read-all, 5 × 22, 4 buffer), commit screens included. Opt-in only; the questions also stay in the shared pool. Older papers with a different format (2013–2019 electives) are offered only where they map cleanly to five questions.
+**Single-slot drill (24 min)**
+1. Pick slot (or "least practised").
+2. The question opens on Read. One question, no palette. "Pencil down" (one confirm) is available from every step and ends the session.
+
+**Full Part B mock (120 min = 6 read-all + 5 × 22 + 4 spare)**
+- **Read-all (6 min).** All five prompts on one page, each with an idea-seed note. The page says what it is for, in plain words: "Read-all · 6 minutes. Read every question before you start. You'll see each question again when you open it." "Start Q1" ends it early; at 6:00 Q1 opens on its own. Read-all time belongs to no question.
+- **Questions.** One per screen. A palette Q1–Q5 sits on top showing each question's state (unseen · open · skipped · committed · done · out of time) and time left; tap to jump. Prev, Next and Skip are always there. Skip marks it skipped and opens the next open question; she can return while it has budget.
+- **Out of time.** In Hard a question at its budget closes: it can still be opened to see the prompt (15 s), but ideas and commit are shut. In Easy it stays workable and shows its overrun; only the total clock is a wall.
+- **End page.** Opens once every question is done or out of time, or from the palette. Lists the five with their states, "Tick the answered box on every question you attempted", the total time left and "Pencil down" (one confirm). Any question with budget left can still be reopened.
+- Total expiry ends the session from any screen.
+
+**Past paper (separate option, 120 min):** one real year's five Part B questions as printed, in printed order, with that year's own criteria and marks. Same structure as the full mock. Opt-in only; the questions also stay in the shared pool. Older papers with a different format (2013–2019 electives) are offered only where they map cleanly to five questions.
 
 **Full exam (180 min):** Part A mock (60) → lock → Part B mock (120). Mirrors 17 Jan.
 
@@ -187,11 +213,11 @@ Every question has a time budget: MCQ 60 s, MSQ 90 s, NAT 120 s (editable). What
 ### 5.5 Progress
 - **History:** every session ever taken, newest first — date, mode, score (Part A) or seconds-to-commit (Part B), quit flag. Each row opens its results screen.
 - Part A: mock score trend against the cutoff band (reference line); accuracy by topic; forced-skip rate; marks lost to wrong vs skipped; questions retired (mastered) over time.
-- Part B: median seconds-to-commit per slot; ideas per session; distinct-tag ratio; self-rating trend.
+- Part B: median seconds-to-commit per slot; ideas per question (reported); self-rating trend; rereads per question; questions skipped or out of time.
 - Cards: retention, due load.
 
 ### 5.6 Settings
-Per-question budgets · Custom mode switches (question timer, forced skip, phase timer, question hiding) · theme · export data (SQLite file + photos as one archive).
+Per-question budgets · Custom mode switches (question timer, forced skip, phase timer, question hiding, forced advance) · theme · export data (SQLite file + photos as one archive).
 
 ### 5.7 Session integrity
 - **No pause, no save.** There is no pause control and no "continue later".
@@ -341,8 +367,9 @@ Every question, from any year, scores with the current scheme — except in past
 | `a_responses` | session, question id, answer, confidence, time_ms, visits, forced_skip, marks |
 | `seen` | item id, kind (a/b/card), first_seen, last_seen, times |
 | `error_log` | question id, reason (wrong/unsure-correct/forced-skip), due_at, resolved |
-| `b_attempts` | session, prompt id, phase timestamps, seconds_to_commit, idea_count, auto_committed, commit_label |
-| `b_ideas` | attempt, tag |
+| `b_attempts` | session, prompt id, slot, step targets, current step, state (unseen/open/skipped/committed/done/out-of-time/abandoned), question time used, seconds_to_commit, idea_count (reported in the debrief), auto_committed, rereads |
+| `b_visits` | attempt, opened_at, closed_at (server times; question time = sum of visits) |
+| `b_events` | attempt, type (step, skip, reread, seed-note, check…), server time, data |
 | `b_self_ratings` | attempt, criterion, 0–5 |
 | `photos` | attempt, file path |
 | `card_reviews` | card id, FSRS state fields |
@@ -400,7 +427,7 @@ One continuous build, worked in this order because each step feeds the next:
 - [ ] Every mock has 8 / 10 / 26 by format and meets topic quotas ± 1.
 - [ ] No item repeats across 20 consecutive generated mocks while unseen items remain (simulation test).
 - [ ] Error-log items reappear only on/after `due_at`.
-- [ ] Easy and Hard presets set exactly the four switches in §5.0; every Custom combination of the Part A switches behaves per §5.0 (test each).
+- [ ] Easy and Hard presets set exactly the five switches in §5.0; every Custom combination of the Part A switches behaves per §5.0 (test each).
 - [ ] Session start screen pre-selects the last mode used (Hard on first run); mode stored on the session and filterable in Progress.
 - [ ] Forced skip fires within 250 ms of budget expiry and saves the answer state unchanged.
 - [ ] Overall timer expiry ends the section from any screen state.
@@ -411,11 +438,15 @@ One continuous build, worked in this order because each step feeds the next:
 - [ ] Part A-only and Part B-only sessions start directly from their own screens without touching the other part.
 
 ### Part B tool
-- [ ] Phase boundaries match §5.3 to the second (test with fake clock).
-- [ ] Commit timeout auto-locks the last starred idea; `auto_committed` recorded.
-- [ ] Seconds-to-commit stored for every attempt.
-- [ ] Full Part B mock and Part B past paper follow 6 / 5 × 22 / 4 stamps (120 min).
-- [ ] With question hiding on, the prompt is visible only in the windows defined in §5.0, has no peek control, and reappears in the Debrief (fake-clock test).
+- [ ] Step targets match §5.3 to the second on the question clock, for every slot, drill and paper (fake-clock test).
+- [ ] The question clock runs only while its question is open; leaving and returning resumes it; reload keeps it (server timestamps, fake-clock test).
+- [ ] "Got it", "I've picked one", "Commit · start drawing", "Back to ideas", "Done · next question", Skip, Prev, Next and the palette each work from every state that §5.3 allows, and are refused by the server elsewhere.
+- [ ] Forced advance on: Read hides and Ideas opens at the Read target; Commit opens at the Ideas target; the question commits on its own at the commit target (`auto_committed` recorded); at the budget the screen moves to the next open question and that question closes. Off: none of these fire and overruns are shown.
+- [ ] Seconds-to-commit (question-clock) stored for every committed attempt.
+- [ ] Full mock and past paper: read-all is 6 min and can end early; five questions at 22 min each; total 120 min; total expiry ends the session from any screen.
+- [ ] Question hiding on: the prompt is visible only in the windows of §5.0 — read-all, its Read step, 15 s on every open (also after its budget), each Reread window, the Debrief (fake-clock test).
+- [ ] Reread: windows 60 / 30 / 15 s, then no control; refused after the budget; each reread recorded; the question clock runs through it.
+- [ ] Step bar labels are visible text at 360 px (no hover-only labels).
 
 ### App
 - [ ] All routes render with no console errors at 360 px and 1440 px widths, light and dark.
