@@ -12,7 +12,7 @@ import { cn } from "@/lib/cn";
 
 type Mode = "easy" | "hard" | "custom";
 type Format = "MCQ" | "MSQ" | "NAT";
-type Switches = { questionTimer: boolean; forcedSkip: boolean; phaseTimer: boolean; questionHiding: boolean };
+type Switches = { questionTimer: boolean; forcedSkip: boolean; phaseTimer: boolean; questionHiding: boolean; forcedAdvance: boolean };
 type Settings = { budgets: Record<Format, number>; custom: Switches; lastMode: Mode; theme: string };
 type Patch = { budgets?: Partial<Record<Format, number>>; custom?: Partial<Switches>; lastMode?: Mode };
 
@@ -34,16 +34,23 @@ const SWITCHES: { key: keyof Switches; part: string; label: string; on: string; 
   {
     key: "phaseTimer",
     part: "Part B",
-    label: "Phase timer",
-    on: "The phase clock (Read, Generate, Commit, Execute) is visible.",
-    off: "Phases still change on time; the clock is hidden.",
+    label: "Step timer",
+    on: "The clock and the step bar times (Read, Ideas, Commit, Draw) are visible.",
+    off: "The steps keep their targets; the times are hidden.",
   },
   {
     key: "questionHiding",
     part: "Part B",
     label: "Question hiding",
-    on: "The question shows only while you read, then hides until the debrief. Read once, hold the goal.",
+    on: "The question shows while you read, for 15 s each time you open it, and on Reread (3 per question). Read once, hold the goal.",
     off: "The question stays on screen for the whole attempt.",
+  },
+  {
+    key: "forcedAdvance",
+    part: "Part B",
+    label: "Forced advance",
+    on: "Each step moves on at its target; at the commit target it commits for you; at 22 min the next question opens.",
+    off: "Overruns show in red; you move on when you choose.",
   },
 ];
 

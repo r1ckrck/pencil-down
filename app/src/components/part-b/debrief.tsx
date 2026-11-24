@@ -1,15 +1,14 @@
 "use client";
 
-import { Camera, Star } from "@phosphor-icons/react";
+import { Camera, Minus, Plus } from "@phosphor-icons/react";
 import { useEffect, useRef, useState } from "react";
-import { Eyebrow, RoleLabel } from "@/components/ui/label";
+import { Eyebrow } from "@/components/ui/label";
 import { cn } from "@/lib/cn";
 import { RequestError, getJSON, postForm, postJSON } from "./api";
 import { PromptView } from "./prompt-view";
-import { SLOT_NAME, type BResult } from "./types";
+import { SLOT_NAME, mmss, type BResult } from "./types";
 
 type Results = { partB: BResult[] | null };
-const two = (n: number) => String(n).padStart(2, "0");
 
 /** 0–5 self-rating: six 44px squares in a row (fits 360px). Trend only, never a score. */
 export function RatingRow({
@@ -49,36 +48,38 @@ export function RatingRow({
   );
 }
 
-/** One word per idea. Saves on blur or Enter; the server keeps the first word, lower-cased. */
-function TagInput({ initial, onSave }: { initial: string | null; onSave: (tag: string | null) => void }) {
-  const [v, setV] = useState(initial ?? "");
-  const saved = useRef(initial ?? "");
-  const commit = () => {
-    const word = v.trim().split(/\s+/)[0]?.toLowerCase() ?? "";
-    setV(word);
-    if (word === saved.current) return;
-    saved.current = word;
-    onSave(word || null);
+/** "How many ideas did you sketch?" A stepper; each tap saves the new count (rapid taps stay in order). */
+function IdeaCount({ initial, onSave }: { initial: number; onSave: (n: number) => void }) {
+  const [value, setValue] = useState(initial);
+  const step = (d: number) => {
+    const next = Math.min(99, Math.max(0, value + d));
+    if (next === value) return;
+    setValue(next);
+    onSave(next);
   };
   return (
-    <input
-      value={v}
-      onChange={(e) => setV(e.target.value.replace(/\s/g, ""))}
-      onBlur={commit}
-      onKeyDown={(e) => {
-        if (e.key === "Enter") {
-          e.preventDefault();
-          (e.target as HTMLInputElement).blur();
-        }
-      }}
-      maxLength={40}
-      autoCapitalize="none"
-      autoComplete="off"
-      enterKeyHint="next"
-      placeholder="one word"
-      aria-label="Tag"
-      className="min-h-touch w-full min-w-0 rounded-sm border border-hairline bg-transparent px-3 text-body text-fg placeholder:text-mute focus:border-fg focus:outline-none"
-    />
+    <div className="flex items-center gap-3" role="group" aria-label="Ideas sketched">
+      <button
+        type="button"
+        onClick={() => step(-1)}
+        disabled={value === 0}
+        aria-label="One fewer"
+        className="flex size-touch items-center justify-center rounded-sm border border-hairline text-fg hover:border-fg disabled:opacity-40"
+      >
+        <Minus size={20} weight="bold" aria-hidden />
+      </button>
+      <output className="min-w-12 text-center font-mono text-timer tabular" data-testid="idea-count">
+        {value}
+      </output>
+      <button
+        type="button"
+        onClick={() => step(1)}
+        aria-label="One more"
+        className="flex size-touch items-center justify-center rounded-sm border border-hairline text-fg hover:border-fg"
+      >
+        <Plus size={20} weight="bold" aria-hidden />
+      </button>
+    </div>
   );
 }
 
@@ -112,7 +113,7 @@ function PhotoInput({ onFile, busy }: { onFile: (f: File) => void; busy: boolean
   );
 }
 
-/** Debrief for one slot: the prompt again, a word per idea, 0–5 per criterion, an optional photo. */
+/** Debrief for one question: the prompt again, the idea count, 0–5 per criterion, an optional photo. */
 function SlotDebrief({
   sessionId,
   result,
@@ -126,6 +127,7 @@ function SlotDebrief({
 }) {
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const chain = useRef<Promise<unknown>>(Promise.resolve());
   const rating = (c: number) => result.ratings.find((r) => r.criterion === c)?.value ?? null;
 
   const run = async (p: Promise<{ partB: BResult[] }>) => {
@@ -143,37 +145,23 @@ function SlotDebrief({
         <Eyebrow index={index}>{SLOT_NAME[result.slot]}</Eyebrow>
         <p className="text-small text-mute">
           {result.status === "abandoned"
-            ? "Abandoned before commit"
-            : `${result.autoCommitted ? "Auto-committed" : "Committed"} at ${Math.floor((result.secondsToCommit ?? 0) / 60)}:${two((result.secondsToCommit ?? 0) % 60)}${result.label ? ` · ${result.label}` : ""}`}
+            ? "Not committed"
+            : `${result.autoCommitted ? "Auto-committed" : "Committed"} at ${mmss(result.secondsToCommit)}`}
+          {result.rereads > 0 ? ` · ${result.rereads} reread${result.rereads === 1 ? "" : "s"}` : ""}
         </p>
       </div>
 
       {result.prompt && <PromptView prompt={result.prompt} showSlot={false} compact />}
 
-      {result.ideas.length > 0 && (
-        <div className="flex flex-col gap-2">
-          <Eyebrow>One word per idea</Eyebrow>
-          <ol className="flex flex-col gap-2">
-            {result.ideas.map((i) => (
-              <li key={i.id} className="grid grid-cols-[44px_1fr] items-center gap-3">
-                <span className="relative font-mono text-small text-mute">
-                  {two(i.n)}
-                  {i.id === result.committedIdeaId && (
-                    <Star aria-label="committed" size={12} weight="fill" className="absolute -top-1 left-6 text-fg" />
-                  )}
-                </span>
-                <TagInput
-                  initial={i.tag}
-                  onSave={(tag) => run(postJSON(`/api/sessions/${sessionId}/b/tag`, { ideaId: i.id, tag }))}
-                />
-              </li>
-            ))}
-          </ol>
-          <RoleLabel>
-            {result.distinctTags} distinct of {result.ideaCount}
-          </RoleLabel>
-        </div>
-      )}
+      <div className="flex flex-col gap-2">
+        <Eyebrow>How many ideas did you sketch?</Eyebrow>
+        <IdeaCount
+          initial={result.ideaCount}
+          onSave={(count) => {
+            chain.current = chain.current.then(() => run(postJSON(`/api/sessions/${sessionId}/b/ideas`, { pos: result.pos, count })));
+          }}
+        />
+      </div>
 
       {result.prompt && (
         <div className="flex flex-col gap-1">

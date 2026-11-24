@@ -2,9 +2,20 @@
 import type { Format, Topic } from "../content/types";
 import { promptPayload, questionKey, questionPayload } from "./items";
 import { hasPartA, hasPartB } from "./kinds";
-import { type Timeline, phaseAt, promptVisible } from "./partb";
+import { type ScriptSpan, PEEK_SECONDS, nextReread, targetsOf } from "./partb";
 import { fullMarks } from "./scoring";
-import { type Ctx, type ResponseRow, attempts, openVisit, responses, settled } from "./session";
+import {
+  type Ctx,
+  type ResponseRow,
+  anyBVisit,
+  attempts,
+  nextForced,
+  openBVisit,
+  openVisit,
+  questionMs,
+  responses,
+  settled,
+} from "./session";
 
 export const CUTOFF_BAND = { low: 48, high: 54 };
 export const TARGET = 60;
@@ -14,18 +25,6 @@ type PaletteState = "unseen" | "answered" | "skipped";
 function paletteState(r: ResponseRow): PaletteState {
   if (r.answer !== null) return "answered";
   return r.visits > 0 ? "skipped" : "unseen";
-}
-
-function ideasOf(ctx: Ctx, attemptId: number) {
-  return (
-    ctx.db.prepare("SELECT id, n, created_at, starred_at, tag FROM b_ideas WHERE attempt_id = ? ORDER BY n").all(attemptId) as {
-      id: number;
-      n: number;
-      created_at: number;
-      starred_at: number | null;
-      tag: string | null;
-    }[]
-  ).map((i) => ({ id: i.id, n: i.n, createdAt: i.created_at, starred: i.starred_at !== null, tag: i.tag }));
 }
 
 export function sessionState(ctx: Ctx, sid: number) {
@@ -79,34 +78,67 @@ export function sessionState(ctx: Ctx, sid: number) {
 
   let partB = null;
   if (hasPartB(s.kind)) {
-    const tl = s.config.timeline as Timeline;
+    const plan = s.config.partB ?? null;
     const start = s.b_started_at;
-    const sec = start === null ? null : (now - start) / 1000;
-    const at = sec === null ? null : phaseAt(tl, live ? sec : tl.total);
-    if (bRunning && at && at.phase !== "done") events.push(start! + at.to * 1000);
-    const atts = attempts(ctx.db, sid);
+    const v = bRunning && plan ? openBVisit(ctx.db, sid) : null;
+    const readAll = bRunning && !!plan && !anyBVisit(ctx.db, sid);
+    const readAllEndsAt = plan && start !== null && plan.readAll > 0 ? start + plan.readAll * 1000 : null;
+    if (readAll && readAllEndsAt !== null) events.push(readAllEndsAt);
+    const hiding = s.config.switches.questionHiding;
     partB = {
       startedAt: start,
-      timeline: tl,
-      now: at,
-      attempts: atts.map((a) => {
+      plan,
+      readAll,
+      readAllEndsAt,
+      currentPos: v?.pos ?? null,
+      visitStartedAt: v?.started_at ?? null,
+      attempts: attempts(ctx.db, sid).map((a) => {
         const prompt = ctx.content.promptById.get(a.prompt_id);
-        const visible = sec !== null && (!live || promptVisible(tl, a.pos, sec, s.config.switches.questionHiding));
-        if (bRunning && a.status === "pending") events.push(start! + a.commit_deadline_s * 1000);
+        const script: ScriptSpan[] = plan ? JSON.parse(a.phases) : [];
+        const targets = plan ? targetsOf(script) : null;
+        const current = !!v && v.attempt_id === a.id;
+        const usedMs = questionMs(a, v, now);
+        // Server instant at which this question's clock reaches question-ms x (open question only).
+        const when = (x: number) => v!.started_at + (x - a.used_ms);
+        let visible = !live || !plan || !hiding || readAll;
+        if (!visible && current && targets) {
+          const windows: number[] = [v!.started_at + PEEK_SECONDS * 1000];
+          if (a.reveal_until !== null) windows.push(a.reveal_until);
+          if (a.step === "read" && a.progress !== "out") windows.push(when(targets.read * 1000));
+          for (const end of windows) {
+            if (now < end) {
+              visible = true;
+              events.push(end);
+            }
+          }
+        }
+        if (current && bRunning && s.config.switches.forcedAdvance) {
+          const f = nextForced(a);
+          if (f) events.push(when(f.at));
+        }
+        const budgetMs = plan ? plan.budget * 1000 : 0;
         return {
           id: a.id,
           pos: a.pos,
           slot: a.slot,
           status: a.status,
+          progress: a.progress,
+          step: a.step,
+          current,
+          usedMs,
+          budgetMs,
+          script,
+          targets,
+          steps: (a.steps_log ? JSON.parse(a.steps_log) : {}) as Partial<Record<string, { from: number; to: number | null }>>,
+          rereads: a.rereads,
+          nextRereadS: hiding && a.progress !== "out" && usedMs < budgetMs ? nextReread(a.rereads) : null,
+          revealUntil: current && a.reveal_until !== null && a.reveal_until > now ? a.reveal_until : null,
           visible,
           prompt: visible && prompt ? promptPayload(prompt) : null,
-          ideaCount: a.idea_count,
-          ideas: ideasOf(ctx, a.id),
           committedAt: a.committed_at,
           secondsToCommit: a.seconds_to_commit,
           autoCommitted: !!a.auto_committed,
-          committedIdeaId: a.committed_idea_id,
-          label: a.commit_label,
+          ideaCount: a.idea_count,
         };
       }),
     };
@@ -227,8 +259,6 @@ export function partBResults(ctx: Ctx, sid: number) {
   if (!hasPartB(s.kind)) return null;
   return attempts(ctx.db, sid).map((a) => {
     const prompt = ctx.content.promptById.get(a.prompt_id);
-    const ideas = ideasOf(ctx, a.id);
-    const tags = ideas.map((i) => i.tag).filter((t): t is string => !!t);
     const ratings = ctx.db
       .prepare("SELECT criterion, value FROM b_self_ratings WHERE attempt_id = ? ORDER BY criterion")
       .all(a.id) as { criterion: number; value: number }[];
@@ -237,20 +267,22 @@ export function partBResults(ctx: Ctx, sid: number) {
       created_at: number;
     }[];
     const reveals = ctx.content.cards.filter((c) => c.revealsPromptIds?.includes(a.prompt_id)).map((c) => c.id);
+    const selfPaced = !!s.config.partB;
     return {
       id: a.id,
       pos: a.pos,
       slot: a.slot,
       status: a.status,
+      // Self-paced sessions record how each question ended; earlier sessions have no such record.
+      progress: selfPaced ? a.progress : null,
       prompt: prompt ? promptPayload(prompt) : null,
       secondsToCommit: a.seconds_to_commit,
+      commitTargetS: a.commit_deadline_s - a.block_start_s,
       autoCommitted: !!a.auto_committed,
-      committedIdeaId: a.committed_idea_id,
       label: a.commit_label,
-      checks: a.checks ? JSON.parse(a.checks) : null,
       ideaCount: a.idea_count,
-      ideas,
-      distinctTags: new Set(tags).size,
+      rereads: a.rereads,
+      usedMs: selfPaced ? a.used_ms : null,
       ratings,
       photos: photos.map((p) => ({ id: p.id, url: `/api/photos/${p.id}`, createdAt: p.created_at })),
       revealsCardIds: reveals,

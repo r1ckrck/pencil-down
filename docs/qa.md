@@ -46,12 +46,12 @@ FIXED = failed on first check, corrected, re-verified. Commands run in `app/`; t
 | Every mock 8/10/26 and topic quotas ± 1 | PASS | `session-a.test.ts › mock assembly`; `real-content.test.ts` (20 mocks, committed pool) |
 | No repeats across 20 consecutive mocks while unseen items remain | FIXED | On the committed pool mock 19 repeated a question: slot rounding gave a slot to language × NAT (7 questions, drained) while 48 unseen language questions remained. `slotPlan` now moves such a slot with a margin-preserving 2×2 swap. `real-content.test.ts` |
 | Error-log items reappear only on/after `due_at` | PASS | `session-a.test.ts › error log` |
-| Easy/Hard set the four switches; every Custom Part A combination behaves per §5.0 | PASS | `modes.test.ts`; `session-a.test.ts › Part A switch combinations` (4 combos + presets); screens `pa-custom`, `pa-easy-over-budget`, `pa-hard-*` |
+| Easy/Hard set the five switches; every Custom Part A combination behaves per §5.0 | PASS | `modes.test.ts` (32 combinations; a Custom saved before forced advance reads it as on); `session-a.test.ts › Part A switch combinations` (4 combos + presets); screens `pa-custom`, `pa-easy-over-budget`, `pa-hard-*` |
 | Start screen pre-selects last mode (Hard first); mode stored and filterable | PASS | `modes.test.ts`; e2e Settings and Progress filters |
 | Forced skip within 250 ms, answer state unchanged | PASS | `session-a.test.ts › forced skip` (recorded at the exact expiry instant when checked 200 ms late); e2e Hard mock |
 | Overall expiry ends the section from any state | PASS | `session-a.test.ts › overall expiry …` |
 | Reload / close returns to the live session, time away counted | PASS | `session-a.test.ts › reload safety` (fake clock); e2e reloads in Part A, Part B and full exam |
-| Quit → unanswered skipped, status `quit`; past `ends_at` → `expired`, same recording | PASS | `session-a.test.ts › quit and expiry`; `session-b.test.ts` (abandoned slots) |
+| Quit → unanswered skipped, status `quit`; past `ends_at` → `expired`, same recording | PASS | `session-a.test.ts › quit and expiry`; `session-b.test.ts` (uncommitted questions abandoned, open visit closed) |
 | No route or control pauses a live session | PASS | grep for pause/resume in `src/` (only "no pause" copy); route list in `docs/api.md` |
 | A real question correct twice never appears later | PASS | `session-a.test.ts › retirement` |
 | Part A-only and Part B-only start from their own screens | PASS | e2e Part A and Part B hub flows |
@@ -60,11 +60,15 @@ FIXED = failed on first check, corrected, re-verified. Commands run in `app/`; t
 
 | Criterion | Status | Evidence |
 |---|---|---|
-| Phase boundaries match §5.3 to the second | PASS | `partb-timeline.test.ts` (each slot, every boundary second) |
-| Commit timeout auto-locks the last starred idea; `auto_committed` | PASS | `session-b.test.ts`; e2e Hard drill |
-| Seconds-to-commit stored for every attempt | PASS | `session-b.test.ts`; 3-hour run: all five slots stored (300/660/660/660/780 s) |
-| Mock and past paper follow 6 / 5 × 22 / 4 (120 min) | PASS | `partb-timeline.test.ts › stamps`; `session-b.test.ts`; e2e mock final buffer |
-| Hiding: visible only in §5.0 windows, no peek, back in Debrief | PASS | `partb-timeline.test.ts`, `session-b.test.ts` (fake clock); `GET /api/content/prompts/:id` 409 while live; screens `pb-hard-*`, `pb-mock-block2-hidden` |
+| Step targets match §5.3 to the second on the question clock, every slot, drill and paper | PASS | `partb-timeline.test.ts` (scripts, targets, 22-min clipping); `session-b.test.ts › Hard: forced advance to the second` (each slot, one ms either side) |
+| Question clock runs only while open; resumes across visits; survives reload | PASS | `session-b.test.ts › the question clock runs only while its question is open`; e2e mock (reload, Prev) |
+| Got it · I've picked one · Commit · Back to ideas · Done · Skip · Prev · Next · palette work where §5.3 allows, refused elsewhere | PASS | `session-b.test.ts` (manual steps, skip/done/end page, stale pos → 409, drill has no skip/done/end); e2e drills and mock |
+| Forced advance on: Read → Ideas → Commit → auto-commit (`auto_committed`) → next question at the budget; off: nothing fires, overruns shown | PASS | `session-b.test.ts` (Hard drill per slot; Hard paper 22-min close and hand-over; five questions back to back; Easy drill and paper); e2e Easy overrun `+1:0x`, Hard auto-commit |
+| Seconds-to-commit (question clock) stored for every committed attempt | PASS | `session-b.test.ts` (manual 390 s, auto 300/660/660/660/780 s, Easy 1200/1800 s) |
+| Mock and past paper: read-all 6 min, ends early on Start Q1; 22 min per question; 120 min wall from any screen | PASS | `session-b.test.ts › read-all`, `› Start Q1`, `› total expiry`, `› past paper`; e2e mock |
+| Hiding: prompt only in read-all, its Read step, 15 s on every open (also after its budget), Reread windows, Debrief | PASS | `session-b.test.ts` (hiding, Got it hides early, 15 s on every open, out-of-time view); e2e Hard drill and mock |
+| Reread 60 / 30 / 15 s then none; refused after the budget; recorded; clock runs through it | PASS | `session-b.test.ts › hiding … Reread`, `› Hard at the 22-min budget`; e2e Hard drill |
+| Step bar labels are visible text at 360 px | PASS | e2e Easy drill (phone project, 360 px): every bar name visible |
 
 ## App
 

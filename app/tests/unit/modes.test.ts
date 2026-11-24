@@ -5,18 +5,19 @@ import { createSession, getSession, quit } from "@/engine/session";
 import { makeCtx } from "./fixtures";
 
 describe("difficulty modes (spec §5.0)", () => {
-  it("Easy and Hard set exactly the four switches", () => {
-    expect(PRESETS.easy).toEqual({ questionTimer: true, forcedSkip: false, phaseTimer: true, questionHiding: false });
-    expect(PRESETS.hard).toEqual({ questionTimer: false, forcedSkip: true, phaseTimer: true, questionHiding: true });
+  it("Easy and Hard set exactly the five switches", () => {
+    expect(PRESETS.easy).toEqual({ questionTimer: true, forcedSkip: false, phaseTimer: true, questionHiding: false, forcedAdvance: false });
+    expect(PRESETS.hard).toEqual({ questionTimer: false, forcedSkip: true, phaseTimer: true, questionHiding: true, forcedAdvance: true });
   });
 
-  it("Custom passes every one of the 16 combinations through unchanged", () => {
-    for (let mask = 0; mask < 16; mask++) {
+  it("Custom passes every one of the 32 combinations through unchanged", () => {
+    for (let mask = 0; mask < 32; mask++) {
       const sw: Switches = {
         questionTimer: !!(mask & 1),
         forcedSkip: !!(mask & 2),
         phaseTimer: !!(mask & 4),
         questionHiding: !!(mask & 8),
+        forcedAdvance: !!(mask & 16),
       };
       expect(switchesFor("custom", sw)).toEqual(sw);
       expect(switchesFor("easy", sw)).toEqual(PRESETS.easy);
@@ -42,10 +43,18 @@ describe("difficulty modes (spec §5.0)", () => {
 
   it("custom session snapshots the Settings switches", () => {
     const ctx = makeCtx();
-    const custom = { questionTimer: true, forcedSkip: true, phaseTimer: false, questionHiding: false };
+    const custom = { questionTimer: true, forcedSkip: true, phaseTimer: false, questionHiding: false, forcedAdvance: false };
     updateSettings(ctx.db, { custom });
     const s = createSession(ctx, { kind: "drill", mode: "custom", n: 2 });
     expect(s.config.switches).toEqual(custom);
+  });
+
+  it("a Custom saved before forced advance existed reads it as on (the Hard default)", () => {
+    const ctx = makeCtx();
+    ctx.db.prepare("INSERT INTO settings (key, value) VALUES ('custom', ?)").run(
+      JSON.stringify({ questionTimer: true, forcedSkip: false, phaseTimer: true, questionHiding: false }),
+    );
+    expect(getSettings(ctx.db).custom.forcedAdvance).toBe(true);
   });
 
   it("settings validation", () => {

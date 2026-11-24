@@ -7,11 +7,12 @@ export interface Switches {
   forcedSkip: boolean; // Part A: at budget zero, save as-is and move to the revisit queue
   phaseTimer: boolean; // Part B phase clock visible
   questionHiding: boolean; // Part B prompt visible only in its windows
+  forcedAdvance: boolean; // Part B: auto-commit at the commit target, move on at the question budget
 }
 
 export const PRESETS: Record<"easy" | "hard", Switches> = {
-  easy: { questionTimer: true, forcedSkip: false, phaseTimer: true, questionHiding: false },
-  hard: { questionTimer: false, forcedSkip: true, phaseTimer: true, questionHiding: true },
+  easy: { questionTimer: true, forcedSkip: false, phaseTimer: true, questionHiding: false, forcedAdvance: false },
+  hard: { questionTimer: false, forcedSkip: true, phaseTimer: true, questionHiding: true, forcedAdvance: true },
 };
 
 export const DEFAULT_MODE: Mode = "hard";

@@ -1,4 +1,4 @@
-import { starIdea } from "@/engine/session";
+import { changeQuestionStep } from "@/engine/session";
 import { sessionState } from "@/engine/view";
 import { type IdCtx, body, getCtx, handle, idOf, intParam } from "@/server/api";
 
@@ -7,6 +7,6 @@ export const POST = (req: Request, c: IdCtx) =>
     const ctx = getCtx();
     const id = await idOf(c);
     const b = await body(req);
-    starIdea(ctx, id, intParam(b.ideaId, "ideaId"), b.starred !== false);
+    changeQuestionStep(ctx, id, intParam(b.pos, "pos"), b.to);
     return sessionState(ctx, id);
   });

@@ -96,27 +96,48 @@ CREATE TABLE IF NOT EXISTS error_log (
 );
 CREATE UNIQUE INDEX IF NOT EXISTS error_log_open ON error_log(question_id) WHERE resolved_at IS NULL;
 
+-- One row per Part B question. Times named _s are seconds on the question clock; sessions made
+-- before the self-paced flow (config without partB) hold section-relative seconds there instead.
 CREATE TABLE IF NOT EXISTS b_attempts (
   id                INTEGER PRIMARY KEY,
   session_id        INTEGER NOT NULL REFERENCES sessions(id),
   pos               INTEGER NOT NULL,
   prompt_id         TEXT NOT NULL,
   slot              TEXT NOT NULL,
-  phases            TEXT NOT NULL, -- JSON PhaseSpan[]; seconds from Part B section start
-  block_start_s     INTEGER NOT NULL,
-  block_end_s       INTEGER NOT NULL,
-  commit_deadline_s INTEGER NOT NULL,
+  phases            TEXT NOT NULL, -- JSON ScriptSpan[]: the slot script clipped to the budget
+  block_start_s     INTEGER NOT NULL, -- 0
+  block_end_s       INTEGER NOT NULL, -- the question budget
+  commit_deadline_s INTEGER NOT NULL, -- the commit target
   status            TEXT NOT NULL DEFAULT 'pending', -- pending | committed | abandoned
   committed_at      INTEGER,
-  seconds_to_commit INTEGER,
-  idea_count        INTEGER NOT NULL DEFAULT 0,
+  seconds_to_commit INTEGER,         -- question-clock seconds at the commit
+  idea_count        INTEGER NOT NULL DEFAULT 0, -- reported in the debrief
   auto_committed    INTEGER NOT NULL DEFAULT 0,
   committed_idea_id INTEGER,
   commit_label      TEXT,
-  checks            TEXT,          -- JSON { rules, notObvious, drawable }
+  checks            TEXT,
+  progress          TEXT NOT NULL DEFAULT 'unseen', -- unseen | open | skipped | done | out
+  step              TEXT NOT NULL DEFAULT 'read',   -- read | ideas | commit | draw
+  used_ms           INTEGER NOT NULL DEFAULT 0,     -- question clock from closed visits
+  steps_log         TEXT,                           -- JSON { [step]: { from, to } } in question-clock ms
+  rereads           INTEGER NOT NULL DEFAULT 0,
+  reveal_until      INTEGER,                        -- server time the current reread window ends
   UNIQUE (session_id, pos)
 );
 
+-- Each time a Part B question is on screen. The open visit (ended_at null) is the current question.
+CREATE TABLE IF NOT EXISTS b_visits (
+  id         INTEGER PRIMARY KEY,
+  session_id INTEGER NOT NULL REFERENCES sessions(id),
+  attempt_id INTEGER NOT NULL REFERENCES b_attempts(id),
+  pos        INTEGER NOT NULL,
+  started_at INTEGER NOT NULL,
+  ended_at   INTEGER,
+  end_reason TEXT                -- jump | skip | done | budget | end | closed
+);
+CREATE INDEX IF NOT EXISTS b_visits_session ON b_visits(session_id, ended_at);
+
+-- Idea taps from sessions made before the self-paced flow. Read only for their results.
 CREATE TABLE IF NOT EXISTS b_ideas (
   id         INTEGER PRIMARY KEY,
   attempt_id INTEGER NOT NULL REFERENCES b_attempts(id),
@@ -126,7 +147,7 @@ CREATE TABLE IF NOT EXISTS b_ideas (
   tag        TEXT
 );
 
--- Free-form client events during an attempt (commit checks toggled, screens shown).
+-- Part B events: step changes, skips, rereads, seed notes.
 CREATE TABLE IF NOT EXISTS b_events (
   id         INTEGER PRIMARY KEY,
   attempt_id INTEGER NOT NULL REFERENCES b_attempts(id),
@@ -170,3 +191,14 @@ CREATE TABLE IF NOT EXISTS card_review_log (
   scheduled_days REAL
 );
 `;
+
+// Columns added after a table first shipped: CREATE TABLE IF NOT EXISTS leaves an existing table as it
+// was, so each is added here when missing. Order matters only within a table.
+export const ADDED_COLUMNS: { table: string; column: string; ddl: string }[] = [
+  { table: "b_attempts", column: "progress", ddl: "progress TEXT NOT NULL DEFAULT 'unseen'" },
+  { table: "b_attempts", column: "step", ddl: "step TEXT NOT NULL DEFAULT 'read'" },
+  { table: "b_attempts", column: "used_ms", ddl: "used_ms INTEGER NOT NULL DEFAULT 0" },
+  { table: "b_attempts", column: "steps_log", ddl: "steps_log TEXT" },
+  { table: "b_attempts", column: "rereads", ddl: "rereads INTEGER NOT NULL DEFAULT 0" },
+  { table: "b_attempts", column: "reveal_until", ddl: "reveal_until INTEGER" },
+];

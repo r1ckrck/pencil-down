@@ -1,6 +1,6 @@
 // Session lifecycle (spec §5.2, §5.3, §5.7). The server owns the clock: every state change is
 // derived from stored timestamps, and `settle` replays whatever the clock implies (forced skips,
-// section expiry, Part B auto-commits) before any read or write. Nothing here can pause a session.
+// section expiry, Part B forced advance) before any read or write. Nothing here can pause a session.
 import type { Content } from "../content/load";
 import type { Format, Generator, MarkScheme, Slot, Topic } from "../content/types";
 import { KINDS, type Kind, hasPartA, hasPartB } from "./kinds";
@@ -9,7 +9,16 @@ import { ApiError, badRequest, conflict, notFound } from "./errors";
 import { dueQuestionIds, recordOutcome } from "./errorlog";
 import { questionKey } from "./items";
 import { type Mode, type Switches, isMode, switchesFor } from "./modes";
-import { type Timeline, B_MOCK_MINUTES, drillTimeline, paperTimeline } from "./partb";
+import {
+  type PartBPlan,
+  type Step,
+  B_MOCK_MINUTES,
+  drillPlan,
+  nextReread,
+  paperPlan,
+  questionScript,
+  targetsOf,
+} from "./partb";
 import { CURRENT_SCHEME, type AnswerInput, fullMarks, normaliseInput, scoreAnswer } from "./scoring";
 import {
   type PoolState,
@@ -50,7 +59,8 @@ export interface SessionConfig {
   n?: number;
   slot?: Slot;
   retake?: boolean;
-  timeline?: Timeline; // Part B; seconds relative to b_started_at
+  partB?: PartBPlan; // Part B read-all, per-question budget and section length
+  timeline?: { total: number }; // Part B plan of sessions made before the self-paced flow
 }
 
 export interface SessionRow {
@@ -118,6 +128,22 @@ export interface AttemptRow {
   committed_idea_id: number | null;
   commit_label: string | null;
   checks: string | null;
+  progress: "unseen" | "open" | "skipped" | "done" | "out";
+  step: Step;
+  used_ms: number;
+  steps_log: string | null;
+  rereads: number;
+  reveal_until: number | null;
+}
+
+export interface BVisitRow {
+  id: number;
+  session_id: number;
+  attempt_id: number;
+  pos: number;
+  started_at: number;
+  ended_at: number | null;
+  end_reason: string | null;
 }
 
 // ---------- rows ----------
@@ -145,6 +171,14 @@ function response(db: Db, sid: number, pos: number): ResponseRow {
 
 export function openVisit(db: Db, sid: number): VisitRow | null {
   return (db.prepare("SELECT * FROM a_visits WHERE session_id = ? AND ended_at IS NULL").get(sid) as VisitRow | undefined) ?? null;
+}
+
+export function openBVisit(db: Db, sid: number): BVisitRow | null {
+  return (db.prepare("SELECT * FROM b_visits WHERE session_id = ? AND ended_at IS NULL").get(sid) as BVisitRow | undefined) ?? null;
+}
+
+export function anyBVisit(db: Db, sid: number): boolean {
+  return !!db.prepare("SELECT 1 FROM b_visits WHERE session_id = ? LIMIT 1").get(sid);
 }
 
 export function attempts(db: Db, sid: number): AttemptRow[] {
@@ -254,11 +288,11 @@ export function createSession(ctx: Ctx, req: CreateRequest): SessionRow {
       if (!p) throw new ApiError(422, `no prompts available for ${slot}`);
       prompts = [p];
       config.slot = slot;
-      config.timeline = drillTimeline(slot);
+      config.partB = drillPlan();
     } else if (kind === "b-mock" || kind === "full") {
       prompts = selectMockPrompts(content, pool, ctx.rand);
       if (!prompts.length) throw new ApiError(422, "no prompts available");
-      config.timeline = paperTimeline(prompts.map((p) => p.slot), B_MOCK_MINUTES);
+      config.partB = paperPlan(B_MOCK_MINUTES);
     } else if (kind === "b-past-paper") {
       const paper = req.bPaperId ? content.bPaperById.get(req.bPaperId) : undefined;
       if (!paper) throw badRequest("unknown bPaperId");
@@ -267,11 +301,11 @@ export function createSession(ctx: Ctx, req: CreateRequest): SessionRow {
       config.retake = !!db
         .prepare("SELECT 1 FROM sessions WHERE kind = 'b-past-paper' AND json_extract(config, '$.bPaperId') = ?")
         .get(paper.id);
-      config.timeline = paperTimeline(prompts.map((p) => p.slot), paper.durationMin);
+      config.partB = paperPlan(paper.durationMin);
     }
 
     const aMs = Math.round(aMinutes * MIN);
-    const bMs = config.timeline ? config.timeline.total * 1000 : 0;
+    const bMs = config.partB ? config.partB.total * 1000 : 0;
     const aEnds = hasPartA(kind) ? now + aMs : null;
     const bStart = hasPartA(kind) ? null : now;
     const endsAt = now + aMs + bMs;
@@ -299,9 +333,13 @@ export function createSession(ctx: Ctx, req: CreateRequest): SessionRow {
       `INSERT INTO b_attempts (session_id, pos, prompt_id, slot, phases, block_start_s, block_end_s, commit_deadline_s)
        VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
     );
-    config.timeline?.blocks.forEach((b) =>
-      insAttempt.run(sid, b.pos, prompts[b.pos].id, b.slot, JSON.stringify(b.phases), b.start, b.end, b.commitDeadline),
-    );
+    if (config.partB) {
+      const budget = config.partB.budget;
+      prompts.forEach((p, pos) => {
+        const script = questionScript(p.slot, budget);
+        insAttempt.run(sid, pos, p.id, p.slot, JSON.stringify(script), 0, budget, targetsOf(script).commit);
+      });
+    }
 
     markSeen(db, items.map((i) => i.questionId), "a", now);
     markSeen(db, prompts.map((p) => p.id), "b", now);
@@ -398,7 +436,7 @@ function closeA(ctx: Ctx, sid: number, at: number, status: "completed" | "quit" 
   );
   if (hasPartB(s.kind) && status !== "quit") {
     // Full exam: Part A locks and Part B starts now, with its full 120 minutes.
-    const bMs = (s.config.timeline?.total ?? 0) * 1000;
+    const bMs = (s.config.partB?.total ?? s.config.timeline?.total ?? 0) * 1000;
     db.prepare("UPDATE sessions SET b_started_at = ?, ends_at = ? WHERE id = ?").run(at, at + bMs, sid);
   } else {
     closeSession(db, sid, at, status);
@@ -406,49 +444,133 @@ function closeA(ctx: Ctx, sid: number, at: number, status: "completed" | "quit" 
 }
 
 function closeSession(db: Db, sid: number, at: number, status: "completed" | "quit" | "expired") {
+  const v = openBVisit(db, sid);
+  if (v) endBVisit(db, getSession(db, sid), v, at, "closed");
   db.prepare("UPDATE b_attempts SET status = 'abandoned' WHERE session_id = ? AND status = 'pending'").run(sid);
   db.prepare("UPDATE sessions SET status = ?, ended_at = ? WHERE id = ?").run(status, at, sid);
 }
 
-// ---------- Part B commits ----------
+// ---------- Part B question clock ----------
 
-function commitAttempt(
-  db: Db,
-  s: SessionRow,
-  a: AttemptRow,
-  at: number,
-  opts: { ideaId: number | null; label: string | null; checks: unknown; auto: boolean },
-) {
-  const blockStart = s.b_started_at! + a.block_start_s * 1000;
-  db.prepare(
-    `UPDATE b_attempts SET status = 'committed', committed_at = ?, seconds_to_commit = ?, auto_committed = ?,
-       committed_idea_id = ?, commit_label = ?, checks = ? WHERE id = ?`,
-  ).run(
+function attemptById(db: Db, id: number): AttemptRow {
+  return db.prepare("SELECT * FROM b_attempts WHERE id = ?").get(id) as unknown as AttemptRow;
+}
+
+/** Target end of each step, in question-clock ms. */
+export function targetsMs(a: AttemptRow) {
+  const t = targetsOf(JSON.parse(a.phases));
+  return { read: t.read * 1000, ideas: t.ideas * 1000, commit: t.commit * 1000, draw: t.draw * 1000 };
+}
+
+/** Question clock at server time t: closed visits plus the open one, if it is this question. */
+export function questionMs(a: AttemptRow, v: BVisitRow | null, t: number): number {
+  return a.used_ms + (v && v.attempt_id === a.id && a.progress !== "out" ? t - v.started_at : 0);
+}
+
+function logEvent(db: Db, attemptId: number, at: number, type: string, data?: unknown) {
+  db.prepare("INSERT INTO b_events (attempt_id, at, type, data) VALUES (?, ?, ?, ?)").run(
+    attemptId,
     at,
-    Math.round((at - blockStart) / 1000),
-    opts.auto ? 1 : 0,
-    opts.ideaId,
-    opts.label,
-    opts.checks === undefined || opts.checks === null ? null : JSON.stringify(opts.checks),
-    a.id,
+    type,
+    data === undefined ? null : JSON.stringify(data),
   );
 }
 
-// Commit deadline passed without a commit: lock the last starred idea (or the last idea, or none).
-function settleCommits(db: Db, sid: number, t: number) {
+type StepsLog = Partial<Record<Step, { from: number; to: number | null }>>;
+
+// Moves the attempt to another step, recording where on the question clock each step began and ended.
+function changeStep(db: Db, a: AttemptRow, to: Step, qms: number, at: number) {
+  const log: StepsLog = a.steps_log ? JSON.parse(a.steps_log) : {};
+  const cur = log[a.step];
+  if (cur) cur.to = qms;
+  log[to] = { from: log[to]?.from ?? qms, to: null };
+  db.prepare("UPDATE b_attempts SET step = ?, steps_log = ? WHERE id = ?").run(to, JSON.stringify(log), a.id);
+  logEvent(db, a.id, at, "step", { from: a.step, to, qms });
+}
+
+function startBVisit(db: Db, sid: number, a: AttemptRow, at: number) {
+  db.prepare("INSERT INTO b_visits (session_id, attempt_id, pos, started_at) VALUES (?, ?, ?, ?)").run(sid, a.id, a.pos, at);
+  if (a.progress === "unseen")
+    db.prepare("UPDATE b_attempts SET progress = 'open', steps_log = ? WHERE id = ?").run(
+      JSON.stringify({ read: { from: 0, to: null } }),
+      a.id,
+    );
+  else if (a.progress === "skipped") db.prepare("UPDATE b_attempts SET progress = 'open' WHERE id = ?").run(a.id);
+}
+
+// An out-of-time question's clock is stopped: viewing it adds nothing.
+function endBVisit(db: Db, s: SessionRow, v: BVisitRow, at: number, reason: string) {
+  const a = attemptById(db, v.attempt_id);
+  db.prepare("UPDATE b_visits SET ended_at = ?, end_reason = ? WHERE id = ?").run(at, reason, v.id);
+  if (a.progress === "out") return;
+  let used = a.used_ms + (at - v.started_at);
+  if (s.config.switches.forcedAdvance) used = Math.min(used, targetsMs(a).draw);
+  db.prepare("UPDATE b_attempts SET used_ms = ? WHERE id = ?").run(used, a.id);
+}
+
+// The next question still worth opening after `pos`, in paper order, wrapping round.
+function nextOpenPos(db: Db, sid: number, pos: number): number | null {
+  const atts = attempts(db, sid);
+  for (let k = 1; k < atts.length; k++) {
+    const a = atts[(pos + k) % atts.length];
+    if (a.progress !== "done" && a.progress !== "out") return a.pos;
+  }
+  return null;
+}
+
+function moveOnB(db: Db, s: SessionRow, v: BVisitRow, at: number, reason: string) {
+  endBVisit(db, s, v, at, reason);
+  const next = nextOpenPos(db, s.id, v.pos);
+  if (next !== null) startBVisit(db, s.id, attempts(db, s.id)[next], at);
+}
+
+function commitAttempt(db: Db, a: AttemptRow, at: number, qms: number, auto: boolean) {
+  db.prepare(
+    "UPDATE b_attempts SET status = 'committed', committed_at = ?, seconds_to_commit = ?, auto_committed = ? WHERE id = ?",
+  ).run(at, Math.round(qms / 1000), auto ? 1 : 0, a.id);
+  changeStep(db, attemptById(db, a.id), "draw", qms, at);
+}
+
+/** The next thing forced advance will do on the open question, and at what question-clock ms. */
+export function nextForced(a: AttemptRow): { at: number; action: "ideas" | "commit" | "auto" | "out" } | null {
+  if (a.progress === "out") return null;
+  const t = targetsMs(a);
+  if (a.step === "read") return { at: t.read, action: "ideas" };
+  if (a.status === "pending" && a.step === "ideas") return { at: t.ideas, action: "commit" };
+  if (a.status === "pending") return { at: t.commit, action: "auto" };
+  return { at: t.draw, action: "out" };
+}
+
+// Replays what the clock implies up to server time t: the first question opening when read-all
+// ends (at once in a drill) and, with forced advance on, every target the open question passes.
+// Each event lands at the exact instant its target was reached, so the result never depends on
+// when we look.
+function settleB(db: Db, sid: number, t: number) {
   const s = getSession(db, sid);
-  if (s.b_started_at === null) return;
-  for (const a of attempts(db, sid)) {
-    if (a.status !== "pending") continue;
-    const deadline = s.b_started_at + a.commit_deadline_s * 1000;
-    if (deadline > t) continue;
-    const idea = db
-      .prepare(
-        `SELECT id FROM b_ideas WHERE attempt_id = ?
-         ORDER BY (starred_at IS NOT NULL) DESC, starred_at DESC, n DESC LIMIT 1`,
-      )
-      .get(a.id) as { id: number } | undefined;
-    commitAttempt(db, s, a, deadline, { ideaId: idea?.id ?? null, label: null, checks: null, auto: true });
+  const plan = s.config.partB;
+  if (!plan || s.b_started_at === null) return;
+  if (!anyBVisit(db, sid)) {
+    const opensAt = s.b_started_at + plan.readAll * 1000;
+    if (opensAt > t) return;
+    startBVisit(db, sid, attempts(db, sid)[0], opensAt);
+  }
+  if (!s.config.switches.forcedAdvance) return;
+  for (;;) {
+    const v = openBVisit(db, sid);
+    if (!v) return;
+    const a = attemptById(db, v.attempt_id);
+    const next = nextForced(a);
+    if (!next) return;
+    const at = Math.max(v.started_at, v.started_at + (next.at - a.used_ms));
+    if (at > t) return;
+    if (next.action === "ideas" || next.action === "commit") changeStep(db, a, next.action, next.at, at);
+    else if (next.action === "auto") commitAttempt(db, a, at, next.at, true);
+    else {
+      endBVisit(db, s, v, at, "budget");
+      db.prepare("UPDATE b_attempts SET progress = 'out', used_ms = ? WHERE id = ?").run(next.at, a.id);
+      const after = nextOpenPos(db, sid, a.pos);
+      if (after !== null) startBVisit(db, sid, attempts(db, sid)[after], at);
+    }
   }
 }
 
@@ -465,8 +587,13 @@ export function settle(ctx: Ctx, sid: number): SessionRow {
     if (now >= s.a_ends_at!) closeA(ctx, sid, s.a_ends_at!, "expired");
     s = getSession(db, sid);
   }
+  // A Part B session made before the self-paced flow cannot run on this engine: it ends here.
+  if (s.status === "live" && s.b_started_at !== null && !s.config.partB) {
+    closeSession(db, sid, now, "quit");
+    s = getSession(db, sid);
+  }
   if (s.status === "live" && s.b_started_at !== null) {
-    settleCommits(db, sid, Math.min(now, s.ends_at));
+    settleB(db, sid, Math.min(now, s.ends_at));
     // Part B's clock running out is its normal end, not a walk-away.
     if (now >= s.ends_at) closeSession(db, sid, s.ends_at, "completed");
     s = getSession(db, sid);
@@ -569,88 +696,143 @@ export function quit(ctx: Ctx, sid: number) {
 
 // ---------- Part B actions ----------
 
-function requireAttempt(ctx: Ctx, sid: number, pos: number): { s: SessionRow; a: AttemptRow } {
-  const a = attempts(ctx.db, sid).find((x) => x.pos === pos);
-  if (!a) throw notFound("Part B slot");
-  return { s: getSession(ctx.db, sid), a };
-}
-
-function requireCommitWindow(ctx: Ctx, sid: number, pos: number) {
+function requireB(ctx: Ctx, sid: number): SessionRow {
   const s = settle(ctx, sid);
-  if (s.status !== "live" || s.b_started_at === null) throw conflict("Part B is not running");
-  const { a } = requireAttempt(ctx, sid, pos);
-  const sec = (ctx.now() - s.b_started_at) / 1000;
-  if (a.status !== "pending") throw conflict("this slot is already committed");
-  if (sec < a.block_start_s || sec >= a.commit_deadline_s) throw conflict("outside this slot's idea window");
-  return { s, a };
+  if (s.status !== "live" || s.b_started_at === null || !s.config.partB) throw conflict("Part B is not running");
+  return s;
 }
 
-export function tapIdea(ctx: Ctx, sid: number, pos: number): { ideaId: number; n: number } {
+function requireAttempt(ctx: Ctx, sid: number, pos: number): AttemptRow {
+  const a = attempts(ctx.db, sid).find((x) => x.pos === pos);
+  if (!a) throw notFound("Part B question");
+  return a;
+}
+
+// The action names the question on her screen; anything else is stale.
+function requireOnScreen(ctx: Ctx, sid: number, pos: number): { s: SessionRow; v: BVisitRow; a: AttemptRow } {
+  const s = requireB(ctx, sid);
+  const v = openBVisit(ctx.db, sid);
+  if (!v || v.pos !== pos) throw conflict("that question is no longer on screen", { currentPos: v?.pos ?? null });
+  return { s, v, a: requireAttempt(ctx, sid, pos) };
+}
+
+const isPaper = (s: SessionRow) => (s.config.partB?.readAll ?? 0) > 0;
+
+/** Open a question (palette, Prev, Next, or "Start Q1", which ends read-all early). */
+export function openQuestion(ctx: Ctx, sid: number, pos: number) {
   return tx(ctx.db, () => {
-    const { a } = requireCommitWindow(ctx, sid, pos);
-    const n = a.idea_count + 1;
-    const id = Number(
-      ctx.db.prepare("INSERT INTO b_ideas (attempt_id, n, created_at) VALUES (?, ?, ?)").run(a.id, n, ctx.now()).lastInsertRowid,
-    );
-    ctx.db.prepare("UPDATE b_attempts SET idea_count = ? WHERE id = ?").run(n, a.id);
-    return { ideaId: id, n };
+    const s = requireB(ctx, sid);
+    const a = requireAttempt(ctx, sid, pos);
+    const v = openBVisit(ctx.db, sid);
+    if (v?.pos === pos) return;
+    const now = ctx.now();
+    if (v) endBVisit(ctx.db, s, v, now, "jump");
+    startBVisit(ctx.db, sid, a, now);
   });
 }
 
-function ideaOf(ctx: Ctx, sid: number, ideaId: number): { attemptId: number; pos: number } {
-  const r = ctx.db
-    .prepare("SELECT i.attempt_id, a.pos FROM b_ideas i JOIN b_attempts a ON a.id = i.attempt_id WHERE i.id = ? AND a.session_id = ?")
-    .get(ideaId, sid) as { attempt_id: number; pos: number } | undefined;
-  if (!r) throw notFound("idea");
-  return { attemptId: r.attempt_id, pos: r.pos };
-}
-
-export function starIdea(ctx: Ctx, sid: number, ideaId: number, starred: boolean) {
+/** "Got it" (read → ideas), "I've picked one" (ideas → commit), "Back to ideas" (commit → ideas). */
+export function changeQuestionStep(ctx: Ctx, sid: number, pos: number, to: unknown) {
   return tx(ctx.db, () => {
-    const { pos } = ideaOf(ctx, sid, ideaId);
-    requireCommitWindow(ctx, sid, pos);
-    ctx.db.prepare("UPDATE b_ideas SET starred_at = ? WHERE id = ?").run(starred ? ctx.now() : null, ideaId);
+    const { s, v, a } = requireOnScreen(ctx, sid, pos);
+    if (a.status !== "pending" || a.progress === "out") throw conflict("this question is already committed or closed");
+    const allowed = (a.step === "read" && to === "ideas") || (a.step === "ideas" && to === "commit") || (a.step === "commit" && to === "ideas");
+    if (!allowed) throw conflict(`cannot move from ${a.step} to ${String(to)}`);
+    const now = ctx.now();
+    const qms = questionMs(a, v, now);
+    if (to === "ideas" && a.step === "commit" && s.config.switches.forcedAdvance && qms >= targetsMs(a).ideas)
+      throw conflict("ideas time is over");
+    changeStep(ctx.db, a, to as Step, qms, now);
   });
 }
 
-export function commit(ctx: Ctx, sid: number, pos: number, body: { ideaId?: number | null; label?: string; checks?: unknown }) {
+/** Commit: final. Records seconds-to-commit on the question clock and opens Draw. */
+export function commit(ctx: Ctx, sid: number, pos: number) {
   return tx(ctx.db, () => {
-    const { s, a } = requireCommitWindow(ctx, sid, pos);
-    if (body.ideaId != null && ideaOf(ctx, sid, body.ideaId).pos !== pos) throw badRequest("idea belongs to another slot");
-    const label = typeof body.label === "string" ? body.label.trim().slice(0, 200) || null : null;
-    commitAttempt(ctx.db, s, a, ctx.now(), { ideaId: body.ideaId ?? null, label, checks: body.checks ?? null, auto: false });
+    const { v, a } = requireOnScreen(ctx, sid, pos);
+    if (a.status !== "pending") throw conflict("this question is already committed");
+    if (a.progress === "out") throw conflict("this question is out of time");
+    if (a.step === "read") throw conflict("read the question first");
+    const now = ctx.now();
+    commitAttempt(ctx.db, a, now, questionMs(a, v, now), false);
+  });
+}
+
+/** Skip an uncommitted question: it stays open to come back to while it has time. */
+export function skipQuestion(ctx: Ctx, sid: number, pos: number) {
+  return tx(ctx.db, () => {
+    const { s, v, a } = requireOnScreen(ctx, sid, pos);
+    if (!isPaper(s)) throw conflict("a drill has one question");
+    if (a.status !== "pending") throw conflict("a committed question is not skipped");
+    if (a.progress === "out") throw conflict("this question is out of time");
+    const now = ctx.now();
+    ctx.db.prepare("UPDATE b_attempts SET progress = 'skipped' WHERE id = ?").run(a.id);
+    logEvent(ctx.db, a.id, now, "skip", { qms: questionMs(a, v, now) });
+    moveOnB(ctx.db, s, v, now, "skip");
+  });
+}
+
+/** "Done · next question": the drawing is finished. */
+export function doneQuestion(ctx: Ctx, sid: number, pos: number) {
+  return tx(ctx.db, () => {
+    const { s, v, a } = requireOnScreen(ctx, sid, pos);
+    if (!isPaper(s)) throw conflict("a drill ends with pencil down");
+    if (a.status !== "committed") throw conflict("commit before finishing");
+    ctx.db.prepare("UPDATE b_attempts SET progress = 'done' WHERE id = ?").run(a.id);
+    moveOnB(ctx.db, s, v, ctx.now(), "done");
+  });
+}
+
+/** The end page: no question on screen. Any question with time left can still be opened. */
+export function openEndPage(ctx: Ctx, sid: number) {
+  return tx(ctx.db, () => {
+    const s = requireB(ctx, sid);
+    if (!isPaper(s)) throw conflict("a drill has no end page");
+    if (!anyBVisit(ctx.db, sid)) throw conflict("read-all is still running");
+    const v = openBVisit(ctx.db, sid);
+    if (v) endBVisit(ctx.db, s, v, ctx.now(), "end");
+  });
+}
+
+/** Reread (question hiding on): 60, 30, then 15 s of the prompt; the question clock keeps running. */
+export function reread(ctx: Ctx, sid: number, pos: number) {
+  return tx(ctx.db, () => {
+    const { s, v, a } = requireOnScreen(ctx, sid, pos);
+    if (!s.config.switches.questionHiding) throw conflict("the prompt is not hidden in this mode");
+    if (a.progress === "out") throw conflict("this question is out of time");
+    const now = ctx.now();
+    const qms = questionMs(a, v, now);
+    if (qms >= targetsMs(a).draw) throw conflict("this question's time is up");
+    const len = nextReread(a.rereads);
+    if (len === null) throw conflict("no rereads left");
+    ctx.db.prepare("UPDATE b_attempts SET rereads = rereads + 1, reveal_until = ? WHERE id = ?").run(now + len * 1000, a.id);
+    logEvent(ctx.db, a.id, now, "reread", { n: a.rereads + 1, seconds: len, qms });
   });
 }
 
 export function recordEvent(ctx: Ctx, sid: number, pos: number, type: string, data: unknown) {
   return tx(ctx.db, () => {
     settle(ctx, sid);
-    const { a } = requireAttempt(ctx, sid, pos);
+    const a = requireAttempt(ctx, sid, pos);
     if (!type || type.length > 64) throw badRequest("type required (≤ 64 chars)");
-    ctx.db.prepare("INSERT INTO b_events (attempt_id, at, type, data) VALUES (?, ?, ?, ?)").run(
-      a.id,
-      ctx.now(),
-      type,
-      data === undefined ? null : JSON.stringify(data),
-    );
+    logEvent(ctx.db, a.id, ctx.now(), type, data);
   });
 }
 
-// Debrief writes are allowed once the slot's block has ended or the session is over.
+// Debrief writes are allowed once the session is over, or once a question is done or out of time.
 function requireDebrief(ctx: Ctx, sid: number, pos: number): AttemptRow {
   const s = settle(ctx, sid);
-  const { a } = requireAttempt(ctx, sid, pos);
-  const blockOver = s.b_started_at !== null && ctx.now() >= s.b_started_at + a.block_end_s * 1000;
-  if (s.status === "live" && !blockOver && a.status === "pending") throw conflict("debrief opens after the slot");
+  const a = requireAttempt(ctx, sid, pos);
+  if (s.status === "live" && a.progress !== "done" && a.progress !== "out") throw conflict("debrief opens after the question");
   return a;
 }
 
-export function tagIdea(ctx: Ctx, sid: number, ideaId: number, tag: string | null) {
+/** "How many ideas did you sketch?" — one number per question, reported in the debrief. */
+export function reportIdeas(ctx: Ctx, sid: number, pos: number, count: number) {
   return tx(ctx.db, () => {
-    const { pos } = ideaOf(ctx, sid, ideaId);
-    requireDebrief(ctx, sid, pos);
-    const clean = tag?.trim().toLowerCase().split(/\s+/)[0]?.slice(0, 40) || null; // one word
-    ctx.db.prepare("UPDATE b_ideas SET tag = ? WHERE id = ?").run(clean, ideaId);
+    const a = requireDebrief(ctx, sid, pos);
+    if (!Number.isInteger(count) || count < 0 || count > 99) throw badRequest("count must be 0–99");
+    ctx.db.prepare("UPDATE b_attempts SET idea_count = ? WHERE id = ?").run(count, a.id);
   });
 }
 

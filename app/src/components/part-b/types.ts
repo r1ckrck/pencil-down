@@ -7,9 +7,6 @@ import type { partBResults, sessionState } from "@/engine/view";
 export type SessionState = ReturnType<typeof sessionState>;
 export type PartBState = NonNullable<SessionState["partB"]>;
 export type Attempt = PartBState["attempts"][number];
-export type Idea = Attempt["ideas"][number];
-export type Block = PartBState["timeline"]["blocks"][number];
-export type PhaseNow = NonNullable<PartBState["now"]>;
 export type Prompt = ReturnType<typeof promptPayload>;
 export type BResult = NonNullable<ReturnType<typeof partBResults>>[number];
 
@@ -21,16 +18,21 @@ export const SLOT_NAME: Record<Slot, string> = {
   "problem-id": "Problem identification",
 };
 
-export const PHASE_NAME: Record<string, string> = {
-  "read-all": "Read all",
+export const STEP_NAME: Record<string, string> = {
   read: "Read",
-  generate: "Generate",
+  ideas: "Ideas",
   commit: "Commit",
-  execute: "Execute",
-  buffer: "Buffer",
-  "final-buffer": "Final buffer",
-  done: "Done",
-  debrief: "Debrief",
+  draw: "Draw",
+};
+
+/** What each question's palette cell says about it. */
+export const PROGRESS_NAME: Record<string, string> = {
+  unseen: "not opened",
+  open: "in progress",
+  skipped: "skipped",
+  committed: "committed",
+  done: "done",
+  out: "out of time",
 };
 
 /** Short names for the live screen's top line (fits 360 px). */

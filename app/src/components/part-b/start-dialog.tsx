@@ -23,15 +23,16 @@ const MODE_LABEL: Record<Mode, string> = { easy: "Easy", hard: "Hard", custom: "
 function modeLine(mode: Mode, custom: Switches, full: boolean): string {
   if (mode === "easy")
     return full
-      ? "Part A timer visible, no forced skip. Part B prompt stays on screen."
-      : "The prompt stays on screen for the whole attempt.";
+      ? "Part A timer visible, no forced skip. Part B prompt stays on screen; nothing moves on by itself."
+      : "The prompt stays on screen and nothing moves on by itself; overruns show in red.";
   if (mode === "hard")
     return full
-      ? "Part A timer hidden, forced skip at zero. Part B prompt hides after Read."
-      : "The prompt shows only while you read, then hides. Read once; hold it in your head.";
+      ? "Part A timer hidden, forced skip at zero. Part B prompt hides after Read; the clock moves you on."
+      : "The prompt hides after Read (3 rereads). Each step moves on at its target, and the clock commits for you.";
   const hide = custom.questionHiding ? "prompt hides after Read" : "prompt stays on screen";
-  const clock = custom.phaseTimer ? "phase clock visible" : "phase clock hidden";
-  return `From Settings: ${hide}, ${clock}.`;
+  const clock = custom.phaseTimer ? "step clock visible" : "step clock hidden";
+  const forced = custom.forcedAdvance ? "forced advance on" : "forced advance off";
+  return `From Settings: ${hide}, ${clock}, ${forced}.`;
 }
 
 /**

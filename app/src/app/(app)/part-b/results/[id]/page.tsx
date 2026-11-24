@@ -37,7 +37,6 @@ async function Results({ params }: { params: Promise<{ id: string }> }) {
   const results = partBResults(ctx, id);
   if (!results) redirect(`/part-a/results/${id}`);
 
-  const timeline = state.partB?.timeline;
   const inDeck = new Set(
     (ctx.db.prepare("SELECT card_id FROM card_reviews").all() as { card_id: string }[]).map((r) => r.card_id),
   );
@@ -56,10 +55,6 @@ async function Results({ params }: { params: Promise<{ id: string }> }) {
           ]
         : [];
     });
-  const deadline = (pos: number) => {
-    const b = timeline?.blocks[pos];
-    return b ? b.commitDeadline - b.start : null;
-  };
 
   const single = results.length === 1;
   const kindName = KIND_NAME[session.kind] ?? "Part B";
@@ -87,7 +82,7 @@ async function Results({ params }: { params: Promise<{ id: string }> }) {
         {debriefOpen && <DebriefLink href={sessionHref(id, session.kind)} />}
 
         {single ? (
-          <SlotSummary r={results[0]} deadline={deadline(0)} stat reveal={revealFor(results[0].revealsCardIds)} />
+          <SlotSummary r={results[0]} deadline={results[0].commitTargetS} stat reveal={revealFor(results[0].revealsCardIds)} />
         ) : (
           <>
             <Stat
@@ -104,7 +99,7 @@ async function Results({ params }: { params: Promise<{ id: string }> }) {
             )}
             {results.map((r) => (
               <div key={r.id} className="border-t border-hairline pt-8">
-                <SlotSummary r={r} deadline={deadline(r.pos)} stat={false} heading={`Q${r.pos + 1}`} reveal={revealFor(r.revealsCardIds)} />
+                <SlotSummary r={r} deadline={r.commitTargetS} stat={false} heading={`Q${r.pos + 1}`} reveal={revealFor(r.revealsCardIds)} />
               </div>
             ))}
           </>

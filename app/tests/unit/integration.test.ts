@@ -8,7 +8,7 @@ import { afterAll, describe, expect, it } from "vitest";
 import { openDb } from "@/db/db";
 import { exportArchive } from "@/engine/export";
 import { dashboard, history, today } from "@/engine/progress";
-import { addPhoto, advance, answer, createSession, finish, quit, tapIdea } from "@/engine/session";
+import { addPhoto, advance, answer, changeQuestionStep, createSession, finish, quit } from "@/engine/session";
 import { catalog } from "@/engine/catalog";
 import { results, sessionState } from "@/engine/view";
 import { GENS, RIGHT, T0, fixtureContent } from "./fixtures";
@@ -61,7 +61,7 @@ describe("file database", () => {
 
     const b = createSession(ctx2, { kind: "b-drill", slot: "sketching" });
     clock.t += 3 * 60_000;
-    tapIdea(ctx2, b.id, 0);
+    changeQuestionStep(ctx2, b.id, 0, "commit"); // Hard: Ideas opened on its own at 2:00
     quit(ctx2, b.id);
     mkdirSync(join(dir, "photos"), { recursive: true });
     writeFileSync(join(dir, "photos", "p1.jpg"), Buffer.from([0xff, 0xd8, 0xff]));

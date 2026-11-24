@@ -28,9 +28,8 @@ async function seedSessions(request: APIRequestContext) {
   await api(request, "POST", `/api/sessions/${a.session.id}/finish`);
 
   const b = await api(request, "POST", "/api/sessions", { kind: "b-drill", slot: "sketching", mode: "hard" });
-  const { idea } = await api(request, "POST", `/api/sessions/${b.session.id}/b/idea`, { pos: 0 });
-  await api(request, "POST", `/api/sessions/${b.session.id}/b/idea`, { pos: 0 });
-  await api(request, "POST", `/api/sessions/${b.session.id}/b/commit`, { pos: 0, ideaId: idea.ideaId, label: "e2e" });
+  await api(request, "POST", `/api/sessions/${b.session.id}/b/step`, { pos: 0, to: "ideas" });
+  await api(request, "POST", `/api/sessions/${b.session.id}/b/commit`, { pos: 0 });
   await api(request, "POST", `/api/sessions/${b.session.id}/finish`);
   return { aId: a.session.id as number, bId: b.session.id as number };
 }
@@ -107,7 +106,7 @@ test.describe("Knowledge", () => {
     await page.getByRole("button", { name: /Show answer/ }).click();
     await expect(page.getByRole("group", { name: "Rate your recall" })).toBeVisible();
     await page.getByRole("button", { name: /^Good/ }).click();
-    await expect(page.getByText(/Good · next/)).toBeVisible();
+    await expect(page.getByText(/Last card: Good · back/)).toBeVisible();
 
     // Keyboard path: space reveals, 3 rates Good.
     if (await page.getByTestId("review-card").isVisible()) {

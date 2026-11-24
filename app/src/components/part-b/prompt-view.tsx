@@ -79,17 +79,58 @@ export function CriteriaList({ criteria }: { criteria: Prompt["criteria"] }) {
 }
 
 /** Hard mode outside the visible windows: a blank panel naming only the slot and the phase. */
-export function HiddenPrompt({ slot, phase, className }: { slot: Prompt["slot"]; phase: string; className?: string }) {
+/**
+ * The prompt's place while it is hidden (question hiding on): which question and step this is,
+ * and the Reread control, which says what it costs before she taps it.
+ */
+export function HiddenPrompt({
+  slot,
+  step,
+  out,
+  nextRereadS,
+  rereadsLeft,
+  busy,
+  onReread,
+  className,
+}: {
+  slot: Prompt["slot"];
+  step: string;
+  out: boolean;
+  nextRereadS: number | null;
+  rereadsLeft: number;
+  busy?: boolean;
+  onReread?: () => void;
+  className?: string;
+}) {
   return (
     <div
       data-testid="prompt-hidden"
       className={cn(
-        "flex min-h-40 flex-col items-center justify-center gap-1 rounded-lg border border-dashed border-hairline p-6 text-center",
+        "flex min-h-40 flex-col items-center justify-center gap-2 rounded-lg border border-dashed border-hairline p-6 text-center",
         className,
       )}
     >
       <p className="text-body text-fg">{SLOT_NAME[slot]}</p>
-      <p className="font-mono text-label uppercase text-mute">{phase} · prompt hidden</p>
+      <p className="font-mono text-label uppercase text-mute">{step} · prompt hidden</p>
+      {out ? (
+        <p className="text-small text-mute">Out of time. Opening a question shows it for 15 s.</p>
+      ) : nextRereadS !== null ? (
+        <>
+          <button
+            type="button"
+            onClick={onReread}
+            disabled={busy}
+            className="mt-2 inline-flex min-h-touch items-center rounded-sm border border-hairline px-4 text-small font-medium text-fg hover:border-fg hover:bg-tint disabled:opacity-40"
+          >
+            Reread · {nextRereadS} s
+          </button>
+          <p className="text-caption text-mute">
+            {rereadsLeft} of 3 left. The time comes out of this question.
+          </p>
+        </>
+      ) : (
+        <p className="text-caption text-mute">No rereads left.</p>
+      )}
     </div>
   );
 }

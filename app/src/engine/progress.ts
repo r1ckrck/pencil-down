@@ -1,5 +1,6 @@
 // History, dashboard aggregates (spec §5.5) and the Today summary (spec §5.1).
 import type { Slot, Topic } from "../content/types";
+import type { Db } from "../db/db";
 import { SLOTS, TOPICS } from "../content/types";
 import { cardStats, dueQueue } from "./cards";
 import { dueQuestionIds } from "./errorlog";
@@ -113,20 +114,26 @@ export function dashboard(ctx: Ctx, mode?: unknown) {
 
   const atts = db
     .prepare(
-      `SELECT a.id, a.slot, a.seconds_to_commit, a.idea_count, a.session_id, s.started_at FROM b_attempts a
+      `SELECT a.id, a.slot, a.seconds_to_commit, a.idea_count, a.rereads, a.session_id, s.started_at FROM b_attempts a
        JOIN sessions s ON s.id = a.session_id WHERE a.status = 'committed' AND ${closed} ORDER BY s.started_at`,
     )
-    .all(...f.args) as { id: number; slot: Slot; seconds_to_commit: number; idea_count: number; session_id: number; started_at: number }[];
+    .all(...f.args) as {
+    id: number;
+    slot: Slot;
+    seconds_to_commit: number;
+    idea_count: number;
+    rereads: number;
+    session_id: number;
+    started_at: number;
+  }[];
   const perSlot = Object.fromEntries(
     SLOTS.map((slot) => {
       const xs = atts.filter((a) => a.slot === slot).map((a) => a.seconds_to_commit);
       return [slot, { attempts: xs.length, medianSecondsToCommit: median(xs) }];
     }),
   );
-  const tagStmt = db.prepare("SELECT COUNT(tag) AS tagged, COUNT(DISTINCT tag) AS distinct_tags FROM b_ideas WHERE attempt_id = ?");
   const rateStmt = db.prepare("SELECT AVG(value) AS avg FROM b_self_ratings WHERE attempt_id = ?");
   const attemptsSeries = atts.map((a) => {
-    const t = tagStmt.get(a.id) as { tagged: number; distinct_tags: number };
     const r = rateStmt.get(a.id) as { avg: number | null };
     return {
       attemptId: a.id,
@@ -135,7 +142,7 @@ export function dashboard(ctx: Ctx, mode?: unknown) {
       slot: a.slot,
       secondsToCommit: a.seconds_to_commit,
       ideas: a.idea_count,
-      distinctTagRatio: t.tagged ? t.distinct_tags / t.tagged : null,
+      rereads: a.rereads,
       selfRating: r.avg,
     };
   });
@@ -153,9 +160,21 @@ export function dashboard(ctx: Ctx, mode?: unknown) {
       leftBySkipping,
       retiredOverTime: retired,
     },
-    partB: { perSlot, attempts: attemptsSeries },
+    partB: { perSlot, attempts: attemptsSeries, endings: questionEndings(db, closed, f.args) },
     cards: cardStats(ctx),
   };
+}
+
+// How self-paced Part B questions ended: skipped and never finished, or closed by the clock.
+function questionEndings(db: Db, closed: string, args: (string | number)[]) {
+  const rows = db
+    .prepare(
+      `SELECT a.progress, COUNT(*) AS n FROM b_attempts a JOIN sessions s ON s.id = a.session_id
+       WHERE json_extract(s.config, '$.partB') IS NOT NULL AND a.progress != 'unseen' AND ${closed} GROUP BY a.progress`,
+    )
+    .all(...args) as { progress: string; n: number }[];
+  const n = (p: string) => rows.find((r) => r.progress === p)?.n ?? 0;
+  return { questions: rows.reduce((t, r) => t + r.n, 0), skipped: n("skipped"), outOfTime: n("out") };
 }
 
 export function daysToExam(now: number): number {

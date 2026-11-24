@@ -53,9 +53,10 @@ type Dashboard = {
       slot: string;
       secondsToCommit: number;
       ideas: number;
-      distinctTagRatio: number | null;
+      rereads: number;
       selfRating: number | null;
     }[];
+    endings: { questions: number; skipped: number; outOfTime: number };
   };
   cards: { total: number; introduced: number; retention30d: number | null; dueToday: number; dueNext7Days: number[] };
 };
@@ -439,7 +440,6 @@ function PartBSection({ b }: { b: Dashboard["partB"] }) {
   const atts = b.attempts;
   const pts = (pick: (a: (typeof atts)[number]) => number | null, list = atts): Point[] =>
     list.map((a, i) => ({ n: i + 1, label: day(a.at), value: pick(a), note: SLOT_LABEL[a.slot] }));
-  const tagged = atts.filter((a) => a.distinctTagRatio !== null);
   const rated = atts.filter((a) => a.selfRating !== null);
 
   return (
@@ -489,15 +489,16 @@ function PartBSection({ b }: { b: Dashboard["partB"] }) {
             </div>
           </Panel>
 
-          <Panel label="Ideas per attempt" aside="counted in Generate">
+          <Panel label="Ideas per attempt" aside="reported in the debrief">
             <ColumnChart data={pts((a) => a.ideas)} series="b" label="Ideas per attempt" showValues={atts.length <= 16} />
           </Panel>
 
-          <Panel label="Distinct-tag ratio" aside="distinct tags ÷ tagged ideas">
-            {tagged.length === 0 ? (
-              <Empty text="Tag each idea with one word in the debrief. Higher means your ideas range wider." />
-            ) : (
-              <TrendChart data={pts((a) => a.distinctTagRatio, tagged)} series="b" label="Distinct-tag ratio per attempt" domain={[0, 1]} format={pct} height={180} />
+          <Panel label="Rereads per attempt" aside="Hard: 3 at most, fewer is better">
+            <ColumnChart data={pts((a) => a.rereads)} series="b" label="Rereads per attempt" showValues={atts.length <= 16} />
+            {b.endings.questions > 0 && (
+              <p className="font-mono text-caption text-mute">
+                Of {b.endings.questions} questions opened: {b.endings.skipped} left skipped · {b.endings.outOfTime} out of time
+              </p>
             )}
           </Panel>
 

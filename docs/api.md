@@ -1,6 +1,6 @@
 # Pencil Down — API
 
-JSON over HTTP, same origin, no auth (Authelia sits in front). Every route runs at request time. Times are **epoch milliseconds from the server clock**; Part B timeline offsets are **seconds**. Render countdowns from `serverNow` + the deadlines given, correcting for local clock skew (`skew = serverNow − Date.now()` at receipt).
+JSON over HTTP, same origin, no auth (Authelia sits in front). Every route runs at request time. Times are **epoch milliseconds from the server clock**; Part B question-clock values are **ms** (`usedMs`, `steps`) or **seconds** where named (`script`, `targets`). Render countdowns from `serverNow` + the deadlines given, correcting for local clock skew (`skew = serverNow − Date.now()` at receipt).
 
 Errors: `{ "error": string, ...extra }` with status 400 (bad input), 404, 409 (rule: not live, not on screen, already committed, outside window, live session exists → `sessionId`), 413/415 (photo), 422 (no content for that session), 500.
 
@@ -10,12 +10,13 @@ Engine code: `app/src/engine/` · routes: `app/src/app/api/` · schema: `app/src
 
 ## Model in one screen
 
-- **One live session at most.** Every read or write first *settles* the session: it replays what the clock implies since the last request (forced skips, section expiry, Part B auto-commits). Reload, close or walk-away is therefore safe: the state is a function of stored timestamps. No route pauses anything.
+- **One live session at most.** Every read or write first *settles* the session: it replays what the clock implies since the last request (forced skips, section expiry, Part B forced advance). Reload, close or walk-away is therefore safe: the state is a function of stored timestamps. No route pauses anything.
 - **Kinds**: `mock` · `drill` · `revisit` · `past-paper` (Part A) · `b-drill` · `b-mock` · `b-past-paper` (Part B) · `full` (Part A mock 60 min → lock → Part B mock 120 min, one session; Part B starts the instant Part A closes, by expiry or `finish`).
-- **Modes** `easy | hard | custom` resolve to four switches stored on the session: `questionTimer` (show the per-question countdown), `forcedSkip`, `phaseTimer` (show the Part B clock), `questionHiding`. The UI honours `questionTimer`/`phaseTimer`; the server enforces `forcedSkip` and `questionHiding`.
+- **Modes** `easy | hard | custom` resolve to five switches stored on the session: `questionTimer` (show the per-question countdown), `forcedSkip`, `phaseTimer` (show the Part B step clock and bar times), `questionHiding`, `forcedAdvance`. The UI honours `questionTimer`/`phaseTimer`; the server enforces `forcedSkip`, `questionHiding` and `forcedAdvance`.
 - **Status**: `live` → `completed` (finish, or Part B clock ran out) · `quit` · `expired` (Part A overall time ran out).
 - **Part A navigation**: first pass in served order; after the last question the revisit queue (unanswered, marked or force-skipped questions) cycles. Every visit gets a fresh budget. With `forcedSkip`, a visit closes at exactly `started + budget` (answer kept as-is, question queued) and the next visit starts at that instant.
-- **Part B windows**: ideas, stars and commit are accepted from a slot's block start until its commit deadline. At the deadline an uncommitted slot auto-commits the last starred idea (else the last idea, else none), `autoCommitted: true`. `secondsToCommit` = commit time − block start. Debrief writes (tag, rate, photo) open once the slot's block ends or the session closes.
+- **Part B question clock**: each question has a budget (drill 24 min, paper 22 min) and a clock that runs only while it is the open question (`b_visits`); visits add up. Steps `read → ideas → commit → draw` move by action; with `forcedAdvance` the server moves them at the script targets (Read target → ideas, Ideas target → commit, commit target → auto-commit with `autoCommitted: true`, budget → `progress: "out"`, the visit closes and the next open question opens at that instant). `secondsToCommit` = question-clock seconds at the commit. In a paper, no question is open during read-all (6 min, or until `b/open`); at its end Q1 opens. No open question after read-all = the end page.
+- **Part B actions name the question on screen** (`pos` must be the open question) and answer 409 otherwise. Debrief writes (ideas, rate, photo) open once the session closes, or once a question is `done` or `out`.
 
 ---
 
@@ -26,7 +27,7 @@ type AnswerInput = { kind: "MCQ"; option: "A"|"B"|"C"|"D" }
                  | { kind: "MSQ"; options: Option[] }          // [] = blank
                  | { kind: "NAT"; value: number };
 type Key = SimpleAnswer | { kind: "ANY"; of: SimpleAnswer[] } | { kind: "DROPPED"; marks: number }; // types.ts
-type Switches = { questionTimer: boolean; forcedSkip: boolean; phaseTimer: boolean; questionHiding: boolean };
+type Switches = { questionTimer: boolean; forcedSkip: boolean; phaseTimer: boolean; questionHiding: boolean; forcedAdvance: boolean };
 
 type QuestionPayload =                                   // never contains the key
   | { id; source: "real"; format; topic; label: "CEED 2026 · Q14";
@@ -47,7 +48,7 @@ type PromptPayload = { id; source: "real"|"authored"; slot; title; text /* md */
   session: { id, kind, mode, status, startedAt, endsAt, endedAt, switches: Switches,
              retake: boolean, paperId: string|null, bPaperId: string|null },
   section: "A" | "B" | "closed",
-  nextEventAt: number | null,   // refetch state at this instant (forced skip, phase change, commit point, end)
+  nextEventAt: number | null,   // refetch state at this instant (forced skip, read-all end, forced step, prompt hiding, end)
   partA: null | {
     endsAt, closedAt, status /* completed|quit|expired|null */, phase: "first-pass"|"revisit",
     current: null | {            // null when Part A is closed or the revisit queue is empty
@@ -59,19 +60,24 @@ type PromptPayload = { id; source: "real"|"authored"; slot; title; text /* md */
   },
   partB: null | {
     startedAt: number|null,      // null in a full exam until Part A closes
-    timeline: { kind: "drill"|"paper", total /* s */, readAll, finalBuffer,
-                blocks: { pos, slot, start, end, commitDeadline, phases: { phase, from, to, label? }[] }[] },
-    now: null | { phase: "read-all"|"read"|"generate"|"commit"|"execute"|"buffer"|"final-buffer"|"done",
-                  label?: "framing"|"pick", pos: number|null, from, to },   // seconds from startedAt
+    plan: { readAll, budget, total } /* s */ | null,   // null for sessions made before the self-paced flow
+    readAll: boolean,            // read-all running: no question open, every prompt visible
+    readAllEndsAt: number|null,
+    currentPos: number|null,     // the open question; null in read-all and on the end page
+    visitStartedAt: number|null, // when the open question was opened (the 15 s view runs from here)
     attempts: { id, pos, slot, status: "pending"|"committed"|"abandoned",
+                progress: "unseen"|"open"|"skipped"|"done"|"out", step: "read"|"ideas"|"commit"|"draw",
+                current: boolean, usedMs /* question clock at serverNow */, budgetMs,
+                script: { step, name, from, to }[] /* s, the bar's windows */, targets: { read, ideas, commit, draw } /* s */,
+                steps: Partial<Record<Step, { from, to: number|null }>> /* question-clock ms */,
+                rereads, nextRereadS: 60|30|15|null, revealUntil: number|null,
                 visible: boolean, prompt: PromptPayload|null /* null while hidden */,
-                ideaCount, ideas: { id, n, createdAt, starred, tag }[],
-                committedAt, secondsToCommit, autoCommitted, committedIdeaId, label }[]
+                committedAt, secondsToCommit, autoCommitted, ideaCount }[]
   }
 }
 ```
 
-Hidden prompt → `prompt: null`, show only `slot` and `now.phase`. Once the session closes every prompt is visible (debrief).
+Hidden prompt → `prompt: null`. With `questionHiding` a prompt is visible in read-all, during its Read step (until `ideas` or the Read target), for 15 s after each open, until `revealUntil` after a reread, and once the session closes (debrief). `nextEventAt` includes each of those ends.
 
 ---
 
@@ -120,11 +126,15 @@ Images are static files: `/content/part-a/…`, `/content/part-b/…`, `/content
 
 | Method · path | Body | Response |
 |---|---|---|
-| `POST /api/sessions/:id/b/idea` | `{ pos }` | `{ idea: {ideaId, n}, state: SessionState }` |
-| `POST /api/sessions/:id/b/star` | `{ ideaId, starred: boolean }` | `SessionState` |
-| `POST /api/sessions/:id/b/commit` | `{ pos, ideaId?, label?: string (≤200), checks?: {rules, notObvious, drawable} }` | `SessionState` |
-| `POST /api/sessions/:id/b/event` | `{ pos, type: string (≤64), data?: any }` — free-form log (e.g. a commit check toggled) | `{ ok, serverNow }` |
-| `POST /api/sessions/:id/b/tag` | `{ ideaId, tag: string\|null }` — first word, lower-cased | `{ partB: BResults }` |
+| `POST /api/sessions/:id/b/open` | `{ pos }` — palette, Prev, Next, "Start Q1" (ends read-all early) | `SessionState` |
+| `POST /api/sessions/:id/b/step` | `{ pos, to: "ideas"\|"commit" }` — Got it, I've picked one, Back to ideas (refused in forced advance once the Ideas target passed) | `SessionState` |
+| `POST /api/sessions/:id/b/commit` | `{ pos }` — from Ideas or Commit; final | `SessionState` |
+| `POST /api/sessions/:id/b/skip` | `{ pos }` — uncommitted only, paper only; opens the next open question | `SessionState` |
+| `POST /api/sessions/:id/b/done` | `{ pos }` — committed only, paper only; opens the next open question | `SessionState` |
+| `POST /api/sessions/:id/b/end` | — paper only, after read-all: closes the open question (end page) | `SessionState` |
+| `POST /api/sessions/:id/b/reread` | `{ pos }` — `questionHiding` only; 60 / 30 / 15 s, then 409 | `SessionState` |
+| `POST /api/sessions/:id/b/event` | `{ pos, type: string (≤64), data?: any }` — free-form log (e.g. a seed note) | `{ ok, serverNow }` |
+| `POST /api/sessions/:id/b/ideas` | `{ pos, count: 0–99 }` — "How many ideas did you sketch?" | `{ partB: BResults }` |
 | `POST /api/sessions/:id/b/rate` | `{ pos, criterion: index, value: 0–5 }` | `{ partB: BResults }` |
 | `POST /api/sessions/:id/b/photo` | `multipart/form-data`: `pos`, `file` (jpeg/png/webp/heic, ≤15 MB) | `{ photoId, url, partB: BResults }` |
 | `GET /api/photos/:id` | | image bytes |
@@ -150,8 +160,9 @@ Images are static files: `/content/part-a/…`, `/content/part-b/…`, `/content
   partB: null | BResults
 }
 type Tally = { correct, partial, wrong, skipped, dropped, marks, max };
-type BResults = { id, pos, slot, status, prompt: PromptPayload, secondsToCommit, autoCommitted,
-  committedIdeaId, label, checks, ideaCount, ideas, distinctTags, ratings: {criterion, value}[],
+type BResults = { id, pos, slot, status, progress: Progress|null /* null before the self-paced flow */,
+  prompt: PromptPayload, secondsToCommit, commitTargetS, autoCommitted, label /* earlier sessions only */,
+  ideaCount, rereads, usedMs: number|null, ratings: {criterion, value}[],
   photos: {id, url, createdAt}[], revealsCardIds: string[] }[];
 ```
 
@@ -168,7 +179,7 @@ type BResults = { id, pos, slot, status, prompt: PromptPayload, secondsToCommit,
 | Method · path | Query | Response |
 |---|---|---|
 | `GET /api/progress/history` | `mode?` | `{ sessions: {id, kind, mode, startedAt, endedAt, status, quit, score, maxScore, medianSecondsToCommit, paperId, retake, slot}[] }` newest first |
-| `GET /api/progress/dashboard` | `mode?` | `{ serverNow, mode, partA: {band, target, mockTrend: {id, kind, at, score, maxScore, quit}[], accuracyByTopic: Record<Topic, {answered, correct, total, accuracy}>, forcedSkipRate, lostToWrong, leftBySkipping, retiredOverTime: {at, total}[]}, partB: {perSlot: Record<Slot, {attempts, medianSecondsToCommit}>, attempts: {attemptId, sessionId, at, slot, secondsToCommit, ideas, distinctTagRatio, selfRating}[]}, cards: {total, introduced, retention30d, dueToday, dueNext7Days: number[7]} }` |
+| `GET /api/progress/dashboard` | `mode?` | `{ serverNow, mode, partA: {band, target, mockTrend: {id, kind, at, score, maxScore, quit}[], accuracyByTopic: Record<Topic, {answered, correct, total, accuracy}>, forcedSkipRate, lostToWrong, leftBySkipping, retiredOverTime: {at, total}[]}, partB: {perSlot: Record<Slot, {attempts, medianSecondsToCommit}>, attempts: {attemptId, sessionId, at, slot, secondsToCommit, ideas, rereads, selfRating}[], endings: {questions, skipped, outOfTime}}, cards: {total, introduced, retention30d, dueToday, dueNext7Days: number[7]} }` |
 | `GET /api/export` | | `pencil-down-YYYY-MM-DD.tar.gz`: `pencil-down.db` (consistent snapshot) + `photos/*` |
 
 ---
@@ -180,7 +191,7 @@ type BResults = { id, pos, slot, status, prompt: PromptPayload, secondsToCommit,
 - **Option labels**: real questions whose paper prints 1–4 or a–d carry `optionLabels`; answers and keys stay A–D on the wire, the UI shows the printed label (results: `2 (B)`), and the keyboard accepts the printed label or A–D.
 - **Scoring**: spec §9 (current scheme) except past papers (their own scheme, incl. non-partial MSQ). `ANY` scores the best alternative; `DROPPED` gives everyone its marks.
 - **Mastery / error log** at Part A close: correct real question → `correct_count + 1`, retired at 2. Wrong or partial → `wrong`; correct but unsure → `unsure-correct`; blank after a forced skip → `forced-skip`. Due ladder 1 · 3 · 7 · 14 · 30 days: a miss resets to 1 day, unsure-correct climbs one rung (first entry 3 days); a sure correct answer resolves the entry. Revisit serves open entries with `due_at ≤ now`.
-- **Part B mock / past paper clock**: 6 min read-all · 5 × 22 min blocks (each slot script clipped at 22 min) · the remaining 4 min as final buffer, totalling the paper's 120 min. Problem ID: framing 2–10, pick 10–12, commit 12–13.
+- **Part B mock / past paper clock**: 6 min read-all · 22 min per question (each slot script clipped at 22 min) · the paper's 120 min as the only wall; the 4 min spare is the end page. Problem ID: framing 2–10, pick 10–12, commit 12–13.
 
 ## Expired login
 

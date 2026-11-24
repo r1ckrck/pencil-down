@@ -11,7 +11,7 @@ import { slotScript } from "@/engine/partb";
 import { cn } from "@/lib/cn";
 import { sessionHref } from "./api";
 import { BStartDialog } from "./start-dialog";
-import { KIND_NAME, PHASE_NAME, SLOT_NAME } from "./types";
+import { KIND_NAME, SLOT_NAME } from "./types";
 
 export type BHubData = {
   defaultMode: Mode;
@@ -37,15 +37,11 @@ function Section({ index, title, note, id, children }: { index: string; title: s
   );
 }
 
-/** "Read 0–2 · Generate 2–4 · Commit 4–5 · …" from the engine's own slot script. */
+/** "Read 0–2 · Ideas 2–4 · Commit 4–5 · …" from the engine's own slot script. */
 function scriptLine(slot: Slot): string {
-  const merged: { phase: string; from: number; to: number }[] = [];
-  for (const p of slotScript(slot)) {
-    const last = merged.at(-1);
-    if (last && last.phase === p.phase) last.to = p.to;
-    else merged.push({ phase: p.phase, from: p.from, to: p.to });
-  }
-  return merged.map((p) => `${PHASE_NAME[p.phase]} ${p.from / 60}–${p.to / 60}`).join(" · ");
+  return slotScript(slot)
+    .map((p) => `${p.name} ${p.from / 60}–${p.to / 60}`)
+    .join(" · ");
 }
 
 function RowLink({ href, title, meta }: { href: string; title: ReactNode; meta?: ReactNode }) {
@@ -130,14 +126,14 @@ export function PartBHub({ data }: { data: BHubData }) {
         />
       </Section>
 
-      <Section index="02" title="Full paper" note="The real 120 minutes. Commit screens fire at each slot's commit point.">
+      <Section index="02" title="Full paper" note="The real 120 minutes. One question per screen; move between them freely.">
         <div className="flex flex-col gap-1">
           <p className="text-lead text-fg">Part B mock · 120 min</p>
-          <p className="font-mono text-caption text-mute">read all 6 · 5 × 22 with hard stamps · final buffer 4</p>
+          <p className="font-mono text-caption text-mute">read-all 6 · 22 per question · 4 spare</p>
         </div>
         <BStartDialog
           title="Part B mock"
-          summary="120 min · read all 6 · five blocks of 22 · final buffer 4"
+          summary="120 min · read-all 6 · 22 per question · 4 spare"
           request={{ kind: "b-mock" }}
           trigger={
             <Button size="lg" disabled={locked} className="self-start">

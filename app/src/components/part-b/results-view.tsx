@@ -1,4 +1,4 @@
-import { ArrowRight, Check, Minus, X } from "@phosphor-icons/react/ssr";
+import { ArrowRight } from "@phosphor-icons/react/ssr";
 import Link from "next/link";
 import { buttonClasses } from "@/components/ui/button";
 import { Eyebrow, RoleLabel } from "@/components/ui/label";
@@ -6,13 +6,7 @@ import { Metric, Stat } from "@/components/ui/stat";
 import { cn } from "@/lib/cn";
 import { PromptView } from "./prompt-view";
 import { RevealPanel, type RevealCard } from "./reveal-card";
-import { SLOT_NAME, mmss, type BResult } from "./types";
-
-const CHECKS: { key: "rules" | "notObvious" | "drawable"; label: string }[] = [
-  { key: "rules", label: "Obeys every rule" },
-  { key: "notObvious", label: "Not my first obvious idea" },
-  { key: "drawable", label: "Drawable in the time left" },
-];
+import { PROGRESS_NAME, SLOT_NAME, mmss, type BResult } from "./types";
 
 /** Five squares, filled up to the self-rating. Ink only: a self-rating is not right or wrong. */
 function RatingBar({ name, value }: { name: string; value: number | null }) {
@@ -31,25 +25,6 @@ function RatingBar({ name, value }: { name: string; value: number | null }) {
   );
 }
 
-function CheckList({ checks }: { checks: Record<string, boolean | null> | null }) {
-  if (!checks) return null;
-  return (
-    <ul className="flex flex-col">
-      {CHECKS.map((c) => {
-        const v = checks[c.key];
-        const I = v === true ? Check : v === false ? X : Minus;
-        return (
-          <li key={c.key} className="flex items-center gap-3 py-1 text-small">
-            <I size={16} weight="bold" aria-hidden className={v === null || v === undefined ? "text-mute" : "text-fg"} />
-            <span className={v === null || v === undefined ? "text-mute" : "text-fg"}>{c.label}</span>
-            <span className="sr-only">{v === true ? "yes" : v === false ? "no" : "not answered"}</span>
-          </li>
-        );
-      })}
-    </ul>
-  );
-}
-
 /** Everything recorded for one slot. `stat` is set when this slot carries the screen's Stat. */
 export function SlotSummary({
   r,
@@ -64,8 +39,6 @@ export function SlotSummary({
   reveal: RevealCard[];
   heading?: string;
 }) {
-  const ratio = r.ideaCount ? `${r.distinctTags}/${r.ideaCount}` : "–";
-  const committedIdea = r.ideas.find((i) => i.id === r.committedIdeaId);
   return (
     <section className="flex flex-col gap-8" data-testid={`slot-${r.pos}`}>
       {heading && <Eyebrow index={heading}>{SLOT_NAME[r.slot]}</Eyebrow>}
@@ -87,32 +60,16 @@ export function SlotSummary({
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
         {!stat && <Metric value={mmss(r.secondsToCommit)} label="To commit" />}
         <Metric value={r.ideaCount} label="Ideas" />
-        <Metric value={ratio} label="Distinct tags" />
+        <Metric value={r.rereads} label="Rereads" />
         <Metric value={r.status === "abandoned" ? "–" : r.autoCommitted ? "Auto" : "Self"} label="Commit" tone={r.autoCommitted ? "mute" : "fg"} />
       </div>
 
-      {r.status === "committed" && (
-        <div className="flex flex-col gap-3 border-l-2 border-fg pl-4">
-          <p className="font-mono text-label uppercase text-mute">
-            Committed{committedIdea ? ` · idea ${String(committedIdea.n).padStart(2, "0")}` : ""}
-          </p>
-          <p className="text-lead text-fg">{r.label ?? "No label"}</p>
-          <CheckList checks={r.checks} />
-        </div>
-      )}
-
-      {r.ideas.some((i) => i.tag) && (
-        <div className="flex flex-col gap-2">
-          <Eyebrow>Idea tags</Eyebrow>
-          <p className="flex flex-wrap gap-2">
-            {r.ideas.map((i) =>
-              i.tag ? (
-                <span key={i.id} className="rounded-xs border border-hairline px-2 py-1 font-mono text-caption text-fg">
-                  {i.tag}
-                </span>
-              ) : null,
-            )}
-          </p>
+      {(r.progress === "skipped" || r.progress === "out" || r.label) && (
+        <div className="flex flex-col gap-1 border-l-2 border-fg pl-4">
+          {r.progress && r.progress !== "done" && r.progress !== "open" && (
+            <p className="font-mono text-label uppercase text-mute">Ended {PROGRESS_NAME[r.progress]}</p>
+          )}
+          {r.label && <p className="text-lead text-fg">{r.label}</p>}
         </div>
       )}
 
@@ -156,7 +113,7 @@ export function SlotSummary({
 export function DebriefLink({ href }: { href: string }) {
   return (
     <div className="flex flex-col gap-2 rounded-lg border border-hairline p-4 sm:flex-row sm:items-center sm:justify-between">
-      <RoleLabel>Tags and self-ratings are still open.</RoleLabel>
+      <RoleLabel>Idea counts and self-ratings are still open.</RoleLabel>
       <Link href={href} className={buttonClasses({ variant: "quiet" })}>
         Finish the debrief
       </Link>

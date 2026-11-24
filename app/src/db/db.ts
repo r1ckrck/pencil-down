@@ -2,7 +2,7 @@
 import { mkdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import { SCHEMA_SQL } from "./schema";
+import { ADDED_COLUMNS, SCHEMA_SQL } from "./schema";
 
 export type Db = DatabaseSync;
 
@@ -17,6 +17,10 @@ export function photosDir(): string {
 
 export function applySchema(db: Db): void {
   db.exec(SCHEMA_SQL);
+  for (const c of ADDED_COLUMNS) {
+    const cols = db.prepare(`PRAGMA table_info(${c.table})`).all() as { name: string }[];
+    if (!cols.some((x) => x.name === c.column)) db.exec(`ALTER TABLE ${c.table} ADD COLUMN ${c.ddl}`);
+  }
 }
 
 // path ":memory:" for tests.

@@ -39,8 +39,9 @@ Design rules live in `spec.md` §4. This file is how to use what exists. Gallery
 | `QuestionPalette items={[{ n, state }]} current onSelect` + `PaletteLegend` | state: unseen · answered · skipped · marked |
 | `OptionButton letter label? mode="radio|checkbox" selected onSelect review?` inside `OptionGroup` | `label`: printed label shown instead of the letter, e.g. "1" for A |
 | `NumericKeypad value onValueChange captureKeyboard unit` | Also exports `applyKey` |
-| `TapCounter` | Part B idea counter |
-| `CheckRow value: boolean \| null` | Commit-screen checks |
+| `TapCounter`, `CheckRow value: boolean \| null` | Tally button and yes/no row; shown in the dev gallery |
 | `Figure svg label` | Trusted generator SVG; `.mute` and `.soft` classes themed |
+
+Part B (`app/src/components/part-b/`): `StepBar` + `barSegments` (labelled, proportional step bar: past steps at the time taken, the current one to its target, the rest ahead; names always on screen) · `PhaseClock` (server-anchored countdown) · `HiddenPrompt` (slot, step and the Reread control) · step panes `ReadPane`, `IdeasPane`, `CommitPane`, `CommittedNote`, `SeedNote`.
 
 Shell (`app/src/components/shell/`): app shell, exam shell, nav, page header, `ThemeControl` (Settings only), theme script.
